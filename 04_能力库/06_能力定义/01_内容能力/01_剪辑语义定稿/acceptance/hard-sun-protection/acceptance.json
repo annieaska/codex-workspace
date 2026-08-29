@@ -1,0 +1,21 @@
+{
+  "case_id": "hard-sun-protection-opening.v1",
+  "expected": {
+    "schema_version": "semantic-blueprint.v1",
+    "unit_count": 1,
+    "subtitle_count": 5,
+    "middle_component_id": "COMP-03",
+    "middle_component_name": "轮播 / 信息卡",
+    "derived_artifacts_may_overwrite_blueprint": false
+  },
+  "rejections": [
+    {
+      "mutation": "unknown_component",
+      "error_contains": "未知组件"
+    },
+    {
+      "mutation": "omitted_subtitle",
+      "error_contains": "字幕必须按原顺序"
+    }
+  ]
+}

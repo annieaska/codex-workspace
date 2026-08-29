@@ -1,0 +1,23 @@
+{
+  "schema_version": "component-catalog.v1",
+  "catalog_id": "video-editing-components",
+  "version": "1.0.0",
+  "components": [
+    {"id":"COMP-01","name":"分屏 / 前后对比","variants":["A|B 前后对比","分屏比较","前后对比"],"action":"扫描揭示 + 材质变化","must_change":"分隔线移动，逐步露出差异","min_labels":2},
+    {"id":"COMP-02","name":"顺序堆叠 / 步骤计数","variants":["顺序堆叠","步骤计数"],"action":"逐层出现 + 顺序交接","must_change":"当前项接棒，旧项变弱但保留","min_labels":3},
+    {"id":"COMP-03","name":"轮播 / 信息卡","variants":["轮播","信息卡"],"action":"顺序交接 + 逐层出现","must_change":"卡片沿同一方向依次出现并停稳","min_labels":3},
+    {"id":"COMP-04","name":"判断分支图","variants":["如果|否则","判断分支"],"action":"分支展开 + 路径绘制","must_change":"路径随条件分开，并指向对应结果","min_labels":3},
+    {"id":"COMP-05","name":"状态变化 / 直线时间轴","variants":["状态变化","直线时间轴"],"action":"状态变化 + 路径绘制","must_change":"同一对象的状态连续改变","min_labels":3},
+    {"id":"COMP-06","name":"环形时间轴","variants":["环形时间轴","循环"],"action":"环形推进 + 路径绘制","must_change":"节点沿圆环推进并回到起点","min_labels":3},
+    {"id":"COMP-07","name":"指示标签 / 人名信息条","variants":["指示标签","人名信息条"],"action":"引线绘制 + 扫描揭示","must_change":"引线必须指向真实对象，不能悬空","min_labels":2},
+    {"id":"COMP-08","name":"动态排版 / 动态图标","variants":["动态排版","动态图标"],"action":"状态变化 + 材质变化","must_change":"关键词随意思变化或被突出","min_labels":2},
+    {"id":"COMP-09","name":"地图 / 社交界面","variants":["地图","社交界面"],"action":"沿路径流动 + 路径绘制","must_change":"路径或界面操作与口播同步","min_labels":2},
+    {"id":"COMP-10","name":"因果链 / 原理流程","variants":["因果链","原理流程"],"action":"沿路径流动 + 路径绘制","must_change":"信息穿过节点，并改变后面的结果","min_labels":3},
+    {"id":"COMP-11","name":"流动 / 交接","variants":["流动","交接"],"action":"沿路径流动 + 顺序交接","must_change":"同一个标记物跨过不同容器时保持一致","min_labels":3},
+    {"id":"COMP-12","name":"扫描 / 遮罩揭示","variants":["扫描揭示","遮罩揭示"],"action":"扫描揭示 + 镜头推进","must_change":"扫描经过后，内部信息才出现","min_labels":2},
+    {"id":"COMP-13","name":"分层剖面 / 拆解图","variants":["分层剖面","拆解图"],"action":"逐层展开 + 镜头推进","must_change":"各层分开后仍保持原来的位置关系","min_labels":3},
+    {"id":"COMP-14","name":"分支与汇合 / 关系网","variants":["分支","汇合","关系网"],"action":"分支展开 + 汇合","must_change":"路径真实分开，或汇入同一个结果","min_labels":3},
+    {"id":"COMP-15","name":"计数器 / 趋势图 / 量表","variants":["计数器","趋势图","量表"],"action":"图形绘制 + 状态变化","must_change":"数值和图形必须同步变化","min_labels":2},
+    {"id":"COMP-16","name":"证据框 / 引用 / 截图","variants":["证据框","引用","截图"],"action":"扫描揭示 + 镜头推进","must_change":"先展示完整上下文，再框出可核对的原文","min_labels":2}
+  ]
+}

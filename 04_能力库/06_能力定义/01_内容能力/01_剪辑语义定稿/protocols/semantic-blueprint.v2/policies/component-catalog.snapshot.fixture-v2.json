@@ -1,0 +1,14 @@
+{
+  "object_type": "ComponentCatalogSnapshot",
+  "object_id": "component-catalog:fixture-v2:001",
+  "schema_version": "component-catalog.snapshot.fixture-v2",
+  "authority_scope": "component_fact_authority",
+  "facts": [{
+    "fact_id": "cat.focused-equipment-sequence",
+    "component_id": "V2-COMP-FOCUSED-SEQUENCE",
+    "expresses": ["ordered_equipment_introduction", "question_transition"],
+    "allowed_variants": ["three-stage-focus"],
+    "required_parameters": ["ordered_labels", "question_label"],
+    "intrinsic_slots": ["primary_focus", "supporting_labels"]
+  }]
+}

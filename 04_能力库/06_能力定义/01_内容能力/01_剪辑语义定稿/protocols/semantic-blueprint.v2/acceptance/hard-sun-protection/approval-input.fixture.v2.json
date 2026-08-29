@@ -1,0 +1,58 @@
+{
+  "object_type": "ApprovalInput",
+  "object_id": "approval-input:unit-001:001",
+  "schema_version": "semantic-blueprint.v2",
+  "authority_scope": "human_decision",
+  "semantic_input_refs": [
+    {
+      "role": "revision",
+      "object_type": "UnitRevision",
+      "schema_version": "semantic-blueprint.v2",
+      "semantic_hash": "sha256:866d52fc1e2238fec1ab8da6711a78d96ce393ac2294b1bf364b27eb4fe2d987"
+    }
+  ],
+  "exact_dependencies": [
+    {
+      "role": "revision",
+      "object_type": "UnitRevision",
+      "object_id": "revision:unit-001:001",
+      "schema_version": "semantic-blueprint.v2",
+      "semantic_hash": "sha256:866d52fc1e2238fec1ab8da6711a78d96ce393ac2294b1bf364b27eb4fe2d987",
+      "artifact_hash": "sha256:b7963a96bb1ce91e04b83b64daf8fea01ea42ae9ff49bc66432ce1a40f5539a1"
+    },
+    {
+      "role": "preview_manifest",
+      "object_type": "UnitPreviewManifest",
+      "object_id": "preview:unit-001:001",
+      "schema_version": "semantic-blueprint.v2",
+      "semantic_hash": "sha256:b146ae6e015d1de5336a0d4f78847b75fb3eb43b9b54c44d31d25579bbac9c5d",
+      "artifact_hash": "sha256:de64b6ae3dc4c8fc0710f663d72b7b166fdc0cc758a1820470a23fa4198bc2f8"
+    }
+  ],
+  "provenance": {"fixture_only": true},
+  "payload": {
+    "decision": "APPROVED",
+    "approver_ref": "human:fixture-reviewer",
+    "decided_at": "2026-08-29T00:00:00.000Z",
+    "decision_source": "explicit_fixture_input",
+    "comment": "Explicit fixture-only approval for unit-001 acceptance; not production approval.",
+    "revision_ref": {
+      "role": "revision",
+      "object_type": "UnitRevision",
+      "object_id": "revision:unit-001:001",
+      "schema_version": "semantic-blueprint.v2",
+      "semantic_hash": "sha256:866d52fc1e2238fec1ab8da6711a78d96ce393ac2294b1bf364b27eb4fe2d987",
+      "artifact_hash": "sha256:b7963a96bb1ce91e04b83b64daf8fea01ea42ae9ff49bc66432ce1a40f5539a1"
+    },
+    "preview_manifest_ref": {
+      "role": "preview_manifest",
+      "object_type": "UnitPreviewManifest",
+      "object_id": "preview:unit-001:001",
+      "schema_version": "semantic-blueprint.v2",
+      "semantic_hash": "sha256:b146ae6e015d1de5336a0d4f78847b75fb3eb43b9b54c44d31d25579bbac9c5d",
+      "artifact_hash": "sha256:de64b6ae3dc4c8fc0710f663d72b7b166fdc0cc758a1820470a23fa4198bc2f8"
+    }
+  },
+  "semantic_hash": "sha256:6e9cfff66236d0b5f83458d18b596bef39fe717cb6ac0580caf070d32ab9e9ed",
+  "artifact_hash": "sha256:06c7a9da11206f889cd80a5d407372c5e9f46b523f441ceb4a529aedd61da48f"
+}

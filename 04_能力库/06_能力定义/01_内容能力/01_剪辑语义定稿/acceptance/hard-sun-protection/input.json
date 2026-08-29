@@ -1,0 +1,50 @@
+{
+  "schema_version": "normalized-edit-request.v1",
+  "request_id": "hard-sun-protection-opening.v1",
+  "blueprint_version": "V1",
+  "video_type": "科普口播",
+  "source_refs": ["source:hard-sun-protection/a-roll", "source:hard-sun-protection/subtitles"],
+  "primary_video_ref": "source:hard-sun-protection/a-roll",
+  "subtitles": [
+    {"id":"s001","start_ms":66,"end_ms":1000,"text":"一到春夏","source_ref":"source:hard-sun-protection/subtitles"},
+    {"id":"s002","start_ms":1000,"end_ms":3766,"text":"防晒帽、防晒服、防晒口罩就成了","source_ref":"source:hard-sun-protection/subtitles"},
+    {"id":"s003","start_ms":3766,"end_ms":6166,"text":"很多人必备的防晒装备","source_ref":"source:hard-sun-protection/subtitles"},
+    {"id":"s004","start_ms":6166,"end_ms":8600,"text":"那大家在选择这些装备的时候","source_ref":"source:hard-sun-protection/subtitles"},
+    {"id":"s005","start_ms":8600,"end_ms":10966,"text":"有没有听过下面这些说法呢","source_ref":"source:hard-sun-protection/subtitles"}
+  ],
+  "logic_structure": "从春夏防晒装备的常见选择切入，引出后续需要核验的流行说法。",
+  "units": [
+    {
+      "id": "unit-001",
+      "order": 1,
+      "title": "春夏防晒装备登场",
+      "logic_role": "建立使用场景并提出选择疑问",
+      "subtitle_ids": ["s001", "s002", "s003", "s004", "s005"],
+      "visual_methods": ["talking_head", "b_roll", "information_component"],
+      "transition": {"from_previous":"从片头进入春夏通勤场景","to_next":"装备陈列旁的问号转成第一组服装说法"},
+      "scenes": {
+        "start": {
+          "description": "烈日下的通勤者走入画面，阳光照在街道和肩部",
+          "elements": [{"type":"person","label":"春夏通勤者"},{"type":"scene","label":"烈日街道"}],
+          "rationale": "用具体季节与通勤人物承接口播的春夏场景。",
+          "acquisition_hint": "主画面人物配合春夏街道补充画面。",
+          "component": {"id":"COMP-07","variant":"指示标签","labels":["春夏通勤者","烈日街道"]}
+        },
+        "middle": {
+          "description": "防晒帽、防晒服和防晒口罩依次摆在人物面前",
+          "elements": [{"type":"product","label":"防晒帽"},{"type":"product","label":"防晒服"},{"type":"product","label":"防晒口罩"}],
+          "rationale": "把三件必备装备逐件画清，避免只用抽象图标。",
+          "acquisition_hint": "产品实拍或统一二维产品卡片。",
+          "component": {"id":"COMP-03","variant":"信息卡","labels":["防晒帽","防晒服","防晒口罩"]}
+        },
+        "end": {
+          "description": "通勤者站在三件装备前，三张说法卡片从旁边展开",
+          "elements": [{"type":"person","label":"选择装备的人"},{"type":"label","label":"常见说法？"},{"type":"product","label":"三类装备"}],
+          "rationale": "把“有没有听过”转成即将核验的具体问题入口。",
+          "acquisition_hint": "主画面人物加信息卡片。",
+          "component": {"id":"COMP-03","variant":"信息卡","labels":["颜色说法","材质说法","帽型说法"]}
+        }
+      }
+    }
+  ]
+}

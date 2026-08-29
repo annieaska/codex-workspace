@@ -1,0 +1,18 @@
+{
+  "fixture_only": true,
+  "production_ready": false,
+  "capability_id": "video.semantic_blueprint.finalize",
+  "protocol_id": "semantic-blueprint.v2",
+  "required_unit_ids": ["unit-001"],
+  "vectors": {
+    "jcs_input": {"b":1,"a":"é"},
+    "jcs_sha256": "sha256:aa58fba8483623bed37c1b02edfccbdd9a53123837c20bfa4cb4049993a2872e",
+    "preview_raw_utf8": "preview\n",
+    "preview_raw_sha256": "sha256:82fc410073be3424185bc2cf6d8a4016d15251a69a015214db9f2858fbd78bb1"
+  },
+  "positive": ["P01","P02","P03"],
+  "negative": ["N01","N02","N03","N04","N05","N06","N07","N08","N09","N10","N11","N12","N13","N14","N15","N16","N17","N18"],
+  "clarifications": ["C01","C02","C03","C04"],
+  "regressions": ["R01","R02","R03","R04","R05","R06","R07"],
+  "node_test_summary": {"tests":54,"pass":54,"fail":0}
+}

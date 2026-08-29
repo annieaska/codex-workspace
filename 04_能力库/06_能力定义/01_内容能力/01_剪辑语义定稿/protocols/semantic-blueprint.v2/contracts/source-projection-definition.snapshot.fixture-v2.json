@@ -1,0 +1,17 @@
+{
+  "object_type": "ProjectionDefinitionSnapshot",
+  "object_id": "projection-definition:fixture-v2:001",
+  "schema_version": "projection-definition.snapshot.fixture-v2",
+  "authority_scope": "internal_candidate",
+  "fixture_only": true,
+  "adapter_mode": "fixture_only",
+  "projection_version": "fixture-v2.1",
+  "field_sources": {
+    "content_type": "/content_type",
+    "source_refs": "/source_refs",
+    "primary_video_ref": "/primary_video_ref",
+    "subtitles": "/subtitles",
+    "logic_summary": "/confirmed_logic_summary",
+    "unit": "/unit"
+  }
+}

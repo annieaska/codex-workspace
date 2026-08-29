@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "semantic-blueprint.v2.schema.json",
+  "title": "Semantic Blueprint V2 fixture-only strict contract bundle",
+  "$defs": {
+    "Hash": {"type":"string","pattern":"^sha256:[0-9a-f]{64}$"},
+    "Text": {"type":"string","minLength":1},
+    "SemanticReference": {
+      "type":"object","additionalProperties":false,
+      "required":["role","object_type","schema_version","semantic_hash"],
+      "properties":{"role":{"$ref":"#/$defs/Text"},"object_type":{"$ref":"#/$defs/Text"},"schema_version":{"const":"semantic-blueprint.v2"},"semantic_hash":{"$ref":"#/$defs/Hash"}}
+    },
+    "ExactReference": {
+      "type":"object","additionalProperties":false,
+      "required":["role","object_type","object_id","schema_version","semantic_hash","artifact_hash"],
+      "properties":{"role":{"$ref":"#/$defs/Text"},"object_type":{"$ref":"#/$defs/Text"},"object_id":{"$ref":"#/$defs/Text"},"schema_version":{"const":"semantic-blueprint.v2"},"semantic_hash":{"$ref":"#/$defs/Hash"},"artifact_hash":{"$ref":"#/$defs/Hash"}}
+    },
+    "Provenance": {
+      "type":"object","additionalProperties":false,"required":["fixture_only"],
+      "properties":{"fixture_only":{"const":true},"sealed_at":{"type":"string","minLength":1}}
+    },
+    "Envelope": {
+      "type":"object","additionalProperties":false,
+      "required":["object_type","object_id","schema_version","authority_scope","semantic_input_refs","exact_dependencies","provenance","payload","semantic_hash","artifact_hash"],
+      "properties":{
+        "object_type":{"$ref":"#/$defs/Text"},"object_id":{"$ref":"#/$defs/Text"},"schema_version":{"const":"semantic-blueprint.v2"},"authority_scope":{"enum":["internal_candidate","review_evidence","human_decision","final_semantic_authority","component_fact_authority","visual_policy_authority"]},
+        "semantic_input_refs":{"type":"array","items":{"$ref":"#/$defs/SemanticReference"}},"exact_dependencies":{"type":"array","items":{"$ref":"#/$defs/ExactReference"}},"provenance":{"$ref":"#/$defs/Provenance"},"payload":{},"semantic_hash":{"$ref":"#/$defs/Hash"},"artifact_hash":{"$ref":"#/$defs/Hash"}
+      }
+    },
+    "Subtitle": {
+      "type":"object","additionalProperties":false,"required":["id","start_ms","end_ms","text","source_ref"],
+      "properties":{"id":{"$ref":"#/$defs/Text"},"start_ms":{"type":"integer"},"end_ms":{"type":"integer"},"text":{"$ref":"#/$defs/Text"},"source_ref":{"$ref":"#/$defs/Text"}}
+    },
+    "SourceUnit": {
+      "type":"object","additionalProperties":false,"required":["unit_id","order","title","logic_role","subtitle_ids"],
+      "properties":{"unit_id":{"const":"unit-001"},"order":{"const":1},"title":{"$ref":"#/$defs/Text"},"logic_role":{"$ref":"#/$defs/Text"},"subtitle_ids":{"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/Text"}}}
+    },
+    "FixtureSourceInput": {
+      "type":"object","additionalProperties":false,
+      "required":["schema_version","adapter_mode","seed_provenance","content_type","source_refs","primary_video_ref","subtitles","confirmed_logic_summary","unit"],
+      "properties":{
+        "schema_version":{"const":"fixture-source-artifact.v2"},"adapter_mode":{"const":"fixture_only"},
+        "seed_provenance":{"type":"object","additionalProperties":false,"required":["source_case","source_raw_sha256"],"properties":{"source_case":{"$ref":"#/$defs/Text"},"source_raw_sha256":{"$ref":"#/$defs/Hash"}}},
+        "content_type":{"$ref":"#/$defs/Text"},"source_refs":{"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/Text"}},"primary_video_ref":{"$ref":"#/$defs/Text"},"subtitles":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/Subtitle"}},"confirmed_logic_summary":{"$ref":"#/$defs/Text"},"unit":{"$ref":"#/$defs/SourceUnit"}
+      }
+    },
+    "CatalogFact": {
+      "type":"object","additionalProperties":false,"required":["fact_id","component_id","expresses","allowed_variants","required_parameters","intrinsic_slots"],
+      "properties":{"fact_id":{"type":"string","pattern":"^cat\\."},"component_id":{"$ref":"#/$defs/Text"},"expresses":{"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/Text"}},"allowed_variants":{"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/Text"}},"required_parameters":{"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/Text"}},"intrinsic_slots":{"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/Text"}}}
+    },
+    "PolicyRule": {
+      "type":"object","additionalProperties":false,"required":["rule_id","severity"],
+      "properties":{"rule_id":{"type":"string","pattern":"^pol\\."},"severity":{"const":"blocking"},"requires":{"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/Text"}},"maximum_simultaneous_primary_focus":{"type":"integer"},"ordered_stages":{"type":"array","minItems":3,"maxItems":3,"items":{"enum":["start","process","end"]}},"requires_catalog_fact":{"type":"boolean"}}
+    },
+    "DefinitionFields": {
+      "type":"object","additionalProperties":false,"required":["content_type","source_refs","primary_video_ref","subtitles","logic_summary","unit"],
+      "properties":{"content_type":{"$ref":"#/$defs/Text"},"source_refs":{"$ref":"#/$defs/Text"},"primary_video_ref":{"$ref":"#/$defs/Text"},"subtitles":{"$ref":"#/$defs/Text"},"logic_summary":{"$ref":"#/$defs/Text"},"unit":{"$ref":"#/$defs/Text"}}
+    },
+    "FixtureSourceArtifactPayload": {"$ref":"#/$defs/FixtureSourceInput"},
+    "CatalogPayload": {
+      "type":"object","additionalProperties":false,"required":["definition_schema_version","facts"],
+      "properties":{"definition_schema_version":{"const":"component-catalog.snapshot.fixture-v2"},"facts":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/CatalogFact"}}}
+    },
+    "PolicyPayload": {
+      "type":"object","additionalProperties":false,"required":["definition_schema_version","rules"],
+      "properties":{"definition_schema_version":{"const":"visual-policy.snapshot.fixture-v2"},"rules":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/PolicyRule"}}}
+    },
+    "ProjectionPayload": {
+      "type":"object","additionalProperties":false,"required":["definition_schema_version","fixture_only","adapter_mode","projection_version","field_sources"],
+      "properties":{"definition_schema_version":{"const":"projection-definition.snapshot.fixture-v2"},"fixture_only":{"const":true},"adapter_mode":{"const":"fixture_only"},"projection_version":{"$ref":"#/$defs/Text"},"field_sources":{"$ref":"#/$defs/DefinitionFields"}}
+    },
+    "BuildPayload": {
+      "type":"object","additionalProperties":false,"required":["protocol_id","adapter_id","adapter_version","entry_source_raw_hash"],
+      "properties":{"protocol_id":{"const":"semantic-blueprint.v2"},"adapter_id":{"const":"fixture-adapter.v2"},"adapter_version":{"$ref":"#/$defs/Text"},"entry_source_raw_hash":{"$ref":"#/$defs/Hash"}}
+    },
+    "SourceSnapshotPayload": {
+      "type":"object","additionalProperties":false,"required":["fixture_only","adapter_mode","adapter_build_ref","projection_definition_ref","field_sources","content_type","source_refs","primary_video_ref","subtitles","confirmed_logic_summary","unit"],
+      "properties":{"fixture_only":{"const":true},"adapter_mode":{"const":"fixture_only"},"adapter_build_ref":{"$ref":"#/$defs/ExactReference"},"projection_definition_ref":{"$ref":"#/$defs/ExactReference"},"field_sources":{"$ref":"#/$defs/DefinitionFields"},"content_type":{"$ref":"#/$defs/Text"},"source_refs":{"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/Text"}},"primary_video_ref":{"$ref":"#/$defs/Text"},"subtitles":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/Subtitle"}},"confirmed_logic_summary":{"$ref":"#/$defs/Text"},"unit":{"$ref":"#/$defs/SourceUnit"}}
+    },
+    "Producer": {
+      "type":"object","additionalProperties":false,"required":["id","version","build_ref"],
+      "properties":{"id":{"$ref":"#/$defs/Text"},"version":{"$ref":"#/$defs/Text"},"build_ref":{"$ref":"#/$defs/ExactReference"}}
+    },
+    "ComponentDecision": {
+      "type":"object","additionalProperties":false,"required":["component_id","variant","parameters","fact_refs","policy_refs","requires_review","abstain"],
+      "properties":{"component_id":{"$ref":"#/$defs/Text"},"variant":{"$ref":"#/$defs/Text"},"parameters":{"type":"object","additionalProperties":false,"required":["ordered_labels","question_label"],"properties":{"ordered_labels":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/Text"}},"question_label":{"$ref":"#/$defs/Text"}}},"fact_refs":{"type":"array","minItems":1,"items":{"type":"string","pattern":"^cat\\."}},"policy_refs":{"type":"array","minItems":1,"items":{"type":"string","pattern":"^pol\\."}},"requires_review":{"type":"boolean"},"abstain":{"type":"boolean"}}
+    },
+    "Stage": {
+      "type":"object","additionalProperties":false,"required":["name","intent","primary_focus_count"],
+      "properties":{"name":{"enum":["start","process","end"]},"intent":{"$ref":"#/$defs/Text"},"primary_focus_count":{"type":"integer"}}
+    },
+    "SemanticInvariants": {
+      "type":"object","additionalProperties":false,"required":["subtitle_text_unchanged","fact_unchanged","causal_order_unchanged"],
+      "properties":{"subtitle_text_unchanged":{"type":"boolean"},"fact_unchanged":{"type":"boolean"},"causal_order_unchanged":{"type":"boolean"}}
+    },
+    "PlanPayload": {
+      "type":"object","additionalProperties":false,"required":["unit_id","producer","component_decision","stages","semantic_invariants","source_field_refs"],
+      "properties":{"unit_id":{"const":"unit-001"},"producer":{"$ref":"#/$defs/Producer"},"component_decision":{"$ref":"#/$defs/ComponentDecision"},"stages":{"type":"array","minItems":3,"maxItems":3,"items":{"$ref":"#/$defs/Stage"}},"semantic_invariants":{"$ref":"#/$defs/SemanticInvariants"},"source_field_refs":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/Text"}}}
+    },
+    "Violation": {
+      "type":"object","additionalProperties":false,"required":["rule_id","json_pointer","violation_code","evidence_semantic_hash"],
+      "properties":{"rule_id":{"type":"string","pattern":"^pol\\."},"json_pointer":{"$ref":"#/$defs/Text"},"violation_code":{"$ref":"#/$defs/Text"},"evidence_semantic_hash":{"$ref":"#/$defs/Hash"}}
+    },
+    "GatePayload": {
+      "type":"object","additionalProperties":false,"required":["status","violations","advisories","producer"],
+      "properties":{"status":{"enum":["PASS","REWORK","BLOCKED"]},"blocking_kind":{"enum":["PLAN_REWORK","MISSING_EVIDENCE","MISSING_SOURCE","HUMAN_REVIEW_REQUIRED"]},"violations":{"type":"array","items":{"$ref":"#/$defs/Violation"}},"advisories":{"type":"array"},"producer":{"$ref":"#/$defs/Producer"}}
+    },
+    "RevisionPayload": {
+      "type":"object","additionalProperties":false,"required":["unit_id","approved_semantics"],
+      "properties":{"unit_id":{"const":"unit-001"},"approved_semantics":{"$ref":"#/$defs/PlanPayload"}}
+    },
+    "PreviewFile": {
+      "type":"object","additionalProperties":false,"required":["path","raw_hash"],"properties":{"path":{"$ref":"#/$defs/Text"},"raw_hash":{"$ref":"#/$defs/Hash"}}
+    },
+    "PreviewPayload": {
+      "type":"object","additionalProperties":false,"required":["unit_id","revision_ref","renderer","render_profile_hash","template_hash","font_hash","local_resource_hashes","locale","timezone","files"],
+      "properties":{"unit_id":{"const":"unit-001"},"revision_ref":{"$ref":"#/$defs/ExactReference"},"renderer":{"type":"object","additionalProperties":false,"required":["id","protocol_version","build_ref"],"properties":{"id":{"const":"fixture-svg"},"protocol_version":{"const":"1"},"build_ref":{"$ref":"#/$defs/ExactReference"}}},"render_profile_hash":{"$ref":"#/$defs/Hash"},"template_hash":{"$ref":"#/$defs/Hash"},"font_hash":{"$ref":"#/$defs/Hash"},"local_resource_hashes":{"type":"array","items":{"$ref":"#/$defs/Hash"}},"locale":{"const":"zh-CN"},"timezone":{"const":"UTC"},"files":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/PreviewFile"}}}
+    },
+    "ApprovalInputPayload": {
+      "type":"object","additionalProperties":false,"required":["decision","approver_ref","decided_at","decision_source","comment","revision_ref","preview_manifest_ref"],
+      "properties":{"decision":{"enum":["APPROVED","CHANGES_REQUESTED"]},"approver_ref":{"$ref":"#/$defs/Text"},"decided_at":{"$ref":"#/$defs/Text"},"decision_source":{"const":"explicit_fixture_input"},"comment":{"type":"string"},"revision_ref":{"$ref":"#/$defs/ExactReference"},"preview_manifest_ref":{"$ref":"#/$defs/ExactReference"}}
+    },
+    "ApprovalRecordPayload": {
+      "type":"object","additionalProperties":false,"required":["unit_id","decision","approver_ref","decided_at","comment","decision_source","approval_input_ref","revision_ref","preview_manifest_ref"],
+      "properties":{"unit_id":{"const":"unit-001"},"decision":{"enum":["APPROVED","CHANGES_REQUESTED"]},"approver_ref":{"$ref":"#/$defs/Text"},"decided_at":{"$ref":"#/$defs/Text"},"comment":{"type":"string"},"decision_source":{"const":"explicit_fixture_input"},"approval_input_ref":{"$ref":"#/$defs/ExactReference"},"revision_ref":{"$ref":"#/$defs/ExactReference"},"preview_manifest_ref":{"$ref":"#/$defs/ExactReference"}}
+    },
+    "ScopePayload": {
+      "type":"object","additionalProperties":false,"required":["capability_id","protocol_id","source_snapshot_ref","ordered_required_unit_ids","expected_catalog_snapshot_ref","expected_policy_snapshot_ref","expected_adapter_build_ref","expected_projection_definition_snapshot_ref","scope_hash"],
+      "properties":{"capability_id":{"const":"video.semantic_blueprint.finalize"},"protocol_id":{"const":"semantic-blueprint.v2"},"source_snapshot_ref":{"$ref":"#/$defs/ExactReference"},"ordered_required_unit_ids":{"type":"array","minItems":1,"uniqueItems":true,"items":{"const":"unit-001"}},"expected_catalog_snapshot_ref":{"$ref":"#/$defs/ExactReference"},"expected_policy_snapshot_ref":{"$ref":"#/$defs/ExactReference"},"expected_adapter_build_ref":{"$ref":"#/$defs/ExactReference"},"expected_projection_definition_snapshot_ref":{"$ref":"#/$defs/ExactReference"},"scope_hash":{"$ref":"#/$defs/Hash"}}
+    },
+    "SelectedApproval": {
+      "type":"object","additionalProperties":false,"required":["unit_id","approval_record_ref"],"properties":{"unit_id":{"const":"unit-001"},"approval_record_ref":{"$ref":"#/$defs/ExactReference"}}
+    },
+    "FinalizePayload": {
+      "type":"object","additionalProperties":false,"required":["request_scope_manifest_ref","selected_approval_refs"],
+      "properties":{"request_scope_manifest_ref":{"$ref":"#/$defs/ExactReference"},"selected_approval_refs":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/SelectedApproval"}}}
+    },
+    "BlueprintPayload": {
+      "type":"object","additionalProperties":false,"required":["capability_id","protocol_id","request_scope_manifest_ref","selected_approval_refs","units","fixture_only","production_ready"],
+      "properties":{"capability_id":{"const":"video.semantic_blueprint.finalize"},"protocol_id":{"const":"semantic-blueprint.v2"},"request_scope_manifest_ref":{"$ref":"#/$defs/ExactReference"},"selected_approval_refs":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/SelectedApproval"}},"units":{"type":"array","minItems":1,"items":{"type":"object","additionalProperties":false,"required":["unit_id","order","semantic_decision","stages"],"properties":{"unit_id":{"const":"unit-001"},"order":{"const":1},"semantic_decision":{"$ref":"#/$defs/ComponentDecision"},"stages":{"type":"array","minItems":3,"maxItems":3,"items":{"$ref":"#/$defs/Stage"}}}}},"fixture_only":{"const":true},"production_ready":{"const":false}}
+    },
+    "FixtureSourceArtifact":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"FixtureSourceArtifact"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/FixtureSourceArtifactPayload"}}},
+    "ComponentCatalogSnapshot":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"ComponentCatalogSnapshot"},"authority_scope":{"const":"component_fact_authority"},"payload":{"$ref":"#/$defs/CatalogPayload"}}},
+    "VisualPolicySnapshot":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"VisualPolicySnapshot"},"authority_scope":{"const":"visual_policy_authority"},"payload":{"$ref":"#/$defs/PolicyPayload"}}},
+    "ProjectionDefinitionSnapshot":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"ProjectionDefinitionSnapshot"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/ProjectionPayload"}}},
+    "AdapterBuildManifest":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"AdapterBuildManifest"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/BuildPayload"}}},
+    "SourceSnapshot":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"SourceSnapshot"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/SourceSnapshotPayload"}}},
+    "UnitVisualPlan":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"UnitVisualPlan"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/PlanPayload"}}},
+    "GateResult":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"GateResult"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/GatePayload"}}},
+    "UnitRevision":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"UnitRevision"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/RevisionPayload"}}},
+    "UnitPreviewManifest":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"UnitPreviewManifest"},"authority_scope":{"const":"review_evidence"},"payload":{"$ref":"#/$defs/PreviewPayload"}}},
+    "ApprovalInput":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"ApprovalInput"},"authority_scope":{"const":"human_decision"},"payload":{"$ref":"#/$defs/ApprovalInputPayload"}}},
+    "ApprovalRecord":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"ApprovalRecord"},"authority_scope":{"const":"human_decision"},"payload":{"$ref":"#/$defs/ApprovalRecordPayload"}}},
+    "RequestScopeManifest":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"RequestScopeManifest"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/ScopePayload"}}},
+    "FinalizeInputV2":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"FinalizeInputV2"},"authority_scope":{"const":"internal_candidate"},"payload":{"$ref":"#/$defs/FinalizePayload"}}},
+    "SemanticBlueprint":{"allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","authority_scope","payload"],"properties":{"object_type":{"const":"SemanticBlueprint"},"authority_scope":{"const":"final_semantic_authority"},"payload":{"$ref":"#/$defs/BlueprintPayload"}}},
+    "InputViolation": {
+      "type":"object","additionalProperties":false,"required":["violation_code","json_pointer"],
+      "properties":{"violation_code":{"$ref":"#/$defs/Text"},"json_pointer":{"type":"string","minLength":1},"cue_id":{"type":"string","pattern":"^[1-9][0-9]*$"}}
+    },
+    "SrtCue": {
+      "type":"object","additionalProperties":false,"required":["cue_id","order","start_ms","end_ms","text"],
+      "properties":{"cue_id":{"type":"string","pattern":"^[1-9][0-9]*$"},"order":{"type":"integer","minimum":1},"start_ms":{"type":"integer","minimum":0},"end_ms":{"type":"integer","minimum":1},"text":{"type":"string","minLength":1,"pattern":"\\S"}}
+    },
+    "SrtCueProvenance": {
+      "type":"object","additionalProperties":false,"required":["source_ref","raw_hash","byte_length","encoding","bom","line_ending"],
+      "properties":{"source_ref":{"type":"string","minLength":1,"pattern":"^(?!/)(?!.*(?:^|/)\\.{1,2}(?:/|$))(?!.*\\\\).+$"},"raw_hash":{"$ref":"#/$defs/Hash"},"byte_length":{"type":"integer","minimum":1},"encoding":{"const":"UTF-8"},"bom":{"const":"absent"},"line_ending":{"enum":["CRLF","LF"]}}
+    },
+    "SrtCuePayload": {
+      "type":"object","additionalProperties":false,"required":["parser_contract_version","cues"],
+      "properties":{"parser_contract_version":{"const":"srt-cue-parser.v1"},"cues":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/SrtCue"}}}
+    },
+    "SrtCueArtifact": {
+      "type":"object","additionalProperties":false,"required":["object_type","object_id","schema_version","authority_scope","semantic_input_refs","exact_dependencies","provenance","payload","semantic_hash","artifact_hash"],
+      "properties":{"object_type":{"const":"SrtCueArtifact"},"object_id":{"type":"string","pattern":"^srt-cues:[0-9a-f]{64}$"},"schema_version":{"const":"semantic-blueprint.v2"},"authority_scope":{"const":"internal_candidate"},"semantic_input_refs":{"type":"array","maxItems":0},"exact_dependencies":{"type":"array","minItems":1,"maxItems":1,"items":{"allOf":[{"$ref":"#/$defs/ExactReference"},{"properties":{"role":{"const":"parser_build"},"object_type":{"const":"SrtParserBuildManifest"}}}]}},"provenance":{"$ref":"#/$defs/SrtCueProvenance"},"payload":{"$ref":"#/$defs/SrtCuePayload"},"semantic_hash":{"$ref":"#/$defs/Hash"},"artifact_hash":{"$ref":"#/$defs/Hash"}}
+    },
+    "ConfirmedUnitSelection": {
+      "type":"object","additionalProperties":false,"required":["cue_ids","start_ms","end_ms"],
+      "properties":{"cue_ids":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string","pattern":"^[1-9][0-9]*$"}},"start_ms":{"type":"integer","minimum":0},"end_ms":{"type":"integer","minimum":1}}
+    },
+    "ConfirmedUnitInvariants": {
+      "type":"object","additionalProperties":false,"required":["cue_ids_unchanged","order_unchanged","times_unchanged","text_unchanged"],
+      "properties":{"cue_ids_unchanged":{"const":true},"order_unchanged":{"const":true},"times_unchanged":{"const":true},"text_unchanged":{"const":true}}
+    },
+    "ConfirmedUnitProvenance": {
+      "type":"object","additionalProperties":false,"required":["confirmation_method","opaque_confirmation_id"],
+      "properties":{"confirmation_method":{"const":"explicit_human_input"},"opaque_confirmation_id":{"type":"string","pattern":"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"}}
+    },
+    "ConfirmedUnitPayload": {
+      "type":"object","additionalProperties":false,"required":["unit_id","selection","logic_role","source_invariants"],
+      "properties":{"unit_id":{"type":"string","pattern":"^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},"selection":{"$ref":"#/$defs/ConfirmedUnitSelection"},"logic_role":{"type":"string","minLength":1,"pattern":"\\S"},"source_invariants":{"$ref":"#/$defs/ConfirmedUnitInvariants"}}
+    },
+    "ConfirmedUnitInput": {
+      "type":"object","additionalProperties":false,"required":["object_type","object_id","schema_version","authority_scope","semantic_input_refs","exact_dependencies","provenance","payload","semantic_hash","artifact_hash"],
+      "properties":{"object_type":{"const":"ConfirmedUnitInput"},"object_id":{"type":"string","pattern":"^confirmed-unit:[A-Za-z0-9][A-Za-z0-9._:-]{0,127}:[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"},"schema_version":{"const":"semantic-blueprint.v2"},"authority_scope":{"const":"human_decision"},"semantic_input_refs":{"type":"array","minItems":1,"maxItems":1,"items":{"allOf":[{"$ref":"#/$defs/SemanticReference"},{"properties":{"role":{"const":"srt_cues"},"object_type":{"const":"SrtCueArtifact"}}}]}},"exact_dependencies":{"type":"array","minItems":1,"maxItems":1,"items":{"allOf":[{"$ref":"#/$defs/ExactReference"},{"properties":{"role":{"const":"srt_cues"},"object_type":{"const":"SrtCueArtifact"}}}]}},"provenance":{"$ref":"#/$defs/ConfirmedUnitProvenance"},"payload":{"$ref":"#/$defs/ConfirmedUnitPayload"},"semantic_hash":{"$ref":"#/$defs/Hash"},"artifact_hash":{"$ref":"#/$defs/Hash"}}
+    },
+    "SrtParserBuildPayload": {
+      "type":"object","additionalProperties":false,"required":["protocol_id","parser_id","parser_version","entry_source_raw_hash","core_build_ref"],
+      "properties":{"protocol_id":{"const":"semantic-blueprint.v2"},"parser_id":{"const":"srt-cue-parser.v1"},"parser_version":{"const":"1"},"entry_source_raw_hash":{"$ref":"#/$defs/Hash"},"core_build_ref":{"allOf":[{"$ref":"#/$defs/ExactReference"},{"properties":{"role":{"const":"core_build"},"object_type":{"const":"AdapterBuildManifest"}}}]}}
+    },
+    "SrtParserBuildManifest": {
+      "allOf":[{"$ref":"#/$defs/Envelope"}],"required":["object_type","object_id","authority_scope","semantic_input_refs","exact_dependencies","provenance","payload"],
+      "properties":{"object_type":{"const":"SrtParserBuildManifest"},"object_id":{"const":"srt-parser-build:v2:001"},"authority_scope":{"const":"internal_candidate"},"semantic_input_refs":{"type":"array","maxItems":0},"exact_dependencies":{"type":"array","minItems":1,"maxItems":1,"items":{"allOf":[{"$ref":"#/$defs/ExactReference"},{"properties":{"role":{"const":"core_build"},"object_type":{"const":"AdapterBuildManifest"}}}]}},"provenance":{"type":"object","additionalProperties":false,"required":["fixture_only"],"properties":{"fixture_only":{"const":true}}},"payload":{"$ref":"#/$defs/SrtParserBuildPayload"}}
+    },
+    "ErrorEnvelope": {
+      "type":"object","additionalProperties":false,"required":["error_version","code","stage","message","object_ref","violations","retryable","exit_code"],
+      "properties":{"error_version":{"const":"error.v2"},"code":{"enum":["CONTRACT_INVALID","INTEGRITY_MISMATCH","STALE_DEPENDENCY","PREVIEW_INCOMPLETE","OUTPUT_EXISTS","UNSUPPORTED_ATOMIC_PUBLISH","FIXTURE_ONLY_INPUT","POLICY_SNAPSHOT_INVALID","SOURCE_INVARIANT_VIOLATION","SRT_INPUT_INVALID","CONFIRMED_UNIT_INVALID","INTERNAL_ERROR"]},"stage":{"$ref":"#/$defs/Text"},"message":{"$ref":"#/$defs/Text"},"object_ref":{"type":["object","null"]},"violations":{"type":"array","items":{"oneOf":[{"$ref":"#/$defs/Violation"},{"$ref":"#/$defs/InputViolation"}]}},"retryable":{"type":"boolean"},"exit_code":{"type":"integer"}}
+    }
+  }
+}

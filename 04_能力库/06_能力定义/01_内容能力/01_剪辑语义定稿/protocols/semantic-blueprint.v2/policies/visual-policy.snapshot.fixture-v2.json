@@ -1,0 +1,12 @@
+{
+  "object_type": "VisualPolicySnapshot",
+  "object_id": "visual-policy:fixture-v2:001",
+  "schema_version": "visual-policy.snapshot.fixture-v2",
+  "authority_scope": "visual_policy_authority",
+  "rules": [
+    {"rule_id":"pol.semantic-invariants","severity":"blocking","requires":["subtitle_text_unchanged","fact_unchanged","causal_order_unchanged"]},
+    {"rule_id":"pol.single-primary-focus","severity":"blocking","maximum_simultaneous_primary_focus":1},
+    {"rule_id":"pol.three-stage-continuity","severity":"blocking","ordered_stages":["start","process","end"]},
+    {"rule_id":"pol.component-provenance","severity":"blocking","requires_catalog_fact":true}
+  ]
+}

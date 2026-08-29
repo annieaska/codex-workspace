@@ -1,0 +1,17 @@
+{
+  "schema_version": "fixture-source-artifact.v2",
+  "adapter_mode": "fixture_only",
+  "seed_provenance": {"source_case":"hard-sun-protection-opening.v1","source_raw_sha256":"sha256:32d8a70b97caa878afc39eafcb14c78c3b73627d7f9bd889867eeeadd117616d"},
+  "content_type": "科普口播",
+  "source_refs": ["source:hard-sun-protection/a-roll", "source:hard-sun-protection/subtitles"],
+  "primary_video_ref": "source:hard-sun-protection/a-roll",
+  "subtitles": [
+    {"id":"s001","start_ms":66,"end_ms":1000,"text":"一到春夏","source_ref":"source:hard-sun-protection/subtitles"},
+    {"id":"s002","start_ms":1000,"end_ms":3766,"text":"防晒帽、防晒服、防晒口罩就成了","source_ref":"source:hard-sun-protection/subtitles"},
+    {"id":"s003","start_ms":3766,"end_ms":6166,"text":"很多人必备的防晒装备","source_ref":"source:hard-sun-protection/subtitles"},
+    {"id":"s004","start_ms":6166,"end_ms":8600,"text":"那大家在选择这些装备的时候","source_ref":"source:hard-sun-protection/subtitles"},
+    {"id":"s005","start_ms":8600,"end_ms":10966,"text":"有没有听过下面这些说法呢","source_ref":"source:hard-sun-protection/subtitles"}
+  ],
+  "confirmed_logic_summary": "从春夏防晒装备的常见选择切入，引出后续需要核验的流行说法。",
+  "unit": {"unit_id":"unit-001","order":1,"title":"春夏防晒装备登场","logic_role":"建立使用场景并提出选择疑问","subtitle_ids":["s001","s002","s003","s004","s005"]}
+}
