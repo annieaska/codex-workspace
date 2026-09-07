@@ -1,0 +1,36 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.codex/
+.context/
+
+# Memory stores, hooks, caches, and backups
+memmy/
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.backup
+hooks/
+
+# Private work material
+projects/
+workspace/
+knowledge/
+inputs/
+outputs/
+artifacts/
+
+# Local and generated files
+.DS_Store
+node_modules/
+dist/
+build/
+coverage/
+*.log
+tmp/
+temp/
