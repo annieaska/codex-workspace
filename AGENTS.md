@@ -36,6 +36,13 @@
 - Record the current delivery cycle, confirmed decisions, gate, latest verification, active risks, and next action.
 - Do not create a project state file for a short, self-contained task.
 
+## Corrections and closure evidence
+
+- Preserve each user correction's intended result, scope, and acceptance criteria. Replace outdated completion claims; do not narrow an overall requirement to a technical step or a local fix.
+- Keep open corrections in the existing project anchor or work artifact as requirement, status or gap, and closure evidence. Short tasks may keep them in the conversation. Do not create a parallel tracker or copy full chats and logs.
+- Before claiming completion or describing the only remaining issue, check every applicable acceptance criterion against evidence for the relevant artifact version. Missing evidence means unverified. Distinguish generation, execution, local checks, overall quality, and human acceptance; reuse valid checks without an automatic full rerun.
+- At handoff, recovery, and closure, reconcile the goal, open corrections, completion claims, and next action. Only the designated state owner updates shared project status. Keep closed items as brief conclusions and evidence links, with process history outside the active anchor.
+
 ## Memory and skills
 
 - Do not preload long-term memory for every task. Query it only when the user asks for recall or a necessary historical fact is missing.
