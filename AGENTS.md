@@ -15,6 +15,8 @@
 - Preserve unrelated user changes in a dirty worktree.
 - Use explicit error handling and type-safe interfaces where the project supports them.
 - Validate in proportion to the changed behavior and demonstrated risk. Prefer the smallest relevant check over an automatic full test suite.
+- Reuse valid evidence; independent review does not automatically require rerunning tests. Expand validation only when changed behavior or concrete risk warrants it.
+- Documentation-only Git pushes require content and remote commit verification, not service smoke tests. Actual deployment checks should follow the affected service and risks.
 - Stop when the requested behavior is verified and all in-scope failures introduced or discovered by the change are closed.
 
 ## Active context
@@ -23,6 +25,8 @@
 - Keep resolved history, complete logs, old outputs, and unused references outside the active context. Retain their paths so they can be reopened if needed.
 - Search narrowly before reading broadly. Read relevant sections rather than entire repositories or long documents.
 - Filter, summarize, or persist large tool output before returning only the evidence required for the current decision.
+- Use summaries as navigation; inspect source passages before edits and consequential decisions. Apply the question-driven reading guidance in `docs/context-and-memory.md` when needed.
+- Default to one agent. Delegate only with explicit user authorization or an applicable instruction for a bounded independent task; do not automatically switch models.
 - For batch or media-heavy work, fix the current batch, inputs, dependencies, and acceptance criteria before processing it.
 - Before compaction or handoff, write an incremental anchor containing only durable state. On resume, read the anchor first and retrieve supporting evidence only as needed.
 
