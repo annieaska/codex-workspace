@@ -19,6 +19,14 @@
 - Documentation-only Git pushes require content and remote commit verification, not service smoke tests. Actual deployment checks should follow the affected service and risks.
 - Stop when the requested behavior is verified and all in-scope failures introduced or discovered by the change are closed.
 
+## Default implementation and validation rhythm
+
+- For software and web changes, default to: converge requirements -> complete the implementation candidate -> run targeted validation.
+- During implementation, finish the confirmed scope before running routine tests. Run an earlier check only when it is the minimum prerequisite for continuing or an immediate safety or data-integrity risk requires it.
+- After the implementation candidate is complete, run one minimum sufficient validation set matched to the changed behavior. Do not default to the full suite, broad exploration, or unrelated test cases.
+- If targeted validation fails, fix only the discovered in-scope issue and rerun the failed check plus checks affected by that fix. Stop when the relevant checks pass and no new concrete risk remains.
+- “Implementation complete” means a verifiable candidate exists; it does not imply acceptance, integration, commit, push, merge, deployment, or publication. Those actions require their own authorization.
+
 ## Active context
 
 - Keep one active working set per task: goal and acceptance criteria, explicit exclusions, constraints and authorization, confirmed decisions, current gate, required paths or versions, latest verification, risks, and next action.
@@ -29,6 +37,8 @@
 - Default to one agent. Delegate only with explicit user authorization or an applicable instruction for a bounded independent task; do not automatically switch models.
 - For batch or media-heavy work, fix the current batch, inputs, dependencies, and acceptance criteria before processing it.
 - Before compaction or handoff, write an incremental anchor containing only durable state. On resume, read the anchor first and retrieve supporting evidence only as needed.
+- Keep each authoritative parameter or input in one named source of truth. In handoffs and reviews, carry its location plus the applicable version, commit, or hash instead of repeating large parameter blocks.
+- Treat duplicated JSON, configuration, logs, Base64, full histories, and unchanged tool output as review-gate failures unless the exact copy is necessary evidence. Reviewers must resolve conflicting values against the named source before approval.
 
 ## Project state
 
