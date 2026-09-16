@@ -1,6 +1,6 @@
 # Game V2 独立安装器
 
-状态：cy507 第 1 项 W7/FakeTCP、第 2 项 Xbox NAT 与第 3 项 DNS 均已完成技术和 Xbox 业务验收并正式提交；本轮四项问题关闭，范围始终仅限 cy507
+状态：cy507 已完成并收口；赵杰 zj717 的 1.5.5 状态延迟修正已生产执行并通过设备内及 Nebula HTTP 技术验证，用户于 2026-09-16 确认页面目前表现良好；贾志刚迁移进入只读准备，尚未施工
 
 ## 问题与目标
 
@@ -13,8 +13,8 @@
 - 路由器：仅 OpenWrt 25.12、apk、x86_64。
 - 一台 VPS 可登记多个 OpenWrt 客户端；每个客户端有独立 WireGuard 接口、密钥、地址、端口，以及独立 speederv2 密钥和端口。
 - 一台 OpenWrt 可导入多个 VPS profile，但任意时刻最多激活一个；导入完成后保持 `inactive`。
-- VPS 当前唯一安装入口：`game-v2-cy507-vps.sh preflight/apply/verify/commit/restore`。
-- OpenWrt 当前唯一安装入口：`bundles/cy507-openwrt/install.sh preflight/apply/verify/commit/restore`。
+- cy507 重建入口：VPS 为 `game-v2-cy507-vps.sh preflight/apply/verify/commit/restore`，OpenWrt 为 `bundles/cy507-openwrt/install.sh preflight/apply/verify/commit/restore`。
+- zj717 迁移与页面修复唯一入口：`scripts/game-v2-zj717-migrate.sh inspect/apply/repair-panel/repair-panel-status/repair-status-latency/reinstall-panel-page/commit-panel-page/rollback-panel-page/verify/status/commit/rollback`；基础迁移、既有页面修复、1.5.3 状态修复、1.5.4 纯前端整页重装及 1.5.5 状态延迟修正均已执行并提交，无待回滚任务。
 - OpenWrt 安装同时部署路由器本地控制页 `/wgpanel.html`；页面只调用本机 CGI，提供节点状态、列表和单活切换。
 - 安装入口仍分别在两端本机执行；运行时仅允许 OpenWrt 为当前 profile 通过专用身份、固定主机指纹和 VPS forced command 执行 FEC 六档配对事务，不提供通用跨机器编排。
 
@@ -31,6 +31,14 @@
 执行级别为二级“中等执行”。证据是双端组件存在真实联动与回归风险，但需求、平台、基数和入口均已确认，不需要继续探索产品方向或引入平台化设施。
 
 当前本地交付版本为 1.3.0：已收敛为仅限 cy507 的 VPS 与 OpenWrt 双端 fresh/rebuild-only 安装候选，包含最终通过验收的 FakeTCP、固定端口 NAT 和专用 DNS 设计。它已通过定向离线验证，但未部署，也不替代现网 cy507 的关闭证据。1.2.6 旧安装脚本、旧 OpenWrt 脚本包、旧安装文档及专属测试已删除；其他用户的非秘密参数记录保留在 `config/fleet/`，不进入 1.3.0 发布包，也不授权扩展施工范围。
+
+赵杰 zj717 作为 2026-09-16 新的独立任务处理。路线为：保留 VPS 已在线的通用 zj717 WireGuard/UDPspeeder 基座并叠加 FakeTCP、固定端口 NAT 与专用 DNS；OpenWrt 定向替换已经失配且握手陈旧的赵杰旧线路。唯一候选为 `03_交付物/game-v2-node-installer/scripts/game-v2-zj717-migrate.sh`，不会进入 cy507 1.3.0 发布包。
+
+2026-09-16 第二次执行事务 `zj717-20260915T223603Z-71012` 在 VPS 启动 `unbound-zj717.service` 时失败，脚本随即恢复双端；复核为 VPS 叠加对象 absent、OpenWrt 旧服务 running、新对象 absent、两端无待回滚任务。根因是 `unbound:unbound 0700` 专用目录与服务移除 `CAP_DAC_OVERRIDE` 后的 root 启动前检查冲突；候选仅对齐系统现有 Unbound 基线，将专用目录和公开 DNSSEC 根锚设为 `0755/0644`，不扩大 capability 或施工范围，待重新授权。
+
+2026-09-16 第三次执行事务 `zj717-20260915T224401Z-72754` 中 Unbound 配置检查和服务启动均通过，证明权限修正生效；随后 VPS `AllowedIPs` 校验误报并触发双端恢复。根因是 WireGuard 多地址输出以空白分隔为多个字段，旧校验只取 `$2`，漏掉第二条 Xbox `/32`。候选改为读取完整字段并精确接受客户端与 Xbox 两条地址，不改变运行配置；恢复后复核为旧 OpenWrt 线路运行、新对象 absent、两端无待回滚事务。
+
+随后对唯一候选做本地静态自审并更新至 `1.4.4`：关闭提交/回滚竞争和异常退出锁残留，OpenWrt 以同目录硬链接原子取得带 PID 的收口锁，改为恢复与验收成功后再取消定时回滚；补齐两端回滚后的控制面、受保护业务、旧配置和自有对象验证；修正 OpenWrt `31973/udp` 端口门禁与策略规则去重；新增 VPS 通用 zj717 双向转发及出口 NAT 的只读前置门禁。`1.4.4` 首次生产执行在 OpenWrt TCP DNS 探针停止，双端安全恢复并通过 `status + inspect`；定位为目标 BusyBox `nc` 不支持 `-w`，并非 DNS 服务失败。`1.4.5` 将该探针改为目标机实测通过且会主动清理进程的限时实现。事务 `zj717-20260915T234215Z-86178` 已完成双端备份、应用和技术验收；VPS 全局防火墙 reconcile 在安装后真实触发，规则仍在，随后提交与提交后复验均通过，两端状态为 `COMMITTED` 且自动回滚已取消。Xbox 当时没有实时业务流量，NAT 开放、DNS 界面和实际联机仍待用户人工确认。
 
 历史实现：VPS 共享基础层与多客户端注册表、每客户端独立运行对象、客户端安装包生成、OpenWrt 多 profile 单活事务、重启恢复、对象所有权保护、路由器本地控制页和离线回归测试均已落地。交付物位于 `03_交付物/game-v2-node-installer`，不包含 OpenClaw。
 
@@ -76,6 +84,8 @@
 
 ## 当前交付周期（跨窗口任务锚点）
 
+- 2026-09-16 zj717 当前状态：基础迁移事务 `zj717-20260915T234215Z-86178` 已完成 VPS 增量叠加和 OpenWrt 定向替换；VPS 的 zj717 FakeTCP、专用 DNS、固定端口 NAT 与 reconcile 集成均 active，OpenWrt 的 zj717 FakeTCP、profile、策略路由和 DNS/NAT 片段均 active。双端为 `COMMITTED`，基础迁移自动回滚已取消。
+- zj717 唯一脚本为 `03_交付物/game-v2-node-installer/scripts/game-v2-zj717-migrate.sh`，当前施工脚本版本 `1.5.5`；非秘密参数真源为 `config/fleet/zj717.conf`，施工记录为 `docs/zj717-migration.md`。1.5.3 状态修复事务 `zj717-panel-status-20260916T080734Z-45970` 已执行并提交。1.5.4 纯前端整页重装事务 `zj717-panel-page-20260916T082249Z-50903` 只备份并原子替换 OpenWrt `/www/wgpanel.html`，页面沿用当前 cy507 生产版本，并在浏览器端把 `nl-zhaojie-v2` 显示为“荷兰”；profile、label、CGI、controller、status hook、服务和 VPS 均未修改。后续截图中的“读取失败”撤销了 1.5.4 页面状态稳定的完成判断。只读计时确认本机 FEC 检查约 `0.00s`、单次 VPS 状态/验证约 `2.15–2.31s`，而修正前协调器的例行 `status` 先远程读取、再通过 `pair_verify` 第二次远程验证，完整状态接口曾耗时 `7.299s`，逼近前端 `8s` 超时。1.5.5 候选只修改 OpenWrt `/usr/local/lib/game-v2-zj717-panel/fec-coordinator.sh` 的例行状态分支，改为一次远程档位读取、双端档位一致性检查和本地服务健康检查；切换动作及显式 `verify/verify-transport` 继续执行双端验证，页面、状态钩子、两个 CGI、profile、当前 FEC、服务和 VPS 均不修改。候选生成、`sh -n` 与现网逐行差异检查已通过。生产事务 `zj717-panel-status-latency-20260916T091133Z-64179` 已备份并挂 15 分钟本机回滚，随后单文件替换；设备内状态钩子 2 秒、HTTP 状态接口 3 秒，从控制端沿页面使用的 `192.168.66.30` 地址读取页面、状态和节点接口通过，现行 FEC 保持 `extreme`；验收后回滚已取消。备份位于 `/root/game-v2-zj717-panel-status-latency-backups/zj717-panel-status-latency-20260916T091133Z-64179`。用户于 2026-09-16 确认页面目前表现良好，页面问题收口；Xbox NAT、DNS、联机仍待人工确认。贾志刚迁移转入只读准备，生产写入尚未授权。
 - 2026-09-15 本地安装交付已按用户授权收口为 1.3.0：VPS 入口为 `03_交付物/game-v2-node-installer/scripts/game-v2-cy507-vps.sh`，OpenWrt 入口为 `03_交付物/game-v2-node-installer/bundles/cy507-openwrt/install.sh`，完整顺序见 `03_交付物/game-v2-node-installer/docs/cy507-complete-install.md`。候选仅支持全新安装或明确重建，发现已有 cy507 对象会拒绝执行；本轮仅生成本地文件和发布包，未连接或写入现网。旧版安装脚本和对应测试清除后，当前定向测试 2/2 通过；其他用户的非秘密参数记录继续保留，但不进入发布包。发布归档为 `03_交付物/game-v2-node-installer/dist/game-v2-server-installer-1.3.0.tar.gz`，分发校验见同目录 `SHA256SUMS`。
 - 2026-09-15 当前顺序（取代本节其余旧进度结论）：四项问题已逐项关闭；第 1 项 W7/FakeTCP、第 2 项 cy507 Xbox NAT 与第 3 项 DNS 均已完成技术与 Xbox 业务验收并正式提交；第 4 项范围约束始终仅限 cy507。对象仅为 cy507、OpenWrt `192.168.50.7` 和荷兰 VPS `91.223.119.134`；`.3/.4`、其他三人，以及 `/Users/chengyu/07_工作系统/03_项目/21_国内直播跨境推流系统` 的端口、服务、容器、WireGuard、路由和防火墙规则均未纳入写入范围。本轮没有未关闭施工项；后续如需扩展其他用户，须作为新的独立任务重新限定范围并取得生产授权。
 - 荷兰 VPS 防火墙恢复控制面已于 2026-09-15 经真实重启验证：唯一全表恢复入口为 `netfilter-persistent.service`；`iptables.service`、`ip6tables.service`、`nftables.service` 均为 `masked/inactive`。关闭证据为 `02_工作区/Matt执行/workstreams/w7-firewall-restore-single-source/RESULT.md`。下方旧哈希记录只保留为历史，不再作为施工准入门槛。

@@ -1,0 +1,1577 @@
+<!doctype html>
+<!-- GAME_V2_WEB_PANEL_V1 -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="data:,">
+  <title>Game Route Control</title>
+  <style>
+    :root {
+      --ink: #f4fbff;
+      --muted: #8291a6;
+      --panel: rgba(12, 18, 30, 0.91);
+      --panel-strong: #101827;
+      --line: rgba(113, 236, 255, 0.18);
+      --cyan: #5cecff;
+      --cyan-deep: #10b9d7;
+      --acid: #d9ff43;
+      --acid-ink: #111800;
+      --magenta: #ff4fa7;
+      --warning: #ffc857;
+      --success: #7cff9b;
+      --danger: #ff5c7a;
+      --radius: 18px;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-height: 100%;
+      background: #05070d;
+    }
+
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 84% 8%, rgba(92, 236, 255, 0.12), transparent 28rem),
+        radial-gradient(circle at 2% 52%, rgba(255, 79, 167, 0.08), transparent 24rem),
+        linear-gradient(145deg, #05070d 0%, #080d17 56%, #06080e 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      content: "";
+      pointer-events: none;
+      opacity: 0.32;
+      background-image:
+        linear-gradient(rgba(92, 236, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(92, 236, 255, 0.05) 1px, transparent 1px);
+      background-size: 38px 38px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    button,
+    select,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible,
+    select:focus-visible {
+      outline: 3px solid rgba(92, 236, 255, 0.45);
+      outline-offset: 3px;
+    }
+
+    .shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: max(28px, env(safe-area-inset-top)) 0 max(34px, env(safe-area-inset-bottom));
+    }
+
+    .masthead {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 26px;
+    }
+
+    .eyebrow,
+    .panel-index,
+    .metric-label,
+    .field-label,
+    .log-time,
+    .contract {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 10px;
+      color: var(--cyan);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .eyebrow::before {
+      width: 24px;
+      height: 2px;
+      content: "";
+      background: currentColor;
+      box-shadow: 0 0 16px currentColor;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2.2rem, 7vw, 5.6rem);
+      font-weight: 950;
+      letter-spacing: -0.075em;
+      line-height: 0.84;
+      text-wrap: balance;
+    }
+
+    h1 span {
+      display: inline-block;
+      color: transparent;
+      background: linear-gradient(100deg, #fff 10%, var(--cyan) 58%, var(--acid));
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: title-arrive 720ms cubic-bezier(.2, .8, .2, 1) both;
+    }
+
+    .masthead-note {
+      width: min(260px, 30vw);
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.83rem;
+      line-height: 1.65;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.06fr) minmax(320px, 0.94fr);
+      gap: 18px;
+    }
+
+    .panel {
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(150deg, rgba(16, 24, 39, 0.97), var(--panel));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel::after {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 2px;
+      content: "";
+      opacity: 0.72;
+      background: linear-gradient(var(--cyan), transparent 72%);
+    }
+
+    .status-panel,
+    .route-panel,
+    .network-panel {
+      padding: clamp(20px, 3vw, 32px);
+    }
+
+    .status-panel {
+      grid-column: 1 / -1;
+    }
+
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .panel-title-wrap {
+      min-width: 0;
+    }
+
+    .panel-index {
+      margin: 0 0 6px;
+      color: var(--cyan);
+      font-size: 0.68rem;
+      font-weight: 800;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.25rem, 3vw, 1.7rem);
+      letter-spacing: -0.045em;
+    }
+
+    .live-state {
+      display: inline-flex;
+      min-height: 36px;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 11px;
+      border: 1px solid rgba(130, 145, 166, 0.2);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(4, 8, 15, 0.58);
+      font-size: 0.78rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .state-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--muted);
+      box-shadow: 0 0 0 transparent;
+    }
+
+    .live-state[data-state="online"] {
+      color: var(--success);
+    }
+
+    .live-state[data-state="online"] .state-dot {
+      background: var(--success);
+      box-shadow: 0 0 16px var(--success);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    .live-state[data-state="warning"] {
+      color: var(--warning);
+    }
+
+    .live-state[data-state="warning"] .state-dot {
+      background: var(--warning);
+      box-shadow: 0 0 12px var(--warning);
+    }
+
+    .live-state[data-state="error"] {
+      color: var(--danger);
+    }
+
+    .live-state[data-state="error"] .state-dot {
+      background: var(--danger);
+      box-shadow: 0 0 12px var(--danger);
+    }
+
+    .status-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric {
+      min-width: 0;
+      padding: 24px clamp(12px, 2.4vw, 26px);
+      border-right: 1px solid var(--line);
+    }
+
+    .metric:first-child {
+      padding-left: 0;
+    }
+
+    .metric:last-child {
+      padding-right: 0;
+      border-right: 0;
+    }
+
+    .metric-label {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 0.65rem;
+      font-weight: 800;
+    }
+
+    .metric-value {
+      display: block;
+      min-height: 1.2em;
+      overflow: hidden;
+      color: var(--ink);
+      font-size: clamp(1.25rem, 4vw, 2.45rem);
+      font-weight: 930;
+      letter-spacing: -0.055em;
+      line-height: 1.05;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .metric-value.kinetic {
+      animation: metric-swap 360ms cubic-bezier(.2, .8, .2, 1);
+    }
+
+    .signal-wrap {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .signal-icon {
+      width: 31px;
+      flex: 0 0 auto;
+      color: var(--muted);
+    }
+
+    .signal-icon rect {
+      fill: currentColor;
+      opacity: 0.22;
+    }
+
+    .signal-icon[data-level="1"] rect:nth-child(-n+1),
+    .signal-icon[data-level="2"] rect:nth-child(-n+2),
+    .signal-icon[data-level="3"] rect:nth-child(-n+3),
+    .signal-icon[data-level="4"] rect:nth-child(-n+4) {
+      opacity: 1;
+    }
+
+    .signal-icon[data-quality="good"] {
+      color: var(--success);
+      filter: drop-shadow(0 0 8px rgba(124, 255, 155, 0.42));
+    }
+
+    .signal-icon[data-quality="fair"] {
+      color: var(--warning);
+    }
+
+    .signal-icon[data-quality="poor"] {
+      color: var(--danger);
+    }
+
+    .status-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 16px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .refresh-button {
+      min-width: 44px;
+      min-height: 44px;
+      padding: 9px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--cyan);
+      background: rgba(92, 236, 255, 0.06);
+      cursor: pointer;
+      font-weight: 850;
+    }
+
+    .refresh-button:hover {
+      border-color: rgba(92, 236, 255, 0.46);
+      background: rgba(92, 236, 255, 0.12);
+    }
+
+    .control-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .field {
+      display: grid;
+      gap: 9px;
+    }
+
+    .field-label {
+      color: var(--muted);
+      font-size: 0.68rem;
+      font-weight: 800;
+    }
+
+    .select-wrap {
+      position: relative;
+    }
+
+    .select-wrap::after {
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      width: 8px;
+      height: 8px;
+      content: "";
+      pointer-events: none;
+      border-right: 2px solid var(--cyan);
+      border-bottom: 2px solid var(--cyan);
+      transform: translateY(-70%) rotate(45deg);
+    }
+
+    select {
+      width: 100%;
+      min-height: 50px;
+      padding: 0 46px 0 15px;
+      border: 1px solid rgba(130, 145, 166, 0.28);
+      border-radius: 12px;
+      appearance: none;
+      color: var(--ink);
+      background: #080e19;
+      cursor: pointer;
+      font-weight: 760;
+    }
+
+    select:hover {
+      border-color: rgba(92, 236, 255, 0.55);
+    }
+
+    .selection-delta {
+      min-height: 24px;
+      margin: -2px 0 0;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.5;
+    }
+
+    .selection-delta[data-changed="true"] {
+      color: var(--acid);
+      animation: delta-nudge 300ms ease-out;
+    }
+
+    .button-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .button {
+      min-height: 50px;
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 920;
+      letter-spacing: -0.01em;
+      transition: transform 160ms ease, filter 160ms ease, opacity 160ms ease;
+    }
+
+    .button:hover:not(:disabled) {
+      transform: translateY(-2px);
+      filter: brightness(1.06);
+    }
+
+    .button:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    .button:disabled {
+      cursor: not-allowed;
+      opacity: 0.46;
+    }
+
+    .button-primary {
+      color: var(--acid-ink);
+      background: linear-gradient(105deg, var(--acid), #a9ff65);
+      box-shadow: 0 12px 28px rgba(217, 255, 67, 0.15);
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(92, 236, 255, 0.3);
+      color: var(--cyan);
+      background: rgba(92, 236, 255, 0.08);
+    }
+
+    .button-rollback {
+      border: 1px solid rgba(255, 79, 167, 0.36);
+      color: #ff9bc9;
+      background: rgba(255, 79, 167, 0.09);
+    }
+
+    #apply-btn[hidden] {
+      display: none;
+    }
+
+    .safety-block {
+      margin-top: 22px;
+      padding: 17px;
+      border: 1px solid rgba(92, 236, 255, 0.17);
+      border-radius: 14px;
+      background: rgba(5, 11, 20, 0.58);
+    }
+
+    .safety-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 7px;
+      color: var(--cyan);
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+
+    .safety-head svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .safety-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.62;
+    }
+
+    .pending {
+      display: none;
+      gap: 12px;
+      margin-top: 16px;
+      padding: 15px;
+      border: 1px solid rgba(255, 200, 87, 0.35);
+      border-radius: 13px;
+      background: rgba(255, 200, 87, 0.08);
+      animation: pending-arrive 340ms ease-out;
+    }
+
+    .pending[aria-hidden="false"] {
+      display: grid;
+    }
+
+    .pending-title {
+      margin: 0;
+      color: var(--warning);
+      font-size: 0.88rem;
+      font-weight: 900;
+    }
+
+    .pending-copy {
+      margin: 0;
+      color: #d5cba9;
+      font-size: 0.75rem;
+      line-height: 1.55;
+    }
+
+    .pending-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+    }
+
+    .verdict {
+      padding: 18px;
+      border: 1px solid rgba(130, 145, 166, 0.2);
+      border-radius: 14px;
+      background: rgba(4, 9, 17, 0.68);
+    }
+
+    .verdict-kicker {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.66rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .verdict-title {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(1.25rem, 3.4vw, 2rem);
+      font-weight: 930;
+      letter-spacing: -0.045em;
+      line-height: 1.08;
+    }
+
+    .verdict-title.kinetic {
+      animation: metric-swap 360ms cubic-bezier(.2, .8, .2, 1);
+    }
+
+    .probe-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .probe-item {
+      padding: 13px;
+      border: 1px solid rgba(130, 145, 166, 0.17);
+      border-radius: 12px;
+      background: rgba(8, 14, 25, 0.64);
+    }
+
+    .probe-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.66rem;
+      line-height: 1.45;
+    }
+
+    .probe-item strong {
+      display: block;
+      margin-top: 5px;
+      color: var(--ink);
+      font-size: 0.88rem;
+      line-height: 1.35;
+    }
+
+    .log-box {
+      display: grid;
+      gap: 8px;
+      max-height: 220px;
+      margin-top: 12px;
+      padding: 13px;
+      border: 1px solid rgba(130, 145, 166, 0.17);
+      border-radius: 12px;
+      background: #050911;
+      overflow: auto;
+      scrollbar-color: var(--cyan-deep) transparent;
+    }
+
+    .log-entry {
+      display: grid;
+      grid-template-columns: 70px minmax(0, 1fr);
+      gap: 9px;
+      color: #bdcad7;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.7rem;
+      line-height: 1.5;
+    }
+
+    .log-time {
+      color: #58687a;
+      letter-spacing: 0;
+    }
+
+    .log-entry[data-level="error"] {
+      color: #ff91a5;
+    }
+
+    .log-entry[data-level="success"] {
+      color: var(--success);
+    }
+
+    .contract {
+      margin: 18px 0 0;
+      color: #526174;
+      font-size: 0.56rem;
+      line-height: 1.75;
+      word-break: break-word;
+    }
+
+    .dialog-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: none;
+      place-items: center;
+      padding: 18px;
+      background: rgba(0, 3, 9, 0.78);
+      backdrop-filter: blur(12px);
+    }
+
+    .dialog-backdrop[aria-hidden="false"] {
+      display: grid;
+    }
+
+    .dialog {
+      width: min(500px, 100%);
+      padding: clamp(22px, 5vw, 32px);
+      border: 1px solid rgba(92, 236, 255, 0.32);
+      border-radius: 18px;
+      background:
+        linear-gradient(145deg, rgba(92, 236, 255, 0.07), transparent 40%),
+        #0b111d;
+      box-shadow: 0 30px 100px rgba(0, 0, 0, 0.7);
+      animation: dialog-in 240ms cubic-bezier(.2, .8, .2, 1);
+    }
+
+    .dialog-mark {
+      display: inline-flex;
+      min-height: 29px;
+      align-items: center;
+      padding: 5px 9px;
+      border: 1px solid rgba(217, 255, 67, 0.3);
+      border-radius: 999px;
+      color: var(--acid);
+      background: rgba(217, 255, 67, 0.07);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.65rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+    }
+
+    .dialog h3 {
+      margin: 17px 0 10px;
+      font-size: clamp(1.5rem, 5vw, 2.35rem);
+      letter-spacing: -0.055em;
+      line-height: 1.02;
+    }
+
+    .dialog p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    .dialog-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @keyframes title-arrive {
+      from {
+        opacity: 0;
+        transform: translateY(0.38em) skewX(-6deg);
+        filter: blur(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) skewX(0);
+        filter: blur(0);
+      }
+    }
+
+    @keyframes metric-swap {
+      0% {
+        opacity: 0.18;
+        transform: translateY(0.5em);
+        filter: blur(4px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    @keyframes pulse {
+      50% {
+        transform: scale(0.76);
+        opacity: 0.72;
+      }
+    }
+
+    @keyframes delta-nudge {
+      0% {
+        opacity: 0;
+        transform: translateX(-7px);
+      }
+    }
+
+    @keyframes pending-arrive {
+      from {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+    }
+
+    @keyframes dialog-in {
+      from {
+        opacity: 0;
+        transform: translateY(14px) scale(0.98);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        width: min(100% - 22px, 680px);
+        padding-top: 20px;
+      }
+
+      .masthead {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .masthead-note {
+        width: 100%;
+        max-width: 520px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .status-panel {
+        grid-column: auto;
+      }
+
+      .metric {
+        padding-top: 19px;
+        padding-bottom: 19px;
+      }
+
+      .status-foot {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 460px) {
+      h1 {
+        font-size: clamp(2.25rem, 17vw, 4rem);
+      }
+
+      .status-metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .metric,
+      .metric:first-child,
+      .metric:last-child {
+        padding: 16px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .metric:last-child {
+        border-bottom: 0;
+      }
+
+      .metric-value {
+        font-size: 1.6rem;
+      }
+
+      .probe-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dialog-actions,
+      .pending-actions {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-height: 520px) and (orientation: landscape) {
+      .shell {
+        padding-top: 14px;
+      }
+
+      .masthead {
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      .dialog {
+        max-height: calc(100vh - 24px);
+        overflow: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Private route console</p>
+        <h1><span>GAME ROUTE</span></h1>
+      </div>
+      <p class="masthead-note">选择已加入的游戏节点并查看真实延迟。线路失败时停止游戏加速，不会回退旧线路。</p>
+    </header>
+
+    <div class="grid">
+      <section class="panel status-panel" id="status-bar" aria-labelledby="status-heading">
+        <div class="panel-head">
+          <div class="panel-title-wrap">
+            <p class="panel-index">Live / Signal</p>
+            <h2 id="status-heading">线路状态</h2>
+          </div>
+          <div class="live-state" id="live-state" data-state="loading" aria-live="polite">
+            <span class="state-dot" aria-hidden="true"></span>
+            <span id="live-state-text">正在读取</span>
+          </div>
+        </div>
+
+        <div class="status-metrics" id="status-metrics">
+          <div class="metric">
+            <span class="metric-label">当前节点</span>
+            <strong class="metric-value" id="current-node">—</strong>
+          </div>
+          <div class="metric">
+            <span class="metric-label">FEC 档位</span>
+            <strong class="metric-value" id="current-fec-mode">—</strong>
+          </div>
+          <div class="metric">
+            <span class="metric-label">线路信号</span>
+            <div class="signal-wrap">
+              <svg class="signal-icon" id="signal-icon" data-level="0" data-quality="unknown" viewBox="0 0 32 24" aria-hidden="true">
+                <rect x="1" y="17" width="5" height="6" rx="1"></rect>
+                <rect x="9" y="12" width="5" height="11" rx="1"></rect>
+                <rect x="17" y="7" width="5" height="16" rx="1"></rect>
+                <rect x="25" y="2" width="5" height="21" rx="1"></rect>
+              </svg>
+              <strong class="metric-value" id="latency-value">— ms</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="status-foot">
+          <span id="status-updated">等待第一次状态同步</span>
+          <button class="refresh-button" id="refresh-btn" type="button" aria-label="刷新线路状态">刷新</button>
+        </div>
+      </section>
+
+      <section class="panel route-panel" id="route-panel" aria-labelledby="route-heading">
+        <div class="panel-head">
+          <div class="panel-title-wrap">
+            <p class="panel-index">01 / Route</p>
+            <h2 id="route-heading">切换线路</h2>
+          </div>
+        </div>
+
+        <div class="control-stack">
+          <label class="field">
+            <span class="field-label">目标节点</span>
+            <span class="select-wrap">
+              <select id="node-select" aria-describedby="selection-delta">
+                <option value="">正在载入节点…</option>
+              </select>
+            </span>
+          </label>
+
+          <label class="field">
+            <span class="field-label">传输预设</span>
+            <span class="select-wrap">
+              <select id="fec-select" aria-describedby="selection-delta">
+                <option value="auto">自动 · 固定策略</option>
+                <option value="original">原始 · 无 FEC</option>
+                <option value="light">轻量 · 2:2</option>
+                <option value="balanced">均衡 · 2:4</option>
+                <option value="strong">增强 · 2:6</option>
+                <option value="extreme">极限 · 2:4 / 0s</option>
+              </select>
+            </span>
+          </label>
+
+          <label hidden>
+            <span>传输方式</span>
+            <select id="mode-select">
+              <option value="faketcp">fakeTCP</option>
+              <option value="direct_udp">Direct UDP</option>
+            </select>
+          </label>
+
+          <p class="selection-delta" id="selection-delta" data-changed="false">读取当前运行方式后即可选择。</p>
+
+          <div class="button-row">
+            <button class="button button-primary" id="apply-btn" type="button">应用服务</button>
+          </div>
+        </div>
+
+        <div class="safety-block">
+          <div class="safety-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 3 5 6v5c0 4.6 2.9 8.6 7 10 4.1-1.4 7-5.4 7-10V6l-7-3Z"></path>
+              <path d="m9 12 2 2 4-5"></path>
+            </svg>
+            变更保护
+          </div>
+          <p class="safety-copy">切换时会先核对配置；启动失败、主动停止或确认超时都会断开游戏线路。</p>
+
+          <div class="pending" id="transaction-pending" aria-hidden="true">
+            <p class="pending-title">新线路待确认 · <span id="confirm-countdown">—</span></p>
+            <p class="pending-copy" id="pending-copy">请先确认 Xbox 联机可用；停止后不会回退旧线路。</p>
+            <div class="pending-actions">
+              <button class="button button-secondary" id="confirm-btn" type="button">保留更改</button>
+              <button class="button button-rollback" id="rollback-btn" type="button">停止并断开</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel network-panel" id="network-log" aria-labelledby="network-heading">
+        <div class="panel-head">
+          <div class="panel-title-wrap">
+            <p class="panel-index">02 / Network Log</p>
+            <h2 id="network-heading">网络状态</h2>
+          </div>
+        </div>
+
+        <div class="verdict">
+          <p class="verdict-kicker">Target connection</p>
+          <p class="verdict-title" id="connection-verdict" aria-live="polite">正在核验目标节点</p>
+        </div>
+
+        <div class="probe-grid">
+          <div class="probe-item">
+            <span>单次探测结果</span>
+            <strong id="probe-result">等待探测</strong>
+          </div>
+          <div class="probe-item">
+            <span>目标延迟</span>
+            <strong id="network-latency">— ms</strong>
+          </div>
+        </div>
+
+        <div class="log-box" id="log-box" role="log" aria-live="polite" aria-relevant="additions">
+          <div class="log-entry">
+            <span class="log-time">SYSTEM</span>
+            <span>控制台已启动，等待路由器返回状态。</span>
+          </div>
+        </div>
+
+        <p class="contract">profile_mode=single_active · transport=faketcp · fec=fixed_presets_paired_transaction · persistence=enabled · activation_failure=fail_closed</p>
+      </section>
+    </div>
+  </main>
+
+  <div class="dialog-backdrop" id="change-dialog" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="dialog-title" aria-describedby="dialog-copy">
+    <div class="dialog" tabindex="-1">
+      <span class="dialog-mark">Confirm change</span>
+      <h3 id="dialog-title">确认切换运行方式？</h3>
+      <p id="dialog-copy">本次操作将改变当前线路。</p>
+      <div class="dialog-actions">
+        <button class="button button-secondary" id="dialog-cancel" type="button">先不切换</button>
+        <button class="button button-primary" id="dialog-confirm" type="button">确认应用</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    "use strict";
+
+    const API_ENDPOINT = "/cgi-bin/wg_api.sh";
+    const NODES_ENDPOINT = "/cgi-bin/wg_nodes.sh";
+    const STATUS_REFRESH_MS = 10000;
+
+    const nodeSelect = document.getElementById("node-select");
+    const modeSelect = document.getElementById("mode-select");
+    const fecSelect = document.getElementById("fec-select");
+    const applyBtn = document.getElementById("apply-btn");
+    const confirmBtn = document.getElementById("confirm-btn");
+    const rollbackBtn = document.getElementById("rollback-btn");
+    const refreshBtn = document.getElementById("refresh-btn");
+    const pendingBar = document.getElementById("transaction-pending");
+    const countdown = document.getElementById("confirm-countdown");
+    const dialogBackdrop = document.getElementById("change-dialog");
+    const dialogPanel = dialogBackdrop.querySelector(".dialog");
+    const dialogTitle = document.getElementById("dialog-title");
+    const dialogCopy = document.getElementById("dialog-copy");
+    const dialogCancel = document.getElementById("dialog-cancel");
+    const dialogConfirm = document.getElementById("dialog-confirm");
+
+    let currentEnabled = "0";
+    let currentNode = "";
+    let currentNodeLabel = "—";
+    let currentMode = "";
+    let currentFec = "original";
+    let currentTransaction = "";
+    let prepared = false;
+    let remainingSeconds = null;
+    let countdownTimer = null;
+    let nodeRegistry = [];
+    let selectionDirty = false;
+    let dialogAction = null;
+    let dialogReturnFocus = null;
+
+    async function fetchWithTimeout(url, timeoutMs) {
+      const controller = new AbortController();
+      const timer = window.setTimeout(() => controller.abort(), timeoutMs);
+      try {
+        return await fetch(url, { cache: "no-store", signal: controller.signal });
+      } catch (error) {
+        if (error && error.name === "AbortError") throw new Error("请求超时，请检查路由器服务状态");
+        throw error;
+      } finally {
+        window.clearTimeout(timer);
+      }
+    }
+
+    function parseFields(text) {
+      const result = {};
+      String(text).split(/\r?\n/).forEach((line) => {
+        const splitAt = line.indexOf("=");
+        if (splitAt <= 0) return;
+        result[line.slice(0, splitAt).trim()] = line.slice(splitAt + 1).trim();
+      });
+      return result;
+    }
+
+    function escapeLogValue(value) {
+      return String(value == null ? "" : value).replace(/\s+/g, " ").trim();
+    }
+
+    function timestamp() {
+      return new Intl.DateTimeFormat("zh-CN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).format(new Date());
+    }
+
+    function appendLog(message, level) {
+      const box = document.getElementById("log-box");
+      const row = document.createElement("div");
+      const time = document.createElement("span");
+      const content = document.createElement("span");
+      row.className = "log-entry";
+      row.dataset.level = level || "info";
+      time.className = "log-time";
+      time.textContent = timestamp();
+      content.textContent = escapeLogValue(message);
+      row.append(time, content);
+      box.appendChild(row);
+      while (box.children.length > 12) box.removeChild(box.firstElementChild);
+      box.scrollTop = box.scrollHeight;
+    }
+
+    function animateText(element, value) {
+      const next = String(value);
+      if (element.textContent === next) return;
+      element.textContent = next;
+      element.classList.remove("kinetic");
+      void element.offsetWidth;
+      element.classList.add("kinetic");
+    }
+
+    function fecLabel(value) {
+      return {
+        auto: "自动",
+        original: "原始",
+        light: "轻量",
+        balanced: "均衡",
+        strong: "增强",
+        extreme: "极限"
+      }[value] || value || "—";
+    }
+
+    function setLiveState(state, text) {
+      const liveState = document.getElementById("live-state");
+      liveState.dataset.state = state;
+      document.getElementById("live-state-text").textContent = text;
+    }
+
+    function latencyNumber(raw) {
+      const parsed = Number.parseFloat(raw);
+      return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
+    }
+
+    function setSignal(latency) {
+      const icon = document.getElementById("signal-icon");
+      const latencyText = latency == null ? "— ms" : latency.toFixed(latency < 100 ? 1 : 0) + " ms";
+      let level = 0;
+      let quality = "unknown";
+      if (latency != null && latency < 60) {
+        level = 4;
+        quality = "good";
+      } else if (latency != null && latency < 100) {
+        level = 3;
+        quality = "good";
+      } else if (latency != null && latency < 160) {
+        level = 2;
+        quality = "fair";
+      } else if (latency != null) {
+        level = 1;
+        quality = "poor";
+      }
+      icon.dataset.level = String(level);
+      icon.dataset.quality = quality;
+      animateText(document.getElementById("latency-value"), latencyText);
+      document.getElementById("network-latency").textContent = latencyText;
+    }
+
+    function setNetworkVerdict(status, latency, hasLatencyTelemetry) {
+      const verdict = document.getElementById("connection-verdict");
+      const probe = document.getElementById("probe-result");
+      if (status.WG_ENABLED !== "1") {
+        animateText(verdict, "服务未运行");
+        probe.textContent = "未执行目标探测";
+        setLiveState("warning", "未运行");
+        return;
+      }
+      if (status.WG_FEC_PAIR_STATE === "degraded") {
+        animateText(verdict, "通道运行中，FEC 配对校验暂不可用");
+        probe.textContent = "远端校验瞬时失败，可刷新重试";
+        setLiveState("warning", "配对待复核");
+        return;
+      }
+      if (!hasLatencyTelemetry) {
+        animateText(verdict, "通道已启动，延时数据未配置");
+        probe.textContent = "控制端未提供探测数据";
+        setLiveState("warning", "延时未配置");
+        return;
+      }
+      if (latency != null) {
+        animateText(verdict, "已连接 " + currentNodeLabel);
+        probe.textContent = "目标已响应 · 单个探测包";
+        setLiveState("online", "目标已响应");
+        return;
+      }
+      animateText(verdict, "通道已启动，目标未响应");
+      probe.textContent = "单个探测包无响应";
+      setLiveState("error", "探测失败");
+    }
+
+    function parseNodeLine(line) {
+      const parts = line.split("|");
+      if (parts.length < 3) return null;
+      const modes = parts.slice(2).map((part) => {
+        const modeParts = part.split(":");
+        return { id: modeParts[0], state: modeParts[1] || "ready" };
+      }).filter((mode) => mode.id === "faketcp" || mode.id === "direct_udp");
+      return {
+        id: parts[0],
+        label: parts[1] || parts[0],
+        modes
+      };
+    }
+
+    function availableModeFor(nodeId, preferredMode) {
+      const node = nodeRegistry.find((item) => item.id === nodeId);
+      if (!node) return preferredMode || "faketcp";
+      const ready = node.modes.filter((mode) => mode.state !== "unavailable");
+      if (ready.some((mode) => mode.id === preferredMode)) return preferredMode;
+      if (ready.some((mode) => mode.id === "faketcp")) return "faketcp";
+      if (ready.some((mode) => mode.id === "direct_udp")) return "direct_udp";
+      return preferredMode || "faketcp";
+    }
+
+    async function loadNodes() {
+      const response = await fetchWithTimeout(NODES_ENDPOINT, 5000);
+      if (!response.ok) throw new Error("节点列表读取失败（HTTP " + response.status + "）");
+      const body = await response.text();
+      nodeRegistry = body.split(/\r?\n/).map(parseNodeLine).filter(Boolean);
+      if (!nodeRegistry.length) throw new Error("节点列表为空");
+
+      const selected = nodeSelect.value || currentNode || nodeRegistry[0].id;
+      nodeSelect.replaceChildren();
+      nodeRegistry.forEach((node) => {
+        const option = document.createElement("option");
+        option.value = node.id;
+        option.textContent = node.label;
+        nodeSelect.appendChild(option);
+      });
+      nodeSelect.value = nodeRegistry.some((node) => node.id === selected) ? selected : nodeRegistry[0].id;
+      modeSelect.value = availableModeFor(nodeSelect.value, currentMode);
+      updateSelectionDelta();
+    }
+
+    function hasRuntimeChange() {
+      return currentEnabled !== "1"
+        || nodeSelect.value !== currentNode
+        || modeSelect.value !== currentMode
+        || fecSelect.value !== currentFec;
+    }
+
+    function updateSelectionDelta() {
+      const delta = document.getElementById("selection-delta");
+      if (!currentNode) {
+        delta.textContent = "等待当前运行状态。";
+        delta.dataset.changed = "false";
+        return;
+      }
+      modeSelect.value = availableModeFor(nodeSelect.value, modeSelect.value || currentMode);
+      const changed = hasRuntimeChange();
+      delta.dataset.changed = String(changed);
+      if (!changed) {
+        delta.textContent = "当前选择与运行方式一致。";
+      } else {
+        const targetLabel = nodeSelect.options[nodeSelect.selectedIndex]?.textContent || nodeSelect.value;
+        delta.textContent = "待切换："
+          + targetLabel + " / " + fecLabel(fecSelect.value);
+      }
+    }
+
+    function updateApplyButtonState() {
+      applyBtn.hidden = Boolean(prepared);
+      applyBtn.disabled = !nodeSelect.value || !fecSelect.value || prepared;
+      pendingBar.setAttribute("aria-hidden", prepared ? "false" : "true");
+      updateSelectionDelta();
+    }
+
+    function startCountdown() {
+      if (countdownTimer) window.clearInterval(countdownTimer);
+      const render = () => {
+        if (remainingSeconds == null) {
+          countdown.textContent = "等待服务端时限";
+          return;
+        }
+        const seconds = Math.max(0, Math.floor(remainingSeconds));
+        countdown.textContent = seconds + " 秒";
+        if (remainingSeconds > 0) remainingSeconds -= 1;
+      };
+      render();
+      if (prepared) countdownTimer = window.setInterval(render, 1000);
+    }
+
+    function applyStatus(status) {
+      currentEnabled = status.WG_ENABLED || "0";
+      currentNode = status.WG_NODE || "";
+      currentNodeLabel = status.WG_NODE_LABEL || currentNode || "—";
+      currentMode = status.WG_MODE || "";
+      currentFec = status.WG_FEC_MODE || "original";
+      currentTransaction = status.WG_TRANSACTION || "";
+      prepared = status.WG_TRANSACTION_STATE === "prepared" || status.WG_CONFIRM_REQUIRED === "1";
+      const seconds = Number.parseInt(status.WG_CONFIRM_REMAINING_SECONDS, 10);
+      remainingSeconds = Number.isFinite(seconds) ? seconds : null;
+
+      animateText(document.getElementById("current-node"), currentNodeLabel);
+      animateText(document.getElementById("current-fec-mode"), fecLabel(currentFec));
+      const hasLatencyTelemetry = Object.prototype.hasOwnProperty.call(status, "WG_LATENCY_MS");
+      const latency = latencyNumber(status.WG_LATENCY_MS);
+      setSignal(latency);
+      setNetworkVerdict(status, latency, hasLatencyTelemetry);
+      document.getElementById("status-updated").textContent = "最近同步 " + timestamp();
+
+      if (nodeRegistry.some((node) => node.id === currentNode) && !prepared && !selectionDirty) {
+        nodeSelect.value = currentNode;
+      }
+      if (!prepared && !selectionDirty) {
+        fecSelect.value = Array.from(fecSelect.options).some((option) => option.value === currentFec)
+          ? currentFec
+          : "original";
+        modeSelect.value = availableModeFor(nodeSelect.value, currentMode);
+      }
+      if (prepared) {
+        document.getElementById("pending-copy").textContent =
+          "事务 " + (currentTransaction || "—") + " 正在等待确认，请先验证 Xbox 网络。";
+      }
+      updateApplyButtonState();
+      startCountdown();
+    }
+
+    async function requestAction(query) {
+      const response = await fetchWithTimeout(API_ENDPOINT + "?" + query, 8000);
+      const body = await response.text();
+      if (!response.ok) {
+        const fields = parseFields(body);
+        throw new Error(fields.DETAIL || fields.ERROR || fields.MESSAGE || "请求失败（HTTP " + response.status + "）");
+      }
+      return parseFields(body);
+    }
+
+    async function refreshStatus(options) {
+      const quiet = options && options.quiet;
+      refreshBtn.disabled = true;
+      try {
+        const response = await fetchWithTimeout(API_ENDPOINT + "?action=status", 8000);
+        const body = await response.text();
+        if (!response.ok) throw new Error("状态读取失败（HTTP " + response.status + "）");
+        applyStatus(parseFields(body));
+        if (!quiet) appendLog("状态同步成功，已更新目标节点探测结果。", "success");
+      } catch (error) {
+        setLiveState("error", "读取失败");
+        animateText(document.getElementById("connection-verdict"), "无法读取网络状态");
+        document.getElementById("probe-result").textContent = "状态接口错误";
+        setSignal(null);
+        appendLog(error.message || String(error), "error");
+      } finally {
+        refreshBtn.disabled = false;
+      }
+    }
+
+    function focusableDialogElements() {
+      return Array.from(dialogBackdrop.querySelectorAll("button:not(:disabled), [tabindex]:not([tabindex='-1'])"));
+    }
+
+    function closeDialog() {
+      dialogBackdrop.setAttribute("aria-hidden", "true");
+      dialogAction = null;
+      if (dialogReturnFocus) dialogReturnFocus.focus();
+      dialogReturnFocus = null;
+    }
+
+    function openDialog(title, copy, confirmLabel, action) {
+      dialogReturnFocus = document.activeElement;
+      dialogTitle.textContent = title;
+      dialogCopy.textContent = copy;
+      dialogConfirm.textContent = confirmLabel;
+      dialogAction = action;
+      dialogBackdrop.setAttribute("aria-hidden", "false");
+      window.requestAnimationFrame(() => dialogCancel.focus());
+    }
+
+    function openApplyDialog() {
+      if (!hasRuntimeChange()) {
+        appendLog("当前选择与运行方式一致，无需重复应用。");
+        return;
+      }
+      const targetLabel = nodeSelect.options[nodeSelect.selectedIndex]?.textContent || nodeSelect.value;
+      const source = currentEnabled === "1"
+        ? currentNodeLabel + " / " + fecLabel(currentFec)
+        : "服务未运行";
+      const target = targetLabel + " / " + fecLabel(fecSelect.value);
+      openDialog(
+        "确认切换运行方式？",
+        "当前：" + source + "\n目标：" + target
+          + "\n\n如果新节点启动失败，游戏线路会停止且不会回退旧线路。",
+        "确认应用",
+        performApply
+      );
+    }
+
+    async function withBusy(button, task) {
+      const buttons = [applyBtn, confirmBtn, rollbackBtn, refreshBtn, dialogConfirm, dialogCancel];
+      buttons.forEach((item) => { item.disabled = true; });
+      const original = button.textContent;
+      button.textContent = "处理中…";
+      try {
+        await task();
+      } finally {
+        button.textContent = original;
+        buttons.forEach((item) => { item.disabled = false; });
+        updateApplyButtonState();
+      }
+    }
+
+    async function performApply() {
+      closeDialog();
+      await withBusy(applyBtn, async () => {
+        const targetLabel = nodeSelect.options[nodeSelect.selectedIndex]?.textContent || nodeSelect.value;
+        try {
+          const query = new URLSearchParams({
+            action: "apply",
+            node: nodeSelect.value,
+            mode: modeSelect.value,
+            fec: fecSelect.value,
+            confirm: "yes"
+          });
+          const result = await requestAction(query.toString());
+          selectionDirty = false;
+          appendLog("已提交线路切换：" + targetLabel + " / " + fecLabel(fecSelect.value) + "。", "success");
+          if (result.WG_TRANSACTION) currentTransaction = result.WG_TRANSACTION;
+          await refreshStatus({ quiet: true });
+        } catch (error) {
+          appendLog("应用失败：" + (error.message || String(error)), "error");
+          animateText(document.getElementById("connection-verdict"), "线路切换失败");
+        }
+      });
+    }
+
+    function openConfirmDialog() {
+      openDialog(
+        "保留本次更改？",
+        "请确认 Xbox 已能正常联机。保留后，本次线路配置将成为当前运行方式。",
+        "确认保留",
+        performConfirm
+      );
+    }
+
+    async function performConfirm() {
+      closeDialog();
+      await withBusy(confirmBtn, async () => {
+        try {
+          const query = new URLSearchParams({
+            action: "confirm",
+            transaction: currentTransaction,
+            confirm: "yes"
+          });
+          await requestAction(query.toString()); // action=confirm
+          appendLog("线路更改已保留。", "success");
+          await refreshStatus({ quiet: true });
+        } catch (error) {
+          appendLog("保留失败：" + (error.message || String(error)), "error");
+        }
+      });
+    }
+
+    function openRollbackDialog() {
+      openDialog(
+        "停止并断开游戏线路？",
+        "控制器会停止当前游戏线路，不会恢复变更前的线路。",
+        "确认停止",
+        performRollback
+      );
+    }
+
+    async function performRollback() {
+      closeDialog();
+      await withBusy(rollbackBtn, async () => {
+        try {
+          const query = new URLSearchParams({
+            action: "rollback",
+            transaction: currentTransaction,
+            confirm: "yes"
+          });
+          await requestAction(query.toString()); // action=rollback
+          appendLog("游戏线路已停止，不会回退旧线路。", "success");
+          await refreshStatus({ quiet: true });
+        } catch (error) {
+          appendLog("停止失败：" + (error.message || String(error)), "error");
+        }
+      });
+    }
+
+    nodeSelect.addEventListener("change", () => {
+      selectionDirty = true;
+      modeSelect.value = availableModeFor(nodeSelect.value, currentMode);
+      updateSelectionDelta();
+    });
+    fecSelect.addEventListener("change", () => {
+      selectionDirty = true;
+      updateSelectionDelta();
+    });
+    applyBtn.addEventListener("click", openApplyDialog);
+    confirmBtn.addEventListener("click", openConfirmDialog);
+    rollbackBtn.addEventListener("click", openRollbackDialog);
+    refreshBtn.addEventListener("click", () => refreshStatus());
+    dialogCancel.addEventListener("click", closeDialog);
+    dialogConfirm.addEventListener("click", async () => {
+      const action = dialogAction;
+      if (action) await action();
+    });
+
+    dialogBackdrop.addEventListener("click", (event) => {
+      if (event.target === dialogBackdrop) closeDialog();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (dialogBackdrop.getAttribute("aria-hidden") === "true") return;
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeDialog();
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const items = focusableDialogElements();
+      if (!items.length) {
+        event.preventDefault();
+        dialogPanel.focus();
+        return;
+      }
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    async function initialize() {
+      try {
+        await loadNodes();
+        appendLog("节点列表已就绪。", "success");
+      } catch (error) {
+        appendLog(error.message || String(error), "error");
+        nodeSelect.innerHTML = '<option value="">节点读取失败</option>';
+      }
+      await refreshStatus({ quiet: true });
+      window.setInterval(() => refreshStatus({ quiet: true }), STATUS_REFRESH_MS);
+    }
+
+    initialize();
+  </script>
+</body>
+</html>
