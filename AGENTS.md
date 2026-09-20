@@ -46,6 +46,15 @@
 - Record the current delivery cycle, confirmed decisions, gate, latest verification, active risks, and next action.
 - Do not create a project state file for a short, self-contained task.
 
+## File ownership and output locations
+
+- Before generating files, identify the actual project source, task working directory, and separate locations for working material, deliverables, and temporary output. Do not infer ownership from a similarly named directory or worktree.
+- Reuse the workspace's existing categories. Keep project outputs with their project; route reusable research, shared assets, unassigned originals, and non-project temporary files to their designated locations. Do not create a second project root or scatter output directories at the repository root.
+- Configure tools to use explicit output paths and an appropriate working directory. If a tool has a fixed output location, record it in the existing task record and archive selected results before relying on its cache.
+- Verify the actual returned paths and check for unexpected output in the root or former output directories. Each independent worktree must adopt the applicable rules and verify its own tool configuration with a minimal output sample.
+- Temporary does not mean disposable. Preserve unique originals, referenced evidence, unconfirmed results, and migration recovery copies. Check ownership, dependencies, recovery, and authorization before cleanup; do not use automatic deletion or relocation as a substitute for correct output settings.
+- Keep public templates free of real project files, local absolute paths, tool configuration, recovery copies, and personal navigation indexes. Git synchronization must respect the destination repository's visibility and established publication scope.
+
 ## Corrections and closure evidence
 
 - Preserve each user correction's intended result, scope, and acceptance criteria. Replace outdated completion claims; do not narrow an overall requirement to a technical step or a local fix.
