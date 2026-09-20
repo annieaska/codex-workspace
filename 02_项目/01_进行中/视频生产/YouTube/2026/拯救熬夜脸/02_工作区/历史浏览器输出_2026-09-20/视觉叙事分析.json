@@ -1,0 +1,5178 @@
+{
+  "interface_version": "yuge.narrative-analysis.v1",
+  "boundary": "仅评价03文字意图；04图像实现、06动态阅读时长未验证。数量与比例不判审美；无总分，不自动选择或重写。",
+  "comparison_basis": "同一02字节；逐窗口同一语义范围；方法及预算差异逐项披露，不作普遍能力排名。",
+  "content": {
+    "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/视频生产/YouTube/2026/拯救熬夜脸/03_交付物/无主持角色/02_内容与口播准备_v1/内容底稿.json",
+    "sha256": "0e909a81cc2872c7382436e31009448c39aeda1bc110bc86caf9d407aaaa2560",
+    "total_units": 47,
+    "logic_profile": "无新逻辑分析"
+  },
+  "sources": [
+    {
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/视频生产/YouTube/2026/拯救熬夜脸/03_交付物/无主持角色/03_全片分镜比较_v3/A/分镜与构思.json",
+      "sha256": "425e7b4d60178bf9bf15db213046e253b8578f26c490f14f3fcbdf23a90e4756",
+      "interface_version": "yuge.story-conception.v2"
+    },
+    {
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/视频生产/YouTube/2026/拯救熬夜脸/03_交付物/无主持角色/03_全片分镜比较_v3/B/分镜与构思.json",
+      "sha256": "1509175bc805f97414c2ac938361e7aa70c0885cea9d8efaed9531843a1cab2b",
+      "interface_version": "yuge.story-conception.v2"
+    }
+  ],
+  "reviews": [
+    {
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/视频生产/YouTube/2026/拯救熬夜脸/02_工作区/Matt执行/03视觉叙事分析-A试评.json",
+      "sha256": "a3bf9b3d706f5b729e08ae1d8b48f209988997afde7794943c55042f6256743b",
+      "reviewer": {
+        "name": "独立语义试评 agent /root/narrative_sample_review",
+        "independent": true,
+        "context": "仅从03视觉叙事分析-试评输入.json定位并核验02原件及A/B原件；阅读U041/U042，U040/U043直接邻接上下文、给定回指描述和视觉叙事分析规范。未读取候选生成方案预设示例、历史聊天或候选生成上下文；仅评03文字意图，不审04图片/06动态，不判断美学、不预测赢家或全片错误率。02/A/B SHA与给定节选Pointer均核验一致。"
+      }
+    },
+    {
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/视频生产/YouTube/2026/拯救熬夜脸/02_工作区/Matt执行/03视觉叙事分析-B试评.json",
+      "sha256": "40ef3a569b06b24f370ff57b5b5f2c9789cde1c1be45b69418cc9fe80c569639",
+      "reviewer": {
+        "name": "独立语义试评 agent /root/narrative_sample_review",
+        "independent": true,
+        "context": "仅从03视觉叙事分析-试评输入.json定位并核验02原件及A/B原件；阅读U041/U042，U040/U043直接邻接上下文、给定回指描述和视觉叙事分析规范。未读取候选生成方案预设示例、历史聊天或候选生成上下文；仅评03文字意图，不审04图片/06动态，不判断美学、不预测赢家或全片错误率。02/A/B SHA与给定节选Pointer均核验一致。"
+      }
+    }
+  ],
+  "unavailable_candidates": [],
+  "entries": [
+    {
+      "source_sha256": "425e7b4d60178bf9bf15db213046e253b8578f26c490f14f3fcbdf23a90e4756",
+      "binding": {
+        "candidate_id": "A:full",
+        "candidate_revision": "A:full-v3-r1",
+        "window_id": null
+      },
+      "methods": {
+        "conception": {
+          "id": "concept.xiaohei-original-metaphor",
+          "version": 2
+        },
+        "storyboard": {
+          "id": "storyboard.continuous-state-progressive-disclosure",
+          "version": 2
+        }
+      },
+      "budget": "未记录；不推定相同成本",
+      "cost": "未测量",
+      "scope_unit_ids": [
+        "U001",
+        "U002",
+        "U003",
+        "U004",
+        "U005",
+        "U006",
+        "U007",
+        "U008",
+        "U009",
+        "U010",
+        "U011",
+        "U012",
+        "U013",
+        "U014",
+        "U015",
+        "U016",
+        "U017",
+        "U018",
+        "U019",
+        "U020",
+        "U021",
+        "U022",
+        "U023",
+        "U024",
+        "U025",
+        "U026",
+        "U027",
+        "U028",
+        "U029",
+        "U030",
+        "U031",
+        "U032",
+        "U033",
+        "U034",
+        "U035",
+        "U036",
+        "U037",
+        "U038",
+        "U039",
+        "U040",
+        "U041",
+        "U042",
+        "U043",
+        "U044",
+        "U045",
+        "U046",
+        "U047"
+      ],
+      "statistics": {
+        "units": 47,
+        "concepts": 47,
+        "scenes": 75,
+        "beats": 75,
+        "cross_unit_concepts": {
+          "ratio": {
+            "numerator": 0,
+            "denominator": 47,
+            "value": 0.0
+          },
+          "members": [],
+          "meaning": "只统计显式多单元概念；不据此排除跨概念的共同隐喻，解释力由语义评审判断。"
+        },
+        "state_continuity": {
+          "matched": {
+            "numerator": 74,
+            "denominator": 74,
+            "value": 1.0
+          },
+          "transitions": [
+            {
+              "from_scene_id": "A:S001",
+              "to_scene_id": "A:S002",
+              "exit_state": "A:ST001",
+              "entry_state": "A:ST001",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S002",
+              "to_scene_id": "A:S003",
+              "exit_state": "A:ST002",
+              "entry_state": "A:ST002",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S003",
+              "to_scene_id": "A:S004",
+              "exit_state": "A:ST003",
+              "entry_state": "A:ST003",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S004",
+              "to_scene_id": "A:S005",
+              "exit_state": "A:ST004",
+              "entry_state": "A:ST004",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S005",
+              "to_scene_id": "A:S006",
+              "exit_state": "A:ST005",
+              "entry_state": "A:ST005",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S006",
+              "to_scene_id": "A:S007",
+              "exit_state": "A:ST006",
+              "entry_state": "A:ST006",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S007",
+              "to_scene_id": "A:S008",
+              "exit_state": "A:ST007",
+              "entry_state": "A:ST007",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S008",
+              "to_scene_id": "A:S009",
+              "exit_state": "A:ST008",
+              "entry_state": "A:ST008",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S009",
+              "to_scene_id": "A:S010",
+              "exit_state": "A:ST009",
+              "entry_state": "A:ST009",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S010",
+              "to_scene_id": "A:S011",
+              "exit_state": "A:ST010",
+              "entry_state": "A:ST010",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S011",
+              "to_scene_id": "A:S012",
+              "exit_state": "A:ST011",
+              "entry_state": "A:ST011",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S012",
+              "to_scene_id": "A:S013",
+              "exit_state": "A:ST012",
+              "entry_state": "A:ST012",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S013",
+              "to_scene_id": "A:S014",
+              "exit_state": "A:ST013",
+              "entry_state": "A:ST013",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S014",
+              "to_scene_id": "A:S015",
+              "exit_state": "A:ST014",
+              "entry_state": "A:ST014",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S015",
+              "to_scene_id": "A:S016",
+              "exit_state": "A:ST015",
+              "entry_state": "A:ST015",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S016",
+              "to_scene_id": "A:S017",
+              "exit_state": "A:ST016",
+              "entry_state": "A:ST016",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S017",
+              "to_scene_id": "A:S018",
+              "exit_state": "A:ST017",
+              "entry_state": "A:ST017",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S018",
+              "to_scene_id": "A:S019",
+              "exit_state": "A:ST018",
+              "entry_state": "A:ST018",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S019",
+              "to_scene_id": "A:S020",
+              "exit_state": "A:ST019",
+              "entry_state": "A:ST019",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S020",
+              "to_scene_id": "A:S021",
+              "exit_state": "A:ST020",
+              "entry_state": "A:ST020",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S021",
+              "to_scene_id": "A:S022",
+              "exit_state": "A:ST021",
+              "entry_state": "A:ST021",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S022",
+              "to_scene_id": "A:S023",
+              "exit_state": "A:ST022",
+              "entry_state": "A:ST022",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S023",
+              "to_scene_id": "A:S024",
+              "exit_state": "A:ST023",
+              "entry_state": "A:ST023",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S024",
+              "to_scene_id": "A:S025",
+              "exit_state": "A:ST024",
+              "entry_state": "A:ST024",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S025",
+              "to_scene_id": "A:S026",
+              "exit_state": "A:ST025",
+              "entry_state": "A:ST025",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S026",
+              "to_scene_id": "A:S027",
+              "exit_state": "A:ST026",
+              "entry_state": "A:ST026",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S027",
+              "to_scene_id": "A:S028",
+              "exit_state": "A:ST027",
+              "entry_state": "A:ST027",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S028",
+              "to_scene_id": "A:S029",
+              "exit_state": "A:ST028",
+              "entry_state": "A:ST028",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S029",
+              "to_scene_id": "A:S030",
+              "exit_state": "A:ST029",
+              "entry_state": "A:ST029",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S030",
+              "to_scene_id": "A:S031",
+              "exit_state": "A:ST030",
+              "entry_state": "A:ST030",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S031",
+              "to_scene_id": "A:S032",
+              "exit_state": "A:ST031",
+              "entry_state": "A:ST031",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S032",
+              "to_scene_id": "A:S033",
+              "exit_state": "A:ST032",
+              "entry_state": "A:ST032",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S033",
+              "to_scene_id": "A:S034",
+              "exit_state": "A:ST033",
+              "entry_state": "A:ST033",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S034",
+              "to_scene_id": "A:S035",
+              "exit_state": "A:ST034",
+              "entry_state": "A:ST034",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S035",
+              "to_scene_id": "A:S036",
+              "exit_state": "A:ST035",
+              "entry_state": "A:ST035",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S036",
+              "to_scene_id": "A:S037",
+              "exit_state": "A:ST036",
+              "entry_state": "A:ST036",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S037",
+              "to_scene_id": "A:S038",
+              "exit_state": "A:ST037",
+              "entry_state": "A:ST037",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S038",
+              "to_scene_id": "A:S039",
+              "exit_state": "A:ST038",
+              "entry_state": "A:ST038",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S039",
+              "to_scene_id": "A:S040",
+              "exit_state": "A:ST039",
+              "entry_state": "A:ST039",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S040",
+              "to_scene_id": "A:S041",
+              "exit_state": "A:ST040",
+              "entry_state": "A:ST040",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S041",
+              "to_scene_id": "A:S042",
+              "exit_state": "A:ST040",
+              "entry_state": "A:ST040",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S042",
+              "to_scene_id": "A:S043",
+              "exit_state": "A:ST041",
+              "entry_state": "A:ST041",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S043",
+              "to_scene_id": "A:S044",
+              "exit_state": "A:ST042",
+              "entry_state": "A:ST042",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S044",
+              "to_scene_id": "A:S045",
+              "exit_state": "A:ST043",
+              "entry_state": "A:ST043",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S045",
+              "to_scene_id": "A:S046",
+              "exit_state": "A:ST044",
+              "entry_state": "A:ST044",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S046",
+              "to_scene_id": "A:S047",
+              "exit_state": "A:ST045",
+              "entry_state": "A:ST045",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S047",
+              "to_scene_id": "A:S048",
+              "exit_state": "A:ST046",
+              "entry_state": "A:ST046",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S048",
+              "to_scene_id": "A:S049",
+              "exit_state": "A:ST047",
+              "entry_state": "A:ST047",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S049",
+              "to_scene_id": "A:S050",
+              "exit_state": "A:ST048",
+              "entry_state": "A:ST048",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S050",
+              "to_scene_id": "A:S051",
+              "exit_state": "A:ST049",
+              "entry_state": "A:ST049",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S051",
+              "to_scene_id": "A:S052",
+              "exit_state": "A:ST049",
+              "entry_state": "A:ST049",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S052",
+              "to_scene_id": "A:S053",
+              "exit_state": "A:ST050",
+              "entry_state": "A:ST050",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S053",
+              "to_scene_id": "A:S054",
+              "exit_state": "A:ST051",
+              "entry_state": "A:ST051",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S054",
+              "to_scene_id": "A:S055",
+              "exit_state": "A:ST052",
+              "entry_state": "A:ST052",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S055",
+              "to_scene_id": "A:S056",
+              "exit_state": "A:ST053",
+              "entry_state": "A:ST053",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S056",
+              "to_scene_id": "A:S057",
+              "exit_state": "A:ST054",
+              "entry_state": "A:ST054",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S057",
+              "to_scene_id": "A:S058",
+              "exit_state": "A:ST055",
+              "entry_state": "A:ST055",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S058",
+              "to_scene_id": "A:S059",
+              "exit_state": "A:ST056",
+              "entry_state": "A:ST056",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S059",
+              "to_scene_id": "A:S060",
+              "exit_state": "A:ST057",
+              "entry_state": "A:ST057",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S060",
+              "to_scene_id": "A:S061",
+              "exit_state": "A:ST058",
+              "entry_state": "A:ST058",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S061",
+              "to_scene_id": "A:S062",
+              "exit_state": "A:ST059",
+              "entry_state": "A:ST059",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S062",
+              "to_scene_id": "A:S063",
+              "exit_state": "A:ST060",
+              "entry_state": "A:ST060",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S063",
+              "to_scene_id": "A:S064",
+              "exit_state": "A:ST061",
+              "entry_state": "A:ST061",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S064",
+              "to_scene_id": "A:S065",
+              "exit_state": "A:ST062",
+              "entry_state": "A:ST062",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S065",
+              "to_scene_id": "A:S066",
+              "exit_state": "A:ST063",
+              "entry_state": "A:ST063",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S066",
+              "to_scene_id": "A:S067",
+              "exit_state": "A:ST064",
+              "entry_state": "A:ST064",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S067",
+              "to_scene_id": "A:S068",
+              "exit_state": "A:ST064",
+              "entry_state": "A:ST064",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S068",
+              "to_scene_id": "A:S069",
+              "exit_state": "A:ST065",
+              "entry_state": "A:ST065",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S069",
+              "to_scene_id": "A:S070",
+              "exit_state": "A:ST066",
+              "entry_state": "A:ST066",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S070",
+              "to_scene_id": "A:S071",
+              "exit_state": "A:ST067",
+              "entry_state": "A:ST067",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S071",
+              "to_scene_id": "A:S072",
+              "exit_state": "A:ST068",
+              "entry_state": "A:ST068",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S072",
+              "to_scene_id": "A:S073",
+              "exit_state": "A:ST069",
+              "entry_state": "A:ST069",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S073",
+              "to_scene_id": "A:S074",
+              "exit_state": "A:ST070",
+              "entry_state": "A:ST070",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "A:S074",
+              "to_scene_id": "A:S075",
+              "exit_state": "A:ST071",
+              "entry_state": "A:ST071",
+              "same_id": true
+            }
+          ],
+          "unchanged_entry_exit": [
+            {
+              "scene_id": "A:S001",
+              "pointer": "/scenes/0"
+            },
+            {
+              "scene_id": "A:S041",
+              "pointer": "/scenes/40"
+            },
+            {
+              "scene_id": "A:S051",
+              "pointer": "/scenes/50"
+            },
+            {
+              "scene_id": "A:S067",
+              "pointer": "/scenes/66"
+            }
+          ],
+          "meaning": "相同ID只证明身份引用；进入退出字段相同仅为事实，停留是否合理待语义评审。"
+        },
+        "callbacks": {
+          "count": 6,
+          "items": [
+            {
+              "id": "A:CB005",
+              "concept_id": "A:C003",
+              "from_scene_id": "A:S005",
+              "to_scene_id": "A:S007",
+              "state_reference": "A:ST005",
+              "purpose": "保留四格母件、症状位置与颜色编码；收回前章模型，从既有地图取出当前焦点。"
+            },
+            {
+              "id": "A:CB022",
+              "concept_id": "A:C003",
+              "from_scene_id": "A:S005",
+              "to_scene_id": "A:S035",
+              "state_reference": "A:ST005",
+              "purpose": "保留四格母件、症状位置与颜色编码；收回前章模型，从既有地图取出当前焦点。"
+            },
+            {
+              "id": "A:CB027",
+              "concept_id": "A:C003",
+              "from_scene_id": "A:S005",
+              "to_scene_id": "A:S042",
+              "state_reference": "A:ST005",
+              "purpose": "保留四格母件、症状位置与颜色编码；收回前章模型，从既有地图取出当前焦点。"
+            },
+            {
+              "id": "A:CB035",
+              "concept_id": "A:C003",
+              "from_scene_id": "A:S005",
+              "to_scene_id": "A:S054",
+              "state_reference": "A:ST005",
+              "purpose": "保留四格母件、症状位置与颜色编码；收回前章模型，从既有地图取出当前焦点。"
+            },
+            {
+              "id": "A:CB041",
+              "concept_id": "A:C003",
+              "from_scene_id": "A:S005",
+              "to_scene_id": "A:S066",
+              "state_reference": "A:ST005",
+              "purpose": "保留四格母件、症状位置与颜色编码；收回前章模型，从既有地图取出当前焦点。"
+            },
+            {
+              "id": "A:CB047",
+              "concept_id": "A:C003",
+              "from_scene_id": "A:S005",
+              "to_scene_id": "A:S075",
+              "state_reference": "A:ST005",
+              "purpose": "保留四格母件、症状位置与颜色编码；收回前章模型，从既有地图取出当前焦点。"
+            }
+          ],
+          "meaning": "回指唤回何种理解及是否有效待语义评审。"
+        },
+        "relations": {
+          "raw_total": 46,
+          "items": [
+            {
+              "pointer": "/semantic_units/1/relations/0",
+              "unit_id": "U002",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U001",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/2/relations/0",
+              "unit_id": "U003",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U002",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/3/relations/0",
+              "unit_id": "U004",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U003",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/4/relations/0",
+              "unit_id": "U005",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U004",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/5/relations/0",
+              "unit_id": "U006",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U005",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/6/relations/0",
+              "unit_id": "U007",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U006",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/7/relations/0",
+              "unit_id": "U008",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U007",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/8/relations/0",
+              "unit_id": "U009",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U008",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/9/relations/0",
+              "unit_id": "U010",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U009",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/10/relations/0",
+              "unit_id": "U011",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U010",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/11/relations/0",
+              "unit_id": "U012",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U011",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/12/relations/0",
+              "unit_id": "U013",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U012",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/13/relations/0",
+              "unit_id": "U014",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U013",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/14/relations/0",
+              "unit_id": "U015",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U014",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/15/relations/0",
+              "unit_id": "U016",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U015",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/16/relations/0",
+              "unit_id": "U017",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U016",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/17/relations/0",
+              "unit_id": "U018",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U017",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/18/relations/0",
+              "unit_id": "U019",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U018",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/19/relations/0",
+              "unit_id": "U020",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U019",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/20/relations/0",
+              "unit_id": "U021",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U020",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/21/relations/0",
+              "unit_id": "U022",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U021",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/22/relations/0",
+              "unit_id": "U023",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U022",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/23/relations/0",
+              "unit_id": "U024",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U023",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/24/relations/0",
+              "unit_id": "U025",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U024",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/25/relations/0",
+              "unit_id": "U026",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U025",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/26/relations/0",
+              "unit_id": "U027",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U026",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/27/relations/0",
+              "unit_id": "U028",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U027",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/28/relations/0",
+              "unit_id": "U029",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U028",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/29/relations/0",
+              "unit_id": "U030",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U029",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/30/relations/0",
+              "unit_id": "U031",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U030",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/31/relations/0",
+              "unit_id": "U032",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U031",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/32/relations/0",
+              "unit_id": "U033",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U032",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/33/relations/0",
+              "unit_id": "U034",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U033",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/34/relations/0",
+              "unit_id": "U035",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U034",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/35/relations/0",
+              "unit_id": "U036",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U035",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/36/relations/0",
+              "unit_id": "U037",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U036",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/37/relations/0",
+              "unit_id": "U038",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U037",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/38/relations/0",
+              "unit_id": "U039",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U038",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/39/relations/0",
+              "unit_id": "U040",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U039",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/40/relations/0",
+              "unit_id": "U041",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U040",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/41/relations/0",
+              "unit_id": "U042",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U041",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/42/relations/0",
+              "unit_id": "U043",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U042",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/43/relations/0",
+              "unit_id": "U044",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U043",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/44/relations/0",
+              "unit_id": "U045",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U044",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/45/relations/0",
+              "unit_id": "U046",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U045",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/46/relations/0",
+              "unit_id": "U047",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U046",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            }
+          ],
+          "distribution": [
+            {
+              "role": "primary",
+              "total": 0,
+              "types": {
+                "follows": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "question": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "explains": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "decomposes": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "compares": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "qualifies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "applies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "progresses": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "summarizes": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "callback": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "exemplifies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "supports": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "contradicts": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "inherits_limit": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "unresolved": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                }
+              }
+            },
+            {
+              "role": "secondary",
+              "total": 0,
+              "types": {
+                "follows": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "question": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "explains": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "decomposes": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "compares": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "qualifies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "applies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "progresses": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "summarizes": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "callback": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "exemplifies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "supports": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "contradicts": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "inherits_limit": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "unresolved": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                }
+              }
+            },
+            {
+              "role": "未标角色",
+              "total": 46,
+              "types": {
+                "follows": {
+                  "numerator": 46,
+                  "denominator": 46,
+                  "value": 1.0
+                },
+                "question": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "explains": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "decomposes": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "compares": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "qualifies": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "applies": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "progresses": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "summarizes": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "callback": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "exemplifies": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "supports": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "contradicts": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "inherits_limit": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "unresolved": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                }
+              }
+            }
+          ]
+        }
+      },
+      "semantic_review": {
+        "status": "部分审",
+        "scope_label": "2/47单元试评，余下未审",
+        "declared_scope_unit_ids": [
+          "U041",
+          "U042"
+        ],
+        "reviewed_unit_ids": [
+          "U041",
+          "U042"
+        ],
+        "fully_reviewed_unit_ids": [
+          "U041",
+          "U042"
+        ],
+        "complete_dimension_coverage": {
+          "numerator": 2,
+          "denominator": 47,
+          "value": 0.0425531914893617
+        },
+        "reviewers": [
+          {
+            "reviewer": {
+              "name": "独立语义试评 agent /root/narrative_sample_review",
+              "independent": true,
+              "context": "仅从03视觉叙事分析-试评输入.json定位并核验02原件及A/B原件；阅读U041/U042，U040/U043直接邻接上下文、给定回指描述和视觉叙事分析规范。未读取候选生成方案预设示例、历史聊天或候选生成上下文；仅评03文字意图，不审04图片/06动态，不判断美学、不预测赢家或全片错误率。02/A/B SHA与给定节选Pointer均核验一致。"
+            },
+            "scope_unit_ids": [
+              "U041",
+              "U042"
+            ],
+            "context_unit_ids": [
+              "U040",
+              "U043"
+            ],
+            "review_sha256": "a3bf9b3d706f5b729e08ae1d8b48f209988997afde7794943c55042f6256743b"
+          }
+        ],
+        "dimensions": [
+          {
+            "dimension": "proposition_limits",
+            "label": "命题与限制",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "proposition_limits",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/concepts/40",
+                  "/scenes/65"
+                ],
+                "conclusion": "满足",
+                "reason": "03完整保留多问题条件、眼周优先、其余突出项优先和不叠加建议；前景眼周格与可移动选择环表达优先/择取，突出程度的具体判断仍由原口播承担。未增添疗程或功效保证。这是文字方案的命题保真，不代表画面已实现。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/source_proposition",
+                    "quote": "OK 现在应对熬夜肌的四大板块 我们就都给大家讲完了 如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/65/scene_exit/description",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/metaphor_boundary",
+                    "quote": "不得制造口播未说的因果、数值、成分、疗效或品牌包装。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "proposition_limits",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/concepts/41",
+                  "/scenes/66"
+                ],
+                "conclusion": "满足",
+                "reason": "03逐字保留“大部分”及因工作长期熬夜的条件，明确让原口播继续；保留选择地图并未新增立即见效、规定疗程或必然修复承诺。命题通过口播得到保留，不把画面不变等同于命题遗漏。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "它们大部分都不是能立竿见影 立马解决的问题 如果你的工作性质决定了 你要长期熬夜 那我们这些长期修护类型的产品 就是要坚持用"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/source_proposition",
+                    "quote": "还要给大家泼个冷水 熬夜脸想要修护 一定是要长期坚持的 因为我们刚才说的这么多的问题 它们大部分都不是能立竿见影 立马解决的问题 如果你的工作性质决定了 你要长期熬夜 那我们这些长期修护类型的产品 就是要坚持用"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/beats/0/action",
+                    "quote": "保持当前完整视觉状态，原口播继续；不新增画面信息。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_boundary",
+                    "quote": "不得制造口播未说的因果、数值、成分、疗效或品牌包装。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "relation_expression",
+            "label": "关系表达",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "relation_expression",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/scenes/65"
+                ],
+                "conclusion": "满足",
+                "reason": "02本单元唯一登记关系是从U040顺序接续；03从综合产品架回到总结地图，既承接选品语境又切换到决策顺序。该结论仅覆盖实际follows，不能据此声称所有内在条件/优先关系均已视觉化。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/relations/0/type",
+                    "quote": "follows"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/relations/0/purpose",
+                    "quote": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "现在应对熬夜肌的四大板块 我们就都给大家讲完了"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/65/scene_entry/description",
+                    "quote": "综合方向架呈现中性母件“Paula’s Choice”“雅诗兰黛小棕瓶”“Vichy”“SkinCeuticals AGE”“Olay”，用一条共有底轨连接保湿、修护、抗老概念片；不仿制真实包装，不作功效排名。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/65/beats/0/action",
+                    "quote": "保持解释台与相同对象身份；在本段口播触发处将上一场退出状态转成下述完整状态：回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "relation_expression",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/scenes/66",
+                  "/concepts/41"
+                ],
+                "conclusion": "满足",
+                "reason": "02唯一实际关系是接续U041；03有意延续上一总结地图，由新段原口播引入长期预期。让顺序关系由口播承担适合这个补充提醒：稳定地图保留提醒所针对的问题集合，无须为了表示follows强制新增道具。此判断不声称因果和条件已经在02关系列表建模。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/relations/0/type",
+                    "quote": "follows"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/relations/0/purpose",
+                    "quote": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "还要给大家泼个冷水 熬夜脸想要修护 一定是要长期坚持的"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/beats/0/action",
+                    "quote": "保持当前完整视觉状态，原口播继续；不新增画面信息。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_mapping/concrete_visuals/0",
+                    "quote": "上一状态保持，字幕继续完整呈现；不新增画面因果。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "cross_unit_conception",
+            "label": "跨单元构思",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "cross_unit_conception",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/concepts/40",
+                  "/scenes/65",
+                  "/callbacks/4"
+                ],
+                "conclusion": "满足",
+                "reason": "四格地图回调将前文四类问题收束为选择结构，并把U040产品架中的备选物留在架外，构成从选品说明到按需决策的解释链；后续U042保留该图，使“刚才这么多问题”有稳定指代。不以concept只列一个单元否定该链。回指早期身份只核查了本次给定回指意图，未扩展评审早期场景。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "现在应对熬夜肌的四大板块 我们就都给大家讲完了"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "因为我们刚才说的这么多的问题"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/metaphor_mapping/concrete_visuals/0",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/callbacks/4/purpose",
+                    "quote": "保留四格母件、症状位置与颜色编码；收回前章模型，从既有地图取出当前焦点。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/beats/0/action",
+                    "quote": "保持当前完整视觉状态，原口播继续；不新增画面信息。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "cross_unit_conception",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/scenes/66",
+                  "/concepts/41"
+                ],
+                "conclusion": "满足",
+                "reason": "上一单元的四类选择地图继续作为“刚才这么多问题”的指代对象，从“处理哪些问题”接到“这些问题需长期坚持”，构成共同解释对象的延续。时间论点由口播新增，不能将共同地图说成已视觉展示长期过程；共同概念不需要每个单元都换状态。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "因为我们刚才说的这么多的问题 它们大部分都不是能立竿见影"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/scene_entry/description",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/beats/0/action",
+                    "quote": "保持当前完整视觉状态，原口播继续；不新增画面信息。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "metaphor_explanation",
+            "label": "隐喻解释力",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 1,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 1
+            },
+            "items": [
+              {
+                "dimension": "metaphor_explanation",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/concepts/40",
+                  "/scenes/65"
+                ],
+                "conclusion": "满足",
+                "reason": "四格是问题集合，眼周前景位置表优先，单个可移动橙环表其余项中择取，架外产品表不全叠加。物体关系增加了决策结构的解释力，超出复述标题；“哪个最突出”的评估依据仍依赖原口播，不能把单环等同于已表达突出程度。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/metaphor_mapping/concrete_visuals/0",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "metaphor_explanation",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/concepts/41",
+                  "/scenes/66"
+                ],
+                "conclusion": "不适用",
+                "reason": "本单元明确选择保持已有地图、由原口播补充长期预期，没有提出时间进程或即时效果的新隐喻；因此不把未提出的时间隐喻按解释力判失败，也不能给它“已视觉解释长期坚持”的通过结论。地图仅继续解释问题集合与选择，这部分功能已在U041评审。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/audience_task",
+                    "quote": "纠正立竿见影期待"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "熬夜脸想要修护 一定是要长期坚持的"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_mapping/concrete_visuals/0",
+                    "quote": "上一状态保持，字幕继续完整呈现；不新增画面因果。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/beats/0/action",
+                    "quote": "保持当前完整视觉状态，原口播继续；不新增画面信息。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "cognitive_continuity",
+            "label": "认知连续性",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "cognitive_continuity",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/scenes/65",
+                  "/callbacks/4"
+                ],
+                "conclusion": "满足",
+                "reason": "从U040的产品备选集合切回四类总图符合口播由局部举例进入总收束的认知切换；回指说明保留症状位置和颜色，因此唤回的是分类与定位而非只有相同ID。具体撤架/入图动作的实现未验证。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "OK 现在应对熬夜肌的四大板块 我们就都给大家讲完了"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/39/text",
+                    "quote": "这里头比如说宝拉珍选的多肽的Booster"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/65/scene_entry/description",
+                    "quote": "综合方向架呈现中性母件“Paula’s Choice”“雅诗兰黛小棕瓶”“Vichy”“SkinCeuticals AGE”“Olay”，用一条共有底轨连接保湿、修护、抗老概念片；不仿制真实包装，不作功效排名。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/65/scene_exit/description",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/callbacks/4/purpose",
+                    "quote": "保留四格母件、症状位置与颜色编码；收回前章模型，从既有地图取出当前焦点。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "cognitive_continuity",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/scenes/66"
+                ],
+                "conclusion": "满足",
+                "reason": "口播“刚才这么多问题”在沿用四格地图时具有可回想的对象；从决策建议补充现实预期，没有把新产品或新结果冒充旧状态。进入U043前仍以该图退出，直接上下文也从这张图进入产品补充。仅确认认知承接意图，未核验停留时长和图像可读性。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "因为我们刚才说的这么多的问题"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/42/text",
+                    "quote": "最后我再给大家说两个"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/scene_entry/description",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/scene_exit/description",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/67/scene_entry/description",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "reveal_attention",
+            "label": "渐进揭示与注意力",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 0,
+              "问题": 0,
+              "待确认": 2,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "reveal_attention",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/scenes/65",
+                  "/concepts/40"
+                ],
+                "conclusion": "待确认",
+                "reason": "完整终态已给出眼周焦点和单环，且明确按语义触发、留出停留；但一个跨537—546的动作直接转成完整状态，未说明“总结四类→眼周优先→其余突出项→不叠加”由怎样的注意迁移承接。整图一次揭示可以成立，现有文字不足以确认是否有意合并及如何避免后三项提前争夺注意；不是因为只有一拍而判错。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/65/beats/0/action",
+                    "quote": "保持解释台与相同对象身份；在本段口播触发处将上一场退出状态转成下述完整状态：回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/65/beats/0/trigger/note",
+                    "quote": "字幕仅为未验证参考时间；变化由完整语义触发，不按均分秒数。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/65/beats/0/hold_after",
+                    "quote": "停留到本段口播结束，复杂产品架允许继续停留；不以固定秒数强制换图。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "reveal_attention",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/scenes/66",
+                  "/concepts/41"
+                ],
+                "conclusion": "待确认",
+                "reason": "有意停留能让观众听到纠正预期的口播，地图也可维持“这些问题”的指代；但本段视觉焦点仍是眼周优先/按需选择，文字仅宣称focus为纠正期待，并未解释如何把注意从择项转向“大部分不能立刻解决”。现有hold理由是泛称复杂产品架允许停留，与当前四格地图不完全对应，需确认该停留的注意策略；状态未变本身不是缺陷。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/audience_task",
+                    "quote": "纠正立竿见影期待"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "它们大部分都不是能立竿见影 立马解决的问题"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/beats/0/focus",
+                    "quote": "纠正立竿见影期待"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/beats/0/action",
+                    "quote": "保持当前完整视觉状态，原口播继续；不新增画面信息。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/66/beats/0/hold_after",
+                    "quote": "停留到本段口播结束，复杂产品架允许继续停留；不以固定秒数强制换图。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "ian_creative_space",
+            "label": "Ian创作空间",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 0,
+              "问题": 0,
+              "待确认": 2,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "ian_creative_space",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/concepts/40"
+                ],
+                "conclusion": "待确认",
+                "reason": "科学边界、四类身份和优先关系均是合理约束；具体前景位置、环和架外产品本身只是可执行创意，不据此扣分。但可调说明仅列曲面、灯光和留白，并规定物体语义不可删改，未明确完成相同关系功能的道具替换是否允许，不能确认Ian的构思替换空间，也不能据此断言已被禁止。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/audience_task",
+                    "quote": "把四块重新合成决策顺序"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/limitations/0",
+                    "quote": "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/metaphor_mapping/concrete_visuals/0",
+                    "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/adjustable_art_notes/0",
+                    "quote": "母件曲面、灯光与留白可调整；物体语义、阶段差异、风险条件与源锚点不可删改。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "ian_creative_space",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/concepts/41",
+                  "/scenes/66"
+                ],
+                "conclusion": "待确认",
+                "reason": "选择无新增画面的口播段落本身合法，科学边界也不限制不必要的艺术自由；然而“上一状态保持/不新增”是否是不可改的制作约束，还是可由Ian提出同义替代的提案，现有可调说明未说清。仅因具体化不判问题，但不足以确认他能重新安排强调方式。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/audience_task",
+                    "quote": "纠正立竿见影期待"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/limitations/0",
+                    "quote": "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_mapping/concrete_visuals/0",
+                    "quote": "上一状态保持，字幕继续完整呈现；不新增画面因果。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/adjustable_art_notes/0",
+                    "quote": "母件曲面、灯光与留白可调整；物体语义、阶段差异、风险条件与源锚点不可删改。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          }
+        ],
+        "relations": {
+          "raw_total": 46,
+          "reviewed": {
+            "numerator": 2,
+            "denominator": 46,
+            "value": 0.043478260869565216
+          },
+          "unreviewed": {
+            "numerator": 44,
+            "denominator": 46,
+            "value": 0.9565217391304348
+          },
+          "unreviewed_pointers": [
+            "/semantic_units/1/relations/0",
+            "/semantic_units/2/relations/0",
+            "/semantic_units/3/relations/0",
+            "/semantic_units/4/relations/0",
+            "/semantic_units/5/relations/0",
+            "/semantic_units/6/relations/0",
+            "/semantic_units/7/relations/0",
+            "/semantic_units/8/relations/0",
+            "/semantic_units/9/relations/0",
+            "/semantic_units/10/relations/0",
+            "/semantic_units/11/relations/0",
+            "/semantic_units/12/relations/0",
+            "/semantic_units/13/relations/0",
+            "/semantic_units/14/relations/0",
+            "/semantic_units/15/relations/0",
+            "/semantic_units/16/relations/0",
+            "/semantic_units/17/relations/0",
+            "/semantic_units/18/relations/0",
+            "/semantic_units/19/relations/0",
+            "/semantic_units/20/relations/0",
+            "/semantic_units/21/relations/0",
+            "/semantic_units/22/relations/0",
+            "/semantic_units/23/relations/0",
+            "/semantic_units/24/relations/0",
+            "/semantic_units/25/relations/0",
+            "/semantic_units/26/relations/0",
+            "/semantic_units/27/relations/0",
+            "/semantic_units/28/relations/0",
+            "/semantic_units/29/relations/0",
+            "/semantic_units/30/relations/0",
+            "/semantic_units/31/relations/0",
+            "/semantic_units/32/relations/0",
+            "/semantic_units/33/relations/0",
+            "/semantic_units/34/relations/0",
+            "/semantic_units/35/relations/0",
+            "/semantic_units/36/relations/0",
+            "/semantic_units/37/relations/0",
+            "/semantic_units/38/relations/0",
+            "/semantic_units/39/relations/0",
+            "/semantic_units/42/relations/0",
+            "/semantic_units/43/relations/0",
+            "/semantic_units/44/relations/0",
+            "/semantic_units/45/relations/0",
+            "/semantic_units/46/relations/0"
+          ],
+          "results": {
+            "视觉表达": {
+              "count": 1,
+              "of_raw": {
+                "numerator": 1,
+                "denominator": 46,
+                "value": 0.021739130434782608
+              },
+              "of_reviewed": {
+                "numerator": 1,
+                "denominator": 2,
+                "value": 0.5
+              }
+            },
+            "有意交给口播": {
+              "count": 1,
+              "of_raw": {
+                "numerator": 1,
+                "denominator": 46,
+                "value": 0.021739130434782608
+              },
+              "of_reviewed": {
+                "numerator": 1,
+                "denominator": 2,
+                "value": 0.5
+              }
+            },
+            "未表达": {
+              "count": 0,
+              "of_raw": {
+                "numerator": 0,
+                "denominator": 46,
+                "value": 0.0
+              },
+              "of_reviewed": {
+                "numerator": 0,
+                "denominator": 2,
+                "value": 0.0
+              }
+            },
+            "待确认": {
+              "count": 0,
+              "of_raw": {
+                "numerator": 0,
+                "denominator": 46,
+                "value": 0.0
+              },
+              "of_reviewed": {
+                "numerator": 0,
+                "denominator": 2,
+                "value": 0.0
+              }
+            },
+            "不适用": {
+              "count": 0,
+              "of_raw": {
+                "numerator": 0,
+                "denominator": 46,
+                "value": 0.0
+              },
+              "of_reviewed": {
+                "numerator": 0,
+                "denominator": 2,
+                "value": 0.0
+              }
+            }
+          },
+          "expression_rate": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "denominator_note": "视觉表达/(视觉表达+未表达)；只计已审且适合视觉表达；口播/待确认/不适用不进入此分母。",
+          "items": [
+            {
+              "relation_pointer": "/semantic_units/40/relations/0",
+              "result": "视觉表达",
+              "reason": "实际02关系仅指按字幕接续前一单元；03先承接前一单元可见对象，再进入当前解释状态，已用场景顺序/转场表达follows。此结果不等同于本段所有因果、条件或优先关系均被视觉表达。",
+              "evidence": [
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/40/relations/0/type",
+                  "quote": "follows"
+                },
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/40/relations/0/purpose",
+                  "quote": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+                },
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/40/text",
+                  "quote": "现在应对熬夜肌的四大板块 我们就都给大家讲完了"
+                },
+                {
+                  "role": "03",
+                  "pointer": "/scenes/65/beats/0/action",
+                  "quote": "保持解释台与相同对象身份；在本段口播触发处将上一场退出状态转成下述完整状态：回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                },
+                {
+                  "role": "03",
+                  "pointer": "/scenes/65/scene_entry/description",
+                  "quote": "综合方向架呈现中性母件“Paula’s Choice”“雅诗兰黛小棕瓶”“Vichy”“SkinCeuticals AGE”“Olay”，用一条共有底轨连接保湿、修护、抗老概念片；不仿制真实包装，不作功效排名。"
+                }
+              ],
+              "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+            },
+            {
+              "relation_pointer": "/semantic_units/41/relations/0",
+              "result": "有意交给口播",
+              "reason": "实际02关系仅指按字幕接续U041。03明确保持总结图并继续原口播，口播的补充提醒标识顺序，稳定图保留提醒针对的问题集合；不要求为纯顺序关系强行新增状态。",
+              "evidence": [
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/41/relations/0/type",
+                  "quote": "follows"
+                },
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/41/relations/0/purpose",
+                  "quote": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+                },
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/41/text",
+                  "quote": "还要给大家泼个冷水"
+                },
+                {
+                  "role": "03",
+                  "pointer": "/scenes/66/beats/0/action",
+                  "quote": "保持当前完整视觉状态，原口播继续；不新增画面信息。"
+                },
+                {
+                  "role": "03",
+                  "pointer": "/scenes/66/scene_entry/description",
+                  "quote": "回到最初四格地图，眼周格放在前景中央，另三格只有一个按需选择的可移动橙环；多余产品母件留在架外，底座“眼周优先”“按需搭配”，明确不是四套产品全叠加。"
+                }
+              ],
+              "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_sha256": "1509175bc805f97414c2ac938361e7aa70c0885cea9d8efaed9531843a1cab2b",
+      "binding": {
+        "candidate_id": "B",
+        "candidate_revision": "B-full-v3",
+        "window_id": null
+      },
+      "methods": {
+        "conception": {
+          "id": "concept.xiaohei-original-metaphor",
+          "version": "2"
+        },
+        "storyboard": {
+          "id": "storyboard.relational-contrast-progression",
+          "version": "2"
+        }
+      },
+      "budget": "未记录；不推定相同成本",
+      "cost": "未测量",
+      "scope_unit_ids": [
+        "U001",
+        "U002",
+        "U003",
+        "U004",
+        "U005",
+        "U006",
+        "U007",
+        "U008",
+        "U009",
+        "U010",
+        "U011",
+        "U012",
+        "U013",
+        "U014",
+        "U015",
+        "U016",
+        "U017",
+        "U018",
+        "U019",
+        "U020",
+        "U021",
+        "U022",
+        "U023",
+        "U024",
+        "U025",
+        "U026",
+        "U027",
+        "U028",
+        "U029",
+        "U030",
+        "U031",
+        "U032",
+        "U033",
+        "U034",
+        "U035",
+        "U036",
+        "U037",
+        "U038",
+        "U039",
+        "U040",
+        "U041",
+        "U042",
+        "U043",
+        "U044",
+        "U045",
+        "U046",
+        "U047"
+      ],
+      "statistics": {
+        "units": 47,
+        "concepts": 47,
+        "scenes": 47,
+        "beats": 64,
+        "cross_unit_concepts": {
+          "ratio": {
+            "numerator": 0,
+            "denominator": 47,
+            "value": 0.0
+          },
+          "members": [],
+          "meaning": "只统计显式多单元概念；不据此排除跨概念的共同隐喻，解释力由语义评审判断。"
+        },
+        "state_continuity": {
+          "matched": {
+            "numerator": 46,
+            "denominator": 46,
+            "value": 1.0
+          },
+          "transitions": [
+            {
+              "from_scene_id": "B:S001",
+              "to_scene_id": "B:S002",
+              "exit_state": "B:S001:EXIT",
+              "entry_state": "B:S001:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S002",
+              "to_scene_id": "B:S003",
+              "exit_state": "B:S002:EXIT",
+              "entry_state": "B:S002:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S003",
+              "to_scene_id": "B:S004",
+              "exit_state": "B:S003:EXIT",
+              "entry_state": "B:S003:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S004",
+              "to_scene_id": "B:S005",
+              "exit_state": "B:S004:EXIT",
+              "entry_state": "B:S004:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S005",
+              "to_scene_id": "B:S006",
+              "exit_state": "B:S005:EXIT",
+              "entry_state": "B:S005:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S006",
+              "to_scene_id": "B:S007",
+              "exit_state": "B:S006:EXIT",
+              "entry_state": "B:S006:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S007",
+              "to_scene_id": "B:S008",
+              "exit_state": "B:S007:EXIT",
+              "entry_state": "B:S007:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S008",
+              "to_scene_id": "B:S009",
+              "exit_state": "B:S008:EXIT",
+              "entry_state": "B:S008:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S009",
+              "to_scene_id": "B:S010",
+              "exit_state": "B:S009:EXIT",
+              "entry_state": "B:S009:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S010",
+              "to_scene_id": "B:S011",
+              "exit_state": "B:S010:EXIT",
+              "entry_state": "B:S010:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S011",
+              "to_scene_id": "B:S012",
+              "exit_state": "B:S011:EXIT",
+              "entry_state": "B:S011:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S012",
+              "to_scene_id": "B:S013",
+              "exit_state": "B:S012:EXIT",
+              "entry_state": "B:S012:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S013",
+              "to_scene_id": "B:S014",
+              "exit_state": "B:S013:EXIT",
+              "entry_state": "B:S013:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S014",
+              "to_scene_id": "B:S015",
+              "exit_state": "B:S014:EXIT",
+              "entry_state": "B:S014:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S015",
+              "to_scene_id": "B:S016",
+              "exit_state": "B:S015:EXIT",
+              "entry_state": "B:S015:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S016",
+              "to_scene_id": "B:S017",
+              "exit_state": "B:S016:EXIT",
+              "entry_state": "B:S016:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S017",
+              "to_scene_id": "B:S018",
+              "exit_state": "B:S017:EXIT",
+              "entry_state": "B:S017:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S018",
+              "to_scene_id": "B:S019",
+              "exit_state": "B:S018:EXIT",
+              "entry_state": "B:S018:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S019",
+              "to_scene_id": "B:S020",
+              "exit_state": "B:S019:EXIT",
+              "entry_state": "B:S019:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S020",
+              "to_scene_id": "B:S021",
+              "exit_state": "B:S020:EXIT",
+              "entry_state": "B:S020:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S021",
+              "to_scene_id": "B:S022",
+              "exit_state": "B:S021:EXIT",
+              "entry_state": "B:S021:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S022",
+              "to_scene_id": "B:S023",
+              "exit_state": "B:S022:EXIT",
+              "entry_state": "B:S022:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S023",
+              "to_scene_id": "B:S024",
+              "exit_state": "B:S023:EXIT",
+              "entry_state": "B:S023:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S024",
+              "to_scene_id": "B:S025",
+              "exit_state": "B:S024:EXIT",
+              "entry_state": "B:S024:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S025",
+              "to_scene_id": "B:S026",
+              "exit_state": "B:S025:EXIT",
+              "entry_state": "B:S025:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S026",
+              "to_scene_id": "B:S027",
+              "exit_state": "B:S026:EXIT",
+              "entry_state": "B:S026:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S027",
+              "to_scene_id": "B:S028",
+              "exit_state": "B:S027:EXIT",
+              "entry_state": "B:S027:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S028",
+              "to_scene_id": "B:S029",
+              "exit_state": "B:S028:EXIT",
+              "entry_state": "B:S028:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S029",
+              "to_scene_id": "B:S030",
+              "exit_state": "B:S029:EXIT",
+              "entry_state": "B:S029:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S030",
+              "to_scene_id": "B:S031",
+              "exit_state": "B:S030:EXIT",
+              "entry_state": "B:S030:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S031",
+              "to_scene_id": "B:S032",
+              "exit_state": "B:S031:EXIT",
+              "entry_state": "B:S031:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S032",
+              "to_scene_id": "B:S033",
+              "exit_state": "B:S032:EXIT",
+              "entry_state": "B:S032:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S033",
+              "to_scene_id": "B:S034",
+              "exit_state": "B:S033:EXIT",
+              "entry_state": "B:S033:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S034",
+              "to_scene_id": "B:S035",
+              "exit_state": "B:S034:EXIT",
+              "entry_state": "B:S034:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S035",
+              "to_scene_id": "B:S036",
+              "exit_state": "B:S035:EXIT",
+              "entry_state": "B:S035:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S036",
+              "to_scene_id": "B:S037",
+              "exit_state": "B:S036:EXIT",
+              "entry_state": "B:S036:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S037",
+              "to_scene_id": "B:S038",
+              "exit_state": "B:S037:EXIT",
+              "entry_state": "B:S037:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S038",
+              "to_scene_id": "B:S039",
+              "exit_state": "B:S038:EXIT",
+              "entry_state": "B:S038:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S039",
+              "to_scene_id": "B:S040",
+              "exit_state": "B:S039:EXIT",
+              "entry_state": "B:S039:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S040",
+              "to_scene_id": "B:S041",
+              "exit_state": "B:S040:EXIT",
+              "entry_state": "B:S040:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S041",
+              "to_scene_id": "B:S042",
+              "exit_state": "B:S041:EXIT",
+              "entry_state": "B:S041:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S042",
+              "to_scene_id": "B:S043",
+              "exit_state": "B:S042:EXIT",
+              "entry_state": "B:S042:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S043",
+              "to_scene_id": "B:S044",
+              "exit_state": "B:S043:EXIT",
+              "entry_state": "B:S043:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S044",
+              "to_scene_id": "B:S045",
+              "exit_state": "B:S044:EXIT",
+              "entry_state": "B:S044:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S045",
+              "to_scene_id": "B:S046",
+              "exit_state": "B:S045:EXIT",
+              "entry_state": "B:S045:EXIT",
+              "same_id": true
+            },
+            {
+              "from_scene_id": "B:S046",
+              "to_scene_id": "B:S047",
+              "exit_state": "B:S046:EXIT",
+              "entry_state": "B:S046:EXIT",
+              "same_id": true
+            }
+          ],
+          "unchanged_entry_exit": [],
+          "meaning": "相同ID只证明身份引用；进入退出字段相同仅为事实，停留是否合理待语义评审。"
+        },
+        "callbacks": {
+          "count": 11,
+          "items": [
+            {
+              "id": "B:CB01",
+              "concept_id": "B:C001",
+              "from_scene_id": "B:S001",
+              "to_scene_id": "B:S005",
+              "state_reference": "B:S001:EXIT",
+              "purpose": "回看同一双脸，隔离眼周差异"
+            },
+            {
+              "id": "B:CB02",
+              "concept_id": "B:C003",
+              "from_scene_id": "B:S003",
+              "to_scene_id": "B:S004",
+              "state_reference": "B:S003:EXIT",
+              "purpose": "同一四类观察图标用于个体组合差异"
+            },
+            {
+              "id": "B:CB03",
+              "concept_id": "B:C003",
+              "from_scene_id": "B:S003",
+              "to_scene_id": "B:S041",
+              "state_reference": "B:S003:EXIT",
+              "purpose": "四类地图收束到按需选择"
+            },
+            {
+              "id": "B:CB04",
+              "concept_id": "B:C007",
+              "from_scene_id": "B:S007",
+              "to_scene_id": "B:S008",
+              "state_reference": "B:S007:EXIT",
+              "purpose": "薄膜身份继续解释少量滞留"
+            },
+            {
+              "id": "B:CB05",
+              "concept_id": "B:C022",
+              "from_scene_id": "B:S022",
+              "to_scene_id": "B:S023",
+              "state_reference": "B:S022:EXIT",
+              "purpose": "表面相反状态回到底层共同失水"
+            },
+            {
+              "id": "B:CB06",
+              "concept_id": "B:C022",
+              "from_scene_id": "B:S022",
+              "to_scene_id": "B:S026",
+              "state_reference": "B:S022:EXIT",
+              "purpose": "复用已建立共同屏障解释"
+            },
+            {
+              "id": "B:CB07",
+              "concept_id": "B:C029",
+              "from_scene_id": "B:S029",
+              "to_scene_id": "B:S033",
+              "state_reference": "B:S029:EXIT",
+              "purpose": "复用软化和保湿的原状态，非新效果证明"
+            },
+            {
+              "id": "B:CB08",
+              "concept_id": "B:C035",
+              "from_scene_id": "B:S035",
+              "to_scene_id": "B:S037",
+              "state_reference": "B:S035:EXIT",
+              "purpose": "同一三层光学台深入中层"
+            },
+            {
+              "id": "B:CB09",
+              "concept_id": "B:C035",
+              "from_scene_id": "B:S035",
+              "to_scene_id": "B:S039",
+              "state_reference": "B:S035:EXIT",
+              "purpose": "以三层台定位当前与下一步"
+            },
+            {
+              "id": "B:CB10",
+              "concept_id": "B:C043",
+              "from_scene_id": "B:S043",
+              "to_scene_id": "B:S044",
+              "state_reference": "B:S043:EXIT",
+              "purpose": "保留双相瓶，转到适用性边界"
+            },
+            {
+              "id": "B:CB11",
+              "concept_id": "B:C043",
+              "from_scene_id": "B:S043",
+              "to_scene_id": "B:S045",
+              "state_reference": "B:S043:EXIT",
+              "purpose": "回到双相瓶与两种需求匹配"
+            }
+          ],
+          "meaning": "回指唤回何种理解及是否有效待语义评审。"
+        },
+        "relations": {
+          "raw_total": 46,
+          "items": [
+            {
+              "pointer": "/semantic_units/1/relations/0",
+              "unit_id": "U002",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U001",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/2/relations/0",
+              "unit_id": "U003",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U002",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/3/relations/0",
+              "unit_id": "U004",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U003",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/4/relations/0",
+              "unit_id": "U005",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U004",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/5/relations/0",
+              "unit_id": "U006",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U005",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/6/relations/0",
+              "unit_id": "U007",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U006",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/7/relations/0",
+              "unit_id": "U008",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U007",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/8/relations/0",
+              "unit_id": "U009",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U008",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/9/relations/0",
+              "unit_id": "U010",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U009",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/10/relations/0",
+              "unit_id": "U011",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U010",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/11/relations/0",
+              "unit_id": "U012",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U011",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/12/relations/0",
+              "unit_id": "U013",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U012",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/13/relations/0",
+              "unit_id": "U014",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U013",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/14/relations/0",
+              "unit_id": "U015",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U014",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/15/relations/0",
+              "unit_id": "U016",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U015",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/16/relations/0",
+              "unit_id": "U017",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U016",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/17/relations/0",
+              "unit_id": "U018",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U017",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/18/relations/0",
+              "unit_id": "U019",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U018",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/19/relations/0",
+              "unit_id": "U020",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U019",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/20/relations/0",
+              "unit_id": "U021",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U020",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/21/relations/0",
+              "unit_id": "U022",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U021",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/22/relations/0",
+              "unit_id": "U023",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U022",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/23/relations/0",
+              "unit_id": "U024",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U023",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/24/relations/0",
+              "unit_id": "U025",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U024",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/25/relations/0",
+              "unit_id": "U026",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U025",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/26/relations/0",
+              "unit_id": "U027",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U026",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/27/relations/0",
+              "unit_id": "U028",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U027",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/28/relations/0",
+              "unit_id": "U029",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U028",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/29/relations/0",
+              "unit_id": "U030",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U029",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/30/relations/0",
+              "unit_id": "U031",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U030",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/31/relations/0",
+              "unit_id": "U032",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U031",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/32/relations/0",
+              "unit_id": "U033",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U032",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/33/relations/0",
+              "unit_id": "U034",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U033",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/34/relations/0",
+              "unit_id": "U035",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U034",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/35/relations/0",
+              "unit_id": "U036",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U035",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/36/relations/0",
+              "unit_id": "U037",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U036",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/37/relations/0",
+              "unit_id": "U038",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U037",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/38/relations/0",
+              "unit_id": "U039",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U038",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/39/relations/0",
+              "unit_id": "U040",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U039",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/40/relations/0",
+              "unit_id": "U041",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U040",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/41/relations/0",
+              "unit_id": "U042",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U041",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/42/relations/0",
+              "unit_id": "U043",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U042",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/43/relations/0",
+              "unit_id": "U044",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U043",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/44/relations/0",
+              "unit_id": "U045",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U044",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/45/relations/0",
+              "unit_id": "U046",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U045",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            },
+            {
+              "pointer": "/semantic_units/46/relations/0",
+              "unit_id": "U047",
+              "type": "follows",
+              "role": "未标角色",
+              "relation": {
+                "type": "follows",
+                "unit_id": "U046",
+                "purpose": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+              }
+            }
+          ],
+          "distribution": [
+            {
+              "role": "primary",
+              "total": 0,
+              "types": {
+                "follows": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "question": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "explains": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "decomposes": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "compares": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "qualifies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "applies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "progresses": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "summarizes": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "callback": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "exemplifies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "supports": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "contradicts": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "inherits_limit": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "unresolved": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                }
+              }
+            },
+            {
+              "role": "secondary",
+              "total": 0,
+              "types": {
+                "follows": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "question": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "explains": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "decomposes": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "compares": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "qualifies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "applies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "progresses": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "summarizes": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "callback": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "exemplifies": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "supports": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "contradicts": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "inherits_limit": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                },
+                "unresolved": {
+                  "numerator": 0,
+                  "denominator": 0,
+                  "value": null
+                }
+              }
+            },
+            {
+              "role": "未标角色",
+              "total": 46,
+              "types": {
+                "follows": {
+                  "numerator": 46,
+                  "denominator": 46,
+                  "value": 1.0
+                },
+                "question": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "explains": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "decomposes": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "compares": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "qualifies": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "applies": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "progresses": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "summarizes": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "callback": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "exemplifies": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "supports": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "contradicts": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "inherits_limit": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                },
+                "unresolved": {
+                  "numerator": 0,
+                  "denominator": 46,
+                  "value": 0.0
+                }
+              }
+            }
+          ]
+        }
+      },
+      "semantic_review": {
+        "status": "部分审",
+        "scope_label": "2/47单元试评，余下未审",
+        "declared_scope_unit_ids": [
+          "U041",
+          "U042"
+        ],
+        "reviewed_unit_ids": [
+          "U041",
+          "U042"
+        ],
+        "fully_reviewed_unit_ids": [
+          "U041",
+          "U042"
+        ],
+        "complete_dimension_coverage": {
+          "numerator": 2,
+          "denominator": 47,
+          "value": 0.0425531914893617
+        },
+        "reviewers": [
+          {
+            "reviewer": {
+              "name": "独立语义试评 agent /root/narrative_sample_review",
+              "independent": true,
+              "context": "仅从03视觉叙事分析-试评输入.json定位并核验02原件及A/B原件；阅读U041/U042，U040/U043直接邻接上下文、给定回指描述和视觉叙事分析规范。未读取候选生成方案预设示例、历史聊天或候选生成上下文；仅评03文字意图，不审04图片/06动态，不判断美学、不预测赢家或全片错误率。02/A/B SHA与给定节选Pointer均核验一致。"
+            },
+            "scope_unit_ids": [
+              "U041",
+              "U042"
+            ],
+            "context_unit_ids": [
+              "U040",
+              "U043"
+            ],
+            "review_sha256": "40ef3a569b06b24f370ff57b5b5f2c9789cde1c1be45b69418cc9fe80c569639"
+          }
+        ],
+        "dimensions": [
+          {
+            "dimension": "proposition_limits",
+            "label": "命题与限制",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "proposition_limits",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/concepts/40",
+                  "/scenes/40"
+                ],
+                "conclusion": "满足",
+                "reason": "完整原文保留多问题条件；眼周先圈、再择突出项、只一瓶入托盘及“不堆叠”小牌共同支持按需而非全套叠加。这里单瓶是择取示意，文字未规定用户永远只能用一件产品，未扩大疗效。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/source_proposition",
+                    "quote": "OK 现在应对熬夜肌的四大板块 我们就都给大家讲完了 如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/beats/0/action",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/metaphor_boundary",
+                    "quote": "不把四类全部同时处理，不让护肤品多即有效。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "proposition_limits",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/concepts/41",
+                  "/scenes/41"
+                ],
+                "conclusion": "满足",
+                "reason": "原文“大部分”和工作导致长期熬夜的条件仍完整保留；重复护理圆片/开放轨道表达长期投入，遮住魔法按钮降低即时期待，明确无上升曲线、规定疗程或必好终点。短牌是预期提醒，不是“绝无任何立即变化”的科学断言；限定由原口播承担。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "它们大部分都不是能立竿见影 立马解决的问题 如果你的工作性质决定了 你要长期熬夜 那我们这些长期修护类型的产品 就是要坚持用"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/source_proposition",
+                    "quote": "还要给大家泼个冷水 熬夜脸想要修护 一定是要长期坚持的 因为我们刚才说的这么多的问题 它们大部分都不是能立竿见影 立马解决的问题 如果你的工作性质决定了 你要长期熬夜 那我们这些长期修护类型的产品 就是要坚持用"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/beats/0/action",
+                    "quote": "一串相同的小护理圆片沿弯曲长轨道间隔铺开，没有上升曲线；开头的魔法闪电形按钮被透明盖隔开，轨道尽头保持开放。主牌“长期坚持”，副牌“别期待立刻变化”，不画人变年轻。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_boundary",
+                    "quote": "轨道不能构成规定疗程、必好终点或线性效果承诺。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "relation_expression",
+            "label": "关系表达",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "relation_expression",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/scenes/40"
+                ],
+                "conclusion": "满足",
+                "reason": "实际登记的follows由U040退出状态进入U041、再明确切换为总图表达。叙述顺序得到落实；优先和选择另外由动作表达，但不能将这些事后计成02原列表中的新关系。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/relations/0/type",
+                    "quote": "follows"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/relations/0/purpose",
+                    "quote": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "现在应对熬夜肌的四大板块 我们就都给大家讲完了"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/scene_entry/visible",
+                    "quote": "同一三层台中层变雾、顶部低光，旁边双层工具架上层“抗氧化”、下层“综合抗老”，两层只有一只可移动选用浅槽。弧线分别指向当前状态和下层支撑关注点，完整牌“按阶段看需求”。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/transition/method",
+                    "quote": "先承接上一场已建立退出画面，再按本单元口播换成当前解释台；这是明确转场，不把不同对象冒充相同状态。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/beats/0/action",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "relation_expression",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/scenes/41"
+                ],
+                "conclusion": "满足",
+                "reason": "02实际follows通过保留U041入口、再明确切入长期护理解释台落实为先后顺序。03不把不同物体冒充同一状态；此项不因为增加时间道具就宣称覆盖02未登记的因果/条件关系。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/relations/0/type",
+                    "quote": "follows"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/relations/0/purpose",
+                    "quote": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "还要给大家泼个冷水"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/scene_entry/visible",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/transition/method",
+                    "quote": "先承接上一场已建立退出画面，再按本单元口播换成当前解释台；这是明确转场，不把不同对象冒充相同状态。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/beats/0/action",
+                    "quote": "一串相同的小护理圆片沿弯曲长轨道间隔铺开，没有上升曲线；开头的魔法闪电形按钮被透明盖隔开，轨道尽头保持开放。主牌“长期坚持”，副牌“别期待立刻变化”，不画人变年轻。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "cross_unit_conception",
+            "label": "跨单元构思",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 1,
+              "问题": 0,
+              "待确认": 1,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "cross_unit_conception",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/concepts/40",
+                  "/scenes/40",
+                  "/callbacks/2"
+                ],
+                "conclusion": "满足",
+                "reason": "U040的单个选用浅槽延续为U041的单个选择扣/只一瓶进入托盘，共同表达按阶段按需求择取；四类回调再把局部产品讨论放回总体决策。虽然对象换了，选择逻辑连续，不能因每张concept只列一单元否认跨单元构思。早期回调来源仅核验给定引用，未扩展审查U003。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/39/text",
+                    "quote": "这些产品都是在保证当前阶段需求的同时"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/scene_entry/visible",
+                    "quote": "同一三层台中层变雾、顶部低光，旁边双层工具架上层“抗氧化”、下层“综合抗老”，两层只有一只可移动选用浅槽。弧线分别指向当前状态和下层支撑关注点，完整牌“按阶段看需求”。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/beats/0/action",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/callbacks/2/purpose",
+                    "quote": "四类地图收束到按需选择"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "cross_unit_conception",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/scenes/41",
+                  "/concepts/41"
+                ],
+                "conclusion": "待确认",
+                "reason": "文本在语义上从“选什么”进入“怎样持续使用”，也明确承接上一出口；但新轨道护理圆片没有被说明为上一单元已选方案的重复实施，四类问题与长期过程之间的共同映射尚未写明。明确转场足以支持顺序连续，却不能单独证明共同隐喻演变。可由口播建立链，现有03未明确这种分工；不是因为新道具多或concept分开而判失败。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "大家最好是按需搭配"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "因为我们刚才说的这么多的问题"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "那我们这些长期修护类型的产品 就是要坚持用"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/scene_entry/visible",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/beats/0/action",
+                    "quote": "一串相同的小护理圆片沿弯曲长轨道间隔铺开，没有上升曲线；开头的魔法闪电形按钮被透明盖隔开，轨道尽头保持开放。主牌“长期坚持”，副牌“别期待立刻变化”，不画人变年轻。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/transition/method",
+                    "quote": "先承接上一场已建立退出画面，再按本单元口播换成当前解释台；这是明确转场，不把不同对象冒充相同状态。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "metaphor_explanation",
+            "label": "隐喻解释力",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "metaphor_explanation",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/concepts/40",
+                  "/scenes/40"
+                ],
+                "conclusion": "满足",
+                "reason": "转盘把四类问题合为选择集合，先圈眼周、另三槽只一个选择扣、只一瓶进入托盘把优先及非叠加落实为物体关系；文字短牌补充“突出项”，因此不只是标题换图。没有画病情程度排序，具体哪个突出仍由口播/用户自我判断承担。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/metaphor_mapping/relation",
+                    "quote": "回到四种表现，先眼周再选最突出问题"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/beats/0/action",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "metaphor_explanation",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/concepts/41",
+                  "/scenes/41"
+                ],
+                "conclusion": "满足",
+                "reason": "重复护理片沿长轨道形成持续投入的时间映射，被隔开的闪电按钮表示不应依赖瞬间解决；开放末端和无上升曲线避免把过程画成固定疗程/必然效果。两组物体表达同一长期与即时的对比，增加解释力，不能因为道具数更多就自动判过载或更优。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "熬夜脸想要修护 一定是要长期坚持的"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "它们大部分都不是能立竿见影 立马解决的问题"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_mapping/objects_and_visible_states/0",
+                    "quote": "一串相同的小护理圆片沿弯曲长轨道间隔铺开，没有上升曲线；开头的魔法闪电形按钮被透明盖隔开，轨道尽头保持开放。主牌“长期坚持”，副牌“别期待立刻变化”，不画人变年轻。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_boundary",
+                    "quote": "轨道不能构成规定疗程、必好终点或线性效果承诺。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "cognitive_continuity",
+            "label": "认知连续性",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "cognitive_continuity",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/scenes/40",
+                  "/callbacks/2"
+                ],
+                "conclusion": "满足",
+                "reason": "从按阶段选用的工具架转回此前四类地图与“讲完四大板块”相符；回指目的明确是把分类收束成按需选择。scene_entry和转场说明区分前后不同对象，保持的是解释目的而非虚构相同物体。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "现在应对熬夜肌的四大板块 我们就都给大家讲完了"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/scene_entry/visible",
+                    "quote": "同一三层台中层变雾、顶部低光，旁边双层工具架上层“抗氧化”、下层“综合抗老”，两层只有一只可移动选用浅槽。弧线分别指向当前状态和下层支撑关注点，完整牌“按阶段看需求”。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/transition/method",
+                    "quote": "先承接上一场已建立退出画面，再按本单元口播换成当前解释台；这是明确转场，不把不同对象冒充相同状态。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/callbacks/2/purpose",
+                    "quote": "四类地图收束到按需选择"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "cognitive_continuity",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/scenes/41",
+                  "/concepts/41"
+                ],
+                "conclusion": "满足",
+                "reason": "新单元入口保留选项地图，转场明示按新口播进入长期解释台；这与“还要泼冷水”的新提醒相称，观众无需误认转盘就是轨道。当前内容的长期/即时对比自足，故认知衔接可成立；是否进一步构成共同跨单元隐喻另列待确认，不混同于转场错误。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "还要给大家泼个冷水 熬夜脸想要修护 一定是要长期坚持的"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/scene_entry/visible",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/transition/method",
+                    "quote": "先承接上一场已建立退出画面，再按本单元口播换成当前解释台；这是明确转场，不把不同对象冒充相同状态。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/beats/0/action",
+                    "quote": "一串相同的小护理圆片沿弯曲长轨道间隔铺开，没有上升曲线；开头的魔法闪电形按钮被透明盖隔开，轨道尽头保持开放。主牌“长期坚持”，副牌“别期待立刻变化”，不画人变年轻。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "reveal_attention",
+            "label": "渐进揭示与注意力",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "reveal_attention",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/scenes/40",
+                  "/concepts/40"
+                ],
+                "conclusion": "满足",
+                "reason": "动作给出“眼周先被圈住”，继而另三槽选择和一瓶入托盘；主牌与不堆叠小牌构成主次，单拍内有可读的优先顺序和闭合后停留意图。文字足以说明注意由四类转向先后/择取，不需要为每个道具另拆一拍；实际动效节奏仍未验证。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/text",
+                    "quote": "如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/beats/0/action",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/beats/0/reveal",
+                    "quote": "回到四种表现，先眼周再选最突出问题；关系闭合，保留画面供理解。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/metaphor_mapping/reading_order",
+                    "quote": "先基准或当前对象，再突出单一关系差异；留出理解停留，不机械双栏。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "reveal_attention",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/scenes/41",
+                  "/concepts/41"
+                ],
+                "conclusion": "满足",
+                "reason": "一个新状态聚焦单一对比：长期重复护理与被隔开的即时按钮；主牌长期坚持、副牌别期待立刻变化说明注意主次，完成后保留供理解。这个对比可一次揭示，文本没有需要提前保密的结果；单拍/同时存在多个对象不足以否定渐进揭示。具体先看轨道还是按钮及停留时长属于实现验证。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/audience_task",
+                    "quote": "纠正立竿见影期待"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "一定是要长期坚持的"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/text",
+                    "quote": "它们大部分都不是能立竿见影"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/beats/0/action",
+                    "quote": "一串相同的小护理圆片沿弯曲长轨道间隔铺开，没有上升曲线；开头的魔法闪电形按钮被透明盖隔开，轨道尽头保持开放。主牌“长期坚持”，副牌“别期待立刻变化”，不画人变年轻。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/beats/0/reveal",
+                    "quote": "一致性比瞬间结果更符合长期目标；关系闭合，保留画面供理解。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_mapping/reading_order",
+                    "quote": "先基准或当前对象，再突出单一关系差异；留出理解停留，不机械双栏。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          },
+          {
+            "dimension": "ian_creative_space",
+            "label": "Ian创作空间",
+            "coverage": {
+              "numerator": 2,
+              "denominator": 47,
+              "value": 0.0425531914893617
+            },
+            "unreviewed_unit_ids": [
+              "U001",
+              "U002",
+              "U003",
+              "U004",
+              "U005",
+              "U006",
+              "U007",
+              "U008",
+              "U009",
+              "U010",
+              "U011",
+              "U012",
+              "U013",
+              "U014",
+              "U015",
+              "U016",
+              "U017",
+              "U018",
+              "U019",
+              "U020",
+              "U021",
+              "U022",
+              "U023",
+              "U024",
+              "U025",
+              "U026",
+              "U027",
+              "U028",
+              "U029",
+              "U030",
+              "U031",
+              "U032",
+              "U033",
+              "U034",
+              "U035",
+              "U036",
+              "U037",
+              "U038",
+              "U039",
+              "U040",
+              "U043",
+              "U044",
+              "U045",
+              "U046",
+              "U047"
+            ],
+            "conclusion_unit_counts": {
+              "满足": 2,
+              "问题": 0,
+              "待确认": 0,
+              "不适用": 0
+            },
+            "items": [
+              {
+                "dimension": "ian_creative_space",
+                "unit_ids": [
+                  "U041"
+                ],
+                "objects": [
+                  "/concepts/40",
+                  "/scenes/40"
+                ],
+                "conclusion": "满足",
+                "reason": "保护项集中在原命题、不叠加、非临床证据和Ian视觉身份，转盘/扣/托盘是具体提案，未以不可替换措辞把每个造型或位置冻结。可调整镜头光色明确存在；未据具体化本身认定过约束，也不推断Ian已实际参与。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/audience_task",
+                    "quote": "把四块重新合成决策顺序"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/40/limitations/0",
+                    "quote": "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/adjustable_art_notes",
+                    "quote": "保留 B 关系对比的解释逻辑；主体和中文短牌均为 Ian 黏土完整视觉对象。可调整镜头与光色，不能把对比做成答案海报或真实临床证据。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/40/metaphor_boundary",
+                    "quote": "不把四类全部同时处理，不让护肤品多即有效。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/40/beats/0/action",
+                    "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              },
+              {
+                "dimension": "ian_creative_space",
+                "unit_ids": [
+                  "U042"
+                ],
+                "objects": [
+                  "/concepts/41",
+                  "/scenes/41"
+                ],
+                "conclusion": "满足",
+                "reason": "固定的是不规定疗程、不承诺必好及不画临床效果的边界，合理保留了科学限制；轨道、圆片、透明盖和按钮属于具体创意提案，未被另设为不可替换的硬性清单。文字可调整镜头光色，未要求Ian必须服从特定角度、数量或精确布局。",
+                "evidence": [
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/audience_task",
+                    "quote": "纠正立竿见影期待"
+                  },
+                  {
+                    "role": "02",
+                    "pointer": "/semantic_units/41/limitations/0",
+                    "quote": "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/adjustable_art_notes",
+                    "quote": "保留 B 关系对比的解释逻辑；主体和中文短牌均为 Ian 黏土完整视觉对象。可调整镜头与光色，不能把对比做成答案海报或真实临床证据。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/concepts/41/metaphor_boundary",
+                    "quote": "轨道不能构成规定疗程、必好终点或线性效果承诺。"
+                  },
+                  {
+                    "role": "03",
+                    "pointer": "/scenes/41/beats/0/action",
+                    "quote": "一串相同的小护理圆片沿弯曲长轨道间隔铺开，没有上升曲线；开头的魔法闪电形按钮被透明盖隔开，轨道尽头保持开放。主牌“长期坚持”，副牌“别期待立刻变化”，不画人变年轻。"
+                  }
+                ],
+                "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+              }
+            ]
+          }
+        ],
+        "relations": {
+          "raw_total": 46,
+          "reviewed": {
+            "numerator": 2,
+            "denominator": 46,
+            "value": 0.043478260869565216
+          },
+          "unreviewed": {
+            "numerator": 44,
+            "denominator": 46,
+            "value": 0.9565217391304348
+          },
+          "unreviewed_pointers": [
+            "/semantic_units/1/relations/0",
+            "/semantic_units/2/relations/0",
+            "/semantic_units/3/relations/0",
+            "/semantic_units/4/relations/0",
+            "/semantic_units/5/relations/0",
+            "/semantic_units/6/relations/0",
+            "/semantic_units/7/relations/0",
+            "/semantic_units/8/relations/0",
+            "/semantic_units/9/relations/0",
+            "/semantic_units/10/relations/0",
+            "/semantic_units/11/relations/0",
+            "/semantic_units/12/relations/0",
+            "/semantic_units/13/relations/0",
+            "/semantic_units/14/relations/0",
+            "/semantic_units/15/relations/0",
+            "/semantic_units/16/relations/0",
+            "/semantic_units/17/relations/0",
+            "/semantic_units/18/relations/0",
+            "/semantic_units/19/relations/0",
+            "/semantic_units/20/relations/0",
+            "/semantic_units/21/relations/0",
+            "/semantic_units/22/relations/0",
+            "/semantic_units/23/relations/0",
+            "/semantic_units/24/relations/0",
+            "/semantic_units/25/relations/0",
+            "/semantic_units/26/relations/0",
+            "/semantic_units/27/relations/0",
+            "/semantic_units/28/relations/0",
+            "/semantic_units/29/relations/0",
+            "/semantic_units/30/relations/0",
+            "/semantic_units/31/relations/0",
+            "/semantic_units/32/relations/0",
+            "/semantic_units/33/relations/0",
+            "/semantic_units/34/relations/0",
+            "/semantic_units/35/relations/0",
+            "/semantic_units/36/relations/0",
+            "/semantic_units/37/relations/0",
+            "/semantic_units/38/relations/0",
+            "/semantic_units/39/relations/0",
+            "/semantic_units/42/relations/0",
+            "/semantic_units/43/relations/0",
+            "/semantic_units/44/relations/0",
+            "/semantic_units/45/relations/0",
+            "/semantic_units/46/relations/0"
+          ],
+          "results": {
+            "视觉表达": {
+              "count": 2,
+              "of_raw": {
+                "numerator": 2,
+                "denominator": 46,
+                "value": 0.043478260869565216
+              },
+              "of_reviewed": {
+                "numerator": 2,
+                "denominator": 2,
+                "value": 1.0
+              }
+            },
+            "有意交给口播": {
+              "count": 0,
+              "of_raw": {
+                "numerator": 0,
+                "denominator": 46,
+                "value": 0.0
+              },
+              "of_reviewed": {
+                "numerator": 0,
+                "denominator": 2,
+                "value": 0.0
+              }
+            },
+            "未表达": {
+              "count": 0,
+              "of_raw": {
+                "numerator": 0,
+                "denominator": 46,
+                "value": 0.0
+              },
+              "of_reviewed": {
+                "numerator": 0,
+                "denominator": 2,
+                "value": 0.0
+              }
+            },
+            "待确认": {
+              "count": 0,
+              "of_raw": {
+                "numerator": 0,
+                "denominator": 46,
+                "value": 0.0
+              },
+              "of_reviewed": {
+                "numerator": 0,
+                "denominator": 2,
+                "value": 0.0
+              }
+            },
+            "不适用": {
+              "count": 0,
+              "of_raw": {
+                "numerator": 0,
+                "denominator": 46,
+                "value": 0.0
+              },
+              "of_reviewed": {
+                "numerator": 0,
+                "denominator": 2,
+                "value": 0.0
+              }
+            }
+          },
+          "expression_rate": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "denominator_note": "视觉表达/(视觉表达+未表达)；只计已审且适合视觉表达；口播/待确认/不适用不进入此分母。",
+          "items": [
+            {
+              "relation_pointer": "/semantic_units/40/relations/0",
+              "result": "视觉表达",
+              "reason": "实际02关系仅指按字幕接续前一单元；03先承接前一单元可见对象，再进入当前解释状态，已用场景顺序/转场表达follows。此结果不等同于本段所有因果、条件或优先关系均被视觉表达。",
+              "evidence": [
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/40/relations/0/type",
+                  "quote": "follows"
+                },
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/40/relations/0/purpose",
+                  "quote": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+                },
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/40/text",
+                  "quote": "现在应对熬夜肌的四大板块 我们就都给大家讲完了"
+                },
+                {
+                  "role": "03",
+                  "pointer": "/scenes/40/beats/0/action",
+                  "quote": "回调四瓣观察转盘，眼周插槽先被橙环圈住，另外三槽中只有一个带可移动的小选择扣；旁边三只瓶里只一只进入当下托盘。主牌“眼周优先·再抓突出项”，保留“不堆叠”小牌。"
+                },
+                {
+                  "role": "03",
+                  "pointer": "/scenes/40/transition/method",
+                  "quote": "先承接上一场已建立退出画面，再按本单元口播换成当前解释台；这是明确转场，不把不同对象冒充相同状态。"
+                }
+              ],
+              "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+            },
+            {
+              "relation_pointer": "/semantic_units/41/relations/0",
+              "result": "视觉表达",
+              "reason": "实际02关系仅指按字幕接续前一单元；03先承接前一单元可见对象，再进入当前解释状态，已用场景顺序/转场表达follows。此结果不等同于本段所有因果、条件或优先关系均被视觉表达。",
+              "evidence": [
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/41/relations/0/type",
+                  "quote": "follows"
+                },
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/41/relations/0/purpose",
+                  "quote": "遵循实际字幕叙述顺序；依赖的概念另见章节理解路径"
+                },
+                {
+                  "role": "02",
+                  "pointer": "/semantic_units/41/text",
+                  "quote": "还要给大家泼个冷水"
+                },
+                {
+                  "role": "03",
+                  "pointer": "/scenes/41/beats/0/action",
+                  "quote": "一串相同的小护理圆片沿弯曲长轨道间隔铺开，没有上升曲线；开头的魔法闪电形按钮被透明盖隔开，轨道尽头保持开放。主牌“长期坚持”，副牌“别期待立刻变化”，不画人变年轻。"
+                },
+                {
+                  "role": "03",
+                  "pointer": "/scenes/41/transition/method",
+                  "quote": "先承接上一场已建立退出画面，再按本单元口播换成当前解释台；这是明确转场，不把不同对象冒充相同状态。"
+                }
+              ],
+              "reviewer": "独立语义试评 agent /root/narrative_sample_review"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

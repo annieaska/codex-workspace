@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>护肤知识科普静态样例 · UI 验收报告</title>
+  <style>
+    :root{color-scheme:light;--bg:#f1ebe2;--panel:#fffaf3;--ink:#24383c;--muted:#66777b;--green:#237463;--line:#d8cdc0}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}
+    main{max-width:1040px;margin:0 auto;padding:38px 22px 64px}h1{margin:0;font-size:30px}p{color:var(--muted)}
+    .summary,.test{background:var(--panel);border:1px solid var(--line);border-radius:16px}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;overflow:hidden;margin:22px 0;background:var(--line)}
+    .summary div{background:var(--panel);padding:16px}.summary b{display:block;font-size:23px;color:var(--green)}.summary span{color:var(--muted);font-size:12px}
+    h2{font-size:18px;margin:28px 0 12px}.tests{display:grid;gap:8px}.test{display:flex;align-items:center;gap:10px;padding:12px 14px}.pass{color:var(--green);font-weight:800}.meta{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+    @media(max-width:650px){.summary{grid-template-columns:1fr 1fr}.test{align-items:flex-start}}
+  </style>
+</head>
+<body>
+<main>
+  <h1>护肤知识科普静态样例 · UI 验收报告</h1>
+  <p>范围：本地静态 HTML；重点验证“全部资料”、方向灵感池、同行来源信息，以及桌面/手机端页面可达性。</p>
+  <section class="summary" aria-label="验收摘要">
+    <div><b>12</b><span>通过</span></div><div><b>0</b><span>失败</span></div><div><b>3</b><span>视口规格</span></div><div><b>0</b><span>运行时错误</span></div>
+  </section>
+  <h2>通过项</h2>
+  <section class="tests">
+    <div class="test"><span class="pass">PASS</span><span>“全部资料”的定义与知识库约束可见</span></div>
+    <div class="test"><span class="pass">PASS</span><span>方向灵感池包含 10 个灵感，并可标记或取消</span></div>
+    <div class="test"><span class="pass">PASS</span><span>资料可按关系检索，空状态与清空恢复正常</span></div>
+    <div class="test"><span class="pass">PASS</span><span>资料详情包含纳入原因、资料关系和关联候选方向</span></div>
+    <div class="test"><span class="pass">PASS</span><span>1962×885 下资料页外层及资料列表可滚到底部</span></div>
+    <div class="test"><span class="pass">PASS</span><span>4 条同行样本均含平台、作者、日期、形式、快照与来源入口</span></div>
+    <div class="test"><span class="pass">PASS</span><span>同行代表样本与来源入口均有交互反馈</span></div>
+    <div class="test"><span class="pass">PASS</span><span>方向 B 的核心材料可直接进入对应资料详情</span></div>
+    <div class="test"><span class="pass">PASS</span><span>1440×900 桌面视口无横向溢出</span></div>
+    <div class="test"><span class="pass">PASS</span><span>390×844 手机视口使用自然页面滚动且无横向溢出</span></div>
+    <div class="test"><span class="pass">PASS</span><span>390×844 手机同行页字段完整且无横向溢出</span></div>
+    <div class="test"><span class="pass">PASS</span><span>控制台、页面脚本及资源加载无运行时错误</span></div>
+  </section>
+  <div class="meta">验收日期：2026-08-31 · 执行方式：Playwright / Chromium · 执行者：Codex（单 agent）</div>
+</main>
+</body>
+</html>

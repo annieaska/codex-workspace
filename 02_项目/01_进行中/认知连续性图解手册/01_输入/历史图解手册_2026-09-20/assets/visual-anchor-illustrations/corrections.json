@@ -1,0 +1,18 @@
+[
+  {
+    "index": 1,
+    "prompt": "Edit this illustration only: remove the orange VC badge at the upper left of the title. This chapter is skin visual anchors, not vitamin C. Keep title '稳定的视觉锚点能做什么？' centered, and preserve all three skin panels, character, labels, colors and composition. No new elements."
+  },
+  {
+    "index": 3,
+    "prompt": "Edit illustration precisely. Change top title from 对焦与锚点 to '焦点与锚点'. In first diagram frame show ONLY highlighted teal A, remove grey B,C and connecting lines. In second diagram show teal A → highlighted orange B; remove grey C and line to C. In third diagram retain full A → B → highlighted purple C chain: replace gray dash A-B with clear right-pointing dark arrow, so previous causal relationship remains visible. Preserve A stable left position and teal underline in every panel. Keep clay presenter and rest exactly. No additional text."
+  },
+  {
+    "index": 8,
+    "prompt": "Edit the six-frame illustration precisely. Bottom left '正确 3s' frame currently has floating water droplets but no skin: replace floating droplets and down arrows with the SAME pink skin cross-section as bottom middle/right, in SAME right-side position. Add 2 small BLUE arrows pointing UP out of skin, representing water loss. Bottom middle and right preserve same skin and lab. Top left wrong3s add small skin diagram on right beside presenter to establish initial subject. Keep top orange desert and purple cell backgrounds, 3s6s10s labels, CC off icons, all characters unchanged. No other changes."
+  },
+  {
+    "index": 9,
+    "prompt": "Edit only the yellow circular C node in right panel: recolor node to PURPLE (same purple used for C in this chapter). Keep white C letter, teal A and orange B, all other colors, shapes and text exactly unchanged."
+  }
+]

@@ -1,0 +1,8 @@
+# Keep the workspace instruction chain bounded; detailed policies are loaded on demand.
+project_doc_max_bytes = 16384
+
+# 浏览器默认文件集中到临时目录；显式 filename 仍须使用绝对路径。
+[mcp_servers.playwright]
+command = "npx"
+args = ["@playwright/mcp@latest", "--output-dir", "/Users/chengyu/12_打工人程宇/99_临时/浏览器自动输出/主工作区", "--file-paths", "absolute"]
+cwd = "/Users/chengyu/12_打工人程宇/99_临时/浏览器自动输出/主工作区"

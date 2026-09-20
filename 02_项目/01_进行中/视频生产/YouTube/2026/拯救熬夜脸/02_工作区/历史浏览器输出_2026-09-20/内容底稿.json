@@ -1,0 +1,2997 @@
+{
+  "interface_version": "yuge.content-prep.v2",
+  "project_id": "拯救熬夜脸",
+  "language": "zh-CN",
+  "content_version": "20260913-logic-analysis-v1",
+  "project_context": {
+    "requirements": {
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/视频生产/YouTube/2026/拯救熬夜脸/03_交付物/无主持角色/01_制作要求_v1/制作要求.md",
+      "path_base": "absolute",
+      "sha256": "9ac2d37d8dbe8fc17bd98bb3f31e9da76b99bebc05fb4e01329f1f8de14fae2d",
+      "interface_version": "yuge.project-requirements.v1",
+      "version": "20260913-无主持-v1"
+    }
+  },
+  "sources": [
+    {
+      "id": "SRT01",
+      "kind": "subtitle",
+      "locator": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/视频生产/YouTube/2026/拯救熬夜脸/01_输入/拯救熬夜脸_字幕修正版_v1.srt",
+      "path_base": "absolute",
+      "version": "sha256:1fea7ca259bf68f81cd21c0c11afddb4985cda895401f63fb977503683de9db5",
+      "purpose": "本轮内容唯一主依据",
+      "selected_for_delivery": false
+    },
+    {
+      "id": "DOC01",
+      "kind": "manuscript",
+      "locator": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/视频生产/YouTube/2026/拯救熬夜脸/01_输入/拯救熬夜脸.docx",
+      "path_base": "absolute",
+      "version": "sha256:ee4c8f002ed2e2659bd4996f55fca58102ea2e6afbec0befc69f367ba0c71ec6",
+      "purpose": "辅助理解章节、限制与表达；不覆盖字幕",
+      "selected_for_delivery": false
+    }
+  ],
+  "semantic_units": [
+    {
+      "id": "U001",
+      "title": "两张脸的猜题",
+      "chapter": "开场",
+      "text": "先给大家看两张脸 猜一猜她们俩到底谁熬夜了 3 2 1 哎 左边这位",
+      "audience_task": "比较外观不能只看白皙",
+      "logic_role": "引入",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 1–4",
+          "cue_start": 1,
+          "cue_end": 4
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+      ],
+      "relations": [],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "用判断题建立认知缺口；此处尚未给出判定依据。",
+        "evidence": [
+          {
+            "unit_id": "U001",
+            "quote": "猜一猜她们俩到底谁熬夜了"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U002",
+      "title": "今天要回答什么",
+      "chapter": "开场",
+      "text": "问题来了 当我们熬夜之后 我们的身体和我们的皮肤到底发生了什么 才会造成我们有一张熬夜脸呢 而我们又应该用什么样的方法 什么样的成分和产品来修护 或者预防我们的熬夜脸呢 看完今天这期 你就都知道了",
+      "audience_task": "建立原因到护理的任务",
+      "logic_role": "引入",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 5–13",
+          "cue_start": 5,
+          "cue_end": 13
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "question",
+          "unit_ids": [
+            "U001"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "把猜题扩展为两个任务：为什么出现熬夜脸、如何应对。",
+        "evidence": [
+          {
+            "unit_id": "U002",
+            "quote": "而我们又应该用什么样的方法"
+          },
+          {
+            "unit_id": "U001",
+            "quote": "猜一猜她们俩到底谁熬夜了"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U003",
+      "title": "四种表现地图",
+      "chapter": "开场",
+      "text": "一张典型的熬夜脸 有四个特征 一 充满怨气的眼睛 也就是说这眼睛的周围布满了 水肿 黑眼圈 细纹 粗糙 二 失控的皮肤水油状态 也就是我们平常常说的什么皮肤外油内干 又油又干这样的情况 三 锐化的皮肤纹理 比如说毛孔粗大 布满细纹 还有这个皮肤的沟沟壑壑 感觉特别的清楚 四 断电的气色 也就是咱们的肤色发黄 发暗 看起来暗淡无光没有光泽",
+      "audience_task": "把复杂症状分成四组",
+      "logic_role": "引入",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 14–29",
+          "cue_start": 14,
+          "cue_end": 29
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "decomposes",
+          "unit_ids": [
+            "U002"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "把总问题拆成眼周、水油、纹理、气色四个讨论分支。",
+        "evidence": [
+          {
+            "unit_id": "U003",
+            "quote": "一张典型的熬夜脸 有四个特征"
+          },
+          {
+            "unit_id": "U002",
+            "quote": "而我们又应该用什么样的方法"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U004",
+      "title": "先后与个体差异",
+      "chapter": "开场",
+      "text": "虽然说我们每个人的体质不一样 肤质也不一样 这四个特征有可能会依次出现 也有可能同时出现 但是我们大概率还是都会遇到了 所以这四种特征 它都是有什么原因造成的 我们又应该用什么样的方法去修护和预防 我们都要知道",
+      "audience_task": "认识不同人的表现不一样",
+      "logic_role": "引入",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 30–38",
+          "cue_start": 30,
+          "cue_end": 38
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "qualifies",
+          "unit_ids": [
+            "U003"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "限定四分法的适用方式：不是所有人都按同一顺序出现。",
+        "evidence": [
+          {
+            "unit_id": "U004",
+            "quote": "这四个特征有可能会依次出现 也有可能同时出现"
+          },
+          {
+            "unit_id": "U003",
+            "quote": "一张典型的熬夜脸 有四个特征"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U005",
+      "title": "回看两张脸：眼周优先",
+      "chapter": "开场",
+      "text": "现在我们回过头来看 片头咱们给大家放的那两张图 大家可以看到明明左边这张脸 它的皮肤更白 更细腻 右边那张反而发黄有斑 看起来皮肤挺粗糙的 但为什么我们还是觉得左边那个人熬夜了呢 因为我们判断一个人是不是熬夜脸 其实其中最关键的因素就是看眼睛 一个人的眼睛的状态 它占了你的面部状态的一半以上的权重 而其他的比如说不管是皮肤看起来是出油了 还是更干了 是不是有毛孔粗大 是不是有细纹 是不是发黄 这些其实都没有眼睛的影响力大",
+      "audience_task": "理解白皙不等于精神",
+      "logic_role": "引入",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 39–55",
+          "cue_start": 39,
+          "cue_end": 55
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "callback",
+          "unit_ids": [
+            "U001"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "回到开场问题，用眼周优先解释先前看似反常的判断。",
+        "evidence": [
+          {
+            "unit_id": "U005",
+            "quote": "现在我们回过头来看 片头咱们给大家放的那两张图"
+          },
+          {
+            "unit_id": "U001",
+            "quote": "猜一猜她们俩到底谁熬夜了"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U006",
+      "title": "选错重点的代价",
+      "chapter": "开场",
+      "text": "那好了 那如果我们选熬夜肌修护的产品时候 选的都是什么细致毛孔的 修护肤色的提亮光泽的 那你就会觉得用了半天好像没什么用 这个就是因为重点抓错了 所以下面我们会按照熬夜脸的四大特征 依次说明 而第一个要说的就是我们的重点眼周状态 聊一聊这眼睛是如何一步一步地熬出怨气的",
+      "audience_task": "先匹配问题再选择产品",
+      "logic_role": "引入",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 56–65",
+          "cue_start": 56,
+          "cue_end": 65
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U005"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "decomposes",
+          "unit_ids": [
+            "U003"
+          ],
+          "purpose": "眼周优先之外，仍承诺沿四分地图逐项说明。",
+          "evidence": [
+            {
+              "unit_id": "U006",
+              "quote": "依次说明"
+            },
+            {
+              "unit_id": "U003",
+              "quote": "一张典型的熬夜脸 有四个特征"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "从眼周重要性推出先处理眼周的选择策略；这不是新的生理机制。",
+        "evidence": [
+          {
+            "unit_id": "U006",
+            "quote": "这个就是因为重点抓错了"
+          },
+          {
+            "unit_id": "U005",
+            "quote": "现在我们回过头来看 片头咱们给大家放的那两张图"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U007",
+      "title": "薄而脆弱的眼周",
+      "chapter": "眼周",
+      "text": "为什么在熬夜之后眼周状态容易出问题呢 这是由眼周皮肤的结构特殊性决定的 首先眼周的皮肤比较薄 它只有面部皮肤厚度的三分之一左右 其次眼周的皮肤它的皮脂腺很少 也就是说它不出油 不出油屏障就不完整 最后它这个眼周毛细血管还比较多 所以就更容易敏感 更容易产生色沉 也就是说这个眼周皮肤它会处于一个很脆弱 很敏感的状态 这也就是为什么熬夜之后它反应这么大了 下面我们就按照熬夜之后眼周问题 从轻到重的顺序 依次给大家来讲讲",
+      "audience_task": "理解结构与易显问题的关系",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 66–81",
+          "cue_start": 66,
+          "cue_end": 81
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U006"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "展开眼周易显问题的结构解释，为后面的症状叙述提供共同前提。",
+        "evidence": [
+          {
+            "unit_id": "U007",
+            "quote": "这是由眼周皮肤的结构特殊性决定的"
+          },
+          {
+            "unit_id": "U006",
+            "quote": "这个就是因为重点抓错了"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U008",
+      "title": "水肿：水分暂时滞留",
+      "chapter": "眼周",
+      "text": "当你熬了一个晚上之后 你首先会觉得自己的眼睛看起来睁不开了 那就因为眼周肿了 因为我们身体里面的水 它本来会被循环系统带走吸收的 但是熬夜之后循环变差了 眼周的这些毛细血管就会出现水的滞留 而且刚才说了眼周的皮肤比较薄 所以一旦出现水分的滞留 哪怕只是一点点 它都会非常的明显 能看出来我们的眼睛水肿了",
+      "audience_task": "理解薄皮下小变化也显眼",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 82–93",
+          "cue_start": 82,
+          "cue_end": 93
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U007"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "把薄皮这一前提与水分滞留结合，解释少量变化为什么明显。",
+        "evidence": [
+          {
+            "unit_id": "U008",
+            "quote": "而且刚才说了眼周的皮肤比较薄"
+          },
+          {
+            "unit_id": "U007",
+            "quote": "这是由眼周皮肤的结构特殊性决定的"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U009",
+      "title": "冷敷方法与禁忌",
+      "chapter": "眼周",
+      "text": "这个时候其实有一个零成本的解决办法 就是冷敷 我们可以找一个水凝胶眼罩 放在冰箱的冷藏层去降温一下 然后拿来敷一下 或者更简单地找两勺子放在冰箱的冷藏层冷藏一下 然后一边一个一扣就可以了 这块要特别注意一下 就是千万别拿冰块直接去敷眼睛 因为巨大的温差 反而对眼周皮肤是一种刺激",
+      "audience_task": "区分冷藏工具和直接冰块",
+      "logic_role": "限定",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 94–104",
+          "cue_start": 94,
+          "cue_end": 104
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "冷敷必须保留“不直接使用冰块”的限制。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U008"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "从水肿转入应对方法，并在本单元内部限制直接冰块接触。",
+        "evidence": [
+          {
+            "unit_id": "U009",
+            "quote": "这个时候其实有一个零成本的解决办法 就是冷敷"
+          },
+          {
+            "unit_id": "U008",
+            "quote": "而且刚才说了眼周的皮肤比较薄"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U010",
+      "title": "青色黑眼圈的描述",
+      "chapter": "眼周",
+      "text": "如果熬夜的时间变得更长了 眼周的状态继续恶化的话 不光眼睛会更肿 还有一个关键变化 就是你会发现你开始出现眼下青了 这个眼下青就是血管型黑眼圈 这种黑眼圈它有一个特点 就是当你用手指去轻轻按压的时候 似乎某种角度 它的颜色会变淡 甚至变得跟肤色差不多 造成这种现象的原因 就是当我们不断的熬夜 循环系统变差的时候 我们这个血管里的血液会更加的缺氧 缺氧了之后血管会呈现蓝紫色 所以我们会有眼下青 而当拿手指去按压的时候 我们的血管就被压扁了 所以在某些角度上来看的话 这个蓝紫色似乎变得淡了一点 甚至消失了",
+      "audience_task": "区分颜色现象和机制解释",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 105–126",
+          "cue_start": 105,
+          "cue_end": 126
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "青紫外观不能画成血液本身变蓝；按压现象不能画成可靠自诊或按压眼球操作。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "progresses",
+          "unit_ids": [
+            "U008"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "沿症状轴从水肿推进到青色黑眼圈；它不是冷敷造成的后果。",
+        "evidence": [
+          {
+            "unit_id": "U010",
+            "quote": "不光眼睛会更肿 还有一个关键变化"
+          },
+          {
+            "unit_id": "U008",
+            "quote": "而且刚才说了眼周的皮肤比较薄"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U011",
+      "title": "咖啡因及产品示例",
+      "chapter": "眼周",
+      "text": "那血管型黑眼圈的改善办法 思路其实非常的简单明了 那就是改善循环 这里有一个经典成分 就是咖啡因 外用咖啡因可以去调节毛细血管的循环状态 去改善血管的缺氧情况 所以在这个时候 其实我们找一个含咖啡因的眼霜去用就OK了 比如说像The Ordinary的咖啡因眼精华 The INKEY List The INKEY List The INKEY List 咖啡因眼霜 贝德玛的眼霜 娇韵诗的眼霜 或者羽西鎏金眼霜等等 如果水肿 我们就结合冰敷和眼霜一起使用",
+      "audience_task": "把护理思路连回当前问题",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 127–145",
+          "cue_start": 127,
+          "cue_end": 145
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U010"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "callback",
+          "unit_ids": [
+            "U009"
+          ],
+          "purpose": "后文“冰敷”回用前文方法时，必须携带“不直接使用冰块”的限制；两词之间有歧义风险。",
+          "evidence": [
+            {
+              "unit_id": "U011",
+              "quote": "如果水肿 我们就结合冰敷和眼霜一起使用"
+            },
+            {
+              "unit_id": "U009",
+              "quote": "这个时候其实有一个零成本的解决办法 就是冷敷"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "把前面提出的循环解释连接到咖啡因和产品例子。",
+        "evidence": [
+          {
+            "unit_id": "U011",
+            "quote": "那血管型黑眼圈的改善办法"
+          },
+          {
+            "unit_id": "U010",
+            "quote": "不光眼睛会更肿 还有一个关键变化"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U012",
+      "title": "青与棕：问题变复杂",
+      "chapter": "眼周",
+      "text": "如果情况继续恶化 会有两个标志性的变化 一个就是你会看到你的黑眼圈 从一个简单的青黑色 逐渐变成更复杂更脏的棕黑色了 第二个就是眼周的皮肤会变得更干 更敏感 也更发松了 造成这样变化的原因 有两个 一个是随着毛细血管的循环继续受阻 这个血管的缺氧情况继续加重 我们血液里面的血红蛋白 就会逐渐分解成各种有颜色的物质 比如说绿色的胆绿素 橘黄色的胆红素 还有黄褐色的铁血黄素 这些色素混合到一起的时候 就会呈现出那种脏脏的棕黑色 也就是色素型的黑眼圈",
+      "audience_task": "认识色沉线索不能混成一种",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 146–165",
+          "cue_start": 146,
+          "cue_end": 165
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "progresses",
+          "unit_ids": [
+            "U010"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "从青色推进到颜色更复杂及干、敏感、松两组变化，并解释第一组。",
+        "evidence": [
+          {
+            "unit_id": "U012",
+            "quote": "从一个简单的青黑色 逐渐变成更复杂更脏的棕黑色了"
+          },
+          {
+            "unit_id": "U010",
+            "quote": "不光眼睛会更肿 还有一个关键变化"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U013",
+      "title": "疲劳、干燥与细纹",
+      "chapter": "眼周",
+      "text": "第二个眼周为什么会变得更干 更敏感 也更发松呢 是因为眼周的皮肤本来就薄 然后你本来应该睡觉的时间 没有睡觉 你熬夜了 那你就会不断的眨眼睛 当眨眼睛的次数变多 眼周的皮肤和肌肉都会变得更疲劳 也就更容易敏感 屏障变得更差 更容易发松起细纹 这也就是为什么 我们说眼周情况继续恶化的时候 会出现这两个标志性的变化",
+      "audience_task": "从单一颜色转向多因素",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 166–181",
+          "cue_start": 166,
+          "cue_end": 181
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U012"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "回答上一单元列出的第二个变化；必须承接两分支结构。",
+        "evidence": [
+          {
+            "unit_id": "U013",
+            "quote": "第二个眼周为什么会变得更干 更敏感 也更发松呢"
+          },
+          {
+            "unit_id": "U012",
+            "quote": "从一个简单的青黑色 逐渐变成更复杂更脏的棕黑色了"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U014",
+      "title": "针对黑眼圈的产品举例",
+      "chapter": "眼周",
+      "text": "了解了现象和原因 下面我们来说说解决办法 对于色素型黑眼圈 之前我们在三加一抗老法的眼周专题里面 讲过两个特别对号入座的眼霜 一个就是德玛森氏的VK眼霜 还有一个是菲洛嘉的眼霜 它们两只眼霜都是添加了 有针对性的可以去清除各种色素的成分 而且都是添加到了起效量 而且这两只眼霜的效果 可以说是我这么些年去测试过的 针对黑眼圈的眼霜里面 最有体感的两只眼霜了",
+      "audience_task": "区分个人体验和效果保证",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 182–195",
+          "cue_start": 182,
+          "cue_end": 195
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U012"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "针对颜色分支举产品例子，并诉诸作者体验；不是为干松分支作答。",
+        "evidence": [
+          {
+            "unit_id": "U014",
+            "quote": "对于色素型黑眼圈"
+          },
+          {
+            "unit_id": "U012",
+            "quote": "从一个简单的青黑色 逐渐变成更复杂更脏的棕黑色了"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U015",
+      "title": "综合抗老与配方举例",
+      "chapter": "眼周",
+      "text": "对于第二种变化 就是眼周逐渐变得发干发松 其实大部分的抗老型的眼霜 它们都具有不错的滋润修护和抗老综合性 抗老的功能 但是最近我发现了一只非常有意思的眼霜 单独在这儿拿出来跟大家说一说 就是做美容仪的品牌 Amiro它出了一只光电眼霜 这只眼霜其实从成分表来看的话 没什么新奇的 它加了一些淡黑眼圈的成分 也加了一些强韧屏障的成分 还加了淡化细纹的成分 哎等等",
+      "audience_task": "看懂需求由单点转为组合",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 196–210",
+          "cue_start": 196,
+          "cue_end": 210
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U013"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "针对另一分支提出综合护理及眼霜例子，与上一产品段并列。",
+        "evidence": [
+          {
+            "unit_id": "U015",
+            "quote": "对于第二种变化 就是眼周逐渐变得发干发松"
+          },
+          {
+            "unit_id": "U013",
+            "quote": "第二个眼周为什么会变得更干 更敏感 也更发松呢"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U016",
+      "title": "光电头与组合思路",
+      "chapter": "眼周",
+      "text": "它里面最有意思的是它的那个眼霜的头 这个头结合了微电流和红光两种功能 其实这个设计就很巧妙了 因为微电流不光可以去促进眼霜成分的吸收 还可以帮助提拉眼周的皮肤 让你的细纹淡化的效果变得更好 这个红光我们都知道 它是可以促进真皮生成胶原蛋白的 所以在这只眼霜的长期使用效果上 也会有更好的抗老功能 我们的实验室也测过很多只眼霜 也发现像这种物理和化学手段 相互结合的眼霜类型 确实能收获比较好的效果",
+      "audience_task": "区分产品说明和证实疗效",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 211–224",
+          "cue_start": 211,
+          "cue_end": 224
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U015"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "展开刚才眼霜的工具组成及作者给出的组合理由。",
+        "evidence": [
+          {
+            "unit_id": "U016",
+            "quote": "这个头结合了微电流和红光两种功能"
+          },
+          {
+            "unit_id": "U015",
+            "quote": "对于第二种变化 就是眼周逐渐变得发干发松"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U017",
+      "title": "长期问题的复合状态",
+      "chapter": "眼周",
+      "text": "然后我们来说下一个阶段 当熬夜变成常态的时候 我们的眼周问题也会变得更加的复杂综合 长期熬夜会让眼周皮肤的屏障功能 有显著的下降 它就会直接造成我们皮肤合成胶原的能力 也被影响被阻碍 所以眼周的皮肤就会呈现出 越来越明显的老化的状态 我们可以看到的 不光是眼周这一圈皮肤松松的有细纹 更多的还有像黑眼圈 像眼袋甚至泪沟 甚至有颜色的眼袋和泪沟 等等这些现象逐渐的不断的出现",
+      "audience_task": "理解眼袋泪沟不是单一色差",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 225–239",
+          "cue_start": 225,
+          "cue_end": 239
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "progresses",
+          "unit_ids": [
+            "U012",
+            "U013"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "推进到长期复合状态；跨过中间产品段继续原来的问题主线。",
+        "evidence": [
+          {
+            "unit_id": "U017",
+            "quote": "当熬夜变成常态的时候 我们的眼周问题也会变得更加的复杂综合"
+          },
+          {
+            "unit_id": "U012",
+            "quote": "从一个简单的青黑色 逐渐变成更复杂更脏的棕黑色了"
+          },
+          {
+            "unit_id": "U013",
+            "quote": "第二个眼周为什么会变得更干 更敏感 也更发松呢"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U018",
+      "title": "修护不是十天承诺",
+      "chapter": "眼周",
+      "text": "到了这个阶段 我们就不能指望说一两只眼霜 或者10天半个月就能给你的这个现象去修护了 我们基本上要打着 你熬了多久 就要花费一到两倍这个时间去修护它 才能看到一个比较明显的效果 比如说已经熬了一年多了 那我们可能修护的过程就需要一到两年",
+      "audience_task": "建立长期预期",
+      "logic_role": "限定",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 240–248",
+          "cue_start": 240,
+          "cue_end": 248
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "原文1—2倍修护时间是待核实说法，不可画成确定的时间公式。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "qualifies",
+          "unit_ids": [
+            "U017"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "限制对长期复合问题的修护预期；量化时间说法另待核实。",
+        "evidence": [
+          {
+            "unit_id": "U018",
+            "quote": "我们就不能指望说一两只眼霜 或者10天半个月"
+          },
+          {
+            "unit_id": "U017",
+            "quote": "当熬夜变成常态的时候 我们的眼周问题也会变得更加的复杂综合"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U019",
+      "title": "综合眼霜与针对性搭配",
+      "chapter": "眼周",
+      "text": "这个时候的处理方案就从简单的去黑眼圈 这个时候的处理方案就从简单的去水肿淡黑眼圈 演变成了更加综合的去抗老的眼霜的产品选择 那典型的综合型抗老眼霜包括这些 像雅诗兰黛的白金黑钻眼霜 资生堂的眼霜 欧莱雅小蜜罐眼霜 兰蔻三重眼精华 倩碧智修眼霜等等 它们无一例外 它们无一例外 都非常的滋润 而且可以去关注到眼周皮肤屏障的 修护和综合的抗老功能 但如果你同时伴有比较严重的黑眼圈的话 我建议是在你的眼霜的修护过程中 再添加一只德玛森氏的VK眼霜 或者菲洛嘉的眼霜 去专门有针对性的去淡化一下黑眼圈 当这些眼霜交替使用的时候 得到的效果会更好",
+      "audience_task": "把综合和局部需求分开",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 249–269",
+          "cue_start": 249,
+          "cue_end": 269
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U017"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "callback",
+          "unit_ids": [
+            "U014"
+          ],
+          "purpose": "综合护理之外，仍回到针对颜色问题的局部搭配。",
+          "evidence": [
+            {
+              "unit_id": "U019",
+              "quote": "但如果你同时伴有"
+            },
+            {
+              "unit_id": "U014",
+              "quote": "对于色素型黑眼圈"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "由复合问题推出综合产品及局部补充的选择方向。",
+        "evidence": [
+          {
+            "unit_id": "U019",
+            "quote": "演变成了更加综合的去抗老的眼霜的产品选择"
+          },
+          {
+            "unit_id": "U017",
+            "quote": "当熬夜变成常态的时候 我们的眼周问题也会变得更加的复杂综合"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U020",
+      "title": "按阶段归纳眼周护理",
+      "chapter": "眼周",
+      "text": "总结一下 熬夜后的眼周问题属于典型的 循序渐进式的累积式问题 随着不断的熬夜 我们的眼周问题可能会从一个小小的水肿 逐渐的演化成一个综合性的抗老问题 大家在修护的时候 根据自己的阶段 选择相应的产品就可以了 或者在熬夜之后 哪怕没有看到明显的问题 也提前用一个眼霜来预防一下",
+      "audience_task": "收束前面多个问题",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 270–281",
+          "cue_start": 270,
+          "cue_end": 281
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "summarizes",
+          "unit_ids": [
+            "U008",
+            "U010",
+            "U012",
+            "U017",
+            "U019"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "inherits_limit",
+          "unit_ids": [
+            "U004"
+          ],
+          "purpose": "前面的个体差异限制也适用于理解后面的阶段归纳，不能读成人人必然经历的固定流程。",
+          "evidence": [
+            {
+              "unit_id": "U020",
+              "quote": "循序渐进式的累积式问题"
+            },
+            {
+              "unit_id": "U004",
+              "quote": "这四个特征有可能会依次出现 也有可能同时出现"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "收束眼周症状递进与分阶段选择，单元尾部另提出提前预防。",
+        "evidence": [
+          {
+            "unit_id": "U020",
+            "quote": "根据自己的阶段 选择相应的产品就可以了"
+          },
+          {
+            "unit_id": "U008",
+            "quote": "而且刚才说了眼周的皮肤比较薄"
+          },
+          {
+            "unit_id": "U010",
+            "quote": "不光眼睛会更肿 还有一个关键变化"
+          },
+          {
+            "unit_id": "U012",
+            "quote": "从一个简单的青黑色 逐渐变成更复杂更脏的棕黑色了"
+          },
+          {
+            "unit_id": "U017",
+            "quote": "当熬夜变成常态的时候 我们的眼周问题也会变得更加的复杂综合"
+          },
+          {
+            "unit_id": "U019",
+            "quote": "演变成了更加综合的去抗老的眼霜的产品选择"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U021",
+      "title": "普通美容仪的边界",
+      "chapter": "眼周",
+      "text": "还有一件事 就是有些小伙伴会问我 说眼霜如果结合美容仪去使用 会不会得到的效果更好更快呢 到这我其实倒反而不敢轻易的去推荐了 因为普通的美容仪 它就不是给眼周的皮肤去设计的 它的头可能 要么是它的头设计得很大形状不对 要么是它的能量有点高 或者是有一些眼周不适合的功能 所以你其实很难用一支普通的美容仪 去在眼周使用 那这块有一个小提示 就是你可以去找那种带光电头的眼霜 比如说像刚才我们说的那支Amiro 还有一些其他类似的品牌 也有类似的光电头 然后用这个头去叠加你当前阶段适合的眼霜去使用 就可以了",
+      "audience_task": "看懂眼周工具不能随意替代",
+      "logic_role": "限定",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 282–301",
+          "cue_start": 282,
+          "cue_end": 301
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "保留普通美容仪不适用于眼周的提醒；专用头跨眼霜使用建议仍需核对产品说明。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "qualifies",
+          "unit_ids": [
+            "U016"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "限制专用眼霜头结论向普通美容仪的外推。",
+        "evidence": [
+          {
+            "unit_id": "U021",
+            "quote": "普通的美容仪 它就不是给眼周的皮肤去设计的"
+          },
+          {
+            "unit_id": "U016",
+            "quote": "这个头结合了微电流和红光两种功能"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U022",
+      "title": "油皮更油、干皮更干",
+      "chapter": "水油",
+      "text": "说完充满怨气的眼睛 下面我们来说说第二点 就是失衡的水油 说到水油平衡 说到水油平衡 在熬夜之后皮肤会有一个特别有意思的现象 就是如果你本来是油皮 熬夜之后你会觉得皮肤变得更油了 甚至长闭口 冒痘 如果你本来是干皮 熬夜之后就觉得皮肤更紧了 而且发干 爆皮 虽然从表现方式来看 是两个截然相反的方向 但其实它们归根结底的底层原因是同一个 就是我们的屏障 因为熬夜受损了",
+      "audience_task": "理解相反表现的共同起点",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 302–318",
+          "cue_start": 302,
+          "cue_end": 318
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "decomposes",
+          "unit_ids": [
+            "U003"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "返回四分地图的第二分支；内部先对比油干相反表现，再提出共同起点。",
+        "evidence": [
+          {
+            "unit_id": "U022",
+            "quote": "下面我们来说说第二点 就是失衡的水油"
+          },
+          {
+            "unit_id": "U003",
+            "quote": "一张典型的熬夜脸 有四个特征"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U023",
+      "title": "水分散失与两种表现",
+      "chapter": "水油",
+      "text": "熬夜之后我们的屏障功能会变差 变差之后皮肤保水的能力就会变差 也就是说我们的皮肤会不断的向外散失水分 而它在向外散失水分的时候 油皮的皮脂腺还在工作 它就会觉得皮肤的表面更干了 那我需要分泌更多的油来保护我的皮肤 所以油皮会觉得熬夜更油了 而对于干皮来说 它本来也没有那么多皮脂腺 散失水分的数量变大了之后 皮肤就自然变得更干 更容易爆皮",
+      "audience_task": "分清水和油是两条变量",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 319–330",
+          "cue_start": 319,
+          "cue_end": 330
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U022"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "展开共同起点如何走向不同表现的作者解释，补足上一单元的中间环节。",
+        "evidence": [
+          {
+            "unit_id": "U023",
+            "quote": "也就是说我们的皮肤会不断的向外散失水分"
+          },
+          {
+            "unit_id": "U022",
+            "quote": "下面我们来说说第二点 就是失衡的水油"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U024",
+      "title": "共同修护，油皮轻负担",
+      "chapter": "水油",
+      "text": "所以在这儿我们的处理办法 一定不是说油皮控油 干皮补水这么简单 而是要修护屏障 所以说在功能需求上 只要你是熬夜后的皮肤 不管你是油皮还是干皮 你们的需求是一样的 只是在产品的选择上会有一点点的不同 油皮的话要在修护屏障的同时 不要去促进皮肤更加出油 也不要给油皮增加负担 这里头比较合适的产品 比如说像The Ordinary的屏障修护小粉瓶 植物神经酰胺霜 像适乐肤的PM乳 贝德玛的控油保湿霜等等 它们都是可以去不给油皮增加负担 兼顾控油的方式去修护屏障的产品",
+      "audience_task": "理解共同目标下的差异选择",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 331–348",
+          "cue_start": 331,
+          "cue_end": 348
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U023"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "从共同原因推导共同目标，再说明油皮选择的负担限制。",
+        "evidence": [
+          {
+            "unit_id": "U024",
+            "quote": "而是要修护屏障"
+          },
+          {
+            "unit_id": "U023",
+            "quote": "也就是说我们的皮肤会不断的向外散失水分"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U025",
+      "title": "干皮需要保湿封闭",
+      "chapter": "水油",
+      "text": "而干皮在修护屏障的同时 一定要保证足够的保湿和补油 合适的产品 比如说科颜氏的高保湿霜 宝拉珍选的屏障霜 适乐肤C霜 优色林舒安霜 理肤泉B5霜 或者雅漾修护霜等等 它们无一例外 都有很好的封闭性 来保证水分不要再继续散失",
+      "audience_task": "理解补充与减少流失的配合",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 349–360",
+          "cue_start": 349,
+          "cue_end": 360
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "compares",
+          "unit_ids": [
+            "U024"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "在相同目标下转向干皮，比较两类选择条件，而不是更换共同目标。",
+        "evidence": [
+          {
+            "unit_id": "U025",
+            "quote": "而干皮在修护屏障的同时"
+          },
+          {
+            "unit_id": "U024",
+            "quote": "而是要修护屏障"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U026",
+      "title": "统一战线收束",
+      "chapter": "水油",
+      "text": "所以说在这一个板块内 油皮和干皮不是说各走各的 而是要统一战线修护屏障",
+      "audience_task": "记住共同目标不是两个对立阵营",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 361–363",
+          "cue_start": 361,
+          "cue_end": 363
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "summarizes",
+          "unit_ids": [
+            "U022",
+            "U024",
+            "U025"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "收束相反表现与共同目标的关系。",
+        "evidence": [
+          {
+            "unit_id": "U026",
+            "quote": "而是要统一战线修护屏障"
+          },
+          {
+            "unit_id": "U022",
+            "quote": "下面我们来说说第二点 就是失衡的水油"
+          },
+          {
+            "unit_id": "U024",
+            "quote": "而是要修护屏障"
+          },
+          {
+            "unit_id": "U025",
+            "quote": "而干皮在修护屏障的同时"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U027",
+      "title": "为什么纹理被锐化",
+      "chapter": "纹理",
+      "text": "说完熬夜之后 水油平衡的重塑 咱们再来说说 为什么熬完夜之后 熬完夜之后 我们的皮肤纹理会被锐化 很多人熬完夜一照镜子 就会觉得怎么这个细纹也加深了 毛孔也变粗大了 好像一夜之间就变老了一样 它其实并不是真的老 而是你皮肤的各种纹理 被加深被锐化了",
+      "audience_task": "区分外观变化和突然衰老",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 364–376",
+          "cue_start": 364,
+          "cue_end": 376
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "decomposes",
+          "unit_ids": [
+            "U003"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "返回四分地图的纹理分支，先区分看起来变老与作者所指的纹理锐化。",
+        "evidence": [
+          {
+            "unit_id": "U027",
+            "quote": "咱们再来说说 为什么熬完夜之后"
+          },
+          {
+            "unit_id": "U003",
+            "quote": "一张典型的熬夜脸 有四个特征"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U028",
+      "title": "厚与干叠加",
+      "chapter": "纹理",
+      "text": "造成这样的原因 有两个 一个是熬夜之后 我们的代谢会变差 角质代谢也会变差 就会有更多的老废角质堆积在你皮肤的表面 第二点 就是熬夜之后 皮肤的水分散失率会提高 你的皮肤会更干 所以把这俩结合起来看 角质又变厚了 还变得更干了 你的皮肤就像盐碱地一样 也就更粗糙了",
+      "audience_task": "理解粗糙的两个因素",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 377–391",
+          "cue_start": 377,
+          "cue_end": 391
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U027"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "callback",
+          "unit_ids": [
+            "U023"
+          ],
+          "purpose": "纹理段再次使用水分散失前提，与水油段存在概念复用。",
+          "evidence": [
+            {
+              "unit_id": "U028",
+              "quote": "皮肤的水分散失率会提高"
+            },
+            {
+              "unit_id": "U023",
+              "quote": "也就是说我们的皮肤会不断的向外散失水分"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "用厚与干两个因素共同解释纹理粗糙；不是单一因素替代。",
+        "evidence": [
+          {
+            "unit_id": "U028",
+            "quote": "角质又变厚了 还变得更干了"
+          },
+          {
+            "unit_id": "U027",
+            "quote": "咱们再来说说 为什么熬完夜之后"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U029",
+      "title": "软化与保湿，面膜例子",
+      "chapter": "纹理",
+      "text": "所以如果要解决这个问题 我们就必须要找 能同时兼顾让角质软化 和皮肤保湿两种功能的产品 下面有几个典型的产品 可以去同时改善上述两个问题的 一个就是敷面膜 因为敷面膜会提高皮肤的水合度 会让皮肤软化 同时也会让 同时也会提高皮肤的保湿度 让皮肤有更好的含水量 这也就是为什么那些明星大咖 在上台表演之前 都会敷一张面膜 再去化妆的原因",
+      "audience_task": "理解产品需要同时响应两点",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 392–407",
+          "cue_start": 392,
+          "cue_end": 407
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U028"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "把两个因素对应为两个功能要求，面膜只是所举例子之一。",
+        "evidence": [
+          {
+            "unit_id": "U029",
+            "quote": "能同时兼顾让角质软化 和皮肤保湿两种功能的产品"
+          },
+          {
+            "unit_id": "U028",
+            "quote": "角质又变厚了 还变得更干了"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U030",
+      "title": "面膜不能无限加量",
+      "chapter": "纹理",
+      "text": "但是有一个问题 面膜不能天天敷 天天敷会让皮肤过度水合 甚至产生水合性皮炎 所以还有一种办法 就是去找可以天天用的 来兼顾这两个问题的产品",
+      "audience_task": "看懂临时改善与过度使用的边界",
+      "logic_role": "限定",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 408–414",
+          "cue_start": 408,
+          "cue_end": 414
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "保留面膜不能天天敷、过度水合风险的原话，不用多敷等于更好表达。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "qualifies",
+          "unit_ids": [
+            "U029"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "限制面膜例子的使用外推，并转向可日常使用的产品选择。",
+        "evidence": [
+          {
+            "unit_id": "U030",
+            "quote": "但是有一个问题 面膜不能天天敷"
+          },
+          {
+            "unit_id": "U029",
+            "quote": "能同时兼顾让角质软化 和皮肤保湿两种功能的产品"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U031",
+      "title": "油皮产品思路",
+      "chapter": "纹理",
+      "text": "如果本来我们是油皮 可以去用含有乳酸乳糖酸 这样具有保湿功能的酸的类型的产品 比如说像The Ordinary的乳酸精华 The INKEY List的PHA Toner 芯丝翠的Bionic Face Serum 或者羽素闭口水这种类型的产品",
+      "audience_task": "将成分与软化保湿需求对应",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 415–421",
+          "cue_start": 415,
+          "cue_end": 421
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U029",
+            "U030"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "在双功能目标和使用方式限制下，提出油皮成分与产品例子。",
+        "evidence": [
+          {
+            "unit_id": "U031",
+            "quote": "如果本来我们是油皮"
+          },
+          {
+            "unit_id": "U029",
+            "quote": "能同时兼顾让角质软化 和皮肤保湿两种功能的产品"
+          },
+          {
+            "unit_id": "U030",
+            "quote": "但是有一个问题 面膜不能天天敷"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U032",
+      "title": "干皮产品思路",
+      "chapter": "纹理",
+      "text": "如果你本来是干皮 可以去使用含有尿素 羟乙基脲和卵磷脂成分的产品 比如说像优色林的尿素霜 理肤泉Lipikar系列的gel ACO的Canoderm或者是Miniderm Duo 这些都是适合干皮熬夜之后 同时兼顾软化和保湿的产品",
+      "audience_task": "识别另一组可讨论成分",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 422–428",
+          "cue_start": 422,
+          "cue_end": 428
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "compares",
+          "unit_ids": [
+            "U031"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "保持软化和保湿目标，转向另一肤质的选择分支。",
+        "evidence": [
+          {
+            "unit_id": "U032",
+            "quote": "如果你本来是干皮"
+          },
+          {
+            "unit_id": "U031",
+            "quote": "如果本来我们是油皮"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U033",
+      "title": "短期纹理变化",
+      "chapter": "纹理",
+      "text": "这里面要特别提醒一点的是 如果你只是短期熬夜 皮肤纹理被锐化 皮肤纹理被锐化的现象也是暂时的 只要我们使用合适的软化 角质同时保湿的产品 都能得到很好的去 都能得到很好的改善",
+      "audience_task": "区别暂时外观与结构变化",
+      "logic_role": "限定",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 429–436",
+          "cue_start": 429,
+          "cue_end": 436
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "qualifies",
+          "unit_ids": [
+            "U027",
+            "U029"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "为此前外观及改善论述加上短期条件。",
+        "evidence": [
+          {
+            "unit_id": "U033",
+            "quote": "如果你只是短期熬夜"
+          },
+          {
+            "unit_id": "U027",
+            "quote": "咱们再来说说 为什么熬完夜之后"
+          },
+          {
+            "unit_id": "U029",
+            "quote": "能同时兼顾让角质软化 和皮肤保湿两种功能的产品"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U034",
+      "title": "长期变化与及时处理",
+      "chapter": "纹理",
+      "text": "但如果你是长期熬夜 比如说一熬就是几个月 一年几年 这种锐化的状态 就会被逐渐的固定在你的脸上 当产生结构性的变化的时候 普通的护肤品改善的效果就有限了 所以这块提醒一下大家 就是当我们开始熬夜之后 哪怕肉眼没有看出来明显的变化 我们也要去及时的对皮肤进行软化和保湿 以防它被固定在你的脸上",
+      "audience_task": "理解护肤品的改善边界",
+      "logic_role": "限定",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 437–448",
+          "cue_start": 437,
+          "cue_end": 448
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "compares",
+          "unit_ids": [
+            "U033"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "callback",
+          "unit_ids": [
+            "U018"
+          ],
+          "purpose": "两章都涉及长期状态与改善预期，但具体说法不同，不能当成同一量化承诺。",
+          "evidence": [
+            {
+              "unit_id": "U034",
+              "quote": "普通的护肤品改善的效果就有限了"
+            },
+            {
+              "unit_id": "U018",
+              "quote": "我们就不能指望说一两只眼霜 或者10天半个月"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "与短期状态对比，提出结构变化时的改善边界与及时处理建议。",
+        "evidence": [
+          {
+            "unit_id": "U034",
+            "quote": "但如果你是长期熬夜"
+          },
+          {
+            "unit_id": "U033",
+            "quote": "如果你只是短期熬夜"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U035",
+      "title": "三层光学解释框架",
+      "chapter": "气色",
+      "text": "说完眼睛 说完皮肤的水油和纹理 下面我们就说明一下油和纹理 下面我们就来说说皮肤的气色 我之前讲过一期黄气攻略 里面有一个重要理论 就是说我们的气色是由三个方面来决定的 一是皮肤的颜色 也就是它的色素的情况 二是皮肤够不够通透 也就是皮肤的折光率好不好 三是这个皮肤在反光的时候 反的整不整齐 也就是它的表面散射率如何 而我们在熬夜之后 决定气色的这三个方面 它会由外及里地发生变化 也就是说表面的散射率先发生变化 然后是通透度 最后才是色素的变化",
+      "audience_task": "区分表面、通透与色素",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 449–468",
+          "cue_start": 449,
+          "cue_end": 468
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "decomposes",
+          "unit_ids": [
+            "U003"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "返回第四分支，另建立表面、通透、色素三个解释层次。",
+        "evidence": [
+          {
+            "unit_id": "U035",
+            "quote": "下面我们就来说说皮肤的气色"
+          },
+          {
+            "unit_id": "U003",
+            "quote": "一张典型的熬夜脸 有四个特征"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U036",
+      "title": "先看到光泽下降",
+      "chapter": "气色",
+      "text": "解释一下来说 如果我们只是熬一两个晚上 这个皮肤首先会看到的 就是这个光泽度好像下降了 它的原因就是我们熬夜之后 皮肤的水分散失会加剧 皮肤会变干 变干变糙之后 皮肤表面的散射率就像毛玻璃一样 脸就自然给人一种 没什么光泽的感觉",
+      "audience_task": "理解表面粗糙影响外观",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 469–479",
+          "cue_start": 469,
+          "cue_end": 479
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U035"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "callback",
+          "unit_ids": [
+            "U028"
+          ],
+          "purpose": "气色段复用干、粗糙，再把观察维度从纹理转到光泽。",
+          "evidence": [
+            {
+              "unit_id": "U036",
+              "quote": "皮肤会变干"
+            },
+            {
+              "unit_id": "U028",
+              "quote": "角质又变厚了 还变得更干了"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "展开三层框架的表面光泽部分；保留为作者的光学解释。",
+        "evidence": [
+          {
+            "unit_id": "U036",
+            "quote": "变干变糙之后 皮肤表面的散射率就像毛玻璃一样"
+          },
+          {
+            "unit_id": "U035",
+            "quote": "下面我们就来说说皮肤的气色"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U037",
+      "title": "通透度变化的解释",
+      "chapter": "气色",
+      "text": "如果继续恶化 我们皮肤里面的氧化应激就会加剧 皮肤的氧化的情况和皮肤的密度 都会去影响皮肤的折光率 当折光率降低的时候 我们就会看起来 这个皮肤不通透了 感觉非常的浑浊",
+      "audience_task": "区分不通透和色素变深",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 480–487",
+          "cue_start": 480,
+          "cue_end": 487
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "progresses",
+          "unit_ids": [
+            "U036"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "在作者的阶段叙述中从光泽转到通透度变化。",
+        "evidence": [
+          {
+            "unit_id": "U037",
+            "quote": "如果继续恶化"
+          },
+          {
+            "unit_id": "U036",
+            "quote": "变干变糙之后 皮肤表面的散射率就像毛玻璃一样"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U038",
+      "title": "长期复杂变化",
+      "chapter": "气色",
+      "text": "如果熬夜常态化 皮肤会继续恶化 此时氧化 糖化 羰基化 再加上紫外线和皮肤的老化 都会让我们皮肤里面的填充物减少 这些填充物就是像胶原蛋白 玻尿酸等等 它们减少了之后 皮肤的屏障就会功能变得更差 皮肤会容易处于一个炎症的状态 皮肤就更容易发生色沉 产生色斑 也就慢慢的变得更黄 更黑 更多瑕疵了 也就是说我们熬夜之后 气色会从看起来 没有光 一点点的变成真的黑 真的有很多斑",
+      "audience_task": "避免把所有暗沉都当作黑色素",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 488–503",
+          "cue_start": 488,
+          "cue_end": 503
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "progresses",
+          "unit_ids": [
+            "U037"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "从通透度进一步推进到长期复杂变化，作者将其区别于单纯无光泽。",
+        "evidence": [
+          {
+            "unit_id": "U038",
+            "quote": "如果熬夜常态化 皮肤会继续恶化"
+          },
+          {
+            "unit_id": "U037",
+            "quote": "如果继续恶化"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U039",
+      "title": "提前拦截与抗氧化举例",
+      "chapter": "气色",
+      "text": "好 那么重点来了 对于气色的改善 有一个关键词 就是我们要做到提前拦截 这个意思就是 这个意思就是 当你刚开始熬夜的时候 看到皮肤表面的光泽开始变差的时候 你就要开始选兼顾第二阶段的 抗氧化类型的产品去结合着使用了 这里面比较合适的产品 比如说像The Ordinary的白藜芦醇阿魏酸精华 像它的酵母水 或者VCIP精华 还有德玛森氏的Super C精华 宝拉珍选的 综合抗氧化精华等等",
+      "audience_task": "看懂针对下一阶段的原文策略",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 504–520",
+          "cue_start": 504,
+          "cue_end": 520
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U036",
+            "U037"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "提出在第一阶段兼顾第二阶段的策略，不是只对当前表象选产品。",
+        "evidence": [
+          {
+            "unit_id": "U039",
+            "quote": "你就要开始选兼顾第二阶段的"
+          },
+          {
+            "unit_id": "U036",
+            "quote": "变干变糙之后 皮肤表面的散射率就像毛玻璃一样"
+          },
+          {
+            "unit_id": "U037",
+            "quote": "如果继续恶化"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U040",
+      "title": "更综合的产品方向",
+      "chapter": "气色",
+      "text": "而当你的皮肤开始 而当你的皮肤已经开始发暗 发混浊发灰的时候 就要去兼顾到第三个阶段 一个综合性的抗氧抗糖抗氧化 抗老的产品去使用了 这里头比如说 宝拉 这里头比如说宝拉珍选的多肽的Booster 雅诗兰黛的小棕瓶 薇姿的填充精华 修丽可的A.G.E.面霜 或者Olay的超红瓶等等这一类的产品 总结来说 这些产品都是在保证当前阶段需求的同时 能做到提前拦截下一个阶段问题的产品",
+      "audience_task": "将当前需求与后续关注并列",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 521–536",
+          "cue_start": 521,
+          "cue_end": 536
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "applies",
+          "unit_ids": [
+            "U037",
+            "U038"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "把同一提前关注策略应用到下一组当前状态与后续问题。",
+        "evidence": [
+          {
+            "unit_id": "U040",
+            "quote": "就要去兼顾到第三个阶段"
+          },
+          {
+            "unit_id": "U037",
+            "quote": "如果继续恶化"
+          },
+          {
+            "unit_id": "U038",
+            "quote": "如果熬夜常态化 皮肤会继续恶化"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U041",
+      "title": "眼周优先，按需搭配",
+      "chapter": "总收束",
+      "text": "OK 现在应对熬夜肌的四大板块 我们就都给大家讲完了 如果你的脸上不止一个板块出问题的话 我们按照眼周优先 其他三个方面 哪个最突出 先解决哪个的方式去改善 大家最好是按需搭配 不要同时叠加多种产品",
+      "audience_task": "把四块重新合成决策顺序",
+      "logic_role": "收束",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 537–546",
+          "cue_start": 537,
+          "cue_end": 546
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "summarizes",
+          "unit_ids": [
+            "U003",
+            "U020",
+            "U026",
+            "U034",
+            "U040"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "callback",
+          "unit_ids": [
+            "U005"
+          ],
+          "purpose": "全片收束回到开场建立的优先级。",
+          "evidence": [
+            {
+              "unit_id": "U041",
+              "quote": "我们按照眼周优先"
+            },
+            {
+              "unit_id": "U005",
+              "quote": "现在我们回过头来看 片头咱们给大家放的那两张图"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "把四块收束为眼周优先、按突出问题选择、不同时堆叠的决策规则。",
+        "evidence": [
+          {
+            "unit_id": "U041",
+            "quote": "哪个最突出 先解决哪个的方式去改善"
+          },
+          {
+            "unit_id": "U003",
+            "quote": "一张典型的熬夜脸 有四个特征"
+          },
+          {
+            "unit_id": "U020",
+            "quote": "根据自己的阶段 选择相应的产品就可以了"
+          },
+          {
+            "unit_id": "U026",
+            "quote": "而是要统一战线修护屏障"
+          },
+          {
+            "unit_id": "U034",
+            "quote": "但如果你是长期熬夜"
+          },
+          {
+            "unit_id": "U040",
+            "quote": "就要去兼顾到第三个阶段"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U042",
+      "title": "长期坚持的现实预期",
+      "chapter": "总收束",
+      "text": "还要给大家泼个冷水 熬夜脸想要修护 一定是要长期坚持的 因为我们刚才说的这么多的问题 它们大部分都不是能立竿见影 立马解决的问题 如果你的工作性质决定了 你要长期熬夜 那我们这些长期修护类型的产品 就是要坚持用",
+      "audience_task": "纠正立竿见影期待",
+      "logic_role": "收束",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 547–556",
+          "cue_start": 547,
+          "cue_end": 556
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "qualifies",
+          "unit_ids": [
+            "U041"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "callback",
+          "unit_ids": [
+            "U018",
+            "U034"
+          ],
+          "purpose": "把眼周与纹理两章的长期限制收为全局预期；不继承未经核实的时间倍数。",
+          "evidence": [
+            {
+              "unit_id": "U042",
+              "quote": "一定是要长期坚持的"
+            },
+            {
+              "unit_id": "U018",
+              "quote": "我们就不能指望说一两只眼霜 或者10天半个月"
+            },
+            {
+              "unit_id": "U034",
+              "quote": "但如果你是长期熬夜"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "给全局选择建议加上长期预期，回答何时见效而不是再回答先选哪类。",
+        "evidence": [
+          {
+            "unit_id": "U042",
+            "quote": "它们大部分都不是能立竿见影 立马解决的问题"
+          },
+          {
+            "unit_id": "U041",
+            "quote": "哪个最突出 先解决哪个的方式去改善"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U043",
+      "title": "夜皇后的双相与矛盾",
+      "chapter": "产品补充",
+      "text": "最后我再给大家说两个 这个配方非常的奇葩 非常精神分裂 但是却意外适合熬夜肌的产品 第一个就是圣罗兰的夜皇后精华 这个产品 这个产品它是那种水油双相的质地 就是上面是油 底下是一个液体的水相的精华 这个产品如果你让我说给普通人去推荐 我根本就不知道推荐给谁 因为这个产品 它上层的油里面都是保湿修护滋润的油 而它下层的水相精华里面是酸 所以如果你给一个油皮去推荐 这个油对它来说太黏腻了 负担很重 如果你给一个干皮去推荐 下面的酸还可能有点刺激",
+      "audience_task": "理解两个功能为何也有负担",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 557–575",
+          "cue_start": 557,
+          "cue_end": 575
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "产品仍有刺激或负担；熬夜不等于提高耐受。地域人群差异说法未核实，不强化群体泛化。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "exemplifies",
+          "unit_ids": [
+            "U029"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "用双相配方作为双功能需求的案例开题，先提出看似难匹配的矛盾；解释留到U045。",
+        "evidence": [
+          {
+            "unit_id": "U043",
+            "quote": "但是却意外适合熬夜肌的产品"
+          },
+          {
+            "unit_id": "U029",
+            "quote": "能同时兼顾让角质软化 和皮肤保湿两种功能的产品"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U044",
+      "title": "地域适用说法需审阅",
+      "chapter": "产品补充",
+      "text": "这个精华在开始设计的时候 其实不是给亚洲人设计的 它是给欧美人设计的 对于欧美人来说 这个浓度的酸不算什么 它只是可以起到提亮皮肤软化角质的作用而已 但是对于东亚人来说 这个酸有可能就有点刺激性了",
+      "audience_task": "保留原文但不强化人群结论",
+      "logic_role": "限定",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 576–583",
+          "cue_start": 576,
+          "cue_end": 583
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "产品仍有刺激或负担；熬夜不等于提高耐受。地域人群差异说法未核实，不强化群体泛化。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U043"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "作者补充产品定位及刺激性解释；人群概括的依据在本稿中未展开。",
+        "evidence": [
+          {
+            "unit_id": "U044",
+            "quote": "但是对于东亚人来说 这个酸有可能就有点刺激性了"
+          },
+          {
+            "unit_id": "U043",
+            "quote": "但是却意外适合熬夜肌的产品"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U045",
+      "title": "双相功能与需求匹配",
+      "chapter": "产品补充",
+      "text": "但是当你是熬夜肌之后 你的皮肤的水油状态是失衡的 而且你皮肤的表面的角质更干 角质更厚 在这种情况下反而适合这个产品 它里面的酸可以给你的角质软化 而它上面的油可以去给你保湿 来保证皮肤整个的柔软度和滋润性",
+      "audience_task": "理解原文为何认为可能匹配",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 584–591",
+          "cue_start": 584,
+          "cue_end": 591
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "产品仍有刺激或负担；熬夜不等于提高耐受。地域人群差异说法未核实，不强化群体泛化。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "explains",
+          "unit_ids": [
+            "U043"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "applies",
+          "unit_ids": [
+            "U024",
+            "U028",
+            "U029"
+          ],
+          "purpose": "案例解释依赖之前的屏障与厚、干双需求，不能把产品段当成独立推荐。",
+          "evidence": [
+            {
+              "unit_id": "U045",
+              "quote": "在这种情况下反而适合这个产品"
+            },
+            {
+              "unit_id": "U024",
+              "quote": "而是要修护屏障"
+            },
+            {
+              "unit_id": "U028",
+              "quote": "角质又变厚了 还变得更干了"
+            },
+            {
+              "unit_id": "U029",
+              "quote": "能同时兼顾让角质软化 和皮肤保湿两种功能的产品"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "解答双相产品为何被作者认为匹配双重需求；并未自动解决前面提出的刺激或油腻负担。",
+        "evidence": [
+          {
+            "unit_id": "U045",
+            "quote": "它里面的酸可以给你的角质软化 而它上面的油可以去给你保湿"
+          },
+          {
+            "unit_id": "U043",
+            "quote": "但是却意外适合熬夜肌的产品"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U046",
+      "title": "Olay黑精华的组合思路",
+      "chapter": "产品补充",
+      "text": "第二个产品就是Olay的黑精华 这个产品它里头又有酸 又有植物A醇又有肽 如果当作普通的抗老去用的话 感觉好像刺激性有点强 但是如果你是熬夜肌 熬夜之后皮肤的纹理会变粗糙 毛孔会变大 然后还有一些综合的衰老性的这种问题 你需要去同时兼顾的时候 它这个成分组合反而就合适 尤其是适合那些混油皮和油皮 在熬夜之后有毛孔粗大皮肤粗糙的这些皮肤去用",
+      "audience_task": "把复合需求与刺激提醒一起看",
+      "logic_role": "解释与应用",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 592–604",
+          "cue_start": 592,
+          "cue_end": 604
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。",
+        "机制及产品判断属于讲稿主张，本轮未作医学与产品事实核查；示意不能充当实验或临床证据。",
+        "产品仍有刺激或负担；熬夜不等于提高耐受。地域人群差异说法未核实，不强化群体泛化。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "compares",
+          "unit_ids": [
+            "U043",
+            "U045"
+          ]
+        },
+        {
+          "role": "secondary",
+          "type": "applies",
+          "unit_ids": [
+            "U028",
+            "U017"
+          ],
+          "purpose": "第二案例又借用了纹理和综合问题前提；需求匹配本身不能证明负担消失。",
+          "evidence": [
+            {
+              "unit_id": "U046",
+              "quote": "你需要去同时兼顾的时候"
+            },
+            {
+              "unit_id": "U028",
+              "quote": "角质又变厚了 还变得更干了"
+            },
+            {
+              "unit_id": "U017",
+              "quote": "当熬夜变成常态的时候 我们的眼周问题也会变得更加的复杂综合"
+            }
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "给出另一种多成分案例，沿用复合需求匹配思路，也重复了从刺激负担到适用性的推理缺口。",
+        "evidence": [
+          {
+            "unit_id": "U046",
+            "quote": "第二个产品就是Olay的黑精华"
+          },
+          {
+            "unit_id": "U043",
+            "quote": "但是却意外适合熬夜肌的产品"
+          },
+          {
+            "unit_id": "U045",
+            "quote": "它里面的酸可以给你的角质软化 而它上面的油可以去给你保湿"
+          }
+        ]
+      }
+    },
+    {
+      "id": "U047",
+      "title": "互动与会员邀请",
+      "chapter": "结尾",
+      "text": "好啦到这儿 这期熬夜肌攻略就都说完了 如果你还有想听我聊聊的护肤专题 欢迎在评论区投稿 喜欢我的视频 请您帮我点点赞 想知道更多产品测评的结果的话 欢迎加入我的会员频道",
+      "audience_task": "完整保留片尾目的",
+      "logic_role": "收束",
+      "source_refs": [
+        {
+          "source_id": "SRT01",
+          "locator": "cue 605–612",
+          "cue_start": 605,
+          "cue_end": 612
+        }
+      ],
+      "limitations": [
+        "本单元保持原字幕词句；画面不得增加原文未说的因果、数值或疗效保证。"
+      ],
+      "relations": [
+        {
+          "role": "primary",
+          "type": "follows",
+          "unit_ids": [
+            "U046"
+          ]
+        }
+      ],
+      "status": "source_preserved_pending_review",
+      "logic_summary": {
+        "analysis": "结束内容转向评论、点赞和会员邀请；无需伪造因果关系。",
+        "evidence": [
+          {
+            "unit_id": "U047",
+            "quote": "好啦到这儿 这期熬夜肌攻略就都说完了"
+          },
+          {
+            "unit_id": "U046",
+            "quote": "第二个产品就是Olay的黑精华"
+          }
+        ]
+      }
+    }
+  ],
+  "time_basis": {
+    "mode": "subtitle",
+    "version": "subtitle-v1",
+    "selected_for_delivery": false,
+    "alignment_status": "unverified",
+    "note": "仅字幕时间；无音轨，非最终成片同步依据"
+  },
+  "time_anchors": [
+    {
+      "unit_id": "U001",
+      "start": 0.68,
+      "end": 14.08,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U002",
+      "start": 17.039,
+      "end": 38.039,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U003",
+      "start": 40.28,
+      "end": 89.03999999999999,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U004",
+      "start": 90.92,
+      "end": 111.959,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U005",
+      "start": 114.239,
+      "end": 165.039,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U006",
+      "start": 166.36,
+      "end": 199.159,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U007",
+      "start": 200.12,
+      "end": 248.84,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U008",
+      "start": 249.96,
+      "end": 285.0,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U009",
+      "start": 287.759,
+      "end": 318.24,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U010",
+      "start": 320.0,
+      "end": 378.24,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U011",
+      "start": 380.36,
+      "end": 433.279,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U012",
+      "start": 434.319,
+      "end": 494.72,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U013",
+      "start": 495.839,
+      "end": 528.84,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U014",
+      "start": 530.679,
+      "end": 573.2,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U015",
+      "start": 575.96,
+      "end": 613.399,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U016",
+      "start": 615.32,
+      "end": 662.519,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U017",
+      "start": 663.679,
+      "end": 708.96,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U018",
+      "start": 712.84,
+      "end": 741.84,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U019",
+      "start": 744.039,
+      "end": 818.919,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U020",
+      "start": 820.679,
+      "end": 852.12,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U021",
+      "start": 855.36,
+      "end": 920.519,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U022",
+      "start": 921.679,
+      "end": 965.84,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U023",
+      "start": 969.279,
+      "end": 1006.2,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U024",
+      "start": 1008.24,
+      "end": 1066.64,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U025",
+      "start": 1068.88,
+      "end": 1107.92,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U026",
+      "start": 1110.92,
+      "end": 1119.319,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U027",
+      "start": 1120.44,
+      "end": 1147.359,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U028",
+      "start": 1147.839,
+      "end": 1177.559,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U029",
+      "start": 1178.599,
+      "end": 1225.599,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U030",
+      "start": 1226.359,
+      "end": 1245.88,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U031",
+      "start": 1245.88,
+      "end": 1273.559,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U032",
+      "start": 1273.559,
+      "end": 1304.4,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U033",
+      "start": 1304.4,
+      "end": 1326.24,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U034",
+      "start": 1326.24,
+      "end": 1362.92,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U035",
+      "start": 1362.92,
+      "end": 1420.2,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U036",
+      "start": 1421.2,
+      "end": 1449.119,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U037",
+      "start": 1450.799,
+      "end": 1469.96,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U038",
+      "start": 1472.68,
+      "end": 1517.0,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U039",
+      "start": 1521.759,
+      "end": 1581.24,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U040",
+      "start": 1590.599,
+      "end": 1653.359,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U041",
+      "start": 1654.68,
+      "end": 1680.16,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U042",
+      "start": 1680.519,
+      "end": 1703.839,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U043",
+      "start": 1705.4,
+      "end": 1767.64,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U044",
+      "start": 1767.92,
+      "end": 1788.96,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U045",
+      "start": 1790.359,
+      "end": 1813.079,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U046",
+      "start": 1814.599,
+      "end": 1857.64,
+      "time_version": "subtitle-v1"
+    },
+    {
+      "unit_id": "U047",
+      "start": 1859.64,
+      "end": 1879.2,
+      "time_version": "subtitle-v1"
+    }
+  ],
+  "issues": [
+    {
+      "id": "I01",
+      "observed": "重复与重说：137—139、249—250、258—259、305—306、367—369、401—402、435—436、449—452、508—509、521—522、527—529、562—563。",
+      "resolution": "逐条保留；不在无音轨时自动剪除，也不为同一重说新增相同产品或新概念。待用户决定剪辑后更新字幕版本。"
+    },
+    {
+      "id": "I02",
+      "observed": "眼周厚度、权重、缺氧与青色、黑眼圈分解路径、修复年限、水油反馈、折射率机制属于需核查主张。",
+      "resolution": "原文不改；图形不做数值化确证。正式生图前建议用户确认是否调整这些说法。"
+    },
+    {
+      "id": "I03",
+      "observed": "575—583的地域人群耐受说法，以及熬夜肌适用酸类的推论可能被视觉强化。",
+      "resolution": "保留讲者观点归属与原有刺激提醒，03限定隐喻，不新增适用保证。"
+    },
+    {
+      "id": "I04",
+      "observed": "字幕426中gel ACO等商品拼写/断句、525抗氧抗糖抗氧化重复需人工确认；DOCX包含拍摄号、转场、b-roll指令及附加术语。",
+      "resolution": "字幕词句不擅改；DOCX拍摄指令与术语不追加到口播。后续画面品牌拼写需确认。"
+    },
+    {
+      "id": "I05",
+      "observed": "未提供音轨；全稿字幕约31分19秒。",
+      "resolution": "采用subtitle未验证时间；派生SRT为语义单元级导航，不替代原612条字幕或交付字幕。"
+    }
+  ],
+  "understanding_path": [
+    {
+      "id": "G01",
+      "title": "从猜题到四分地图和优先级",
+      "understanding_path": "观众先有判断困惑，再知道四类表现，最后得到眼周优先的组织原则。",
+      "boundary": "U004的个体差异必须保留；U005回答开场，不能只是另一张症状总图。",
+      "unit_ids": [
+        "U001",
+        "U002",
+        "U003",
+        "U004",
+        "U005",
+        "U006"
+      ]
+    },
+    {
+      "id": "G02",
+      "title": "眼周：同一主线的状态与应对",
+      "understanding_path": "结构前提→症状阶段→对应应对→阶段归纳与工具边界。颜色与干松在U012分叉，由U014和U015分别回答。",
+      "boundary": "产品介绍插在症状主线之间，后续必须能接回同一问题；U021限制U016的外推。",
+      "unit_ids": [
+        "U007",
+        "U008",
+        "U009",
+        "U010",
+        "U011",
+        "U012",
+        "U013",
+        "U014",
+        "U015",
+        "U016",
+        "U017",
+        "U018",
+        "U019",
+        "U020",
+        "U021"
+      ]
+    },
+    {
+      "id": "G03",
+      "title": "相反表现，共同目标，不同选择",
+      "understanding_path": "油皮与干皮表现相反→作者提出共同原因→共同修护目标→分别选择→收束。",
+      "boundary": "共同目标不意味着产品完全相同；相反表现不意味着原因一定相反。",
+      "unit_ids": [
+        "U022",
+        "U023",
+        "U024",
+        "U025",
+        "U026"
+      ]
+    },
+    {
+      "id": "G04",
+      "title": "两因素、双要求和时间边界",
+      "understanding_path": "厚与干→软化加保湿→使用方式和肤质分支→短期与长期对比。",
+      "boundary": "面膜是例子，不能取代双功能主张；短期改善不能泛化到所有长期状态。",
+      "unit_ids": [
+        "U027",
+        "U028",
+        "U029",
+        "U030",
+        "U031",
+        "U032",
+        "U033",
+        "U034"
+      ]
+    },
+    {
+      "id": "G05",
+      "title": "气色层次与提前关注",
+      "understanding_path": "表面／通透／色素→按阶段展开→当前阶段兼顾下一阶段。",
+      "boundary": "三层是作者的解释模型；不能把所述阶段自动认定为医学必然顺序。",
+      "unit_ids": [
+        "U035",
+        "U036",
+        "U037",
+        "U038",
+        "U039",
+        "U040"
+      ]
+    },
+    {
+      "id": "G06",
+      "title": "选择优先级与效果预期",
+      "understanding_path": "U041回答先处理什么和如何搭配；U042回答需要怎样的长期预期。",
+      "boundary": "这是不同命题；可以共享前文概念，但不能让同一张总览替代两者的理解任务。",
+      "unit_ids": [
+        "U041",
+        "U042"
+      ]
+    },
+    {
+      "id": "G07",
+      "title": "用复合配方案例回测前文逻辑",
+      "understanding_path": "提出难匹配配方→补充负担→调用厚、干及综合需求→解释作者为何认为适合。",
+      "boundary": "需要匹配与实际耐受是不同命题；补充产品段不能脱离前文限制。",
+      "unit_ids": [
+        "U043",
+        "U044",
+        "U045",
+        "U046"
+      ]
+    },
+    {
+      "id": "G08",
+      "title": "行动邀请",
+      "understanding_path": "结束科普，转到互动与会员邀请。",
+      "boundary": "与医学解释分开，不强加因果标签。",
+      "unit_ids": [
+        "U047"
+      ]
+    }
+  ],
+  "manual_review": {
+    "status": "pending",
+    "note": "本轮用户授权02逻辑分析接入及03输入投影验证；原文保留。结构与摘录核验不代替人工逻辑和内容验收，本轮不续跑构思或生图。"
+  },
+  "content_fingerprint": "sha256:fc5fcd04d1b119531b2d4aaaaf018e92957e696343d1108e89f6823d3da39b85",
+  "logic_analysis": {
+    "profile": "yuge.logic-analysis.v1",
+    "method": {
+      "name": "deep-reading-analyst：SCQA、Critical Thinking、Systems Thinking",
+      "version": "宇哥动画逻辑分析profile v1；47单元试跑标注20260913",
+      "source": "参考Skill SHA-256 afebad75f8a7c89c693cc82cc05f2bb680494de28f50cda4d1e9e0b68af85aec；复用试跑标注 SHA-256 66a3b8b864db44056cf10bba0ccf6cd22332d37436c3044d15fc0997f5315162",
+      "execution": "复用已完成的47单元模型阅读标注，整理为公开扩展；本轮补充论证卡显式限制。Python只核验、统计、生成报告，未新增模型API或图片调用。"
+    },
+    "scqa": {
+      "situation": "观众凭脸部表现判断是否熬夜。",
+      "complication": "白皙、细腻未必等于看起来精神；多种问题、个体差异及产品选择增加判断难度。",
+      "question": "发生了什么、为什么、针对当前情况该怎样理解护理选择与预期。",
+      "answer": "作者用四类表现组织内容，以眼周优先，分阶段和肤质说明选择，并补充使用范围、长期预期与产品案例；这是对作者回答的概括，不为医学或产品结论背书。"
+    },
+    "argument_cards": [
+      {
+        "id": "C01",
+        "pattern": "阶段描述与适用范围",
+        "chain": "轻到重的讲述顺序，配合分阶段选择；同时原稿承认不同人可依次或同时出现。",
+        "finding": "有阶段结构，也有个体差异限定。报告应两者并列，不能为了连续叙事删掉限定。",
+        "evidence_status": "结构与限制在原文可定位；阶段模型的科学有效性未核验。",
+        "unit_ids": [
+          "U004",
+          "U008",
+          "U010",
+          "U012",
+          "U017",
+          "U020"
+        ],
+        "evidence": [
+          {
+            "unit_id": "U004",
+            "quote": "这四个特征有可能会依次出现 也有可能同时出现"
+          }
+        ],
+        "limitations": [
+          "原文允许不同人依次或同时出现这些特征，不得呈现为人人必经的单一路径。"
+        ]
+      },
+      {
+        "id": "C02",
+        "pattern": "对比→共同原因→分条件应用",
+        "chain": "油与干表现相反→作者归结为屏障与水分散失→共同目标→两种产品选择条件。",
+        "finding": "单给U022一个“展开分支”标签会遗漏内部的对比与归因，所以必须另有推理摘要。",
+        "evidence_status": "这是作者给出的因果解释；未以文献验证因果。",
+        "unit_ids": [
+          "U022",
+          "U023",
+          "U024",
+          "U025",
+          "U026"
+        ],
+        "evidence": [
+          {
+            "unit_id": "U022",
+            "quote": "但其实它们归根结底的底层原因是同一个"
+          }
+        ],
+        "limitations": [
+          "共同修护目标不意味着油皮与干皮的选择相同；作者归因未经过本轮外部事实核验。"
+        ]
+      },
+      {
+        "id": "C03",
+        "pattern": "多因素合取→联合要求→范围限定",
+        "chain": "厚和干共同构成解释→产品需同时回应两点→面膜例子有使用边界→短期与长期的效果预期不同。",
+        "finding": "既要看“软化＋保湿”的逻辑对应，也要保留两个不同维度的限定：使用方式、时间。",
+        "evidence_status": "论证链在稿内可追溯；产品有效性并未因此得到证实。",
+        "unit_ids": [
+          "U028",
+          "U029",
+          "U030",
+          "U033",
+          "U034"
+        ],
+        "evidence": [
+          {
+            "unit_id": "U029",
+            "quote": "能同时兼顾让角质软化 和皮肤保湿两种功能的产品"
+          }
+        ],
+        "limitations": [
+          "保留使用方式、肤质和短期／长期两类边界，不将短期例子泛化为长期效果保证。"
+        ]
+      },
+      {
+        "id": "C04",
+        "pattern": "多层解释→状态推进→前瞻策略",
+        "chain": "区分表面光泽、通透与色素→逐阶段讲述→在当前阶段兼顾下一阶段。",
+        "finding": "策略依赖当前状态和后续状态两个参照；不能只记录为当前问题的一对一产品匹配。",
+        "evidence_status": "作者策略可定位；它的预防效力未验证。",
+        "unit_ids": [
+          "U035",
+          "U036",
+          "U037",
+          "U038",
+          "U039",
+          "U040"
+        ],
+        "evidence": [
+          {
+            "unit_id": "U039",
+            "quote": "你就要开始选兼顾第二阶段的"
+          }
+        ],
+        "limitations": [
+          "阶段为作者的解释框架，不得转述成必然医学进程或已证明的预防效果。"
+        ]
+      },
+      {
+        "id": "C05",
+        "pattern": "产品主张与支持形式",
+        "chain": "成分或工具机制＋作者体验／实验室陈述→产品效果判断。",
+        "finding": "能识别支持来自作者体验与未展开的测试陈述；当前稿件没有给出足够的样本、对照和测量细节供独立检验。",
+        "evidence_status": "“提到实验室”不等于本文提供了可核验证据；也不能据此断言主张为假。",
+        "unit_ids": [
+          "U014",
+          "U016"
+        ],
+        "evidence": [
+          {
+            "unit_id": "U014",
+            "quote": "最有体感的两只眼霜了"
+          }
+        ],
+        "limitations": [
+          "作者体验和未展开的实验室陈述不能呈现为已充分验证的疗效证据。"
+        ]
+      },
+      {
+        "id": "C06",
+        "pattern": "跨单元限制继承与术语歧义",
+        "chain": "先说明冷藏工具冷敷并禁止直接冰块→后文使用“冰敷”回指同一操作。",
+        "finding": "需要人工确认后文“冰敷”是否仅为前面方法的简称；当前分析只标注歧义，不改字幕，不提供新的操作建议。",
+        "evidence_status": "文本风险已定位；原02已记冷敷限制，这次补出它需要关联的后文位置。",
+        "unit_ids": [
+          "U009",
+          "U011"
+        ],
+        "evidence": [
+          {
+            "unit_id": "U009",
+            "quote": "就是千万别拿冰块直接去敷眼睛"
+          }
+        ],
+        "limitations": [
+          "保留原文“别拿冰块直接去敷眼睛”的限制；后文“冰敷”的含义待人工确认，不补写新的操作建议。"
+        ]
+      },
+      {
+        "id": "C07",
+        "pattern": "需要匹配与负担之间的缺失前提",
+        "chain": "作者先提出油腻或刺激负担→再以熬夜后厚、干、综合问题解释配方匹配。",
+        "finding": "“功能符合需求”并不能单凭逻辑推出“原先负担得到解决”。这一过渡缺少展开；应带着待核实条件交给后续，而不是补写更高耐受的结论。",
+        "evidence_status": "可判定稿内论证少了桥梁；不能仅凭文本判定真实人群适用性。",
+        "unit_ids": [
+          "U043",
+          "U044",
+          "U045",
+          "U046"
+        ],
+        "evidence": [
+          {
+            "unit_id": "U045",
+            "quote": "在这种情况下反而适合这个产品"
+          }
+        ],
+        "limitations": [
+          "功能匹配不能直接推出更耐受或先前负担已消失；缺失前提保持待核实，不由画面补齐。"
+        ]
+      },
+      {
+        "id": "C08",
+        "pattern": "全局建议与长期预期",
+        "chain": "前文两章建立长期问题边界→U041合并选择规则→U042补上长期坚持预期。",
+        "finding": "U042不是再列四大问题，而是在限制前文建议的效果预期。跨单元构思可以在这里闭合长期主线，但隐喻与画面对象仍由创意阶段决定。",
+        "evidence_status": "论证作用可定位；不将U018的时间倍数外推为全片保证。",
+        "unit_ids": [
+          "U018",
+          "U034",
+          "U041",
+          "U042"
+        ],
+        "evidence": [
+          {
+            "unit_id": "U042",
+            "quote": "它们大部分都不是能立竿见影 立马解决的问题"
+          }
+        ],
+        "limitations": [
+          "长期问题不能呈现为立竿见影；不将个别段落的时间倍数推广为全片保证。"
+        ]
+      }
+    ],
+    "scope": {
+      "done": [
+        "逐一分析47个语义单元，来源覆盖612条字幕；原文本保持不变。",
+        "46个主关系与11个有独立目的的补充关系；数量和比例均从关系表派生。",
+        "8条跨单元理解主线及8张论证卡，区分作者解释、支持形式、适用限制和缺失前提。"
+      ],
+      "not_done": [
+        "医学和产品文献事实核查",
+        "音轨核对和精确同步",
+        "全量命题或关系穷举",
+        "03创意执行、04生图及旧视觉问题返工",
+        "人工语义验收"
+      ]
+    },
+    "findings": [
+      "U011“冰敷”与U009禁止直接冰块的措辞需要人工确认，当前不改字幕。",
+      "U043—U046从功能需求匹配到适用性的过渡缺少耐受方面的论证桥梁。",
+      "U042在限定长期效果预期，不只是重复U041的选择优先级。",
+      "所有关系都是待人工审阅的稿内理解判断；分布不是正确率、配额或疗效事实核验。"
+    ]
+  }
+}
