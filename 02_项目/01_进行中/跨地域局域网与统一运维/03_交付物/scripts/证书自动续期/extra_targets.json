@@ -1,0 +1,40 @@
+{
+  "targets": [
+    {
+      "id": "extra:synology_nas",
+      "name": "synology_nas",
+      "probe": "ping",
+      "host": "192.168.50.5"
+    },
+    {
+      "id": "extra:feiniu_nas",
+      "name": "feiniu_nas",
+      "probe": "ping",
+      "host": "192.168.50.6"
+    },
+    {
+      "id": "extra:openwrt_sweden",
+      "name": "openwrt_sweden",
+      "probe": "ping",
+      "host": "10.10.13.22"
+    },
+    {
+      "id": "extra:openwrt_china",
+      "name": "openwrt_china",
+      "probe": "ping",
+      "host": "10.10.13.23"
+    },
+    {
+      "id": "extra:upsnap_web",
+      "name": "upsnap_web",
+      "probe": "http",
+      "url": "https://upsnap.lovewhowho.net/",
+      "expect_codes": [200, 403]
+    },
+    {
+      "id": "extra:lovewhowho_certificate",
+      "name": "lovewhowho_certificate",
+      "probe": "lovewhowho_certificate"
+    }
+  ]
+}
