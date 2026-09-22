@@ -1,0 +1,10 @@
+/var/log/lovewhowho-acme.log /var/log/lovewhowho-cert-check.log {
+    weekly
+    rotate 12
+    compress
+    delaycompress
+    missingok
+    notifempty
+    copytruncate
+    create 0600 root root
+}
