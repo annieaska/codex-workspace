@@ -1,0 +1,41 @@
+{
+  content: [
+    {
+      type: 'text',
+      text: '## PubMed Search Results\n' +
+        '**Query:** sleep deprivation skin hydration elasticity desquamation barrier recovery\n' +
+        '**Returned:** 1 of 1 | **Offset:** 0\n' +
+        '**Search URL:** https://pubmed.ncbi.nlm.nih.gov/?term=sleep%20deprivation%20skin%20hydration%20elasticity%20desquamation%20barrier%20recovery%20AND%20hasabstract%5Btext%20word%5D\n' +
+        '\n' +
+        '**PMIDs:** 31692145\n' +
+        '\n' +
+        '### Summaries\n' +
+        '\n' +
+        '#### A study of skin characteristics with long-term sleep restriction in Korean women in their 40s.\n' +
+        '**PMID:** 31692145\n' +
+        '**Authors:** Jang SI, Lee M, Han J, et al.\n' +
+        '**Source:** Skin Res Technol\n' +
+        '**Published:** 2020-03-01\n' +
+        '**DOI:** 10.1111/srt.12797\n' +
+        '**PubMed:** https://pubmed.ncbi.nlm.nih.gov/31692145/'
+    },
+    {
+      type: 'text',
+      text: '\n' +
+        '\n' +
+        '**Effective Query:** sleep deprivation skin hydration elasticity desquamation barrier recovery AND hasabstract[text word]\n' +
+        '**Applied Filters:**\n' +
+        '- **Has abstract:** yes'
+    }
+  ],
+  structuredContent: {
+    query: 'sleep deprivation skin hydration elasticity desquamation barrier recovery',
+    offset: 0,
+    pmids: [ '31692145' ],
+    summaries: [ [Object] ],
+    searchUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep%20deprivation%20skin%20hydration%20elasticity%20desquamation%20barrier%20recovery%20AND%20hasabstract%5Btext%20word%5D',
+    totalCount: 1,
+    effectiveQuery: 'sleep deprivation skin hydration elasticity desquamation barrier recovery AND hasabstract[text word]',
+    appliedFilters: { hasAbstract: true }
+  }
+}

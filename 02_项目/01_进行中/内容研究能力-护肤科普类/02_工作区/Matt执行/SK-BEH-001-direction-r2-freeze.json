@@ -1,0 +1,3853 @@
+{
+  "schema_version": "sk-research-audit-snapshot/1.0",
+  "kind": "direction",
+  "created_at": "2026-09-25T05:22:47.215481+00:00",
+  "actor_type": "controller_delegate",
+  "payload_sha256": "393691d09b7b9311f0e44a97ab29c81be684622aa093dac61784817690ad3588",
+  "payload": {
+    "schema_version": "0.1",
+    "revision": "SK-BEH-001-direction-r2",
+    "run_id": "SK-BEH-001",
+    "mode": "behavior",
+    "demo": false,
+    "config_ref": {
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-policy-r2.json",
+      "revision": "SK-MATT-20260925-r2",
+      "sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a"
+    },
+    "generated_at": "2026-09-25T05:12:10.516604+00:00",
+    "status": "directions_confirmed",
+    "sources": [
+      {
+        "id": "SK-BEH-001-S001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "accessed_at": "2026-09-25",
+        "accessed_at_precision": "day",
+        "language": "en",
+        "access_status": "available",
+        "title": "The circadian clock and diseases of the skin",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8515909/",
+        "authors": [
+          "Junyan Duan",
+          "Elyse Noelani Greenberg",
+          "Satya Swaroop Karri",
+          "Bogi Andersen"
+        ],
+        "published_at": "2021-09-29",
+        "published_at_precision": "day",
+        "source_type": "narrative_review",
+        "geography": {
+          "affiliation_country": "US",
+          "study_population_countries": null
+        },
+        "read_level": "full_text",
+        "original_identity": "doi:10.1002/1873-3468.14192",
+        "locator": "Introduction; Circadian clock and skin ageing; concluding discussion",
+        "excerpt_or_summary": "综述皮肤节律及疾病研究，包含人体关联、动物和细胞模型；机制可以提供解释线索，不能直接转成某一就寝时间或护肤产品的临床功效。",
+        "quality": {
+          "assessment": "unassessed",
+          "score": null,
+          "method": {
+            "assessment": "叙述性综述，模型和终点异质；不是睡眠干预效应的系统合并估计。",
+            "score": null
+          },
+          "independence": {
+            "assessment": "本轮未完成该综述全部资助/披露核验。",
+            "score": null
+          },
+          "source_quality": {
+            "assessment": "已读取 PMC 原文；期刊 FEBS Letters。",
+            "score": null
+          },
+          "author_fit": {
+            "assessment": null,
+            "score": null,
+            "missing_reason": "仅核对作者与机构，未独立核验各作者主题研究履历。"
+          },
+          "missing_reason": "本轮未完成全部评分维度核验；不以出版方、论文数量或局部方法核验生成总分。",
+          "key_conclusion_eligibility": "仅可按已读范围作有局限的来源级描述，不能单独支撑强科学门槛。"
+        },
+        "limitations": [
+          "人、动物、细胞证据层级不能混用；内源时钟改变不等同于自愿晚睡。",
+          "未取得睡眠改善逆转皮肤老化的可归因临床效应。"
+        ],
+        "missing_reason": "综述跨多种模型，无单一研究人群国别；完整独立性与作者适配性未评估。"
+      },
+      {
+        "id": "SK-BEH-001-S002",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "accessed_at": "2026-09-25",
+        "accessed_at_precision": "day",
+        "language": "en",
+        "access_status": "available",
+        "title": "Dermatologists' top tips for relieving dry skin",
+        "url": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin",
+        "authors": [
+          "Paula Ludmann, MS"
+        ],
+        "reviewers": [
+          "Sandy Marchese Johnson",
+          "William Warren Kwan",
+          "Sanna Ronkainen",
+          "Desmond Shipp"
+        ],
+        "published_at": "2026-01-02",
+        "published_at_precision": "day",
+        "date_basis": "页面 Last updated 1/2/26，按美国发布机构月/日格式解释；不是首次发表日期。",
+        "source_type": "professional_public_guidance",
+        "geography": {
+          "publisher_country": "US",
+          "applicability": "一般干燥皮肤护理，非睡眠不足专用人群"
+        },
+        "read_level": "official_record",
+        "original_identity": "aad:dry-skin-tips",
+        "locator": "How to relieve dry skin; When to see a dermatologist; article review/update footer",
+        "excerpt_or_summary": "面向干燥皮肤的建议包括温和清洁、洗后保湿、选择无香精产品及日常防晒；持续不缓解或出现明显刺激时寻求皮肤科评估。",
+        "quality": {
+          "assessment": "official_guidance_with_scope_limit",
+          "paper_scoring_applicable": false,
+          "publisher_identity": "美国皮肤科学会原站；署名及皮肤科审阅者可见。",
+          "development_method_and_evidence_basis": "专家审阅的公众教育页面，未呈现完整系统综述或证据分级过程。",
+          "population_and_scope": "干燥皮肤日常护理，不能推断对熬夜伤害的抵消效应。",
+          "limitations": "不是睡眠干预试验，也不是睡眠不足专用疗效指南。"
+        },
+        "limitations": [
+          "只能支撑基础护理建议，不支持护肤品替代睡眠或补回睡眠不足。"
+        ],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-S003",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "accessed_at": "2026-09-25",
+        "accessed_at_precision": "day",
+        "language": "en",
+        "access_status": "available",
+        "title": "About Sleep",
+        "url": "https://www.cdc.gov/sleep/about/index.html",
+        "authors": [
+          "CDC"
+        ],
+        "published_at": "2024-05-15",
+        "published_at_precision": "day",
+        "source_type": "public_health_guidance",
+        "geography": {
+          "publisher_country": "US",
+          "applicability": "按年龄分层的一般人群睡眠健康"
+        },
+        "read_level": "official_record",
+        "original_identity": "cdc:sleep-about",
+        "locator": "How much sleep do I need?; Habits that can improve your sleep; When to talk to your healthcare provider",
+        "excerpt_or_summary": "成人睡眠建议按年龄区分；18—60 岁通常建议每天至少 7 小时，并重视规律性与睡眠质量。经常存在睡眠问题时应咨询医疗人员。",
+        "quality": {
+          "assessment": "official_guidance_with_scope_limit",
+          "paper_scoring_applicable": false,
+          "publisher_identity": "CDC 原始健康教育页面。",
+          "development_method_and_evidence_basis": "页面列有推荐依据；本轮未逐条深读其底层共识。",
+          "population_and_scope": "一般睡眠健康，不是皮肤恢复的剂量或时点试验。",
+          "limitations": "不能推出每人必须睡 8 小时或某个时点为唯一皮肤修复窗口。"
+        },
+        "limitations": [
+          "年龄分层建议不能压缩成统一美容阈值。"
+        ],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-S004",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "accessed_at": "2026-09-25",
+        "accessed_at_precision": "day",
+        "language": "en",
+        "access_status": "available",
+        "title": "Does poor sleep quality affect skin ageing?",
+        "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/ced.12455",
+        "authors": [
+          "P. Oyetakin-White",
+          "A. Suggs",
+          "B. Koo",
+          "M. S. Matsui",
+          "D. Yarosh",
+          "K. D. Cooper",
+          "E. D. Baron"
+        ],
+        "published_at": "2014-09-30",
+        "published_at_precision": "day",
+        "issue_date": "2015-01",
+        "source_type": "human_observational_study_abstract",
+        "geography": {
+          "population": "60 healthy Caucasian women",
+          "recruitment_country": null
+        },
+        "read_level": "abstract_only",
+        "original_identity": "doi:10.1111/ced.12455",
+        "locator": "Abstract; Funding sources; Conflicts of interest",
+        "excerpt_or_summary": "摘要报告睡眠质量分组与皮肤老化、屏障相关测量之间存在差异。全文方法未取得，暂作关联研究线索。页面披露雅诗兰黛资助，Matsui 与 Yarosh 为该公司员工。",
+        "quality": {
+          "assessment": "unassessed",
+          "score": null,
+          "method": {
+            "assessment": "只读摘要，不能核验混杂控制、完整统计和效应量。",
+            "score": null
+          },
+          "independence": {
+            "assessment": "已核验企业资助及两名作者雇佣关系；独立可比复现未核验。",
+            "score": null
+          },
+          "source_quality": {
+            "assessment": "原出版社摘要与披露可见；不是全文确认。",
+            "score": null
+          },
+          "author_fit": {
+            "assessment": null,
+            "score": null,
+            "missing_reason": "作者履历未核验。"
+          },
+          "missing_reason": "本轮未完成全部评分维度核验；不以出版方、论文数量或局部方法核验生成总分。",
+          "key_conclusion_eligibility": "仅可按已读范围作有局限的来源级描述，不能单独支撑强科学门槛。"
+        },
+        "limitations": [
+          "观察性分组不能直接证明睡眠不足造成老化。",
+          "全文未取得；不用于关键科学结论或效果数字。"
+        ],
+        "missing_reason": "全文方法与招募地点未核验。"
+      },
+      {
+        "id": "SK-BEH-001-S005",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "accessed_at": "2026-09-25",
+        "accessed_at_precision": "day",
+        "language": "en",
+        "access_status": "available",
+        "title": "Independent and Combined Effects of Particulate Matter and Sleep Deprivation on Human Skin Barrier",
+        "url": "https://anndermatol.org/DOIx.php?id=10.5021/ad.25.003",
+        "authors": [
+          "Il Joo Kwon",
+          "Eun Jung Lee",
+          "Jong Ho Park",
+          "Ji Young Kim",
+          "Seohyun Park",
+          "Yu Jeong Bae",
+          "Shinwon Hwang",
+          "Hye-won Na",
+          "Nari Cha",
+          "Geunhyuk Jang",
+          "Hyoung-June Kim",
+          "Hae Kwang Lee",
+          "Sang Ho Oh"
+        ],
+        "published_at": "2025-03-12",
+        "published_at_precision": "day",
+        "issue_date": "2025-06",
+        "source_type": "human_experimental_study",
+        "geography": {
+          "study_country": "KR",
+          "population": "40 名 24—58 岁健康韩国女性"
+        },
+        "read_level": "full_text",
+        "original_identity": "doi:10.5021/ad.25.003",
+        "locator": "Materials and Methods: Experimental protocol/Statistical analysis; Results: Effects of sleep deprivation; Discussion limitations; Notes",
+        "excerpt_or_summary": "40 名女性经历一夜受控睡眠剥夺后，前臂测量并未出现一致的临床屏障恶化模式。论文同时报告分子变化。两者不能互相替代，也不能从该短期研究推断长期睡眠不足无害。",
+        "quality": {
+          "assessment": "unassessed",
+          "score": null,
+          "method": {
+            "assessment": "前后配对测量，睡眠暴露属于全人暴露；不同前臂区域不是独立的睡眠对照。未见同时段正常睡眠平行对照，时间/顺序效应限制因果解释。",
+            "score": null
+          },
+          "independence": {
+            "assessment": "政府项目资助；披露作者分别任职 P&K Skin Research Center 和 Amorepacific；独立可比复现未核验。",
+            "score": null
+          },
+          "source_quality": {
+            "assessment": "原期刊全文、方法、结果、局限和披露均可见。",
+            "score": null
+          },
+          "author_fit": {
+            "assessment": null,
+            "score": null,
+            "missing_reason": "作者机构已核对，个别作者履历及独立性未完成外部核验。"
+          },
+          "missing_reason": "本轮未完成全部评分维度核验；不以出版方、论文数量或局部方法核验生成总分。",
+          "key_conclusion_eligibility": "仅可按已读范围作有局限的来源级描述，不能单独支撑强科学门槛。"
+        },
+        "limitations": [
+          "样本小且限健康女性、前臂、短期受控条件；不代表面部、男性、疾病人群或慢性暴露。",
+          "临床结果与结尾概括强度存在张力；优先按实际终点及方法解释，不能将分子信号直接当屏障损害。",
+          "本研究不能证明睡眠剥夺改善皮肤，也不能排除长期影响。"
+        ],
+        "missing_reason": "总体质量分及可比独立复现尚未评估。"
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "id": "SK-BEH-001-S006",
+        "accessed_at": "2026-09-25",
+        "accessed_at_precision": "day",
+        "language": "en",
+        "access_status": "available",
+        "title": "Negative effects of restricted sleep on facial appearance and social appeal",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Negative_effects_of_restricted_sleep_on_facial_appearance_and_social_appeal.pdf",
+        "authors": [
+          "Tina Sundelin",
+          "Mats Lekander",
+          "Kimmo Sorjonen",
+          "John Axelsson"
+        ],
+        "published_at": "2017",
+        "published_at_precision": "year",
+        "source_type": "human_experiment",
+        "geography": {
+          "affiliation_country": "SE",
+          "study_population_countries": [
+            "SE"
+          ]
+        },
+        "read_level": "full_text",
+        "original_identity": "doi:10.1098/rsos.160918",
+        "locator": "Royal Society Open Science 4:160918; pp.3–4 Methods/Table 1; pp.5–8 Discussion/Ethics/Funding",
+        "excerpt_or_summary": "单项自身对照急性实验发现：限制睡眠后照片的平均吸引力、健康与社交意愿评分略低，睡意评分较高；信任评分差异未达统计显著。终点是照片感知，不能替代皮肤损伤、长期老化或恢复时间。",
+        "method_details": {
+          "design": "25名健康被摄者，两次条件顺序平衡且间隔至少一周；两晚8小时与4小时卧床。文中未据此确认随机分配。",
+          "population": "14名女性，平均23.9岁；斯德哥尔摩大学招募。作者按姓名/外观推测多数为白人，不是经核验的族裔变量。",
+          "exposure_check": "腕部活动记录；实际睡眠均值7小时35分与4小时15分，依从性有差异。",
+          "measurement": "50张照片、标准化照明与服饰、无化妆；下午拍摄。摄影者及选片者对条件盲法，评价者不知目的。",
+          "raters": "招募122名评价者，65名女性，平均30.8岁；7人的设备数据丢失。前40人因睡意量表锚点变更不进入睡意分析；各终点另有低变异评分排除，不能将122当作所有分析样本量。",
+          "analysis": "被摄者/评价者交叉随机效应混合模型；照片展示伪随机，评分维度顺序固定。未重分析原始数据。"
+        },
+        "quality": {
+          "assessment": "unassessed",
+          "score": null,
+          "method": {
+            "assessment": "已核验自身对照、暴露记录、拍摄/选片盲法及评分排除；仍有小样本、选择性人群和评分程序限制。",
+            "score": null
+          },
+          "independence": {
+            "assessment": "文末声明无竞争利益；资助为Karolinska Institutet及Stockholm University。作者与既有系列重叠，不能视作独立复现。",
+            "score": null
+          },
+          "source_quality": {
+            "assessment": "公开镜像承载原出版PDF，首页身份/DOI及CC-BY 4.0授权可见；全文方法与披露已读。",
+            "score": null
+          },
+          "author_fit": {
+            "assessment": "仅核对论文机构和作者贡献；未独立核验全部履历。",
+            "score": null
+          },
+          "missing_reason": "未完成全部评分维度及独立复现核验，不生成总分。",
+          "key_conclusion_eligibility": "仅供有边界的单研究描述，待主控复审。"
+        },
+        "limitations": [
+          "小型、偏年轻的健康样本及单地评价者，不能直接外推一般人群或六市场。",
+          "两晚急性实验不回答长期晚睡、个体诊断、变化起始阈值或恢复时间。",
+          "评分排除与量表锚点中途调整限制可比性；照片感知不等于真实社交行为。",
+          "血流等机制只是讨论解释；未检验护理、化妆或咖啡因的补偿效果。"
+        ],
+        "missing_reason": "恢复、长期和独立复现未核验；数据仓储未打开。"
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "id": "SK-BEH-001-S007",
+        "accessed_at": "2026-09-25",
+        "accessed_at_precision": "day",
+        "language": "en",
+        "access_status": "partial",
+        "title": "The effect of sleep deprivation on objective and subjective measures of facial appearance",
+        "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12860",
+        "authors": [
+          "Benjamin C. Holding",
+          "Tina Sundelin",
+          "Patrick Cairns",
+          "David I. Perrett",
+          "John Axelsson"
+        ],
+        "published_at": "2019-04-21",
+        "published_at_precision": "day",
+        "source_type": "human_experiment",
+        "geography": {
+          "affiliation_country": [
+            "SE",
+            "US",
+            "UK"
+          ],
+          "study_population_countries": null
+        },
+        "read_level": "abstract_only",
+        "original_identity": "doi:10.1111/jsr.12860",
+        "locator": "Publisher Abstract and Conflict of Interest; full URL redirected to abs",
+        "excerpt_or_summary": "出版方摘要称181名被摄者随机分到一晚完全睡眠剥夺或正常睡眠；63名另组评价者评分。摘要未发现组间面部指标及主观评分差异。全文方法未取得，只作反向待核线索；不等于证明无影响。",
+        "quality": {
+          "assessment": "unassessed",
+          "score": null,
+          "method": {
+            "assessment": "仅摘要设计与结果；盲法、排除、依从性、统计及效应区间未核验。",
+            "score": null
+          },
+          "independence": {
+            "assessment": "可见声明无利益冲突；完整资助未核验，作者与2017研究部分重叠。",
+            "score": null
+          },
+          "source_quality": {
+            "assessment": "出版方原摘要可读，非全文。",
+            "score": null
+          },
+          "author_fit": {
+            "assessment": null,
+            "score": null,
+            "missing_reason": "未独立核验研究履历。"
+          },
+          "missing_reason": "原文仓储超时；出版方全文入口仅摘要。",
+          "key_conclusion_eligibility": "只可说明存在待核的反向线索，不能据此形成正式效果主张。"
+        },
+        "limitations": [
+          "不同样本及一晚完全剥夺与两晚限制睡眠不可直接合并。",
+          "非显著差异不构成等效或无效证明。",
+          "全文方法、效应区间和局限未完成核验。"
+        ],
+        "missing_reason": "全文不可得；不计合格深读。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "SK-BEH-001-C001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "text": "一般成人睡眠健康建议应按年龄、规律性和睡眠质量说明，不能包装成皮肤专属的统一时长或时点。",
+        "claim_type": "recommendation",
+        "source_refs": [
+          {
+            "source_id": "SK-BEH-001-S003",
+            "role": "support",
+            "locator": "How much sleep do I need?; Habits that can improve your sleep; When to talk to your healthcare provider"
+          }
+        ],
+        "certainty": "guidance_supported_with_scope_limit",
+        "population": "一般成人",
+        "context": "公众睡眠健康教育；非个体医疗建议",
+        "time_scale": "持续生活习惯",
+        "allowed_expression": "优先保障适合年龄的睡眠时长与规律性；睡眠质量同样重要。",
+        "forbidden_expression": "所有人必须睡 8 小时；23 点后皮肤停止修复。",
+        "gaps": [
+          "SK-BEH-001-G006"
+        ]
+      },
+      {
+        "id": "SK-BEH-001-C002",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "text": "温和清洁、保湿和防晒属于基础皮肤护理；当前已读指导材料没有证明它们可以抵消睡眠不足。",
+        "claim_type": "recommendation",
+        "source_refs": [
+          {
+            "source_id": "SK-BEH-001-S002",
+            "role": "support",
+            "locator": "How to relieve dry skin; When to see a dermatologist; article review/update footer"
+          }
+        ],
+        "certainty": "guidance_supported_for_dry_skin_only",
+        "population": "一般干燥皮肤人群",
+        "context": "日常基础护理；非熬夜补救功效试验",
+        "time_scale": "日常持续护理；恢复速度未知",
+        "allowed_expression": "皮肤干燥时可简化为温和清洁、保湿与防晒；持续异常需评估。",
+        "forbidden_expression": "熬夜后按此护理即可修复或抵消全部损伤。",
+        "gaps": [
+          "SK-BEH-001-G005"
+        ]
+      },
+      {
+        "id": "SK-BEH-001-C003",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "text": "皮肤存在节律相关生物学机制，但动物、细胞和关联研究不能直接证明具体美容方案的临床收益。",
+        "claim_type": "mechanism",
+        "source_refs": [
+          {
+            "source_id": "SK-BEH-001-S001",
+            "role": "support",
+            "locator": "Introduction; Circadian clock and skin ageing"
+          }
+        ],
+        "certainty": "mechanistic_plausibility_only",
+        "population": "综述涉及人、鼠及细胞模型",
+        "context": "节律机制解释；不同模型分层",
+        "time_scale": "机制与长期老化不可换算为一晚效果",
+        "allowed_expression": "皮肤活动受到生物节律调节，具体临床影响仍需对应的人体证据。",
+        "forbidden_expression": "机制证明熬夜一晚就会不可逆变老；某时段涂产品等于补觉。",
+        "gaps": [
+          "SK-BEH-001-G002",
+          "SK-BEH-001-G006"
+        ]
+      },
+      {
+        "id": "SK-BEH-001-C004",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "text": "一项 2025 年短期人体研究未观察到睡眠剥夺后一致的临床屏障恶化模式；它限制绝对化表述，但不能证明长期无害。",
+        "claim_type": "observation",
+        "source_refs": [
+          {
+            "source_id": "SK-BEH-001-S005",
+            "role": "support",
+            "locator": "Results: Effects of sleep deprivation; Discussion limitations"
+          },
+          {
+            "source_id": "SK-BEH-001-S005",
+            "role": "limit",
+            "locator": "Methods: Experimental protocol/Statistical analysis"
+          }
+        ],
+        "certainty": "limited_single_study_observation",
+        "population": "40 名健康韩国成年女性，前臂",
+        "context": "一夜受控睡眠剥夺；时间及对照局限明显",
+        "time_scale": "短期；长期和恢复轨迹未建立",
+        "allowed_expression": "短期人体测量并非一致，不能把每次晚睡都描述成已证实的屏障损伤。",
+        "forbidden_expression": "睡眠不足对皮肤无害；熬夜可以改善屏障；研究已经否定所有长期影响。",
+        "gaps": [
+          "SK-BEH-001-G002"
+        ]
+      },
+      {
+        "id": "SK-BEH-001-C005",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "text": "早期研究摘要提示较差睡眠质量与皮肤相关测量差异存在关联；因全文未核验，仅保留为线索。",
+        "claim_type": "association",
+        "source_refs": [
+          {
+            "source_id": "SK-BEH-001-S004",
+            "role": "support",
+            "locator": "Abstract"
+          },
+          {
+            "source_id": "SK-BEH-001-S004",
+            "role": "limit",
+            "locator": "Funding sources; Conflicts of interest"
+          }
+        ],
+        "certainty": "unassessed_abstract_lead",
+        "population": "摘要所述 60 名健康白人女性",
+        "context": "观察性分组；不作为核心结论支持",
+        "time_scale": "关联时序未核验",
+        "allowed_expression": "存在待核验的人体关联线索。",
+        "forbidden_expression": "该研究证明熬夜导致老化，且影响可量化为某个百分比。",
+        "gaps": [
+          "SK-BEH-001-G002"
+        ]
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "id": "SK-BEH-001-C006",
+        "text": "2017年一项小型自身对照实验中，两晚限制睡眠后的照片出现较低的部分平均外观/社交意愿评分；该结果只涉及所测照片感知。",
+        "claim_type": "observation",
+        "source_refs": [
+          {
+            "source_id": "SK-BEH-001-S006",
+            "role": "support",
+            "locator": "Methods §§2.1–2.3; Table 1; Discussion"
+          },
+          {
+            "source_id": "SK-BEH-001-S007",
+            "role": "limit",
+            "locator": "Publisher Abstract only; full methods not verified"
+          }
+        ],
+        "certainty": "single_study_scope_limited_controller_reviewed",
+        "population": "25名健康被摄者；斯德哥尔摩招募的照片评价者，各终点有效人数不同",
+        "context": "两晚8h/4h卧床、标准化照片及盲法评分；非日常个体诊断",
+        "time_scale": "两晚实验后；未测恢复过程",
+        "allowed_expression": "一项小型短期标准化照片研究观察到部分平均评分差异；另一不同设计研究摘要未见相应差异，全文方法未核验。不能推断皮肤损伤、长期老化或恢复时间。",
+        "forbidden_expression": "少睡必然显老；照片证明屏障损伤；护肤或补觉在固定时间逆转。",
+        "gaps": [
+          "SK-BEH-001-G001",
+          "SK-BEH-001-G006",
+          "SK-BEH-001-G009"
+        ]
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "id": "SK-BEH-001-C007",
+        "text": "2019年出版方摘要报告另一种睡眠剥夺设计未见相应面部指标与评分差异；全文方法尚未核验，保留为反向待核线索。",
+        "claim_type": "observation",
+        "source_refs": [
+          {
+            "source_id": "SK-BEH-001-S007",
+            "role": "limit",
+            "locator": "Publisher Abstract"
+          }
+        ],
+        "certainty": "abstract_only_pending_full_text",
+        "population": "摘要报告181名被摄者及63名评价者；完整纳排与人群信息未核验",
+        "context": "一晚完全剥夺/正常睡眠的随机平行设计，不能直接等同2017自身对照实验",
+        "time_scale": "一晚后；恢复未核验",
+        "allowed_expression": "存在未完成全文核验的反向研究线索，应避免把单项正向研究泛化。",
+        "forbidden_expression": "已证实睡眠不足不影响外观；两研究已完成严格综合评价。",
+        "gaps": [
+          "SK-BEH-001-G001",
+          "SK-BEH-001-G009"
+        ]
+      }
+    ],
+    "branches": [
+      {
+        "id": "SK-BEH-001-B01",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "parent_ids": [],
+        "review_decision": "SK-BEH-001-D007",
+        "review_status": "reviewed_with_gaps",
+        "title": "睡眠与外观感知",
+        "definition": "区分短期被他人感知的疲态、本人感受、仪器测量及长期老化。",
+        "chain_position": "行为暴露 → 短期外观/社交感知",
+        "related_ids": [
+          "SK-BEH-001-B02",
+          "SK-BEH-001-B03"
+        ],
+        "upstream": "睡眠时长、质量、规律性与具体实验暴露需分别定义。",
+        "downstream": "外观感知不能直接等于屏障破坏或不可逆老化。",
+        "time_scale": {
+          "onset": null,
+          "duration": "S006暴露为连续两晚；末次条件后拍照，不提供效果持续时长",
+          "recovery": null,
+          "missing_reason": "取得实验观察时点，不等于发生阈值、持续或恢复时间。"
+        },
+        "population": "已核验S006：斯德哥尔摩25名健康被摄者，偏年轻；不能直接外推一般人群。",
+        "modifiers": {
+          "amplifiers": null,
+          "mitigators": null,
+          "context": "S006已核对光照、服饰、无化妆、拍摄/选片盲法和评分流程；这些是控制条件，不是已证实的缓解因素。",
+          "missing_reason": "日常调节因素及补偿干预效果未研究。"
+        },
+        "exclusions": [
+          "美容诊断、个体疗效、仅凭照片推断生理损伤"
+        ],
+        "claim_ids": [
+          "SK-BEH-001-C006",
+          "SK-BEH-001-C007"
+        ],
+        "source_ids": [
+          "SK-BEH-001-S006",
+          "SK-BEH-001-S007"
+        ],
+        "coverage": "partial",
+        "support": "S006完整方法支持有限的短期照片感知描述；不能支撑长期或恢复时间。",
+        "counterevidence": "S007仅出版方摘要提示不同设计下未见差异，全文未核验，不作已确认反证。",
+        "preliminary_judgment": "主控代理允许受限单研究描述并就地关联未核全文的反向线索；仍非主方向，不含损伤、老化、恢复时间推断。",
+        "priority_rationale": "行为模式按上游可改变性及实际收益排序；该支提供感知边界，不能因话题吸引力排在基础行为建议之前。",
+        "gaps": [
+          "SK-BEH-001-G001",
+          "SK-BEH-001-G006",
+          "SK-BEH-001-G009"
+        ],
+        "missing_reason": "2019反向线索全文、独立复现、外推及恢复过程仍未核验。"
+      },
+      {
+        "id": "SK-BEH-001-B02",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "parent_ids": [],
+        "review_decision": "SK-BEH-001-D008",
+        "review_status": "reviewed_with_gaps",
+        "title": "屏障指标与机制",
+        "definition": "分开临床屏障指标、弹性等外观指标、分子变化与长期老化。",
+        "chain_position": "行为暴露 → 生理指标/机制 → 有限解释",
+        "related_ids": [
+          "SK-BEH-001-B01",
+          "SK-BEH-001-B03"
+        ],
+        "upstream": "暴露强度、急性/慢性睡眠不足与节律错位不能互换。",
+        "downstream": "机制不直接推出临床功效，单项指标不直接推出整体皮肤损害。",
+        "time_scale": {
+          "onset": "已核验研究仅覆盖短期条件",
+          "duration": null,
+          "recovery": null,
+          "missing_reason": "长期与恢复时间的可比人体全文未核验。"
+        },
+        "population": "S005 限健康韩国女性前臂；S001 为多模型综述。",
+        "modifiers": {
+          "amplifiers": "PM 是 S005 的共暴露因素，不能混同睡眠单独作用。",
+          "mitigators": null,
+          "context": "年龄、部位、时点、环境及睡眠测量影响可比性。",
+          "missing_reason": "未建立可量化的保护因素或恢复措施。"
+        },
+        "exclusions": [
+          "把细胞/动物结果写为人体确定功效",
+          "诊疗及具体产品推荐"
+        ],
+        "claim_ids": [
+          "SK-BEH-001-C003",
+          "SK-BEH-001-C004",
+          "SK-BEH-001-C005"
+        ],
+        "source_ids": [
+          "SK-BEH-001-S001",
+          "SK-BEH-001-S004",
+          "SK-BEH-001-S005"
+        ],
+        "coverage": "partial",
+        "support": {
+          "claim_ids": [
+            "SK-BEH-001-C003"
+          ],
+          "scope": "仅机制可解释性"
+        },
+        "counterevidence": {
+          "claim_ids": [
+            "SK-BEH-001-C004"
+          ],
+          "scope": "限制每次晚睡必然损害屏障的绝对结论；不是证明无害"
+        },
+        "preliminary_judgment": "必须降调；当前不足以支持强因果或长期老化量化结论。",
+        "priority_rationale": "用于约束上游行为教育的科学措辞；不按恐惧或损害严重程度排序。",
+        "gaps": [
+          "SK-BEH-001-G002",
+          "SK-BEH-001-G006"
+        ]
+      },
+      {
+        "id": "SK-BEH-001-B03",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "parent_ids": [],
+        "review_decision": "SK-BEH-001-D009",
+        "review_status": "reviewed_with_gaps",
+        "title": "可改变因素与护理角色",
+        "definition": "把睡眠习惯作为上游行为，把基础护理定位为处理干燥等日常需求的辅助措施。",
+        "chain_position": "可改变行为 → 一般健康收益；基础护理 → 局部日常需求",
+        "related_ids": [
+          "SK-BEH-001-B01",
+          "SK-BEH-001-B02"
+        ],
+        "upstream": "规律睡眠与足够睡眠机会；不转为强制统一作息处方。",
+        "downstream": "不能从保湿、防晒常规建议推导补偿熬夜功效。",
+        "time_scale": {
+          "onset": null,
+          "duration": "持续日常习惯",
+          "recovery": null,
+          "missing_reason": "官方指导未提供睡眠不足相关皮肤恢复速度。"
+        },
+        "population": "一般成年人；干燥皮肤建议按对应范围使用。",
+        "modifiers": {
+          "amplifiers": "刺激性清洁或不合适产品属于基础护理讨论范围，不在此量化。",
+          "mitigators": "温和清洁、保湿、防晒与规律睡眠建议分开呈现。",
+          "context": "持续皮肤异常或经常睡眠困难应转入专业评估。",
+          "missing_reason": null
+        },
+        "exclusions": [
+          "处方、补剂、美容治疗",
+          "用护肤品替代睡眠",
+          "品牌比较"
+        ],
+        "claim_ids": [
+          "SK-BEH-001-C001",
+          "SK-BEH-001-C002"
+        ],
+        "source_ids": [
+          "SK-BEH-001-S002",
+          "SK-BEH-001-S003"
+        ],
+        "coverage": "partial",
+        "support": {
+          "claim_ids": [
+            "SK-BEH-001-C001",
+            "SK-BEH-001-C002"
+          ],
+          "scope": "一般官方指导"
+        },
+        "counterevidence": {
+          "claim_ids": [],
+          "scope": "未读取到护肤抵消睡眠不足的合格试验证据；不把未发现当反证"
+        },
+        "preliminary_judgment": "可形成低承诺的基础教育内容，但尚不能成为通过双门槛的正式候选。",
+        "priority_rationale": "优先级最高：直接对应可改变的上游行为和低负担日常措施；实际皮肤收益大小未量化。",
+        "gaps": [
+          "SK-BEH-001-G003",
+          "SK-BEH-001-G004",
+          "SK-BEH-001-G005"
+        ]
+      }
+    ],
+    "signals": [
+      {
+        "id": "SK-BEH-001-I001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=_o9tyxfNiNg",
+        "indexed_title": "Impact of sleep on skin | Practical tips to improve sleep",
+        "account": null,
+        "account_verification": "unavailable",
+        "published_at": null,
+        "observed_at": "2026-09-25T04:49:46Z",
+        "observed_at_precision": "minute",
+        "language": null,
+        "language_basis": null,
+        "keyword": "YouTube sleep skin dermatologist beauty sleep",
+        "keyword_class": "sleep_skin_core_topic",
+        "metrics": {
+          "views": null,
+          "likes": null,
+          "comments": null
+        },
+        "audience_region": null,
+        "region_basis": null,
+        "verification_level": "search_index_only",
+        "status": "unavailable",
+        "missing_reason": "搜索摘要出现相对发布时间，原始页 Cache miss；不能确定准确日期、账号或指标。 未推断受众国家；未知不记为零热度。 索引标题为英语，实际内容语言未核验。",
+        "interest_judgment": "unknown",
+        "period_assignment": null,
+        "indexed_language": "en"
+      },
+      {
+        "id": "SK-BEH-001-I002",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=HJACz2W5WDA",
+        "indexed_title": "Does sleeping well rejuvenate your skin? Dermatologist Daniel Asz explains.",
+        "account": null,
+        "account_verification": "unavailable",
+        "published_at": null,
+        "observed_at": "2026-09-25T04:49:46Z",
+        "observed_at_precision": "minute",
+        "language": null,
+        "language_basis": null,
+        "keyword": "YouTube sleep skin dermatologist beauty sleep",
+        "keyword_class": "sleep_skin_core_topic",
+        "metrics": {
+          "views": null,
+          "likes": null,
+          "comments": null
+        },
+        "audience_region": null,
+        "region_basis": null,
+        "verification_level": "search_index_only",
+        "status": "unavailable",
+        "missing_reason": "账号、原始语言、准确日期和指标未核验；标题可能为索引翻译。原始页 Cache miss。 未推断受众国家；未知不记为零热度。",
+        "interest_judgment": "unknown",
+        "period_assignment": null
+      },
+      {
+        "id": "SK-BEH-001-I003",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "platform": "instagram",
+        "url": "https://www.instagram.com/p/Db5Ma7wPvpl/",
+        "indexed_title": "Slow ageing isn't just skincare.",
+        "account": "dr.aanchal.md",
+        "account_verification": "search_index_only",
+        "published_at": null,
+        "observed_at": "2026-09-25T04:49:46Z",
+        "observed_at_precision": "minute",
+        "language": null,
+        "language_basis": null,
+        "keyword": "Instagram sleep skin dermatologist reel",
+        "keyword_class": "sleep_skin_core_topic",
+        "metrics": {
+          "views": null,
+          "likes": null,
+          "comments": null
+        },
+        "audience_region": null,
+        "region_basis": null,
+        "verification_level": "search_index_only",
+        "status": "unavailable",
+        "missing_reason": "账号仅见于第三方搜索索引；未读取镜像正文。原始平台页 Cache miss；日期、语言和互动指标未核验。 未推断受众国家；未知不记为零热度。",
+        "interest_judgment": "unknown",
+        "period_assignment": null
+      }
+    ],
+    "candidates": [
+      {
+        "id": "SK-BEH-001-A001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "created_at": "2026-09-25T05:22:47.215457+00:00",
+        "title": "先保障睡眠机会与规律性，明确基础护理的作用边界",
+        "branch_ids": [
+          "SK-BEH-001-B03"
+        ],
+        "claim_ids": [
+          "SK-BEH-001-C001",
+          "SK-BEH-001-C002"
+        ],
+        "signal_ids": [
+          "SK-BEH-001-I001",
+          "SK-BEH-001-I002",
+          "SK-BEH-001-I003"
+        ],
+        "review_decision_ids": [
+          "SK-BEH-001-D009"
+        ],
+        "science_gate": {
+          "status": "blocked",
+          "reasons": [
+            "关键覆盖、方法质量或效应边界仍有缺口，草案不代表科学准入通过。"
+          ],
+          "gap_ids": [
+            "SK-BEH-001-G005",
+            "SK-BEH-001-G006",
+            "SK-BEH-001-G009"
+          ]
+        },
+        "interest_gate": {
+          "status": "unknown",
+          "reasons": [
+            "YouTube/Instagram原平台日期、互动及可比基线不可核验。"
+          ],
+          "gap_ids": [
+            "SK-BEH-001-G003",
+            "SK-BEH-001-G004"
+          ]
+        },
+        "allowed_expression": [
+          "保障合适睡眠机会与规律性；基础护理针对相应日常需求。",
+          "现有材料不能支持护肤抵消熬夜的承诺。"
+        ],
+        "forbidden_expression": [
+          "护肤可以抵消熬夜。",
+          "本方向已通过正式科学与兴趣准入。"
+        ],
+        "status": "draft",
+        "selection": "primary",
+        "selection_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_review_status": "controller_reviewed_with_gaps"
+      },
+      {
+        "id": "SK-BEH-001-A002",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "created_at": "2026-09-25T05:22:47.215467+00:00",
+        "title": "分开讨论短期临床指标、机制与长期结论",
+        "branch_ids": [
+          "SK-BEH-001-B02"
+        ],
+        "claim_ids": [
+          "SK-BEH-001-C003",
+          "SK-BEH-001-C004",
+          "SK-BEH-001-C005"
+        ],
+        "signal_ids": [
+          "SK-BEH-001-I001",
+          "SK-BEH-001-I002",
+          "SK-BEH-001-I003"
+        ],
+        "review_decision_ids": [
+          "SK-BEH-001-D008"
+        ],
+        "science_gate": {
+          "status": "blocked",
+          "reasons": [
+            "关键覆盖、方法质量或效应边界仍有缺口，草案不代表科学准入通过。"
+          ],
+          "gap_ids": [
+            "SK-BEH-001-G002",
+            "SK-BEH-001-G006",
+            "SK-BEH-001-G009"
+          ]
+        },
+        "interest_gate": {
+          "status": "unknown",
+          "reasons": [
+            "YouTube/Instagram原平台日期、互动及可比基线不可核验。"
+          ],
+          "gap_ids": [
+            "SK-BEH-001-G003",
+            "SK-BEH-001-G004"
+          ]
+        },
+        "allowed_expression": [
+          "机制与临床效果分开；单项短期指标不代表整体或长期损害。"
+        ],
+        "forbidden_expression": [
+          "每次熬夜必然破坏屏障。",
+          "分子变化已经证明长期不可逆老化。"
+        ],
+        "status": "draft",
+        "selection": "supporting",
+        "selection_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_review_status": "controller_reviewed_with_gaps"
+      },
+      {
+        "id": "SK-BEH-001-A003",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "created_at": "2026-09-25T05:22:47.215472+00:00",
+        "title": "短期照片感知：受限发现与未核反向线索",
+        "branch_ids": [
+          "SK-BEH-001-B01"
+        ],
+        "claim_ids": [
+          "SK-BEH-001-C006",
+          "SK-BEH-001-C007"
+        ],
+        "signal_ids": [
+          "SK-BEH-001-I001",
+          "SK-BEH-001-I002",
+          "SK-BEH-001-I003"
+        ],
+        "review_decision_ids": [
+          "SK-BEH-001-D007"
+        ],
+        "science_gate": {
+          "status": "blocked",
+          "reasons": [
+            "关键覆盖、方法质量或效应边界仍有缺口，草案不代表科学准入通过。"
+          ],
+          "gap_ids": [
+            "SK-BEH-001-G001",
+            "SK-BEH-001-G006",
+            "SK-BEH-001-G009"
+          ]
+        },
+        "interest_gate": {
+          "status": "unknown",
+          "reasons": [
+            "YouTube/Instagram原平台日期、互动及可比基线不可核验。"
+          ],
+          "gap_ids": [
+            "SK-BEH-001-G003",
+            "SK-BEH-001-G004"
+          ]
+        },
+        "allowed_expression": [
+          "2017小样本研究出现部分平均照片评分差异；2019不同设计摘要未见相应差异，全文方法未核。"
+        ],
+        "forbidden_expression": [
+          "据此断定皮肤损伤或长期老化。",
+          "给出统一恢复时间。",
+          "将未核全文摘要升级为独立定论。"
+        ],
+        "status": "draft",
+        "selection": "limited_background",
+        "selection_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_review_status": "controller_reviewed_with_gaps"
+      }
+    ],
+    "snapshots": [
+      {
+        "id": "SK-BEH-001-F001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-review-r1",
+        "demo": false,
+        "kind": "review",
+        "created_at": "2026-09-25T05:12:10.514535+00:00",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理决定，由研究调度据实际委派落盘",
+        "qualification": null,
+        "input_revision": "SK-BEH-001-review-r1",
+        "config_sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "content_sha256": "dce09ab5eb713cf19213ea1262bd1028a6248535d1d6535deef08b0ce2c9d2f9",
+        "decision_ids": [
+          "SK-BEH-001-D001",
+          "SK-BEH-001-D002",
+          "SK-BEH-001-D003"
+        ],
+        "candidate_ids": [],
+        "status": "invalidated",
+        "invalidation_reason": "S2新增S006/S007及C006/C007，当前输入版本已变；原冻结审计文件及历史决定保留，需主控复审后重新冻结。",
+        "audit_path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-review-r1-freeze.json",
+        "hash_scope": "wrapper.payload; UTF-8 ensure_ascii=false sort_keys=true separators=(comma,colon)",
+        "delivery_class": "trial_with_gaps",
+        "invalidated_at": "2026-09-25T05:19:25.110833+00:00"
+      },
+      {
+        "id": "SK-BEH-001-F002",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r1",
+        "demo": false,
+        "kind": "direction",
+        "created_at": "2026-09-25T05:12:10.516677+00:00",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理决定，由研究调度据实际委派落盘",
+        "qualification": null,
+        "input_revision": "SK-BEH-001-direction-r1",
+        "config_sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "content_sha256": "1b2e01409a8972861a902bacdbe16eb611b61db7a6e21f78513b594d890af31d",
+        "decision_ids": [
+          "SK-BEH-001-D001",
+          "SK-BEH-001-D002",
+          "SK-BEH-001-D003",
+          "SK-BEH-001-D004",
+          "SK-BEH-001-D005",
+          "SK-BEH-001-D006"
+        ],
+        "candidate_ids": [
+          "SK-BEH-001-A001",
+          "SK-BEH-001-A002",
+          "SK-BEH-001-A003"
+        ],
+        "status": "invalidated",
+        "invalidation_reason": "S2新增S006/S007及C006/C007，当前输入版本已变；原冻结审计文件及历史决定保留，需主控复审后重新冻结。",
+        "audit_path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-direction-r1-freeze.json",
+        "hash_scope": "wrapper.payload; UTF-8 ensure_ascii=false sort_keys=true separators=(comma,colon)",
+        "delivery_class": "trial_with_gaps",
+        "invalidated_at": "2026-09-25T05:19:25.110833+00:00"
+      },
+      {
+        "id": "SK-BEH-001-F003",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-review-r2",
+        "demo": false,
+        "kind": "review",
+        "created_at": "2026-09-25T05:22:47.213478+00:00",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理实际决定，由研究调度记录",
+        "qualification": null,
+        "input_revision": "SK-BEH-001-review-r2",
+        "config_sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "content_sha256": "bb76c29c4ecdd6ef41a45b6133d408ca5c344c6c83e6629a9fcf2ac95669ae85",
+        "decision_ids": [
+          "SK-BEH-001-D007",
+          "SK-BEH-001-D008",
+          "SK-BEH-001-D009"
+        ],
+        "candidate_ids": [],
+        "status": "frozen",
+        "invalidation_reason": null,
+        "audit_path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-review-r2-freeze.json",
+        "hash_scope": "wrapper.payload; UTF-8 ensure_ascii=false sort_keys=true separators=(comma,colon)",
+        "delivery_class": "trial_with_gaps"
+      }
+    ],
+    "search_log": [
+      {
+        "id": "SK-BEH-001-Q001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "sleep deprivation facial appearance experiment Axelsson Sundelin full text PMC",
+        "query_text": "sleep deprivation facial appearance experiment Axelsson Sundelin full text PMC",
+        "executed_at": "2026-09-25T04:45:09Z",
+        "issued_at": "2026-09-25T04:45:09Z",
+        "executed_at_precision": "second",
+        "route": "web.search_query",
+        "returned_hits": null,
+        "hits": null,
+        "screened_hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": null,
+        "source_ids": [],
+        "missing_reason": "首批三条查询在一个响应中合并返回 24 项；逐查询数量、筛读数量未保留，不倒推。"
+      },
+      {
+        "id": "SK-BEH-001-Q002",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "sleep skin barrier systematic review full text sleep deprivation",
+        "query_text": "sleep skin barrier systematic review full text sleep deprivation",
+        "executed_at": "2026-09-25T04:45:09Z",
+        "issued_at": "2026-09-25T04:45:09Z",
+        "executed_at_precision": "second",
+        "route": "web.search_query",
+        "returned_hits": null,
+        "hits": null,
+        "screened_hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": null,
+        "source_ids": [],
+        "missing_reason": "首批三条查询在一个响应中合并返回 24 项；逐查询数量、筛读数量未保留，不倒推。"
+      },
+      {
+        "id": "SK-BEH-001-Q003",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "mechanism",
+        "category_or_target_id": "mechanism",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "circadian skin barrier epidermal clock review full text PMC",
+        "query_text": "circadian skin barrier epidermal clock review full text PMC",
+        "executed_at": "2026-09-25T04:45:09Z",
+        "issued_at": "2026-09-25T04:45:09Z",
+        "executed_at_precision": "second",
+        "route": "web.search_query",
+        "returned_hits": null,
+        "hits": null,
+        "screened_hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S001"
+        ],
+        "missing_reason": "首批三条查询在一个响应中合并返回 24 项；逐查询数量、筛读数量未保留，不倒推。"
+      },
+      {
+        "id": "SK-BEH-001-Q004",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "sleep deprivation skin barrier recovery human clinical study Oyetakin White Kim 2020",
+        "query_text": "sleep deprivation skin barrier recovery human clinical study Oyetakin White Kim 2020",
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.search_query",
+        "returned_hits": 16,
+        "hits": 16,
+        "screened_hits": 10,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S004"
+        ],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q005",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "youtube",
+        "category_or_target_id": "youtube",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "site:youtube.com/watch sleep skin dermatologist \"2025\"",
+        "query_text": "site:youtube.com/watch sleep skin dermatologist \"2025\"",
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.search_query",
+        "returned_hits": 9,
+        "hits": 9,
+        "screened_hits": 9,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": "每类别第三次检索后停止新增查询；未获得可核验平台指标。",
+        "source_ids": [],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q006",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "instagram",
+        "category_or_target_id": "instagram",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "site:instagram.com/reel sleep skin dermatologist \"2025\"",
+        "query_text": "site:instagram.com/reel sleep skin dermatologist \"2025\"",
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.search_query",
+        "returned_hits": 0,
+        "hits": 0,
+        "screened_hits": 0,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "searched_no_match",
+        "access_result": "no_results",
+        "stop_reason": "每类别第三次检索后停止新增查询；未获得可核验平台指标。",
+        "source_ids": [],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q007",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "Sleep Deprivation Increases Facial Skin Yellowness MDPI",
+        "query_text": "Sleep Deprivation Increases Facial Skin Yellowness MDPI",
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.search_query",
+        "returned_hits": 16,
+        "hits": 16,
+        "screened_hits": 10,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": null,
+        "source_ids": [],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q008",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "youtube",
+        "category_or_target_id": "youtube",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "YouTube sleep skin dermatologist beauty sleep",
+        "query_text": "YouTube sleep skin dermatologist beauty sleep",
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.search_query",
+        "returned_hits": 21,
+        "hits": 21,
+        "screened_hits": 10,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": "每类别第三次检索后停止新增查询；未获得可核验平台指标。",
+        "source_ids": [],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q009",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "instagram",
+        "category_or_target_id": "instagram",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "Instagram sleep skin dermatologist reel",
+        "query_text": "Instagram sleep skin dermatologist reel",
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.search_query",
+        "returned_hits": 19,
+        "hits": 19,
+        "screened_hits": 10,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": "每类别第三次检索后停止新增查询；未获得可核验平台指标。",
+        "source_ids": [],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q010",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "sleep skin systematic review 2025 2026 barrier deprivation",
+        "query_text": "sleep skin systematic review 2025 2026 barrier deprivation",
+        "executed_at": "2026-09-25T04:50:32Z",
+        "issued_at": "2026-09-25T04:50:32Z",
+        "executed_at_precision": "second",
+        "route": "web.search_query",
+        "returned_hits": 15,
+        "hits": 15,
+        "screened_hits": 10,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S005"
+        ],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q011",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "youtube",
+        "category_or_target_id": "youtube",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "site:youtube.com/watch 睡眠不足 肌 皮膚科医 after:2023-09-25 before:2026-09-26",
+        "query_text": "site:youtube.com/watch 睡眠不足 肌 皮膚科医 after:2023-09-25 before:2026-09-26",
+        "executed_at": "2026-09-25T04:51:43Z",
+        "issued_at": "2026-09-25T04:51:43Z",
+        "executed_at_precision": "second",
+        "route": "web.search_query",
+        "returned_hits": 12,
+        "hits": 12,
+        "screened_hits": 10,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": "每类别第三次检索后停止新增查询；未获得可核验平台指标。",
+        "source_ids": [],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q012",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "level": "S1",
+        "source_category": "instagram",
+        "category_or_target_id": "instagram",
+        "target": "睡眠不足、皮肤外观/屏障与护理边界",
+        "query": "site:instagram.com/reel 睡眠 肌 皮膚科 after:2023-09-25 before:2026-09-26",
+        "query_text": "site:instagram.com/reel 睡眠 肌 皮膚科 after:2023-09-25 before:2026-09-26",
+        "executed_at": "2026-09-25T04:51:43Z",
+        "issued_at": "2026-09-25T04:51:43Z",
+        "executed_at_precision": "second",
+        "route": "web.search_query",
+        "returned_hits": 0,
+        "hits": 0,
+        "screened_hits": 0,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "searched_no_match",
+        "access_result": "no_results",
+        "stop_reason": "每类别第三次检索后停止新增查询；未获得可核验平台指标。",
+        "source_ids": [],
+        "missing_reason": "计数为工具实际返回的唯一搜索引用项，后台总命中量未知；后续筛读上限 10 项。"
+      },
+      {
+        "id": "SK-BEH-001-Q013",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5451790/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "captcha",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q014",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3738045/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "captcha",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q015",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "mechanism",
+        "category_or_target_id": "mechanism",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6275491/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "captcha",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q016",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "mechanism",
+        "category_or_target_id": "mechanism",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8515909/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 1,
+        "qualified_read_ids": [
+          "SK-BEH-001-S001"
+        ],
+        "new_qualified_items": 1,
+        "new_claim_ids": [
+          "SK-BEH-001-C003"
+        ],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 1,
+          "read_requests": 1
+        },
+        "status": "available",
+        "access_result": "full_text",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S001"
+        ],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q017",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://www.bmj.com/content/341/bmj.c6614",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "access_failed",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q018",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 1,
+        "qualified_read_ids": [
+          "SK-BEH-001-S002"
+        ],
+        "new_qualified_items": 1,
+        "new_claim_ids": [
+          "SK-BEH-001-C002"
+        ],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 1,
+          "read_requests": 1
+        },
+        "status": "available",
+        "access_result": "official_record",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S002"
+        ],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q019",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "https://www.cdc.gov/sleep/about/index.html",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 1,
+        "qualified_read_ids": [
+          "SK-BEH-001-S003"
+        ],
+        "new_qualified_items": 1,
+        "new_claim_ids": [
+          "SK-BEH-001-C001"
+        ],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 1,
+          "read_requests": 1
+        },
+        "status": "available",
+        "access_result": "official_record",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S003"
+        ],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q020",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://www.bmj.com/content/341/bmj.c6614",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "403",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q021",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://onlinelibrary.wiley.com/doi/full/10.1111/ced.12455",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "available",
+        "access_result": "redirected_abstract_only",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S004"
+        ],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q022",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9861417/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "captcha",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q023",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://www.sciencedirect.com/science/article/pii/S0022202X15413296",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "403",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q024",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://doi.org/10.5665/sleep.2964",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "inaccessible",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q025",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://www.bmj.com/content/341/bmj.c6614.full.pdf",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "403",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q026",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://www.mdpi.com/2077-0383/12/2/615",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "429",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q027",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "youtube",
+        "category_or_target_id": "youtube",
+        "target": "https://www.youtube.com/watch?v=_o9tyxfNiNg",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:49:46Z",
+        "issued_at": "2026-09-25T04:49:46Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "Cache miss",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q028",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "youtube",
+        "category_or_target_id": "youtube",
+        "target": "https://www.youtube.com/watch?v=HJACz2W5WDA",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:49:46Z",
+        "issued_at": "2026-09-25T04:49:46Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "Cache miss",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q029",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "instagram",
+        "category_or_target_id": "instagram",
+        "target": "https://www.instagram.com/p/Db5Ma7wPvpl/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:49:46Z",
+        "issued_at": "2026-09-25T04:49:46Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "Cache miss",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q030",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://pubmed.ncbi.nlm.nih.gov/31006920/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "captcha",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q031",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://europepmc.org/articles/PMC5451790",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:50:05Z",
+        "issued_at": "2026-09-25T04:50:05Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "403",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q032",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://europepmc.org/articles/PMC9861417",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:50:05Z",
+        "issued_at": "2026-09-25T04:50:05Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "inaccessible",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q033",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://www.mdpi.com/2077-0383/12/2/615/html",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:50:05Z",
+        "issued_at": "2026-09-25T04:50:05Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "429",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q034",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "mechanism",
+        "category_or_target_id": "mechanism",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8515909/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:50:05Z",
+        "issued_at": "2026-09-25T04:50:05Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [
+          "doi:10.1002/1873-3468.14192"
+        ],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "available",
+        "access_result": "full_text_section_followup",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S001"
+        ],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q035",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "find_in_opened_source",
+        "level": "S1",
+        "source_category": "mechanism",
+        "category_or_target_id": "mechanism",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8515909/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:50:32Z",
+        "issued_at": "2026-09-25T04:50:32Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [
+          "doi:10.1002/1873-3468.14192"
+        ],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 3
+        },
+        "status": "available",
+        "access_result": "find_three_terms_Conflict_aging_sleep_deprivation",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S001"
+        ],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q036",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12117546/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:50:45Z",
+        "issued_at": "2026-09-25T04:50:45Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "captcha",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q037",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12812233/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:50:45Z",
+        "issued_at": "2026-09-25T04:50:45Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "captcha",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q038",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "https://pubmed.ncbi.nlm.nih.gov/42641586/",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:50:45Z",
+        "issued_at": "2026-09-25T04:50:45Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "footer_only_no_usable_record",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q039",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://doi.org/10.5021/ad.25.003",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "inaccessible",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q040",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "https://www.sciencedirect.com/science/article/pii/S1087079226001322",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "unavailable",
+        "access_result": "403",
+        "stop_reason": "受限访问不计合格深读；同站后续重复尝试见 G008 执行偏差。",
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q041",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "resolve_original_publisher",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://doi.org/10.5021/ad.25.003",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:51:44Z",
+        "issued_at": "2026-09-25T04:51:44Z",
+        "executed_at_precision": "second",
+        "route": "curl HEAD",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "available",
+        "access_result": "HEAD_resolved_original_publisher",
+        "stop_reason": null,
+        "source_ids": [],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q042",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://anndermatol.org/DOIx.php?id=10.5021/ad.25.003",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 1,
+        "qualified_read_ids": [
+          "SK-BEH-001-S005"
+        ],
+        "new_qualified_items": 1,
+        "new_claim_ids": [
+          "SK-BEH-001-C004"
+        ],
+        "new_conflicts": [
+          "短期临床终点不支持每次睡眠不足必然造成屏障损害。"
+        ],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 1,
+          "read_requests": 1
+        },
+        "status": "available",
+        "access_result": "full_text",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S005"
+        ],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q043",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read",
+        "level": "S1",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "https://anndermatol.org/DOIx.php?id=10.5021/ad.25.003",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T04:55:41Z",
+        "issued_at": "2026-09-25T04:55:41Z",
+        "executed_at_precision": "second",
+        "route": "web.open/find",
+        "returned_hits": null,
+        "hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [
+          "doi:10.5021/ad.25.003"
+        ],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 3
+        },
+        "status": "available",
+        "access_result": "full_text_disclosures_limitations_followup",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S005"
+        ],
+        "missing_reason": "此操作不是搜索查询，命中数不适用；精确未记录时间保留日期精度。"
+      },
+      {
+        "id": "SK-BEH-001-Q044",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S1-r1",
+        "demo": false,
+        "stage": "S0",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "read_supplied_export",
+        "level": "S0",
+        "source_category": "knowledge_base",
+        "category_or_target_id": "knowledge_base",
+        "target": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-kb-export.json",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "local_file_read",
+        "returned_hits": 0,
+        "hits": 0,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0
+        },
+        "status": "searched_no_match",
+        "access_result": "controller_export_verified",
+        "stop_reason": "正式检索由主控执行；本任务读取结果，不重复占用五类网页检索或深读额度。",
+        "source_ids": [],
+        "missing_reason": "检索范围局限详见 KB001。"
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S2-r1",
+        "demo": false,
+        "id": "SK-BEH-001-Q045",
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "search",
+        "source_category": "human_original",
+        "category_or_target_id": "SK-BEH-001-S2-T01",
+        "target": "B01/G001原始人体外观方法及限制",
+        "query": "Sundelin \"sleep\" \"appearance\" full text -site:pmc.ncbi.nlm.nih.gov -site:pubmed.ncbi.nlm.nih.gov -site:bmj.com -site:europepmc.org -site:mdpi.com -site:sciencedirect.com",
+        "query_text": "Sundelin \"sleep\" \"appearance\" full text -site:pmc.ncbi.nlm.nih.gov -site:pubmed.ncbi.nlm.nih.gov -site:bmj.com -site:europepmc.org -site:mdpi.com -site:sciencedirect.com",
+        "executed_at": "2026-09-25T05:12:25Z",
+        "issued_at": "2026-09-25T05:12:25Z",
+        "executed_at_precision": "second",
+        "route": "web.search_query",
+        "returned_hits": 16,
+        "hits": 16,
+        "screened_hits": 10,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 1,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 0
+        },
+        "status": "completed",
+        "access_result": "index_results_only",
+        "stop_reason": "本次授权唯一查询已用完；不扩S1。",
+        "source_ids": [],
+        "missing_reason": null,
+        "screening_rule": "仅筛响应顺序前10项，其余6项未筛；不把工具返回量等同实际筛读量。",
+        "screened_result_ids": [
+          "turn24search12",
+          "turn24search0",
+          "turn24search1",
+          "turn24search2",
+          "turn24search3",
+          "turn24search4",
+          "turn24search13",
+          "turn24search5",
+          "turn24search6",
+          "turn24search7"
+        ]
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S2-r1",
+        "demo": false,
+        "id": "SK-BEH-001-Q046",
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "open",
+        "source_category": "human_original",
+        "category_or_target_id": "SK-BEH-001-S2-T01",
+        "target": "https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/19830/Holding_2019_JSR_Sleepdeprivation_AAM.pdf?isAllowed=y&sequence=1",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T05:12:39Z",
+        "issued_at": "2026-09-25T05:12:39Z",
+        "executed_at_precision": "second",
+        "route": "web.open",
+        "returned_hits": null,
+        "hits": null,
+        "screened_hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "failed",
+        "access_result": "timeout",
+        "stop_reason": "停止research-repository.st-andrews.ac.uk路线，不重试。",
+        "source_ids": [],
+        "missing_reason": "工具返回(400) Timeout fetching，未取得方法。"
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S2-r1",
+        "demo": false,
+        "id": "SK-BEH-001-Q047",
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "open",
+        "source_category": "human_original",
+        "category_or_target_id": "SK-BEH-001-S2-T01",
+        "target": "https://upload.wikimedia.org/wikipedia/commons/2/26/Negative_effects_of_restricted_sleep_on_facial_appearance_and_social_appeal.pdf",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25T05:12:39Z",
+        "issued_at": "2026-09-25T05:12:39Z",
+        "executed_at_precision": "second",
+        "route": "web.open",
+        "returned_hits": null,
+        "hits": null,
+        "screened_hits": null,
+        "qualified_reads": 1,
+        "qualified_read_ids": [
+          "SK-BEH-001-S006"
+        ],
+        "new_qualified_items": 1,
+        "new_claim_ids": [
+          "SK-BEH-001-C006"
+        ],
+        "new_conflicts": [],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 1,
+          "read_requests": 1
+        },
+        "status": "completed",
+        "access_result": "full_text_available",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S006"
+        ],
+        "missing_reason": null,
+        "read_scope": "9页原出版PDF，含方法与结果；Q048完成讨论及披露，合并只计一个原文深读。"
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S2-r1",
+        "demo": false,
+        "id": "SK-BEH-001-Q048",
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "open",
+        "source_category": "human_original",
+        "category_or_target_id": "SK-BEH-001-S2-T01",
+        "target": "https://upload.wikimedia.org/wikipedia/commons/2/26/Negative_effects_of_restricted_sleep_on_facial_appearance_and_social_appeal.pdf",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open",
+        "returned_hits": null,
+        "hits": null,
+        "screened_hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "duplicate_original_ids": [
+          "doi:10.1098/rsos.160918"
+        ],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "completed",
+        "access_result": "same_original_followup",
+        "stop_reason": null,
+        "source_ids": [
+          "SK-BEH-001-S006"
+        ],
+        "missing_reason": "精确秒级时间未保留；不补造。",
+        "read_scope": "同一PDF从讨论到资助/利益声明；不新增独立来源或深读计数。"
+      },
+      {
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-S2-r1",
+        "demo": false,
+        "id": "SK-BEH-001-Q049",
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "operation": "open",
+        "source_category": "human_original",
+        "category_or_target_id": "SK-BEH-001-S2-T01",
+        "target": "https://onlinelibrary.wiley.com/doi/full/10.1111/jsr.12860",
+        "query": null,
+        "query_text": null,
+        "executed_at": "2026-09-25",
+        "issued_at": "2026-09-25",
+        "executed_at_precision": "day",
+        "route": "web.open",
+        "returned_hits": null,
+        "hits": null,
+        "screened_hits": null,
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "new_qualified_items": 0,
+        "new_claim_ids": [
+          "SK-BEH-001-C007"
+        ],
+        "new_conflicts": [
+          "不同设计的摘要报告未见差异；待全文方法核验，不作等效/无效结论。"
+        ],
+        "duplicate_original_ids": [],
+        "consumption": {
+          "issued_queries": 0,
+          "new_qualified_deep_reads": 0,
+          "read_requests": 1
+        },
+        "status": "partial",
+        "access_result": "redirected_to_abstract_only",
+        "stop_reason": "全文入口仅摘要，本轮停止该原文路线；不追登录、付费或其他别名。",
+        "source_ids": [
+          "SK-BEH-001-S007"
+        ],
+        "missing_reason": "与时钟05:16:00 UTC并行请求，未保留精确开始秒数，按日期记；全文未取得。",
+        "resolved_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12860"
+      }
+    ],
+    "knowledge_base": [
+      {
+        "id": "SK-BEH-001-KB001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r1",
+        "demo": false,
+        "status": "searched_no_match",
+        "interface": "export_topic (formal read-only export, supplied by controller)",
+        "version": "skincare-topic-export/1.0",
+        "queried_at": "2026-09-25T04:47:41.507Z",
+        "queries": [
+          "睡眠",
+          "熬夜",
+          "sleep",
+          "屏障",
+          "barrier"
+        ],
+        "matched_ids": [],
+        "returned_count": 0,
+        "total_matches": 0,
+        "truncated": false,
+        "export_path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-kb-export.json",
+        "artifact_sha256": "3f6f943ab91aa49e3cd6362927be70b3553d81b48c1cbf4ea6a200b2ddd079dd",
+        "declared_export_sha256": "6365cb9262da01ba63816c00cb92200ec2beda670f58741b069632456de0c2b3",
+        "query_scope": {
+          "fields": [
+            "Claim.statement",
+            "linked Source.title"
+          ],
+          "matching": "literal_substring_sqlite_icontains",
+          "operator": "OR",
+          "limit": 100,
+          "ordering": "claim.id ascending"
+        },
+        "missing_reason": "本次指定字段的字面查询未匹配；不覆盖全文、未关联来源、同义词或语义检索，不能解释为知识库没有历史或全库为空。"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "SK-BEH-001-G001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001-B01",
+        "category": "scientific_full_text",
+        "description": "已取得2017短期外观感知原始研究全文并核验方法；2019反向线索仍仅摘要，独立可比复现与综合判断未完成。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "一篇全文与一个摘要不能关闭综合证据缺口，亦不能推出生理损伤或恢复时间。",
+        "evidence_refs": [
+          "SK-BEH-001-S006",
+          "SK-BEH-001-S007"
+        ],
+        "missing_reason": null,
+        "progress_note": "原始方法完全未取得的旧判断失效；缺口部分补足，仍open。"
+      },
+      {
+        "id": "SK-BEH-001-G002",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001-B02",
+        "category": "causal_and_longitudinal_evidence",
+        "description": "急性实验、长期睡眠质量关联、节律机制的可比性与独立复现不足；未核验长期损害、恢复时间及效应量。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "一项短期研究不能关闭慢性睡眠不足问题；企业关联须保留。",
+        "evidence_refs": [],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-G003",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001-B03",
+        "category": "youtube_interest",
+        "description": "三次有界检索、两次原平台公开读取后，仍无可核验日期、互动指标及可比基线；兴趣门槛未知。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "公开读取动作完成，不等于热度验证完成。",
+        "evidence_refs": [],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-G004",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001-B03",
+        "category": "instagram_interest",
+        "description": "三次有界检索、一次原平台公开读取后，仍未取得有效原始内容、日期及指标；兴趣门槛未知。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "搜索索引与第三方标题不能充当原平台已核验数据。",
+        "evidence_refs": [],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-G005",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001-B03",
+        "category": "care_efficacy_boundary",
+        "description": "一般基础护理指导不能回答护肤是否抵消睡眠不足或多快恢复；本轮未核验这种临床效应。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "可保留一般护理教育；不能升级为熬夜补救功效方案。",
+        "evidence_refs": [],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-G006",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001-B02",
+        "category": "time_and_population_coverage",
+        "description": "人体全文现覆盖2017瑞典短期外观感知实验及2025韩国女性短期实验；最近一年新直接人体证据、多地区可比性、长期与恢复过程仍有缺口。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "官方页面更新年份不能填成人体研究时间窗；不按国家机械凑数。",
+        "evidence_refs": [],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-G007",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001",
+        "category": "knowledge_base_scope",
+        "description": "正式只读知识库查询与零匹配结果已经核验。",
+        "critical": false,
+        "status": "closed",
+        "closure_source_ids": [],
+        "closure_note": "由 KB001 的真实导出、时间、范围与文件哈希关闭‘接口未接通’缺口；不关闭语义覆盖缺口。",
+        "evidence_refs": [
+          "SK-BEH-001-KB001"
+        ],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-G008",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001",
+        "category": "execution_audit",
+        "description": "首批合并24项无法恢复逐查询返回与实际筛读数量，仍未验证；BMJ和MDPI失败后同站重复读取的执行偏差保留。工具返回超过10项与实际筛读超过10项分开判断。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "原始日志原样保留，不补造screened_hits。后续有明确前10项筛读证据的记录按实际数记账；执行偏差仍由主控审阅。",
+        "evidence_refs": [],
+        "missing_reason": null
+      },
+      {
+        "id": "SK-BEH-001-G009",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001",
+        "category": "source_quality",
+        "description": "已读取材料仍有评分维度、作者适配性与独立可比复现未核验项，均保留未评估。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "没有总分、来源数量或机构名称可自动产生强科学门槛。",
+        "evidence_refs": [],
+        "missing_reason": null,
+        "progress_note": "S006方法、资助与利益声明已读；总分及独立复现仍未评估。S007仅摘要，不计深读。"
+      },
+      {
+        "id": "SK-BEH-001-G010",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "scope_id": "SK-BEH-001",
+        "category": "review_gate",
+        "description": "本轮最终主控代理已审阅S2增量；正式独立窗口审核尚未完成，不代表用户或临床确认。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "当前主控代理复核与正式独立审核分别判断；后者未完成，保持open。",
+        "evidence_refs": [],
+        "missing_reason": null
+      }
+    ],
+    "stage_report": {
+      "stage": "direction",
+      "state": "final_trial_directions_confirmed",
+      "started_at": "2026-09-25T04:45:09Z",
+      "saturation_reached": false,
+      "saturation_reason": "关键科学和兴趣缺口尚未关闭；没有连续两次有效查询无新增且覆盖合格的证据。",
+      "review_gate": "reviewed_with_gaps",
+      "empty_collections_reason": {},
+      "priority_order": [
+        "SK-BEH-001-B03",
+        "SK-BEH-001-B02",
+        "SK-BEH-001-B01"
+      ],
+      "priority_basis": "按本次实际主控决定：B03主试运行，B02辅助，B01仅待补证。",
+      "completion_limit": "最终主控代理方向已确认；正式准入仍不通过。",
+      "handoff_at": "2026-09-25T05:19:25.110833+00:00",
+      "direction_gate": "trial_with_gaps",
+      "delta": {
+        "new_source_ids": [
+          "SK-BEH-001-S006",
+          "SK-BEH-001-S007"
+        ],
+        "new_claim_ids": [
+          "SK-BEH-001-C006",
+          "SK-BEH-001-C007"
+        ],
+        "fully_read_originals": 1,
+        "abstract_only_originals": 1,
+        "changed_branch_id": "SK-BEH-001-B01",
+        "invalidated_snapshot_ids": [
+          "SK-BEH-001-F001",
+          "SK-BEH-001-F002"
+        ],
+        "preserved_gap_ids": [
+          "SK-BEH-001-G008"
+        ],
+        "next_action": "主控代理对S2输入重新审阅、确认方向及决定包冻结；研究调度停止检索。"
+      }
+    },
+    "coverage_audit": {
+      "science_windows": [
+        {
+          "window": "foundational",
+          "source_ids": [
+            "SK-BEH-001-S004"
+          ],
+          "status": "gap",
+          "reason": "仅有早期关联摘要；基础人体全文受限。"
+        },
+        {
+          "window": "last_10_years",
+          "source_ids": [
+            "SK-BEH-001-S001",
+            "SK-BEH-001-S005",
+            "SK-BEH-001-S006",
+            "SK-BEH-001-S007"
+          ],
+          "status": "partial",
+          "reason": "新增2017全文及2019摘要线索，证据读取层级分开。"
+        },
+        {
+          "window": "last_5_years",
+          "source_ids": [
+            "SK-BEH-001-S001",
+            "SK-BEH-001-S005"
+          ],
+          "status": "partial",
+          "reason": "2021-09-29 综述处于 2021-09-25 以后。"
+        },
+        {
+          "window": "last_3_years",
+          "source_ids": [
+            "SK-BEH-001-S005"
+          ],
+          "status": "partial"
+        },
+        {
+          "window": "last_1_year",
+          "source_ids": [
+            "SK-BEH-001-S002"
+          ],
+          "status": "guidance_only_gap_for_direct_human_evidence",
+          "reason": "S002 是指导页面更新；2025 年 3 月的人体研究不属于最近一年。"
+        }
+      ],
+      "platform_periods": [
+        {
+          "period": "main_2025-09-25_to_2026-09-25",
+          "status": "unavailable",
+          "reason": "没有原平台确认的发布日期与指标。"
+        },
+        {
+          "period": "baseline_2023-09-25_to_2025-09-24",
+          "status": "unavailable",
+          "reason": "相对索引日期未核验，不能划入基线。"
+        }
+      ],
+      "market_coverage": {
+        "CN": "unknown",
+        "JP": "unknown",
+        "US": "unknown",
+        "CA": "unknown",
+        "SG": "unknown",
+        "UK": "unknown",
+        "reason": "平台受众地域无可见证据；不从账号语言、作者国籍或论文人群推断。"
+      },
+      "ecosystems": {
+        "professional_index": "实际使用 PubMed/PMC 搜索线索，部分原文路线受限。",
+        "original_publishers": "S1访问记录保留；S2新增Royal Society原出版PDF公开镜像全文，Wiley 2019仅摘要。",
+        "professional_guidance": "AAD 与 CDC 原站已读取。",
+        "springer_nature": "本轮没有已核验、直接相关且可读取的来源；不以无关出版社配额填补。"
+      },
+      "s2_population_note": "S006研究在瑞典实施；不能据此填平台受众国家或六市场覆盖。"
+    },
+    "budget_actual": {
+      "issued_s1_queries_by_category": {
+        "human_original": 3,
+        "reviews_guidance": 2,
+        "mechanism": 1,
+        "youtube": 3,
+        "instagram": 3
+      },
+      "issued_s1_queries_total": 12,
+      "qualified_deep_reads_total": 5,
+      "qualified_source_ids": [
+        "SK-BEH-001-S001",
+        "SK-BEH-001-S002",
+        "SK-BEH-001-S003",
+        "SK-BEH-001-S005",
+        "SK-BEH-001-S006"
+      ],
+      "abstract_only_reads": 2,
+      "original_platform_page_attempts": {
+        "youtube": 2,
+        "instagram": 1
+      },
+      "verified_platform_items": 0,
+      "s2_issued_queries": 1,
+      "s2_qualified_deep_reads": 1,
+      "s3_operations": 0,
+      "paid_access": 0,
+      "deduplication": "同一原文的后续章节/披露读取与失败别名不增加合格深读数。",
+      "query_stop_categories": [
+        "human_original",
+        "youtube",
+        "instagram"
+      ],
+      "non_exhausted_categories": [
+        "reviews_guidance",
+        "mechanism"
+      ],
+      "stop_basis": "本次单一S2目标完成有界补证并交主控复审；唯一查询用完，2深读上限中实际完成1，不为凑数重试。不是证据饱和或全局预算耗尽。",
+      "ledger_limitations": [
+        "首批合并响应逐查询数量未知。",
+        "精确请求时间部分未保留，按日期精度标记。",
+        "多请求 follow-up 聚合于同一记录，read_requests 标明次数。",
+        "受限路线重复尝试如实保留，见 G008。"
+      ],
+      "category_totals": {
+        "human_original": {
+          "issued_queries": 3,
+          "access_attempt_records": 19,
+          "access_requests": 21,
+          "failed_access_records": 15,
+          "qualified_deep_reads": 1,
+          "query_limit_ref": "config_ref -> config.budget_per_run.s1_query_variants_per_source_category",
+          "shared_read_limit_ref": "config_ref -> config.budget_per_run.s1_qualified_deep_reads_total"
+        },
+        "reviews_guidance": {
+          "issued_queries": 2,
+          "access_attempt_records": 5,
+          "access_requests": 5,
+          "failed_access_records": 3,
+          "qualified_deep_reads": 2,
+          "query_limit_ref": "config_ref -> config.budget_per_run.s1_query_variants_per_source_category",
+          "shared_read_limit_ref": "config_ref -> config.budget_per_run.s1_qualified_deep_reads_total"
+        },
+        "mechanism": {
+          "issued_queries": 1,
+          "access_attempt_records": 4,
+          "access_requests": 6,
+          "failed_access_records": 1,
+          "qualified_deep_reads": 1,
+          "query_limit_ref": "config_ref -> config.budget_per_run.s1_query_variants_per_source_category",
+          "shared_read_limit_ref": "config_ref -> config.budget_per_run.s1_qualified_deep_reads_total"
+        },
+        "youtube": {
+          "issued_queries": 3,
+          "access_attempt_records": 2,
+          "access_requests": 2,
+          "failed_access_records": 2,
+          "qualified_deep_reads": 0,
+          "query_limit_ref": "config_ref -> config.budget_per_run.s1_query_variants_per_source_category",
+          "shared_read_limit_ref": "config_ref -> config.budget_per_run.s1_qualified_deep_reads_total"
+        },
+        "instagram": {
+          "issued_queries": 3,
+          "access_attempt_records": 1,
+          "access_requests": 1,
+          "failed_access_records": 1,
+          "qualified_deep_reads": 0,
+          "query_limit_ref": "config_ref -> config.budget_per_run.s1_query_variants_per_source_category",
+          "shared_read_limit_ref": "config_ref -> config.budget_per_run.s1_qualified_deep_reads_total"
+        }
+      },
+      "category_totals_scope": "S1 only; unchanged from S1 audit",
+      "s1_qualified_deep_reads_total": 4,
+      "s2_target_totals": {
+        "target_id": "SK-BEH-001-S2-T01",
+        "issued_queries": 1,
+        "returned_hits": 16,
+        "screened_hits": 10,
+        "access_attempt_records": 4,
+        "access_requests": 4,
+        "failed_access_records": 1,
+        "partial_access_records": 1,
+        "full_text_read_requests": 2,
+        "qualified_deep_reads": 1,
+        "new_originals_with_any_read": 2,
+        "new_platform_requests": 0,
+        "blocked_route_retries": 0,
+        "remaining_deep_read_allowance_unused": 1
+      },
+      "overall_issued_queries_total": 13,
+      "overall_access_requests": 39
+    },
+    "validation_scope": {
+      "checks": [
+        "JSON及ID/引用完整性、r2配置绑定",
+        "S1原始日志和分类预算与审计副本一致；未知筛读数仍未知",
+        "两历史冻结payload哈希与实际时间顺序；S2后标记失效",
+        "S2一个目标/1查询/1深读/4访问请求，失败与摘要部分读取均入账，无平台请求",
+        "全部候选draft、science blocked、interest unknown；无包冻结",
+        "仅修改指定研究文件，保留既有审计文件"
+      ],
+      "expected_cost": "少于1分钟，一次定向检查",
+      "stop_condition": "定向检查通过即交主控停止；不追加检索或全量测试。"
+    },
+    "audit_provenance": {
+      "s1_audit_path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/research-SK-BEH-001-S1-r1-audit.json",
+      "s1_artifact_sha256": "4da63e26a5698ea4ac9f9314c2b474a08d7e8e02a2c602320b02d49139686d78",
+      "controller_task_id": "01a0d6ab-32cb-73e0-aa25-c82f8111775f",
+      "decision_recorded_at": "2026-09-25T05:12:10.514292+00:00",
+      "timing_note": "decided_at 是收到本次实际主控委派后落盘记录决定的真实时间；不补造发送端或过去时间。",
+      "authority": "主控已审阅S1的5来源/5主张/3分支及全部缺口，委派调度记录其决定。非用户或临床专家审核。",
+      "s2_audit_path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/research-SK-BEH-001-S2-r1-audit.json",
+      "s2_audit_sha256": "64431265b8c0840929328972d4d03e3d8dd531c797faa3b0a9f7f7e76e57fb85",
+      "final_controller_decision_recorded_at": "2026-09-25T05:22:47.213096+00:00",
+      "final_controller_authority": "本条实际主控代理决定，非用户或临床确认；正式审核待独立窗口。",
+      "schema_normalization": "S2审计原样保留。当前包把C006/C007 claim_type规范为observation，C007引用role规范为limit，顶层状态使用v0.1枚举；不改变证据结论。"
+    },
+    "delivery_class": "trial_with_gaps",
+    "s2_authorization": {
+      "authorized_by_task_id": "01a0d6ab-32cb-73e0-aa25-c82f8111775f",
+      "recorded_at": "2026-09-25T05:12:10.514532+00:00",
+      "target_id": "SK-BEH-001-S2-T01",
+      "branch_id": "SK-BEH-001-B01",
+      "gap_id": "SK-BEH-001-G001",
+      "target": "原始人体外观感知研究的方法及限制",
+      "max_new_queries": 1,
+      "max_new_qualified_deep_reads": 2,
+      "scope_note": "本次委派收紧的目标额度，不改变r2全局配置。",
+      "prohibited": [
+        "已受限站点或路线重试",
+        "平台继续请求",
+        "扩S1",
+        "自动正式准入或最终包冻结"
+      ],
+      "status": "completed_bounded_awaiting_controller",
+      "started_at": "2026-09-25T05:12:25Z",
+      "completed_at": "2026-09-25T05:19:25.110833+00:00"
+    },
+    "updated_at": "2026-09-25T05:22:47.215479+00:00",
+    "historical_decisions": [
+      {
+        "id": "SK-BEH-001-D001",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-review-r1",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:12:10.514518+00:00",
+        "input_revision": "SK-BEH-001-S1-r1",
+        "branch_id": "SK-BEH-001-B01",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "B01仅保留待补证；不做确定外观或恢复时间主张。 三分支均有关键缺口，正式候选不通过，兴趣未知。",
+        "required_changes": [
+          "保留所有关键缺口及S1执行偏差",
+          "不得视作用户或临床专家背书",
+          "S2后需主控重审新增证据，不自动正式准入"
+        ],
+        "current_input_applicability": "requires_rereview_after_s2",
+        "applicability_note": "保留真实历史决定；不自动视为对SK-BEH-001-S2-r1新输入的批准。"
+      },
+      {
+        "id": "SK-BEH-001-D002",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-review-r1",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:12:10.514525+00:00",
+        "input_revision": "SK-BEH-001-S1-r1",
+        "branch_id": "SK-BEH-001-B02",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "B02保留为辅助方向；临床指标、机制与长期结论分开。 三分支均有关键缺口，正式候选不通过，兴趣未知。",
+        "required_changes": [
+          "保留所有关键缺口及S1执行偏差",
+          "不得视作用户或临床专家背书",
+          "S2后需主控重审新增证据，不自动正式准入"
+        ],
+        "current_input_applicability": "requires_rereview_after_s2",
+        "applicability_note": "保留真实历史决定；不自动视为对SK-BEH-001-S2-r1新输入的批准。"
+      },
+      {
+        "id": "SK-BEH-001-D003",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-review-r1",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:12:10.514527+00:00",
+        "input_revision": "SK-BEH-001-S1-r1",
+        "branch_id": "SK-BEH-001-B03",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "B03保留为首要试运行方向；先保障睡眠机会与规律性，基础护理只处理相应日常需求，不能宣称抵消熬夜。 三分支均有关键缺口，正式候选不通过，兴趣未知。",
+        "required_changes": [
+          "保留所有关键缺口及S1执行偏差",
+          "不得视作用户或临床专家背书",
+          "S2后需主控重审新增证据，不自动正式准入"
+        ],
+        "current_input_applicability": "requires_rereview_after_s2",
+        "applicability_note": "保留真实历史决定；不自动视为对SK-BEH-001-S2-r1新输入的批准。"
+      },
+      {
+        "id": "SK-BEH-001-D004",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r1",
+        "demo": false,
+        "stage": "direction",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:12:10.516616+00:00",
+        "input_revision": "SK-BEH-001-direction-r1",
+        "branch_id": "SK-BEH-001-B03",
+        "candidate_id": "SK-BEH-001-A001",
+        "action": "confirm",
+        "reason": "B03保留为首要试运行方向；先保障睡眠机会与规律性，基础护理只处理相应日常需求，不能宣称抵消熬夜。",
+        "required_changes": [
+          "仅草案试运行或待补证；不批准正式候选",
+          "保留科学blocked及兴趣unknown",
+          "S2更新后提交主控重新判断"
+        ],
+        "selection": "primary",
+        "decision_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_input_applicability": "requires_rereview_after_s2",
+        "applicability_note": "保留真实历史决定；不自动视为对SK-BEH-001-S2-r1新输入的批准。"
+      },
+      {
+        "id": "SK-BEH-001-D005",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r1",
+        "demo": false,
+        "stage": "direction",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:12:10.516624+00:00",
+        "input_revision": "SK-BEH-001-direction-r1",
+        "branch_id": "SK-BEH-001-B02",
+        "candidate_id": "SK-BEH-001-A002",
+        "action": "confirm",
+        "reason": "B02保留为辅助方向；临床指标、机制与长期结论分开。",
+        "required_changes": [
+          "仅草案试运行或待补证；不批准正式候选",
+          "保留科学blocked及兴趣unknown",
+          "S2更新后提交主控重新判断"
+        ],
+        "selection": "supporting",
+        "decision_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_input_applicability": "requires_rereview_after_s2",
+        "applicability_note": "保留真实历史决定；不自动视为对SK-BEH-001-S2-r1新输入的批准。"
+      },
+      {
+        "id": "SK-BEH-001-D006",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r1",
+        "demo": false,
+        "stage": "direction",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:12:10.516661+00:00",
+        "input_revision": "SK-BEH-001-direction-r1",
+        "branch_id": "SK-BEH-001-B01",
+        "candidate_id": "SK-BEH-001-A003",
+        "action": "gap",
+        "reason": "B01仅保留待补证；不做确定外观或恢复时间主张。",
+        "required_changes": [
+          "仅草案试运行或待补证；不批准正式候选",
+          "保留科学blocked及兴趣unknown",
+          "S2更新后提交主控重新判断"
+        ],
+        "selection": "held_for_evidence",
+        "decision_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_input_applicability": "requires_rereview_after_s2",
+        "applicability_note": "保留真实历史决定；不自动视为对SK-BEH-001-S2-r1新输入的批准。"
+      }
+    ],
+    "decisions": [
+      {
+        "id": "SK-BEH-001-D007",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-review-r2",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:22:47.213463+00:00",
+        "input_revision": "SK-BEH-001-S2-r1",
+        "branch_id": "SK-BEH-001-B01",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "B01覆盖改为partial。2017小样本短期标准化照片评分可作受限主张；2019摘要反向线索就地关联、全文方法未核，不提升为独立定论。不作主方向，不推出皮肤损伤、长期老化或恢复时间。 科学质量未评分、兴趣unknown、formal=false；全部未满足项仍开放。",
+        "required_changes": [
+          "保留G008执行偏差及初始批次未知筛读数",
+          "限定为trial_with_gaps，不自动入库",
+          "正式审核仍待独立窗口"
+        ],
+        "current_input_applicability": "reviewed_for_s2_evidence"
+      },
+      {
+        "id": "SK-BEH-001-D008",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-review-r2",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:22:47.213468+00:00",
+        "input_revision": "SK-BEH-001-S2-r1",
+        "branch_id": "SK-BEH-001-B02",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "B02为补充方向；临床指标、机制与长期结论分开。 科学质量未评分、兴趣unknown、formal=false；全部未满足项仍开放。",
+        "required_changes": [
+          "保留G008执行偏差及初始批次未知筛读数",
+          "限定为trial_with_gaps，不自动入库",
+          "正式审核仍待独立窗口"
+        ],
+        "current_input_applicability": "reviewed_for_s2_evidence"
+      },
+      {
+        "id": "SK-BEH-001-D009",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-review-r2",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:22:47.213471+00:00",
+        "input_revision": "SK-BEH-001-S2-r1",
+        "branch_id": "SK-BEH-001-B03",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "B03保留试运行主方向；先保障睡眠机会与规律性，基础护理仅处理相应日常需求，不能宣称抵消熬夜。 科学质量未评分、兴趣unknown、formal=false；全部未满足项仍开放。",
+        "required_changes": [
+          "保留G008执行偏差及初始批次未知筛读数",
+          "限定为trial_with_gaps，不自动入库",
+          "正式审核仍待独立窗口"
+        ],
+        "current_input_applicability": "reviewed_for_s2_evidence"
+      },
+      {
+        "id": "SK-BEH-001-D010",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "stage": "direction",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:22:47.215464+00:00",
+        "input_revision": "SK-BEH-001-direction-r2",
+        "branch_id": "SK-BEH-001-B03",
+        "candidate_id": "SK-BEH-001-A001",
+        "action": "confirm",
+        "reason": "B03保留试运行主方向；先保障睡眠机会与规律性，基础护理仅处理相应日常需求，不能宣称抵消熬夜。",
+        "required_changes": [
+          "三候选保持draft、science blocked、interest unknown、formal=false",
+          "反证与边界跟随主张展示",
+          "仅形成待审核附件，禁止自动入库"
+        ],
+        "selection": "primary",
+        "decision_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_input_applicability": "confirmed_for_s2_evidence"
+      },
+      {
+        "id": "SK-BEH-001-D011",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "stage": "direction",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:22:47.215471+00:00",
+        "input_revision": "SK-BEH-001-direction-r2",
+        "branch_id": "SK-BEH-001-B02",
+        "candidate_id": "SK-BEH-001-A002",
+        "action": "confirm",
+        "reason": "B02为补充方向；临床指标、机制与长期结论分开。",
+        "required_changes": [
+          "三候选保持draft、science blocked、interest unknown、formal=false",
+          "反证与边界跟随主张展示",
+          "仅形成待审核附件，禁止自动入库"
+        ],
+        "selection": "supporting",
+        "decision_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_input_applicability": "confirmed_for_s2_evidence"
+      },
+      {
+        "id": "SK-BEH-001-D012",
+        "run_id": "SK-BEH-001",
+        "revision": "SK-BEH-001-direction-r2",
+        "demo": false,
+        "stage": "direction",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:22:47.215477+00:00",
+        "input_revision": "SK-BEH-001-direction-r2",
+        "branch_id": "SK-BEH-001-B01",
+        "candidate_id": "SK-BEH-001-A003",
+        "action": "gap",
+        "reason": "B01覆盖改为partial。2017小样本短期标准化照片评分可作受限主张；2019摘要反向线索就地关联、全文方法未核，不提升为独立定论。不作主方向，不推出皮肤损伤、长期老化或恢复时间。",
+        "required_changes": [
+          "三候选保持draft、science blocked、interest unknown、formal=false",
+          "反证与边界跟随主张展示",
+          "仅形成待审核附件，禁止自动入库"
+        ],
+        "selection": "limited_background",
+        "decision_class": "trial_with_gaps",
+        "formal_admission": false,
+        "current_input_applicability": "confirmed_for_s2_evidence"
+      }
+    ]
+  }
+}

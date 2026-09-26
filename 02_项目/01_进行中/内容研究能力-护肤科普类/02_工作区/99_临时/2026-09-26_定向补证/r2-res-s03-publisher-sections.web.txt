@@ -1,0 +1,151 @@
+Alteration of barrier properties, stratum corneum ceramides and microbiome composition in response to lotion application on cosmetic dry skin | Scientific Reports (https://www.nature.com/articles/s41598-022-09231-8)
+citeturn37view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn35view0","pattern":"Supplementary Information. (download"}); Redirected to URL: https://www.nature.com/articles/s41598-022-09231-8?error=cookies_not_supported&code=565e900f-a23f-4bf4-9c31-40e18013c339; Total lines: 607
+L106: Table 1 Levels of free fatty acids.
+L107: Average ceramides levels (with standard deviation) measured in 20 tape strips at baseline were 2.85 pmol/µg protein (0.70 pmol/µg) which rose to 3.80 pmol/µg protein (0.71 pmol/µg) post intervention—representing a 33% increase (p ≤ 0.0001). 358 ceramide species measured were assigned to their respective classes^{cite90†22 } with class sum values calculated at both timepoints. For 9 of the 12 classes, statistically significant increases were seen in the levels post intervention (Table cite91†2 ).
+L108: The molar ratio among lipid groups of Cer:FFA:CHE is approximately 1:18:10 in our measures. The smaller amount of ceramide is due to the semi-quantitative approach and smaller sets of ceramides included in the calculation after a 70% occupational threshold described in the cite88†Supplementary Information .
+L109: Table 2 Levels of ceramide measured per ceramide class.
+L110: 
+L111: Corneometer values of skin hydration were found to be positively associated with levels of both FFA (r = 0.79, p < 0.0001) and ceramides (r = 0.44, p = 0.007) (Fig. cite92†2 ). Simple linear regression analysis was conducted to estimate the correlation and statistical significance. Pearson’s correlation method was used to calculate the correlation coefficient. Statistical significance was calculated by Student’s t-test.
+L112: 
+L113: Figure 2
+L114: cite93†Image: Figure 2†media.springernature.com L115: 
+L116: cite94†Full size image L117: Skin hydration correlates with fatty acid and ceramide levels. Scatter plots of corneometer readings of skin hydration vs. the total level of FFA (a) and total ceramides (b). Blue and red circles represent untreated and after 5 weeks of product application. The solid line represents the optimal fit from simple linear regression analysis, with the correlation coefficient r and p-value displayed. Statistical significance was considered as p-value < 0.05.
+L118: ### Microbiome assessment
+L119: 
+L120: DNA sequencing of 70 samples (36 baseline and 34 post intervention) resulted in the generation of 22.8 million reads with an average read count of 326,333 reads per sample (min 63,892, max 975,103) Taxonomic assessment of the skin microbiome was visualized at Baseline (Fig. cite95†3 a) and Post Intervention (Fig. cite95†3 b).
+L121: 
+L122: Figure 3
+L123: 
+L124: cite96†Image: Figure 3†media.springernature.com L125: 
+L126: cite97†Full size image L193: Visual assessment of skin dryness and erythema was conducted by a trained evaluator on a scale from 0 to 4^{cite127†46 }. Thirty seven subjects with visual dryness of 2.0–3.0 and erythema of ≥ 1.0 at the baseline visit were enrolled in the study. Corneometer assessments were taken, after an acclimation period of 15 min in an environmentally controlled room using the Courage and Khazaka Multi-Probe Adaptor Corneometer (MPA 6). Five readings were taken at each test site at both study timepoints.
+L194: ### Stratum corneum cohesivity assessment
+L195: Stratum corneum cohesivity was assessed as described previously^{cite128†47 } for all study subjects. D-Squame tapes (D100, 22 mm diameter, Clinical and Derm LLC) were applied to the designated area, pressed firmly onto the skin for 2 s with a D-Squame Pressure Instrument (Clinical and Derm D-500) to ensure constant pressure for each tape, then removed using forceps. Sequential tapes were taken from the same site then stored at − 20 °C.
+L196: Total proteins were extracted from the tapes^{cite128†47 } and assayed using the Pierce BCA assay kit (Rockford, IL, USA).
+L197: ### Sample collection and extraction of stratum corneum lipids
+L198: Stratum corneum lipids were analysed from a population subset (n = 18) at both study timepoints. Cholesterol, ceramides, and FFAs were measured from samples collected using Leukoflex tape strips (2.5 cm × 8 cm) (BSN Medical, UK). Up to 20 sequential tapes were collected from each site and stored at − 20 °C prior to extraction. All tapes were collected, stored and extracted individually.
+L199: FFA and Cholesterol analyses were performed on pooled sets of 5 tapes, whist ceramide analyses were performed on a pooled sample from all 20 tapes taken at a specific site. Detailed methods for the extraction, and quantification of FFA, cholesterol and ceramides can be found in cite88†Supplementary Information .
+L200: ### Microbiome sample collection and processing
+L201: 
+L202: Buffer washes were collected from all participants using a sterile Teflon sampling ring using the cup scrub method^{cite129†48 } as previously described^{cite72†9 }. Details of DNA extraction, library preparation, sequencing, informatics processing and qPCR are outlined in cite88†Supplementary Information .
+L203: ### Microbiome network of the population (MNP) analysis
+L204: Co-occurrence network analysis was carried out using the Microbiome Network of the Population (MNP) method on QIIME2 generated ASV tables collapsed at species level. Taxa were filtered based on 0.01% relative abundance and 37% prevalence thresholds. Networks were inferred using Sparse InversE Covariance estimation for Ecological Association and Statistical Inference (SPIEC-EASI version 1.0.7)^{cite130†49 }.
+L205: The neighbourhood method was chosen^{cite131†50 } and the StARS (Stability Approach to Regularization Selection) method^{cite132†51 } used with a lambda max threshold of 0.01.
+L206: Reproducibility of the network inference was performed using randomly resampled subsets. Sample subsets were resampled at the 80% level and used to generate 1000 networks. Mean values of the network connectivity and robustness features from the networks were compared using bootstrap hypothesis testing^{cite133†52 }.
+L207: ### Microbiome network of an individual (MNI) analysis
+L208: 
+L209: Networks for individual samples within the population were calculated using the microbiome network of an individual (MNI) method^{cite134†53 }. Networks generated via this method with an individual sample removed, are subtracted from the MNPs of the whole sample set, resulting in a network specific for that sample.
+L210: ### Network connectivity and robustness calculations
+L211: Network connectivity measures were calculated using the R package igraph (version 1.2.4.1)^{cite135†54 }. Network fragility was simulated by removing nodes sequentially and calculating the remaining size of the largest connected component^{cite136†55 ,cite137†56 }. Nodes were removed based on decreasing betweenness centrality and node degree and the stability assessed by natural connectivity; the average eigenvalue of the graph adjacency as the graph reduces in size.
+L212: The robustness score was calculated as the Area Under the Curve (AUC) of the network fragility values.
+L213: ### Statistical analysis
+L214: 
+L215: A detailed description of the statistical methods used for clinical measures, microbiome analyses, qPCR, ceramides and fatty acid analysis can be found in cite88†Supplementary Material .
+L216: 
+L217: ## Data availability
+L218: 
+L219: Datasets related to this article can be found in the SRA (Accession Number PRJNA701447).
+L220: ## References
+L221: 
+L222:   1. Turnbaugh, P. J. et al. The human microbiome project. Nature 449, 804–810. cite138†https://doi.org/10.1038/nature06244†doi.org (2007).
+L223: 
+L224:   2. Samaras, S. & Hoptroff, M. Book Chapter—The Microbiome of Healthy Skin in Skin Microbiome Handbook: From Basic Research to Product Development 1–32 (Wiley, 2020).
+L225: 
+L226:   3. Rothman, S. & Lorincz, A. L. Defense mechanisms of the skin. Annu. Rev. Med. 14, 215–242. cite139†https://doi.org/10.1146/annurev.me.14.020163.001243†doi.org (1963).
+L227:   4. Grice, E. A. & Segre, J. A. The skin microbiome. Nat. Rev. Microbiol. 9, 244–253. cite140†https://doi.org/10.1038/nrmicro2537†doi.org (2011).
+L228: 
+L229:   5. James, A. G. Book Chapter—The Axillary Microbiome and its Relationship with Underarm Odor in Skin Microbiome Handbook: From Basic Research to Product Development 9–129 (Wiley, 2020).
+L230: 
+L415: Search author on:cite222†PubMed†www.ncbi.nlm.nih.gov cite223†Google Scholar†scholar.google.co.uk L416: 
+L417:   15. Ana Villa
+L418: 
+L419: cite224†View author publications L420: 
+L421: Search author on:cite225†PubMed†www.ncbi.nlm.nih.gov cite226†Google Scholar†scholar.google.co.uk L422: 
+L423:   16. John S. Bajor
+L424: 
+L425: cite227†View author publications L426: 
+L427: Search author on:cite228†PubMed†www.ncbi.nlm.nih.gov cite229†Google Scholar†scholar.google.co.uk L428: 
+L429:   17. Lin Feng
+L430: 
+L431: cite230†View author publications L432: Search author on:cite231†PubMed†www.ncbi.nlm.nih.gov cite232†Google Scholar†scholar.google.co.uk L433: 
+L434:   18. Dawn Mihalov
+L435: 
+L436: cite233†View author publications L437: 
+L438: Search author on:cite234†PubMed†www.ncbi.nlm.nih.gov cite235†Google Scholar†scholar.google.co.uk L439: 
+L440:   19. Andrew E. Mayes
+L441: 
+L442: cite236†View author publications L443: 
+L444: Search author on:cite237†PubMed†www.ncbi.nlm.nih.gov cite238†Google Scholar†scholar.google.co.uk L445: ### Contributions
+L446: Conceptualization: A.M., S.P., B.M., M.H.; Data Curation: B.M., S.G., A.E.M., D.A., T.D.; Investigation: B.M., S.G., A.M., M.H., D.A., S.E.A., R.E., W.L., D.M., G.Y., A.V., J.B., L.F., T.D.; Formal Analysis: B.M., S.G., A.E.M., M.H., D.A., S.E.A., T.D., A.C., A.M., F.F., W.L., D.M., G.Y., A.V., J.B., L.F., D.M.; Project Administration: B.M., S.G., A.M.; Resources: S.G.; Software: F.F., A.C., D.A., T.D.; Supervision: B.M., A.M., M.H.; Visualization: B.M., A.M., T.D., D.A.; Writing—Original Draft Preparation: B.M., A.M.; Writing—Review and Editing: B.M., S.G., M.H., S.P., D.A., R.E., A.C., A.M., F.F., S.E.A., W.L., D.M., G.Y., A.V., J.B., L.F., T.D., D.M.
+L447: and A.E.M.
+L448: ### Corresponding author
+L449: 
+L450: Correspondence to Barry Murphy (Barry.murphy@unilever.com).
+L451: 
+L452: ## Ethics declarations
+L453: 
+L454: ### Competing interests
+L455: 
+L456: The authors declare no competing interests.
+L457: 
+L458: ## Additional information
+L459: 
+L460: ### Publisher's note
+L461: 
+L462: Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+L463: 
+L464: ## Supplementary Information
+L465: 
+L466: ### cite239†Supplementary Information. (download DOCX )†media.springernature.com L467: ## Rights and permissions
+L468: Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made.
+L469: The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder.
+L470: To view a copy of this licence, visit cite240†http://creativecommons.org/licenses/by/4.0/†creativecommons.org .
+L471: cite241†Reprints and permissions†s100.copyright.com L472: ## About this article
+L473: 
+L474: ### Cite this article
+L475: 
+L476: Murphy, B., Grimshaw, S., Hoptroff, M. et al. Alteration of barrier properties, stratum corneum ceramides and microbiome composition in response to lotion application on cosmetic dry skin. Sci Rep 12, 5223 (2022). https://doi.org/10.1038/s41598-022-09231-8
+L477: 
+L478:   * Received: 21 March 2021
+L479: 
+L480:   * Accepted: 16 March 2022
+L481: 
+L482:   * Published: 26 March 2022
+L483: 
+L484:   * Version of record: 26 March 2022
+L485: 
+L486:   * DOI (Digital Object Identifier): https://doi.org/10.1038/s41598-022-09231-8
+L487: ### Share this article
+L488: 
+L489: Anyone you share the following link with will be able to read this content:
+L490: 
+L491: Sorry, a shareable link is not currently available for this article.
+L492: 
+L493: Provided by the Springer Nature SharedIt content-sharing initiative
+L494: ## Explore content
+L495: 
+L496:   * cite242†Research articles L497:   * cite243†News & Comment L498:   * cite244†Collections L499:   * cite245†Subjects L500: 
+L501:   * cite246†Follow us on Facebook†www.facebook.com L502:   * cite247†Follow us on X†twitter.com L503:   * cite8†Sign up for alerts†journal-alerts.springernature.com L504:   * cite9†RSS feed L505: ## About the journal
+L506: 
+L507:   * cite248†About Scientific Reports L508:   * cite249†Contact L509:   * cite250†Journal policies L510:   * cite251†Guide to referees L511:   * cite252†Calls for Papers L512:   * cite253†Editor's Choice L513:   * cite254†Journal highlights L514:   * cite255†Open Access Fees and Funding L515: 
+L516: ## Publish with us
+L517: 
+L518:   * cite256†For authors L519:   * cite257†Language editing services†authorservices.springernature.com L520:   * cite258†Open access funding L521:   * cite259†Submit manuscript†author-welcome.nature.com L522: ## Search
+L523: 
+L524: Search articles by subject, keyword or author
+L525: 
+L526: [Input]
+L527: 
+L528: Show results from [Select]
+L529: 
+L530: [Button: Search]
+L531: 
+L532: cite260†Advanced search L533: 
+L534: ### Quick links
+L535: 
+L536:   * cite261†Explore articles by subject L537:   * cite262†Find a job L538:   * cite263†Guide to authors L539:   * cite264†Editorial policies L540: 
+L541: Scientific Reports (Sci Rep)
+L542: 
+L543: ISSN (International Standard Serial Number) 2045-2322 (online)
+L544: 
+L545: ## nature.com footer links
+

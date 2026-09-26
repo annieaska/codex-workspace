@@ -1,0 +1,141 @@
+{
+  "completed_at": "2026-09-26T21:19:05.334Z",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "## PubMed Search Results\n**Query:** sleep AND (\"skin barrier\" OR \"skin hydration\" OR \"transepidermal water loss\") AND (recovery OR \"follow-up\" OR longitudinal OR prospective)\n**Returned:** 10 of 21 | **Offset:** 0\n**Search URL:** https://pubmed.ncbi.nlm.nih.gov/?term=sleep%20AND%20(%22skin%20barrier%22%20OR%20%22skin%20hydration%22%20OR%20%22transepidermal%20water%20loss%22)%20AND%20(recovery%20OR%20%22follow-up%22%20OR%20longitudinal%20OR%20prospective)\n\n**PMIDs:** 25266053, 36759891, 26010820, 31692145, 30987568, 25585263, 16891569, 35717147, 40621079, 11511309\n\n### Summaries\n\n#### Does poor sleep quality affect skin ageing?\n**PMID:** 25266053\n**Authors:** Oyetakin-White P, Suggs A, Koo B, et al.\n**Source:** Clin Exp Dermatol\n**Published:** 2015-01-01\n**DOI:** 10.1111/ced.12455\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/25266053/\n\n#### Stress and its impairment of skin barrier function.\n**PMID:** 36759891\n**Authors:** Lyu F, Wu T, Bian Y, et al.\n**Source:** Int J Dermatol\n**Published:** 2023-05-01\n**DOI:** 10.1111/ijd.16598\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/36759891/\n\n#### Skin Barrier Recovery is not Associated with Self-Perceived Stress.\n**PMID:** 26010820\n**Authors:** Benham G\n**Source:** Stress Health\n**Published:** 2016-12-01\n**DOI:** 10.1002/smi.2640\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/26010820/\n\n#### A study of skin characteristics with long-term sleep restriction in Korean women in their 40s.\n**PMID:** 31692145\n**Authors:** Jang SI, Lee M, Han J, et al.\n**Source:** Skin Res Technol\n**Published:** 2020-03-01\n**DOI:** 10.1111/srt.12797\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/31692145/\n\n#### Testing an Ectoin Containing Emollient for Atopic Dermatitis.\n**PMID:** 30987568\n**Authors:** Hon KL, Kung JS, Ng WGG, et al.\n**Source:** Curr Pediatr Rev\n**Published:** 2019-01-01\n**DOI:** 10.2174/1573396315666190415144244\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/30987568/\n\n#### A suction blister model reliably assesses skin barrier restoration and immune response.\n**PMID:** 25585263\n**Authors:** Smith TJ, Wilson MA, Young AJ, et al.\n**Source:** J Immunol Methods\n**Published:** 2015-02-01\n**DOI:** 10.1016/j.jim.2015.01.002\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/25585263/\n\n#### Immune function in PTSD.\n**PMID:** 16891569\n**Authors:** Altemus M, Dhabhar FS, Yang R\n**Source:** Ann N Y Acad Sci\n**Published:** 2006-07-01\n**DOI:** 10.1196/annals.1364.013\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/16891569/\n\n#### Study protocol: assessing SleeP IN infants with early-onset atopic Dermatitis by Longitudinal Evaluation (The SPINDLE study).\n**PMID:** 35717147\n**Authors:** O'Connor C, Irvine AD, Murray D, et al.\n**Source:** BMC Pediatr\n**Published:** 2022-06-18\n**DOI:** 10.1186/s12887-022-03382-3\n**PMCID:** PMC9206384\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/35717147/\n**PMC:** https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9206384/\n\n#### Therapeutic potential of ginsenosides in circadian rhythm-based skin disorders.\n**PMID:** 40621079\n**Authors:** Ha H, Shin H, Min S, et al.\n**Source:** J Ginseng Res\n**Published:** 2025-07-01\n**DOI:** 10.1016/j.jgr.2025.04.004\n**PMCID:** PMC12223530\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/40621079/\n**PMC:** https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12223530/\n\n#### Stress-induced changes in skin barrier function in healthy women.\n**PMID:** 11511309\n**Authors:** Altemus M, Rao B, Dhabhar FS, et al.\n**Source:** J Invest Dermatol\n**Published:** 2001-08-01\n**DOI:** 10.1046/j.1523-1747.2001.01373.x\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/11511309/"
+      },
+      {
+        "type": "text",
+        "text": "\n\n**Effective Query:** sleep AND (\"skin barrier\" OR \"skin hydration\" OR \"transepidermal water loss\") AND (recovery OR \"follow-up\" OR longitudinal OR prospective)\n**Applied Filters:** none"
+      }
+    ],
+    "structuredContent": {
+      "query": "sleep AND (\"skin barrier\" OR \"skin hydration\" OR \"transepidermal water loss\") AND (recovery OR \"follow-up\" OR longitudinal OR prospective)",
+      "offset": 0,
+      "pmids": [
+        "25266053",
+        "36759891",
+        "26010820",
+        "31692145",
+        "30987568",
+        "25585263",
+        "16891569",
+        "35717147",
+        "40621079",
+        "11511309"
+      ],
+      "summaries": [
+        {
+          "pmid": "25266053",
+          "title": "Does poor sleep quality affect skin ageing?",
+          "authors": "Oyetakin-White P, Suggs A, Koo B, et al.",
+          "source": "Clin Exp Dermatol",
+          "docType": "citation",
+          "pubDate": "2015-01-01",
+          "doi": "10.1111/ced.12455",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/25266053/"
+        },
+        {
+          "pmid": "36759891",
+          "title": "Stress and its impairment of skin barrier function.",
+          "authors": "Lyu F, Wu T, Bian Y, et al.",
+          "source": "Int J Dermatol",
+          "docType": "citation",
+          "pubDate": "2023-05-01",
+          "doi": "10.1111/ijd.16598",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/36759891/"
+        },
+        {
+          "pmid": "26010820",
+          "title": "Skin Barrier Recovery is not Associated with Self-Perceived Stress.",
+          "authors": "Benham G",
+          "source": "Stress Health",
+          "docType": "citation",
+          "pubDate": "2016-12-01",
+          "doi": "10.1002/smi.2640",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26010820/"
+        },
+        {
+          "pmid": "31692145",
+          "title": "A study of skin characteristics with long-term sleep restriction in Korean women in their 40s.",
+          "authors": "Jang SI, Lee M, Han J, et al.",
+          "source": "Skin Res Technol",
+          "docType": "citation",
+          "pubDate": "2020-03-01",
+          "doi": "10.1111/srt.12797",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31692145/"
+        },
+        {
+          "pmid": "30987568",
+          "title": "Testing an Ectoin Containing Emollient for Atopic Dermatitis.",
+          "authors": "Hon KL, Kung JS, Ng WGG, et al.",
+          "source": "Curr Pediatr Rev",
+          "docType": "citation",
+          "pubDate": "2019-01-01",
+          "doi": "10.2174/1573396315666190415144244",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/30987568/"
+        },
+        {
+          "pmid": "25585263",
+          "title": "A suction blister model reliably assesses skin barrier restoration and immune response.",
+          "authors": "Smith TJ, Wilson MA, Young AJ, et al.",
+          "source": "J Immunol Methods",
+          "docType": "citation",
+          "pubDate": "2015-02-01",
+          "doi": "10.1016/j.jim.2015.01.002",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/25585263/"
+        },
+        {
+          "pmid": "16891569",
+          "title": "Immune function in PTSD.",
+          "authors": "Altemus M, Dhabhar FS, Yang R",
+          "source": "Ann N Y Acad Sci",
+          "docType": "citation",
+          "pubDate": "2006-07-01",
+          "doi": "10.1196/annals.1364.013",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/16891569/"
+        },
+        {
+          "pmid": "35717147",
+          "title": "Study protocol: assessing SleeP IN infants with early-onset atopic Dermatitis by Longitudinal Evaluation (The SPINDLE study).",
+          "authors": "O'Connor C, Irvine AD, Murray D, et al.",
+          "source": "BMC Pediatr",
+          "docType": "citation",
+          "pubDate": "2022-06-18",
+          "doi": "10.1186/s12887-022-03382-3",
+          "pmcId": "PMC9206384",
+          "pmcUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9206384/",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/35717147/"
+        },
+        {
+          "pmid": "40621079",
+          "title": "Therapeutic potential of ginsenosides in circadian rhythm-based skin disorders.",
+          "authors": "Ha H, Shin H, Min S, et al.",
+          "source": "J Ginseng Res",
+          "docType": "citation",
+          "pubDate": "2025-07-01",
+          "doi": "10.1016/j.jgr.2025.04.004",
+          "pmcId": "PMC12223530",
+          "pmcUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12223530/",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/40621079/"
+        },
+        {
+          "pmid": "11511309",
+          "title": "Stress-induced changes in skin barrier function in healthy women.",
+          "authors": "Altemus M, Rao B, Dhabhar FS, et al.",
+          "source": "J Invest Dermatol",
+          "docType": "citation",
+          "pubDate": "2001-08-01",
+          "doi": "10.1046/j.1523-1747.2001.01373.x",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/11511309/"
+        }
+      ],
+      "searchUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=sleep%20AND%20(%22skin%20barrier%22%20OR%20%22skin%20hydration%22%20OR%20%22transepidermal%20water%20loss%22)%20AND%20(recovery%20OR%20%22follow-up%22%20OR%20longitudinal%20OR%20prospective)",
+      "totalCount": 21,
+      "effectiveQuery": "sleep AND (\"skin barrier\" OR \"skin hydration\" OR \"transepidermal water loss\") AND (recovery OR \"follow-up\" OR longitudinal OR prospective)",
+      "appliedFilters": {}
+    }
+  }
+}

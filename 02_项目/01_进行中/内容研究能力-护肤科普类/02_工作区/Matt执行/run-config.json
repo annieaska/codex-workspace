@@ -1,0 +1,999 @@
+{
+  "revision": "SK-MATT-20260926-r3.1",
+  "rules_version": "cosmetics-business-rules-v1.3",
+  "decision_actor": "controller_delegate",
+  "authorization": "2026-09-26 用户在报告整改和最小补证建议后明确要求“那你继续推进”；本次仅激活 A/B/C，D 不启动。旧研究及其预算绑定不迁移，不追认历史超限。",
+  "audience": {
+    "age": "成年人",
+    "setting": "一般日常护肤科普，非个体诊疗",
+    "markets_priority": [
+      "中国大陆",
+      "日本",
+      "美国",
+      "加拿大",
+      "新加坡",
+      "英国"
+    ],
+    "numerical_weights": null
+  },
+  "science": {
+    "geography": "全球",
+    "languages": "不按语言排除；中文、英语起查，相关其他语言原始来源按需核验",
+    "time_windows": [
+      "奠基资料",
+      "近10年",
+      "近5年",
+      "近3年",
+      "近1年"
+    ],
+    "source_categories": [
+      "原始人体研究",
+      "系统综述及专业指南",
+      "机制研究（须标明外推限制）"
+    ]
+  },
+  "interest": {
+    "platforms": [
+      "YouTube",
+      "Instagram"
+    ],
+    "languages": [
+      "中文",
+      "英语",
+      "日语"
+    ],
+    "primary_window": "2025-09-25至2026-09-25",
+    "baseline_window": "2023-09-25至2025-09-24",
+    "metrics": "仅记录可见真实指标及采集时间，缺失为null；不推断实际受众地域"
+  },
+  "access": {
+    "mode": "免费公开只读",
+    "paid_budget": 0,
+    "login_allowed": false,
+    "captcha_bypass_allowed": false,
+    "knowledge_base": "仅正式接口或版本化导出；禁止底层数据库"
+  },
+  "budget_per_run": {
+    "s1_query_variants_per_source_category": 3,
+    "hits_per_query": 10,
+    "s1_qualified_deep_reads_total": 24,
+    "s2_max_targets": 2,
+    "s2_query_variants_per_target": 3,
+    "s2_deep_reads_per_target": 6,
+    "s3_allowance": 0
+  },
+  "stop": {
+    "budget_exhausted": "立即停止新增访问并登记缺口，不等于研究合格",
+    "access_blocked": "停止该路线，不绕过",
+    "saturation": "提前饱和仅当相关分支覆盖合格、候选阻塞证据已满足或已核实在允许来源不可得，且连续两次有效查询无新增合格来源/主张/实质冲突。仅登记尚可补查的关键缺口不能触发饱和；有依据的缺口进入剩余额度内的S2。",
+    "candidate_gate": "有关键科学/兴趣缺口则不可标正式合格候选",
+    "unresolved_target": "目标或预算耗尽、允许路线不可得则停止并保留未合格；不为凑齐完成而扩大预算。"
+  },
+  "runs": [
+    {
+      "id": "SK-BEH-001",
+      "mode": "behavior",
+      "topic": "熬夜肌攻略：睡眠不足与皮肤外观、屏障及日常护理边界",
+      "objective": "区分观察关联、因果证据与短期外观感知，给出可表达且不夸大的改善优先级",
+      "core_questions": [
+        "睡眠不足与哪些皮肤变化有关，哪些因果尚未成立",
+        "短期外观变化与屏障/长期老化证据如何区分",
+        "改善睡眠和日常护肤各自能解决什么，哪些不能承诺"
+      ],
+      "exclude": [
+        "个体诊断",
+        "处方或疾病治疗方案",
+        "补充剂推荐",
+        "用护肤抵消熬夜的保证",
+        "具体品牌比较"
+      ],
+      "product_role": "本期无具体产品承接，只研究日常护理路径"
+    },
+    {
+      "id": "SK-RES-001",
+      "mode": "result",
+      "topic": "皮肤干燥、紧绷与屏障受损：表象、可能原因和护理优先级",
+      "objective": "验证结果型从表象到原因、边界、改善与见效层级的可复用研究流程",
+      "core_questions": [
+        "干燥紧绷是否等同屏障受损，什么情况下不能这样推断",
+        "环境、清洁、护理和疾病相关因素如何分层",
+        "基础保湿/减少刺激的证据与需要专业就诊的边界是什么"
+      ],
+      "exclude": [
+        "个体诊断",
+        "处方或疾病治疗方案",
+        "把全部敏感症状归因于屏障",
+        "具体品牌比较"
+      ],
+      "product_role": "本期无具体产品承接，只研究日常护理路径"
+    }
+  ],
+  "effective_at": "2026-09-26T21:25:09.957043+00:00",
+  "task_category": "skincare_science",
+  "evidence": {
+    "paper": {
+      "thresholds": {
+        "high_min": 80,
+        "medium_min": 60,
+        "maximum": 100
+      },
+      "weights": {
+        "method": 50,
+        "independence": 25,
+        "source_quality": 15,
+        "author_fit": 10
+      },
+      "scoring": "Only score dimensions supported by reviewed methods and disclosures; missing facts remain unknown, not invented scores. Unknown overall assessment is unassessed, never strong by default.",
+      "fatal_flaw_precedence": true,
+      "fatal_flaw_policy": "Not eligible to support a key conclusion regardless of score; retain defect and reasons.",
+      "china_ecosystem_without_verified_independent_comparable_replication_maximum": "medium",
+      "replication_checks": [
+        "team",
+        "data",
+        "funding",
+        "experiment",
+        "population",
+        "exposure_or_intervention",
+        "outcome",
+        "method"
+      ]
+    },
+    "guidance": {
+      "assessment_axes": [
+        "publisher_identity",
+        "development_method_and_evidence_basis",
+        "population_and_scope",
+        "limitations"
+      ],
+      "paper_scoring_applicable": false
+    },
+    "mechanism": "Record cell/animal/human model; no direct extrapolation to clinical efficacy.",
+    "patent": "not_applicable_no_products_or_patents_in_this_run",
+    "candidate_science": "Strong is a reasoned claim-level assessment from eligible evidence, not a count of papers or one paper score.",
+    "candidate_interest": "High/medium requires observed comparable evidence and stated rationale; low and unknown remain distinct. No invented absolute heat threshold.",
+    "candidate_matrix": {
+      "strong+high_or_medium": "formal_if_reviewed_and_branch_coverage_complete",
+      "strong+low": "rephrase_and_revalidate_within_budget_then_reserve_if_still_low",
+      "strong+unknown": "draft_with_gap",
+      "weak+high": "no_ordinary_science_candidate_misconception_question_only",
+      "weak+low_or_unknown": "excluded"
+    }
+  },
+  "coverage": {
+    "required_scientific_categories": [
+      "原始人体研究",
+      "系统综述及专业指南",
+      "机制研究（须标明外推限制）"
+    ],
+    "required_interest_platforms": [
+      "YouTube",
+      "Instagram"
+    ],
+    "publication_and_index_ecosystems": [
+      "PubMed or another appropriate professional index for discovery",
+      "original journal/publisher including relevant Springer Nature and other publishers",
+      "professional organization original guidance"
+    ],
+    "ecosystem_rule": "Source categories and retrieval entry points are separate. Search across relevant ecosystems within the same query budget; record uncovered relevant ecosystems and effects, do not require irrelevant publisher quota.",
+    "time_rule": "For each science window record representative eligible sources or a reasoned gap; overlapping windows count the original material once.",
+    "branch_fields": [
+      "definition",
+      "knowledge_chain_position",
+      "upstream",
+      "downstream",
+      "related_branch_ids",
+      "onset_duration_recovery_or_progression",
+      "population",
+      "context",
+      "amplifiers",
+      "mitigators",
+      "exclusions",
+      "support",
+      "counterevidence",
+      "evidence_identity_quality_applicability",
+      "can_say",
+      "cannot_say",
+      "system_judgment",
+      "review_decision",
+      "unresolved_gaps"
+    ],
+    "complete_rule": "Every relevant branch field has sourced content or an explicit applicable/not-applicable/unknown judgment. A registered key gap is not complete coverage; proxy acceptance cannot create evidence eligibility.",
+    "deduplication": "Same DOI/PMID/original work or canonical platform content ID counts once; mirrors/translations/reposts share original identity. Across languages and categories do not recount. Cross-run reuse cites previous verification and records reuse separately from new reads."
+  },
+  "accounting": {
+    "s1_categories": {
+      "human_original": "原始人体研究",
+      "reviews_guidance": "系统综述及专业指南",
+      "mechanism": "机制研究（须标明外推限制）",
+      "youtube": "YouTube",
+      "instagram": "Instagram"
+    },
+    "query_rule": "Each issued search belongs to exactly one category. Different language, market, keywords, index or personnel variants all consume that category limit; failed issued queries consume an attempt. Exact resubmission is not an effective variant and is not permitted as free retry.",
+    "read_rule": "Scientific and platform observations share the 24 qualified-deep-read total per run. No separate/free platform or language pool. Original identity deduplicates across categories; failed/abstract-only/index-lead reads are recorded as attempts, not qualified full reads.",
+    "qualified_read": "Original page or trustworthy original record actually accessed with publisher/author, time, applicability and exact locator. Claims cannot exceed retrieved content. Abstract-only is not full-method verification.",
+    "s2_rule": "At most 2 stable typed targets with an explicit blocking gap, each at most 3 issued query variants and 6 newly qualified reads; no full S1 rescan and no transfer of unused category/target budget.",
+    "ledger_fields": [
+      "run_id",
+      "policy_revision",
+      "policy_hash",
+      "level",
+      "category_or_target_id",
+      "query_id",
+      "query_text",
+      "issued_at",
+      "route",
+      "hits",
+      "qualified_read_ids",
+      "duplicate_original_ids",
+      "new_claim_ids",
+      "new_conflicts",
+      "consumption",
+      "access_result",
+      "stop_reason"
+    ],
+    "budget_exhaustion": "Any applicable query/read/target limit blocks the next exceeding operation. Other unaffected categories may continue within their own limits. Access-blocked route stops immediately."
+  },
+  "s0_required": [
+    "task_category",
+    "run.id",
+    "run.mode",
+    "run.topic",
+    "run.objective",
+    "run.core_questions",
+    "audience",
+    "science",
+    "interest",
+    "run.exclude",
+    "coverage",
+    "evidence",
+    "accounting",
+    "budget_per_run",
+    "access",
+    "stop",
+    "policy_binding"
+  ],
+  "policy_binding": {
+    "hash_algorithm": "sha256",
+    "canonicalization": "UTF-8 JSON, ensure_ascii=false, sorted keys, separators comma/colon; omit only content_hash at root",
+    "startup": "Before first theme query write a read-only audit snapshot from this exact config, include run_id, effective_at, revision, content_hash, and verify the hash. Research and all three stage freezes reference this bound policy.",
+    "snapshot_location": "02_工作区/Matt执行/{run_id}-policy-r2.json",
+    "mutability": "Audit snapshots are immutable input evidence, never another editable parameter source. A future config change requires a new run revision and explicit migration; existing runs keep their original snapshot."
+  },
+  "field_metadata": {
+    "resolution": "Each pointer in units_by_pointer resolves its value at the identical JSON pointer. Metadata = defaults + unit from this map + overrides_by_pointer[pointer]. Every config leaf outside field_metadata and content_hash is covered. No duplicate editable values.",
+    "defaults": {
+      "status": "主控代理决定",
+      "scope": "SK-BEH-001 and SK-RES-001 only",
+      "source_layer": "task_profile",
+      "rule_ref": "04_搜索分级与停止规则.md and 09_共享搜索协议与配置继承.md; spec SK-MATT-20260925-r2",
+      "version": "SK-MATT-20260925-r2",
+      "override": "task-local stricter/explicit resolution; public hard gates unchanged"
+    },
+    "units_by_pointer": {
+      "text_or_enum": [
+        "/revision",
+        "/rules_version",
+        "/decision_actor",
+        "/authorization",
+        "/audience/age",
+        "/audience/setting",
+        "/audience/markets_priority/0",
+        "/audience/markets_priority/1",
+        "/audience/markets_priority/2",
+        "/audience/markets_priority/3",
+        "/audience/markets_priority/4",
+        "/audience/markets_priority/5",
+        "/audience/numerical_weights",
+        "/science/geography",
+        "/science/languages",
+        "/science/time_windows/0",
+        "/science/time_windows/1",
+        "/science/time_windows/2",
+        "/science/time_windows/3",
+        "/science/time_windows/4",
+        "/science/source_categories/0",
+        "/science/source_categories/1",
+        "/science/source_categories/2",
+        "/interest/platforms/0",
+        "/interest/platforms/1",
+        "/interest/languages/0",
+        "/interest/languages/1",
+        "/interest/languages/2",
+        "/interest/primary_window",
+        "/interest/baseline_window",
+        "/interest/metrics",
+        "/access/mode",
+        "/access/knowledge_base",
+        "/stop/budget_exhausted",
+        "/stop/access_blocked",
+        "/stop/saturation",
+        "/stop/candidate_gate",
+        "/stop/unresolved_target",
+        "/runs/0/id",
+        "/runs/0/mode",
+        "/runs/0/topic",
+        "/runs/0/objective",
+        "/runs/0/core_questions/0",
+        "/runs/0/core_questions/1",
+        "/runs/0/core_questions/2",
+        "/runs/0/exclude/0",
+        "/runs/0/exclude/1",
+        "/runs/0/exclude/2",
+        "/runs/0/exclude/3",
+        "/runs/0/exclude/4",
+        "/runs/0/product_role",
+        "/runs/1/id",
+        "/runs/1/mode",
+        "/runs/1/topic",
+        "/runs/1/objective",
+        "/runs/1/core_questions/0",
+        "/runs/1/core_questions/1",
+        "/runs/1/core_questions/2",
+        "/runs/1/exclude/0",
+        "/runs/1/exclude/1",
+        "/runs/1/exclude/2",
+        "/runs/1/exclude/3",
+        "/runs/1/product_role",
+        "/effective_at",
+        "/task_category",
+        "/evidence/paper/scoring",
+        "/evidence/paper/fatal_flaw_policy",
+        "/evidence/paper/china_ecosystem_without_verified_independent_comparable_replication_maximum",
+        "/evidence/paper/replication_checks/0",
+        "/evidence/paper/replication_checks/1",
+        "/evidence/paper/replication_checks/2",
+        "/evidence/paper/replication_checks/3",
+        "/evidence/paper/replication_checks/4",
+        "/evidence/paper/replication_checks/5",
+        "/evidence/paper/replication_checks/6",
+        "/evidence/paper/replication_checks/7",
+        "/evidence/guidance/assessment_axes/0",
+        "/evidence/guidance/assessment_axes/1",
+        "/evidence/guidance/assessment_axes/2",
+        "/evidence/guidance/assessment_axes/3",
+        "/evidence/mechanism",
+        "/evidence/patent",
+        "/evidence/candidate_science",
+        "/evidence/candidate_interest",
+        "/evidence/candidate_matrix/strong+high_or_medium",
+        "/evidence/candidate_matrix/strong+low",
+        "/evidence/candidate_matrix/strong+unknown",
+        "/evidence/candidate_matrix/weak+high",
+        "/evidence/candidate_matrix/weak+low_or_unknown",
+        "/coverage/required_scientific_categories/0",
+        "/coverage/required_scientific_categories/1",
+        "/coverage/required_scientific_categories/2",
+        "/coverage/required_interest_platforms/0",
+        "/coverage/required_interest_platforms/1",
+        "/coverage/publication_and_index_ecosystems/0",
+        "/coverage/publication_and_index_ecosystems/1",
+        "/coverage/publication_and_index_ecosystems/2",
+        "/coverage/ecosystem_rule",
+        "/coverage/time_rule",
+        "/coverage/branch_fields/0",
+        "/coverage/branch_fields/1",
+        "/coverage/branch_fields/2",
+        "/coverage/branch_fields/3",
+        "/coverage/branch_fields/4",
+        "/coverage/branch_fields/5",
+        "/coverage/branch_fields/6",
+        "/coverage/branch_fields/7",
+        "/coverage/branch_fields/8",
+        "/coverage/branch_fields/9",
+        "/coverage/branch_fields/10",
+        "/coverage/branch_fields/11",
+        "/coverage/branch_fields/12",
+        "/coverage/branch_fields/13",
+        "/coverage/branch_fields/14",
+        "/coverage/branch_fields/15",
+        "/coverage/branch_fields/16",
+        "/coverage/branch_fields/17",
+        "/coverage/branch_fields/18",
+        "/coverage/complete_rule",
+        "/coverage/deduplication",
+        "/accounting/s1_categories/human_original",
+        "/accounting/s1_categories/reviews_guidance",
+        "/accounting/s1_categories/mechanism",
+        "/accounting/s1_categories/youtube",
+        "/accounting/s1_categories/instagram",
+        "/accounting/query_rule",
+        "/accounting/read_rule",
+        "/accounting/qualified_read",
+        "/accounting/s2_rule",
+        "/accounting/ledger_fields/0",
+        "/accounting/ledger_fields/1",
+        "/accounting/ledger_fields/2",
+        "/accounting/ledger_fields/3",
+        "/accounting/ledger_fields/4",
+        "/accounting/ledger_fields/5",
+        "/accounting/ledger_fields/6",
+        "/accounting/ledger_fields/7",
+        "/accounting/ledger_fields/8",
+        "/accounting/ledger_fields/9",
+        "/accounting/ledger_fields/10",
+        "/accounting/ledger_fields/11",
+        "/accounting/ledger_fields/12",
+        "/accounting/ledger_fields/13",
+        "/accounting/ledger_fields/14",
+        "/accounting/ledger_fields/15",
+        "/accounting/ledger_fields/16",
+        "/accounting/budget_exhaustion",
+        "/s0_required/0",
+        "/s0_required/1",
+        "/s0_required/2",
+        "/s0_required/3",
+        "/s0_required/4",
+        "/s0_required/5",
+        "/s0_required/6",
+        "/s0_required/7",
+        "/s0_required/8",
+        "/s0_required/9",
+        "/s0_required/10",
+        "/s0_required/11",
+        "/s0_required/12",
+        "/s0_required/13",
+        "/s0_required/14",
+        "/s0_required/15",
+        "/s0_required/16",
+        "/policy_binding/hash_algorithm",
+        "/policy_binding/canonicalization",
+        "/policy_binding/startup",
+        "/policy_binding/snapshot_location",
+        "/policy_binding/mutability",
+        "/bounded_supplement/id",
+        "/bounded_supplement/status",
+        "/bounded_supplement/phase",
+        "/bounded_supplement/parent_policy_revision",
+        "/bounded_supplement/parent_policy_hash",
+        "/bounded_supplement/authorization_ref",
+        "/bounded_supplement/scope_ref",
+        "/bounded_supplement/migration",
+        "/bounded_supplement/A/purpose",
+        "/bounded_supplement/B/parent_run_id",
+        "/bounded_supplement/B/target_id",
+        "/bounded_supplement/B/doi",
+        "/bounded_supplement/B/routes/0",
+        "/bounded_supplement/B/routes/1",
+        "/bounded_supplement/B/stop",
+        "/bounded_supplement/C/parent_run_id",
+        "/bounded_supplement/C/category",
+        "/bounded_supplement/C/target_id",
+        "/bounded_supplement/C/question",
+        "/bounded_supplement/C/stop",
+        "/bounded_supplement/D/status",
+        "/bounded_supplement/research_admission"
+      ],
+      "count": [
+        "/access/paid_budget",
+        "/budget_per_run/s1_query_variants_per_source_category",
+        "/budget_per_run/hits_per_query",
+        "/budget_per_run/s1_qualified_deep_reads_total",
+        "/budget_per_run/s2_max_targets",
+        "/budget_per_run/s2_query_variants_per_target",
+        "/budget_per_run/s2_deep_reads_per_target",
+        "/budget_per_run/s3_allowance",
+        "/bounded_supplement/A/external_queries",
+        "/bounded_supplement/A/external_accesses",
+        "/bounded_supplement/A/new_qualified_reads",
+        "/bounded_supplement/B/queries",
+        "/bounded_supplement/B/original_accesses_max",
+        "/bounded_supplement/B/new_qualified_reads",
+        "/bounded_supplement/C/query_variants_max",
+        "/bounded_supplement/C/hits_per_query",
+        "/bounded_supplement/C/new_qualified_reads_max",
+        "/bounded_supplement/C/fulltext_requests_max"
+      ],
+      "boolean": [
+        "/access/login_allowed",
+        "/access/captcha_bypass_allowed",
+        "/evidence/paper/fatal_flaw_precedence",
+        "/evidence/guidance/paper_scoring_applicable"
+      ],
+      "points_out_of_100": [
+        "/evidence/paper/thresholds/high_min",
+        "/evidence/paper/thresholds/medium_min",
+        "/evidence/paper/thresholds/maximum",
+        "/evidence/paper/weights/method",
+        "/evidence/paper/weights/independence",
+        "/evidence/paper/weights/source_quality",
+        "/evidence/paper/weights/author_fit"
+      ]
+    },
+    "overrides_by_pointer": {
+      "/science/time_windows/0": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/science/time_windows/1": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/science/time_windows/2": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/science/time_windows/3": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/science/time_windows/4": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/thresholds/high_min": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/thresholds/medium_min": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/thresholds/maximum": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/weights/method": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/weights/independence": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/weights/source_quality": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/weights/author_fit": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/scoring": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/paper/fatal_flaw_precedence": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/fatal_flaw_policy": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/china_ecosystem_without_verified_independent_comparable_replication_maximum": {
+        "status": "已确认",
+        "source_layer": "public_rule",
+        "rule_ref": "05_证据评估与来源规范.md §3",
+        "version": "cosmetics-business-rules-v1.3",
+        "override": false
+      },
+      "/evidence/paper/replication_checks/0": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/paper/replication_checks/1": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/paper/replication_checks/2": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/paper/replication_checks/3": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/paper/replication_checks/4": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/paper/replication_checks/5": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/paper/replication_checks/6": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/paper/replication_checks/7": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/guidance/assessment_axes/0": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/guidance/assessment_axes/1": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/guidance/assessment_axes/2": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/guidance/assessment_axes/3": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/guidance/paper_scoring_applicable": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/mechanism": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/patent": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/candidate_science": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/candidate_interest": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/candidate_matrix/strong+high_or_medium": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/candidate_matrix/strong+low": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/candidate_matrix/strong+unknown": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/candidate_matrix/weak+high": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/evidence/candidate_matrix/weak+low_or_unknown": {
+        "rule_ref": "05_证据评估与来源规范.md §3"
+      },
+      "/revision": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/authorization": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/effective_at": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/id": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/status": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/phase": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/parent_policy_revision": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/parent_policy_hash": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/authorization_ref": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/scope_ref": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/migration": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/A/external_queries": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/A/external_accesses": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/A/new_qualified_reads": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/A/purpose": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/parent_run_id": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/target_id": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/doi": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/queries": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/original_accesses_max": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/new_qualified_reads": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/routes/0": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/routes/1": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/B/stop": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/parent_run_id": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/category": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/target_id": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/query_variants_max": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/hits_per_query": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/new_qualified_reads_max": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/fulltext_requests_max": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/question": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/C/stop": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/D/status": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      },
+      "/bounded_supplement/research_admission": {
+        "status": "主控代理决定",
+        "source_layer": "task_profile",
+        "scope": "SK-SUPPLEMENT-20260926-r2 only",
+        "rule_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权；定向补证记录.md 第9节",
+        "version": "SK-MATT-20260926-r3.1",
+        "override": "执行参数取r3只读快照；r3.1仅补元数据并标记停止，不追溯改变额度或请求绑定"
+      }
+    }
+  },
+  "bounded_supplement": {
+    "id": "SK-SUPPLEMENT-20260926-r2",
+    "status": "closed_with_gaps_and_execution_deviation",
+    "phase": "post_baseline_supplement",
+    "parent_policy_revision": "SK-MATT-20260925-r2",
+    "parent_policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+    "authorization_ref": "PROJECT.md 当前交付周期：本次最小补证继续授权",
+    "scope_ref": "定向补证记录.md 第5节 A/B/C（D未激活）",
+    "migration": "只绑定本次独立增量；RES closedloop-r1、BEH closedloop-r2及历史冻结继续绑定原r2快照。原S1/S2不重置、不重新开放，过去人体查询超限2保留。",
+    "A": {
+      "external_queries": 0,
+      "external_accesses": 0,
+      "new_qualified_reads": 0,
+      "purpose": "RES-I01已有授权/阶段核对及现有论文专业审阅准备"
+    },
+    "B": {
+      "parent_run_id": "SK-RES-001",
+      "target_id": "RES-S03-method-disclosure",
+      "doi": "10.1038/s41598-022-09231-8",
+      "queries": 0,
+      "original_accesses_max": 2,
+      "new_qualified_reads": 0,
+      "routes": [
+        "已知原刊页面1次",
+        "该页实际链接的补充附件至多1次"
+      ],
+      "stop": "访问受限或附件缺失即停止该路线；不代挂既有RES-T02"
+    },
+    "C": {
+      "parent_run_id": "SK-BEH-001",
+      "category": "human_original",
+      "target_id": "BEH-sleep-recovery-followup",
+      "query_variants_max": 2,
+      "hits_per_query": 10,
+      "new_qualified_reads_max": 2,
+      "fulltext_requests_max": 2,
+      "question": "睡眠限制之后，是否有人体研究直接测量恢复过程及持续影响？",
+      "stop": "可作有限判断、两查询用尽或访问受限即停止；PMID31692145和RES-S06不重试。查询不加免费全文筛选，不转移机制余量、不重开旧S2"
+    },
+    "D": {
+      "status": "not_activated"
+    },
+    "research_admission": "不改变任何业务准入、专业审核与访问门禁"
+  },
+  "content_hash": "09542ad1d9f23c445ee95f42e6929f2fa6f2354546ca1778085da841fb09ff10"
+}

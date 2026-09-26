@@ -1,0 +1,47 @@
+{
+  "candidate": "UI-r1",
+  "checked_at": "2026-09-25T11:42:58.577908+02:00",
+  "baseline_files_checked": 14,
+  "original_files_changed": [],
+  "validation": "targeted browser interaction only",
+  "passed": [
+    "six navigation views",
+    "sources pagination 5+2, search, empty state",
+    "source detail return preserves pagination",
+    "claim to source nested detail and return",
+    "evidence and branch tabs",
+    "review required reason and save-next",
+    "two task draft isolation and retained local draft",
+    "gap selection cap 2, preview, pagination 5+3 and cross-page selection",
+    "gap category filtering",
+    "version pagination",
+    "new-task required fields and draft preview",
+    "keyboard tab navigation",
+    "all six views at 390x844: no document horizontal overflow, menu closes",
+    "desktop 1440x1000 overview and review inspected",
+    "result mode render checks",
+    "zero console errors after favicon fix; zero external resource requests"
+  ],
+  "notes": [
+    "Initial assertions used the wrong accessible name and wrong substring; corrected check inputs and resumed from failed points. App behavior was not changed for these assertion errors.",
+    "Narrow screenshot first captured sidebar transition; recaptured after animations settled, no layout fix required.",
+    "Added inline favicon to remove local favicon.ico 404.",
+    "Prototype contains read-only research data and in-memory simulation only; user acceptance and production integration remain pending."
+  ],
+  "screenshots": [
+    "ui-r1-desktop-overview.png",
+    "ui-r1-desktop-review.png",
+    "ui-r1-narrow-review.png",
+    "ui-r1-desktop-directions.png"
+  ],
+  "tool_fixed_output_directory": "/Users/chengyu/12_打工人程宇/99_临时/浏览器自动输出/主工作区",
+  "tool_generated_files": [
+    "page-2026-09-25T09-37-46-853Z.yml",
+    "console-2026-09-25T09-37-46-782Z.log",
+    "page-2026-09-25T09-38-40-076Z.yml",
+    "ui-r1-desktop-overview.png",
+    "ui-r1-desktop-review.png",
+    "ui-r1-narrow-review.png",
+    "ui-r1-desktop-directions.png"
+  ]
+}

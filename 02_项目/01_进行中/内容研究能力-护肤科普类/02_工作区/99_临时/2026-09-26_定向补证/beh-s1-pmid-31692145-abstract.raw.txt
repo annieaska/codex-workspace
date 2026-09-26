@@ -1,0 +1,62 @@
+{
+  content: [
+    {
+      type: 'text',
+      text: '## PubMed Articles\n' +
+        '**Articles Returned:** 1\n' +
+        '\n' +
+        '### A study of skin characteristics with long-term sleep restriction in Korean women in their 40s.\n' +
+        '\n' +
+        '**Authors (9):**\n' +
+        '- Sue Im Jang (SI) [aff 0,1,2] · ORCID 0000-0002-0907-0238\n' +
+        '- Myeongryeol Lee (M) [aff 0,1,2] · ORCID 0000-0001-8809-1434\n' +
+        '- Jiyeon Han (J) [aff 0]\n' +
+        '- Jeonghwan Kim (J) [aff 0]\n' +
+        '- A Reum Kim (AR) [aff 3]\n' +
+        '- Ji Soo An (JS) [aff 3]\n' +
+        '- Jin O Park (JO) [aff 3]\n' +
+        '- Beom Joon Kim (BJ) [aff 1,2] · ORCID 0000-0003-2320-7621\n' +
+        '- Eunjoo Kim (E) [aff 0] · ORCID 0000-0002-3032-5303\n' +
+        '\n' +
+        '**Affiliations:**\n' +
+        '- [0] Amorepacific Corporation/R&D center, Gyeonggi-do, Korea.\n' +
+        '- [1] Department of Medicine, Graduate School, Chung-Ang University, Seoul, Korea.\n' +
+        '- [2] Department of Dermatology, Chung-Ang University college of Medicine, Seoul, Korea.\n' +
+        '- [3] P&K Skin Research Center, Seoul, Korea.\n' +
+        '\n' +
+        '**Journal:** Skin research and technology : official journal of International Society for Bioengineering and the Skin (ISBS) [and] International Society for Digital Imaging of Skin (ISDIS) [and] International Society for Skin Imaging (ISSI), (Skin Res Technol), 2020 Mar, **26**(2), 193-199, eISSN 1600-0846\n' +
+        '**Record Type:** journal-article\n' +
+        '**Type:** Journal Article\n' +
+        '**PMID:** 31692145\n' +
+        '**DOI:** 10.1111/srt.12797\n' +
+        '**PubMed:** https://pubmed.ncbi.nlm.nih.gov/31692145/\n' +
+        '**Article Dates:** Electronic 2019-11-6\n' +
+        '\n' +
+        '#### Abstract\n' +
+        'BACKGROUND: Previous studies have demonstrated increased pore size and darkening skin color with total sleep deprivation. There are many studies of skin characteristics with short-term sleep restriction, but there are few studies on skin characteristics when sleep is restricted more than three consecutive days. This study evaluated skin changes with sleep limited to 4 hours per night for six nights.\n' +
+        '\n' +
+        "MATERIALS AND METHODS: The study included 32 Korean women in their 40s. Skin hydration, desquamation, barrier recovery, texture, gloss, transparency, elasticity, crow's feet, frown lines, and color were measured. Individual sleep time was monitored by smartwatches. Subjects slept 8 hours per night for six nights in week one and 4 hours per night for six nights in week two.\n" +
+        '\n' +
+        'RESULTS: Skin hydration was significantly reduced after 1 day of sleep deprivation, and it continued to decrease. Skin gloss, desquamation, transparency, elasticity, and wrinkles were significantly aggravated after 1 day of sleep deprivation. Skin texture was significantly aggravated on the fourth day of sleep restriction. Elasticity was most affected by reduced sleep, with a standardized coefficient of -.320, indicating a significant decrease over time as compared to other characteristics.\n' +
+        '\n' +
+        'CONCLUSION: Skin hydration was gradually decreased with sleep restriction. Skin texture did not change after only 1 day of sleep restriction. It is a new finding that elasticity decreases more than other skin characteristics with prolonged sleep restriction.\n' +
+        '\n' +
+        '**Keywords:** desquamation, elasticity, skin hydration, sleep deprivation, wrinkles\n' +
+        '\n' +
+        '#### MeSH Terms\n' +
+        '- Adult [D000328]\n' +
+        '- Elasticity [D004548] (physiology [Q000502])\n' +
+        '- Face [D005145] (major) (diagnostic imaging [Q000000981], pathology [Q000473] (major))\n' +
+        '- Female [D005260]\n' +
+        '- Humans [D006801]\n' +
+        '- Image Interpretation, Computer-Assisted [D007090]\n' +
+        '- Middle Aged [D008875]\n' +
+        '- Photography [D010781]\n' +
+        '- Republic of Korea [D056910]\n' +
+        '- Skin [D012867] (major) (diagnostic imaging [Q000000981], pathology [Q000473] (major))\n' +
+        '- Skin Aging [D015595] (physiology [Q000502])\n' +
+        '- Sleep Deprivation [D012892] (major) (diagnostic imaging [Q000000981], pathology [Q000473] (major))'
+    }
+  ],
+  structuredContent: { articles: [ [Object] ], totalReturned: 1 }
+}

@@ -1,0 +1,39 @@
+{
+  "completed_at": "2026-09-26T21:23:37.739Z",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "## Full-Text Articles\n**Articles Returned:** 0\n\n**Unavailable (1):**\n- [pmid] 11511309 — fetch-failed\n  chain: pmc:not-attempted (PMID has no PMC counterpart) → europepmc:no-fulltext (EPMC source MED has no PMC counterpart) → unpaywall:fetch-failed (Unpaywall content fetch failed: Fetch failed for <upstream> Status: 403)\n\n> No full-text articles returned. Articles must be open-access and indexed in PMC, Europe PMC, or recoverable via Unpaywall to retrieve full text. For metadata and abstracts only, use `pubmed_fetch_articles`."
+      }
+    ],
+    "structuredContent": {
+      "articles": [],
+      "totalReturned": 0,
+      "unavailable": [
+        {
+          "id": "11511309",
+          "idType": "pmid",
+          "reason": "fetch-failed",
+          "triedTiers": [
+            {
+              "tier": "pmc",
+              "outcome": "not-attempted",
+              "detail": "PMID has no PMC counterpart"
+            },
+            {
+              "tier": "europepmc",
+              "outcome": "no-fulltext",
+              "detail": "EPMC source MED has no PMC counterpart"
+            },
+            {
+              "tier": "unpaywall",
+              "outcome": "fetch-failed",
+              "detail": "Unpaywall content fetch failed: Fetch failed for http://www.jidonline.org/article/S0022202X15413296/pdf. Status: 403"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

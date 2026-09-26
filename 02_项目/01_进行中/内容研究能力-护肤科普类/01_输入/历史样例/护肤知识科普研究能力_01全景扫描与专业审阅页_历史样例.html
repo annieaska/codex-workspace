@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8e0d4">
+  <link rel="icon" href="data:,">
+  <title>护肤知识科普研究｜内容方向确认</title>
+  <style>
+    :root{
+      --bg:#e8e0d4;--panel:#f4ede3;--panel-2:#e3d8ca;--ink:#24343a;--muted:#627178;
+      --line:rgba(91,74,57,.16);--brand:#2f7d78;--brand-dark:#245e5a;--brand-soft:#d5e7e1;
+      --blue:#5277a1;--blue-soft:#dce6ee;--amber:#95651d;--amber-soft:#f0dfbe;
+      --red:#a6534b;--red-soft:#f0d5d0;--green:#39765e;--green-soft:#dbe8df;
+      --shadow:8px 8px 18px rgba(139,120,99,.21),-8px -8px 18px rgba(255,255,255,.66),inset 1px 1px 0 rgba(255,255,255,.62);
+      --shadow-soft:4px 4px 9px rgba(139,120,99,.16),-4px -4px 9px rgba(255,255,255,.52);
+      --shadow-inset:inset 4px 4px 9px rgba(139,120,99,.17),inset -4px -4px 9px rgba(255,255,255,.6);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}html,body{height:100%;margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+    button,input,textarea{font:inherit}button{color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid rgba(47,125,120,.58);outline-offset:2px}
+    .skip-link{position:fixed;left:14px;top:10px;z-index:20;transform:translateY(-150%);padding:9px 12px;border-radius:10px;background:#fff;color:var(--brand-dark);font-weight:700}.skip-link:focus{transform:none}
+    .app{height:100dvh;display:grid;grid-template-columns:228px minmax(0,1fr);overflow:hidden}
+    aside{background:#294845;color:#eef7f5;padding:21px 13px 16px;display:flex;flex-direction:column;min-height:0;box-shadow:8px 0 22px rgba(63,55,46,.18);z-index:3}
+    .brand{padding:0 11px 20px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:14px}.brand small{display:block;color:#aed6d0;font-size:10px;font-weight:800;letter-spacing:.13em;margin-bottom:8px}.brand strong{display:block;font-size:19px;line-height:1.35}.brand span{display:block;color:#b7cac7;font-size:12px;margin-top:7px}
+    nav{display:grid;gap:7px}.nav-btn{border:1px solid transparent;background:transparent;color:#bfd0cd;border-radius:13px;text-align:left;padding:11px 12px;cursor:pointer;display:flex;align-items:center;gap:10px;font-size:14px}.nav-btn.active{background:#dfece8;color:#275f5c;font-weight:700;box-shadow:var(--shadow-inset)}.nav-ico{width:20px;text-align:center}.aside-foot{margin-top:auto;border-top:1px solid rgba(255,255,255,.14);padding:15px 10px 0;color:#b7cac7;font-size:11px;line-height:1.7}.aside-foot b{color:#fff}
+    main{min-width:0;min-height:0;display:grid;grid-template-rows:58px minmax(0,1fr)}.topbar{background:#e8e0d4;border-bottom:1px solid rgba(99,82,65,.1);display:flex;align-items:center;justify-content:space-between;padding:0 25px;box-shadow:0 8px 18px rgba(134,116,96,.13),inset 0 -1px 0 rgba(255,255,255,.58)}.crumb{font-size:13px;color:var(--muted)}.crumb b{color:var(--brand-dark)}.top-actions{display:flex;align-items:center;gap:9px}.updated{font-size:11px;color:var(--muted)}.badge{padding:6px 10px;border:1px solid rgba(255,255,255,.58);border-radius:999px;background:var(--amber-soft);color:#6e4916;font-size:11px;box-shadow:var(--shadow-soft)}
+    .workspace{min-height:0;position:relative}.view{display:none;height:100%;overflow:auto;padding:20px 25px 26px}.view.active{display:block}.view-inner{max-width:1540px;margin:0 auto}.view-inner.fill{height:100%;min-height:0;display:flex;flex-direction:column}
+    .page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:15px}.eyebrow{color:var(--brand);font-size:10px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.page-head h1{font-size:clamp(24px,2vw,30px);line-height:1.2;margin:5px 0 0;font-weight:650;letter-spacing:-.025em}.page-head p{margin:6px 0 0;color:var(--muted);font-size:13px;line-height:1.6}.head-action,.tags,.filters,.actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+    .btn,.filter,.review-label{border:1px solid rgba(255,255,255,.62);border-radius:999px;background:#e6ddd1;color:#35454c;box-shadow:var(--shadow-soft);padding:9px 12px;font-size:12px;font-weight:600;text-decoration:none;cursor:pointer}.btn.primary{background:var(--brand);border-color:#4f918d;color:#fff}.btn.small{padding:7px 10px;font-size:11px}.btn:disabled{opacity:.45;cursor:not-allowed}.filter.active,.review-label.active{background:var(--brand-soft);color:var(--brand-dark);box-shadow:var(--shadow-inset)}
+    .card,.kpi,.direction-item,.material-item,.mini-card,.solution-card,.peer-card{border:1px solid rgba(255,255,255,.58);background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);min-width:0}
+    .stage-purpose{display:grid;grid-template-columns:1.12fr repeat(3,1fr);gap:10px;padding:14px;margin-bottom:15px;background:#e3d8ca;border:1px solid rgba(255,255,255,.5);border-radius:20px;box-shadow:var(--shadow-inset)}.stage-purpose>div{padding:8px 10px;border-left:1px solid var(--line)}.stage-purpose>div:first-child{border-left:0}.stage-purpose small{display:block;color:var(--brand-dark);font-weight:800;margin-bottom:5px}.stage-purpose b{display:block;font-size:13px;line-height:1.45}.stage-purpose p{font-size:11px;color:var(--muted);line-height:1.55;margin:5px 0 0}
+    .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:15px}.kpi{min-height:124px;padding:17px 18px;text-align:left;position:relative;cursor:pointer;overflow:hidden}.kpi:nth-child(1){background:#d9e9e3}.kpi:nth-child(2){background:#dce5eb}.kpi:nth-child(3){background:#eadfcf}.kpi:nth-child(4){background:#e8d9d3}.kpi:after{content:"";position:absolute;inset:1px;border-radius:21px;border:1px solid rgba(255,255,255,.42);pointer-events:none}.kpi-title{font-size:16px;font-weight:700}.kpi-value{font:650 39px/1 ui-monospace,SFMono-Regular,Menlo,monospace;margin:10px 0 4px}.kpi-meta{color:#58686e;font-size:11px;line-height:1.5}.kpi-arrow{position:absolute;right:17px;top:17px;color:var(--brand-dark);font-size:18px}
+    .dashboard-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(320px,.72fr);gap:15px;min-height:390px}.card{overflow:hidden}.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:15px 17px 12px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.15)}.card-title{font-size:16px;font-weight:750}.card-sub{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5}.direction-map{padding:10px 16px}.map-row{display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:14px;align-items:center;padding:13px 2px;border-bottom:1px solid var(--line)}.map-row:last-child{border:0}.map-row b{font-size:13px}.map-row p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.5}.basis{display:flex;gap:5px;flex-wrap:wrap}.focus-list{padding:8px 15px}.focus-item{padding:12px 2px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:9px 1fr auto;gap:10px;align-items:start}.focus-item:last-child{border:0}.signal{width:9px;height:9px;border-radius:50%;background:var(--amber);margin-top:5px}.signal.red{background:var(--red)}.signal.green{background:var(--green)}.focus-item b{font-size:13px}.focus-item p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.5}.jump{border:0;background:transparent;color:var(--brand-dark);font-size:11px;font-weight:750;cursor:pointer}
+    .tag{display:inline-flex;align-items:center;padding:4px 7px;border:1px solid rgba(255,255,255,.48);border-radius:999px;background:#dfd5c8;color:#4f5f65;font-size:10px;font-weight:650;box-shadow:2px 2px 5px rgba(139,120,99,.1),-2px -2px 5px rgba(255,255,255,.36)}.tag.brand{background:var(--brand-soft);color:var(--brand-dark)}.tag.blue{background:var(--blue-soft);color:#3f6280}.tag.amber{background:var(--amber-soft);color:#754e14}.tag.red{background:var(--red-soft);color:#853f38}.tag.green{background:var(--green-soft);color:#35654e}
+    .split{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:15px;flex:1;min-height:0}.list-card,.detail-card{min-height:0;overflow:auto}.list-card{padding:10px}.direction-item,.material-item{width:100%;display:block;text-align:left;border-radius:16px;box-shadow:none;margin-bottom:8px;padding:13px;cursor:pointer;background:#e9e0d5}.direction-item.active,.material-item.active{background:var(--brand-soft);box-shadow:var(--shadow-inset);border-color:rgba(47,125,120,.22)}.item-top{display:flex;justify-content:space-between;gap:8px;align-items:start}.item-title{display:block;font-size:14px;font-weight:700;line-height:1.45}.item-copy{display:block;font-size:12px;color:var(--muted);line-height:1.55;margin:6px 0 8px}.detail-pad{padding:19px 19px 4px}.recommend{border:1px solid rgba(47,125,120,.2);border-radius:16px;background:var(--brand-soft);box-shadow:var(--shadow-inset);padding:12px 14px;margin-bottom:14px}.recommend b{font-size:13px}.recommend p{margin:4px 0 0;color:#526966;font-size:12px;line-height:1.55}.detail-title{display:flex;justify-content:space-between;gap:16px;align-items:start}.detail-title h2{font-size:24px;line-height:1.35;margin:0 0 7px}.detail-title p{font-size:13px;color:var(--muted);margin:0;line-height:1.6}.fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:15px 0}.fact{padding:12px;border-radius:15px;background:#e4dacc;box-shadow:var(--shadow-inset)}.fact b{display:block;font-size:19px}.fact span{font-size:11px;color:var(--muted)}
+    .detail-tabs{display:flex;gap:17px;border-bottom:1px solid var(--line);overflow:auto}.detail-tab{flex:0 0 auto;border:0;border-bottom:3px solid transparent;background:none;padding:9px 1px;color:var(--muted);font-size:12px;cursor:pointer}.detail-tab.active{color:var(--brand-dark);border-color:var(--brand);font-weight:800}.detail-panel{display:none;padding:14px 0 18px}.detail-panel.active{display:block}.logic-chain{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.chain-node{position:relative;padding:13px;border-radius:15px;background:#e4dacc;box-shadow:var(--shadow-inset);min-height:100px}.chain-node:not(:last-child):after{content:"→";position:absolute;right:-9px;top:42%;z-index:2;color:var(--brand-dark);font-weight:800}.chain-node small{display:block;color:var(--brand);font-weight:800;margin-bottom:6px}.chain-node b{font-size:12px;line-height:1.45}.chain-node p{font-size:10px;color:var(--muted);line-height:1.45;margin:5px 0 0}.section-title{font-size:14px;margin:17px 0 9px}.origin-grid,.coverage-grid,.evidence-list,.solution-grid,.peer-grid,.notes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.origin-card,.coverage-box,.evidence-card,.evidence-box,.note-card{padding:14px;border:1px solid rgba(255,255,255,.52);border-radius:16px;background:#eee6dc;box-shadow:var(--shadow-soft)}.origin-card small{display:block;color:var(--brand);font-weight:800;margin-bottom:6px}.origin-card b,.coverage-box h3,.evidence-box h3{display:block;font-size:13px;margin:0 0 6px}.origin-card p,.coverage-box p,.coverage-box li,.evidence-box p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}.coverage-box ul{margin:0;padding-left:18px}.coverage-box.gap{background:var(--red-soft)}
+    .evidence-card{display:flex;flex-direction:column;min-height:220px}.evidence-card h3{font-size:15px;line-height:1.45;margin:9px 0 5px}.evidence-card .subtitle{font-size:11px;color:var(--muted);line-height:1.5}.evidence-card .why{font-size:12px;line-height:1.6;color:var(--muted);padding:10px 0;margin:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.evidence-card .actions{margin-top:auto}.confirm-strip{position:sticky;bottom:0;z-index:2;background:rgba(228,218,204,.97);border-top:1px solid var(--line);padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 15px rgba(135,117,97,.12)}.confirm-strip label{font-size:12px;color:var(--muted)}
+    .source-box{margin:15px 0;padding:14px;border-radius:17px;background:#e4dacc;box-shadow:var(--shadow-inset);display:grid;gap:7px}.source-row{display:grid;grid-template-columns:94px minmax(0,1fr);gap:9px;font-size:11px;line-height:1.55}.source-row b{color:#56666c}.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.review-box{margin-top:12px;padding:14px;border-radius:17px;background:#e6ddd1;box-shadow:var(--shadow-inset)}.review-box h3{margin:0 0 9px;font-size:12px}.review-label{padding:7px 9px;font-size:10px}
+    .research-contract{padding:15px 16px;margin-bottom:13px;border:1px solid rgba(255,255,255,.52);border-radius:19px;background:#e3d8ca;box-shadow:var(--shadow-inset)}.research-formula{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:12px}.research-formula b{font-size:12px;margin-right:4px}.formula-node{padding:7px 9px;border-radius:11px;background:#f0e9df;font-size:11px;font-weight:700;box-shadow:var(--shadow-soft)}.formula-arrow{color:var(--brand-dark);font-weight:900}.constraint-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.constraint{padding:10px 11px;border-left:3px solid var(--brand);border-radius:10px;background:rgba(244,237,227,.72)}.constraint small{display:block;color:var(--brand-dark);font-weight:800;margin-bottom:4px}.constraint p{margin:0;color:var(--muted);font-size:11px;line-height:1.5}.contract-note{margin:10px 0 0;color:#6b4a19;font-size:11px;line-height:1.55}
+    .inspiration{margin:0 0 13px;border:1px solid rgba(255,255,255,.55);border-radius:19px;background:var(--panel);box-shadow:var(--shadow);overflow:hidden}.inspiration-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:13px 16px 10px;border-bottom:1px solid var(--line)}.inspiration-head h2{font-size:14px;margin:0 0 4px}.inspiration-head p{font-size:11px;color:var(--muted);line-height:1.5;margin:0}.idea-grid{display:grid;grid-template-columns:repeat(5,minmax(180px,1fr));gap:8px;padding:10px;overflow:auto}.idea-card{display:flex;flex-direction:column;min-height:154px;padding:11px;border:1px solid rgba(255,255,255,.55);border-radius:14px;background:#eae1d6;box-shadow:var(--shadow-soft)}.idea-card h3{font-size:12px;line-height:1.5;margin:8px 0 5px}.idea-card p{margin:0 0 9px;color:var(--muted);font-size:10px;line-height:1.5}.idea-card .actions{margin-top:auto}.idea-card.saved{background:var(--brand-soft);border-color:rgba(47,125,120,.25)}.material-split{height:650px;flex:none}.material-summary{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.material-summary b{font-size:11px}
+    .toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.search{width:250px;border:1px solid rgba(255,255,255,.6);border-radius:13px;background:#eee6dc;box-shadow:var(--shadow-inset);padding:9px 12px;color:var(--ink);font-size:12px;outline:none}
+    .boundary{padding:14px 16px;margin-bottom:14px;border-radius:17px;background:var(--amber-soft);color:#684713;font-size:12px;line-height:1.6;box-shadow:var(--shadow-inset)}.solution-card,.peer-card,.note-card{padding:17px}.solution-card h2,.peer-card h2,.note-card h2{font-size:16px;margin:8px 0}.solution-card p,.peer-card p,.note-card p,.note-card li{font-size:12px;color:var(--muted);line-height:1.65}.peer-card{display:flex;flex-direction:column}.peer-source{display:grid;grid-template-columns:78px minmax(0,1fr);gap:5px 8px;margin:11px 0;padding:11px;border-radius:13px;background:#e3d8ca;box-shadow:var(--shadow-inset);font-size:11px;line-height:1.45}.peer-source dt{font-weight:800;color:#56666c}.peer-source dd{margin:0;min-width:0}.peer-observation{padding:10px 0;margin:0 0 10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.peer-card .actions{margin-top:auto}.data-table{width:100%;border-collapse:collapse;font-size:12px}.data-table th{text-align:left;padding:10px 12px;background:#ded3c6;color:#58676d;position:sticky;top:0}.data-table td{padding:12px;border-top:1px solid var(--line);vertical-align:top;line-height:1.55}.confirm-layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:15px;min-height:580px}.queue-row{padding:16px 18px;border-bottom:1px solid var(--line)}.queue-row:last-child{border:0}.queue-row h3{font-size:14px;margin:0 0 5px}.queue-row p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}.confirm-side{padding:17px}.checklist{display:grid;gap:11px;margin:15px 0}.check{display:flex;gap:9px;align-items:flex-start;font-size:12px;line-height:1.5}.check input{accent-color:var(--brand);margin-top:3px}.snapshot{padding:13px;border-radius:15px;background:#e3d8ca;box-shadow:var(--shadow-inset);font-size:11px;color:var(--muted);line-height:1.6}.full{grid-column:1/-1}
+    .toast{position:fixed;right:22px;bottom:22px;z-index:10;background:#315b58;color:#fff;padding:11px 14px;border-radius:15px;box-shadow:var(--shadow);font-size:12px;transform:translateY(20px);opacity:0;pointer-events:none;transition:.2s}.toast.show{transform:none;opacity:1}
+    @media(hover:hover) and (pointer:fine){.nav-btn:hover,.btn:hover,.kpi:hover,.filter:hover,.direction-item:hover,.material-item:hover{transform:translateY(-1px);border-color:rgba(47,125,120,.34)}}
+    @media(max-width:1250px){.idea-grid{grid-template-columns:repeat(3,minmax(190px,1fr))}.constraint-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:1050px){.app{grid-template-columns:78px 1fr}.brand strong,.brand span,.brand small,.nav-btn span,.aside-foot{display:none}.nav-btn{justify-content:center}.stage-purpose{grid-template-columns:1fr 1fr}.stage-purpose>div{border-left:0}.kpis{grid-template-columns:1fr 1fr}.dashboard-grid{grid-template-columns:1fr}.split,.confirm-layout{grid-template-columns:1fr}.list-card{max-height:320px}.material-split{height:auto}.material-split .detail-card{min-height:540px}.logic-chain{grid-template-columns:1fr 1fr}.chain-node:after{display:none}}
+    @media(max-width:680px){.app{display:block;height:auto;overflow:visible}aside{display:none}main{display:block}.topbar{position:sticky;top:0;z-index:5}.top-actions .updated{display:none}.workspace,.view,.view-inner.fill{height:auto;min-height:0}.view{padding:15px;overflow:visible}.page-head{align-items:flex-start;flex-wrap:wrap}.page-head h1{font-size:24px}.head-action{width:100%}.head-action .btn{flex:1}.stage-purpose,.kpis,.logic-chain,.origin-grid,.coverage-grid,.evidence-list,.solution-grid,.peer-grid,.notes-grid,.fact-grid,.evidence-grid,.constraint-grid,.idea-grid{grid-template-columns:1fr}.split{display:block}.list-card{max-height:none;margin-bottom:14px}.detail-card,.material-split .detail-card{overflow:visible;min-height:0}.map-row{grid-template-columns:1fr}.confirm-strip{position:static;align-items:flex-start;flex-direction:column}.confirm-layout{min-height:0}.toolbar{align-items:stretch;flex-direction:column}.search{width:100%}.research-formula{align-items:flex-start}.formula-arrow{transform:rotate(90deg);margin:2px 4px}.inspiration-head{display:block}.idea-grid{overflow:visible}.idea-card{min-height:0}.full{grid-column:auto}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#workspace">跳到主要内容</a>
+<div class="app">
+  <aside>
+    <div class="brand"><small>SKINCARE KNOWLEDGE RESEARCH</small><strong>全景扫描与专业审阅</strong><span>第 01 页 · 静态样例</span></div>
+    <nav aria-label="主导航">
+      <button class="nav-btn active" data-view="overview"><i class="nav-ico">⌁</i><span>扫描看板</span></button>
+      <button class="nav-btn" data-view="directions"><i class="nav-ico">◇</i><span>候选方向</span></button>
+      <button class="nav-btn" data-view="materials"><i class="nav-ico">▦</i><span>全部资料</span></button>
+      <button class="nav-btn" data-view="solutions"><i class="nav-ico">▤</i><span>方案与产品</span></button>
+      <button class="nav-btn" data-view="peers"><i class="nav-ico">▶</i><span>同行内容</span></button>
+      <button class="nav-btn" data-view="confirm"><i class="nav-ico">✓</i><span>缺口与确认</span></button>
+      <button class="nav-btn" data-view="notes"><i class="nav-ico">?</i><span>说明</span></button>
+    </nav>
+    <div class="aside-foot"><b>本页只确认研究范围</b><br>演示数据 → 选择方向 → 冻结缺口 → 再进入真实检索</div>
+  </aside>
+
+  <main id="workspace">
+    <header class="topbar">
+      <div class="crumb">护肤知识科普研究 / 第一阶段 / <b id="crumbLabel">扫描看板</b></div>
+      <div class="top-actions"><span class="updated">母版：产品盘点内容方向确认页</span><span class="badge">全部为演示数据</span></div>
+    </header>
+    <div class="workspace">
+      <section class="view active" id="view-overview">
+        <div class="view-inner">
+          <div class="page-head"><div><div class="eyebrow">PRIMARY OUTPUT</div><h1>先确定“下一轮研究什么”</h1><p>第一阶段不是确认科学结论，也不是直接写稿；它只把全景扫描收敛为一个可审阅的研究范围。</p></div><div class="head-action"><button class="btn primary" data-view="directions">查看候选方向</button></div></div>
+          <div class="stage-purpose">
+            <div><small>第一阶段的目的</small><b>确定主题范围与材料缺口</b><p>你最终选择一个候选方向，系统据此进入真实定向检索。</p></div>
+            <div><small>模拟输入</small><b>主题目标、知识库边界、资料关系、同行缺口</b><p>本静态页只验证它们怎样共同产生方向，不代表已完成真实扫描。</p></div>
+            <div><small>本页输出</small><b>候选方向 + 生成依据 + 核心材料</b><p>方向是主线，材料、方案和同行内容都必须回到方向里解释作用。</p></div>
+            <div><small>确认之后</small><b>按方向补齐真实证据</b><p>真实原文链接、数据和产品事实都在下一轮接入。</p></div>
+          </div>
+          <div class="kpis">
+            <button class="kpi" data-view="directions"><span class="kpi-arrow">↗</span><div class="kpi-title">候选内容方向</div><div class="kpi-value">4</div><div class="kpi-meta">A—D 平行呈现；当前预选 B</div></button>
+            <button class="kpi" data-view="materials"><span class="kpi-arrow">↗</span><div class="kpi-title">全部资料</div><div class="kpi-value">12</div><div class="kpi-meta">通过纳入规则后的资料；不含无关搜索命中</div></button>
+            <button class="kpi" data-view="solutions"><span class="kpi-arrow">↗</span><div class="kpi-title">方案 / 产品线索</div><div class="kpi-value">7</div><div class="kpi-meta">只验证落点与边界的呈现方式</div></button>
+            <button class="kpi" data-view="peers"><span class="kpi-arrow">↗</span><div class="kpi-title">同行内容样本</div><div class="kpi-value">9</div><div class="kpi-meta">只用于发现常见承诺与内容缺口</div></button>
+          </div>
+          <div class="dashboard-grid">
+            <article class="card"><div class="card-head"><div><div class="card-title">候选方向是怎样生成的</div><div class="card-sub">以方向为单元，直接展示形成依据；不要求你翻菜单对编号</div></div><span class="tag brand">主导航</span></div><div class="direction-map" id="directionMap"></div></article>
+            <article class="card"><div class="card-head"><div><div class="card-title">现在主要看哪里</div><div class="card-sub">这一页只做范围判断</div></div></div><div class="focus-list">
+              <div class="focus-item"><span class="signal green"></span><div><b>先看候选方向 B</b><p>标题下直接放核心材料、覆盖范围和缺口。</p></div><button class="jump" data-preview="B">进入 ↗</button></div>
+              <div class="focus-item"><span class="signal"></span><div><b>判断它是否足以看到全貌</b><p>“已覆盖”和“仍缺失”并列显示，不用自己拼图。</p></div><button class="jump" data-preview="B" data-tab="boundary">查看 ↗</button></div>
+              <div class="focus-item"><span class="signal red"></span><div><b>不要在本轮确认结论</b><p>现在确认的是研究范围，不是认可演示材料里的观点。</p></div><button class="jump" data-view="notes">说明 ↗</button></div>
+            </div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-directions">
+        <div class="view-inner fill">
+          <div class="page-head"><div><div class="eyebrow">SECONDARY OUTPUT</div><h1>候选内容方向</h1><p>左侧选方向，右侧完成“为什么成立—核心材料—是否完整—还缺什么”的连续判断。</p></div><div class="head-action"><button class="btn" data-view="overview">返回看板</button><button class="btn" data-view="confirm">去缺口与确认</button></div></div>
+          <div class="split">
+            <div class="card list-card" id="directionList"></div>
+            <div class="card detail-card" id="directionDetail"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-materials">
+        <div class="view-inner">
+          <div class="page-head"><div><div class="eyebrow">INCLUDED MATERIALS</div><h1>全部资料</h1><p>这里是本期搜索后通过纳入规则的资料全集，不是搜索引擎返回的全部结果；当前标题、机构、样本与结果均为演示文案。</p></div><div class="head-action"><button class="btn primary" data-view="directions">返回候选方向</button></div></div>
+          <section class="research-contract" aria-labelledby="constraintTitle">
+            <div class="research-formula"><b id="constraintTitle">正式候选方向的来源</b><span class="formula-node">你的主题目标</span><span class="formula-arrow">+</span><span class="formula-node">知识库边界</span><span class="formula-arrow">+</span><span class="formula-node">资料之间的关系</span><span class="formula-arrow">+</span><span class="formula-node">同行内容缺口</span><span class="formula-arrow">→</span><span class="formula-node" style="background:var(--brand-soft);color:var(--brand-dark)">候选方向</span></div>
+            <div class="constraint-grid">
+              <div class="constraint"><small>搜索范围</small><p>先定义“熬夜 / 少睡 / 作息延迟”等口径，防止相邻但无关主题混入。</p></div>
+              <div class="constraint"><small>知识链位置</small><p>每条资料必须进入现象、原理、场景或方案中的一个节点。</p></div>
+              <div class="constraint"><small>资料关系</small><p>标注支持、反向、定义、混杂、人群、方案或边界，不做孤立收藏。</p></div>
+              <div class="constraint"><small>证据边界</small><p>优先匹配人群与目标，保留高价值反向证据；不只留下赞同既有观点的材料。</p></div>
+            </div>
+            <p class="contract-note"><b>知识库的作用：</b>约束“什么属于本题、如何组织和怎样表达边界”，不是把搜索结果筛成只支持你的观点。知识库建设完成前，可先用一份人工确认的主题边界快照代替。</p>
+          </section>
+          <section class="inspiration" aria-labelledby="ideaTitle">
+            <div class="inspiration-head"><div><h2 id="ideaTitle">方向灵感池</h2><p>系统根据资料之间的矛盾、缺口和人群差异多想一步。它们还不是正式候选方向，可收藏、合并或在补证后升级。</p></div><span class="tag amber">10 个演示灵感</span></div>
+            <div class="idea-grid" id="ideaList"></div>
+          </section>
+          <div class="toolbar"><div><div class="filters" id="materialFilters"></div><div class="material-summary" style="margin-top:8px"><b>纳入后共 12 条</b><span class="tag green">均有知识链位置</span><span class="tag blue">均有关联方向或缺口</span><span class="tag red">原始无关命中不展示</span></div></div><input class="search" id="materialSearch" aria-label="搜索全部资料" placeholder="搜索标题、作用、关系或方向"></div>
+          <div class="split material-split"><div class="card list-card" id="materialList"></div><div class="card detail-card" id="materialDetail"></div></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-solutions">
+        <div class="view-inner">
+          <div class="page-head"><div><div class="eyebrow">SUPPORTING WORKSPACE</div><h1>方案与产品落点</h1><p>先按场景定义解决目标，再决定产品承担什么角色；本页不构成护理或购买建议。</p></div><div class="head-action"><button class="btn primary" data-preview="B" data-tab="materials">回到方向 B</button></div></div>
+          <div class="boundary"><b>静态样例边界：</b>下面的场景、成分类别和产品角色全部是演示数据，只用于判断页面应如何呈现“解决方案 + 产品介绍”。</div>
+          <div class="solution-grid">
+            <article class="solution-card"><span class="tag brand">短期场景</span><h2>一晚没睡后的基础减负</h2><p>演示目标：减少额外刺激、维持基础保湿，不宣称“逆转熬夜”。</p><div class="tags"><span class="tag">温和清洁</span><span class="tag">基础保湿</span><span class="tag red">不承诺修复</span></div></article>
+            <article class="solution-card"><span class="tag blue">眼周场景</span><h2>浮肿与视觉疲态</h2><p>演示目标：把生活方式、症状识别和产品角色分开，不把所有眼周问题都归因于晚睡。</p><div class="tags"><span class="tag">生活方式</span><span class="tag">症状分流</span><span class="tag amber">需要补资料</span></div></article>
+            <article class="solution-card"><span class="tag amber">长期场景</span><h2>反复晚睡的风险管理</h2><p>演示目标：睡眠恢复是主线，长期护肤活性与熬夜补救分开讲。</p><div class="tags"><span class="tag">防晒</span><span class="tag">长期管理</span><span class="tag red">不替代睡眠</span></div></article>
+          </div>
+          <article class="card"><div class="card-head"><div><div class="card-title">产品介绍的固定字段</div><div class="card-sub">真实研究阶段再接入具体产品、标签和独立证据</div></div></div><table class="data-table"><thead><tr><th>产品角色</th><th>要说明的事实</th><th>不能越过的边界</th><th>在内容里的位置</th></tr></thead><tbody><tr><td>基础保湿类</td><td>剂型、主要保湿体系、适用感受（演示）</td><td>不能写成恢复睡眠或治疗皮肤损伤</td><td>短期减负方案</td></tr><tr><td>防晒类</td><td>防护类别、使用方式、标签事实（演示）</td><td>不是“熬夜急救”证据</td><td>长期风险管理</td></tr><tr><td>活性成分类</td><td>成分目标、使用限制、证据身份（演示）</td><td>不能把一般功效改写成熬夜后专属功效</td><td>长期目标的延伸说明</td></tr></tbody></table></article>
+        </div>
+      </section>
+
+      <section class="view" id="view-peers">
+        <div class="view-inner">
+          <div class="page-head"><div><div class="eyebrow">PEER CONTENT SOURCES</div><h1>同行内容样本</h1><p>每条样本都必须能回到平台、作者和原内容；它只用于发现叙事与内容缺口，不用播放量替代科学依据。</p></div><div class="head-action"><button class="btn primary" data-view="directions">返回候选方向</button></div></div>
+          <div class="boundary"><b>静态样例：</b>以下平台、账号、标题和数据均为虚构，仅演示真实阶段必须保存的来源字段：平台、作者 / 账号、原始标题、发布日期、内容形式、指标快照日期与原内容入口。</div>
+          <div class="peer-grid">
+            <article class="peer-card"><div class="tags"><span class="tag red">常见承诺</span><span class="tag">对应方向 B</span></div><h2>《熬夜脸一夜修回来？我的急救流程》</h2><dl class="peer-source"><dt>平台</dt><dd>Bilibili（演示）</dd><dt>作者 / 账号</dt><dd>@皮肤观察员（演示）</dd><dt>发布日期</dt><dd>2026-07-18（演示）</dd><dt>内容形式</dt><dd>8 分钟口播视频</dd><dt>指标快照</dt><dd>播放 18.6 万 · 2026-08-20 截图（演示）</dd></dl><p class="peer-observation"><b>为什么纳入：</b>传播钩子强，但把主观疲态、颜色指标和屏障损伤混成一个结论，提示方向 B 必须拆开测量对象。</p><div class="tags"><span class="tag red">边界风险高</span><span class="tag amber">“修回来”需核验</span></div><div class="actions"><button class="btn small" data-demo-source>打开原内容（演示）</button><button class="btn small primary" data-peer-save>加入代表样本</button></div></article>
+            <article class="peer-card"><div class="tags"><span class="tag blue">机制叙事</span><span class="tag">对应方向 C</span></div><h2>《皮肤也有生物钟：晚睡为什么影响修护》</h2><dl class="peer-source"><dt>平台</dt><dd>YouTube（演示）</dd><dt>作者 / 账号</dt><dd>Dr. Lin Skin Lab（演示）</dd><dt>发布日期</dt><dd>2026-06-03（演示）</dd><dt>内容形式</dt><dd>12 分钟讲解视频</dd><dt>指标快照</dt><dd>观看 9.2 万 · 2026-08-20 截图（演示）</dd></dl><p class="peer-observation"><b>为什么纳入：</b>适合讲概念，但把正常日内变化直接外推成睡眠不足效应，提示方向 C 需要单列“节律 ≠ 熬夜证据”。</p><div class="tags"><span class="tag amber">机制外推风险</span><span class="tag green">可形成概念边界</span></div><div class="actions"><button class="btn small" data-demo-source>打开原内容（演示）</button><button class="btn small primary" data-peer-save>加入代表样本</button></div></article>
+            <article class="peer-card"><div class="tags"><span class="tag brand">解决方案</span><span class="tag">对应方向 D</span></div><h2>《加班到两点，我会这样精简护肤》</h2><dl class="peer-source"><dt>平台</dt><dd>小红书（演示）</dd><dt>作者 / 账号</dt><dd>@成分笔记本（演示）</dd><dt>发布日期</dt><dd>2026-08-01（演示）</dd><dt>内容形式</dt><dd>9 图笔记</dd><dt>指标快照</dt><dd>收藏 1.7 万 · 2026-08-20 截图（演示）</dd></dl><p class="peer-observation"><b>为什么纳入：</b>实用性高，但产品被放成主角，提示方向 D 必须先写睡眠恢复与场景目标，再说明产品角色。</p><div class="tags"><span class="tag amber">宣称边界</span><span class="tag green">流程表达可参考</span></div><div class="actions"><button class="btn small" data-demo-source>打开原内容（演示）</button><button class="btn small primary" data-peer-save>加入代表样本</button></div></article>
+            <article class="peer-card"><div class="tags"><span class="tag green">内容缺口</span><span class="tag">对应方向 A / B</span></div><h2>《熬夜后哪些皮肤指标其实没变？》</h2><dl class="peer-source"><dt>平台</dt><dd>抖音（演示）</dd><dt>作者 / 账号</dt><dd>@循证护肤课（演示）</dd><dt>发布日期</dt><dd>2026-07-29（演示）</dd><dt>内容形式</dt><dd>90 秒知识视频</dd><dt>指标快照</dt><dd>点赞 3.4 万 · 2026-08-20 截图（演示）</dd></dl><p class="peer-observation"><b>为什么纳入：</b>同行较少主动展示反向材料；这条样本提示可把“测不稳定 / 没测到”发展成专业差异点。</p><div class="tags"><span class="tag green">值得保留</span><span class="tag blue">反向证据入口</span></div><div class="actions"><button class="btn small" data-demo-source>打开原内容（演示）</button><button class="btn small primary" data-peer-save>加入代表样本</button></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-confirm">
+        <div class="view-inner">
+          <div class="page-head"><div><div class="eyebrow">DECISION GATE</div><h1>缺口与方向确认</h1><p>完成这里后，只冻结下一阶段的研究范围；不冻结观点，不进入写稿。</p></div><div class="head-action"><button class="btn" data-view="directions">返回方向详情</button></div></div>
+          <div class="confirm-layout">
+            <article class="card" id="confirmQueue"></article>
+            <aside class="card confirm-side" style="background:var(--panel);color:var(--ink);box-shadow:var(--shadow);padding:17px">
+              <div class="card-title">冻结前检查</div><div class="card-sub">全部确认后，第二阶段才开始接入真实材料</div>
+              <div class="checklist">
+                <label class="check"><input type="checkbox" id="checkDirection" checked> <span>候选方向 B 是本期研究范围</span></label>
+                <label class="check"><input type="checkbox" id="checkCoverage"> <span>已看过“已覆盖 / 仍缺失”，接受当前不是全貌</span></label>
+                <label class="check"><input type="checkbox" id="checkMeaning"> <span>理解本次确认不是认可科学结论</span></label>
+                <label class="check"><input type="checkbox" id="checkNext"> <span>同意下一阶段围绕缺口做真实检索</span></label>
+              </div>
+              <textarea id="expertNote" rows="5" style="width:100%;resize:vertical;border:0;border-radius:15px;background:#e4dacc;box-shadow:var(--shadow-inset);padding:12px" placeholder="补充你的专业判断或下一轮检索要求"></textarea>
+              <div class="snapshot" style="margin:13px 0">冻结对象：主题范围、知识链、核心材料类型、缺口清单。<br>不冻结：具体结论、数据、产品推荐和表达稿。</div>
+              <button class="btn primary" id="freezeBtn" disabled style="width:100%">冻结方向并进入真实研究</button>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-notes">
+        <div class="view-inner">
+          <div class="page-head"><div><div class="eyebrow">PROTOTYPE NOTES</div><h1>这一版在验证什么</h1><p>先确认需求与页面结构，再开始真实研究；顺序与产品盘点类保持一致。</p></div><div class="head-action"><button class="btn primary" data-view="directions">回到候选方向</button></div></div>
+          <div class="notes-grid">
+            <article class="note-card"><h2>与产品盘点页重叠的骨架</h2><ul><li>扫描看板：说明输入和当前重点。</li><li>候选方向：左侧列表、右侧详情、底部确认条。</li><li>辅助工作区：材料、方案、同行内容用于查证。</li><li>缺口与确认：形成下一阶段研究范围快照。</li></ul></article>
+            <article class="note-card"><h2>科普类必须新增的对象</h2><ul><li>现象 / 问题 → 原理 / 概念 → 场景 / 人群 → 方案 + 产品。</li><li>每个方向都显示“生成依据、已覆盖、仍缺失”。</li><li>材料必须说明能支持什么、不能支持什么。</li><li>你的专业判断发生在真实材料进入之后。</li></ul></article>
+            <article class="note-card"><h2>本版故意不做</h2><ul><li>不搜索或铺设真实研究。</li><li>不使用真实论文标题、机构、样本或结论。</li><li>不输出产品推荐或科普稿。</li><li>不把演示数据保存为业务事实。</li></ul></article>
+            <article class="note-card"><h2>原文链接怎么进入下一版</h2><p>静态结构确认后，真实扫描材料会在“核心材料”和“全部资料”同时出现：方向页展示标题与作用，详情页保留作者、机构、样本、原文定位和可扩展阅读 URL。</p></article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+  const materials=[
+    {id:"skin-tone",stage:"现象 / 问题",title:"[演示材料] 一晚少睡后，面部颜色指标出现短期变化",subtitle:"虚构人体测量研究 · 用于验证材料卡结构",role:"回答“看起来疲惫”能否被仪器测到",sample:"演示样本：30 名健康成年人",source:"演示研究机构 / 演示期刊",locator:"摘要、结果图 2（演示）",support:"可用于说明某些面部颜色指标可能出现短期变化。",limit:"不能把单一颜色指标直接写成所有人都会“暗沉”或发生皮肤损伤。"},
+    {id:"hydration",stage:"现象 / 问题",title:"[演示材料] 短期睡眠限制与角质层含水量变化",subtitle:"虚构受控研究 · 用于演示结果不一致",role:"回答“皮肤会不会更干”",sample:"演示样本：24 名成年人",source:"演示大学皮肤研究中心",locator:"方法、结果表 1（演示）",support:"可作为含水量可能波动的线索。",limit:"不能证明变化持续多久，也不能外推到所有肤质。"},
+    {id:"barrier-null",stage:"现象 / 问题",title:"[演示材料] 限睡组多数屏障指标未见明显差异",subtitle:"虚构反向证据 · 用于演示证据冲突",role:"防止把“可能变化”写成“必然受损”",sample:"演示样本：40 名成年人",source:"演示医学中心",locator:"结果、讨论（演示）",support:"支持保留“部分研究未观察到稳定变化”的边界。",limit:"无差异不等于已经证明睡眠不足对皮肤完全没有影响。"},
+    {id:"self-rating",stage:"现象 / 问题",title:"[演示材料] 主观疲倦评分与面部自评并不同步",subtitle:"虚构观察研究 · 用于拆分主观与客观指标",role:"解释为什么“感觉很差”和测量结果可能不一致",sample:"演示样本：52 名参与者",source:"演示睡眠实验室",locator:"问卷、相关性分析（演示）",support:"可用于区分主观疲倦、他人观感和仪器指标。",limit:"不能由相关性确定哪一项变化导致另一项变化。"},
+    {id:"circadian",stage:"原理 / 概念",title:"[演示材料] 人体皮肤指标存在日内波动",subtitle:"虚构节律研究 · 用于演示概念边界",role:"说明测量时间本身可能影响结果",sample:"演示样本：18 名成年人",source:"演示生理研究机构",locator:"时间序列结果（演示）",support:"可用于介绍皮肤指标并非全天固定。",limit:"日内波动不能直接等同于熬夜造成的变化。"},
+    {id:"stress",stage:"原理 / 概念",title:"[演示材料] 心理压力可能干扰屏障恢复",subtitle:"虚构机制线索 · 用于演示混杂因素",role:"解释晚睡场景并不只有睡眠一个变量",sample:"演示样本：36 名成年人",source:"演示行为医学机构",locator:"讨论章节（演示）",support:"可用于提示压力可能是需要单独控制的因素。",limit:"不能据此断言晚睡的所有皮肤变化都由压力导致。"},
+    {id:"eye-area",stage:"场景 / 人群",title:"[演示材料] 眼周浮肿需要与颜色、结构和疾病信号分开",subtitle:"虚构临床说明 · 用于演示症状分流",role:"补齐方向 B 的眼周场景",sample:"演示临床科普材料",source:"演示医学专业机构",locator:"症状与就医边界（演示）",support:"可用于搭建眼周问题的分类框架。",limit:"不能把所有黑眼圈或眼袋都归因于睡眠不足。"},
+    {id:"skin-types",stage:"场景 / 人群",title:"[演示材料] 不同肤质对短期减负护理的耐受不同",subtitle:"虚构共识材料 · 用于演示人群差异",role:"避免给所有人同一套流程",sample:"演示专家共识结构",source:"演示皮肤专业组织",locator:"人群分层（演示）",support:"可用于提示油性、干性和敏感倾向需要不同表达。",limit:"不能代替个体诊断，也不能证明某个产品适合所有人。"},
+    {id:"basic-care",stage:"方案 + 产品",title:"[演示材料] 短期基础减负护理的低复杂度框架",subtitle:"虚构护理指南 · 用于演示解决方案结构",role:"把睡眠恢复与护肤角色分开",sample:"演示专业指南",source:"演示皮肤健康机构",locator:"基础护理章节（演示）",support:"可用于组织温和清洁、保湿和防晒的表达顺序。",limit:"不能证明护肤能够抵消或逆转少睡造成的系统影响。"},
+    {id:"product-boundary",stage:"方案 + 产品",title:"[演示材料] 产品标签事实与“熬夜修复”宣称的分界",subtitle:"虚构监管说明 · 用于演示产品边界",role:"规定产品介绍能说到哪里",sample:"演示监管问答",source:"演示监管机构",locator:"化妆品宣称章节（演示）",support:"可用于区分配方事实、一般功效与针对熬夜的推断。",limit:"标签或品牌材料本身不能替代独立临床证据。"},
+    {id:"long-term",stage:"原理 / 概念",title:"[演示材料] 长期睡眠质量与皮肤老化评分相关",subtitle:"虚构观察研究 · 用于演示相关性边界",role:"形成方向 C 的长期问题意识",sample:"演示样本：120 名成年人",source:"演示大学联合研究",locator:"回归分析（演示）",support:"可用于说明长期睡眠质量与老化指标之间可能存在关联。",limit:"观察相关性不能证明睡眠不足导致永久皮肤老化。"},
+    {id:"recovery",stage:"场景 / 人群",title:"[演示材料] 恢复睡眠后的指标回落时间并不一致",subtitle:"虚构恢复研究 · 用于演示时间线缺口",role:"回答变化会持续多久",sample:"演示样本：28 名成年人",source:"演示睡眠医学中心",locator:"随访结果（演示）",support:"可用于提示不同指标可能有不同恢复节奏。",limit:"不能给出适用于所有人的固定恢复天数。"}
+  ];
+
+  const materialRelations={
+    "skin-tone":{relation:"现象线索",directions:["B"],inclusion:"急性少睡 × 客观外观 × 现象节点"},
+    "hydration":{relation:"结果冲突",directions:["A","B"],inclusion:"连续限睡 × 含水量 × 现象节点"},
+    "barrier-null":{relation:"反向证据",directions:["A","B"],inclusion:"急性少睡 × 屏障指标 × 原理边界"},
+    "self-rating":{relation:"概念拆分",directions:["B"],inclusion:"主观感受 × 客观测量 × 概念节点"},
+    "circadian":{relation:"概念边界",directions:["A","C"],inclusion:"正常日内波动 × 熬夜外推风险 × 原理节点"},
+    "stress":{relation:"混杂变量",directions:["A","C"],inclusion:"压力 × 睡眠 × 因果解释边界"},
+    "eye-area":{relation:"场景补充",directions:["B","D"],inclusion:"眼周表现 × 症状分流 × 场景节点"},
+    "skin-types":{relation:"人群分层",directions:["D"],inclusion:"肤质差异 × 护理耐受 × 人群节点"},
+    "basic-care":{relation:"解决方案",directions:["B","D"],inclusion:"短期目标 × 低风险护理 × 方案节点"},
+    "product-boundary":{relation:"宣称边界",directions:["C","D"],inclusion:"产品事实 × 功效外推 × 方案边界"},
+    "long-term":{relation:"长期线索",directions:["A","C"],inclusion:"睡眠质量 × 老化相关性 × 长期场景"},
+    "recovery":{relation:"时间线缺口",directions:["B","D"],inclusion:"恢复睡眠 × 指标回落 × 场景缺口"}
+  };
+
+  const ideas=[
+    {id:"i1",status:"可并入 B",title:"同样少睡，为什么有人只是显疲惫，有人更敏感？",trigger:"由“人群分层 + 结果冲突”产生"},
+    {id:"i2",status:"待补证",title:"周末补觉能不能把脸“救回来”？",trigger:"由“恢复时间线缺口”产生"},
+    {id:"i3",status:"可独立成题",title:"黑眼圈、眼袋、浮肿为什么不能统称“熬夜脸”？",trigger:"由“场景补充 + 概念拆分”产生"},
+    {id:"i4",status:"可并入 A",title:"夜间护肤和熬夜护肤，是不是同一件事？",trigger:"由“概念边界 + 宣称边界”产生"},
+    {id:"i5",status:"待补证",title:"压力型晚睡与娱乐型晚睡，皮肤表现会一样吗？",trigger:"由“混杂变量”产生"},
+    {id:"i6",status:"待补证",title:"油皮熬夜后更油，是屏障问题还是另有变量？",trigger:"由“人群分层 + 反向证据”产生"},
+    {id:"i7",status:"可并入 D",title:"“熬夜修护”产品到底在修什么？",trigger:"由“解决方案 + 宣称边界”产生"},
+    {id:"i8",status:"可独立成题",title:"连续晚睡多久，才值得讨论长期风险？",trigger:"由“短期 / 长期证据断层”产生"},
+    {id:"i9",status:"方法角度",title:"测量时间会不会制造“熬夜差异”？",trigger:"由“日内节律 + 测量结果冲突”产生"},
+    {id:"i10",status:"可并入 B",title:"用户觉得气色差，仪器一定能测出来吗？",trigger:"由“主客观结果不同步”产生"}
+  ];
+
+  const directions=[
+    {id:"A",title:"熬夜肌不是一种肤质：先把暴露分清",desc:"从“熬夜”定义混乱切入，拆开单晚少睡、连续限睡、压力和作息延迟。",thesis:"先定义暴露，再谈皮肤结果，适合做系列内容的概念入口。",facts:["4 类暴露","5 条材料线索","2 个定义缺口"],chain:["大家都说自己熬夜","不同暴露不能混为一谈","单晚 / 连续 / 压力场景","先分型再给建议"],origins:[{label:"概念冲突",title:"同一个“熬夜”包含多种情况",text:"材料里出现单晚少睡、连续限睡与长期睡眠质量，不能当成同一种暴露。"},{label:"结果冲突",title:"测到的指标并不一致",text:"含水量、颜色、屏障和主观疲倦可能不同步。"},{label:"内容价值",title:"先建立术语边界",text:"能避免后续内容把相关性、短期变化和长期风险混写。"}],covered:["单晚少睡","连续限睡","压力混杂","长期睡眠质量"],gaps:["作息延迟与睡眠时长的区分","工作日与周末的真实暴露数据"],materialIds:["hydration","barrier-null","stress","long-term"]},
+    {id:"B",title:"一晚没睡，脸到底发生了什么",desc:"聚焦急性外观与屏障结局，解释黄度、含水量和恢复速度的证据边界。",thesis:"有些短期变化可以被测到，但结果不一致；“看起来累”不等于发生永久皮肤损伤。",facts:["5 条核心线索","4 / 5 环节已覆盖","2 个关键缺口"],chain:["一晚后的主观现象","仪器到底测到了什么","为什么不同人结果不同","给出短期减负方案"],origins:[{label:"高共鸣现象",title:"“脸看起来很累”容易引发关注",text:"但主观疲倦、他人观感和仪器指标必须分开。"},{label:"证据矛盾",title:"颜色和含水量有变化线索，屏障结果不稳定",text:"正向与反向材料同时存在，适合呈现专业判断。"},{label:"解决可落地",title:"能从解释转入低风险短期方案",text:"方案重点是减少额外刺激，不承诺逆转少睡。"}],covered:["面部颜色指标","角质层含水量","多数屏障指标的反向材料","主观疲倦与客观测量的差异","基础减负护理的表达边界"],gaps:["眼周浮肿与黑眼圈的独立材料","恢复时间线与剂量—反应"],materialIds:["skin-tone","hydration","barrier-null","self-rating","basic-care"]},
+    {id:"C",title:"睡眠不足会让皮肤老得更快吗",desc:"把长期老化关联、日内节律和机制线索拆开，回答证据能说到哪一步。",thesis:"值得重视不等于已经证明因果，更不能把观察关联写成永久损伤。",facts:["4 条核心线索","3 级证据梯度","3 个长期缺口"],chain:["长期老化担忧","相关性与因果的区别","年龄 / 压力 / 防晒差异","长期风险管理"],origins:[{label:"长期关注",title:"用户会追问“是不是会老得更快”",text:"问题有价值，但证据级别与短期现象完全不同。"},{label:"外推风险",title:"节律与观察相关性常被写成确定因果",text:"需要把人体观察、机制和推断逐层标注。"},{label:"系列延展",title:"适合形成长期管理主题",text:"可连接睡眠、压力、防晒与长期护肤目标。"}],covered:["长期睡眠质量相关性","人体皮肤日内波动","压力混杂","长期管理框架"],gaps:["前瞻性长期人体数据","不同年龄与肤色的轨迹","产品干预是否改变结局"],materialIds:["long-term","circadian","stress","product-boundary"]},
+    {id:"D",title:"熬夜后怎么补救：有依据与没依据的分界",desc:"从生活方式和基础护理出发，再说明产品类别的真实角色与宣称边界。",thesis:"恢复睡眠是主线；护肤承担的是减少额外刺激和长期管理，不是替代睡眠。",facts:["4 类方案角色","3 条产品边界","2 个场景缺口"],chain:["补救焦虑","睡眠与护肤各管什么","按症状 / 肤质分场景","产品角色与宣称边界"],origins:[{label:"实用需求",title:"用户天然会追问“现在怎么办”",text:"解决方案必须存在，但不能跳过证据边界。"},{label:"产品风险",title:"最容易把一般功效改写成熬夜专属功效",text:"需要固定呈现标签事实、推断与独立证据的差别。"},{label:"场景分流",title:"眼周、干燥、敏感不能共用一个答案",text:"必须先按症状和人群拆分，再决定护理复杂度。"}],covered:["睡眠恢复优先级","基础减负护理","肤质差异","产品宣称边界"],gaps:["具体配方的独立临床材料","眼周场景与就医边界"],materialIds:["basic-care","product-boundary","skin-types","eye-area"]}
+  ];
+
+  const state={view:"overview",preview:"B",selected:"B",tab:"story",material:"skin-tone",filter:"全部",search:"",frozen:false,savedIdeas:new Set()};
+  const viewNames={overview:"扫描看板",directions:"候选方向",materials:"全部资料",solutions:"方案与产品",peers:"同行内容",confirm:"缺口与确认",notes:"说明"};
+  const tabNames={story:"可以讲什么",materials:"核心材料",boundary:"全貌与边界",gaps:"进入下一阶段前"};
+  const stageOrder=["全部","现象 / 问题","原理 / 概念","场景 / 人群","方案 + 产品"];
+  function esc(value){return String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
+  function toast(message){const el=document.getElementById("toast");el.textContent=message;el.classList.add("show");clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove("show"),2300)}
+  function showView(name){if(!viewNames[name])name="overview";state.view=name;document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+name));document.querySelectorAll(".nav-btn").forEach(b=>{const active=b.dataset.view===name;b.classList.toggle("active",active);b.setAttribute("aria-current",active?"page":"false")});document.getElementById("crumbLabel").textContent=viewNames[name];history.replaceState(null,"","#"+name);if(name==="directions")renderDirections();if(name==="materials"){renderIdeas();renderMaterials()}if(name==="confirm")renderConfirm();document.getElementById("view-"+name).scrollTop=0}
+  function getDirection(id){return directions.find(d=>d.id===id)}
+  function getMaterial(id){return materials.find(m=>m.id===id)}
+  function getMaterialRelation(id){return materialRelations[id]||{relation:"待归类",directions:[],inclusion:"待补纳入理由"}}
+  function relationClass(value){if(value.includes("反向")||value.includes("冲突"))return "red";if(value.includes("边界")||value.includes("混杂"))return "amber";if(value.includes("方案")||value.includes("人群"))return "green";return "blue"}
+  function renderMap(){document.getElementById("directionMap").innerHTML=directions.map(d=>{const relations=[...new Set(d.materialIds.map(id=>getMaterialRelation(id).relation))];return '<div class="map-row"><div><span class="tag brand">方向 '+d.id+'</span><p>'+esc(d.title)+'</p></div><div class="basis">'+relations.slice(0,4).map(x=>'<span class="tag '+relationClass(x)+'">'+esc(x)+'</span>').join("")+'<span class="tag">'+d.materialIds.length+' 条核心资料</span></div><button class="btn small" data-preview="'+d.id+'">查看依据</button></div>'}).join("")}
+  function renderDirections(){
+    document.getElementById("directionList").innerHTML=directions.map(d=>'<button class="direction-item '+(state.preview===d.id?'active':'')+'" data-direction="'+d.id+'"><span class="item-top"><span class="tag brand">DIRECTION '+d.id+'</span>'+(state.selected===d.id?'<span class="tag green">当前预选</span>':'')+'</span><span class="item-title" style="margin-top:8px">'+esc(d.title)+'</span><span class="item-copy">'+esc(d.desc)+'</span><span class="tags"><span class="tag">'+d.facts[0]+'</span><span class="tag amber">'+d.gaps.length+' 个缺口</span></span></button>').join("");
+    const d=getDirection(state.preview);const nodes=d.chain.map((x,i)=>'<div class="chain-node"><small>'+["现象 / 问题","原理 / 概念","场景 / 人群","方案 + 产品"][i]+'</small><b>'+esc(x)+'</b></div>').join("");
+    const origins=d.origins.map(o=>'<div class="origin-card"><small>'+esc(o.label)+'</small><b>'+esc(o.title)+'</b><p>'+esc(o.text)+'</p></div>').join("");
+    const evidence=d.materialIds.map(id=>{const m=getMaterial(id);return '<article class="evidence-card"><div class="tags"><span class="tag brand">'+esc(m.stage)+'</span><span class="tag amber">演示材料</span></div><h3>'+esc(m.title)+'</h3><div class="subtitle">'+esc(m.subtitle)+'</div><div class="why"><b>它为什么在这个方向里：</b><br>'+esc(m.role)+'</div><div class="actions"><button class="btn small" data-open-material="'+m.id+'">查看材料详情</button><button class="btn small primary" data-demo-source>原文入口（演示）</button></div></article>'}).join("");
+    const covered=d.covered.map(x=>'<li>'+esc(x)+'</li>').join("");const gaps=d.gaps.map(x=>'<li>'+esc(x)+'</li>').join("");
+    document.getElementById("directionDetail").innerHTML='<div class="detail-pad"><div class="recommend"><b>为什么把它列为候选方向</b><p>'+esc(d.thesis)+'</p></div><div class="detail-title"><div><div class="tags"><span class="tag brand">当前查看 · 方向 '+d.id+'</span><span class="tag amber">静态演示数据</span></div><h2>'+esc(d.title)+'</h2><p>'+esc(d.desc)+'</p></div></div><div class="fact-grid">'+d.facts.map(x=>'<div class="fact"><b>'+esc(x.split(' ')[0])+'</b><span>'+esc(x.substring(x.indexOf(' ')+1)||x)+'</span></div>').join("")+'</div><div class="detail-tabs">'+Object.keys(tabNames).map(key=>'<button class="detail-tab '+(state.tab===key?'active':'')+'" data-direction-tab="'+key+'">'+tabNames[key]+'</button>').join("")+'</div><div class="detail-panel '+(state.tab==='story'?'active':'')+'"><div class="logic-chain">'+nodes+'</div><h3 class="section-title">这个方向怎样得出</h3><div class="origin-grid">'+origins+'</div></div><div class="detail-panel '+(state.tab==='materials'?'active':'')+'"><div class="boundary"><b>核心材料直接放在方向里：</b>标题、作用和详情入口都可见，不再要求用编号去别处对照。当前内容均为演示数据。</div><div class="evidence-list">'+evidence+'</div></div><div class="detail-panel '+(state.tab==='boundary'?'active':'')+'"><div class="coverage-grid"><div class="coverage-box"><h3>当前已经覆盖</h3><ul>'+covered+'</ul></div><div class="coverage-box gap"><h3>当前仍然缺失</h3><ul>'+gaps+'</ul></div></div><div class="boundary" style="margin-top:12px"><b>全貌判断：</b>这不是“已经看到完整答案”，而是已经知道当前方向覆盖了什么、还必须查什么。缺口会随方向一起进入下一阶段。</div></div><div class="detail-panel '+(state.tab==='gaps'?'active':'')+'"><div class="origin-grid"><div class="origin-card"><small>要确认的对象</small><b>研究范围</b><p>方向标题、知识链、核心材料类型和缺口清单。</p></div><div class="origin-card"><small>不在本轮确认</small><b>科学结论</b><p>演示材料不代表真实证据，你现在不需要同意其中任何结论。</p></div><div class="origin-card"><small>下一阶段动作</small><b>真实定向检索</b><p>补真实原文、样本、结果、反向材料和可扩展阅读 URL。</p></div><div class="origin-card"><small>专业审阅时点</small><b>看过真实材料之后</b><p>你再提出不同意、解释偏差、专业补充和新的检索方向。</p></div></div></div></div><div class="confirm-strip"><label><input type="radio" checked name="directionChoice"> 将方向 '+d.id+' 作为本期研究范围</label><div class="actions"><button class="btn" data-view="confirm">先看缺口</button><button class="btn primary" data-select-direction="'+d.id+'">'+(state.selected===d.id?'已预选方向 '+d.id:'预选方向 '+d.id)+'</button></div></div>';
+  }
+  function renderIdeas(){
+    document.getElementById("ideaList").innerHTML=ideas.map(idea=>{
+      const saved=state.savedIdeas.has(idea.id);
+      const tone=idea.status.includes("待补")?"amber":idea.status.includes("独立")?"green":"blue";
+      return '<article class="idea-card '+(saved?'saved':'')+'"><div class="tags"><span class="tag '+tone+'">'+esc(idea.status)+'</span><span class="tag">灵感，不是正式方向</span></div><h3>'+esc(idea.title)+'</h3><p>'+esc(idea.trigger)+'</p><div class="actions"><button class="btn small '+(saved?'primary':'')+'" data-save-idea="'+idea.id+'" aria-pressed="'+saved+'">'+(saved?'已标记':'标记为灵感')+'</button></div></article>';
+    }).join("");
+  }
+  function renderFilters(){document.getElementById("materialFilters").innerHTML=stageOrder.map(x=>'<button class="filter '+(state.filter===x?'active':'')+'" data-filter="'+x+'">'+x+'</button>').join("")}
+  function materialVisible(m){const filterOk=state.filter==="全部"||m.stage===state.filter;const q=state.search.trim().toLowerCase();const meta=getMaterialRelation(m.id);const searchable=[m.title,m.role,m.stage,meta.relation,meta.inclusion,meta.directions.map(id=>"方向 "+id).join(" ")].join(" ").toLowerCase();return filterOk&&searchable.includes(q)}
+  function renderMaterials(){renderFilters();const visible=materials.filter(materialVisible);if(!visible.some(m=>m.id===state.material)&&visible.length)state.material=visible[0].id;document.getElementById("materialList").innerHTML=visible.length?visible.map(m=>{const meta=getMaterialRelation(m.id);return '<button class="material-item '+(state.material===m.id?'active':'')+'" data-material="'+m.id+'"><span class="item-top"><span class="tag brand">'+esc(m.stage)+'</span><span class="tag '+relationClass(meta.relation)+'">'+esc(meta.relation)+'</span></span><span class="item-title" style="margin-top:8px">'+esc(m.title)+'</span><span class="item-copy">关联方向：'+esc(meta.directions.map(id=>"方向 "+id).join(" / "))+'<br>在方向中的作用：'+esc(m.role)+'</span></button>'}).join(""):'<div style="padding:30px;text-align:center;color:var(--muted)">没有匹配的演示材料；可清空搜索词或切换筛选。</div>';renderMaterialDetail()}
+  function renderMaterialDetail(){const m=getMaterial(state.material);if(!m){document.getElementById("materialDetail").innerHTML='';return}const meta=getMaterialRelation(m.id);const directionText=meta.directions.map(id=>{const d=getDirection(id);return "方向 "+id+"："+(d?d.title:"待命名")}).join("；");document.getElementById("materialDetail").innerHTML='<div class="detail-pad"><div class="detail-title"><div><div class="tags"><span class="tag brand">'+esc(m.stage)+'</span><span class="tag '+relationClass(meta.relation)+'">'+esc(meta.relation)+'</span><span class="tag amber">静态演示材料</span></div><h2>'+esc(m.title)+'</h2><p>'+esc(m.subtitle)+'</p></div></div><div class="source-box"><div class="source-row"><b>为什么被纳入</b><span>'+esc(meta.inclusion)+'</span></div><div class="source-row"><b>知识链位置</b><span>'+esc(m.stage)+'</span></div><div class="source-row"><b>资料关系</b><span>'+esc(meta.relation)+'</span></div><div class="source-row"><b>关联候选方向</b><span>'+esc(directionText)+'</span></div><div class="source-row"><b>作者 / 机构</b><span>'+esc(m.source)+'</span></div><div class="source-row"><b>材料类型</b><span>'+esc(m.subtitle)+'</span></div><div class="source-row"><b>样本 / 对象</b><span>'+esc(m.sample)+'</span></div><div class="source-row"><b>原文定位</b><span>'+esc(m.locator)+'</span></div><button class="btn small primary" data-demo-source style="width:max-content">打开原文 / 官方页（演示）</button></div><div class="boundary"><b>纳入规则：</b>只有能进入知识链，并能说明与某个方向、缺口或反向判断关系的资料，才会出现在“全部资料”；孤立或无关命中不展示。</div><div class="evidence-grid"><div class="evidence-box"><h3 style="color:var(--green)">这条材料能支持</h3><p>'+esc(m.support)+'</p></div><div class="evidence-box"><h3 style="color:var(--red)">这条材料不能支持</h3><p>'+esc(m.limit)+'</p></div></div><div class="review-box"><h3>真实材料进入后，你会在这里做专业判断</h3><div class="actions"><button class="review-label">同意</button><button class="review-label">不同意</button><button class="review-label">解释有问题</button><button class="review-label">需要补充</button><button class="review-label">值得继续深挖</button></div></div></div>'}
+  function renderConfirm(){const d=getDirection(state.selected);document.getElementById("checkDirection").parentElement.querySelector("span").textContent="候选方向 "+d.id+" 是本期研究范围";document.getElementById("confirmQueue").innerHTML='<div class="card-head"><div><div class="card-title">当前预选 · 方向 '+d.id+'</div><div class="card-sub">'+esc(d.title)+'</div></div><span class="tag amber">静态样例</span></div><div class="queue-row"><h3>为什么选它</h3><p>'+esc(d.thesis)+'</p></div><div class="queue-row"><h3>研究主线</h3><p>'+d.chain.map(esc).join(' → ')+'</p></div><div class="queue-row"><h3>核心材料类型</h3><p>'+d.materialIds.map(id=>esc(getMaterial(id).title)).join('；')+'</p></div><div class="queue-row"><h3>下一阶段必须补齐</h3><p>'+d.gaps.map(esc).join('；')+'</p></div><div class="queue-row"><h3>你确认的含义</h3><p>只确认“按这个范围开始真实检索”。页面不会把演示数据当成已确认的专业事实。</p></div>';updateFreeze()}
+  function updateFreeze(){const ids=["checkDirection","checkCoverage","checkMeaning","checkNext"];const ready=ids.every(id=>document.getElementById(id).checked);const btn=document.getElementById("freezeBtn");btn.disabled=!ready||state.frozen;if(state.frozen)btn.textContent="已冻结静态范围快照"}
+  document.addEventListener("click",e=>{
+    const nav=e.target.closest("[data-view]");if(nav){showView(nav.dataset.view);return}
+    const preview=e.target.closest("[data-preview]");if(preview){state.preview=preview.dataset.preview;state.tab=preview.dataset.tab||"story";showView("directions");return}
+    const direction=e.target.closest("[data-direction]");if(direction){state.preview=direction.dataset.direction;state.tab="story";renderDirections();return}
+    const tab=e.target.closest("[data-direction-tab]");if(tab){state.tab=tab.dataset.directionTab;renderDirections();return}
+    const select=e.target.closest("[data-select-direction]");if(select){state.selected=select.dataset.selectDirection;state.preview=state.selected;renderDirections();toast("已预选方向 "+state.selected+"；还未冻结研究范围");return}
+    const open=e.target.closest("[data-open-material]");if(open){state.material=open.dataset.openMaterial;state.filter="全部";state.search="";document.getElementById("materialSearch").value="";showView("materials");return}
+    const material=e.target.closest("[data-material]");if(material){state.material=material.dataset.material;renderMaterials();return}
+    const filter=e.target.closest("[data-filter]");if(filter){state.filter=filter.dataset.filter;renderMaterials();return}
+    const idea=e.target.closest("[data-save-idea]");if(idea){const id=idea.dataset.saveIdea;if(state.savedIdeas.has(id)){state.savedIdeas.delete(id);toast("已取消灵感标记")}else{state.savedIdeas.add(id);toast("已标记为灵感；补证后可合并或升级为正式方向")}renderIdeas();return}
+    const peer=e.target.closest("[data-peer-save]");if(peer){const saved=peer.getAttribute("aria-pressed")==="true";peer.setAttribute("aria-pressed",String(!saved));peer.classList.toggle("primary",!saved);peer.textContent=saved?"加入代表样本":"已加入代表样本";toast(saved?"已移出代表样本":"已加入代表样本（静态演示）");return}
+    if(e.target.closest("[data-demo-source]")){toast("静态样例：真实研究阶段才接入原文 URL");return}
+    const label=e.target.closest(".review-label");if(label){document.querySelectorAll(".review-label").forEach(x=>x.classList.remove("active"));label.classList.add("active");toast("这是交互演示，不保存专业判断");return}
+  });
+  document.getElementById("materialSearch").addEventListener("input",e=>{state.search=e.target.value;renderMaterials()});
+  document.querySelectorAll("#checkDirection,#checkCoverage,#checkMeaning,#checkNext").forEach(el=>el.addEventListener("change",updateFreeze));
+  document.getElementById("freezeBtn").addEventListener("click",()=>{state.frozen=true;updateFreeze();toast("已冻结静态范围快照；尚未开始真实检索")});
+  renderMap();renderDirections();renderIdeas();renderMaterials();renderConfirm();showView(location.hash.slice(1)||"overview");
+</script>
+</body>
+</html>

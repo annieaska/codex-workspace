@@ -1,0 +1,15 @@
+{
+  "id": "r2-c-full01",
+  "started_at": "2026-09-26T21:23:06.254Z",
+  "policy_revision": "SK-MATT-20260926-r3",
+  "policy_hash": "bd85217d26db49b6e53df2ccf2c784a87a7561c41f8f8f0a71bc98f5332a7c9e",
+  "tool": "pubmed_fetch_fulltext",
+  "args": {
+    "pmids": [
+      "28912361"
+    ],
+    "includeReferences": false,
+    "includeTables": true,
+    "includeAssets": true
+  }
+}

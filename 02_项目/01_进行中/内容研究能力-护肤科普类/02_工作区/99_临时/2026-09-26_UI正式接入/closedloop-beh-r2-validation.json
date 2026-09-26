@@ -1,0 +1,57 @@
+{
+  "scope": "仅BEH r2修正表达、受影响引用/冻结及可见内容和同版导出；RES及既有历史/预算/UI证据复用。",
+  "started": "2026-09-26T18:16:03.846Z",
+  "checks": [
+    "RES字节、获取成果、全部BEH既有物理冻结不变；r1四份备份与修正前相符",
+    "四类有限表达各不相同，分支→候选→包一致；来源/主张/引用/预算/兴趣及准入未提级",
+    "r2审阅/方向/包与当版表达和代理决定绑定，三份新冻结哈希及父链成立；引用审计通过",
+    "BEH四分支具体表达及r2代理审阅在现有页面可见",
+    "三个候选和研究包显示各自有限表达，保留重新确认门槛",
+    "BEH浏览器JSON/HTML同为r2且可重开，三份新冻结在版本历史可见"
+  ],
+  "exports": [
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/99_临时/2026-09-26_UI正式接入/closedloop-r2-verify-SK-BEH-001.json",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/99_临时/2026-09-26_UI正式接入/closedloop-r2-verify-SK-BEH-001.html"
+  ],
+  "manifest": {
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/research-SK-BEH-001.json": "7f5e266acaf226b9bbf52611b4400925ff6de841d1d861194eb2f7ffdbf2cd19",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/SK-BEH-001.json": "dc0f82ea50424e0721ca310004f9f55e61f70038db18bad6fbeb79359255c20f",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/SK-BEH-001.html": "23ca7d551968ab6edd5ff9b19a7caefb7af3a0d2cb0e7fa6d6d6fdf28f089b62",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/index.html": "05fc7db726a08515c1c13809bed727e27f7d77317cefc44e200f813b035d87c1",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/99_临时/2026-09-26_UI正式接入/closedloop-r2-verify-SK-BEH-001.json": "328ef00bc3d3ea2bfee0250053e7e3be8d3edbee1383e0e6171b5bfe5ccee3ef",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/99_临时/2026-09-26_UI正式接入/closedloop-r2-verify-SK-BEH-001.html": "1c39b545db099b3d6e412d87bb9220fad4fb72a32f1f28f22d3fb5105bea4fc7"
+  },
+  "freeze_binding": [
+    {
+      "id": "SK-BEH-001-CL2-F-review",
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-closedloop-r2-review-freeze.json",
+      "file_sha256": "47dafd2997eda511ddb18f8ca886e284360106ea5e0bfe41df037a446b8d3cae",
+      "payload_sha256": "5e3d60d2147750f80ced52c4d5e98db0e1b14af26d1a748bc8f8892924789dbc"
+    },
+    {
+      "id": "SK-BEH-001-CL2-F-direction",
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-closedloop-r2-direction-freeze.json",
+      "file_sha256": "b9333933d303b3aa1e36c6836f80071a2e3f73e9015da5cddf8fb595941c1d57",
+      "payload_sha256": "8df3263a343eb99209c72985050ba2601cf9267745d4f625619b585b79fb2201"
+    },
+    {
+      "id": "SK-BEH-001-CL2-F-package",
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-closedloop-r2-package-freeze.json",
+      "file_sha256": "0c2a4a4f85b39c66d69bac6849bada0490bb5b7a27ceab415d6ead216994ae8f",
+      "payload_sha256": "06b8c34b47db44480a0b368489476d40e1642d15321b420c94aee302aec90256"
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "core": {
+    "errors": [],
+    "stale": [],
+    "fingerprint": "298a62a6781d09497bdd3560e136f6e3c522c5398b7b226d31cb7f5f27a42835"
+  },
+  "reused_evidence": [
+    "closedloop-data-validation.json：RES内容、旧冻结/备份、来源边界、预算",
+    "closedloop-ui-validation.json：RES全部及未变BEH来源/缺口/获取详情、中文摘要和UI行为"
+  ],
+  "status": "passed",
+  "finished": "2026-09-26T18:16:05.268Z"
+}

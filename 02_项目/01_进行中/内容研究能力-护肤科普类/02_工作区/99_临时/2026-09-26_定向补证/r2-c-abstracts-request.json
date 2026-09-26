@@ -1,0 +1,17 @@
+{
+  "id": "r2-c-abstracts",
+  "started_at": "2026-09-26T21:19:40.304Z",
+  "policy_revision": "SK-MATT-20260926-r3",
+  "policy_hash": "bd85217d26db49b6e53df2ccf2c784a87a7561c41f8f8f0a71bc98f5332a7c9e",
+  "tool": "pubmed_fetch_articles",
+  "args": {
+    "pmids": [
+      "28912361",
+      "26010820",
+      "25585263",
+      "11511309"
+    ],
+    "includeMesh": true,
+    "includeGrants": true
+  }
+}

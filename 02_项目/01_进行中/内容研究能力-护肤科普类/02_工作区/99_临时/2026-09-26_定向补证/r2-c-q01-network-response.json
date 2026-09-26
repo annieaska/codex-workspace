@@ -1,0 +1,142 @@
+{
+  "completed_at": "2026-09-26T21:18:27.195Z",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "## PubMed Search Results\n**Query:** (\"sleep deprivation\" OR \"sleep restriction\") AND (skin OR cutaneous) AND (recovery OR recuperation)\n**Returned:** 10 of 25 | **Offset:** 0\n**Search URL:** https://pubmed.ncbi.nlm.nih.gov/?term=(%22sleep%20deprivation%22%20OR%20%22sleep%20restriction%22)%20AND%20(skin%20OR%20cutaneous)%20AND%20(recovery%20OR%20recuperation)\n\n**PMIDs:** 19692662, 18333663, 41694313, 31692145, 33249482, 8194539, 24682207, 28912361, 20889142, 9760307\n\n### Summaries\n\n#### Recurrent restriction of sleep and inadequate recuperation induce both adaptive changes and pathological outcomes.\n**PMID:** 19692662\n**Authors:** Everson CA, Szabo A\n**Source:** Am J Physiol Regul Integr Comp Physiol\n**Published:** 2009-11-01\n**DOI:** 10.1152/ajpregu.00230.2009\n**PMCID:** PMC2777777\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/19692662/\n**PMC:** https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2777777/\n\n#### Mood, illness and injury responses and recovery with adventure racing.\n**PMID:** 18333663\n**Authors:** Anglem N, Lucas SJ, Rose EA, et al.\n**Source:** Wilderness Environ Med\n**DOI:** 10.1580/07-WEME-OR-091.1\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/18333663/\n\n#### Both acute and chronic caffeine consumption affect cardiovascular responses to total sleep deprivation.\n**PMID:** 41694313\n**Authors:** Mateo L, Tardo-Dino PE, Gomez-Merino D, et al.\n**Source:** Front Cardiovasc Med\n**Published:** 2026-01-01\n**DOI:** 10.3389/fcvm.2026.1718154\n**PMCID:** PMC12901335\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/41694313/\n**PMC:** https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12901335/\n\n#### A study of skin characteristics with long-term sleep restriction in Korean women in their 40s.\n**PMID:** 31692145\n**Authors:** Jang SI, Lee M, Han J, et al.\n**Source:** Skin Res Technol\n**Published:** 2020-03-01\n**DOI:** 10.1111/srt.12797\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/31692145/\n\n#### Macro- and microvascular reactivity during repetitive exposure to shortened sleep: sex differences.\n**PMID:** 33249482\n**Authors:** Yang H, Baltzis D, Bhatt V, et al.\n**Source:** Sleep\n**Published:** 2021-05-14\n**DOI:** 10.1093/sleep/zsaa257\n**PMCID:** PMC8120341\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/33249482/\n**PMC:** https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8120341/\n\n#### Local sweating responses during recovery sleep after sleep deprivation in humans.\n**PMID:** 8194539\n**Authors:** Dewasmes G, Bothorel B, Nicolas A, et al.\n**Source:** Eur J Appl Physiol Occup Physiol\n**Published:** 1994-01-01\n**DOI:** 10.1007/BF00244023\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/8194539/\n\n#### Effects of caffeine on skin and core temperatures, alertness, and recovery sleep during circadian misalignment.\n**PMID:** 24682207\n**Authors:** McHill AW, Smith BJ, Wright KP Jr\n**Source:** J Biol Rhythms\n**Published:** 2014-04-01\n**DOI:** 10.1177/0748730414523078\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/24682207/\n\n#### Impact of sleep restriction on local immune response and skin barrier restoration with and without \"multinutrient\" nutrition intervention.\n**PMID:** 28912361\n**Authors:** Smith TJ, Wilson MA, Karl JP, et al.\n**Source:** J Appl Physiol (1985)\n**Published:** 2018-01-01\n**DOI:** 10.1152/japplphysiol.00547.2017\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/28912361/\n\n#### Sleep deprivation facilitates extinction of implicit fear generalization and physiological response to fear.\n**PMID:** 20889142\n**Authors:** Kuriyama K, Soshi T, Kim Y\n**Source:** Biol Psychiatry\n**Published:** 2010-12-01\n**DOI:** 10.1016/j.biopsych.2010.08.015\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/20889142/\n\n#### Exertional fatigue, sleep loss, and negative energy balance increase susceptibility to hypothermia.\n**PMID:** 9760307\n**Authors:** Young AJ, Castellani JW, O'Brien C, et al.\n**Source:** J Appl Physiol (1985)\n**Published:** 1998-10-01\n**DOI:** 10.1152/jappl.1998.85.4.1210\n**PubMed:** https://pubmed.ncbi.nlm.nih.gov/9760307/"
+      },
+      {
+        "type": "text",
+        "text": "\n\n**Effective Query:** (\"sleep deprivation\" OR \"sleep restriction\") AND (skin OR cutaneous) AND (recovery OR recuperation)\n**Applied Filters:** none"
+      }
+    ],
+    "structuredContent": {
+      "query": "(\"sleep deprivation\" OR \"sleep restriction\") AND (skin OR cutaneous) AND (recovery OR recuperation)",
+      "offset": 0,
+      "pmids": [
+        "19692662",
+        "18333663",
+        "41694313",
+        "31692145",
+        "33249482",
+        "8194539",
+        "24682207",
+        "28912361",
+        "20889142",
+        "9760307"
+      ],
+      "summaries": [
+        {
+          "pmid": "19692662",
+          "title": "Recurrent restriction of sleep and inadequate recuperation induce both adaptive changes and pathological outcomes.",
+          "authors": "Everson CA, Szabo A",
+          "source": "Am J Physiol Regul Integr Comp Physiol",
+          "docType": "citation",
+          "pubDate": "2009-11-01",
+          "doi": "10.1152/ajpregu.00230.2009",
+          "pmcId": "PMC2777777",
+          "pmcUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2777777/",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/19692662/"
+        },
+        {
+          "pmid": "18333663",
+          "title": "Mood, illness and injury responses and recovery with adventure racing.",
+          "authors": "Anglem N, Lucas SJ, Rose EA, et al.",
+          "source": "Wilderness Environ Med",
+          "docType": "citation",
+          "doi": "10.1580/07-WEME-OR-091.1",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/18333663/"
+        },
+        {
+          "pmid": "41694313",
+          "title": "Both acute and chronic caffeine consumption affect cardiovascular responses to total sleep deprivation.",
+          "authors": "Mateo L, Tardo-Dino PE, Gomez-Merino D, et al.",
+          "source": "Front Cardiovasc Med",
+          "docType": "citation",
+          "pubDate": "2026-01-01",
+          "doi": "10.3389/fcvm.2026.1718154",
+          "pmcId": "PMC12901335",
+          "pmcUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12901335/",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/41694313/"
+        },
+        {
+          "pmid": "31692145",
+          "title": "A study of skin characteristics with long-term sleep restriction in Korean women in their 40s.",
+          "authors": "Jang SI, Lee M, Han J, et al.",
+          "source": "Skin Res Technol",
+          "docType": "citation",
+          "pubDate": "2020-03-01",
+          "doi": "10.1111/srt.12797",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/31692145/"
+        },
+        {
+          "pmid": "33249482",
+          "title": "Macro- and microvascular reactivity during repetitive exposure to shortened sleep: sex differences.",
+          "authors": "Yang H, Baltzis D, Bhatt V, et al.",
+          "source": "Sleep",
+          "docType": "citation",
+          "pubDate": "2021-05-14",
+          "doi": "10.1093/sleep/zsaa257",
+          "pmcId": "PMC8120341",
+          "pmcUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8120341/",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/33249482/"
+        },
+        {
+          "pmid": "8194539",
+          "title": "Local sweating responses during recovery sleep after sleep deprivation in humans.",
+          "authors": "Dewasmes G, Bothorel B, Nicolas A, et al.",
+          "source": "Eur J Appl Physiol Occup Physiol",
+          "docType": "citation",
+          "pubDate": "1994-01-01",
+          "doi": "10.1007/BF00244023",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/8194539/"
+        },
+        {
+          "pmid": "24682207",
+          "title": "Effects of caffeine on skin and core temperatures, alertness, and recovery sleep during circadian misalignment.",
+          "authors": "McHill AW, Smith BJ, Wright KP Jr",
+          "source": "J Biol Rhythms",
+          "docType": "citation",
+          "pubDate": "2014-04-01",
+          "doi": "10.1177/0748730414523078",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/24682207/"
+        },
+        {
+          "pmid": "28912361",
+          "title": "Impact of sleep restriction on local immune response and skin barrier restoration with and without \"multinutrient\" nutrition intervention.",
+          "authors": "Smith TJ, Wilson MA, Karl JP, et al.",
+          "source": "J Appl Physiol (1985)",
+          "docType": "citation",
+          "pubDate": "2018-01-01",
+          "doi": "10.1152/japplphysiol.00547.2017",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/28912361/"
+        },
+        {
+          "pmid": "20889142",
+          "title": "Sleep deprivation facilitates extinction of implicit fear generalization and physiological response to fear.",
+          "authors": "Kuriyama K, Soshi T, Kim Y",
+          "source": "Biol Psychiatry",
+          "docType": "citation",
+          "pubDate": "2010-12-01",
+          "doi": "10.1016/j.biopsych.2010.08.015",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/20889142/"
+        },
+        {
+          "pmid": "9760307",
+          "title": "Exertional fatigue, sleep loss, and negative energy balance increase susceptibility to hypothermia.",
+          "authors": "Young AJ, Castellani JW, O'Brien C, et al.",
+          "source": "J Appl Physiol (1985)",
+          "docType": "citation",
+          "pubDate": "1998-10-01",
+          "doi": "10.1152/jappl.1998.85.4.1210",
+          "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/9760307/"
+        }
+      ],
+      "searchUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=(%22sleep%20deprivation%22%20OR%20%22sleep%20restriction%22)%20AND%20(skin%20OR%20cutaneous)%20AND%20(recovery%20OR%20recuperation)",
+      "totalCount": 25,
+      "effectiveQuery": "(\"sleep deprivation\" OR \"sleep restriction\") AND (skin OR cutaneous) AND (recovery OR recuperation)",
+      "appliedFilters": {}
+    }
+  }
+}

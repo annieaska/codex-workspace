@@ -1,0 +1,32 @@
+{
+  "scope": "existing public video metadata and actual English automatic captions only",
+  "checks": {
+    "metadata_id_matches": true,
+    "public_account_and_date_present": true,
+    "metrics_present": true,
+    "actual_vtt_cues_present": true,
+    "raw_file_retained": true
+  },
+  "passed": true,
+  "cue_count": 119,
+  "text_lines_after_adjacent_duplicate_removal": 60,
+  "first_cue": [
+    "00:00:00.240",
+    "00:00:02.869"
+  ],
+  "last_cue": [
+    "00:02:11.039",
+    "00:02:14.039"
+  ],
+  "video_duration_seconds": 141,
+  "caption_note": "Automatic captions; lightly deduplicated, not manually corrected or checked against audio. Last caption ends at 134.039s of a 141s video; complete spoken coverage not independently verified.",
+  "not_verified": [
+    "keyword search",
+    "other videos",
+    "comment bodies",
+    "batch stability",
+    "target audience region",
+    "research interest gate"
+  ],
+  "observed_at": "2026-09-26T13:12:24.912336+00:00"
+}

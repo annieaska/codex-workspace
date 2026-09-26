@@ -1,0 +1,169 @@
+Alteration of barrier properties, stratum corneum ceramides and microbiome composition in response to lotion application on cosmetic dry skin | Scientific Reports (https://www.nature.com/articles/s41598-022-09231-8)
+citeturn39view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn35view0","lineno":307}); Redirected to URL: https://www.nature.com/articles/s41598-022-09231-8?error=cookies_not_supported&code=565e900f-a23f-4bf4-9c31-40e18013c339; Total lines: 607
+L280:   39. Martin, R., Henley, J. B., Sarrazin, P. & Seite, S. Skin microbiome in patients with psoriasis before and after balneotherapy at the thermal care center of La Roche-Posay. J. Drugs Dermatol. 14, 1400–1405 (2015).
+L281: 
+L283:   41. Seité, S., Zelenkova, H. & Martin, R. Clinical efficacy of emollients in atopic dermatitis patients—Relationship with the skin microbiota modification. Clin. Cosmet. Investig. Dermatol. 10, 25–33. cite173†https://doi.org/10.2147/CCID.S121910†doi.org (2017).
+L284: 
+L285:   42. Palaniraj, A. & Jayaraman, V. Production, recovery and applications of xanthan gum by Xanthomonas campestris. J. Food Eng. 106, 1–12. cite174†https://doi.org/10.1016/j.jfoodeng.2011.03.035†doi.org (2011).
+L286:   43. Glatz, M. et al. Emollient use alters skin barrier and microbes in infants at risk for developing atopic dermatitis. PLoS ONE 13, e0192443. cite175†https://doi.org/10.1371/journal.pone.0192443†doi.org (2018).
+L287: 
+L288:   44. Capone, K., Kirchner, F., Klein, S. L. & Tierney, N. K. Effects of colloidal oatmeal topical atopic dermatitis cream on skin microbiome and skin barrier properties. J. Drugs Dermatol. 19, 524–531 (2020).
+L289:   45. Zheng, Y. et al. Shifts in the skin microbiome associated with diaper dermatitis and emollient treatment amongst infants and toddlers in China. Exp. Dermatol. 28, 1289–1297. cite176†https://doi.org/10.1111/exd.14028†doi.org (2019).
+L290: 
+L291:   46. Wilhelm, K. P., Elsner, P., Berardesca, E. & Maibach, H. I. Bioengineering of the Skin: Skin Imaging and Analysis 2nd edn. (Taylor & Francis, 1996).
+L292:   47. Feng, L. et al. Characteristic differences in barrier and hygroscopic properties between normal and cosmetic dry skin. II. Depth profile of natural moisturizing factor and cohesivity. Int. J. Cosmet. Sci. 36, 231–238. cite177†https://doi.org/10.1111/ics.12118†doi.org (2014).
+L293: 
+L294:   48. Williamson, P. & Kligman, A. M. A new method for the quantitative investigation of cutaneous bacteria. J. Investig. Dermatol. 45, 498–503 (1965).
+L295:   49. Kurtz, Z. D. et al. Sparse and compositionally robust inference of microbial ecological networks. PLoS Comput. Biol. 11, e1004226. cite178†https://doi.org/10.1371/journal.pcbi.1004226†doi.org (2015).
+L296: 
+L297:   50. Meinshausen, N. & Buhlmann, P. High-dimensional graphs and variable selection with the Lasso. Ann. Stat. 34, 1436–1462. cite179†https://doi.org/10.1214/009053606000000281†doi.org (2006).
+L298:   51. Liu, H., Roeder, K. & Wasserman, L. Proc. 23rd International Conference on Neural Information Processing Systems—Volume 2, 1432–1440 (Curran Associates Inc., 2010).
+L299: 
+L300:   52. Efron, B. & Tibshirani, R. J. An Introduction to the Bootstrap (Chapman & Hall, 1993).
+L301: 
+L302:   53. Wang, L. et al. Facial skin microbiota-mediated host response to pollution stress revealed by microbiome networks of individual. mSystems. cite161†https://doi.org/10.1128/mSystems.00319-21†doi.org (2021).
+L303:   54. Csárdi, G. N. T. The igraph software package for complex network research. Int. J. Comp. Syst. 1695, 1–9 (2006).
+L304: 
+L305:   55. Tipton, L. et al. Fungi stabilize connectivity in the lung and skin microbial ecosystems. Microbiome 6, 12. cite180†https://doi.org/10.1186/s40168-017-0393-0†doi.org (2018).
+L306:   56. Ruiz, V. E. et al. A single early-in-life macrolide course has lasting effects on murine microbial network topology and immunity. Nat. Commun. 8, 518. cite181†https://doi.org/10.1038/s41467-017-00531-6†doi.org (2017).
+L307: ## Acknowledgements
+L308: 
+L309: DNA extractions were carried out by QIAGEN, Germany. DNA sequencing was performed by the Centre for Genomic Research, Liverpool, UK. The bioinformatics processing was completed by Eagle Genomics, Cambridge UK. The authors gratefully acknowledge Alba Science Ltd for running the study and Lipotype, Germany, for performing analysis of the ceramides.
+L310: ## Funding
+L311: 
+L312: Author confirm that this work was funded by Unilever Research and Development. Unilever provided support in the form of salaries for authors [BM, SG, MH, SP, DA, AC, SEA, TD, WFL, DM, GY, AV, JSB, LF, DM and AEM], but did not have any additional role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript. The specific roles of these authors are articulated in the Author contributions section.
+L313: 
+L314: ## Author information
+L315: ### Authors and Affiliations
+L316: 
+L317:   1. Unilever Research & Development, Port Sunlight, Bebington, Wirral, CH63 3JW, England, UK
+L318: 
+L319: Barry Murphy, Sally Grimshaw, Michael Hoptroff, Sarah Paterson, David Arnold, Andrew Cawley & Suzanne E. Adams
+L320: 
+L321:   2. Institute of Infection, Veterinary, and Ecological Sciences, University of Liverpool, Liverpool, L69 7ZB, England, UK
+L322: 
+L323: Francesco Falciani & Richard Eccles
+L324: 
+L325:   3. Unilever Research & Development, Colworth, Bedfordshire, MK44 1LQ, England, UK
+L326: 
+L327: Tony Dadd & Andrew E. Mayes
+L328:   4. Unilever Research & Development, 55 Merritt Blvd, Trumbull, CT, 06611, USA
+L329: 
+L330: William F. Lathrop, Diana Marrero, Galina Yarova, Ana Villa, John S. Bajor, Lin Feng & Dawn Mihalov
+L331: 
+L332:   5. Eagle Genomics, Wellcome Genome Campus, Hinxton, Cambridge, CB10 1DR, UK
+L333: 
+L334: Alex Mitchell
+L335: 
+L336: Authors
+L337: 
+L338:   1. Barry Murphy
+L339: 
+L340: cite182†View author publications L341: 
+L342: Search author on:cite183†PubMed†www.ncbi.nlm.nih.gov cite184†Google Scholar†scholar.google.co.uk L343: 
+L344:   2. Sally Grimshaw
+L345: 
+L346: cite185†View author publications L347: Search author on:cite186†PubMed†www.ncbi.nlm.nih.gov cite187†Google Scholar†scholar.google.co.uk L348: 
+L349:   3. Michael Hoptroff
+L350: 
+L351: cite188†View author publications L352: 
+L353: Search author on:cite189†PubMed†www.ncbi.nlm.nih.gov cite190†Google Scholar†scholar.google.co.uk L354: 
+L355:   4. Sarah Paterson
+L356: 
+L357: cite191†View author publications L358: 
+L359: Search author on:cite192†PubMed†www.ncbi.nlm.nih.gov cite193†Google Scholar†scholar.google.co.uk L360: 
+L361:   5. David Arnold
+L362: 
+L363: cite194†View author publications L364: Search author on:cite195†PubMed†www.ncbi.nlm.nih.gov cite196†Google Scholar†scholar.google.co.uk L365: 
+L366:   6. Andrew Cawley
+L367: 
+L368: cite197†View author publications L369: 
+L370: Search author on:cite198†PubMed†www.ncbi.nlm.nih.gov cite199†Google Scholar†scholar.google.co.uk L371: 
+L372:   7. Suzanne E. Adams
+L373: 
+L374: cite200†View author publications L375: 
+L376: Search author on:cite201†PubMed†www.ncbi.nlm.nih.gov cite202†Google Scholar†scholar.google.co.uk L377: 
+L378:   8. Francesco Falciani
+L379: 
+L380: cite203†View author publications L381: Search author on:cite204†PubMed†www.ncbi.nlm.nih.gov cite205†Google Scholar†scholar.google.co.uk L382: 
+L383:   9. Tony Dadd
+L384: 
+L385: cite206†View author publications L386: 
+L387: Search author on:cite207†PubMed†www.ncbi.nlm.nih.gov cite208†Google Scholar†scholar.google.co.uk L388: 
+L389:   10. Richard Eccles
+L390: 
+L391: cite209†View author publications L392: 
+L393: Search author on:cite210†PubMed†www.ncbi.nlm.nih.gov cite211†Google Scholar†scholar.google.co.uk L394: 
+L395:   11. Alex Mitchell
+L396: 
+L397: cite212†View author publications L398: Search author on:cite213†PubMed†www.ncbi.nlm.nih.gov cite214†Google Scholar†scholar.google.co.uk L399: 
+L400:   12. William F. Lathrop
+L401: 
+L402: cite215†View author publications L403: 
+L404: Search author on:cite216†PubMed†www.ncbi.nlm.nih.gov cite217†Google Scholar†scholar.google.co.uk L405: 
+L406:   13. Diana Marrero
+L407: 
+L408: cite218†View author publications L409: 
+L410: Search author on:cite219†PubMed†www.ncbi.nlm.nih.gov cite220†Google Scholar†scholar.google.co.uk L411: 
+L412:   14. Galina Yarova
+L413: 
+L414: cite221†View author publications L415: Search author on:cite222†PubMed†www.ncbi.nlm.nih.gov cite223†Google Scholar†scholar.google.co.uk L416: 
+L417:   15. Ana Villa
+L418: 
+L419: cite224†View author publications L420: 
+L421: Search author on:cite225†PubMed†www.ncbi.nlm.nih.gov cite226†Google Scholar†scholar.google.co.uk L422: 
+L423:   16. John S. Bajor
+L424: 
+L425: cite227†View author publications L426: 
+L427: Search author on:cite228†PubMed†www.ncbi.nlm.nih.gov cite229†Google Scholar†scholar.google.co.uk L428: 
+L429:   17. Lin Feng
+L430: 
+L431: cite230†View author publications L432: Search author on:cite231†PubMed†www.ncbi.nlm.nih.gov cite232†Google Scholar†scholar.google.co.uk L433: 
+L434:   18. Dawn Mihalov
+L435: 
+L436: cite233†View author publications L437: 
+L438: Search author on:cite234†PubMed†www.ncbi.nlm.nih.gov cite235†Google Scholar†scholar.google.co.uk L439: 
+L440:   19. Andrew E. Mayes
+L441: 
+L442: cite236†View author publications L443: 
+L444: Search author on:cite237†PubMed†www.ncbi.nlm.nih.gov cite238†Google Scholar†scholar.google.co.uk L445: ### Contributions
+L446: Conceptualization: A.M., S.P., B.M., M.H.; Data Curation: B.M., S.G., A.E.M., D.A., T.D.; Investigation: B.M., S.G., A.M., M.H., D.A., S.E.A., R.E., W.L., D.M., G.Y., A.V., J.B., L.F., T.D.; Formal Analysis: B.M., S.G., A.E.M., M.H., D.A., S.E.A., T.D., A.C., A.M., F.F., W.L., D.M., G.Y., A.V., J.B., L.F., D.M.; Project Administration: B.M., S.G., A.M.; Resources: S.G.; Software: F.F., A.C., D.A., T.D.; Supervision: B.M., A.M., M.H.; Visualization: B.M., A.M., T.D., D.A.; Writing—Original Draft Preparation: B.M., A.M.; Writing—Review and Editing: B.M., S.G., M.H., S.P., D.A., R.E., A.C., A.M., F.F., S.E.A., W.L., D.M., G.Y., A.V., J.B., L.F., T.D., D.M.
+L447: and A.E.M.
+L448: ### Corresponding author
+L449: 
+L450: Correspondence to Barry Murphy (Barry.murphy@unilever.com).
+L451: 
+L452: ## Ethics declarations
+L453: 
+L454: ### Competing interests
+L455: 
+L456: The authors declare no competing interests.
+L457: 
+L458: ## Additional information
+L459: 
+L460: ### Publisher's note
+L461: 
+L462: Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+L463: 
+L464: ## Supplementary Information
+L465: 
+L466: ### cite239†Supplementary Information. (download DOCX )†media.springernature.com L467: ## Rights and permissions
+L468: Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made.
+L469: The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder.
+L470: To view a copy of this licence, visit cite240†http://creativecommons.org/licenses/by/4.0/†creativecommons.org .
+L471: cite241†Reprints and permissions†s100.copyright.com L472: ## About this article
+L473: 
+L474: ### Cite this article
+L475: 
+L476: Murphy, B., Grimshaw, S., Hoptroff, M. et al. Alteration of barrier properties, stratum corneum ceramides and microbiome composition in response to lotion application on cosmetic dry skin. Sci Rep 12, 5223 (2022). https://doi.org/10.1038/s41598-022-09231-8
+L477: 
+L478:   * Received: 21 March 2021
+L479: 
+L480:   * Accepted: 16 March 2022
+L481: 
+L482:   * Published: 26 March 2022
+L483: 
+L484:   * Version of record: 26 March 2022
+L485: 
+L486:   * DOI (Digital Object Identifier): https://doi.org/10.1038/s41598-022-09231-8
+

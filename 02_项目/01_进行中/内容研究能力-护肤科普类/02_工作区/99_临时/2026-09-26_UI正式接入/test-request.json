@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.1",
+  "run_id": "SK-RES-001",
+  "input_revision": "package-r4",
+  "config_ref": {
+    "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-RES-001-policy-r2.json",
+    "revision": "SK-MATT-20260925-r2",
+    "sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a"
+  },
+  "created_at": "2026-09-26T12:51:56.263Z",
+  "status": "not_executed",
+  "request": {
+    "stage": "S2",
+    "gap_id": "RES-G01",
+    "target": "RES-T01",
+    "category": "human_original",
+    "route": "web.search"
+  },
+  "gap": {
+    "id": "RES-G01",
+    "run_id": "SK-RES-001",
+    "revision": "s1-r1",
+    "demo": false,
+    "scope_id": "SK-RES-001",
+    "category": "interest",
+    "description": "YouTube/Instagram 未取得平台原页可核验发布日期、互动指标与受众地域；当前期和基线期兴趣均未知。",
+    "critical": true,
+    "status": "open",
+    "closure_source_ids": [],
+    "closure_note": null
+  },
+  "budget": {
+    "s1_queries": {
+      "human_original": 3,
+      "reviews_guidance": 3,
+      "mechanism": 3,
+      "youtube": 3,
+      "instagram": 3
+    },
+    "s1_qualified_reads": 4,
+    "s2_targets": {
+      "RES-T01": {
+        "queries": 2,
+        "qualified_reads": 1
+      },
+      "RES-T02": {
+        "queries": 2,
+        "qualified_reads": 0
+      }
+    },
+    "blocked_routes": [
+      "agent-reach/Exa"
+    ],
+    "screening_observations": [
+      {
+        "id": "RES-Q01",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q02",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q03",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q04",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q05",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q06",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q07",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q08",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q09",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q10",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q11",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q12",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q13",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q14",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q15",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q16",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q17",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q18",
+        "returned_hits": null,
+        "screened_hits": null
+      },
+      {
+        "id": "RES-Q19",
+        "returned_hits": null,
+        "screened_hits": null
+      }
+    ],
+    "screening_note": "部分查询的实际筛读数量未知；预算算术未超限不能证明全部执行守约，须保留执行偏差。",
+    "errors": []
+  },
+  "note": "本请求未执行、未预占额度。执行前核对当前记录与累计预算；交回来源、定位、局限及未解决部分。"
+}

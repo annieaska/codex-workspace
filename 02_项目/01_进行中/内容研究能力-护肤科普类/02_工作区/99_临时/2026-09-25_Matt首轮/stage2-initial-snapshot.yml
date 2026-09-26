@@ -1,0 +1,188 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - strong [ref=e5]: 护肤科普 / 研究台
+      - generic [ref=e6]: 阶段 2 · 静态演示 · 无真实证据
+    - heading "先把问题看全， 再决定怎么讲。" [level=1] [ref=e7]: 先把问题看全，再决定怎么讲。
+    - paragraph [ref=e8]: 从研究边界、分支覆盖到审阅与方向选择，让每个判断旁边都能看见依据、反证和缺口。
+    - generic [ref=e9]:
+      - strong [ref=e10]: 这是一份交互样例。
+      - text: 内容是研究问题与演示占位，不是研究发现或护理建议。操作仅保留在当前页面；刷新后清空，不产生正式审核或冻结记录。
+    - group "选择研究模式" [ref=e11]:
+      - button "行为型 · 熬夜与皮肤" [pressed] [ref=e12] [cursor=pointer]
+      - button "结果型 · 干燥与紧绷" [ref=e13] [cursor=pointer]
+    - generic [ref=e14]:
+      - text: SK-BEH-001 · 从行为出发，先辨关联，再谈改善
+      - heading "熬夜肌攻略：睡眠不足与皮肤外观、屏障及日常护理边界" [level=2] [ref=e15]
+      - paragraph [ref=e16]: 区分观察关联、因果证据与短期外观感知，给出可表达且不夸大的改善优先级
+      - group [ref=e17]:
+        - generic "核心问题与排除范围" [ref=e18]
+    - group [ref=e19]:
+      - generic "查看本轮范围、平台与检索预算" [ref=e20]
+  - navigation "研究阅读路径" [ref=e21]:
+    - link "01 分支与证据 先看研究是否覆盖" [ref=e22] [cursor=pointer]:
+      - /url: "#coverage"
+      - text: 01 分支与证据
+      - generic [ref=e23]: 先看研究是否覆盖
+    - link "02 专业审阅 逐支决定与理由" [ref=e24] [cursor=pointer]:
+      - /url: "#review"
+      - text: 02 专业审阅
+      - generic [ref=e25]: 逐支决定与理由
+    - link "03 方向双门槛 科学与兴趣独立判断" [ref=e26] [cursor=pointer]:
+      - /url: "#directions"
+      - text: 03 方向双门槛
+      - generic [ref=e27]: 科学与兴趣独立判断
+    - link "04 最终研究包 按知识链连续阅读" [ref=e28] [cursor=pointer]:
+      - /url: "#package"
+      - text: 04 最终研究包
+      - generic [ref=e29]: 按知识链连续阅读
+  - region [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]: "01"
+      - heading "分支覆盖与原位证据" [level=2] [ref=e33]
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - paragraph [ref=e36]: 先展开分支，核对依据和边界，再进入审阅。
+        - generic [ref=e37]: 3 个分支 · 均待研究
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: STEP 01
+          - text: 睡眠相关行为
+        - generic [ref=e41]:
+          - generic [ref=e42]: STEP 02
+          - text: 可能机制与表象
+        - generic [ref=e43]:
+          - generic [ref=e44]: STEP 03
+          - text: 可改变因素
+        - generic [ref=e45]:
+          - generic [ref=e46]: STEP 04
+          - text: 改善收益与护理边界
+      - paragraph [ref=e47]: 改善收益优先：关联程度 → 视觉显著性与时间 → 可逆性 → 风险 → 收益／成本 → 证据把握。不是越快越优先。
+      - generic [ref=e48]:
+        - group [ref=e49]:
+          - generic "1. 睡眠与外观感知 覆盖：待研究 · 证据缺口" [ref=e50] [cursor=pointer]:
+            - text: 1. 睡眠与外观感知
+            - generic [ref=e51]: 覆盖：待研究 · 证据缺口
+          - generic [ref=e52]:
+            - paragraph [ref=e53]: 区分主观疲态、测量指标与真实改变
+            - generic [ref=e54]:
+              - term [ref=e55]: 定义与关系
+              - definition [ref=e56]: 睡眠行为 → 外观观察；与屏障分支有关，但不互相等同
+              - term [ref=e57]: 时间维度
+              - definition [ref=e58]: 短期与长期暴露分开研究
+              - term [ref=e59]: 适用与限定
+              - definition [ref=e60]: 年龄、睡眠模式、生活方式与拍摄条件；适用人群待查
+              - term [ref=e61]: 初步判断
+              - definition [ref=e62]: 需先核对支持、反证、直接性与外推边界；目前仅有问题地图，未形成研究判断。
+            - heading "证据就在分支旁边" [level=4] [ref=e63]
+            - generic [ref=e64]:
+              - article [ref=e65]:
+                - text: SK-BEH-001-B01-S1 · 支持／相关依据槽位
+                - heading "待查：支持／相关研究 · 睡眠与外观感知" [level=4] [ref=e66]
+                - paragraph [ref=e67]: 演示，尚无真实原文。标题、作者、日期及链接：未知。
+                - group [ref=e68]:
+                  - generic "查看证据身份、质量与适用范围" [ref=e69] [cursor=pointer]
+              - article [ref=e70]:
+                - text: SK-BEH-001-B01-S2 · 反证／限制槽位
+                - heading "待查：反证／限制 · 睡眠与外观感知" [level=4] [ref=e71]
+                - paragraph [ref=e72]: 演示，尚无真实原文。标题、作者、日期及链接：未知。
+                - group [ref=e73]:
+                  - generic "查看证据身份、质量与适用范围" [ref=e74] [cursor=pointer]
+            - generic [ref=e75]:
+              - paragraph [ref=e76]:
+                - strong [ref=e77]: 允许的表达范围
+                - text: 可提出哪些外观变化被观察到的研究问题
+              - paragraph [ref=e78]:
+                - strong [ref=e79]: 禁止的表达
+                - text: 不能把疲态直接写成衰老，也不能由相关性断言因果
+            - paragraph [ref=e80]: 未关闭：原文／直接性／反证／适用性。未审阅
+        - group [ref=e81]:
+          - generic "2. 屏障指标与机制 覆盖：待研究 · 证据缺口" [ref=e82] [cursor=pointer]:
+            - text: 2. 屏障指标与机制
+            - generic [ref=e83]: 覆盖：待研究 · 证据缺口
+        - group [ref=e84]:
+          - generic "3. 可改变因素与护理角色 覆盖：待研究 · 证据缺口" [ref=e85] [cursor=pointer]:
+            - text: 3. 可改变因素与护理角色
+            - generic [ref=e86]: 覆盖：待研究 · 证据缺口
+      - paragraph [ref=e87]: “待研究”表示尚未执行检索；知识库未接通不代表 0 命中。所有来源身份、日期、原文链接与指标均未填，不能作为证据引用。
+  - region [ref=e88]:
+    - generic [ref=e89]:
+      - generic [ref=e90]: "02"
+      - heading "专业审阅 · 演示操作" [level=2] [ref=e91]
+    - generic [ref=e92]:
+      - paragraph [ref=e93]: 逐支选择处理方式并写下理由。真实流程中，这里承接研究纠错、分支取舍和缺口确认。
+      - paragraph [ref=e94]:
+        - text: 当前操作者：演示体验者。完成按钮仅模拟流程放行，
+        - strong [ref=e95]: 不代表专业人士、临床审核或用户已确认
+        - text: 。关键证据缺口始终保留。
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - group "睡眠与外观感知" [ref=e98]:
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - generic [ref=e102]: 处理方式
+                - combobox "处理方式" [ref=e103]:
+                  - option "请选择" [selected]
+                  - option "保留研究分支"
+                  - option "修正后保留"
+                  - option "登记缺口继续研究"
+                  - option "排除本分支"
+              - generic [ref=e104]:
+                - generic [ref=e105]: 理由／修正要求
+                - textbox "理由／修正要求" [ref=e106]:
+                  - /placeholder: 说明保留、修正、补证或排除的原因
+          - group "屏障指标与机制" [ref=e107]:
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e111]: 处理方式
+                - combobox "处理方式" [ref=e112]:
+                  - option "请选择" [selected]
+                  - option "保留研究分支"
+                  - option "修正后保留"
+                  - option "登记缺口继续研究"
+                  - option "排除本分支"
+              - generic [ref=e113]:
+                - generic [ref=e114]: 理由／修正要求
+                - textbox "理由／修正要求" [ref=e115]:
+                  - /placeholder: 说明保留、修正、补证或排除的原因
+          - group "可改变因素与护理角色" [ref=e116]:
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - generic [ref=e120]: 处理方式
+                - combobox "处理方式" [ref=e121]:
+                  - option "请选择" [selected]
+                  - option "保留研究分支"
+                  - option "修正后保留"
+                  - option "登记缺口继续研究"
+                  - option "排除本分支"
+              - generic [ref=e122]:
+                - generic [ref=e123]: 理由／修正要求
+                - textbox "理由／修正要求" [ref=e124]:
+                  - /placeholder: 说明保留、修正、补证或排除的原因
+        - generic [ref=e125]:
+          - button "完成演示审阅" [disabled] [ref=e126]
+          - button "重置本模式演示" [ref=e127] [cursor=pointer]
+      - status [ref=e128]: 请完成每个分支的处理方式与理由。修改审阅会使本模式旧演示方向和包预览失效。
+  - region [ref=e129]:
+    - generic [ref=e130]:
+      - generic [ref=e131]: "03"
+      - heading "候选方向 · 科学 × 兴趣" [level=2] [ref=e132]
+    - generic [ref=e134]:
+      - heading "等待前序审阅" [level=3] [ref=e135]
+      - paragraph [ref=e136]: 完成逐支演示审阅后，才展示由保留分支产生的方向草案。
+      - link "返回专业审阅 ↑" [ref=e137] [cursor=pointer]:
+        - /url: "#review"
+  - region [ref=e138]:
+    - generic [ref=e139]:
+      - generic [ref=e140]: "04"
+      - heading "最终研究包 · 连续阅读" [level=2] [ref=e141]
+    - generic [ref=e143]:
+      - heading "等待方向选择" [level=3] [ref=e144]
+      - paragraph [ref=e145]: 完成上方演示选择后展开阅读结构；关键缺口不会隐藏，也不会生成正式包。
+  - generic [ref=e146]:
+    - strong [ref=e147]: 已到本页末尾 · 静态演示
+    - paragraph [ref=e148]: 真实研究尚未开始。演示不构成医学结论，不能发布为研究结果。
+    - link "下载同版本演示数据 JSON" [ref=e149] [cursor=pointer]:
+      - /url: static-fixtures.json
+    - text: · SK-STATIC-20260925-r1
+    - paragraph [ref=e150]: 可直接离线打开；不上传输入，不自动检索，不写入业务文件。下载文件与内嵌演示数据一致。

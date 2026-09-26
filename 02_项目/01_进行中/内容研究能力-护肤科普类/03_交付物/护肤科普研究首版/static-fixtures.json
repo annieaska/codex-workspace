@@ -1,0 +1,479 @@
+{
+  "schema_version": "0.1-static",
+  "revision": "SK-STATIC-20260925-r1",
+  "demo": true,
+  "config_ref": {
+    "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/run-config.json",
+    "revision": "SK-MATT-20260925-r2",
+    "sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a"
+  },
+  "modes": [
+    {
+      "mode": "behavior",
+      "run_id": "SK-BEH-001",
+      "topic": "熬夜肌攻略：睡眠不足与皮肤外观、屏障及日常护理边界",
+      "objective": "区分观察关联、因果证据与短期外观感知，给出可表达且不夸大的改善优先级",
+      "questions": [
+        "睡眠不足与哪些皮肤变化有关，哪些因果尚未成立",
+        "短期外观变化与屏障/长期老化证据如何区分",
+        "改善睡眠和日常护肤各自能解决什么，哪些不能承诺"
+      ],
+      "exclude": [
+        "个体诊断",
+        "处方或疾病治疗方案",
+        "补充剂推荐",
+        "用护肤抵消熬夜的保证",
+        "具体品牌比较"
+      ],
+      "chain": [
+        "睡眠相关行为",
+        "可能机制与表象",
+        "可改变因素",
+        "改善收益与护理边界"
+      ],
+      "priority": "改善收益优先：关联程度 → 视觉显著性与时间 → 可逆性 → 风险 → 收益／成本 → 证据把握。不是越快越优先。",
+      "branches": [
+        {
+          "title": "睡眠与外观感知",
+          "definition": "区分主观疲态、测量指标与真实改变",
+          "relation": "睡眠行为 → 外观观察；与屏障分支有关，但不互相等同",
+          "time": "短期与长期暴露分开研究",
+          "population": "年龄、睡眠模式、生活方式与拍摄条件；适用人群待查",
+          "direction": "是否只是看起来疲惫？先拆开观察和因果",
+          "allowed": "可提出哪些外观变化被观察到的研究问题",
+          "forbidden": "不能把疲态直接写成衰老，也不能由相关性断言因果",
+          "id": "SK-BEH-001-B01",
+          "sources": [
+            {
+              "id": "SK-BEH-001-B01-S1",
+              "demo": true,
+              "role": "support",
+              "display_title": "待查：支持／相关研究 · 睡眠与外观感知",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            },
+            {
+              "id": "SK-BEH-001-B01-S2",
+              "demo": true,
+              "role": "counter",
+              "display_title": "待查：反证／限制 · 睡眠与外观感知",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            }
+          ],
+          "science_gate": "blocked_missing_evidence",
+          "interest_gate": "blocked_missing_evidence",
+          "signals": [
+            {
+              "platform": "YouTube",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            },
+            {
+              "platform": "Instagram",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            }
+          ]
+        },
+        {
+          "title": "屏障指标与机制",
+          "definition": "把测量结果、机制假说和临床解释分层",
+          "relation": "睡眠行为 → 生理指标 → 机制假说；回连外观分支",
+          "time": "急性与重复暴露分开；恢复时间未知",
+          "population": "环境、测量方法和合并因素待查；不外推个体诊断",
+          "direction": "一个屏障指标变化，能够说明什么？",
+          "allowed": "可讨论指标所测内容及外推边界，结论须引用原文",
+          "forbidden": "不能将单项指标变化写成人人屏障受损",
+          "id": "SK-BEH-001-B02",
+          "sources": [
+            {
+              "id": "SK-BEH-001-B02-S1",
+              "demo": true,
+              "role": "support",
+              "display_title": "待查：支持／相关研究 · 屏障指标与机制",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            },
+            {
+              "id": "SK-BEH-001-B02-S2",
+              "demo": true,
+              "role": "counter",
+              "display_title": "待查：反证／限制 · 屏障指标与机制",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            }
+          ],
+          "science_gate": "blocked_missing_evidence",
+          "interest_gate": "blocked_missing_evidence",
+          "signals": [
+            {
+              "platform": "YouTube",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            },
+            {
+              "platform": "Instagram",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            }
+          ]
+        },
+        {
+          "title": "可改变因素与护理角色",
+          "definition": "比较上游生活因素和护理措施分别能回答什么",
+          "relation": "睡眠因素 → 日常措施 → 护理辅助边界",
+          "time": "短期感受、持续改善和长期结局分别研究",
+          "population": "可执行性、成本和耐受待查；排除疾病与处方治疗",
+          "direction": "哪些回到睡眠，哪些才属于护肤？",
+          "allowed": "可研究限定的护理作用，并保留无产品路径",
+          "forbidden": "不能承诺护肤抵消熬夜，不推荐补充剂治病",
+          "id": "SK-BEH-001-B03",
+          "sources": [
+            {
+              "id": "SK-BEH-001-B03-S1",
+              "demo": true,
+              "role": "support",
+              "display_title": "待查：支持／相关研究 · 可改变因素与护理角色",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            },
+            {
+              "id": "SK-BEH-001-B03-S2",
+              "demo": true,
+              "role": "counter",
+              "display_title": "待查：反证／限制 · 可改变因素与护理角色",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            }
+          ],
+          "science_gate": "blocked_missing_evidence",
+          "interest_gate": "blocked_missing_evidence",
+          "signals": [
+            {
+              "platform": "YouTube",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            },
+            {
+              "platform": "Instagram",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "result",
+      "run_id": "SK-RES-001",
+      "topic": "皮肤干燥、紧绷与屏障受损：表象、可能原因和护理优先级",
+      "objective": "验证结果型从表象到原因、边界、改善与见效层级的可复用研究流程",
+      "questions": [
+        "干燥紧绷是否等同屏障受损，什么情况下不能这样推断",
+        "环境、清洁、护理和疾病相关因素如何分层",
+        "基础保湿/减少刺激的证据与需要专业就诊的边界是什么"
+      ],
+      "exclude": [
+        "个体诊断",
+        "处方或疾病治疗方案",
+        "把全部敏感症状归因于屏障",
+        "具体品牌比较"
+      ],
+      "chain": [
+        "干燥／紧绷表象",
+        "可能原因与鉴别边界",
+        "可干预环节",
+        "风险分层与护理优先级"
+      ],
+      "priority": "先看风险边界 → 上游因素 → 严重程度与持续性 → 放大因素 → 可能性与区分线索 → 最后才比较改善速度。",
+      "branches": [
+        {
+          "title": "表象与概念边界",
+          "definition": "区分感受词、观察表现与待验证概念",
+          "relation": "干燥／紧绷 → 概念辨析 → 可能原因",
+          "time": "记录短时、持续、反复的时间线；不编阈值",
+          "population": "场景、部位、年龄与伴随表现待查；一般成人科普",
+          "direction": "干燥、紧绷和屏障受损，是同一件事吗？",
+          "allowed": "可分别核对概念和评价方法，尚不能作个体诊断",
+          "forbidden": "不能把所有干燥、紧绷或敏感都判为屏障受损",
+          "id": "SK-RES-001-B01",
+          "sources": [
+            {
+              "id": "SK-RES-001-B01-S1",
+              "demo": true,
+              "role": "support",
+              "display_title": "待查：支持／相关研究 · 表象与概念边界",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            },
+            {
+              "id": "SK-RES-001-B01-S2",
+              "demo": true,
+              "role": "counter",
+              "display_title": "待查：反证／限制 · 表象与概念边界",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            }
+          ],
+          "science_gate": "blocked_missing_evidence",
+          "interest_gate": "blocked_missing_evidence",
+          "signals": [
+            {
+              "platform": "YouTube",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            },
+            {
+              "platform": "Instagram",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            }
+          ]
+        },
+        {
+          "title": "可能原因与上游因素",
+          "definition": "按环境、清洁、护理及疾病相关因素分层",
+          "relation": "表象 ← 环境／清洁／护理／疾病相关因素 → 风险分层",
+          "time": "对照起始时间与接触变化；先后不等于因果",
+          "population": "气候、清洁方式、护理变化及背景待查；不自行诊断",
+          "direction": "先问发生在什么情境，再问该用什么",
+          "allowed": "可列需记录的情境和待核实的区分线索",
+          "forbidden": "不能仅凭表象排除疾病，也不据此给处方建议",
+          "id": "SK-RES-001-B02",
+          "sources": [
+            {
+              "id": "SK-RES-001-B02-S1",
+              "demo": true,
+              "role": "support",
+              "display_title": "待查：支持／相关研究 · 可能原因与上游因素",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            },
+            {
+              "id": "SK-RES-001-B02-S2",
+              "demo": true,
+              "role": "counter",
+              "display_title": "待查：反证／限制 · 可能原因与上游因素",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            }
+          ],
+          "science_gate": "blocked_missing_evidence",
+          "interest_gate": "blocked_missing_evidence",
+          "signals": [
+            {
+              "platform": "YouTube",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            },
+            {
+              "platform": "Instagram",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            }
+          ]
+        },
+        {
+          "title": "护理与专业照护边界",
+          "definition": "基本护理、避免额外刺激与专业帮助分界须实证",
+          "relation": "原因层 → 可干预环节 → 护理／专业照护边界",
+          "time": "严重、持续、反复等判断阈值待权威原文",
+          "population": "耐受、既往情况与伴随表现待查；排除自行治疗疾病",
+          "direction": "哪些属于日常护理，哪些需要进一步判断？",
+          "allowed": "可研究护理角色和求助边界，具体建议待核验",
+          "forbidden": "不能将所有表象导向同一产品或保证修复时长",
+          "id": "SK-RES-001-B03",
+          "sources": [
+            {
+              "id": "SK-RES-001-B03-S1",
+              "demo": true,
+              "role": "support",
+              "display_title": "待查：支持／相关研究 · 护理与专业照护边界",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            },
+            {
+              "id": "SK-RES-001-B03-S2",
+              "demo": true,
+              "role": "counter",
+              "display_title": "待查：反证／限制 · 护理与专业照护边界",
+              "title": null,
+              "url": null,
+              "author": null,
+              "published_at": null,
+              "source_type": null,
+              "quality": "未评级：尚未检索",
+              "applicability": "待原文核对",
+              "locator": null
+            }
+          ],
+          "science_gate": "blocked_missing_evidence",
+          "interest_gate": "blocked_missing_evidence",
+          "signals": [
+            {
+              "platform": "YouTube",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            },
+            {
+              "platform": "Instagram",
+              "url": null,
+              "account": null,
+              "published_at": null,
+              "observed_at": null,
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "audience_region": null,
+              "status": "not_researched"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

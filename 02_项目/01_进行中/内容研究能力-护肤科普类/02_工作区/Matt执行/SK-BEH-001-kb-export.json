@@ -1,0 +1,38 @@
+{
+  "claims": [],
+  "human_decisions": [],
+  "knowledge_versions": {
+    "references": [],
+    "scope_note": "仅列当前已知知识版本引用（最新最多100条），不是本次命中主张属于这些快照的证明；不导出 manifest 或确认人账户。",
+    "total_count": 0,
+    "truncated": false
+  },
+  "queried_at": "2026-09-25T04:47:41.507Z",
+  "query": {
+    "fields": [
+      "Claim.statement",
+      "linked Source.title"
+    ],
+    "limit": 100,
+    "matching": "literal_substring_sqlite_icontains",
+    "operator": "OR",
+    "order": "claim.id ascending",
+    "scope_note": "中文按字面子串匹配；英文 ASCII 不区分大小写；百分号和下划线按字面匹配。不检索全文、未关联来源或同义词，不保证语义全库覆盖。",
+    "terms": [
+      "睡眠",
+      "熬夜",
+      "sleep",
+      "屏障",
+      "barrier"
+    ]
+  },
+  "result": {
+    "returned_count": 0,
+    "total_matches": 0,
+    "truncated": false,
+    "zero_hit_meaning": "仅表示本次限定字段与查询词未命中，不表示没有历史知识。"
+  },
+  "review_policy": "原样保留存储状态；不从关联决定推断确认，不升级 AI／规则决定。人工决定按已导出实体的 target_id 关联，target_kind 保留原值。管理账户字段不导出。",
+  "schema_version": "skincare-topic-export/1.0",
+  "export_sha256": "6365cb9262da01ba63816c00cb92200ec2beda670f58741b069632456de0c2b3"
+}

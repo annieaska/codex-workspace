@@ -1,0 +1,21 @@
+{
+  "started": "2026-09-26T14:04:22.543Z",
+  "version": "SK-WORKBENCH-20260926-r3",
+  "fallback": "Browser plugin unavailable; existing Playwright runtime used.",
+  "scope": "YouTube display, historical link, downloads, offline export, 390px layout; existing PubMed detail regression only.",
+  "checks": [
+    "行为型任务仍仅展示对应的 PubMed 未取全文记录",
+    "结果型任务总览及获取成果正确汇总论文和 YouTube",
+    "原 PubMed 摘要和表格阅读保持可用",
+    "视频详情显示真实账号、发布日期、时长、指标快照与来源链接",
+    "字幕限定区域阅读，TXT 和原始 VTT 下载与试跑文件逐字节一致",
+    "原平台线索关联补取详情，历史未知字段保留且可返回",
+    "获取成果 JSON 仅导出当前任务；独立 HTML 离线重开保留视频与字幕",
+    "390px 手机视频字幕详情无横向溢出",
+    "全程无脚本或控制台错误，无页面自动联网请求"
+  ],
+  "errors": [],
+  "requests": [],
+  "status": "passed",
+  "finished": "2026-09-26T14:04:24.164Z"
+}

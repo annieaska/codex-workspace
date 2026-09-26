@@ -1,0 +1,168 @@
+{
+  "version": "UI-r2",
+  "scope": "Six contextual help entries in approved UI prototype; no formal workbench integration or research execution.",
+  "requirements": [
+    "01_输入/护肤知识科普研究能力_BRD_v0.1_原始需求基线.md: sections 5, 6, 13, 17, 19.2",
+    "01_输入/护肤科普研究能力_需求补充_v0.2.md: branch review before direction; evidence and platform interest separately verified",
+    "02_工作区/Matt执行/spec.md: user responsibilities, candidate gates and trial limits"
+  ],
+  "browserReason": "Browser plugin not available; existing Playwright MCP used without installation.",
+  "desktop": {
+    "passed": true,
+    "count": 89,
+    "checks": [
+      "0:home:one-help-entry",
+      "0:home:opens",
+      "0:home:context-title",
+      "0:home:four-plain-language-sections",
+      "0:home:closes",
+      "0:home:focus-restored",
+      "0:home:page-unchanged",
+      "0:scope:one-help-entry",
+      "0:scope:opens",
+      "0:scope:context-title",
+      "0:scope:four-plain-language-sections",
+      "0:scope:closes",
+      "0:scope:focus-restored",
+      "0:scope:page-unchanged",
+      "0:evidence:one-help-entry",
+      "0:evidence:opens",
+      "0:evidence:context-title",
+      "0:evidence:four-plain-language-sections",
+      "0:evidence:closes",
+      "0:evidence:focus-restored",
+      "0:evidence:page-unchanged",
+      "0:review:one-help-entry",
+      "0:review:opens",
+      "0:review:context-title",
+      "0:review:four-plain-language-sections",
+      "0:review:closes",
+      "0:review:focus-restored",
+      "0:review:page-unchanged",
+      "0:directions:one-help-entry",
+      "0:directions:opens",
+      "0:directions:context-title",
+      "0:directions:four-plain-language-sections",
+      "0:directions:closes",
+      "0:directions:focus-restored",
+      "0:directions:page-unchanged",
+      "0:delivery:one-help-entry",
+      "0:delivery:opens",
+      "0:delivery:context-title",
+      "0:delivery:four-plain-language-sections",
+      "0:delivery:closes",
+      "0:delivery:focus-restored",
+      "0:delivery:page-unchanged",
+      "1:home:one-help-entry",
+      "1:home:opens",
+      "1:home:context-title",
+      "1:home:four-plain-language-sections",
+      "1:home:closes",
+      "1:home:focus-restored",
+      "1:home:page-unchanged",
+      "1:scope:one-help-entry",
+      "1:scope:opens",
+      "1:scope:context-title",
+      "1:scope:four-plain-language-sections",
+      "1:scope:closes",
+      "1:scope:focus-restored",
+      "1:scope:page-unchanged",
+      "1:evidence:one-help-entry",
+      "1:evidence:opens",
+      "1:evidence:context-title",
+      "1:evidence:four-plain-language-sections",
+      "1:evidence:closes",
+      "1:evidence:focus-restored",
+      "1:evidence:page-unchanged",
+      "1:review:one-help-entry",
+      "1:review:opens",
+      "1:review:context-title",
+      "1:review:four-plain-language-sections",
+      "1:review:closes",
+      "1:review:focus-restored",
+      "1:review:page-unchanged",
+      "1:directions:one-help-entry",
+      "1:directions:opens",
+      "1:directions:context-title",
+      "1:directions:four-plain-language-sections",
+      "1:directions:closes",
+      "1:directions:focus-restored",
+      "1:directions:page-unchanged",
+      "1:delivery:one-help-entry",
+      "1:delivery:opens",
+      "1:delivery:context-title",
+      "1:delivery:four-plain-language-sections",
+      "1:delivery:closes",
+      "1:delivery:focus-restored",
+      "1:delivery:page-unchanged",
+      "review-selected-branch-and-tab-preserved",
+      "evidence-search-and-results-preserved",
+      "existing-detail-dialog-style-isolated",
+      "existing-detail-close-label-preserved",
+      "no-runtime-errors"
+    ],
+    "errors": [],
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    }
+  },
+  "narrow": {
+    "passed": true,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "results": [
+      {
+        "page": "home",
+        "helpRightEdge": 374,
+        "dialogFits": true
+      },
+      {
+        "page": "scope",
+        "helpRightEdge": 374,
+        "dialogFits": true
+      },
+      {
+        "page": "evidence",
+        "helpRightEdge": 374,
+        "dialogFits": true
+      },
+      {
+        "page": "review",
+        "helpRightEdge": 374,
+        "dialogFits": true
+      },
+      {
+        "page": "directions",
+        "helpRightEdge": 374,
+        "dialogFits": true
+      },
+      {
+        "page": "delivery",
+        "helpRightEdge": 374,
+        "dialogFits": true
+      }
+    ]
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "visualReview": "Desktop and narrow screenshots inspected: concise four-part help, visible close and return controls, no clipping.",
+  "syntax": "node --check prototype-app.js: passed",
+  "screenshots": [
+    "ui-r2-help-desktop.png",
+    "ui-r2-help-narrow.png"
+  ],
+  "toolScreenshotOriginals": [
+    "/Users/chengyu/12_打工人程宇/99_临时/浏览器自动输出/主工作区/ui-r2-help-desktop.png",
+    "/Users/chengyu/12_打工人程宇/99_临时/浏览器自动输出/主工作区/ui-r2-help-narrow.png"
+  ],
+  "stopCondition": "Affected interactions and visual checks passed; no full regression or additional audit.",
+  "checkedAt": "2026-09-25T19:13:27+02:00",
+  "prototypeSha256": "c4436d6fc39e60cb946f0e035dc5457d2def42c31b9ad34c5036827a00f643dc",
+  "originalFilesUnchanged": 14,
+  "embeddedScriptMatchesSource": true
+}

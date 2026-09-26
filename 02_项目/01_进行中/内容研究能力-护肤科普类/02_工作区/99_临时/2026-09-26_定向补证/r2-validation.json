@@ -1,0 +1,129 @@
+{
+  "run_id": "SK-SUPPLEMENT-20260926-r2",
+  "checked_at": "2026-09-26T21:33:48.116827+00:00",
+  "scope": "One local directional pass; no external calls, no UI/full suite; evidence consistency only",
+  "artifact_consistency": "PASS",
+  "execution_compliance": "FAIL",
+  "execution_deviation": "C query attempts 3 exceeds approved 2 by 1; failure and retry not waived",
+  "professional_quality_review": "NOT_COMPLETED",
+  "business_admission": "NOT_PASSED",
+  "candidate_report_sha256": "1a0d35a3c9f82b9016a1ef00d22dd825b879ec6a907e4c3cb0936608f610c786",
+  "project_sha256_at_candidate": "ff087696effa43933e70a2472e5274fdf64f0753806c3da55ca19417e39a3ab2",
+  "checks": [
+    {
+      "check": "execution_snapshot_binding",
+      "status": "PASS",
+      "evidence": "SK-MATT-20260926-r3 / bd85217d26db49b6e53df2ccf2c784a87a7561c41f8f8f0a71bc98f5332a7c9e"
+    },
+    {
+      "check": "current_configuration_binding",
+      "status": "PASS",
+      "evidence": "SK-MATT-20260926-r3.1 / 09542ad1d9f23c445ee95f42e6929f2fa6f2354546ca1778085da841fb09ff10"
+    },
+    {
+      "check": "closeout_changes_no_budget_or_gate",
+      "status": "PASS",
+      "evidence": "Only revision/effective_at/hash/field_metadata and bounded_supplement.status differ"
+    },
+    {
+      "check": "current_metadata_leaf_coverage",
+      "status": "PASS",
+      "evidence": {
+        "missing": [],
+        "duplicates": []
+      }
+    },
+    {
+      "check": "six_requests_bound_to_execution_revision",
+      "status": "PASS",
+      "evidence": [
+        "r2-c-abstracts",
+        "r2-c-full01",
+        "r2-c-full02",
+        "r2-c-q01-network",
+        "r2-c-q01",
+        "r2-c-q02"
+      ]
+    },
+    {
+      "check": "search_attempts_and_failure",
+      "status": "PASS",
+      "evidence": "3 attempts / 2 successful responses / 2 query texts / 1 recorded DNS failure"
+    },
+    {
+      "check": "screening_matches_raw_twenty_rows",
+      "status": "PASS",
+      "evidence": "20 title rows / 19 unique PMIDs; ledger order and titles match raw outputs"
+    },
+    {
+      "check": "four_abstracts",
+      "status": "PASS",
+      "evidence": [
+        "28912361",
+        "26010820",
+        "25585263",
+        "11511309"
+      ]
+    },
+    {
+      "check": "fulltext_outcomes",
+      "status": "PASS",
+      "evidence": "Two fulltext targets; zero returned; no-oa and 403 fetch-failed"
+    },
+    {
+      "check": "ledger_counts",
+      "status": "PASS",
+      "evidence": {
+        "query_attempts": 3,
+        "successful_search_responses": 2,
+        "independent_query_texts": 2,
+        "query_attempt_overage": 1,
+        "returned_rows_screened": 20,
+        "unique_pmids_in_returned_rows": 19,
+        "abstract_records_fetched": 4,
+        "fulltext_targets_attempted": 2,
+        "new_fulltexts_retrieved": 0,
+        "new_qualified_scientific_reads": 0,
+        "new_formal_source_ids": 0,
+        "new_formal_claim_ids": 0,
+        "BEH_prior_actual_query_attempts": 16,
+        "BEH_cumulative_query_attempts": 19,
+        "BEH_historical_S1_queries": 15,
+        "BEH_historical_S2_queries": 1,
+        "BEH_post_baseline_supplement_attempts": 3,
+        "BEH_qualified_scientific_reads_total": 5,
+        "RES_queries_total": 19,
+        "RES_qualified_scientific_reads_total": 5,
+        "RES_existing_platform_qualified_reads_stage_unknown": 1
+      }
+    },
+    {
+      "check": "previous_report_preserved",
+      "status": "PASS",
+      "evidence": {
+        "previous_report_sha256": "69a76e06d72b2713ebd005ba28c4292d8ff36d82d228d7ccdd6f13ded3e54065",
+        "preserved_as_exact_byte_substring": true
+      }
+    },
+    {
+      "check": "four_formal_baselines_unchanged",
+      "status": "PASS",
+      "evidence": {
+        "02_工作区/Matt执行/SK-RES-001.json": "f706962610582d8f084e8ca6180163285a84c3cb4e6c4cb5f298d35176fcd609",
+        "02_工作区/Matt执行/research-SK-BEH-001.json": "7f5e266acaf226b9bbf52611b4400925ff6de841d1d861194eb2f7ffdbf2cd19",
+        "03_交付物/护肤科普研究首版/index.html": "05fc7db726a08515c1c13809bed727e27f7d77317cefc44e200f813b035d87c1",
+        "02_工作区/99_临时/2026-09-26_YouTube试跑/roundtrip-acquisitions.json": "3e7fac950467c77512b008be2b578550d1f58fe7c980e207bbaf03537cb04dba"
+      }
+    },
+    {
+      "check": "abstract_key_facts_locatable",
+      "status": "PASS",
+      "evidence": "Original abstracts; manual comparison covers endpoint, sample boundaries, supplementary correlation and method-reliability distinction"
+    },
+    {
+      "check": "publisher_disclosure_and_threshold_locators",
+      "status": "PASS",
+      "evidence": "Manual source review: L179–180 versus L192–193, L215, L312, L456; attachment retrieval failure preserved"
+    }
+  ]
+}

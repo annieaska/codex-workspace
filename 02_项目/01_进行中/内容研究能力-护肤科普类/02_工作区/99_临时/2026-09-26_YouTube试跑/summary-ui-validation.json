@@ -1,0 +1,18 @@
+{
+  "started": "2026-09-26T14:28:19.763Z",
+  "version": "SK-WORKBENCH-20260926-r4",
+  "fallback": "Browser plugin unavailable; existing Playwright runtime used.",
+  "scope": "Chinese summary and analysis defaults, original subtitle switching, metadata access, associated signal, JSON/HTML exports, desktop/390px; prior unaffected r3 results reused.",
+  "checks": [
+    "结果型视频默认呈现中文全片概要、四组原视频观点及 AI 解读，原视频时间入口正确",
+    "内容分析独立标注，切换资料与英文 TXT/VTT 均正确，字幕原文未变",
+    "原平台线索入口进入同一中文概要，并保留返回操作",
+    "当前任务 JSON 和离线 HTML 导出保留中文分析与完整英文字幕",
+    "390px 中文概要与分析无横向溢出，内容区域高度受限",
+    "无脚本/控制台错误，无页面自动联网请求"
+  ],
+  "errors": [],
+  "requests": [],
+  "status": "passed",
+  "finished": "2026-09-26T14:28:21.131Z"
+}

@@ -1,0 +1,308 @@
+{
+  "checked_at": "2026-09-25T05:56:01.828Z",
+  "scope": "I1 integration and BEH G010 state closure only; unchanged evidence reused",
+  "files": [
+    {
+      "name": "index.html",
+      "bytes": 1811802,
+      "sha256": "ef5953d2148e6403070597d0c78cc2f1f2f68988bd49173af23c6ae06adcac18"
+    },
+    {
+      "name": "SK-BEH-001.html",
+      "bytes": 1076083,
+      "sha256": "f8f36f2ec405e4cb1a75c4d358341efa65687da9bae458b15beaff3230e59592"
+    },
+    {
+      "name": "SK-BEH-001.json",
+      "bytes": 1018442,
+      "sha256": "cf754484bc4ba2c2775e48b608f050377381e61e8376b34a8fcbafe764119c6c"
+    },
+    {
+      "name": "SK-RES-001.html",
+      "bytes": 820529,
+      "sha256": "330e09d7b8371246aa28ab3fa8702073317b14a2688752d8d4f4bff4eb296c96"
+    },
+    {
+      "name": "SK-RES-001.json",
+      "bytes": 755258,
+      "sha256": "42c3830f9db11ced11f5131c1e0a4859986c7ef8a34cb7f60500d74026d2c20e"
+    },
+    {
+      "name": "demo.html",
+      "bytes": 37267,
+      "sha256": "fd10ffbbfb0f4d45325edae4e7874128c4fe5a530f24f4be96017326fb5a4080"
+    },
+    {
+      "name": "static-fixtures.json",
+      "bytes": 18296,
+      "sha256": "b2384a67d9d42ff5d4a971a866db21c77c36015bd70e38762feeaf8c51be4f17"
+    },
+    {
+      "name": "workbench-core.js",
+      "bytes": 24586,
+      "sha256": "313094aa1c730381ca6898c35b9cec9ed688e0fec240d54e496fa59402d97d09"
+    },
+    {
+      "name": "workbench-app.js",
+      "bytes": 23699,
+      "sha256": "fe7ea57974497ad326c3eea0678cc411a332313b30767df94542939ac3338530"
+    },
+    {
+      "name": "workbench.template.html",
+      "bytes": 15216,
+      "sha256": "114e7ac504bd1bff13c5609ae26dd7a56df39236bfba734f8e6646e79e014afd"
+    },
+    {
+      "name": "build_workbench.py",
+      "bytes": 3989,
+      "sha256": "2bfff0dfca2ae3a97dcef651c95766c950e14653f745d6eca1c579c5303e4e27"
+    },
+    {
+      "name": "README.md",
+      "bytes": 2241,
+      "sha256": "df3679de013b390f57abf73f22c573b3f12fbb6e794a01dce9fb2a3db60e23e9"
+    },
+    {
+      "name": "verify_workbench.cjs",
+      "bytes": 4713,
+      "sha256": "a014d98497fffd83253ed489821acd0a918c0f3b28ffe2b78c205bc27e346a7d"
+    },
+    {
+      "name": "verify_historical_ids.cjs",
+      "bytes": 5726,
+      "sha256": "117ca572dff1cfab6551cfb70d0b5d510f3c74fa635aa7db8fe0380b5ddc0cc6"
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "SK-BEH-001",
+      "revision": "SK-BEH-001-package-r3",
+      "source_sha256": "06d027d4295158cb995d648fff03d96520139123538d048e546e3ffd20476615",
+      "audit": {
+        "errors": [],
+        "stale": [],
+        "fingerprint": "96216227158a3344c7df8b04ab06bd75d25b639a209ce7cbccc051f82f6767a1"
+      },
+      "budget": {
+        "s1_queries": {
+          "human_original": 3,
+          "reviews_guidance": 2,
+          "mechanism": 1,
+          "youtube": 3,
+          "instagram": 3
+        },
+        "s1_qualified_reads": 4,
+        "s2_targets": {
+          "SK-BEH-001-S2-T01": {
+            "queries": 1,
+            "qualified_reads": 1
+          }
+        },
+        "blocked_routes": [],
+        "screening_observations": [
+          {
+            "id": "SK-BEH-001-Q001",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "SK-BEH-001-Q002",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "SK-BEH-001-Q003",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "SK-BEH-001-Q004",
+            "returned_hits": 16,
+            "screened_hits": 10
+          },
+          {
+            "id": "SK-BEH-001-Q005",
+            "returned_hits": 9,
+            "screened_hits": 9
+          },
+          {
+            "id": "SK-BEH-001-Q006",
+            "returned_hits": 0,
+            "screened_hits": 0
+          },
+          {
+            "id": "SK-BEH-001-Q007",
+            "returned_hits": 16,
+            "screened_hits": 10
+          },
+          {
+            "id": "SK-BEH-001-Q008",
+            "returned_hits": 21,
+            "screened_hits": 10
+          },
+          {
+            "id": "SK-BEH-001-Q009",
+            "returned_hits": 19,
+            "screened_hits": 10
+          },
+          {
+            "id": "SK-BEH-001-Q010",
+            "returned_hits": 15,
+            "screened_hits": 10
+          },
+          {
+            "id": "SK-BEH-001-Q011",
+            "returned_hits": 12,
+            "screened_hits": 10
+          },
+          {
+            "id": "SK-BEH-001-Q012",
+            "returned_hits": 0,
+            "screened_hits": 0
+          },
+          {
+            "id": "SK-BEH-001-Q045",
+            "returned_hits": 16,
+            "screened_hits": 10
+          }
+        ],
+        "screening_note": "部分查询的实际筛读数量未知；预算算术未超限不能证明全部执行守约，须保留执行偏差。",
+        "errors": []
+      },
+      "evidence": "G010 state delta audit"
+    },
+    {
+      "run_id": "SK-RES-001",
+      "revision": "package-r4",
+      "source_sha256": "d5419d2f3c85c50f70b0b2a58159cad143df8f3ed08f03e4424aa39569cf817a",
+      "audit": {
+        "errors": [],
+        "stale": [],
+        "fingerprint": "e4ffdd49d4dcbebdaded52d9464f944898d1adaee676d8f3ec646b56675701b7"
+      },
+      "budget": {
+        "s1_queries": {
+          "human_original": 3,
+          "reviews_guidance": 3,
+          "mechanism": 3,
+          "youtube": 3,
+          "instagram": 3
+        },
+        "s1_qualified_reads": 4,
+        "s2_targets": {
+          "RES-T01": {
+            "queries": 2,
+            "qualified_reads": 1
+          },
+          "RES-T02": {
+            "queries": 2,
+            "qualified_reads": 0
+          }
+        },
+        "blocked_routes": [
+          "agent-reach/Exa"
+        ],
+        "screening_observations": [
+          {
+            "id": "RES-Q01",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q02",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q03",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q04",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q05",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q06",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q07",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q08",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q09",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q10",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q11",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q12",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q13",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q14",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q15",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q16",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q17",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q18",
+            "returned_hits": null,
+            "screened_hits": null
+          },
+          {
+            "id": "RES-Q19",
+            "returned_hits": null,
+            "screened_hits": null
+          }
+        ],
+        "screening_note": "部分查询的实际筛读数量未知；预算算术未超限不能证明全部执行守约，须保留执行偏差。",
+        "errors": []
+      },
+      "evidence": "unchanged RES material; prior audit reused"
+    }
+  ]
+}

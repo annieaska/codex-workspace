@@ -1,0 +1,3002 @@
+{
+  "sha": "620f5cc575c774027582baf1b91b77bcad98f2c0",
+  "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/620f5cc575c774027582baf1b91b77bcad98f2c0",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "decee4a723520f1d34604b20e5dd103dd15a0dba",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/decee4a723520f1d34604b20e5dd103dd15a0dba"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d441822a66fdf5f3b1a485377c7310001df532f7",
+      "size": 1782,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d441822a66fdf5f3b1a485377c7310001df532f7"
+    },
+    {
+      "path": ".codex-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "541e43c5a8241a08876a93b86055ab154f83a5c3",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/541e43c5a8241a08876a93b86055ab154f83a5c3"
+    },
+    {
+      "path": ".codex-plugin/mcp.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f2838fee656c002b8f3a61c9be301199946f463",
+      "size": 235,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/6f2838fee656c002b8f3a61c9be301199946f463"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d125ce73ce2ee848241d62c8c300e15c0ca556a",
+      "size": 1137,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9d125ce73ce2ee848241d62c8c300e15c0ca556a"
+    },
+    {
+      "path": ".dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18058ce876beaa7b6024cd5f8ac102ad00a238d5",
+      "size": 4510,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/18058ce876beaa7b6024cd5f8ac102ad00a238d5"
+    },
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66f2fa1794239e484667a4d31927ef3fbe760efc",
+      "size": 6719,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/66f2fa1794239e484667a4d31927ef3fbe760efc"
+    },
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6ff0120c730fd14c43236dc93f550a3e2ec2d04",
+      "size": 386,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e6ff0120c730fd14c43236dc93f550a3e2ec2d04"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3fa6ebe8fb5fcdfe823c8eecd0198ac659268b6",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/a3fa6ebe8fb5fcdfe823c8eecd0198ac659268b6"
+    },
+    {
+      "path": ".github/CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a50ffa97001edf598bf7d43e1051375b91784eb4",
+      "size": 1443,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a50ffa97001edf598bf7d43e1051375b91784eb4"
+    },
+    {
+      "path": ".github/CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b62a373edc0d5534f52b29e20abb734605a885a5",
+      "size": 2607,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b62a373edc0d5534f52b29e20abb734605a885a5"
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d95c12fae1f2889d7ac95097c61b8a61932a056",
+      "size": 45,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4d95c12fae1f2889d7ac95097c61b8a61932a056"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7dbdaea10282798f37379c4cde13d85d7ceb9eab",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/7dbdaea10282798f37379c4cde13d85d7ceb9eab"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6aa46666e1065f1cc8cee8f4aa88e63d671fc71",
+      "size": 3639,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c6aa46666e1065f1cc8cee8f4aa88e63d671fc71"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d7641e45aedacdd4740e5501fc6800bff4b9fa1",
+      "size": 245,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1d7641e45aedacdd4740e5501fc6800bff4b9fa1"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae5e1d939209dcedd5080d6b9d98672729ec16da",
+      "size": 1622,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ae5e1d939209dcedd5080d6b9d98672729ec16da"
+    },
+    {
+      "path": ".github/SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3ce62036a97e327b2645f84117bff0c75c6975c",
+      "size": 583,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d3ce62036a97e327b2645f84117bff0c75c6975c"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9b707d6d90d559b8a862714b44dbb82dafab96f",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/b9b707d6d90d559b8a862714b44dbb82dafab96f"
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "487f32aadb7c526087be11caf67a22c593bcc8e3",
+      "size": 970,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/487f32aadb7c526087be11caf67a22c593bcc8e3"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52258e6de2d1e265ab9bac0722e5ca1b716b2639",
+      "size": 4629,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/52258e6de2d1e265ab9bac0722e5ca1b716b2639"
+    },
+    {
+      "path": ".mcpbignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4809423ffe1f1c3958dd3a65c9754966a7156d2c",
+      "size": 156,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4809423ffe1f1c3958dd3a65c9754966a7156d2c"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fd450cdaf721bbfe13ce8f89bb98f5e15c8c7d4",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/2fd450cdaf721bbfe13ce8f89bb98f5e15c8c7d4"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d5d9f3ec3f567e975e1ab8ddf077a3cfb72b37f",
+      "size": 89,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/6d5d9f3ec3f567e975e1ab8ddf077a3cfb72b37f"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "641040db5875550190808b3fff188ac74f31111d",
+      "size": 427,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/641040db5875550190808b3fff188ac74f31111d"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2640c49b0235b17c8a4662ba530df52175d5f519",
+      "size": 31665,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2640c49b0235b17c8a4662ba530df52175d5f519"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed26bb4988d3252f13b4aaa8683d20dc5c68454b",
+      "size": 22647,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ed26bb4988d3252f13b4aaa8683d20dc5c68454b"
+    },
+    {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed15d1036a6a543aa891cfd58c801cbe96a00f26",
+      "size": 668,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ed15d1036a6a543aa891cfd58c801cbe96a00f26"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2640c49b0235b17c8a4662ba530df52175d5f519",
+      "size": 31665,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2640c49b0235b17c8a4662ba530df52175d5f519"
+    },
+    {
+      "path": "Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ac9f38dcefdf5e0b1324fbf76ffd280de60f5eb",
+      "size": 5004,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/6ac9f38dcefdf5e0b1324fbf76ffd280de60f5eb"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca225b4ee15f7594535da8723f27e0c79f998ede",
+      "size": 11317,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ca225b4ee15f7594535da8723f27e0c79f998ede"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c434fe26bee949adf8d423127b4bf9e7b712887",
+      "size": 22268,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/6c434fe26bee949adf8d423127b4bf9e7b712887"
+    },
+    {
+      "path": "biome.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d865b6549c2980f096ded3806864db2c56b7969",
+      "size": 50,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8d865b6549c2980f096ded3806864db2c56b7969"
+    },
+    {
+      "path": "bun.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1bab1ccb92496927802c6bb57270506f4deb597",
+      "size": 85823,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c1bab1ccb92496927802c6bb57270506f4deb597"
+    },
+    {
+      "path": "bunfig.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "693794f4669bafc3fe05c56470e55ae6b9e3ac99",
+      "size": 1078,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/693794f4669bafc3fe05c56470e55ae6b9e3ac99"
+    },
+    {
+      "path": "changelog",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ddef10fc5617441afabfac94ea83af41413d22d9",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/ddef10fc5617441afabfac94ea83af41413d22d9"
+    },
+    {
+      "path": "changelog/2.0.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b6493d5c805e8aac0919e68e5c9098e242bf39e",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/0b6493d5c805e8aac0919e68e5c9098e242bf39e"
+    },
+    {
+      "path": "changelog/2.0.x/2.0.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b6d7863bc8504928cd2cbc60bac3501e3a9a637",
+      "size": 1956,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9b6d7863bc8504928cd2cbc60bac3501e3a9a637"
+    },
+    {
+      "path": "changelog/2.0.x/2.0.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5cb67b8f8e0d13b86cb2ff7144d7a13ec8a46de",
+      "size": 2236,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/f5cb67b8f8e0d13b86cb2ff7144d7a13ec8a46de"
+    },
+    {
+      "path": "changelog/2.1.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "80edd736107904f537db67bd640214dfceedb6a3",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/80edd736107904f537db67bd640214dfceedb6a3"
+    },
+    {
+      "path": "changelog/2.1.x/2.1.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5abc85751576019d7fc9323a84e78eac113e6d8",
+      "size": 1247,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/f5abc85751576019d7fc9323a84e78eac113e6d8"
+    },
+    {
+      "path": "changelog/2.1.x/2.1.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a3bad0eb5301525e4eb97e1d0cbc07c3a011cff",
+      "size": 2165,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3a3bad0eb5301525e4eb97e1d0cbc07c3a011cff"
+    },
+    {
+      "path": "changelog/2.1.x/2.1.2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d4478040a08a32ee6e4a512e290b7014953a818",
+      "size": 706,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3d4478040a08a32ee6e4a512e290b7014953a818"
+    },
+    {
+      "path": "changelog/2.1.x/2.1.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb037df244ba8ac292680de93cb82bcc8887d17f",
+      "size": 400,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/fb037df244ba8ac292680de93cb82bcc8887d17f"
+    },
+    {
+      "path": "changelog/2.1.x/2.1.4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7726f92d68c712f332b335d416782619aadae677",
+      "size": 763,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7726f92d68c712f332b335d416782619aadae677"
+    },
+    {
+      "path": "changelog/2.1.x/2.1.5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db4dcc615ded42cdf4a26f4d4c4594bfb1fab0e1",
+      "size": 537,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/db4dcc615ded42cdf4a26f4d4c4594bfb1fab0e1"
+    },
+    {
+      "path": "changelog/2.1.x/2.1.6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bfe4e6811c9c9c137c466621ca5fb6e0f69541c",
+      "size": 424,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1bfe4e6811c9c9c137c466621ca5fb6e0f69541c"
+    },
+    {
+      "path": "changelog/2.10.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c13774df16169f5796b7fb0281fe10cd7f225216",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/c13774df16169f5796b7fb0281fe10cd7f225216"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfdd2b8597b4142ef449c3c3bca09478db871398",
+      "size": 2579,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/dfdd2b8597b4142ef449c3c3bca09478db871398"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb7ed797da87d3add43a67608a7b959a95f6546f",
+      "size": 2500,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/bb7ed797da87d3add43a67608a7b959a95f6546f"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.10.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eef182fad273780a58c49ba6b0217f7ab643b67d",
+      "size": 4501,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/eef182fad273780a58c49ba6b0217f7ab643b67d"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.11.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5c32e0220a31805ffcc474b031555f5db33fc7e",
+      "size": 4106,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a5c32e0220a31805ffcc474b031555f5db33fc7e"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.12.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee1b8dc23611b2e3ef874258bb4c60b3570ee060",
+      "size": 4344,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ee1b8dc23611b2e3ef874258bb4c60b3570ee060"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.13.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3760ada5efdc38a965e3c7de39b84fa13deaeed",
+      "size": 2559,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c3760ada5efdc38a965e3c7de39b84fa13deaeed"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.14.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c5cb07bc1d3a18a4502a483deb705476a0a0174",
+      "size": 2115,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0c5cb07bc1d3a18a4502a483deb705476a0a0174"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.15.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c3d035b1aa03b57987136fd3d74b5e34af03b9",
+      "size": 3743,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/48c3d035b1aa03b57987136fd3d74b5e34af03b9"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.16.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3651523e08f1a14b3982730c4ff22811e8f58f03",
+      "size": 3908,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3651523e08f1a14b3982730c4ff22811e8f58f03"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.17.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0d208f2ad47aad34833bdb0077aae0dfe310634",
+      "size": 3549,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c0d208f2ad47aad34833bdb0077aae0dfe310634"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.18.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62bc19c0ecc441f2f3f513d4b4bd041599364b16",
+      "size": 1807,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/62bc19c0ecc441f2f3f513d4b4bd041599364b16"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e098a9df3eb302d048420b3af5773bd99d692f8",
+      "size": 1963,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4e098a9df3eb302d048420b3af5773bd99d692f8"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ced4d16fe0fe095cc19ebc69dbd4ae63fed4d6a5",
+      "size": 2112,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ced4d16fe0fe095cc19ebc69dbd4ae63fed4d6a5"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c0109506ce97c399c1e5097d410598908ecbcc6",
+      "size": 641,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5c0109506ce97c399c1e5097d410598908ecbcc6"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a0a9c7a0981115eff532a163d76c124e77a5548",
+      "size": 2351,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8a0a9c7a0981115eff532a163d76c124e77a5548"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bffae9f4d22d62162b818a6e2a55d63315e377e",
+      "size": 4186,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4bffae9f4d22d62162b818a6e2a55d63315e377e"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45d4298cd1f7ce979611f998f587bccdb8e64edc",
+      "size": 2438,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/45d4298cd1f7ce979611f998f587bccdb8e64edc"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.8.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b468003384b3d2c570a3a545efac1a2571a6b018",
+      "size": 2896,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b468003384b3d2c570a3a545efac1a2571a6b018"
+    },
+    {
+      "path": "changelog/2.10.x/2.10.9.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9009fed83a410f8d8d454d5720cc55e11fa4b2a1",
+      "size": 3266,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9009fed83a410f8d8d454d5720cc55e11fa4b2a1"
+    },
+    {
+      "path": "changelog/2.2.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c6079ce867aaa32700d8cce6a472b589c9e157af",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/c6079ce867aaa32700d8cce6a472b589c9e157af"
+    },
+    {
+      "path": "changelog/2.2.x/2.2.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2de517b527aa9d55b8d1f5f93909804ea5b5f672",
+      "size": 4886,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2de517b527aa9d55b8d1f5f93909804ea5b5f672"
+    },
+    {
+      "path": "changelog/2.2.x/2.2.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbed47afd04360c914018e21a19e98e6c8da1ad3",
+      "size": 253,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/dbed47afd04360c914018e21a19e98e6c8da1ad3"
+    },
+    {
+      "path": "changelog/2.2.x/2.2.2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31d401377b32777943acf98d413a088c099584e7",
+      "size": 758,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/31d401377b32777943acf98d413a088c099584e7"
+    },
+    {
+      "path": "changelog/2.2.x/2.2.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72e21418d594ba68f81c1ed157e1b44f93f5d293",
+      "size": 1231,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/72e21418d594ba68f81c1ed157e1b44f93f5d293"
+    },
+    {
+      "path": "changelog/2.2.x/2.2.4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eea39e059fda636aa259d4ead2c7791cd9e80ef0",
+      "size": 1403,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/eea39e059fda636aa259d4ead2c7791cd9e80ef0"
+    },
+    {
+      "path": "changelog/2.2.x/2.2.5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91acbb08a7bfc7a22eee020e239c178404eb07b4",
+      "size": 192,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/91acbb08a7bfc7a22eee020e239c178404eb07b4"
+    },
+    {
+      "path": "changelog/2.2.x/2.2.6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02a6f6689f00b6c6e1b3becfb8f1653dc9ee2748",
+      "size": 992,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/02a6f6689f00b6c6e1b3becfb8f1653dc9ee2748"
+    },
+    {
+      "path": "changelog/2.3.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99868c40560eb039769683faed3713f5c69eb8ea",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/99868c40560eb039769683faed3713f5c69eb8ea"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dddc265026157ddd3b6a233da1ea3774967a998a",
+      "size": 2002,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/dddc265026157ddd3b6a233da1ea3774967a998a"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "891e3036280feaf6e1db9fa03b4fa672fdcbbbaf",
+      "size": 864,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/891e3036280feaf6e1db9fa03b4fa672fdcbbbaf"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.10.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7201731de005ce0a76a1f8223326eb3257d877d",
+      "size": 2866,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a7201731de005ce0a76a1f8223326eb3257d877d"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.11.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2f67b82ed629bb9bee4c826803a27559091c1f1",
+      "size": 3188,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d2f67b82ed629bb9bee4c826803a27559091c1f1"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c5621dd71eeb575bfe9e74991a28ed99692b643",
+      "size": 1730,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3c5621dd71eeb575bfe9e74991a28ed99692b643"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97c2c31bb385f6286662bd4350e2c88f3b93297d",
+      "size": 1981,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/97c2c31bb385f6286662bd4350e2c88f3b93297d"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91eabb9c062af773c51e01623f444a4ceb9c39d0",
+      "size": 909,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/91eabb9c062af773c51e01623f444a4ceb9c39d0"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "550fd1594d6fb5454decf0e4edd50d8f0355574f",
+      "size": 994,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/550fd1594d6fb5454decf0e4edd50d8f0355574f"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1345708062870d852a64690df522339dd4deea1",
+      "size": 1309,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d1345708062870d852a64690df522339dd4deea1"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8ad824526cc3a1a20b55bd4568d5020d39e8e49",
+      "size": 3236,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e8ad824526cc3a1a20b55bd4568d5020d39e8e49"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.8.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bd2d2503c4c6e77f15ec7fe27fe3d6034ec0dea",
+      "size": 1601,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7bd2d2503c4c6e77f15ec7fe27fe3d6034ec0dea"
+    },
+    {
+      "path": "changelog/2.3.x/2.3.9.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55ade109cf16f987f18df76c9dd6122981dff389",
+      "size": 2265,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/55ade109cf16f987f18df76c9dd6122981dff389"
+    },
+    {
+      "path": "changelog/2.4.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e07fbfba7f5540159a590bd38eb22d72034998af",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/e07fbfba7f5540159a590bd38eb22d72034998af"
+    },
+    {
+      "path": "changelog/2.4.x/2.4.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99e78aafb16abd48bcd2987533e63d6182e9099c",
+      "size": 5956,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/99e78aafb16abd48bcd2987533e63d6182e9099c"
+    },
+    {
+      "path": "changelog/2.4.x/2.4.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f39611864dd82554f9bd1c5f909be5b724eaee0",
+      "size": 5258,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2f39611864dd82554f9bd1c5f909be5b724eaee0"
+    },
+    {
+      "path": "changelog/2.5.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c97c11c978d91a5d4158b8b9a55e7c928e62168",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/9c97c11c978d91a5d4158b8b9a55e7c928e62168"
+    },
+    {
+      "path": "changelog/2.5.x/2.5.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61245f9bb990cfde88456fc9f41b8719e5a5fa2f",
+      "size": 5523,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/61245f9bb990cfde88456fc9f41b8719e5a5fa2f"
+    },
+    {
+      "path": "changelog/2.5.x/2.5.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aedf2ea575c1de2cb75282214765eeb70bdcf3f",
+      "size": 4223,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4aedf2ea575c1de2cb75282214765eeb70bdcf3f"
+    },
+    {
+      "path": "changelog/2.5.x/2.5.2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59c66e3ccdb7d7813289bcca7ae65afd05249a2b",
+      "size": 2550,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/59c66e3ccdb7d7813289bcca7ae65afd05249a2b"
+    },
+    {
+      "path": "changelog/2.5.x/2.5.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d581e16761a0ef47ef76bdf0a5b125ebf16815e",
+      "size": 2652,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3d581e16761a0ef47ef76bdf0a5b125ebf16815e"
+    },
+    {
+      "path": "changelog/2.5.x/2.5.5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a13192b201fcc01097ab5472942a9cc37a8cea5",
+      "size": 9330,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9a13192b201fcc01097ab5472942a9cc37a8cea5"
+    },
+    {
+      "path": "changelog/2.5.x/2.5.6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f192a9b2f447f3dd8c68751ff793bfee27b72f50",
+      "size": 4347,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/f192a9b2f447f3dd8c68751ff793bfee27b72f50"
+    },
+    {
+      "path": "changelog/2.6.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d29b746277406d0e636f2f27d9c570e72c44763f",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/d29b746277406d0e636f2f27d9c570e72c44763f"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8d5a75ca40d0c87229eb30f7c3128a36f4fd086",
+      "size": 6492,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a8d5a75ca40d0c87229eb30f7c3128a36f4fd086"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3cfe28a029008b547eec76c2d87fc2f609785a5",
+      "size": 4889,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c3cfe28a029008b547eec76c2d87fc2f609785a5"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.10.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a97eaa4e3236b825bb496e894bc34f7c9ab728c",
+      "size": 1365,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1a97eaa4e3236b825bb496e894bc34f7c9ab728c"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.11.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee17a44344e8a1989cd699ddbb3ef7ec4d7c4d99",
+      "size": 2809,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ee17a44344e8a1989cd699ddbb3ef7ec4d7c4d99"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.12.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2864dd331f92dca89809688ff2fa7c6c9263bb5",
+      "size": 3699,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e2864dd331f92dca89809688ff2fa7c6c9263bb5"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2411cb4ccf049775aadda648d6f6c77580887fd",
+      "size": 1889,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d2411cb4ccf049775aadda648d6f6c77580887fd"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "842341b2848ab86d55953dbb387236d3963e4743",
+      "size": 1767,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/842341b2848ab86d55953dbb387236d3963e4743"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ff470248b7568e73666b13d1659618bfb379a91",
+      "size": 1968,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7ff470248b7568e73666b13d1659618bfb379a91"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ba9371bcbc1e6606fcf5b97d472b96e8617fe75",
+      "size": 5327,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7ba9371bcbc1e6606fcf5b97d472b96e8617fe75"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ba7a9ab884f83b4296420b760e9562ca84d61af",
+      "size": 3133,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5ba7a9ab884f83b4296420b760e9562ca84d61af"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "327b2dd18293739ae7c5bf7928342d8532f49fe6",
+      "size": 3833,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/327b2dd18293739ae7c5bf7928342d8532f49fe6"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.8.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "008d3adbb85e32306a581a867f160951a9f7e05d",
+      "size": 658,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/008d3adbb85e32306a581a867f160951a9f7e05d"
+    },
+    {
+      "path": "changelog/2.6.x/2.6.9.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feb086d42d8dc36476689586e0ccd700273c1408",
+      "size": 4909,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/feb086d42d8dc36476689586e0ccd700273c1408"
+    },
+    {
+      "path": "changelog/2.7.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c384507aaa4566b5b0dbec0a1ad1969b07792dcc",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/c384507aaa4566b5b0dbec0a1ad1969b07792dcc"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9d587e1f11bcda0f567704f20b144cde86c2a63",
+      "size": 6410,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b9d587e1f11bcda0f567704f20b144cde86c2a63"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8948799a1e2fa7fc2f85fe73883397d9b4c16d90",
+      "size": 1425,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8948799a1e2fa7fc2f85fe73883397d9b4c16d90"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.10.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "359645db4a824facf37976c15a6e491f4ed58f3d",
+      "size": 1334,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/359645db4a824facf37976c15a6e491f4ed58f3d"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.11.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bc5b995e080d98321d0ccdb0df1e0db155e9f93",
+      "size": 1072,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4bc5b995e080d98321d0ccdb0df1e0db155e9f93"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b01c5b285df3aa30a1a4231c0fe7cc2006c4113",
+      "size": 2525,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9b01c5b285df3aa30a1a4231c0fe7cc2006c4113"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfaa130e7636eede45934deb2cd71bc34ecc7c17",
+      "size": 1413,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/cfaa130e7636eede45934deb2cd71bc34ecc7c17"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4db2226c41229bf9ddf9b6ff2024610dc6b69341",
+      "size": 759,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4db2226c41229bf9ddf9b6ff2024610dc6b69341"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4e95ced586892038fa55057917e69630bbfbf45",
+      "size": 3266,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b4e95ced586892038fa55057917e69630bbfbf45"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ded34cf8608c5d99ec39939306cf39522a8ae77c",
+      "size": 1110,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ded34cf8608c5d99ec39939306cf39522a8ae77c"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db73905b74cd1b73b4ab20e726339a4cd1d630c0",
+      "size": 1134,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/db73905b74cd1b73b4ab20e726339a4cd1d630c0"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.8.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "522c50a1132d06dd9bf04a0542821d2ac503425a",
+      "size": 1588,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/522c50a1132d06dd9bf04a0542821d2ac503425a"
+    },
+    {
+      "path": "changelog/2.7.x/2.7.9.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c2f2de9c45aa065685f40d10c2eb5e2f47a601b",
+      "size": 1347,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0c2f2de9c45aa065685f40d10c2eb5e2f47a601b"
+    },
+    {
+      "path": "changelog/2.8.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "030e2b8083d1ef86718fc29dff13eab010a454c5",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/030e2b8083d1ef86718fc29dff13eab010a454c5"
+    },
+    {
+      "path": "changelog/2.8.x/2.8.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfcd8d478833db16d6c9a79cc18971db410bddb6",
+      "size": 1509,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/bfcd8d478833db16d6c9a79cc18971db410bddb6"
+    },
+    {
+      "path": "changelog/2.9.x",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5964da9aa16db795d579c5088041c5298654347d",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/5964da9aa16db795d579c5088041c5298654347d"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2c50beb05df2aa186cbe4de0a2d7ee6e1ccff0f",
+      "size": 2457,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d2c50beb05df2aa186cbe4de0a2d7ee6e1ccff0f"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91028a3e2a362f0baa9c78d07269b474864a4854",
+      "size": 961,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/91028a3e2a362f0baa9c78d07269b474864a4854"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.10.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfa32b25270f4a85b06a4848bbb655a91d86f13c",
+      "size": 3076,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/dfa32b25270f4a85b06a4848bbb655a91d86f13c"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b47f9760f4a343622a30aee6079fe8800c97f5b3",
+      "size": 1526,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b47f9760f4a343622a30aee6079fe8800c97f5b3"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a0fa5c27fee513a059753b07c24fbdc32793071",
+      "size": 407,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5a0fa5c27fee513a059753b07c24fbdc32793071"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88c015033019481a10d51d4a464233952fdc38a2",
+      "size": 1996,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/88c015033019481a10d51d4a464233952fdc38a2"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1192864659064daf63eeaed6d2591e9a08f6063",
+      "size": 1501,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c1192864659064daf63eeaed6d2591e9a08f6063"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5153c15993470ea922302c02163d625588cdb46f",
+      "size": 2508,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5153c15993470ea922302c02163d625588cdb46f"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bf4441ceb299673b73cc8914b3f91c96657f7ca",
+      "size": 2577,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1bf4441ceb299673b73cc8914b3f91c96657f7ca"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.8.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fb6ddbc354cb9eae81896cc87303a18b8d7e805",
+      "size": 1338,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8fb6ddbc354cb9eae81896cc87303a18b8d7e805"
+    },
+    {
+      "path": "changelog/2.9.x/2.9.9.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "352e5cff2720a6833f52ea4a58362225f2ce9ffe",
+      "size": 3756,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/352e5cff2720a6833f52ea4a58362225f2ce9ffe"
+    },
+    {
+      "path": "changelog/template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60af0d4da101f2c9748758b313b8c6b087393107",
+      "size": 6737,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/60af0d4da101f2c9748758b313b8c6b087393107"
+    },
+    {
+      "path": "devcheck.config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "758918a545758a175636fd515d44e59235c7d67b",
+      "size": 351,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/758918a545758a175636fd515d44e59235c7d67b"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27cf6d442f4f85fb5aab27d257ee6d812ebfc1a7",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/27cf6d442f4f85fb5aab27d257ee6d812ebfc1a7"
+    },
+    {
+      "path": "docs/design.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60b6989682181486c55e04fff50a197e767ddf2a",
+      "size": 3478,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/60b6989682181486c55e04fff50a197e767ddf2a"
+    },
+    {
+      "path": "docs/mcpmed-pr-draft.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "949d7b7270ee406642b18f06716528fc24b4c494",
+      "size": 6169,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/949d7b7270ee406642b18f06716528fc24b4c494"
+    },
+    {
+      "path": "docs/tree.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e196015910870459bee52b9a5c0d3cac5d6587a6",
+      "size": 11104,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e196015910870459bee52b9a5c0d3cac5d6587a6"
+    },
+    {
+      "path": "framework-skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fab75af75588f719ce9ec33d1c5d89d9cfcddff",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/2fab75af75588f719ce9ec33d1c5d89d9cfcddff"
+    },
+    {
+      "path": "framework-skills/add-app-tool",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac37563d2257ef25d094fed4147508805e8cf36b",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/ac37563d2257ef25d094fed4147508805e8cf36b"
+    },
+    {
+      "path": "framework-skills/add-app-tool/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e8318bc9c5649f53a708bca634990abd38c06b9",
+      "size": 11574,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5e8318bc9c5649f53a708bca634990abd38c06b9"
+    },
+    {
+      "path": "framework-skills/add-prompt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6122d596f500dc9af271d9978703ad68624ab775",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/6122d596f500dc9af271d9978703ad68624ab775"
+    },
+    {
+      "path": "framework-skills/add-prompt/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db1fafad42efe87dc134e100150f1316f03e9826",
+      "size": 5454,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/db1fafad42efe87dc134e100150f1316f03e9826"
+    },
+    {
+      "path": "framework-skills/add-resource",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "514e7350c91ecb7fa9861412045806862144abc2",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/514e7350c91ecb7fa9861412045806862144abc2"
+    },
+    {
+      "path": "framework-skills/add-resource/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f7d94f22dbf8c4328f30d27a2a9e1fe7c5b49a4",
+      "size": 11045,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3f7d94f22dbf8c4328f30d27a2a9e1fe7c5b49a4"
+    },
+    {
+      "path": "framework-skills/add-service",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11a4a3f94db8de2221d7d65797fb16e13080fcb5",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/11a4a3f94db8de2221d7d65797fb16e13080fcb5"
+    },
+    {
+      "path": "framework-skills/add-service/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eb14931dc6968d7b1e6c4d5dfe6a324458ad01a",
+      "size": 14809,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9eb14931dc6968d7b1e6c4d5dfe6a324458ad01a"
+    },
+    {
+      "path": "framework-skills/add-test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5cb73f3ec9846016ba9d98048eab2f1288b36e0f",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/5cb73f3ec9846016ba9d98048eab2f1288b36e0f"
+    },
+    {
+      "path": "framework-skills/add-test/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec9dc1db975df823614aa39412b8c0c1a08553d6",
+      "size": 14857,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ec9dc1db975df823614aa39412b8c0c1a08553d6"
+    },
+    {
+      "path": "framework-skills/add-tool",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8179739d2c609b9465fffd07189e9e09f422c7eb",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/8179739d2c609b9465fffd07189e9e09f422c7eb"
+    },
+    {
+      "path": "framework-skills/add-tool/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b13564394c50cb10953956e914363e2fab583aaf",
+      "size": 63639,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b13564394c50cb10953956e914363e2fab583aaf"
+    },
+    {
+      "path": "framework-skills/api-auth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e67dbf218e9f38cc7f428cb22b8a0f30c2860c6",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/2e67dbf218e9f38cc7f428cb22b8a0f30c2860c6"
+    },
+    {
+      "path": "framework-skills/api-auth/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2984ccc979492ac520fe87487daf7620343f499f",
+      "size": 9969,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2984ccc979492ac520fe87487daf7620343f499f"
+    },
+    {
+      "path": "framework-skills/api-canvas",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1dab8462345c1f883c3f3a602b45f940e3c44243",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/1dab8462345c1f883c3f3a602b45f940e3c44243"
+    },
+    {
+      "path": "framework-skills/api-canvas/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b7b73f0c06e6c642a25d98494f51eb49c5dab5f",
+      "size": 36619,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3b7b73f0c06e6c642a25d98494f51eb49c5dab5f"
+    },
+    {
+      "path": "framework-skills/api-config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1181f29ef6ce177247337590f019aef9f2288a27",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/1181f29ef6ce177247337590f019aef9f2288a27"
+    },
+    {
+      "path": "framework-skills/api-config/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be0fe1537f2bc799626a53679b5d01d669124f26",
+      "size": 22919,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/be0fe1537f2bc799626a53679b5d01d669124f26"
+    },
+    {
+      "path": "framework-skills/api-context",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a4a04689cbde9d7484bc8a5e607e261f5ed897c",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/3a4a04689cbde9d7484bc8a5e607e261f5ed897c"
+    },
+    {
+      "path": "framework-skills/api-context/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7601185ab100986ca55ddcf2932ce44011e7f306",
+      "size": 49092,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7601185ab100986ca55ddcf2932ce44011e7f306"
+    },
+    {
+      "path": "framework-skills/api-errors",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1795927304325d471095a718b9f145d264b12e07",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/1795927304325d471095a718b9f145d264b12e07"
+    },
+    {
+      "path": "framework-skills/api-errors/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d1eb9ef61bc0b7fb08484e0d63839e2158e573e",
+      "size": 43320,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4d1eb9ef61bc0b7fb08484e0d63839e2158e573e"
+    },
+    {
+      "path": "framework-skills/api-linter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ee4558c49b0b0a46d31397741b1d985f0c246fc",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/3ee4558c49b0b0a46d31397741b1d985f0c246fc"
+    },
+    {
+      "path": "framework-skills/api-linter/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1511e8d06c3393d0ea06b1cb57cab83b028c0e5b",
+      "size": 67474,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1511e8d06c3393d0ea06b1cb57cab83b028c0e5b"
+    },
+    {
+      "path": "framework-skills/api-mirror",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef3cb95538be5678c8bc6a85fa8fc245679f8996",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/ef3cb95538be5678c8bc6a85fa8fc245679f8996"
+    },
+    {
+      "path": "framework-skills/api-mirror/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "953dac332fa29dc873f20b68575c8dc60c195808",
+      "size": 9224,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/953dac332fa29dc873f20b68575c8dc60c195808"
+    },
+    {
+      "path": "framework-skills/api-services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6ac580d1efed6ae7a956a8eab8561c903965552",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/e6ac580d1efed6ae7a956a8eab8561c903965552"
+    },
+    {
+      "path": "framework-skills/api-services/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c108a15cc8d61533d535e1d6f1162085dba22c3f",
+      "size": 1001,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c108a15cc8d61533d535e1d6f1162085dba22c3f"
+    },
+    {
+      "path": "framework-skills/api-services/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6901ff2a70ace45a5cdd1e57e4129553f733164c",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/6901ff2a70ace45a5cdd1e57e4129553f733164c"
+    },
+    {
+      "path": "framework-skills/api-services/references/graph.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f347a6ae3e2f8aa7a26e469c1ca6eca94031b56",
+      "size": 4039,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2f347a6ae3e2f8aa7a26e469c1ca6eca94031b56"
+    },
+    {
+      "path": "framework-skills/api-services/references/llm.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "768ea8a80b5750f9c1b42cbd77d9739787b26af5",
+      "size": 2047,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/768ea8a80b5750f9c1b42cbd77d9739787b26af5"
+    },
+    {
+      "path": "framework-skills/api-services/references/speech.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4f96c22ac2f9460e836877451c6942118a51c3f",
+      "size": 2819,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b4f96c22ac2f9460e836877451c6942118a51c3f"
+    },
+    {
+      "path": "framework-skills/api-telemetry",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf8705d146681f79f830f5580c9ab23d0f4cb763",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/bf8705d146681f79f830f5580c9ab23d0f4cb763"
+    },
+    {
+      "path": "framework-skills/api-telemetry/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f86d043e85a812dbc9955d4947110015a78feaf",
+      "size": 26203,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0f86d043e85a812dbc9955d4947110015a78feaf"
+    },
+    {
+      "path": "framework-skills/api-testing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e3f36711956482c2059271059752b64f2f2a3ca",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/5e3f36711956482c2059271059752b64f2f2a3ca"
+    },
+    {
+      "path": "framework-skills/api-testing/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2b3f90861f586d80697be3ac5049d9a30a05b54",
+      "size": 25054,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d2b3f90861f586d80697be3ac5049d9a30a05b54"
+    },
+    {
+      "path": "framework-skills/api-utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "844e0617756b6103358fc0d9d13fa75b6987b451",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/844e0617756b6103358fc0d9d13fa75b6987b451"
+    },
+    {
+      "path": "framework-skills/api-utils/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08ac6f7812ce8ef158c1a6a7a801824fec0fea2b",
+      "size": 28152,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/08ac6f7812ce8ef158c1a6a7a801824fec0fea2b"
+    },
+    {
+      "path": "framework-skills/api-utils/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6551c9f57dd62e7f4e996b5a69100ef50997d1ae",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/6551c9f57dd62e7f4e996b5a69100ef50997d1ae"
+    },
+    {
+      "path": "framework-skills/api-utils/references/formatting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "081a9410a881d73c995172b0e2fe4efa45367ae2",
+      "size": 8839,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/081a9410a881d73c995172b0e2fe4efa45367ae2"
+    },
+    {
+      "path": "framework-skills/api-utils/references/parsing.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d95e3ddb26c825ad283985644c77c8daed1ee9c2",
+      "size": 9538,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d95e3ddb26c825ad283985644c77c8daed1ee9c2"
+    },
+    {
+      "path": "framework-skills/api-utils/references/security.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a3395407df8ba5d696206de9980568ef39f6aa4",
+      "size": 9331,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1a3395407df8ba5d696206de9980568ef39f6aa4"
+    },
+    {
+      "path": "framework-skills/api-workers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e2ffe7d8899274e841e5bfb06a3f0e76f80f823",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/4e2ffe7d8899274e841e5bfb06a3f0e76f80f823"
+    },
+    {
+      "path": "framework-skills/api-workers/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52896457586948c5c79d600ca14c4f2f9f515564",
+      "size": 14618,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/52896457586948c5c79d600ca14c4f2f9f515564"
+    },
+    {
+      "path": "framework-skills/code-simplifier",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "907c9bb6dc20246cb729c80610944d6a62a912ea",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/907c9bb6dc20246cb729c80610944d6a62a912ea"
+    },
+    {
+      "path": "framework-skills/code-simplifier/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30303d610b7e65165b9dc3292baf7b15eaa0e75e",
+      "size": 20279,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/30303d610b7e65165b9dc3292baf7b15eaa0e75e"
+    },
+    {
+      "path": "framework-skills/design-mcp-server",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e256bb35bcc30f7d3e827141b4f8b2936a4037f1",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/e256bb35bcc30f7d3e827141b4f8b2936a4037f1"
+    },
+    {
+      "path": "framework-skills/design-mcp-server/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d438aaff21e92de2680ea5f913a13a8760ed4c58",
+      "size": 77887,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d438aaff21e92de2680ea5f913a13a8760ed4c58"
+    },
+    {
+      "path": "framework-skills/field-test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "153f631928477034411f13c9eda7f8bd5b9ee509",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/153f631928477034411f13c9eda7f8bd5b9ee509"
+    },
+    {
+      "path": "framework-skills/field-test/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b952d2a0b673fe1b14b0216ba2302c5de20fd0f5",
+      "size": 36436,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b952d2a0b673fe1b14b0216ba2302c5de20fd0f5"
+    },
+    {
+      "path": "framework-skills/git-wrapup",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d53dc352343e6d79f82cddcfac769fef9613165",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/6d53dc352343e6d79f82cddcfac769fef9613165"
+    },
+    {
+      "path": "framework-skills/git-wrapup/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0428d07543b350036c1b5d836ecd43a2df7ce411",
+      "size": 24658,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0428d07543b350036c1b5d836ecd43a2df7ce411"
+    },
+    {
+      "path": "framework-skills/maintenance",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71d41957d7d19c10e826b252c6d6649e5feb2563",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/71d41957d7d19c10e826b252c6d6649e5feb2563"
+    },
+    {
+      "path": "framework-skills/maintenance/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3ec4d0b94cbaca144401be5c8ac1e8a30d445c9",
+      "size": 23310,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b3ec4d0b94cbaca144401be5c8ac1e8a30d445c9"
+    },
+    {
+      "path": "framework-skills/orchestrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d0b2a8e337d7c4a3c3ea105ee7cfeb21ff50f4d",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/4d0b2a8e337d7c4a3c3ea105ee7cfeb21ff50f4d"
+    },
+    {
+      "path": "framework-skills/orchestrations/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e466794713362cb602c3209d962661e8fe624e8",
+      "size": 24984,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4e466794713362cb602c3209d962661e8fe624e8"
+    },
+    {
+      "path": "framework-skills/orchestrations/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "63f3f9fbee3db34a5d42cd12ed71adafcba9b434",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/63f3f9fbee3db34a5d42cd12ed71adafcba9b434"
+    },
+    {
+      "path": "framework-skills/orchestrations/workflows/field-test-fix.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "460d40899af550bfe3656e45d6cc5ccdf261b760",
+      "size": 14817,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/460d40899af550bfe3656e45d6cc5ccdf261b760"
+    },
+    {
+      "path": "framework-skills/orchestrations/workflows/fix-wrapup-release.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f0f8e509634ed03ebed40b2eb5fa1aab0be72ad",
+      "size": 13963,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5f0f8e509634ed03ebed40b2eb5fa1aab0be72ad"
+    },
+    {
+      "path": "framework-skills/orchestrations/workflows/greenfield-build.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "228f6051a95779f6186176dcda9205a5af839a2f",
+      "size": 12086,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/228f6051a95779f6186176dcda9205a5af839a2f"
+    },
+    {
+      "path": "framework-skills/orchestrations/workflows/maintenance-release.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a4db7ec29bfd77e77ee14e4e38a4fe83f98bd08",
+      "size": 16635,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1a4db7ec29bfd77e77ee14e4e38a4fe83f98bd08"
+    },
+    {
+      "path": "framework-skills/polish-docs-meta",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "238defb8d05a711bbeb08df12e087532f7ac2753",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/238defb8d05a711bbeb08df12e087532f7ac2753"
+    },
+    {
+      "path": "framework-skills/polish-docs-meta/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca1e56ecfdddcae3649c41f01649fe6c6e718412",
+      "size": 21534,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ca1e56ecfdddcae3649c41f01649fe6c6e718412"
+    },
+    {
+      "path": "framework-skills/polish-docs-meta/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5d3298d75125e1f139c7fc899d1e379209d60124",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/5d3298d75125e1f139c7fc899d1e379209d60124"
+    },
+    {
+      "path": "framework-skills/polish-docs-meta/references/agent-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c6e13007ba5d9e62e2a4074c6273979d976108",
+      "size": 4847,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e5c6e13007ba5d9e62e2a4074c6273979d976108"
+    },
+    {
+      "path": "framework-skills/polish-docs-meta/references/package-meta.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf32ef0e409c8f907a9148817011f8231dc020b7",
+      "size": 3891,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/cf32ef0e409c8f907a9148817011f8231dc020b7"
+    },
+    {
+      "path": "framework-skills/polish-docs-meta/references/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e54b76c7b200da27656ba9060da4403ab53e837",
+      "size": 27817,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5e54b76c7b200da27656ba9060da4403ab53e837"
+    },
+    {
+      "path": "framework-skills/polish-docs-meta/references/server-json.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9743264495c66cb9ed1d79a9192e0af04302d2d9",
+      "size": 7722,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9743264495c66cb9ed1d79a9192e0af04302d2d9"
+    },
+    {
+      "path": "framework-skills/release-and-publish",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45432a298c8a597b31b7bad817f5f36b8c92bb83",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/45432a298c8a597b31b7bad817f5f36b8c92bb83"
+    },
+    {
+      "path": "framework-skills/release-and-publish/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bec19141be524141358dbf9bca66e0504443b4e",
+      "size": 24389,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1bec19141be524141358dbf9bca66e0504443b4e"
+    },
+    {
+      "path": "framework-skills/release-pr-review",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67e8ebc600152095ed67ebcdfa21083c1166c218",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/67e8ebc600152095ed67ebcdfa21083c1166c218"
+    },
+    {
+      "path": "framework-skills/release-pr-review/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d672afad9ccc25fc296ad66da7f775e22feab42e",
+      "size": 10904,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d672afad9ccc25fc296ad66da7f775e22feab42e"
+    },
+    {
+      "path": "framework-skills/report-issue-framework",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc7ce784cf7c5dbe404e21952ce4c12d5bafed5b",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/cc7ce784cf7c5dbe404e21952ce4c12d5bafed5b"
+    },
+    {
+      "path": "framework-skills/report-issue-framework/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "555345df40e3a085b3cbd1a3cca0d88cff1b3e40",
+      "size": 12618,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/555345df40e3a085b3cbd1a3cca0d88cff1b3e40"
+    },
+    {
+      "path": "framework-skills/report-issue-local",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96beedb8a9a7ab2446c9d842ae7104941df2173e",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/96beedb8a9a7ab2446c9d842ae7104941df2173e"
+    },
+    {
+      "path": "framework-skills/report-issue-local/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef4721e2dc1bdfeda562db978750ed8314d521d9",
+      "size": 12791,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ef4721e2dc1bdfeda562db978750ed8314d521d9"
+    },
+    {
+      "path": "framework-skills/security-pass",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fa4bf120b8998c7ae7c999dfd53911555d181eb",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/5fa4bf120b8998c7ae7c999dfd53911555d181eb"
+    },
+    {
+      "path": "framework-skills/security-pass/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afad6cecc7039a9e1c16bf51beadfbe1bd49fda7",
+      "size": 20721,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/afad6cecc7039a9e1c16bf51beadfbe1bd49fda7"
+    },
+    {
+      "path": "framework-skills/setup",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a37daa5f6e7dcde1968dc2e8cdf26e48a88e859",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/5a37daa5f6e7dcde1968dc2e8cdf26e48a88e859"
+    },
+    {
+      "path": "framework-skills/setup/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8b45d0496fe9521e98f161d2a2ad7da9eeaae4a",
+      "size": 13125,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d8b45d0496fe9521e98f161d2a2ad7da9eeaae4a"
+    },
+    {
+      "path": "framework-skills/techniques",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f6709ea77c43873ea093485c6839a3bfcf68fde",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/9f6709ea77c43873ea093485c6839a3bfcf68fde"
+    },
+    {
+      "path": "framework-skills/techniques/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3607e54a74a7b37b61315646f9d03a77443bc6cb",
+      "size": 2156,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3607e54a74a7b37b61315646f9d03a77443bc6cb"
+    },
+    {
+      "path": "framework-skills/techniques/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86fcbe8a4005ab1414eacfaa8e6bf4af3d739edd",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/86fcbe8a4005ab1414eacfaa8e6bf4af3d739edd"
+    },
+    {
+      "path": "framework-skills/techniques/references/outline-on-overflow.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bb56607ebea9fb708e2714c181a3187e1c642db",
+      "size": 9687,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7bb56607ebea9fb708e2714c181a3187e1c642db"
+    },
+    {
+      "path": "framework-skills/tool-defs-analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc49cf740725bfaa01194d3f0855569e227f9e0c",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/cc49cf740725bfaa01194d3f0855569e227f9e0c"
+    },
+    {
+      "path": "framework-skills/tool-defs-analysis/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f168672ca777947bf970069c20e98323b54a54f",
+      "size": 18933,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3f168672ca777947bf970069c20e98323b54a54f"
+    },
+    {
+      "path": "manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a154fd3565d4134f7b8188af3fc5d91e20e44ba8",
+      "size": 1883,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a154fd3565d4134f7b8188af3fc5d91e20e44ba8"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "834debc47546f99775fec7397882660a42d60192",
+      "size": 3732,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/834debc47546f99775fec7397882660a42d60192"
+    },
+    {
+      "path": "schemas",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a37d09dd4bb73eb4bbe6f1f35693b9f499ad0ab",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/7a37d09dd4bb73eb4bbe6f1f35693b9f499ad0ab"
+    },
+    {
+      "path": "schemas/ncbi-dtd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0a240cba4caaf197e393be9ac9a6161f51455c5b",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/0a240cba4caaf197e393be9ac9a6161f51455c5b"
+    },
+    {
+      "path": "schemas/ncbi-dtd/eInfo_020511.dtd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac4a59f9af593535464e678b79f205f2d610f632",
+      "size": 1655,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ac4a59f9af593535464e678b79f205f2d610f632"
+    },
+    {
+      "path": "schemas/ncbi-dtd/eLink_020511.dtd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7c7c65d88243f35d9033beef1a3f953b122ddf5",
+      "size": 1630,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d7c7c65d88243f35d9033beef1a3f953b122ddf5"
+    },
+    {
+      "path": "schemas/ncbi-dtd/ePost_020511.dtd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3da74988067e5c862089ffeab747ff09111910b7",
+      "size": 520,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3da74988067e5c862089ffeab747ff09111910b7"
+    },
+    {
+      "path": "schemas/ncbi-dtd/eSearch_020511.dtd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15e734bd9d0668421839558f134ab0c6b3db1225",
+      "size": 2392,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/15e734bd9d0668421839558f134ab0c6b3db1225"
+    },
+    {
+      "path": "schemas/ncbi-dtd/eSpell.dtd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18b6265eaa3b03c69cf3e8b9f094963523d64a7b",
+      "size": 736,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/18b6265eaa3b03c69cf3e8b9f094963523d64a7b"
+    },
+    {
+      "path": "schemas/ncbi-dtd/eSummary_041029.dtd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a10572a18f661b5f8000c222fd8b741137500aa8",
+      "size": 602,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a10572a18f661b5f8000c222fd8b741137500aa8"
+    },
+    {
+      "path": "schemas/ncbi-dtd/pubmed_250101.dtd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31926f63d0e33e4964a25dd3610aca9dd0911e89",
+      "size": 14430,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/31926f63d0e33e4964a25dd3610aca9dd0911e89"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "063ddcf97cd8f52b177ecd856d708b74b03fc787",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/063ddcf97cd8f52b177ecd856d708b74b03fc787"
+    },
+    {
+      "path": "scripts/build-changelog.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47e72e503effcb0a85bc2b32f8901858ce7eaf49",
+      "size": 8696,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/47e72e503effcb0a85bc2b32f8901858ce7eaf49"
+    },
+    {
+      "path": "scripts/build.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "436e557b24eeca5ddb68489fa3585d11261113f9",
+      "size": 4786,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/436e557b24eeca5ddb68489fa3585d11261113f9"
+    },
+    {
+      "path": "scripts/check-dependency-specifiers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f57d60ef6d6ef334fd08c67e8d4dc31f9d44a8e",
+      "size": 7297,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7f57d60ef6d6ef334fd08c67e8d4dc31f9d44a8e"
+    },
+    {
+      "path": "scripts/check-docs-sync.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0a291ad215cf5e507a6e7c8c9f66b2f0783e0e1",
+      "size": 3792,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/d0a291ad215cf5e507a6e7c8c9f66b2f0783e0e1"
+    },
+    {
+      "path": "scripts/check-framework-antipatterns.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb27a232643ea1ad154de44a91dc51d87acf1e78",
+      "size": 6147,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/eb27a232643ea1ad154de44a91dc51d87acf1e78"
+    },
+    {
+      "path": "scripts/check-skill-versions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0057f12c6ead254887f8a6c13e6e7a13fa63d1fe",
+      "size": 5757,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0057f12c6ead254887f8a6c13e6e7a13fa63d1fe"
+    },
+    {
+      "path": "scripts/check-skills-sync.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56ca7431d3b41919399237b533e3760962350ce1",
+      "size": 9281,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/56ca7431d3b41919399237b533e3760962350ce1"
+    },
+    {
+      "path": "scripts/clean-mcpb.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c80067482a6916b41aeb2fb26fbdd0307169675e",
+      "size": 6646,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c80067482a6916b41aeb2fb26fbdd0307169675e"
+    },
+    {
+      "path": "scripts/clean.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "216584be802897baa0fec67db648e896c7446f83",
+      "size": 4302,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/216584be802897baa0fec67db648e896c7446f83"
+    },
+    {
+      "path": "scripts/devcheck.ts",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "21425ba66350ee198aec0fd5c3df22def5032cae",
+      "size": 58638,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/21425ba66350ee198aec0fd5c3df22def5032cae"
+    },
+    {
+      "path": "scripts/lint-mcp.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ef71b8bf04dae2ef1157bafcac4c4702421e1cf",
+      "size": 7991,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0ef71b8bf04dae2ef1157bafcac4c4702421e1cf"
+    },
+    {
+      "path": "scripts/lint-packaging.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "878b1e7be4aca2f2dcdb8673c09729f949e9fde5",
+      "size": 36565,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/878b1e7be4aca2f2dcdb8673c09729f949e9fde5"
+    },
+    {
+      "path": "scripts/list-skills.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dcc19ffff755613915d67db5ed8c175a2fa9afa",
+      "size": 5381,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8dcc19ffff755613915d67db5ed8c175a2fa9afa"
+    },
+    {
+      "path": "scripts/release-github.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91b4c4b50e91a691a646f6d96f815d6e106d7c08",
+      "size": 6127,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/91b4c4b50e91a691a646f6d96f815d6e106d7c08"
+    },
+    {
+      "path": "scripts/tree.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90c668a52337403109aa6c6b527fd85259b8ebd9",
+      "size": 10863,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/90c668a52337403109aa6c6b527fd85259b8ebd9"
+    },
+    {
+      "path": "server.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1878dfdcfaf995d561f1a39974feea4f9920a602",
+      "size": 4555,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1878dfdcfaf995d561f1a39974feea4f9920a602"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3846b6887a97ae95ba4b1b636496f89161212aa9",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/3846b6887a97ae95ba4b1b636496f89161212aa9"
+    },
+    {
+      "path": "src/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78e512ee568d53e45c7235d83dbd4f3ede3db056",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/78e512ee568d53e45c7235d83dbd4f3ede3db056"
+    },
+    {
+      "path": "src/config/server-config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4a1a7e74a222e96f0b68ece430404a3e08aa904",
+      "size": 4002,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a4a1a7e74a222e96f0b68ece430404a3e08aa904"
+    },
+    {
+      "path": "src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08de27ff64f6cf8cfaf597738a321e0761a6b78f",
+      "size": 4016,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/08de27ff64f6cf8cfaf597738a321e0761a6b78f"
+    },
+    {
+      "path": "src/mcp-server",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed34f69ce4ab9a082a6e95c2a58f9ec22e65b78e",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/ed34f69ce4ab9a082a6e95c2a58f9ec22e65b78e"
+    },
+    {
+      "path": "src/mcp-server/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "06b30c2ffc38ea7c138ffeead055f1d25affb01a",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/06b30c2ffc38ea7c138ffeead055f1d25affb01a"
+    },
+    {
+      "path": "src/mcp-server/prompts/definitions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d33d82e11141161f4f2951e2c4a4c888230aa4de",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/d33d82e11141161f4f2951e2c4a4c888230aa4de"
+    },
+    {
+      "path": "src/mcp-server/prompts/definitions/research-plan.prompt.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04e79dc27e1ff094f543f546b2f871071e6baf8c",
+      "size": 7562,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/04e79dc27e1ff094f543f546b2f871071e6baf8c"
+    },
+    {
+      "path": "src/mcp-server/resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9c323efaa030011b4df999533102319cac9c1c5",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/a9c323efaa030011b4df999533102319cac9c1c5"
+    },
+    {
+      "path": "src/mcp-server/resources/definitions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d72dd9d5c130a54b7a5cc48070b6c1927c39ccda",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/d72dd9d5c130a54b7a5cc48070b6c1927c39ccda"
+    },
+    {
+      "path": "src/mcp-server/resources/definitions/database-info.resource.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80d102ee446375e1d9038a752ee7b8b140bed94b",
+      "size": 2786,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/80d102ee446375e1d9038a752ee7b8b140bed94b"
+    },
+    {
+      "path": "src/mcp-server/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c359db0bab3d1e851340cf16ef44c1bfc56b61a9",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/c359db0bab3d1e851340cf16ef44c1bfc56b61a9"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5964337016a78bda4c6ca55742380875e3720dc6",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/5964337016a78bda4c6ca55742380875e3720dc6"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/_budget.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc85d4b0f4029ac8dc770df13506ca2425d4feb9",
+      "size": 2669,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/bc85d4b0f4029ac8dc770df13506ca2425d4feb9"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/_concepts.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9419385f38722936e2555ada86e6d55f2d5108d8",
+      "size": 2800,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9419385f38722936e2555ada86e6d55f2d5108d8"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/_schemas.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa077e2040d39aee29c3e9896f42e5b4eaf971da",
+      "size": 2514,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/aa077e2040d39aee29c3e9896f42e5b4eaf971da"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/_text.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2822e6738c1833fa0c3234049550778bcfc6bd59",
+      "size": 7894,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2822e6738c1833fa0c3234049550778bcfc6bd59"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/convert-ids.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8bc76b1b9acb1e0e0ae988cf3db6eeab13c7c8d",
+      "size": 8667,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e8bc76b1b9acb1e0e0ae988cf3db6eeab13c7c8d"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/fetch-articles.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90b04d88cee176b78297980a505da1c38528e7c0",
+      "size": 29443,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/90b04d88cee176b78297980a505da1c38528e7c0"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/fetch-fulltext.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62b88652d2984fdefe5374bf47e9ba8d0b346e5f",
+      "size": 162853,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/62b88652d2984fdefe5374bf47e9ba8d0b346e5f"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/find-related.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "843b0bb316571b99765cd265f120d89024554aad",
+      "size": 38404,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/843b0bb316571b99765cd265f120d89024554aad"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/format-citations.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bb1eae4a39a7902569aeade9807dd831086d497",
+      "size": 7052,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0bb1eae4a39a7902569aeade9807dd831086d497"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/lookup-citation.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bae0401ac8ed931e39a47159a910f70805e75be",
+      "size": 15741,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4bae0401ac8ed931e39a47159a910f70805e75be"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/lookup-mesh.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf05c5376a4fe55c14f7a3324e9e61d03615c4f9",
+      "size": 13785,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/cf05c5376a4fe55c14f7a3324e9e61d03615c4f9"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/pubmed-europepmc-fetch.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eed4db884ae5588db491a461baf7ed5ba1cd2eb",
+      "size": 13592,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2eed4db884ae5588db491a461baf7ed5ba1cd2eb"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/pubmed-europepmc-search.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1214fcb17941ea2624a49a7a30f189e68dd9854f",
+      "size": 18374,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1214fcb17941ea2624a49a7a30f189e68dd9854f"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/search-articles.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cdb473a79b093837edc00e0f683c3a16c9e87a0",
+      "size": 29162,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9cdb473a79b093837edc00e0f683c3a16c9e87a0"
+    },
+    {
+      "path": "src/mcp-server/tools/definitions/spell-check.tool.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19485558984527ad507acaeac895eb0c9909a500",
+      "size": 3151,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/19485558984527ad507acaeac895eb0c9909a500"
+    },
+    {
+      "path": "src/services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37bec2fb07b43da08fca52516b44d5c409468c84",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/37bec2fb07b43da08fca52516b44d5c409468c84"
+    },
+    {
+      "path": "src/services/error-contracts.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a585a5376c40bd3293c5bfacdc2f5cb0518f43e3",
+      "size": 10144,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a585a5376c40bd3293c5bfacdc2f5cb0518f43e3"
+    },
+    {
+      "path": "src/services/europe-pmc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aabf9565132a7a81741f4e52de841d5e56e531e4",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/aabf9565132a7a81741f4e52de841d5e56e531e4"
+    },
+    {
+      "path": "src/services/europe-pmc/api-client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4607252750358e37999020f913ee6878b32a289",
+      "size": 9794,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b4607252750358e37999020f913ee6878b32a289"
+    },
+    {
+      "path": "src/services/europe-pmc/europe-pmc-service.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c120dcfd61732bc8cc71529a5dc1bf04b0ced0c",
+      "size": 25235,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3c120dcfd61732bc8cc71529a5dc1bf04b0ced0c"
+    },
+    {
+      "path": "src/services/europe-pmc/request-queue.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5770125c47954ae8f21d61434be5e87612e525b",
+      "size": 1230,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b5770125c47954ae8f21d61434be5e87612e525b"
+    },
+    {
+      "path": "src/services/europe-pmc/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a590d20f34ae97373d5e2e9d575e43c3d7c9b52",
+      "size": 6670,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4a590d20f34ae97373d5e2e9d575e43c3d7c9b52"
+    },
+    {
+      "path": "src/services/ncbi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d240ddb1f843a07c9f661df664b680b8caedf7e9",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/d240ddb1f843a07c9f661df664b680b8caedf7e9"
+    },
+    {
+      "path": "src/services/ncbi/api-client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c08e8183ecfe8827d5ca9cc8c0b9ad86ec7b8156",
+      "size": 6981,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c08e8183ecfe8827d5ca9cc8c0b9ad86ec7b8156"
+    },
+    {
+      "path": "src/services/ncbi/formatting",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5650820dfd7efa1e6c17a2504a03b7dd6557ef0e",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/5650820dfd7efa1e6c17a2504a03b7dd6557ef0e"
+    },
+    {
+      "path": "src/services/ncbi/formatting/citation-formatter.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad694e7bc82dae655d01d70ca754286ccab5ab77",
+      "size": 36030,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ad694e7bc82dae655d01d70ca754286ccab5ab77"
+    },
+    {
+      "path": "src/services/ncbi/ncbi-service.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aeb65fb140f650beadaca29dbd13fbce64e3d689",
+      "size": 21456,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/aeb65fb140f650beadaca29dbd13fbce64e3d689"
+    },
+    {
+      "path": "src/services/ncbi/parsing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "61b720a07dc3fd96ff4803b13e0f478a43a7b8f2",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/61b720a07dc3fd96ff4803b13e0f478a43a7b8f2"
+    },
+    {
+      "path": "src/services/ncbi/parsing/article-parser.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37b54c0a5134faea52e86f873ec1592246e15cfe",
+      "size": 25183,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/37b54c0a5134faea52e86f873ec1592246e15cfe"
+    },
+    {
+      "path": "src/services/ncbi/parsing/esummary-parser.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e25268968398f3f4c2eb5c84eb9f164da2e9b409",
+      "size": 17359,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e25268968398f3f4c2eb5c84eb9f164da2e9b409"
+    },
+    {
+      "path": "src/services/ncbi/parsing/ordered-xml-parser-options.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e695e04092ab22bd649066294c9f0909f890981b",
+      "size": 2055,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e695e04092ab22bd649066294c9f0909f890981b"
+    },
+    {
+      "path": "src/services/ncbi/parsing/pmc-article-parser.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ec7849ad232661582b9e77aefc2354f29ed2fb2",
+      "size": 58325,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/2ec7849ad232661582b9e77aefc2354f29ed2fb2"
+    },
+    {
+      "path": "src/services/ncbi/parsing/pmc-xml-helpers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "383f2f9b4da7cbfc062f8843d57ba6506ebe5444",
+      "size": 9704,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/383f2f9b4da7cbfc062f8843d57ba6506ebe5444"
+    },
+    {
+      "path": "src/services/ncbi/parsing/text-helpers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac0c9e618be71924533de0fab8754c3f3ea612c0",
+      "size": 3618,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ac0c9e618be71924533de0fab8754c3f3ea612c0"
+    },
+    {
+      "path": "src/services/ncbi/parsing/xml-helpers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8947a2f2991e40006a33696b6ef9749d4b9f9d95",
+      "size": 4443,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8947a2f2991e40006a33696b6ef9749d4b9f9d95"
+    },
+    {
+      "path": "src/services/ncbi/request-queue.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edf23d8fc3f10f24686bb766baa80dc18834e46a",
+      "size": 2152,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/edf23d8fc3f10f24686bb766baa80dc18834e46a"
+    },
+    {
+      "path": "src/services/ncbi/response-handler.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d3e9d582d0fc6f634f8c3e282d1febb974c8389",
+      "size": 29466,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/3d3e9d582d0fc6f634f8c3e282d1febb974c8389"
+    },
+    {
+      "path": "src/services/ncbi/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bce2b313d131fc95d7a3e75f880e8f32a6d7a5b2",
+      "size": 33397,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/bce2b313d131fc95d7a3e75f880e8f32a6d7a5b2"
+    },
+    {
+      "path": "src/services/openalex",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb65186570931cbe409861c45dd0ce0c584691f9",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/fb65186570931cbe409861c45dd0ce0c584691f9"
+    },
+    {
+      "path": "src/services/openalex/api-client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c23081fa99a454779f752fc7357f76e368a6a091",
+      "size": 8675,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/c23081fa99a454779f752fc7357f76e368a6a091"
+    },
+    {
+      "path": "src/services/openalex/openalex-service.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "378763a1981c348f34e6f20221270f4067fa6b1e",
+      "size": 13174,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/378763a1981c348f34e6f20221270f4067fa6b1e"
+    },
+    {
+      "path": "src/services/openalex/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "186e73e3393f9b78fb320029a82eecfe5e5cecea",
+      "size": 3520,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/186e73e3393f9b78fb320029a82eecfe5e5cecea"
+    },
+    {
+      "path": "src/services/unpaywall",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ccb34b6851f0785b7598ec3a995525d59483854",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/1ccb34b6851f0785b7598ec3a995525d59483854"
+    },
+    {
+      "path": "src/services/unpaywall/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aac44e98c19ad1825eae13214ad8e8f1924efed",
+      "size": 2571,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8aac44e98c19ad1825eae13214ad8e8f1924efed"
+    },
+    {
+      "path": "src/services/unpaywall/unpaywall-service.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f507285415acc08425fef171d36719f70bdee76",
+      "size": 11110,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/6f507285415acc08425fef171d36719f70bdee76"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f020844695297d358d1a0b96d9a9c0e86c8d731",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/6f020844695297d358d1a0b96d9a9c0e86c8d731"
+    },
+    {
+      "path": "tests/_helpers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15611e870db156abd3aac783247a01a6fe3f8e2c",
+      "size": 1455,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/15611e870db156abd3aac783247a01a6fe3f8e2c"
+    },
+    {
+      "path": "tests/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc9248dd1d964236d891466d36b06b3a5f41da26",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/fc9248dd1d964236d891466d36b06b3a5f41da26"
+    },
+    {
+      "path": "tests/config/server-config.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5acfe7c06f0201af7f43487afd54a12bcfb6c59f",
+      "size": 6149,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5acfe7c06f0201af7f43487afd54a12bcfb6c59f"
+    },
+    {
+      "path": "tests/index.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bdd1faf69498fe75490ef918f0c9d30c6b13e7c",
+      "size": 5160,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7bdd1faf69498fe75490ef918f0c9d30c6b13e7c"
+    },
+    {
+      "path": "tests/mcp-server",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b566fcaa3fe28025edd9f502b3d6a9c4d3ea6e7c",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/b566fcaa3fe28025edd9f502b3d6a9c4d3ea6e7c"
+    },
+    {
+      "path": "tests/mcp-server/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3729d2a577656f03374de95881a8c4be292e7178",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/3729d2a577656f03374de95881a8c4be292e7178"
+    },
+    {
+      "path": "tests/mcp-server/prompts/definitions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b6136e8b95de3feb1c64bbea0aa9302f599b190",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/1b6136e8b95de3feb1c64bbea0aa9302f599b190"
+    },
+    {
+      "path": "tests/mcp-server/prompts/definitions/research-plan.prompt.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26213a7fbfeefe5f90829ceb798a7e0bed527669",
+      "size": 3602,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/26213a7fbfeefe5f90829ceb798a7e0bed527669"
+    },
+    {
+      "path": "tests/mcp-server/resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8fe50b077342bcc5860de4a6836ca2ca4b9ae6df",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/8fe50b077342bcc5860de4a6836ca2ca4b9ae6df"
+    },
+    {
+      "path": "tests/mcp-server/resources/definitions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "331f48ad97254988721a868eab34226f7da5fd37",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/331f48ad97254988721a868eab34226f7da5fd37"
+    },
+    {
+      "path": "tests/mcp-server/resources/definitions/database-info.resource.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2e765b582ef8b3a9812a1e2ddab6fd4765911e5",
+      "size": 2712,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e2e765b582ef8b3a9812a1e2ddab6fd4765911e5"
+    },
+    {
+      "path": "tests/mcp-server/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ffaa36b94e0f42b5cd89be44bafb6df0065eb71",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/9ffaa36b94e0f42b5cd89be44bafb6df0065eb71"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "663d81e7ae542c51c1c28fcb8c31fbd955034483",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/663d81e7ae542c51c1c28fcb8c31fbd955034483"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/_budget.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb5b9448282ac380ef499f908af2a87fb256d29a",
+      "size": 5832,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/cb5b9448282ac380ef499f908af2a87fb256d29a"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/_fuzz-helpers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53d6e8a954346e121d40cf107e75a4a06931cb52",
+      "size": 9653,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/53d6e8a954346e121d40cf107e75a4a06931cb52"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/_schemas.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ec9970aadd17d4dc1c8153d2252d05e35db95bc",
+      "size": 1198,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5ec9970aadd17d4dc1c8153d2252d05e35db95bc"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/_text.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f4692096c92bff7191e8cb85bc0e1c3f97a92a1",
+      "size": 12973,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/6f4692096c92bff7191e8cb85bc0e1c3f97a92a1"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/convert-ids-per-element.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cb125376f8899b33f797b2173022ff3effc7c39",
+      "size": 7337,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0cb125376f8899b33f797b2173022ff3effc7c39"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/convert-ids.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f022b880bc88879747810f0024481431064b28e1",
+      "size": 13377,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/f022b880bc88879747810f0024481431064b28e1"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/europepmc-search-failures.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26c6219a108ba5259b232187a19222a7a1fe54ba",
+      "size": 10119,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/26c6219a108ba5259b232187a19222a7a1fe54ba"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/fetch-articles.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "137c2bdc34b4d2ac0aa5268d53544d42ba7a3b3d",
+      "size": 45720,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/137c2bdc34b4d2ac0aa5268d53544d42ba7a3b3d"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/fetch-fulltext-jats-sections.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a63902209612f8a023a9148e27cf20a8b0c0fe40",
+      "size": 14746,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a63902209612f8a023a9148e27cf20a8b0c0fe40"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/fetch-fulltext-routing.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfbb9fc4df7bab707fb1786e30a3c07233332ca0",
+      "size": 36598,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/cfbb9fc4df7bab707fb1786e30a3c07233332ca0"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/fetch-fulltext.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51a24bee50a216c1373007f772fd2898633750a0",
+      "size": 244472,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/51a24bee50a216c1373007f772fd2898633750a0"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/find-related.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cae185baac8339dedc5f8bf13c5023e328935bf8",
+      "size": 86408,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/cae185baac8339dedc5f8bf13c5023e328935bf8"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/format-citations.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a936c9ebf6f59661dc014fd8b09f3ccaa33ca40c",
+      "size": 24933,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a936c9ebf6f59661dc014fd8b09f3ccaa33ca40c"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/input-aliases.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57ba44a2d4209d9c24b292beeda1119aa2a068b3",
+      "size": 9677,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/57ba44a2d4209d9c24b292beeda1119aa2a068b3"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/lookup-citation.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad35eadd716f9ff4c285fec548ba1caab6685297",
+      "size": 43920,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ad35eadd716f9ff4c285fec548ba1caab6685297"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/lookup-mesh.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa27ae0a7e31d3c7b700b09ec029392ef79ace68",
+      "size": 27941,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/aa27ae0a7e31d3c7b700b09ec029392ef79ace68"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/pubmed-europepmc-fetch.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86aec21a9faa0bb78315fcb2197bd6ff816ce0eb",
+      "size": 22459,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/86aec21a9faa0bb78315fcb2197bd6ff816ce0eb"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/pubmed-europepmc-search.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "621ea7751cbb04f7970f47470abf313496b86e6f",
+      "size": 26315,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/621ea7751cbb04f7970f47470abf313496b86e6f"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/search-articles.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c7e0a868d34118519db8c20e13f4682a3a3585e",
+      "size": 48842,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/4c7e0a868d34118519db8c20e13f4682a3a3585e"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/security.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fee93fa79fbbaec1bd668525717b417e3bbfe347",
+      "size": 32639,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/fee93fa79fbbaec1bd668525717b417e3bbfe347"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/spell-check.tool.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8d80ce1cadfc834ed2d974bcc486f3302708a99",
+      "size": 7854,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/f8d80ce1cadfc834ed2d974bcc486f3302708a99"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/tools.fuzz.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cfbc90c103d0540268382e93c0f41846dab74f4",
+      "size": 6905,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7cfbc90c103d0540268382e93c0f41846dab74f4"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/unknown-pmid-envelope.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "980b33c5951ac3192426650181eac50ebdf67565",
+      "size": 7780,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/980b33c5951ac3192426650181eac50ebdf67565"
+    },
+    {
+      "path": "tests/mcp-server/tools/definitions/zero-padded-pmid.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ed64a5523bd3de45d462f5a1a7a82488012d8ca",
+      "size": 22493,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1ed64a5523bd3de45d462f5a1a7a82488012d8ca"
+    },
+    {
+      "path": "tests/services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8a8596b2d973060c9184464a18a4acb551845c02",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/8a8596b2d973060c9184464a18a4acb551845c02"
+    },
+    {
+      "path": "tests/services/error-contracts.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e0dd568a6e8d7c28353dde89f64a19b2be45ce3",
+      "size": 3893,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/7e0dd568a6e8d7c28353dde89f64a19b2be45ce3"
+    },
+    {
+      "path": "tests/services/europe-pmc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f4c54dc050042076cf4655adbac103165f8e53d5",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/f4c54dc050042076cf4655adbac103165f8e53d5"
+    },
+    {
+      "path": "tests/services/europe-pmc/europe-pmc-service.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cd6741b1dd015133d6e5d51f305401906f9d853",
+      "size": 54338,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/5cd6741b1dd015133d6e5d51f305401906f9d853"
+    },
+    {
+      "path": "tests/services/ncbi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0816a2cbd53ade2ec44d6041752e517b807ec1d1",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/0816a2cbd53ade2ec44d6041752e517b807ec1d1"
+    },
+    {
+      "path": "tests/services/ncbi/api-client.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8fbedc69c8c2e9ec8f697ddc9dfa3ac3efe8f87",
+      "size": 11845,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a8fbedc69c8c2e9ec8f697ddc9dfa3ac3efe8f87"
+    },
+    {
+      "path": "tests/services/ncbi/efetch-timeout-retry.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a1ba6dc5e734a7840a1dabbe848edb9fb6ae879",
+      "size": 13972,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/6a1ba6dc5e734a7840a1dabbe848edb9fb6ae879"
+    },
+    {
+      "path": "tests/services/ncbi/formatting",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a903db51e0fef7e8608ec4355d5dc4bf2efc99be",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/a903db51e0fef7e8608ec4355d5dc4bf2efc99be"
+    },
+    {
+      "path": "tests/services/ncbi/formatting/citation-formatter.edge.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e27ba25076b1c4010cafddd801e5be990befa576",
+      "size": 19994,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e27ba25076b1c4010cafddd801e5be990befa576"
+    },
+    {
+      "path": "tests/services/ncbi/formatting/citation-formatter.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb5c36ad63badbc92b221fab4d493af7d7c22a5b",
+      "size": 38589,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/cb5c36ad63badbc92b221fab4d493af7d7c22a5b"
+    },
+    {
+      "path": "tests/services/ncbi/ncbi-service.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5ce8acfef10d3aa34b34e26a4dd729e6a5cbca0",
+      "size": 73902,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e5ce8acfef10d3aa34b34e26a4dd729e6a5cbca0"
+    },
+    {
+      "path": "tests/services/ncbi/parsing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc80e9c66a1a9cd259184c0070455b46d214a17f",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/cc80e9c66a1a9cd259184c0070455b46d214a17f"
+    },
+    {
+      "path": "tests/services/ncbi/parsing/_book-fixtures.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cf5622a49550b979325544a9681330735c7503b",
+      "size": 29213,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/6cf5622a49550b979325544a9681330735c7503b"
+    },
+    {
+      "path": "tests/services/ncbi/parsing/article-parser.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69f9c90a7b6892b6bd4d219af1ef3055c469dc9e",
+      "size": 26654,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/69f9c90a7b6892b6bd4d219af1ef3055c469dc9e"
+    },
+    {
+      "path": "tests/services/ncbi/parsing/esummary-parser.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e7e0682254b5d4077e6eb25e172108eb9bcd6a2",
+      "size": 27150,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8e7e0682254b5d4077e6eb25e172108eb9bcd6a2"
+    },
+    {
+      "path": "tests/services/ncbi/parsing/pmc-article-parser.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a373cc2c3ecd5f51ad667c4aff68d5c468c156ef",
+      "size": 96419,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a373cc2c3ecd5f51ad667c4aff68d5c468c156ef"
+    },
+    {
+      "path": "tests/services/ncbi/parsing/pmc-xml-helpers.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c2fbc2f00ffef1a03f3184497845d95bad2fa81",
+      "size": 21725,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/0c2fbc2f00ffef1a03f3184497845d95bad2fa81"
+    },
+    {
+      "path": "tests/services/ncbi/parsing/text-helpers.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9cb9dff15a7922928b73bf2b92aba3de2fc1e2c",
+      "size": 4401,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/e9cb9dff15a7922928b73bf2b92aba3de2fc1e2c"
+    },
+    {
+      "path": "tests/services/ncbi/parsing/xml-helpers.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a074c0b0dbdfa5f01ad9488c3a367b1942edd17f",
+      "size": 4296,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a074c0b0dbdfa5f01ad9488c3a367b1942edd17f"
+    },
+    {
+      "path": "tests/services/ncbi/rate-limit-cooldown.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9afab870aaaa56e541056d860a65a5acf8cab60d",
+      "size": 11006,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9afab870aaaa56e541056d860a65a5acf8cab60d"
+    },
+    {
+      "path": "tests/services/ncbi/request-queue.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "050d82951c23f2e723c3b6e28ae26dfb0bfbfc8b",
+      "size": 13822,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/050d82951c23f2e723c3b6e28ae26dfb0bfbfc8b"
+    },
+    {
+      "path": "tests/services/ncbi/response-handler.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23c4c254491683143cc7ea34fff8ddde069635f8",
+      "size": 33553,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/23c4c254491683143cc7ea34fff8ddde069635f8"
+    },
+    {
+      "path": "tests/services/ncbi/transient-500-retry.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0c0c595a09ef92a84102fea6bae1055adad88e5",
+      "size": 3604,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/a0c0c595a09ef92a84102fea6bae1055adad88e5"
+    },
+    {
+      "path": "tests/services/openalex",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8222cec09509ad06614ea45722e868b8926ecb2d",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/8222cec09509ad06614ea45722e868b8926ecb2d"
+    },
+    {
+      "path": "tests/services/openalex/openalex-service.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f7fbbbcc902ec972aaa63f404d63a1e54bc26a5",
+      "size": 23930,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/9f7fbbbcc902ec972aaa63f404d63a1e54bc26a5"
+    },
+    {
+      "path": "tests/services/retry-gate.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b58dfc2c5ca0c4cb11fffa0d62bc43959f08c11b",
+      "size": 11552,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/b58dfc2c5ca0c4cb11fffa0d62bc43959f08c11b"
+    },
+    {
+      "path": "tests/services/unpaywall",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ffc4f8fcc423fcd08de405c99ad2140f3a234740",
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/trees/ffc4f8fcc423fcd08de405c99ad2140f3a234740"
+    },
+    {
+      "path": "tests/services/unpaywall/unpaywall-service.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cb92767db71f74c547450557e7f3fcdd8628d59",
+      "size": 18028,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/1cb92767db71f74c547450557e7f3fcdd8628d59"
+    },
+    {
+      "path": "tsconfig.build.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad75f2f6b247dab09c9fa114e9e10bface9208d1",
+      "size": 203,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ad75f2f6b247dab09c9fa114e9e10bface9208d1"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e3de746ee9ca907aed2ddc303f8e741ce735e84",
+      "size": 316,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/8e3de746ee9ca907aed2ddc303f8e741ce735e84"
+    },
+    {
+      "path": "vitest.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad64f42eb76e54e54c031445de4882be31a62298",
+      "size": 339,
+      "url": "https://api.github.com/repos/cyanheads/pubmed-mcp-server/git/blobs/ad64f42eb76e54e54c031445de4882be31a62298"
+    }
+  ],
+  "truncated": false
+}

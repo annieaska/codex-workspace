@@ -1,0 +1,404 @@
+{
+  "run_id": "SK-SUPPLEMENT-20260926-r2",
+  "created_at": "2026-09-26T21:26:14.282762+00:00",
+  "execution_policy_ref": "02_工作区/Matt执行/SK-SUPPLEMENT-20260926-r2-policy.json",
+  "policy_revision": "SK-MATT-20260926-r3",
+  "policy_hash": "bd85217d26db49b6e53df2ccf2c784a87a7561c41f8f8f0a71bc98f5332a7c9e",
+  "level": "post_baseline_supplement",
+  "requests": [
+    {
+      "query_id": "r2-c-abstracts",
+      "issued_at": "2026-09-26T21:19:40.304Z",
+      "category_or_target_id": "human_original / BEH-sleep-recovery-followup",
+      "request_file": "r2-c-abstracts-request.json",
+      "route": "public PubMed MCP",
+      "tool": "pubmed_fetch_articles",
+      "query_text": null,
+      "original_ids": [
+        "28912361",
+        "26010820",
+        "25585263",
+        "11511309"
+      ],
+      "new_claim_ids": [],
+      "qualified_read_ids": [],
+      "consumption": {
+        "query_attempt": 0,
+        "abstract_records": 4,
+        "fulltext_targets": 0,
+        "new_qualified_reads": 0
+      },
+      "response_file": "r2-c-abstracts-response.json",
+      "access_result": "returned",
+      "hits": null
+    },
+    {
+      "query_id": "r2-c-full01",
+      "issued_at": "2026-09-26T21:23:06.254Z",
+      "category_or_target_id": "human_original / BEH-sleep-recovery-followup",
+      "request_file": "r2-c-full01-request.json",
+      "route": "public PubMed MCP",
+      "tool": "pubmed_fetch_fulltext",
+      "query_text": null,
+      "original_ids": [
+        "28912361"
+      ],
+      "new_claim_ids": [],
+      "qualified_read_ids": [],
+      "consumption": {
+        "query_attempt": 0,
+        "abstract_records": 0,
+        "fulltext_targets": 1,
+        "new_qualified_reads": 0
+      },
+      "response_file": "r2-c-full01-response.json",
+      "access_result": [
+        {
+          "id": "28912361",
+          "idType": "pmid",
+          "reason": "no-oa",
+          "triedTiers": [
+            {
+              "tier": "pmc",
+              "outcome": "not-attempted",
+              "detail": "PMID has no PMC counterpart"
+            },
+            {
+              "tier": "europepmc",
+              "outcome": "no-fulltext",
+              "detail": "EPMC source MED has no PMC counterpart"
+            },
+            {
+              "tier": "unpaywall",
+              "outcome": "no-oa",
+              "detail": "No open-access copy indexed"
+            }
+          ]
+        }
+      ],
+      "hits": null
+    },
+    {
+      "query_id": "r2-c-full02",
+      "issued_at": "2026-09-26T21:23:36.560Z",
+      "category_or_target_id": "human_original / BEH-sleep-recovery-followup",
+      "request_file": "r2-c-full02-request.json",
+      "route": "public PubMed MCP",
+      "tool": "pubmed_fetch_fulltext",
+      "query_text": null,
+      "original_ids": [
+        "11511309"
+      ],
+      "new_claim_ids": [],
+      "qualified_read_ids": [],
+      "consumption": {
+        "query_attempt": 0,
+        "abstract_records": 0,
+        "fulltext_targets": 1,
+        "new_qualified_reads": 0
+      },
+      "response_file": "r2-c-full02-response.json",
+      "access_result": [
+        {
+          "id": "11511309",
+          "idType": "pmid",
+          "reason": "fetch-failed",
+          "triedTiers": [
+            {
+              "tier": "pmc",
+              "outcome": "not-attempted",
+              "detail": "PMID has no PMC counterpart"
+            },
+            {
+              "tier": "europepmc",
+              "outcome": "no-fulltext",
+              "detail": "EPMC source MED has no PMC counterpart"
+            },
+            {
+              "tier": "unpaywall",
+              "outcome": "fetch-failed",
+              "detail": "Unpaywall content fetch failed: Fetch failed for http://www.jidonline.org/article/S0022202X15413296/pdf. Status: 403"
+            }
+          ]
+        }
+      ],
+      "hits": null
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "issued_at": "2026-09-26T21:18:25.812Z",
+      "category_or_target_id": "human_original / BEH-sleep-recovery-followup",
+      "request_file": "r2-c-q01-network-request.json",
+      "route": "public PubMed MCP",
+      "tool": "pubmed_search_articles",
+      "query_text": "(\"sleep deprivation\" OR \"sleep restriction\") AND (skin OR cutaneous) AND (recovery OR recuperation)",
+      "original_ids": [],
+      "new_claim_ids": [],
+      "qualified_read_ids": [],
+      "consumption": {
+        "query_attempt": 1,
+        "abstract_records": 0,
+        "fulltext_targets": 0,
+        "new_qualified_reads": 0
+      },
+      "response_file": "r2-c-q01-network-response.json",
+      "access_result": "returned",
+      "hits": 25,
+      "screened_hits": 10,
+      "duplicate_original_ids": [
+        "31692145"
+      ]
+    },
+    {
+      "query_id": "r2-c-q01",
+      "issued_at": "2026-09-26T21:18:09.209Z",
+      "category_or_target_id": "human_original / BEH-sleep-recovery-followup",
+      "request_file": "r2-c-q01-request.json",
+      "route": "public PubMed MCP",
+      "tool": "pubmed_search_articles",
+      "query_text": "(\"sleep deprivation\" OR \"sleep restriction\") AND (skin OR cutaneous) AND (recovery OR recuperation)",
+      "original_ids": [],
+      "new_claim_ids": [],
+      "qualified_read_ids": [],
+      "consumption": {
+        "query_attempt": 1,
+        "abstract_records": 0,
+        "fulltext_targets": 0,
+        "new_qualified_reads": 0
+      },
+      "error_file": "r2-c-q01-error.json",
+      "access_result": "Error: SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND pubmed.caseyjhand.com",
+      "hits": null
+    },
+    {
+      "query_id": "r2-c-q02",
+      "issued_at": "2026-09-26T21:19:03.805Z",
+      "category_or_target_id": "human_original / BEH-sleep-recovery-followup",
+      "request_file": "r2-c-q02-request.json",
+      "route": "public PubMed MCP",
+      "tool": "pubmed_search_articles",
+      "query_text": "sleep AND (\"skin barrier\" OR \"skin hydration\" OR \"transepidermal water loss\") AND (recovery OR \"follow-up\" OR longitudinal OR prospective)",
+      "original_ids": [],
+      "new_claim_ids": [],
+      "qualified_read_ids": [],
+      "consumption": {
+        "query_attempt": 1,
+        "abstract_records": 0,
+        "fulltext_targets": 0,
+        "new_qualified_reads": 0
+      },
+      "response_file": "r2-c-q02-response.json",
+      "access_result": "returned",
+      "hits": 21,
+      "screened_hits": 10,
+      "duplicate_original_ids": [
+        "25266053",
+        "31692145"
+      ]
+    }
+  ],
+  "screening": [
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 1,
+      "pmid": "19692662",
+      "title": "Recurrent restriction of sleep and inadequate recuperation induce both adaptive changes and pathological outcomes.",
+      "disposition": "题名涉及反复睡眠限制，但摘要未读；人体及皮肤恢复适用性未确认，低于直接屏障研究优先级，未判定无关或饱和"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 2,
+      "pmid": "18333663",
+      "title": "Mood, illness and injury responses and recovery with adventure racing.",
+      "disposition": "冒险竞赛中的情绪/患病/损伤综合恢复；非本轮皮肤屏障直接问题，题录未选"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 3,
+      "pmid": "41694313",
+      "title": "Both acute and chronic caffeine consumption affect cardiovascular responses to total sleep deprivation.",
+      "disposition": "题名为咖啡因及心血管响应，非本轮皮肤屏障问题，题录未选"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 4,
+      "pmid": "31692145",
+      "title": "A study of skin characteristics with long-term sleep restriction in Korean women in their 40s.",
+      "disposition": "上一批已有摘要身份；去重，遵守不重试全文"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 5,
+      "pmid": "33249482",
+      "title": "Macro- and microvascular reactivity during repetitive exposure to shortened sleep: sex differences.",
+      "disposition": "题名为大/微血管反应；不等同皮肤屏障修复，题录未选"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 6,
+      "pmid": "8194539",
+      "title": "Local sweating responses during recovery sleep after sleep deprivation in humans.",
+      "disposition": "题名为恢复睡眠的局部出汗；不等同屏障修复，题录未选"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 7,
+      "pmid": "24682207",
+      "title": "Effects of caffeine on skin and core temperatures, alertness, and recovery sleep during circadian misalignment.",
+      "disposition": "题名为咖啡因/体温/昼夜错位；非直接屏障终点，题录未选"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 8,
+      "pmid": "28912361",
+      "title": "Impact of sleep restriction on local immune response and skin barrier restoration with and without \"multinutrient\" nutrition intervention.",
+      "disposition": "选读摘要并请求全文；有睡眠限制及实验创伤屏障恢复，全文no-oa，保留摘要线索"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 9,
+      "pmid": "20889142",
+      "title": "Sleep deprivation facilitates extinction of implicit fear generalization and physiological response to fear.",
+      "disposition": "题名为恐惧泛化/生理反应，非本轮屏障问题，题录未选"
+    },
+    {
+      "query_id": "r2-c-q01-network",
+      "rank": 10,
+      "pmid": "9760307",
+      "title": "Exertional fatigue, sleep loss, and negative energy balance increase susceptibility to hypothermia.",
+      "disposition": "题名为疲劳/能量负平衡/失温，非本轮屏障问题，题录未选"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 1,
+      "pmid": "25266053",
+      "title": "Does poor sleep quality affect skin ageing?",
+      "disposition": "已有BEH-S004原始身份；去重，不重试全文"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 2,
+      "pmid": "36759891",
+      "title": "Stress and its impairment of skin barrier function.",
+      "disposition": "压力与屏障的宽泛题名，未确认符合本轮直接人体恢复问题，未阅读全文，不据此判定文献类型"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 3,
+      "pmid": "26010820",
+      "title": "Skin Barrier Recovery is not Associated with Self-Perceived Stress.",
+      "disposition": "选读摘要；31名女性观察研究，睡眠是补充相关分析，非限制睡眠后的恢复随访；不占用全文额度"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 4,
+      "pmid": "31692145",
+      "title": "A study of skin characteristics with long-term sleep restriction in Korean women in their 40s.",
+      "disposition": "上一批已有摘要身份；去重，遵守不重试全文"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 5,
+      "pmid": "30987568",
+      "title": "Testing an Ectoin Containing Emollient for Atopic Dermatitis.",
+      "disposition": "题名为异位性皮炎润肤剂试验，非睡眠暴露恢复问题，题录未选"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 6,
+      "pmid": "25585263",
+      "title": "A suction blister model reliably assesses skin barrier restoration and immune response.",
+      "disposition": "选读摘要；16人吸疱方法重测可靠性，非直接睡眠限制干预；不作独立复现，不请求全文"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 7,
+      "pmid": "16891569",
+      "title": "Immune function in PTSD.",
+      "disposition": "题名为PTSD免疫功能，非本轮皮肤屏障直接问题，题录未选"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 8,
+      "pmid": "35717147",
+      "title": "Study protocol: assessing SleeP IN infants with early-onset atopic Dermatitis by Longitudinal Evaluation (The SPINDLE study).",
+      "disposition": "题名明确为婴儿早发AD纵向研究方案；不作完成的研究结果"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 9,
+      "pmid": "40621079",
+      "title": "Therapeutic potential of ginsenosides in circadian rhythm-based skin disorders.",
+      "disposition": "题名为人参皂苷/昼夜节律皮肤病，未确认直接人体睡眠恢复设计，题录未选"
+    },
+    {
+      "query_id": "r2-c-q02",
+      "rank": 10,
+      "pmid": "11511309",
+      "title": "Stress-induced changes in skin barrier function in healthy women.",
+      "disposition": "选读摘要并请求全文；11名女性一夜睡眠剥夺子组，全文返回403，保留摘要线索"
+    }
+  ],
+  "B": {
+    "queries": 0,
+    "distinct_original_targets_attempted": 2,
+    "new_qualified_reads": 0,
+    "targets": [
+      {
+        "url": "https://www.nature.com/articles/s41598-022-09231-8",
+        "status": "publisher_body_retrieved",
+        "evidence": [
+          "r2-res-s03-publisher.web.txt",
+          "r2-res-s03-publisher-sections.web.txt",
+          "r2-res-s03-disclosures.web.txt"
+        ]
+      },
+      {
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-022-09231-8/MediaObjects/41598_2022_9231_MOESM1_ESM.docx",
+        "status": "tool_fetch_failed_cache_miss",
+        "evidence": [
+          "r2-res-s03-supplement.web.txt"
+        ]
+      }
+    ],
+    "cached_page_inspection": "web.find/open对已返回原刊页面定位，不新增原件；不是新取得的全文/附件；本批原件目标访问额度不是工具调用次数"
+  },
+  "A": {
+    "external_queries": 0,
+    "external_accesses": 0,
+    "new_qualified_reads": 0,
+    "stage": "unknown",
+    "evidence": [
+      "../2026-09-26_YouTube试跑/before-PROJECT.md",
+      "../2026-09-26_YouTube试跑/before-summary-PROJECT.md"
+    ]
+  },
+  "D": {
+    "status": "not_activated"
+  },
+  "counts": {
+    "query_attempts": 3,
+    "successful_search_responses": 2,
+    "independent_query_texts": 2,
+    "query_attempt_overage": 1,
+    "returned_rows_screened": 20,
+    "unique_pmids_in_returned_rows": 19,
+    "abstract_records_fetched": 4,
+    "fulltext_targets_attempted": 2,
+    "new_fulltexts_retrieved": 0,
+    "new_qualified_scientific_reads": 0,
+    "new_formal_source_ids": 0,
+    "new_formal_claim_ids": 0,
+    "BEH_prior_actual_query_attempts": 16,
+    "BEH_cumulative_query_attempts": 19,
+    "BEH_historical_S1_queries": 15,
+    "BEH_historical_S2_queries": 1,
+    "BEH_post_baseline_supplement_attempts": 3,
+    "BEH_qualified_scientific_reads_total": 5,
+    "RES_queries_total": 19,
+    "RES_qualified_scientific_reads_total": 5,
+    "RES_existing_platform_qualified_reads_stage_unknown": 1
+  },
+  "deviation": "C查询额度2。首次DNS失败亦保留为查询尝试；原样重提交不免账，第三次尝试超限1。未改旧S1/S2，不以更换网络权限当作新增业务授权。",
+  "stop_reason": "所有外部检索停止；查询尝试超限已如实记录，全文与附件路线失败不再重试。无证据饱和结论。"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "r2-c-q01",
+  "started_at": "2026-09-26T21:18:09.209Z",
+  "policy_revision": "SK-MATT-20260926-r3",
+  "policy_hash": "bd85217d26db49b6e53df2ccf2c784a87a7561c41f8f8f0a71bc98f5332a7c9e",
+  "tool": "pubmed_search_articles",
+  "args": {
+    "query": "(\"sleep deprivation\" OR \"sleep restriction\") AND (skin OR cutaneous) AND (recovery OR recuperation)",
+    "maxResults": 10,
+    "summaryCount": 10,
+    "sort": "relevance"
+  }
+}

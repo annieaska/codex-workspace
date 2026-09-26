@@ -1,0 +1,38 @@
+{
+  content: [
+    {
+      type: 'text',
+      text: '## PubMed Search Results\n' +
+        '**Query:** acute sleep deprivation chronic poor sleep skin barrier facial appearance\n' +
+        '**Returned:** 0 of 0 | **Offset:** 0\n' +
+        '**Search URL:** https://pubmed.ncbi.nlm.nih.gov/?term=acute%20sleep%20deprivation%20chronic%20poor%20sleep%20skin%20barrier%20facial%20appearance%20AND%20(%22Review%22%5BPublication%20Type%5D%20OR%20%22Systematic%20Review%22%5BPublication%20Type%5D)%20AND%20hasabstract%5Btext%20word%5D%20AND%20free%20full%20text%5Bfilter%5D'
+    },
+    {
+      type: 'text',
+      text: '\n' +
+        '\n' +
+        '**Effective Query:** acute sleep deprivation chronic poor sleep skin barrier facial appearance AND ("Review"[Publication Type] OR "Systematic Review"[Publication Type]) AND hasabstract[text word] AND free full text[filter]\n' +
+        '**Applied Filters:**\n' +
+        '- **Publication types:** Review, Systematic Review\n' +
+        '- **Has abstract:** yes\n' +
+        '- **Free full text:** yes\n' +
+        '\n' +
+        '> No results matched your query with the applied filters. Try removing filters (e.g. dateRange, publicationTypes, meshTerms), broadening dates, or verifying author/journal spelling.'
+    }
+  ],
+  structuredContent: {
+    query: 'acute sleep deprivation chronic poor sleep skin barrier facial appearance',
+    offset: 0,
+    pmids: [],
+    summaries: [],
+    searchUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=acute%20sleep%20deprivation%20chronic%20poor%20sleep%20skin%20barrier%20facial%20appearance%20AND%20(%22Review%22%5BPublication%20Type%5D%20OR%20%22Systematic%20Review%22%5BPublication%20Type%5D)%20AND%20hasabstract%5Btext%20word%5D%20AND%20free%20full%20text%5Bfilter%5D',
+    totalCount: 0,
+    effectiveQuery: 'acute sleep deprivation chronic poor sleep skin barrier facial appearance AND ("Review"[Publication Type] OR "Systematic Review"[Publication Type]) AND hasabstract[text word] AND free full text[filter]',
+    appliedFilters: {
+      publicationTypes: [Array],
+      hasAbstract: true,
+      freeFullText: true
+    },
+    notice: 'No results matched your query with the applied filters. Try removing filters (e.g. dateRange, publicationTypes, meshTerms), broadening dates, or verifying author/journal spelling.'
+  }
+}

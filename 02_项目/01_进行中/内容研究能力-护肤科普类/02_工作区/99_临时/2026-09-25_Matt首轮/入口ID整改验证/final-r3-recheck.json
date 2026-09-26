@@ -1,0 +1,26 @@
+{
+  "check": "I1 actual BEH import-review-freezes-export-reimport",
+  "status": "passed",
+  "input_sha256": "cf754484bc4ba2c2775e48b608f050377381e61e8376b34a8fcbafe764119c6c",
+  "config_file_sha256": "f3a59301cb5f77b16fff32e580dc56ae7488b44c01ce7aa2f6ae6ee1d5a47c7c",
+  "core_sha256": "313094aa1c730381ca6898c35b9cec9ed688e0fec240d54e496fa59402d97d09",
+  "test_sha256": "117ca572dff1cfab6551cfb70d0b5d510f3c74fa635aa7db8fe0380b5ddc0cc6",
+  "new_decision_ids": [
+    "SK-BEH-001-D013",
+    "SK-BEH-001-D014",
+    "SK-BEH-001-D015",
+    "SK-BEH-001-D016"
+  ],
+  "new_snapshot_ids": [
+    "SK-BEH-001-F008",
+    "SK-BEH-001-F009",
+    "SK-BEH-001-F010"
+  ],
+  "historical_decisions_preserved": 6,
+  "historical_payloads_preserved": 7,
+  "ids_unique": true,
+  "original_files_unchanged": true,
+  "package_classification": "trial_with_gaps",
+  "formal_gate_passed": false,
+  "research_writes": 0
+}

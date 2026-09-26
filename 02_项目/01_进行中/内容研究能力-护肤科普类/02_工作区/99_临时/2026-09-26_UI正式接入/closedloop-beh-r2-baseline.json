@@ -1,0 +1,31 @@
+{
+  "revision": "SK-BEH-001-closedloop-r1",
+  "baseline": {
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/research-SK-BEH-001.json": "0bfd0810de8a9d20adf590e6a7d0eb72135012939457b949380978487dcaa824",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/index.html": "d17fa181d3026fa0166ac7ab64e871bf03602fbadafdbb9be466568b3cfbd925",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/SK-BEH-001.html": "f58b8cfccb798030f9efe4a267e66bf39de033636a395ff055ffe16bcdca0a64",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/SK-BEH-001.json": "d3eeffc8ba0ecbad2585b8a01fa050f8ea03d4c3d499b5878079804a4103de89"
+  },
+  "protected": {
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-RES-001.json": "f706962610582d8f084e8ca6180163285a84c3cb4e6c4cb5f298d35176fcd609",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/SK-RES-001.json": "e00a0c40bc34b1f61fcb0dc8118269b0ccc4b9dda7d6cf8494ebbe443198e26a",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/SK-RES-001.html": "24d48fb500044c1d7b08dafa9b4f742e04d1696ffd88c8d177f6c743f3a41f9c",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/acquisition-results.json": "354192659118b5decf3966810d7a5983a763594bfa3d2eb41e2ddcf16255cc42",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-review-r1-freeze.json": "8f194cf76b6fd7f996025e736da3e72da7ff2b2a685b411d2496577c7a2c7efa",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-direction-r1-freeze.json": "10b66e34260bd1deba348237bd9f0bbe76a4a69226ddd9f36e83859041cb74da",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-review-r2-freeze.json": "9a174b239d67b785fbc6057a27f8bb11cf7a8d69f42ccd40cf2ce7b81a59b51b",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-direction-r2-freeze.json": "0c260afa3824c61a0713ffe5434de153e6b0ae54a686b030b7e201275845f0b2",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-package-r1-freeze.json": "8c3c35617169def17c2dcda815668d501a7256ac767ffed20cb8b36160562d17",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-package-r2-freeze.json": "b9b254bf729aef50f4fdca04436b77267243780263a76b6ab457c01a59813f36",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-package-r3-freeze.json": "f9c8ccc9a67cca5f44b89d4a66c31d9929b7da2762f619e649165a601d4a744c",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-closedloop-r1-review-freeze.json": "e65cc5e1c6124843931e9c133e74ae603a1224f66939d5ad7e27b3d937a42435",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-closedloop-r1-direction-freeze.json": "40f0bbc8592e59d925f529f1bfbd786332387aaedefd57e58854338a1f493b57",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-BEH-001-closedloop-r1-package-freeze.json": "7465fe095fb700d119a67f23212b908a681fb7d1740e83638f810b8f21f69478"
+  },
+  "backups": {
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/research-SK-BEH-001.json": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/99_临时/2026-09-26_UI正式接入/closedloop-r1-before-beh-r2-process-research-SK-BEH-001.json",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/index.html": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/99_临时/2026-09-26_UI正式接入/closedloop-r1-before-beh-r2-delivery-index.html",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/SK-BEH-001.html": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/99_临时/2026-09-26_UI正式接入/closedloop-r1-before-beh-r2-delivery-SK-BEH-001.html",
+    "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/03_交付物/护肤科普研究首版/SK-BEH-001.json": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/99_临时/2026-09-26_UI正式接入/closedloop-r1-before-beh-r2-delivery-SK-BEH-001.json"
+  }
+}

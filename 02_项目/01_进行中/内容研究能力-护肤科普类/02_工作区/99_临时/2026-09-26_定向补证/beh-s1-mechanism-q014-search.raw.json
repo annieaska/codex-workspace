@@ -1,0 +1,34 @@
+{
+  content: [
+    {
+      type: 'text',
+      text: '## PubMed Search Results\n' +
+        '**Query:** sleep deprivation skin barrier transepidermal water loss facial appearance\n' +
+        '**Returned:** 0 of 0 | **Offset:** 0\n' +
+        '**Search URL:** https://pubmed.ncbi.nlm.nih.gov/?term=sleep%20deprivation%20skin%20barrier%20transepidermal%20water%20loss%20facial%20appearance%20AND%20hasabstract%5Btext%20word%5D%20AND%20free%20full%20text%5Bfilter%5D%20AND%20humans%5BMeSH%20Terms%5D'
+    },
+    {
+      type: 'text',
+      text: '\n' +
+        '\n' +
+        '**Effective Query:** sleep deprivation skin barrier transepidermal water loss facial appearance AND hasabstract[text word] AND free full text[filter] AND humans[MeSH Terms]\n' +
+        '**Applied Filters:**\n' +
+        '- **Has abstract:** yes\n' +
+        '- **Free full text:** yes\n' +
+        '- **Species:** humans\n' +
+        '\n' +
+        '> No results matched your query with the applied filters. Try removing filters (e.g. dateRange, publicationTypes, meshTerms), broadening dates, or verifying author/journal spelling.'
+    }
+  ],
+  structuredContent: {
+    query: 'sleep deprivation skin barrier transepidermal water loss facial appearance',
+    offset: 0,
+    pmids: [],
+    summaries: [],
+    searchUrl: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep%20deprivation%20skin%20barrier%20transepidermal%20water%20loss%20facial%20appearance%20AND%20hasabstract%5Btext%20word%5D%20AND%20free%20full%20text%5Bfilter%5D%20AND%20humans%5BMeSH%20Terms%5D',
+    totalCount: 0,
+    effectiveQuery: 'sleep deprivation skin barrier transepidermal water loss facial appearance AND hasabstract[text word] AND free full text[filter] AND humans[MeSH Terms]',
+    appliedFilters: { hasAbstract: true, freeFullText: true, species: 'humans' },
+    notice: 'No results matched your query with the applied filters. Try removing filters (e.g. dateRange, publicationTypes, meshTerms), broadening dates, or verifying author/journal spelling.'
+  }
+}

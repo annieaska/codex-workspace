@@ -1,0 +1,30 @@
+/* 定向验证仅用标注验收副本；不改真实材料，不执行查询。 */
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const C=require('./workbench-core.js');
+if(!globalThis.crypto)globalThis.crypto=require('node:crypto').webcrypto;
+const root=path.resolve(__dirname,'../../02_工作区/Matt执行');
+const config=JSON.parse(fs.readFileSync(path.join(root,'run-config.json'),'utf8'));
+const original=JSON.parse(fs.readFileSync(path.join(root,'SK-RES-001-s1.json'),'utf8'));
+const checks=[];const mark=x=>checks.push(x);
+(async()=>{
+ assert(await C.verifyPolicy(config));assert.deepEqual(C.validate(original,config),[]);mark('canonical绑定与真实S1 v0.1输入');
+ const task={...config.runs[0],id:'VERIFY-THIRD',mode:'behavior'};delete task.exclude;assert(C.s0(config,task).includes('run.exclude'));assert.throws(()=>C.create(config,task,'run-config.json'),/S0/);mark('第三主题S0缺项停止');
+ for(const mode of ['behavior','result']){const t={...config.runs.find(x=>x.mode===mode),id:'VERIFY-'+mode};const d=C.create(config,t,'run-config.json');assert.equal(d.mode,mode);assert.deepEqual(C.validate(d,config),[]);}mark('两模式及第三主题同策略复用');
+ const broken=C.copy(original);broken.branches[0].claim_ids=['missing'];assert(C.validate(broken,config).some(x=>x.includes('引用失效')));mark('损坏引用拒绝');
+ const d=C.copy(original);d.test_fixture=true;
+ await assert.rejects(()=>C.snapshot(d,config,'review',{actor_type:'user',actor_label:'验收夹具'}),/未完成/);assert.throws(()=>C.makeCandidates(d),/先完成/);mark('不可越过逐支审阅');
+ assert(!C.canRequest(d,config,{stage:'S1',category:'youtube',route:'new',query:'test'}).allowed);assert(!C.canRequest(d,config,{stage:'S3',route:'new'}).allowed);assert(!C.canRequest(d,config,{stage:'S2',target:'T1',gap_id:'missing',route:'new'}).allowed);mark('S1耗尽/S3/无明确缺口硬停止');
+ const count=C.copy(d);const s=count.sources[0];count.search_log.push({...C.base(count,'Q'),stage:'S2',query:'test dedup',target:'T1',qualified_read_ids:[s.id],status:'available'});assert.equal(C.budget(count,config).s2_targets.T1.qualified_reads,0);mark('原始来源跨S1/S2去重');
+ const actor={actor_type:'user',actor_label:'自动验收夹具，非真实决定'};
+ const rows=d.branches.map(b=>({branch_id:b.id,action:'gap',reason:'验收夹具：明确保留真实材料缺口',required_changes:null}));
+ await assert.rejects(()=>C.saveReview(C.copy(d),config,rows.map(x=>({...x,reason:''})),actor),/理由/);await C.saveReview(d,config,rows,actor);await C.snapshot(d,config,'review',actor);C.makeCandidates(d);
+ assert(!C.gates(d,d.candidates[0],config).formal);await assert.rejects(()=>C.snapshot(C.copy(d),config,'direction',actor,{candidate_id:d.candidates[0].id,classification:'formal',reason:'拒绝测试'}),/门槛/);
+ await C.snapshot(d,config,'direction',actor,{candidate_id:d.candidates[0].id,classification:'trial_with_gaps',reason:'验收夹具，仅测试缺口试运行'});await C.snapshot(d,config,'package',actor);assert.deepEqual((await C.audit(d,config)).errors,[]);assert.equal(d.status,'frozen');assert.equal(d.snapshots.length,3);mark('双门槛不混算、三种真实内容快照与trial状态');
+ const reopen=JSON.parse(JSON.stringify(d));assert.deepEqual((await C.audit(reopen,config)).errors,[]);assert(C.latest(reopen,'package'));mark('完整JSON保存重开保持冻结');
+ const changed=C.copy(d);changed.claims[0].text+='（验收修改）';const a=await C.audit(changed,config);assert.deepEqual(a.errors,[]);assert(a.stale.length===3);assert(!C.latest(changed,'review'));assert(!C.allReviewed(changed));assert(changed.candidates.every(x=>x.invalidated));mark('同revision材料变更使三阶段和决定失效');
+ const modified=C.copy(d);modified.decisions[0].reason+='changed';const b=await C.audit(modified,config);assert.deepEqual(b.errors,[]);assert(!C.latest(modified,'review'));assert(!C.latest(modified,'package'));mark('外部决定修改使下游失效');
+ const edited=C.copy(d);edited.candidates[0].interest_gate.reasons=['edited'];const c=await C.audit(edited,config);assert.deepEqual(c.errors,[]);assert(C.latest(edited,'review'));assert(!C.latest(edited,'direction'));mark('方向修改仅使方向及最终包失效');
+ const corrupt=C.copy(d);corrupt.snapshots[0].content.kind='tampered';assert((await C.audit(corrupt,config)).errors.some(x=>x.includes('哈希')));mark('冻结内容篡改拒绝');
+ console.log(JSON.stringify({passed:checks.length,checks},null,2));
+ if(process.argv[2])fs.writeFileSync(process.argv[2],JSON.stringify(d,null,2));
+})().catch(e=>{console.error(e);process.exitCode=1;});

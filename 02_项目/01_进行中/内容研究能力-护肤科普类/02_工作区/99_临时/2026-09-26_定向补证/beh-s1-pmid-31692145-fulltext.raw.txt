@@ -1,0 +1,16 @@
+{
+  content: [
+    {
+      type: 'text',
+      text: '## Full-Text Articles\n' +
+        '**Articles Returned:** 0\n' +
+        '\n' +
+        '**Unavailable (1):**\n' +
+        '- [pmid] 31692145 — no-oa\n' +
+        '  chain: pmc:not-attempted (PMID has no PMC counterpart) → europepmc:no-fulltext (EPMC source MED has no PMC counterpart) → unpaywall:no-oa (No open-access copy indexed)\n' +
+        '\n' +
+        '> No full-text articles returned. Articles must be open-access and indexed in PMC, Europe PMC, or recoverable via Unpaywall to retrieve full text. For metadata and abstracts only, use `pubmed_fetch_articles`.'
+    }
+  ],
+  structuredContent: { articles: [], totalReturned: 0, unavailable: [ [Object] ] }
+}

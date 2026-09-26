@@ -1,0 +1,2307 @@
+{
+  "schema": "sk-research-audit-snapshot/1.0",
+  "kind": "review",
+  "created_at": "2026-09-25T05:02:36.690764+00:00",
+  "actor_type": "controller_delegate",
+  "payload_sha256": "244919f3a5a13ef1cf916af559b333746b31204639b94e7d9e5e716c061b7183",
+  "payload": {
+    "schema_version": "0.1",
+    "revision": "review-r2",
+    "run_id": "SK-RES-001",
+    "mode": "result",
+    "demo": false,
+    "config_ref": {
+      "path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-RES-001-policy-r2.json",
+      "revision": "SK-MATT-20260925-r2",
+      "sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a"
+    },
+    "generated_at": "2026-09-25T04:55:45.202648+00:00",
+    "status": "s2_complete_with_gaps",
+    "task": {
+      "title": "皮肤干燥、紧绷与屏障受损：表象、可能原因和护理优先级",
+      "scope": "一般成人日常护理；不诊断、不处方、不品牌推荐",
+      "objective": "验证结果型研究的真实来源、分支边界、代理门禁与可复用流程",
+      "audience": "中国优先，其他市场仅作明确限定参照"
+    },
+    "sources": [
+      {
+        "id": "RES-S01",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "title": "Dry skin: Overview",
+        "url": "https://www.aad.org/public/diseases/a-z/dry-skin-overview",
+        "authors": [
+          "American Academy of Dermatology"
+        ],
+        "published_at": null,
+        "accessed_at": "2026-09-25",
+        "access_time_precision": "day",
+        "recorded_at": "2026-09-25T04:55:45.202648+00:00",
+        "source_type": "professional_patient_guidance",
+        "language": "en",
+        "geography": "美国发布机构；适用中国人群未专项验证",
+        "access_status": "available",
+        "read_level": "official_record",
+        "locator": "正文 Overview / When to see a dermatologist",
+        "excerpt_or_summary": "低湿度和室内供暖等可加重干燥；持续不改善时应评估其他原因。",
+        "quality": {
+          "status": "guidance_assessed",
+          "publisher_identity": "AAD 官方皮肤科患者教育",
+          "method_basis": "专业建议；此页未提供系统检索和证据分级方法",
+          "population_limits": "一般干燥皮肤自我护理；不能替代个体诊断",
+          "paper_score": null
+        },
+        "limitations": [
+          "患者教育页，不是正式分级指南；不能据其简写断言所有紧绷都是屏障损伤。"
+        ],
+        "missing_reason": "页面未显示可核验发布日期"
+      },
+      {
+        "id": "RES-S02",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "title": "Dermatologists’ top tips for relieving dry skin",
+        "url": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin",
+        "authors": [
+          "American Academy of Dermatology"
+        ],
+        "published_at": null,
+        "accessed_at": "2026-09-25",
+        "access_time_precision": "day",
+        "recorded_at": "2026-09-25T04:55:45.202648+00:00",
+        "source_type": "professional_patient_guidance",
+        "language": "en",
+        "geography": "美国发布机构；受众地域未知",
+        "access_status": "available",
+        "read_level": "official_record",
+        "locator": "正文浴洗、保湿、衣物环境及何时看皮肤科医生段落",
+        "excerpt_or_summary": "温水短时浴洗、温和清洁、及时使用无香保湿剂是常规护理选项；持续不适需要进一步评估。",
+        "quality": {
+          "status": "guidance_assessed",
+          "publisher_identity": "AAD 官方",
+          "method_basis": "专家患者教育；未展示系统检索与分级",
+          "population_limits": "一般干燥护理；持续或明显不适需个体评估",
+          "paper_score": null
+        },
+        "limitations": [
+          "与 S01 同机构，不算独立复核；没有对全部配方给出等效性保证。"
+        ],
+        "missing_reason": "页面未显示可核验发布日期"
+      },
+      {
+        "id": "RES-S03",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "title": "Alteration of barrier properties, stratum corneum ceramides and microbiome composition in response to lotion application on cosmetic dry skin",
+        "url": "https://www.nature.com/articles/s41598-022-09231-8",
+        "authors": [
+          "Barry Murphy et al.（作者简写）"
+        ],
+        "published_at": "2022-03-26",
+        "accessed_at": "2026-09-25",
+        "access_time_precision": "day",
+        "recorded_at": "2026-09-25T04:55:45.202648+00:00",
+        "source_type": "human_original",
+        "language": "en",
+        "geography": "英国/美国机构；研究受试人群地域未完整核实",
+        "access_status": "available",
+        "read_level": "full_text",
+        "locator": "Methods: study design / Results / Acknowledgements; DOI 10.1038/s41598-022-09231-8",
+        "excerpt_or_summary": "37 名女性的腿部干燥研究观察到特定乳液使用后的多项变化；报告只呈现设计中的乳液单元，不能推广到所有保湿剂。",
+        "quality": {
+          "status": "unscored",
+          "method": null,
+          "independence": null,
+          "source": null,
+          "author": null,
+          "total": null,
+          "missing_reason": "未完成全部评分依据核验，不推定高质量",
+          "funding": "Unilever R&D；正文披露多位作者雇佣/薪资支持",
+          "independent_replication_checks": {
+            "team": null,
+            "data": null,
+            "funding": null,
+            "experiment": null,
+            "population": null,
+            "intervention": null,
+            "outcome": null,
+            "method": null
+          }
+        },
+        "limitations": [
+          "18–55 岁女性及腿部场景；部分脂质分析仅 18 人；Unilever 研发资助及多名作者雇员关系；微生物网络不证明因果；独立复核未核实。"
+        ],
+        "missing_reason": null
+      },
+      {
+        "id": "RES-S04",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "title": "Skin hydration: interplay between molecular dynamics, structure and water uptake in the stratum corneum",
+        "url": "https://www.nature.com/articles/s41598-017-15921-5",
+        "authors": [
+          "Enamul Haque Mojumdar",
+          "Quoc Dat Pham",
+          "Daniel Topgaard",
+          "Emma Sparr"
+        ],
+        "published_at": "2017-11-16",
+        "accessed_at": "2026-09-25",
+        "access_time_precision": "day",
+        "recorded_at": "2026-09-25T04:55:45.202648+00:00",
+        "source_type": "mechanism",
+        "language": "en",
+        "geography": null,
+        "access_status": "available",
+        "read_level": "full_text",
+        "locator": "Methods / Results / Conclusions; DOI 10.1038/s41598-017-15921-5",
+        "excerpt_or_summary": "离体猪角质层的水分和分子结构研究可辅助解释含水变化；实验湿度条件不能转成居室湿度处方。",
+        "quality": {
+          "status": "unscored",
+          "method": null,
+          "independence": null,
+          "source": null,
+          "author": null,
+          "total": null,
+          "missing_reason": "未完成全部评分依据核验，不推定高质量"
+        },
+        "limitations": [
+          "离体猪组织及物理实验；不能推出人体疗效、紧绷诊断或固定见效时间；补充材料和全部资助信息未核实。"
+        ],
+        "missing_reason": null
+      },
+      {
+        "id": "RES-S05",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "title": "Changes in skin barrier function following long-term treatment with moisturizers",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17300239/",
+        "authors": [
+          "I Buraczewska",
+          "B Berne",
+          "M Lindberg",
+          "H Törmä",
+          "M Lodén"
+        ],
+        "published_at": "2007-03",
+        "accessed_at": "2026-09-25",
+        "access_time_precision": "day",
+        "recorded_at": "2026-09-25T04:55:45.202648+00:00",
+        "source_type": "human_original",
+        "language": "en",
+        "geography": "瑞典机构",
+        "access_status": "partial",
+        "read_level": "abstract_only",
+        "locator": "PubMed 搜索索引摘要；DOI 10.1111/j.1365-2133.2006.07685.x",
+        "excerpt_or_summary": "摘要提示不同配方在挑战模型中的表现不同；仅保留为历史反向线索。",
+        "quality": {
+          "status": "unscored",
+          "method": null,
+          "independence": null,
+          "source": null,
+          "author": null,
+          "total": null,
+          "missing_reason": "未完成全部评分依据核验，不推定高质量"
+        },
+        "limitations": [
+          "78 名正常志愿者、前臂、7 周；超过默认 10 年窗口；全文未取得；不得据此宣称保湿有害。"
+        ],
+        "missing_reason": null
+      },
+      {
+        "id": "RES-S06",
+        "run_id": "SK-RES-001",
+        "revision": "s2-r1",
+        "demo": false,
+        "title": "Effectiveness of topical hyaluronic acid of different molecular weights in xerosis cutis treatment in elderly: a double-blind, randomized controlled trial",
+        "url": "https://link.springer.com/article/10.1007/s00403-024-03003-2",
+        "authors": [
+          "Parikesit Muhammad",
+          "Endi Novianto",
+          "Mirawati Setyorini",
+          "Lili Legiawati",
+          "Shannaz Nadia Yusharyahya",
+          "Sri Linuwih Menaldi",
+          "Windy Keumala Budianti"
+        ],
+        "published_at": "2024-06-03",
+        "accessed_at": "2026-09-25",
+        "access_time_precision": "day",
+        "recorded_at": "2026-09-25T04:55:45.202648+00:00",
+        "source_type": "human_original",
+        "language": "en",
+        "geography": "印度尼西亚雅加达研究人群",
+        "access_status": "partial",
+        "read_level": "abstract_only",
+        "locator": "Publisher abstract / Funding / Competing interests / Author information",
+        "excerpt_or_summary": "36 名养老机构老年人研究摘要中，含水指标与 TEWL、临床评分的组间结果并不一致；待原文核实。",
+        "quality": {
+          "status": "unscored",
+          "method": null,
+          "independence": null,
+          "source": null,
+          "author": null,
+          "total": null,
+          "missing_reason": "未完成全部评分依据核验，不推定高质量",
+          "funding": "University of Indonesia Hibah PUTI 2023；Paragon Technology and Innovation 提供试验材料。",
+          "conflict_of_interest": "作者声明无利益冲突；材料支持另列，不据此推定独立重复。"
+        },
+        "limitations": [
+          "雅加达、60–80 岁、腿部和特定配方；不能推广普通成人面部；全文及资助未核实。",
+          "S2核对原刊身份与披露，仍未阅读全文，不能据摘要完成方法评分。"
+        ],
+        "missing_reason": "原刊摘要、作者与基金可读；正文付费，未购买或登录。",
+        "doi": "10.1007/s00403-024-03003-2"
+      },
+      {
+        "id": "RES-S07",
+        "run_id": "SK-RES-001",
+        "revision": "s2-r1",
+        "demo": false,
+        "title": "Sensory neuron activation from topical treatments modulates the sensorial perception of human skin",
+        "url": "https://academic.oup.com/pnasnexus/article/2/9/pgad292/7278834",
+        "doi": "10.1093/pnasnexus/pgad292",
+        "authors": [
+          "Ross Bennett-Kennett",
+          "Joseph Pace",
+          "Barbara Lynch",
+          "Yegor Domanov",
+          "Gustavo S Luengo",
+          "Anne Potter",
+          "Reinhold H Dauskardt"
+        ],
+        "published_at": "2023-09-26",
+        "accessed_at": "2026-09-25",
+        "access_time_precision": "day",
+        "recorded_at": "2026-09-25T05:02:36.689508+00:00",
+        "source_type": "mechanism_with_human_perception",
+        "language": "en",
+        "geography": "Stanford/法国研发机构；法国保湿剂与中国清洁剂消费者调查",
+        "access_status": "available",
+        "read_level": "full_text",
+        "locator": "Abstract; Materials and methods: Human sensorial perception assessment; Conclusion; Funding; Competing interest",
+        "excerpt_or_summary": "离体角质层力学、神经刺激模型与人体自报体验联合研究，支持紧绷感的力学解释；不等于客观屏障损伤的诊断准确性研究。",
+        "quality": {
+          "status": "unscored",
+          "method": null,
+          "independence": null,
+          "source": null,
+          "author": null,
+          "total": null,
+          "missing_reason": "未完成独立重复与全部量化评分依据核验",
+          "funding": "L’Oréal 资助 Stanford 工作，多名作者为该公司员工或受资助者。",
+          "independent_replication_checks": {
+            "team": null,
+            "data": null,
+            "funding": null,
+            "experiment": null,
+            "population": null,
+            "intervention": null,
+            "outcome": null,
+            "method": null
+          }
+        },
+        "limitations": [
+          "调查评价的是一周使用后的感受，实验和模型不能替代人体直接神经测量；未验证紧绷作为屏障损伤诊断指标。",
+          "含中国消费者调查，不代表独立中国团队重复或当代平台市场需求。"
+        ],
+        "missing_reason": null
+      }
+    ],
+    "claims": [
+      {
+        "id": "RES-C01",
+        "run_id": "SK-RES-001",
+        "revision": "s2-r1",
+        "demo": false,
+        "text": "本轮证据不足以把干燥或紧绷直接诊断为屏障受损。",
+        "claim_type": "observation",
+        "source_refs": [
+          {
+            "source_id": "RES-S01",
+            "role": "limit",
+            "locator": "正文 Overview / When to see a dermatologist"
+          },
+          {
+            "source_id": "RES-S04",
+            "role": "limit",
+            "locator": "Methods / Results / Conclusions; DOI 10.1038/s41598-017-15921-5"
+          },
+          {
+            "source_id": "RES-S07",
+            "role": "limit",
+            "locator": "Abstract; Materials and methods: Human sensorial perception assessment; Conclusion; Funding; Competing interest"
+          }
+        ],
+        "certainty": "insufficient_for_diagnosis",
+        "population": "一般成人",
+        "context": "症状与客观测量的区别",
+        "time_scale": "依具体来源；无统一恢复期限",
+        "allowed_expression": "将其作为待区分的表象和研究问题。",
+        "forbidden_expression": "一紧绷就说明屏障坏了。",
+        "gaps": [
+          "RES-G02"
+        ]
+      },
+      {
+        "id": "RES-C02",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "text": "低湿度、热水/过度清洁等是干燥护理中需要先检查的场景因素。",
+        "claim_type": "recommendation",
+        "source_refs": [
+          {
+            "source_id": "RES-S01",
+            "role": "support",
+            "locator": "正文 Overview / When to see a dermatologist"
+          },
+          {
+            "source_id": "RES-S02",
+            "role": "support",
+            "locator": "正文浴洗、保湿、衣物环境及何时看皮肤科医生段落"
+          }
+        ],
+        "certainty": "professional_guidance",
+        "population": "一般干燥皮肤人群",
+        "context": "日常环境与浴洗",
+        "time_scale": "依具体来源；无统一恢复期限",
+        "allowed_expression": "先核对环境和清洁习惯；按耐受调整。",
+        "forbidden_expression": "仅凭症状认定单一原因或保证调整后康复。",
+        "gaps": [
+          "RES-G04"
+        ]
+      },
+      {
+        "id": "RES-C03",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "text": "保湿的结论应绑定配方、部位、人群与测量终点。",
+        "claim_type": "observation",
+        "source_refs": [
+          {
+            "source_id": "RES-S03",
+            "role": "support",
+            "locator": "Methods: study design / Results / Acknowledgements; DOI 10.1038/s41598-022-09231-8"
+          },
+          {
+            "source_id": "RES-S05",
+            "role": "limit",
+            "locator": "PubMed 搜索索引摘要；DOI 10.1111/j.1365-2133.2006.07685.x"
+          },
+          {
+            "source_id": "RES-S06",
+            "role": "limit",
+            "locator": "PubMed 搜索索引摘要；PMID 38829483；直开未返回正文"
+          }
+        ],
+        "certainty": "limited",
+        "population": "研究限定人群",
+        "context": "特定配方研究；摘要仅作线索",
+        "time_scale": "依具体来源；无统一恢复期限",
+        "allowed_expression": "不同保湿研究的结果不能视为全部产品等效。",
+        "forbidden_expression": "某成分或所有保湿产品都能修复任何屏障问题。",
+        "gaps": [
+          "RES-G03"
+        ]
+      },
+      {
+        "id": "RES-C04",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "text": "含水量改善不能在本轮直接等同于所有屏障功能和临床不适改善。",
+        "claim_type": "observation",
+        "source_refs": [
+          {
+            "source_id": "RES-S03",
+            "role": "limit",
+            "locator": "Methods: study design / Results / Acknowledgements; DOI 10.1038/s41598-022-09231-8"
+          },
+          {
+            "source_id": "RES-S06",
+            "role": "limit",
+            "locator": "PubMed 搜索索引摘要；PMID 38829483；直开未返回正文"
+          },
+          {
+            "source_id": "RES-S04",
+            "role": "limit",
+            "locator": "Methods / Results / Conclusions; DOI 10.1038/s41598-017-15921-5"
+          }
+        ],
+        "certainty": "limited",
+        "population": "实验和研究特定人群",
+        "context": "角质层含水、TEWL 和症状是不同观察指标",
+        "time_scale": "依具体来源；无统一恢复期限",
+        "allowed_expression": "把测量终点分别解释，并保留未核实处。",
+        "forbidden_expression": "补水数值上升即证明屏障修好。",
+        "gaps": [
+          "RES-G03"
+        ]
+      },
+      {
+        "id": "RES-C05",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "text": "持续不改善或使用产品出现明显刺痛灼烧时，应保留专业评估路径。",
+        "claim_type": "recommendation",
+        "source_refs": [
+          {
+            "source_id": "RES-S01",
+            "role": "support",
+            "locator": "正文 Overview / When to see a dermatologist"
+          },
+          {
+            "source_id": "RES-S02",
+            "role": "support",
+            "locator": "正文浴洗、保湿、衣物环境及何时看皮肤科医生段落"
+          }
+        ],
+        "certainty": "professional_guidance",
+        "population": "日常自我护理后仍不适的人群",
+        "context": "不能在内容里替代鉴别诊断",
+        "time_scale": "依具体来源；无统一恢复期限",
+        "allowed_expression": "说明自我护理的边界并建议皮肤科评估。",
+        "forbidden_expression": "直接诊断湿疹或推荐处方治疗。",
+        "gaps": []
+      }
+    ],
+    "branches": [
+      {
+        "id": "RES-B01",
+        "run_id": "SK-RES-001",
+        "revision": "s2-r1",
+        "demo": false,
+        "title": "先区分表象与诊断",
+        "definition": "把干燥和紧绷作为需要解释的体验，避免自动等同屏障损伤。",
+        "chain_position": "表象→可能原因与边界→护理优先级",
+        "parent_ids": [],
+        "related_ids": [
+          "RES-B02",
+          "RES-B03",
+          "RES-B04"
+        ],
+        "upstream": [
+          "症状记录与触发场景"
+        ],
+        "downstream": [
+          "是否适合自我护理或应评估"
+        ],
+        "time_scale": {
+          "onset": null,
+          "duration": null,
+          "recovery": null,
+          "progression": null,
+          "missing_reason": "未取得可以跨人群推广的时间曲线"
+        },
+        "population": "一般成人日常护肤；研究人群单列",
+        "context": "非诊断、非处方、非医美术后场景",
+        "modifiers": {
+          "amplifiers": [
+            "低湿度、清洁和摩擦等仅按来源限定"
+          ],
+          "mitigators": [
+            "温和清洁与基础保湿等按耐受和来源限定"
+          ]
+        },
+        "exclusions": [
+          "疾病诊断",
+          "药物或医美后反应",
+          "品牌推荐",
+          "儿童及特殊医疗人群外推"
+        ],
+        "claim_ids": [
+          "RES-C01"
+        ],
+        "source_ids": [
+          "RES-S01",
+          "RES-S04",
+          "RES-S07"
+        ],
+        "support_source_ids": [
+          "RES-S01",
+          "RES-S04",
+          "RES-S07"
+        ],
+        "counter_source_ids": [],
+        "coverage": "partial",
+        "coverage_matrix": {
+          "definition": "partial",
+          "chain_position": "partial",
+          "upstream": "partial",
+          "downstream": "partial",
+          "related": "partial",
+          "time": "partial",
+          "population": "partial",
+          "context": "partial",
+          "amplifiers": "partial",
+          "mitigators": "partial",
+          "exclusions": "partial",
+          "support": "partial",
+          "counter": "partial",
+          "evidence_identity_quality_applicability": "partial",
+          "can_say": "partial",
+          "cannot_say": "partial",
+          "system_judgment": "partial",
+          "review_decision": "covered",
+          "gaps": "partial"
+        },
+        "preliminary_judgment": "可作试运行研究分支；关键缺口未闭合，不满足正式候选条件。",
+        "priority_rationale": "结果型先防止误判，再讨论护理。",
+        "gaps": [
+          "RES-G02",
+          "RES-G01"
+        ],
+        "allowed_expression": [
+          "将其作为待区分的表象和研究问题。"
+        ],
+        "forbidden_expression": [
+          "一紧绷就说明屏障坏了。"
+        ],
+        "solution_path": "记录部位、时机、触发和持续性；不自行贴疾病标签。",
+        "product_role": "仅讨论基础保湿角色；未完成产品比较，无品牌或具体产品推荐。",
+        "review_decision_ids": [
+          "RES-D-R2-01"
+        ]
+      },
+      {
+        "id": "RES-B02",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "title": "先看环境和清洁",
+        "definition": "检查可调整的日常暴露。",
+        "chain_position": "表象→可能原因与边界→护理优先级",
+        "parent_ids": [],
+        "related_ids": [
+          "RES-B01",
+          "RES-B03",
+          "RES-B04"
+        ],
+        "upstream": [
+          "浴洗、清洁与气候"
+        ],
+        "downstream": [
+          "不适变化和保湿需求"
+        ],
+        "time_scale": {
+          "onset": null,
+          "duration": null,
+          "recovery": null,
+          "progression": null,
+          "missing_reason": "未取得可以跨人群推广的时间曲线"
+        },
+        "population": "一般成人日常护肤；研究人群单列",
+        "context": "非诊断、非处方、非医美术后场景",
+        "modifiers": {
+          "amplifiers": [
+            "低湿度、清洁和摩擦等仅按来源限定"
+          ],
+          "mitigators": [
+            "温和清洁与基础保湿等按耐受和来源限定"
+          ]
+        },
+        "exclusions": [
+          "疾病诊断",
+          "药物或医美后反应",
+          "品牌推荐",
+          "儿童及特殊医疗人群外推"
+        ],
+        "claim_ids": [
+          "RES-C02"
+        ],
+        "source_ids": [
+          "RES-S01",
+          "RES-S02"
+        ],
+        "support_source_ids": [
+          "RES-S01",
+          "RES-S02"
+        ],
+        "counter_source_ids": [],
+        "coverage": "partial",
+        "coverage_matrix": {
+          "definition": "partial",
+          "chain_position": "partial",
+          "upstream": "partial",
+          "downstream": "partial",
+          "related": "partial",
+          "time": "partial",
+          "population": "partial",
+          "context": "partial",
+          "amplifiers": "partial",
+          "mitigators": "partial",
+          "exclusions": "partial",
+          "support": "partial",
+          "counter": "partial",
+          "evidence_identity_quality_applicability": "partial",
+          "can_say": "partial",
+          "cannot_say": "partial",
+          "system_judgment": "partial",
+          "review_decision": "covered",
+          "gaps": "partial"
+        },
+        "preliminary_judgment": "可作试运行研究分支；关键缺口未闭合，不满足正式候选条件。",
+        "priority_rationale": "优先低复杂度且有专业护理建议的因素。",
+        "gaps": [
+          "RES-G04",
+          "RES-G01"
+        ],
+        "allowed_expression": [
+          "先核对环境和清洁习惯；按耐受调整。"
+        ],
+        "forbidden_expression": [
+          "仅凭症状认定单一原因或保证调整后康复。"
+        ],
+        "solution_path": "梳理热水、清洁和摩擦；采用温和护理并观察耐受。",
+        "product_role": "仅讨论基础保湿角色；未完成产品比较，无品牌或具体产品推荐。",
+        "review_decision_ids": [
+          "RES-D-R2-02"
+        ]
+      },
+      {
+        "id": "RES-B03",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "title": "保湿效果看终点和配方",
+        "definition": "区分含水指标、屏障测量和人的不适感。",
+        "chain_position": "表象→可能原因与边界→护理优先级",
+        "parent_ids": [],
+        "related_ids": [
+          "RES-B01",
+          "RES-B02",
+          "RES-B04"
+        ],
+        "upstream": [
+          "配方、频率、部位和个体差异"
+        ],
+        "downstream": [
+          "不同研究终点的变化"
+        ],
+        "time_scale": {
+          "onset": null,
+          "duration": null,
+          "recovery": null,
+          "progression": null,
+          "missing_reason": "未取得可以跨人群推广的时间曲线"
+        },
+        "population": "一般成人日常护肤；研究人群单列",
+        "context": "非诊断、非处方、非医美术后场景",
+        "modifiers": {
+          "amplifiers": [
+            "低湿度、清洁和摩擦等仅按来源限定"
+          ],
+          "mitigators": [
+            "温和清洁与基础保湿等按耐受和来源限定"
+          ]
+        },
+        "exclusions": [
+          "疾病诊断",
+          "药物或医美后反应",
+          "品牌推荐",
+          "儿童及特殊医疗人群外推"
+        ],
+        "claim_ids": [
+          "RES-C03",
+          "RES-C04"
+        ],
+        "source_ids": [
+          "RES-S03",
+          "RES-S04",
+          "RES-S05",
+          "RES-S06"
+        ],
+        "support_source_ids": [
+          "RES-S03",
+          "RES-S04",
+          "RES-S05",
+          "RES-S06"
+        ],
+        "counter_source_ids": [
+          "RES-S05"
+        ],
+        "coverage": "partial",
+        "coverage_matrix": {
+          "definition": "partial",
+          "chain_position": "partial",
+          "upstream": "partial",
+          "downstream": "partial",
+          "related": "partial",
+          "time": "partial",
+          "population": "partial",
+          "context": "partial",
+          "amplifiers": "partial",
+          "mitigators": "partial",
+          "exclusions": "partial",
+          "support": "partial",
+          "counter": "partial",
+          "evidence_identity_quality_applicability": "partial",
+          "can_say": "partial",
+          "cannot_say": "partial",
+          "system_judgment": "partial",
+          "review_decision": "covered",
+          "gaps": "partial"
+        },
+        "preliminary_judgment": "可作试运行研究分支；关键缺口未闭合，不满足正式候选条件。",
+        "priority_rationale": "避免把补水、修复、疗效合并宣传。",
+        "gaps": [
+          "RES-G03",
+          "RES-G05",
+          "RES-G01"
+        ],
+        "allowed_expression": [
+          "不同保湿研究的结果不能视为全部产品等效。",
+          "把测量终点分别解释，并保留未核实处。"
+        ],
+        "forbidden_expression": [
+          "某成分或所有保湿产品都能修复任何屏障问题。",
+          "补水数值上升即证明屏障修好。"
+        ],
+        "solution_path": "先说明保湿角色与研究限定；补齐原文后再评估强度。",
+        "product_role": "仅讨论基础保湿角色；未完成产品比较，无品牌或具体产品推荐。",
+        "review_decision_ids": [
+          "RES-D-R2-03"
+        ]
+      },
+      {
+        "id": "RES-B04",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "title": "自我护理的停止边界",
+        "definition": "为持续或明显不适保留专业评估。",
+        "chain_position": "表象→可能原因与边界→护理优先级",
+        "parent_ids": [],
+        "related_ids": [
+          "RES-B01",
+          "RES-B02",
+          "RES-B03"
+        ],
+        "upstream": [
+          "持续症状或产品刺激"
+        ],
+        "downstream": [
+          "专业评估"
+        ],
+        "time_scale": {
+          "onset": null,
+          "duration": null,
+          "recovery": null,
+          "progression": null,
+          "missing_reason": "未取得可以跨人群推广的时间曲线"
+        },
+        "population": "一般成人日常护肤；研究人群单列",
+        "context": "非诊断、非处方、非医美术后场景",
+        "modifiers": {
+          "amplifiers": [
+            "低湿度、清洁和摩擦等仅按来源限定"
+          ],
+          "mitigators": [
+            "温和清洁与基础保湿等按耐受和来源限定"
+          ]
+        },
+        "exclusions": [
+          "疾病诊断",
+          "药物或医美后反应",
+          "品牌推荐",
+          "儿童及特殊医疗人群外推"
+        ],
+        "claim_ids": [
+          "RES-C05"
+        ],
+        "source_ids": [
+          "RES-S01",
+          "RES-S02"
+        ],
+        "support_source_ids": [
+          "RES-S01",
+          "RES-S02"
+        ],
+        "counter_source_ids": [],
+        "coverage": "partial",
+        "coverage_matrix": {
+          "definition": "partial",
+          "chain_position": "partial",
+          "upstream": "partial",
+          "downstream": "partial",
+          "related": "partial",
+          "time": "partial",
+          "population": "partial",
+          "context": "partial",
+          "amplifiers": "partial",
+          "mitigators": "partial",
+          "exclusions": "partial",
+          "support": "partial",
+          "counter": "partial",
+          "evidence_identity_quality_applicability": "partial",
+          "can_say": "partial",
+          "cannot_say": "partial",
+          "system_judgment": "partial",
+          "review_decision": "covered",
+          "gaps": "partial"
+        },
+        "preliminary_judgment": "可作试运行研究分支；关键缺口未闭合，不满足正式候选条件。",
+        "priority_rationale": "安全边界高于产品承接。",
+        "gaps": [
+          "RES-G04",
+          "RES-G01"
+        ],
+        "allowed_expression": [
+          "说明自我护理的边界并建议皮肤科评估。"
+        ],
+        "forbidden_expression": [
+          "直接诊断湿疹或推荐处方治疗。"
+        ],
+        "solution_path": "说明何时需要皮肤科评估；不提供疾病诊断和处方。",
+        "product_role": "仅讨论基础保湿角色；未完成产品比较，无品牌或具体产品推荐。",
+        "review_decision_ids": [
+          "RES-D-R2-04"
+        ]
+      }
+    ],
+    "signals": [
+      {
+        "id": "RES-I01",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=biIzSPOEQgQ",
+        "account": null,
+        "published_at": null,
+        "observed_at": "2026-09-25",
+        "language": "en",
+        "keyword": "dry skin barrier dermatologist",
+        "keyword_class": "topic",
+        "metrics": {
+          "views": null,
+          "likes": null,
+          "comments": null
+        },
+        "audience_region": null,
+        "region_basis": null,
+        "verification_level": "search_index_only",
+        "status": "unavailable",
+        "missing_reason": "AAD 页内视频入口及平台标题可定位；平台直开只有页尾，缺日期/账号/指标，yt-dlp 搜索 DNS 失败。不能推断兴趣。"
+      },
+      {
+        "id": "RES-I02",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/reel/C3XG88suEGv/",
+        "account": null,
+        "published_at": null,
+        "observed_at": "2026-09-25",
+        "language": null,
+        "keyword": "乾燥肌 保湿",
+        "keyword_class": "topic",
+        "metrics": {
+          "views": null,
+          "likes": null,
+          "comments": null
+        },
+        "audience_region": null,
+        "region_basis": null,
+        "verification_level": "search_index_only",
+        "status": "unavailable",
+        "missing_reason": "仅外部零售商索引发现链接，直开失败。索引涉及品牌，超出本轮内容范围；不认定平台内容或受众。"
+      }
+    ],
+    "decisions": [
+      {
+        "id": "RES-D-R2-01",
+        "run_id": "SK-RES-001",
+        "revision": "review-r2",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:02:36.689851+00:00",
+        "input_revision": "s2-r1",
+        "branch_id": "RES-B01",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "已复核S2新增机制原文与原刊摘要；新增材料不足以关闭诊断、独立性、时间窗或平台兴趣缺口。仅保留限定研究分支，不批准正式候选。",
+        "required_changes": [
+          "保留全部关键缺口",
+          "禁止诊断与疗效外推",
+          "不得冒称临床专家或用户亲自审核"
+        ]
+      },
+      {
+        "id": "RES-D-R2-02",
+        "run_id": "SK-RES-001",
+        "revision": "review-r2",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:02:36.689854+00:00",
+        "input_revision": "s2-r1",
+        "branch_id": "RES-B02",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "已复核S2新增机制原文与原刊摘要；新增材料不足以关闭诊断、独立性、时间窗或平台兴趣缺口。仅保留限定研究分支，不批准正式候选。",
+        "required_changes": [
+          "保留全部关键缺口",
+          "禁止诊断与疗效外推",
+          "不得冒称临床专家或用户亲自审核"
+        ]
+      },
+      {
+        "id": "RES-D-R2-03",
+        "run_id": "SK-RES-001",
+        "revision": "review-r2",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:02:36.689856+00:00",
+        "input_revision": "s2-r1",
+        "branch_id": "RES-B03",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "已复核S2新增机制原文与原刊摘要；新增材料不足以关闭诊断、独立性、时间窗或平台兴趣缺口。仅保留限定研究分支，不批准正式候选。",
+        "required_changes": [
+          "保留全部关键缺口",
+          "禁止诊断与疗效外推",
+          "不得冒称临床专家或用户亲自审核"
+        ]
+      },
+      {
+        "id": "RES-D-R2-04",
+        "run_id": "SK-RES-001",
+        "revision": "review-r2",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T05:02:36.689857+00:00",
+        "input_revision": "s2-r1",
+        "branch_id": "RES-B04",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "已复核S2新增机制原文与原刊摘要；新增材料不足以关闭诊断、独立性、时间窗或平台兴趣缺口。仅保留限定研究分支，不批准正式候选。",
+        "required_changes": [
+          "保留全部关键缺口",
+          "禁止诊断与疗效外推",
+          "不得冒称临床专家或用户亲自审核"
+        ]
+      }
+    ],
+    "candidates": [
+      {
+        "id": "RES-K01",
+        "run_id": "SK-RES-001",
+        "revision": "review-r2",
+        "demo": false,
+        "title": "先区分表象与诊断",
+        "branch_ids": [
+          "RES-B01"
+        ],
+        "claim_ids": [
+          "RES-C01"
+        ],
+        "signal_ids": [
+          "RES-I01",
+          "RES-I02"
+        ],
+        "review_decision_ids": [
+          "RES-D-R2-01"
+        ],
+        "science_gate": {
+          "status": "blocked",
+          "reasons": [
+            "分支覆盖尚不合格，关键原文或质量核验仍缺失；专业指导与实验研究不能合并升级强证据"
+          ],
+          "gap_ids": [
+            "RES-G02"
+          ]
+        },
+        "interest_gate": {
+          "status": "unknown",
+          "reasons": [
+            "无平台原页可核验兴趣强度；语言不代表目标市场"
+          ],
+          "gap_ids": [
+            "RES-G01"
+          ]
+        },
+        "allowed_expression": [
+          "将其作为待区分的表象和研究问题。"
+        ],
+        "forbidden_expression": [
+          "一紧绷就说明屏障坏了。"
+        ],
+        "status": "draft",
+        "selection": "trial_only"
+      },
+      {
+        "id": "RES-K02",
+        "run_id": "SK-RES-001",
+        "revision": "review-r2",
+        "demo": false,
+        "title": "保湿效果看终点和配方",
+        "branch_ids": [
+          "RES-B03"
+        ],
+        "claim_ids": [
+          "RES-C03",
+          "RES-C04"
+        ],
+        "signal_ids": [
+          "RES-I01",
+          "RES-I02"
+        ],
+        "review_decision_ids": [
+          "RES-D-R2-03"
+        ],
+        "science_gate": {
+          "status": "blocked",
+          "reasons": [
+            "分支覆盖尚不合格，关键原文或质量核验仍缺失；专业指导与实验研究不能合并升级强证据"
+          ],
+          "gap_ids": [
+            "RES-G03",
+            "RES-G05"
+          ]
+        },
+        "interest_gate": {
+          "status": "unknown",
+          "reasons": [
+            "无平台原页可核验兴趣强度；语言不代表目标市场"
+          ],
+          "gap_ids": [
+            "RES-G01"
+          ]
+        },
+        "allowed_expression": [
+          "不同保湿研究的结果不能视为全部产品等效。",
+          "把测量终点分别解释，并保留未核实处。"
+        ],
+        "forbidden_expression": [
+          "某成分或所有保湿产品都能修复任何屏障问题。",
+          "补水数值上升即证明屏障修好。"
+        ],
+        "status": "draft",
+        "selection": "trial_only"
+      },
+      {
+        "id": "RES-K03",
+        "run_id": "SK-RES-001",
+        "revision": "review-r2",
+        "demo": false,
+        "title": "先看环境和清洁",
+        "branch_ids": [
+          "RES-B02"
+        ],
+        "claim_ids": [
+          "RES-C02"
+        ],
+        "signal_ids": [
+          "RES-I01",
+          "RES-I02"
+        ],
+        "review_decision_ids": [
+          "RES-D-R2-02"
+        ],
+        "science_gate": {
+          "status": "blocked",
+          "reasons": [
+            "分支覆盖尚不合格，关键原文或质量核验仍缺失；专业指导与实验研究不能合并升级强证据"
+          ],
+          "gap_ids": [
+            "RES-G04"
+          ]
+        },
+        "interest_gate": {
+          "status": "unknown",
+          "reasons": [
+            "无平台原页可核验兴趣强度；语言不代表目标市场"
+          ],
+          "gap_ids": [
+            "RES-G01"
+          ]
+        },
+        "allowed_expression": [
+          "先核对环境和清洁习惯；按耐受调整。"
+        ],
+        "forbidden_expression": [
+          "仅凭症状认定单一原因或保证调整后康复。"
+        ],
+        "status": "draft",
+        "selection": "reserve"
+      },
+      {
+        "id": "RES-K04",
+        "run_id": "SK-RES-001",
+        "revision": "review-r2",
+        "demo": false,
+        "title": "自我护理的停止边界",
+        "branch_ids": [
+          "RES-B04"
+        ],
+        "claim_ids": [
+          "RES-C05"
+        ],
+        "signal_ids": [
+          "RES-I01",
+          "RES-I02"
+        ],
+        "review_decision_ids": [
+          "RES-D-R2-04"
+        ],
+        "science_gate": {
+          "status": "blocked",
+          "reasons": [
+            "分支覆盖尚不合格，关键原文或质量核验仍缺失；专业指导与实验研究不能合并升级强证据"
+          ],
+          "gap_ids": [
+            "RES-G04"
+          ]
+        },
+        "interest_gate": {
+          "status": "unknown",
+          "reasons": [
+            "无平台原页可核验兴趣强度；语言不代表目标市场"
+          ],
+          "gap_ids": [
+            "RES-G01"
+          ]
+        },
+        "allowed_expression": [
+          "说明自我护理的边界并建议皮肤科评估。"
+        ],
+        "forbidden_expression": [
+          "直接诊断湿疹或推荐处方治疗。"
+        ],
+        "status": "draft",
+        "selection": "reserve"
+      }
+    ],
+    "snapshots": [
+      {
+        "id": "RES-F-review",
+        "run_id": "SK-RES-001",
+        "revision": "review-r1",
+        "demo": false,
+        "kind": "review",
+        "created_at": "2026-09-25T04:56:38.053220+00:00",
+        "actor_type": "controller_delegate",
+        "input_revision": "review-r1",
+        "config_sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "content_sha256": "81e751be4458053d14c83ce78465a3c7696805aa27eead5a0bb0a9dd510c7715",
+        "decision_ids": [
+          "RES-D-R01",
+          "RES-D-R02",
+          "RES-D-R03",
+          "RES-D-R04"
+        ],
+        "candidate_ids": [],
+        "status": "historical",
+        "invalidation_reason": "S2补证改变当前材料；原审计文件仍保留，当前版需重新审阅/确认。",
+        "audit_path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-RES-001-review-freeze.json",
+        "qualification": "主控代理审阅；非用户亲自确认或临床资质审核",
+        "delivery_class": "含关键缺口的试运行包"
+      },
+      {
+        "id": "RES-F-direction",
+        "run_id": "SK-RES-001",
+        "revision": "review-r1",
+        "demo": false,
+        "kind": "direction",
+        "created_at": "2026-09-25T04:56:38.054287+00:00",
+        "actor_type": "controller_delegate",
+        "input_revision": "direction-r1",
+        "config_sha256": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "content_sha256": "7d9be96759b6fb0674680c4492c9e7124fdbd985c79b6803f8e0d0892158b0b6",
+        "decision_ids": [
+          "RES-D-R01",
+          "RES-D-R02",
+          "RES-D-R03",
+          "RES-D-R04",
+          "RES-D-D01",
+          "RES-D-D02"
+        ],
+        "candidate_ids": [
+          "RES-K01",
+          "RES-K02",
+          "RES-K03",
+          "RES-K04"
+        ],
+        "status": "historical",
+        "invalidation_reason": "S2补证改变当前材料；原审计文件仍保留，当前版需重新审阅/确认。",
+        "audit_path": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-RES-001-direction-freeze.json",
+        "qualification": "主控代理审阅；非用户亲自确认或临床资质审核",
+        "delivery_class": "含关键缺口的试运行包"
+      }
+    ],
+    "search_log": [
+      {
+        "id": "RES-Q01",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q01",
+        "query": "site.aad.org dry skin skin barrier tightness dermatologist causes",
+        "query_text": "site.aad.org dry skin skin barrier tightness dermatologist causes",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "agent-reach/Exa",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "unavailable",
+        "access_result": "ENOTFOUND mcp.exa.ai；一次逻辑查询，内部失败重试不作新增查询",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q02",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q02",
+        "query": "site.pubmed.ncbi.nlm.nih.gov skin dryness tightness barrier moisturizer randomized trial adults",
+        "query_text": "site.pubmed.ncbi.nlm.nih.gov skin dryness tightness barrier moisturizer randomized trial adults",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [
+          "RES-S05"
+        ],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "available",
+        "access_result": "仅索引摘要",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q03",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "mechanism",
+        "category_or_target_id": "mechanism",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q03",
+        "query": "site.nature.com stratum corneum barrier dry skin natural moisturizing factor",
+        "query_text": "site.nature.com stratum corneum barrier dry skin natural moisturizing factor",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 2,
+        "qualified_read_ids": [
+          "RES-S03",
+          "RES-S04"
+        ],
+        "source_ids": [
+          "RES-S03",
+          "RES-S04"
+        ],
+        "new_qualified_items": 2,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 2
+        },
+        "status": "available",
+        "access_result": "Nature 原文可读；一个 PMC 路线遇验证码停止",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q04",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q04",
+        "query": "site.aad.org public diseases dry skin causes treatment dry tight skin",
+        "query_text": "site.aad.org public diseases dry skin causes treatment dry tight skin",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 2,
+        "qualified_read_ids": [
+          "RES-S01",
+          "RES-S02"
+        ],
+        "source_ids": [
+          "RES-S01",
+          "RES-S02"
+        ],
+        "new_qualified_items": 2,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 2
+        },
+        "status": "available",
+        "access_result": "两个官方患者教育正文可读，同机构不视为独立重复研究",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q05",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "youtube",
+        "category_or_target_id": "youtube",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q05",
+        "query": "site.youtube.com/watch \"skin barrier\" \"dry\" dermatologist 2026",
+        "query_text": "site.youtube.com/watch \"skin barrier\" \"dry\" dermatologist 2026",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "searched_no_match",
+        "access_result": "无合格平台原页样本",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q06",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "instagram",
+        "category_or_target_id": "instagram",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q06",
+        "query": "site.instagram.com \"skin barrier\" \"dry skin\" dermatologist 2026",
+        "query_text": "site.instagram.com \"skin barrier\" \"dry skin\" dermatologist 2026",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "searched_no_match",
+        "access_result": "无合格平台原页样本",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q07",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "youtube",
+        "category_or_target_id": "youtube",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q07",
+        "query": "dry skin barrier dermatologist [domain:youtube.com]",
+        "query_text": "dry skin barrier dermatologist [domain:youtube.com]",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "searched_no_match",
+        "access_result": "无合格主题平台样本",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q08",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "instagram",
+        "category_or_target_id": "instagram",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q08",
+        "query": "皮肤屏障 干燥 紧绷 [domain:instagram.com]",
+        "query_text": "皮肤屏障 干燥 紧绷 [domain:instagram.com]",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "searched_no_match",
+        "access_result": "无合格平台原页样本",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q09",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q09",
+        "query": "site.pubmed.ncbi.nlm.nih.gov dry skin moisturizer randomized trial 2024 2025 adults",
+        "query_text": "site.pubmed.ncbi.nlm.nih.gov dry skin moisturizer randomized trial 2024 2025 adults",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [
+          "RES-S06"
+        ],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "available",
+        "access_result": "仅摘要线索；直接打开未返回正文",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q10",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "instagram",
+        "category_or_target_id": "instagram",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q10",
+        "query": "site.instagram.com/reel \"乾燥肌\" \"保湿\"",
+        "query_text": "site.instagram.com/reel \"乾燥肌\" \"保湿\"",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "available",
+        "access_result": "外部索引链接；平台直开失败；品牌内容不纳入",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q11",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "youtube",
+        "category_or_target_id": "youtube",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q11",
+        "query": "ytsearch5:dry skin barrier dermatologist",
+        "query_text": "ytsearch5:dry skin barrier dermatologist",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "agent-reach/yt-dlp",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "unavailable",
+        "access_result": "www.youtube.com DNS 失败；未取得原页",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q12",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "reviews_guidance",
+        "category_or_target_id": "reviews_guidance",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q12",
+        "query": "site.gov.cn 皮肤 干燥 保湿 清洁",
+        "query_text": "site.gov.cn 皮肤 干燥 保湿 清洁",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "searched_no_match",
+        "access_result": "未取得可采用官方护理正文；不以无标题 PDF 索引宣称中国证据覆盖",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q13",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "human_original",
+        "category_or_target_id": "human_original",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q13",
+        "query": "site.pubmed.ncbi.nlm.nih.gov \"skin dryness\" \"Chinese\" randomized",
+        "query_text": "site.pubmed.ncbi.nlm.nih.gov \"skin dryness\" \"Chinese\" randomized",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "available",
+        "access_result": "药物及医美术后研究排除；住院老年人横断面研究仅导航，未深读",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q14",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "mechanism",
+        "category_or_target_id": "mechanism",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q14",
+        "query": "skin tightness dryness sensory perception barrier human study stratum corneum",
+        "query_text": "skin tightness dryness sensory perception barrier human study stratum corneum",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "available",
+        "access_result": "PMC10531117 摘要线索，原页验证码阻断；未计全文",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q15",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "stage": "S1",
+        "level": "S1",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "mechanism",
+        "category_or_target_id": "mechanism",
+        "target": "结果型全景扫描",
+        "query_id": "RES-Q15",
+        "query": "site.nature.com skin tightness drying stratum corneum 2023 2024 2025",
+        "query_text": "site.nature.com skin tightness drying stratum corneum 2023 2024 2025",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 原始会话顺序保留，未补造秒级时间",
+        "route": "web.search",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "工具混合返回不支持可靠逐查询总命中统计；仅筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "available",
+        "access_result": "口罩等限定场景或未核验新文线索，不作为一般人群已覆盖",
+        "stop_reason": "该类别累计3次后按S1硬预算停止；非证据饱和"
+      },
+      {
+        "id": "RES-Q16",
+        "run_id": "SK-RES-001",
+        "revision": "s2-r1",
+        "demo": false,
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "targeted_evidence",
+        "category_or_target_id": "RES-T01",
+        "target": "RES-T01",
+        "query_id": "RES-Q16",
+        "query": "\"Sensorial perception\" \"skin\" \"Berkey\" \"2023\" PNAS Nexus",
+        "query_text": "\"Sensorial perception\" \"skin\" \"Berkey\" \"2023\" PNAS Nexus",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 实际发生于第一次审阅与方向冻结之后，未补造秒级查询时间",
+        "route": "web/primary-source",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "混合检索返回未保留可靠逐查询总量；只筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "partial",
+        "access_result": "发现PNAS原文标识；PMC访问受限，继续核对原刊入口。",
+        "stop_reason": "目标补证已取得可用部分或遭遇付费访问边界；非检索饱和"
+      },
+      {
+        "id": "RES-Q17",
+        "run_id": "SK-RES-001",
+        "revision": "s2-r1",
+        "demo": false,
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "targeted_evidence",
+        "category_or_target_id": "RES-T02",
+        "target": "RES-T02",
+        "query_id": "RES-Q17",
+        "query": "\"Effectiveness of topical hyaluronic acid of different molecular weights\" \"2024\" full text",
+        "query_text": "\"Effectiveness of topical hyaluronic acid of different molecular weights\" \"2024\" full text",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 实际发生于第一次审阅与方向冻结之后，未补造秒级查询时间",
+        "route": "web/primary-source",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "混合检索返回未保留可靠逐查询总量；只筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [
+          "RES-S06"
+        ],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "partial",
+        "access_result": "原刊摘要及身份/基金可读，正文付费；注册页仅壳页，无新增合格深读。",
+        "stop_reason": "目标补证已取得可用部分或遭遇付费访问边界；非检索饱和"
+      },
+      {
+        "id": "RES-Q18",
+        "run_id": "SK-RES-001",
+        "revision": "s2-r1",
+        "demo": false,
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "targeted_evidence",
+        "category_or_target_id": "RES-T01",
+        "target": "RES-T01",
+        "query_id": "RES-Q18",
+        "query": "site.academic.oup.com/pnasnexus \"pgad292\"",
+        "query_text": "site.academic.oup.com/pnasnexus \"pgad292\"",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 实际发生于第一次审阅与方向冻结之后，未补造秒级查询时间",
+        "route": "web/primary-source",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "混合检索返回未保留可靠逐查询总量；只筛选前最多10项",
+        "qualified_reads": 1,
+        "qualified_read_ids": [
+          "doi:10.1093/pnasnexus/pgad292"
+        ],
+        "source_ids": [
+          "RES-S07"
+        ],
+        "new_qualified_items": 1,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 1
+        },
+        "status": "completed",
+        "access_result": "准确原刊入口可读，完成方法、结论、基金与利益披露阅读；不具有诊断准确性结论。",
+        "stop_reason": "目标补证已取得可用部分或遭遇付费访问边界；非检索饱和"
+      },
+      {
+        "id": "RES-Q19",
+        "run_id": "SK-RES-001",
+        "revision": "s2-r1",
+        "demo": false,
+        "stage": "S2",
+        "level": "S2",
+        "policy_revision": "SK-MATT-20260925-r2",
+        "policy_hash": "bc476f9f6712e54d9a7dd69a38c4e5301226676ca3f009e1a325fccf7ad54d8a",
+        "source_category": "targeted_evidence",
+        "category_or_target_id": "RES-T02",
+        "target": "RES-T02",
+        "query_id": "RES-Q19",
+        "query": "\"10.1007/s00403-024-03003-2\" \"full\" university",
+        "query_text": "\"10.1007/s00403-024-03003-2\" \"full\" university",
+        "issued_at": "2026-09-25",
+        "executed_at": "2026-09-25",
+        "time_precision": "day; 实际发生于第一次审阅与方向冻结之后，未补造秒级查询时间",
+        "route": "web/primary-source",
+        "returned_hits": null,
+        "hits": null,
+        "screening_limit": 10,
+        "hit_count_missing_reason": "混合检索返回未保留可靠逐查询总量；只筛选前最多10项",
+        "qualified_reads": 0,
+        "qualified_read_ids": [],
+        "source_ids": [],
+        "new_qualified_items": 0,
+        "duplicate_original_ids": [],
+        "new_claim_ids": [],
+        "new_conflicts": [],
+        "consumption": {
+          "queries": 1,
+          "deep_reads": 0
+        },
+        "status": "partial",
+        "access_result": "机构仓储只提供摘要/原刊DOI线索，未得到允许访问的全文。",
+        "stop_reason": "目标补证已取得可用部分或遭遇付费访问边界；非检索饱和"
+      }
+    ],
+    "knowledge_base": {
+      "status": "searched_no_match",
+      "interface": "skincare-evidence-kb manage.py export_topic（正式只读主题导出）",
+      "version": null,
+      "version_missing_reason": "导出中知识版本引用总数0；不推定历史为空",
+      "queried_at": "2026-09-25T04:47:41.388Z",
+      "queries": [
+        "干燥",
+        "紧绷",
+        "屏障",
+        "dry",
+        "barrier"
+      ],
+      "matched_ids": [],
+      "missing_reason": null,
+      "export_ref": "/Users/chengyu/12_打工人程宇/02_项目/01_进行中/内容研究能力-护肤科普类/02_工作区/Matt执行/SK-RES-001-kb-export.json",
+      "export_sha256": "c47e61fbe21fe30c5a750f988e4d612e5b4d15bf357ab7d0d3600b8d5cf2b028",
+      "result": {
+        "returned_count": 0,
+        "total_matches": 0,
+        "truncated": false,
+        "zero_hit_meaning": "仅表示本次限定字段与查询词未命中，不表示没有历史知识。"
+      },
+      "scope_limit": "主张文本/关联来源标题字面OR匹配，非全文或同义词检索",
+      "comparison": "本查询范围无可关联历史主张；保留候选入库附件，不自动入库"
+    },
+    "gaps": [
+      {
+        "id": "RES-G01",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "scope_id": "SK-RES-001",
+        "category": "interest",
+        "description": "YouTube/Instagram 未取得平台原页可核验发布日期、互动指标与受众地域；当前期和基线期兴趣均未知。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": null
+      },
+      {
+        "id": "RES-G02",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "scope_id": "RES-C01",
+        "category": "diagnostic_boundary",
+        "description": "已补到紧绷体验的机制全文，但未取得在本任务人群中以屏障损伤为参照的诊断效度研究。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "RES-S07 部分补证，不关闭诊断边界缺口。",
+        "partial_source_ids": [
+          "RES-S07"
+        ]
+      },
+      {
+        "id": "RES-G03",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "scope_id": "RES-C03",
+        "category": "full_text_quality",
+        "description": "代表性人体研究的独立性、评分或全文仍不全；不能过科学高强度门槛。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": "原刊摘要补齐RES-S06身份/资助披露，全文付费；RES-S07无独立重复核验。科学高强度门槛未通过。"
+      },
+      {
+        "id": "RES-G04",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "scope_id": "SK-RES-001",
+        "category": "market_transfer",
+        "description": "一项机制论文含中国清洁剂感受调查；仍不足以完成中国日常护理外推与市场兴趣验证。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": null,
+        "partial_source_ids": [
+          "RES-S07"
+        ]
+      },
+      {
+        "id": "RES-G05",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "scope_id": "SK-RES-001",
+        "category": "time_window",
+        "description": "3年窗口新增2023-09-26机制全文；1年窗口与其他时间窗的合格人体证据仍不足，不能声称最新证据覆盖充分。",
+        "critical": true,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": null,
+        "partial_source_ids": [
+          "RES-S07"
+        ]
+      },
+      {
+        "id": "RES-G06",
+        "run_id": "SK-RES-001",
+        "revision": "s1-r1",
+        "demo": false,
+        "scope_id": "SK-RES-001",
+        "category": "knowledge_scope",
+        "description": "正式只读主题检索零命中仅限主张文本/来源标题字面匹配，不覆盖同义词、全文或未关联来源。",
+        "critical": false,
+        "status": "open",
+        "closure_source_ids": [],
+        "closure_note": null
+      }
+    ],
+    "budget": {
+      "S1": {
+        "queries_total": 15,
+        "queries_by_category": {
+          "human_original": 3,
+          "reviews_guidance": 3,
+          "mechanism": 3,
+          "youtube": 3,
+          "instagram": 3
+        },
+        "deep_reads": 4,
+        "deep_read_limit": 24,
+        "stopped": "各类别3次查询硬上限；未达饱和",
+        "original_dedup_keys": [
+          "AAD:dry-skin-overview",
+          "AAD:dermatologists-tips-relieve-dry-skin",
+          "doi:10.1038/s41598-022-09231-8",
+          "doi:10.1038/s41598-017-15921-5"
+        ]
+      },
+      "S2": {
+        "targets": [
+          {
+            "id": "RES-T01",
+            "type": "evidence_gap",
+            "gap_id": "RES-G02",
+            "candidate_id": "RES-K01",
+            "question": "紧绷感与机械/屏障指标的关系及不能诊断的边界",
+            "query_limit": 3,
+            "deep_read_limit": 6,
+            "queries_used": 2,
+            "deep_reads_used": 1,
+            "status": "partial",
+            "stop_reason": "有限补证结束；保留关键缺口。"
+          },
+          {
+            "id": "RES-T02",
+            "type": "evidence_gap",
+            "gap_id": "RES-G03",
+            "candidate_id": "RES-K02",
+            "question": "2024老年透明质酸试验全文及含水/TEWL终点差异",
+            "query_limit": 3,
+            "deep_read_limit": 6,
+            "queries_used": 2,
+            "deep_reads_used": 0,
+            "status": "partial",
+            "stop_reason": "有限补证结束；保留关键缺口。"
+          }
+        ],
+        "queries_total": 4,
+        "deep_reads": 1,
+        "original_dedup_keys": [
+          "doi:10.1093/pnasnexus/pgad292"
+        ],
+        "stopped": "两个目标各2次查询；T01取得机制全文但无诊断证据，T02全文付费；不扩大全景或冒称饱和。"
+      },
+      "S3": {
+        "queries_total": 0,
+        "deep_reads": 0
+      }
+    },
+    "delivery_class": "含关键缺口的试运行研究记录",
+    "limitations": [
+      "本轮代理判断不是皮肤科医生或用户亲自确认。",
+      "资料停止不等于证据合格；所有平台兴趣未知。"
+    ],
+    "historical_decisions": [
+      {
+        "id": "RES-D-R01",
+        "run_id": "SK-RES-001",
+        "revision": "review-r1",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T04:56:38.052529+00:00",
+        "input_revision": "s1-r1",
+        "branch_id": "RES-B01",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "已对照来源与适用边界；保留研究价值，但 coverage=partial，科学强度及平台兴趣缺口未关闭，不能成为正式候选。",
+        "required_changes": [
+          "只使用限定表述",
+          "保留原文、评分与人群缺口",
+          "不得标为专家或用户人工确认"
+        ]
+      },
+      {
+        "id": "RES-D-R02",
+        "run_id": "SK-RES-001",
+        "revision": "review-r1",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T04:56:38.052601+00:00",
+        "input_revision": "s1-r1",
+        "branch_id": "RES-B02",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "已对照来源与适用边界；保留研究价值，但 coverage=partial，科学强度及平台兴趣缺口未关闭，不能成为正式候选。",
+        "required_changes": [
+          "只使用限定表述",
+          "保留原文、评分与人群缺口",
+          "不得标为专家或用户人工确认"
+        ]
+      },
+      {
+        "id": "RES-D-R03",
+        "run_id": "SK-RES-001",
+        "revision": "review-r1",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T04:56:38.052604+00:00",
+        "input_revision": "s1-r1",
+        "branch_id": "RES-B03",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "已对照来源与适用边界；保留研究价值，但 coverage=partial，科学强度及平台兴趣缺口未关闭，不能成为正式候选。",
+        "required_changes": [
+          "只使用限定表述",
+          "保留原文、评分与人群缺口",
+          "不得标为专家或用户人工确认"
+        ]
+      },
+      {
+        "id": "RES-D-R04",
+        "run_id": "SK-RES-001",
+        "revision": "review-r1",
+        "demo": false,
+        "stage": "review",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T04:56:38.052607+00:00",
+        "input_revision": "s1-r1",
+        "branch_id": "RES-B04",
+        "candidate_id": null,
+        "action": "gap",
+        "reason": "已对照来源与适用边界；保留研究价值，但 coverage=partial，科学强度及平台兴趣缺口未关闭，不能成为正式候选。",
+        "required_changes": [
+          "只使用限定表述",
+          "保留原文、评分与人群缺口",
+          "不得标为专家或用户人工确认"
+        ]
+      },
+      {
+        "id": "RES-D-D01",
+        "run_id": "SK-RES-001",
+        "revision": "review-r1",
+        "demo": false,
+        "stage": "direction",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T04:56:38.053670+00:00",
+        "input_revision": "review-r1",
+        "branch_id": "RES-B01",
+        "candidate_id": "RES-K01",
+        "action": "confirm",
+        "reason": "仅选择含关键缺口试运行包的补证方向；不确认正式候选合格，也不代表用户或医生认可。",
+        "required_changes": [
+          "S2只查对应关键缺口，不扩大全景或S1预算"
+        ],
+        "decision_scope": "trial_direction_only"
+      },
+      {
+        "id": "RES-D-D02",
+        "run_id": "SK-RES-001",
+        "revision": "review-r1",
+        "demo": false,
+        "stage": "direction",
+        "actor_type": "controller_delegate",
+        "actor_label": "主控代理",
+        "qualification": null,
+        "decided_at": "2026-09-25T04:56:38.053674+00:00",
+        "input_revision": "review-r1",
+        "branch_id": "RES-B03",
+        "candidate_id": "RES-K02",
+        "action": "confirm",
+        "reason": "仅选择含关键缺口试运行包的补证方向；不确认正式候选合格，也不代表用户或医生认可。",
+        "required_changes": [
+          "S2只查对应关键缺口，不扩大全景或S1预算"
+        ],
+        "decision_scope": "trial_direction_only"
+      }
+    ]
+  }
+}

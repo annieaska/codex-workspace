@@ -1,0 +1,662 @@
+{
+  "schema_version": "2.0",
+  "note": "按研究任务展示真实补取成果。补取不改变原研究记录、预算或准入结论。",
+  "batches": [
+    {
+      "batch_id": "PUBMED-PILOT-20260926",
+      "acquired_on": "2026-09-26",
+      "tool": "pubmed_fetch_fulltext",
+      "provider": "cyanheads/pubmed-mcp-server",
+      "endpoint": "https://pubmed.caseyjhand.com/mcp",
+      "report": "../../02_工作区/Matt执行/PubMed试跑记录.md",
+      "counts": {
+        "unique_papers": 2,
+        "fulltext_success": 1,
+        "no_open_fulltext": 1,
+        "new_sources": 0,
+        "new_qualified_reads": 0,
+        "topic_queries": 0,
+        "fulltext_calls": 3,
+        "input_items": 4
+      },
+      "note": "两篇均为已有文献的补取试跑；不是主题搜索，不增加来源或合格深读。取得正文不等于完成质量审核。"
+    },
+    {
+      "batch_id": "YOUTUBE-PILOT-20260926",
+      "acquired_on": "2026-09-26",
+      "tool": "yt-dlp",
+      "tool_version": "2026.03.03",
+      "provider": "YouTube 公开页面（yt-dlp 提取）",
+      "counts": {
+        "existing_videos": 1,
+        "subtitle_success": 1,
+        "new_sources": 0,
+        "topic_queries": 0,
+        "new_qualified_reads": null,
+        "new_scientific_qualified_reads": 0,
+        "platform_qualified_deep_reads": null
+      },
+      "note": "沿用 RES-I01 已有链接；无新关键词搜索、登录、音视频下载或评论正文读取。 本轮离线复核澄清：旧new_qualified_reads=0仅能说明未新增科学深读，不能证明平台共享合格深读为0；平台资格和阶段归账未核实。",
+      "read_accounting": {
+        "status": "unverified",
+        "material_id": "RES-I01",
+        "original_dedup_key": "youtube:biIzSPOEQgQ",
+        "science_new_qualified_reads": 0,
+        "platform_qualified_deep_reads": null,
+        "stage_assignment": null,
+        "shared_budget_impact": "已取得并读取视频字幕，是否达到平台合格深读及应归S1还是既有S2目标未核实；共享余额不可据科学新增0推成平台新增0。无授权执行新查询，未知归账关闭前不能据账面余额继续扩展。",
+        "known_science_reads": {
+          "S1": 4,
+          "S2": 1
+        },
+        "current_offline_reuse_new_queries": 0
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "PM-PILOT-RES-S03",
+      "run_id": "SK-RES-001",
+      "source_id": "RES-S03",
+      "doi": "10.1038/s41598-022-09231-8",
+      "title": "Alteration of barrier properties, stratum corneum ceramides and microbiome composition in response to lotion application on cosmetic dry skin",
+      "status": "retrieved",
+      "channel": "PubMed MCP → PMC",
+      "result_summary": "取得摘要、5 个正文章节、2 张数据表、6 个图／附件指针。",
+      "limits": [
+        "返回内容缺少作者机构、资助与利益声明，需另行核对原文。",
+        "图及补充文件只有指针，本次没有下载或读取附件。",
+        "该来源原已取得全文；本次不增加来源数或合格深读数。",
+        "本轮已据本地正文补入研究；红斑阈值两处不一致、补充方法/统计及本次未返回的披露仍未核实，不等于质量评分完成。"
+      ],
+      "raw_evidence": "../../02_工作区/99_临时/2026-09-26_PubMed试跑/fulltext-response.json",
+      "article": {
+        "source": "pmc",
+        "viaSource": "pmc",
+        "pmcId": "PMC8957616",
+        "pmcUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8957616/",
+        "pmid": "35340018",
+        "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/35340018/",
+        "doi": "10.1038/s41598-022-09231-8",
+        "title": "Alteration of barrier properties, stratum corneum ceramides and microbiome composition in response to lotion application on cosmetic dry skin",
+        "abstract": "Xerosis, commonly referred to as dry skin, is a common dermatological condition affecting almost a third of the population. Successful treatment of the condition traditionally involves the application of cosmetic products facilitating the moisturisation of the skin with a range of ingredients including glycerol and fatty acids. While the effectiveness of these treatments is not in question, limited information exists on the impact on the skin microbiome following use of these products and the improvement in skin hydration. Here, we describe improvements in skin barrier properties together with increased levels of cholesterol, ceramides and long-chain fatty acids following application of Body Lotion. Concomitant alterations in the skin microbiome are also seen via 16S rRNA metataxonomics, in combination with both traditional and novel informatics analysis. Following 5 weeks of lotion use, beneficial skin bacteria are increased, with improvements in microbiome functional potential, and increases in pathways associated with biosynthesis of multiple long chain fatty acids.",
+        "authors": [
+          {
+            "givenNames": "Barry",
+            "lastName": "Murphy"
+          },
+          {
+            "givenNames": "Sally",
+            "lastName": "Grimshaw"
+          },
+          {
+            "givenNames": "Michael",
+            "lastName": "Hoptroff"
+          },
+          {
+            "givenNames": "Sarah",
+            "lastName": "Paterson"
+          },
+          {
+            "givenNames": "David",
+            "lastName": "Arnold"
+          },
+          {
+            "givenNames": "Andrew",
+            "lastName": "Cawley"
+          },
+          {
+            "givenNames": "Suzanne E.",
+            "lastName": "Adams"
+          },
+          {
+            "givenNames": "Francesco",
+            "lastName": "Falciani"
+          },
+          {
+            "givenNames": "Tony",
+            "lastName": "Dadd"
+          },
+          {
+            "givenNames": "Richard",
+            "lastName": "Eccles"
+          },
+          {
+            "givenNames": "Alex",
+            "lastName": "Mitchell"
+          },
+          {
+            "givenNames": "William F.",
+            "lastName": "Lathrop"
+          },
+          {
+            "givenNames": "Diana",
+            "lastName": "Marrero"
+          },
+          {
+            "givenNames": "Galina",
+            "lastName": "Yarova"
+          },
+          {
+            "givenNames": "Ana",
+            "lastName": "Villa"
+          },
+          {
+            "givenNames": "John S.",
+            "lastName": "Bajor"
+          },
+          {
+            "givenNames": "Lin",
+            "lastName": "Feng"
+          },
+          {
+            "givenNames": "Dawn",
+            "lastName": "Mihalov"
+          },
+          {
+            "givenNames": "Andrew E.",
+            "lastName": "Mayes"
+          }
+        ],
+        "journal": {
+          "title": "Scientific Reports",
+          "issn": "2045-2322",
+          "volume": "12",
+          "elocationId": "5223"
+        },
+        "keywords": [
+          "Microbiome",
+          "Microbiology techniques",
+          "Quality of life"
+        ],
+        "articleType": "research-article",
+        "publicationDate": {
+          "year": "2022",
+          "month": "3",
+          "day": "26"
+        },
+        "sections": [
+          {
+            "title": "Introduction",
+            "text": "The human skin microbiome comprises the commensal microorganisms found on human skin, their combined genetic material and the environment in which they live1. The outermost skin layer, the stratum corneum, is composed of multiple layers of fully cornified keratinocytes embedded in a lipid matrix and crucially provides an environment for commensal skin microbiome colonisation2. Keratinocytes also play a key role in microbiome management effecting attributes such as pH, osmolarity and aridity3. Human skin can be divided into three location types based on physiological characteristics namely dry, sebaceous and moist sites. Each of these sites types harbour a distinct microbiome profile comprising organisms best suited to utilise the available nutrients in the specific niche4. Dry sites (leg or forearm) are commonly colonised by the most diverse range of bacteria from the Proteobacteria and Firmicutes phyla; sebaceous sites (face) by members of the Cutibacterium genus and moist sites (axilla), by Staphylococcus and Corynebacterium species5.\n\nSkin microbiome composition has been shown to be relatively stable over time despite perturbations brought on by daily activities and hygiene practice6. However, more significant and prolonged dysbiotic states have been documented in multiple skin conditions including atopic dermatitis7, acne8 and dandruff9. Multiple studies have shown significant differences either in community composition between healthy and diseased states with treatment for the associated condition resulting in a renormalizing of community steady state10.\n\nXerosis, commonly referred to as dry skin, affects almost a third of the global population11. Characterised by rough or scaling skin, the prevalence of cosmetic dry skin has been associated with a number of factors including the environment, age, gender and genetic makeup12. Cosmetic dry skin can have a significant impact on quality of life, potentially leading to more serious conditions such as atopic dermatitis, facilitated by the penetration of allergens through a damaged epidermal barrier13. Studies have also demonstrated that barrier defects can lead to increases in systemic inflammation14.\n\nStratum corneum (SC) lipids play a crucial role in the permeation function of skin barrier, as well as many other aspects of health and disease15. The main lipid classes are ceramides, fatty acids and cholesterol, present in an approximately equal molar ratio16,17. These lipids form a highly-organised and densely-packed lamellar structure in the SC. There is significant heterogeneity within these lipids groups and especially within the ceramides with over 400 species and 12 subclasses having been identified in human SC. In xerosis, a strong correlation between dry skin attributes (conductance, dryness, roughness and scaliness) and the level of ceramides has been observed18. In atopic skin, decreased levels of ceramides and long-chain FFAs were observed with an increase of transepidermal water loss (TEWL)19,20. In addition to the decrement of ceramides, there is an apparent dysregulation of the ceramide profiles reported in atopic eczema (AE), with a significantly increased level of a total short-chain length of 34 carbon atoms18. The compositional chain length has also been associated with altered barrier function15,21. Treatment of xerosis regularly includes the use of humectants, occlusives or emollients to restore barrier integrity and improve the hydration of the SC, which in turn supports the establishment of a health-associated microbiome2.\n\nWhereas assessment of the skin microbiome between health and disease states such as acne and atopic dermatitis are commonplace, almost no work exists examining the cosmetic dry skin microbiome and its response to treatment. This work investigates the impact of a marketed Body Lotion (BL) on both skin condition and the skin microbiome using a combination of qualitative and quantitative measures."
+          },
+          {
+            "title": "Results",
+            "text": "",
+            "subsections": [
+              {
+                "title": "Assessment of skin barrier properties",
+                "text": "Post intervention, visual assessment scores and corneometer measurements demonstrated significant improvements in hydration status (Fig. 1a,b). Mean visual dryness scores (with standard deviation) decreased from 2.3 (0.4) to 0.2 (0.2); whilst mean corneometer values increased from 22.6 (5.7) to 44.0 (10.2).\n\n[Figure: Figure 1]\n\nStratum corneum cohesivity also improved with 5 weeks of product application with mean level of total protein (with standard deviation) removed by 5 sequential tape strips reducing from 944 (283 µg) to 569 µg (130 µg) (Fig. 1c). This increase in cohesivity was still evident following 20 sequential tape strips (Fig. 1d).\n\nSamples were fractionated on amino-propyl solid phase extraction (SPE) columns to remove extracted adhesive material and partition the samples into cholesterol, ceramide and FFA fractions (see Supplementary Methods). FFA and Cholesterol measurements are quantitative. The amount of each analyte is back-calculated from the standard curve (has its own internal standard). Ceramide measurement is a semi-quantitative method due to its lack of the full set of the standards covering all ceramide classes and chain length.\n\nFree fatty acid levels were measured in the outer-most 5 tape strips at both timepoints. Total FFA (with standard deviation) increased from 51.06 protein (25.63 pmol/µg) to 134.05 pmol/µg (68.07 pmol/µg), p-value < 0.001. Individual species analysis revealed significant increases in the levels of several FFAs from chain length C14:0 to C20:0 following the product application phase (Table 1). Levels of C22:0 also increased although the increase was not statistically significant, p-value = 0.086. Cholesterol (with standard deviation) was measured in the outer-most 5 tape strips at both timepoints with levels increasing from 29.85 pmol/µg protein (11.51 pmol/µg) to 32.35 pmol/µg protein (10.66 pmol/µg), p-value = 0.081. For depths of 16–20 tapes strips values at baseline were 40.94 pmol/µg (13.58 pmol/µg) rising post application to 63.34 pmol/µg (21.10 pmol/µg), p-value < 0.001.\n\nAverage ceramides levels (with standard deviation) measured in 20 tape strips at baseline were 2.85 pmol/µg protein (0.70 pmol/µg) which rose to 3.80 pmol/µg protein (0.71 pmol/µg) post intervention—representing a 33% increase (p ≤ 0.0001). 358 ceramide species measured were assigned to their respective classes22 with class sum values calculated at both timepoints. For 9 of the 12 classes, statistically significant increases were seen in the levels post intervention (Table 2). The molar ratio among lipid groups of Cer:FFA:CHE is approximately 1:18:10 in our measures. The smaller amount of ceramide is due to the semi-quantitative approach and smaller sets of ceramides included in the calculation after a 70% occupational threshold described in the Supplementary Information.\n\nCorneometer values of skin hydration were found to be positively associated with levels of both FFA (r = 0.79, p < 0.0001) and ceramides (r = 0.44, p = 0.007) (Fig. 2). Simple linear regression analysis was conducted to estimate the correlation and statistical significance. Pearson’s correlation method was used to calculate the correlation coefficient. Statistical significance was calculated by Student’s t-test.\n\n[Figure: Figure 2]"
+              },
+              {
+                "title": "Microbiome assessment",
+                "text": "DNA sequencing of 70 samples (36 baseline and 34 post intervention) resulted in the generation of 22.8 million reads with an average read count of 326,333 reads per sample (min 63,892, max 975,103) Taxonomic assessment of the skin microbiome was visualized at Baseline (Fig. 3a) and Post Intervention (Fig. 3b).\n\n[Figure: Figure 3]\n\nAt both timepoints dominant taxa were Cutibacterium acnes, Staphylococcus epidermidis and Staphylococcus hominis, aligning with published skin microbiome studies4. Differential abundance using ANCOM23 was carried out at both genus and species level at each timepoint. A single genus (Xanthomonas) and species (Xanthomonas campestris) were found to be more abundant in subjects post product application.\n\nSamples were rarefied at 50,000 reads per sample in advance of diversity analysis. Alpha (Chao1 and Shannon) and Beta diversity (Unweighted and Weighted Unifrac)24 analyses were carried out to examine differences between baseline samples and following lotion use; however no statistically significant differences were seen (data not shown).\n\nMicrobiome functional profile were examined using Picrust225 and statistical analysis carried out using LEfSe26, p-value 0.01 and LDA > 2. Nine functional pathways were shown to be elevated following product application in comparison to baseline (Fig. 3c). The majority of these pathways represented an increase in microbial production of skin-relevant fatty acids.\n\nTo quantitatively examine the impact of the intervention on akin bacteria the levels of total bacteria and the common health-associated commensal bacterium S. epidermidis were quantified using qPCR. No differences between timepoints were seen in the levels of total bacteria (Fig. 3d); however, a statistically significant increase (p < 0.01) was seen in the levels of S. epidermidis post intervention (Fig. 3e).\n\nMicrobiome network of the population (MNP) for all samples at both timepoints was calculated. Analysis showed that network metrics including Mean Degree, Edge Number and Robustness were directionally increased post intervention (Fig. 4a). Additionally, networks from subjects after lotion use showed decreased fragility in comparison to networks at baseline. However, statistical analysis of these metrics using an 80% bootstrapping approach revealed no significant differences between networks when averaged across all samples at both timepoints (Fig. 4b).\n\n[Figure: Figure 4]\n\nSingle sample networks were produced following methodologies described previously27. The production of n-1 networks facilitates the analysis of networks at the subject level and additionally allows improved statistical analysis of associated network metrics. Indicative examples of single sample networks can be seen in Fig. 4c. All single sample networks produced are available in Supplementary Material (Fig. S1). Statistical analysis of network metrics based on the aggregate single sample networks showed statistically significant differences for all metrics between baseline and post intervention, (p < 0.01) (Fig. 4d)."
+              }
+            ]
+          },
+          {
+            "title": "Discussion",
+            "text": "The aim of this study was to examine the impact on both host biomarkers and the skin microbiome following 5 weeks use of a marketed lotion containing glycerol, FFAs and a small amount of occlusives. Analysis of multiple skin biomarkers showed consistent improvement after the intervention period. Expertly measured visual skin dryness, an assessment of the impact on the upper layers of the stratum corneum, showed significant improvements for the study population. The impact however was not limited to the outermost levels of the skin since improved stratum corneum cohesivity was demonstrated even after 20 tape strippings. It should also be noted that improvements in skin condition were not only evident at the end of the 5 weeks of lotion use, as improvements in visual dryness were observed earlier. Indeed 86% of the study participants in this cell showed a significant improvement in skin dryness score after only 7 days of lotion use (data not shown).\n\nThe levels of SC lipids have been extensively linked to skin function15. In particular, lower levels of lipids, and especially longer chain lipids, have been reported in compromised skin18,19. In the current study, significant increases were seen in total ceramides, FFAs and cholesterol following body lotion application. These increases and their correlation to improvements in skin dryness provide further evidence for the critical role of lipids in maintaining good SC hydration and barrier function. While it is expected that some of the increase in the levels of C16:0 and C18:0 may be due to residual product deposition, the increase in longer chain fatty acids e.g., C20:0 and C22:0 suggests both increased synthesis and elongation from shorter chain precursors. It is also reasonable to assume that the sizable increases in C16:0 and C18:0 will provide the substrates for the sustained production of elongated species. Given their inherent heterogeneity within the SC, the increases seen in 9/12 classes of ceramide, together with the scale of those increases demonstrates wide-ranging improvements across the spectrum of these lipids. This is again consistent with improvements in SC hydration and barrier function and goes beyond the changes which might be achieved by topical supplementation with a small number of specific ceramide species. Whilst the changes in skin hydration may be attributable to the glycerol and occlusives present in the lotion tested28, the changes in lipid composition are more likely attributable to the free fatty acids provided. Studies have previously demonstrated the ability of ex vivo skin to produce greater levels of fatty acids (and in particular elongated species) when provided with shorter chain precursors29. The current study adds to this evidence by testing in vivo in human participants.\n\nIn addition to improvements in skin condition and composition, changes in the skin microbiome were also examined. Microbiome assessment of skin pre- and post-lotion use showed limited differences between the groups using standard analysis methods for the assessment of compositional metataxonomic data. No differences were seen in alpha and beta diversity metrics with only a single genus/species being differentially abundant, Xanthomonas/X. campestris, the increased abundance of which will be discussed later.\n\nMetataxonomic assessment of the microbiome is limited in its ability to quantitatively access individual members of the microbiome as these methodologies only examine percentage compositional changes which can mask absolute abundance alterations. Based on its commonly accepted role as a beneficial skin bacterium30 the absolute abundance of S. epidermidis along with total bacterial abundance at baseline and after lotion use was examined to determine if there was an alteration in the number of bacteria present. While no differences were seen in total bacterial levels a significant increase was seen for S. epidermidis post intervention. Quantitative assessment of Staphylococcus aureus was also carried out on all samples however 95% of samples were below the limit of detection of the assay (data not shown). S. epidermidis is one of the most important members of the microbiome for maintenance of skin health30. S. epidermidis has been shown to activate skin TLR2 and TLR3 via the production of lipoteichoic acid stimulating the production of human β-defensins and inhibiting the inflammatory cytokine release and inflammation31–33. More recently a potential role for S. epidermidis in protecting against skin cancer via the production of 6-N-hydroxyaminopurine has been postulated; however further investigations in this area are warranted34. Indeed, recent activities have examined the beneficial impact of the application of autologous S. epidermidis to the skin of clinical subjects. Augmentation of resident populations with cultured S. epidermidis was shown to increase the lipid content of the skin, suppress water evaporation and helped to maintain the skins acidic pH through the production of lactic acid, a metabolic endpoint of glycerol fermentation35. Even more intriguingly, recent investigations into the actions of S. epidermidis on skin have demonstrated the presence of an active secreted sphingomyelinase in S. epidermidis clinical isolates potentially contributary to the release of free ceramides on skin36. The increase in S. epidermidis numbers following lotion use in this study is considered to be in line with an improvement in the condition of the underlining stratum corneum and its associated commensal microbiome.\n\nPredictive functional analysis was carried out on all samples to determine changes in microbial functional profile following application. As discussed earlier some of the increases in skin lipids identified following product use are likely a consequence of product deposition however the increase in the bacterial potential to produce C16:0, C16:1 and C18:1 lipids, among others, present the intriguing proposition that the increase in skin lipids is at least partially derived from alterations in the functional output of the skin microbiome. Increased levels of bacterially derived oleate, palmitoleate, stearate and palmitate, all lipids with known beneficial functions on skin e.g., emollients, provide initial evidence that lotion use not only affects the skin barrier directly but also can potentially alter the skin microbiome to a state which may provide additional skin care benefits.\n\nCo-occurrence network analysis has become a common analysis tool for assessment of the human microbiome37,38. Standard network analysis of study groups indicated no significant differences between subjects following lotion use. Standard network analysis approaches, where all subjects are collapsed into predetermined groups, suffers from significant limitations as it does not account for individual response to interventions. It is well documented that a high level of inter-individual variation occurs in the human skin microbiome in particular with regards to less dominant community members4. Recently, methodologies have been developed to examine microbiome networks at an individual level to facilitate the examination of an individual’s response to intervention27. Examination of single sample networks showed that all study subjects showed improvement in commonly used network analysis metrics including mean degree, edge number, node number and network robustness. Increases in these metrics are generally considered to indicate a more robust and interconnected microbiome network consistent with a healthier state. Based on these metrics a more health associated microbiome was present following the product intervention in line with the aforementioned improvement in key skin biomarkers.\n\nFinally, we sought to address the increase in the levels of X. campestris following lotion use. An increase in the abundance of Xanthomonas following use of cosmetic products has previously being reported39–41 however bacteria of the genus Xanthomonas have rarely been reported in non-intervention-based studies of the skin microbiome at significant levels. Analysis of the test product showed the presence of xanthan gum, a common cosmetic ingredient to stabilise emulsions. Xanthan gum is produced by fermentation of monosaccharides by Xanthomonas campestris. None of the steps in the current production process would be sufficient to remove DNA from the producing organism during the purification process42. Subsequent analysis showed that both the xanthan gum and body lotion used in this study contained DNA that mapped to X. campestris (> 95% of reads generated, data not shown) suggesting this as the source of the increase, as opposed to any change in the skin microbiome as previously reported. These findings highlight the need to consider all potential sources of contamination in particular when assessing low biomass samples and an unexpected increase in an organism not commonly regarded as a skin commensal.\n\nDue to the natural variation found in the skin microbiome which can be impacted by gender, age, body site and environmental conditions the study population was limited to pre-menopausal female subjects between the ages of 18–55. Subsequent studies could examine the impact of lotion application on a wider age cohort and include both male and female subjects and sample from alternative body sites. Examination of dose response is also feasible to examine the impact on skin parameters and microbiome compositions with differing concentrations of active ingredients.\n\nThis study set out to investigate the impact of moisturising lotion use on both skin health and microbiome structure and function in subjects with cosmetic dry skin. Our results show that BL provided increases in SC lipid content and cohesivity, with associated improvements in visual dryness and skin hydration. The impact of emollient use has been examined for a number of conditions including atopic skin43,44 and diaper dermatitis45. Studies, in diseased, atopic, populations show that emollient use reduces the levels of S. aureus with subsequent increases in alpha diversity and in some cases increases in the relative abundance of S. epidermidis. However, no information was previously available on the impact of a moisturizing lotion on the skin microbiome in subjects with cosmetic dry skin, a non-diseased population, where S. aureus is not correlated with the condition. Our data demonstrate that the composition, metabolic potential, and interconnectivity of the microbiome are improved following lotion use. This included quantitative increases in the known beneficial skin bacterium, S. epidermidis. This is the first demonstration of such an effect on cosmetically dry skin as a result of moisturiser application and suggests that improvements in skin barrier function may be, in part, mediated by alterations in the skin microbiome composition, function, and connectivity."
+          },
+          {
+            "title": "Materials and methods",
+            "text": "",
+            "subsections": [
+              {
+                "title": "Ethics statement",
+                "text": "Written informed consent was obtained from all enrolled individuals. The study protocol was approved by the Reading Independent Ethics Committee. Methods were carried out in accordance with the principles of the Declaration of Helsinki and Good Clinical Practice as applicable to clinical studies on cosmetics."
+              },
+              {
+                "title": "Study participants",
+                "text": "Female subjects were recruited following appropriate inclusion and exclusion criteria including being aged 18–55 years with moderate levels of skin dryness on both lower outer legs. A full list of inclusion and exclusion criteria can be seen in Supplementary Tables 1 and 2. Skin sites were graded based on the dryness scale found in Supplementary Table 3. Subjects enrolled in the study had scores between 2.0 and 3.0 on the dryness scale and ≤ 1.0 on the erythema scale."
+              },
+              {
+                "title": "Study design",
+                "text": "This was a single centre, 5-week, balanced incomplete-block design, lower-leg study. Three cells were investigated in this study, as outlined in Fig. 5. Only the data generated for one of the cells, body lotion, are discussed here. Prior to any skin assessments subjects were instructed to not apply any products, including study lotion, to their lower legs for 48 h. On the day of measurements, subjects were equilibrated in a temperature and humidity-controlled room (temperature 20 °C, relative humidity 50%) for 15 min ahead of assessments and sampling. Baseline measurements of skin dryness were conducted, followed by sampling of the skin microbiome and the collection of tape strips. Subjects were asked to apply BL twice daily to one lower leg for 5 weeks after which subjects were resampled. All samples were taken approximately 48 h post the last application of lotion.\n\n[Figure: Figure 5]"
+              },
+              {
+                "title": "Skin dryness assessment",
+                "text": "Visual assessment of skin dryness and erythema was conducted by a trained evaluator on a scale from 0 to 446. Thirty seven subjects with visual dryness of 2.0–3.0 and erythema of ≥ 1.0 at the baseline visit were enrolled in the study. Corneometer assessments were taken, after an acclimation period of 15 min in an environmentally controlled room using the Courage and Khazaka Multi-Probe Adaptor Corneometer (MPA 6). Five readings were taken at each test site at both study timepoints."
+              },
+              {
+                "title": "Stratum corneum cohesivity assessment",
+                "text": "Stratum corneum cohesivity was assessed as described previously47 for all study subjects. D-Squame tapes (D100, 22 mm diameter, Clinical and Derm LLC) were applied to the designated area, pressed firmly onto the skin for 2 s with a D-Squame Pressure Instrument (Clinical and Derm D-500) to ensure constant pressure for each tape, then removed using forceps. Sequential tapes were taken from the same site then stored at − 20 °C. Total proteins were extracted from the tapes47 and assayed using the Pierce BCA assay kit (Rockford, IL, USA)."
+              },
+              {
+                "title": "Sample collection and extraction of stratum corneum lipids",
+                "text": "Stratum corneum lipids were analysed from a population subset (n = 18) at both study timepoints. Cholesterol, ceramides, and FFAs were measured from samples collected using Leukoflex tape strips (2.5 cm × 8 cm) (BSN Medical, UK). Up to 20 sequential tapes were collected from each site and stored at − 20 °C prior to extraction. All tapes were collected, stored and extracted individually. FFA and Cholesterol analyses were performed on pooled sets of 5 tapes, whist ceramide analyses were performed on a pooled sample from all 20 tapes taken at a specific site. Detailed methods for the extraction, and quantification of FFA, cholesterol and ceramides can be found in Supplementary Information."
+              },
+              {
+                "title": "Microbiome sample collection and processing",
+                "text": "Buffer washes were collected from all participants using a sterile Teflon sampling ring using the cup scrub method48 as previously described9. Details of DNA extraction, library preparation, sequencing, informatics processing and qPCR are outlined in Supplementary Information."
+              },
+              {
+                "title": "Microbiome network of the population (MNP) analysis",
+                "text": "Co-occurrence network analysis was carried out using the Microbiome Network of the Population (MNP) method on QIIME2 generated ASV tables collapsed at species level. Taxa were filtered based on 0.01% relative abundance and 37% prevalence thresholds. Networks were inferred using Sparse InversE Covariance estimation for Ecological Association and Statistical Inference (SPIEC-EASI version 1.0.7)49. The neighbourhood method was chosen50 and the StARS (Stability Approach to Regularization Selection) method51 used with a lambda max threshold of 0.01.\n\nReproducibility of the network inference was performed using randomly resampled subsets. Sample subsets were resampled at the 80% level and used to generate 1000 networks. Mean values of the network connectivity and robustness features from the networks were compared using bootstrap hypothesis testing52."
+              },
+              {
+                "title": "Microbiome network of an individual (MNI) analysis",
+                "text": "Networks for individual samples within the population were calculated using the microbiome network of an individual (MNI) method53. Networks generated via this method with an individual sample removed, are subtracted from the MNPs of the whole sample set, resulting in a network specific for that sample."
+              },
+              {
+                "title": "Network connectivity and robustness calculations",
+                "text": "Network connectivity measures were calculated using the R package igraph (version 1.2.4.1)54. Network fragility was simulated by removing nodes sequentially and calculating the remaining size of the largest connected component55,56. Nodes were removed based on decreasing betweenness centrality and node degree and the stability assessed by natural connectivity; the average eigenvalue of the graph adjacency as the graph reduces in size. The robustness score was calculated as the Area Under the Curve (AUC) of the network fragility values."
+              },
+              {
+                "title": "Statistical analysis",
+                "text": "A detailed description of the statistical methods used for clinical measures, microbiome analyses, qPCR, ceramides and fatty acid analysis can be found in Supplementary Material."
+              }
+            ]
+          },
+          {
+            "title": "Supplementary Information",
+            "text": "",
+            "subsections": [
+              {
+                "text": "[Supplementary]"
+              }
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "label": "Table 1",
+            "caption": "Levels of free fatty acids.",
+            "id": "Tab1",
+            "sectionTitle": "Assessment of skin barrier properties",
+            "headerRowCount": 1,
+            "rows": [
+              [
+                "Fatty acid",
+                "Baseline average",
+                "Standard deviation",
+                "Week 5 average",
+                "Standard deviation",
+                "p-value"
+              ],
+              [
+                "C14:0",
+                "2.63",
+                "2.54",
+                "4.99",
+                "3.07",
+                "< 0.001"
+              ],
+              [
+                "C16:0",
+                "14.90",
+                "7.84",
+                "56.74",
+                "34.44",
+                "< 0.001"
+              ],
+              [
+                "C16:1",
+                "1.73",
+                "1.81",
+                "1.77",
+                "1.22",
+                "0.316"
+              ],
+              [
+                "C18:0",
+                "10.51",
+                "4.43",
+                "47.17",
+                "26.43",
+                "< 0.001"
+              ],
+              [
+                "C18:1",
+                "8.46",
+                "8.28",
+                "9.20",
+                "8.60",
+                "0.184"
+              ],
+              [
+                "C18:2",
+                "3.64",
+                "2.07",
+                "4.71",
+                "2.32",
+                "0.002"
+              ],
+              [
+                "C20:0",
+                "0.67",
+                "0.16",
+                "1.47",
+                "0.64",
+                "< 0.001"
+              ],
+              [
+                "C22:0",
+                "1.29",
+                "0.29",
+                "1.38",
+                "0.29",
+                "0.086"
+              ],
+              [
+                "C22:1",
+                "0.00",
+                "0.00",
+                "0.03",
+                "0.03",
+                "0.44"
+              ],
+              [
+                "C24:0",
+                "4.42",
+                "1.11",
+                "4.29",
+                "1.25",
+                "0.902"
+              ]
+            ],
+            "footnotes": "Average levels are given for each fatty acid species measured in pmol/µg. A mixed effects model was used to assess the differences between timepoints."
+          },
+          {
+            "label": "Table 2",
+            "caption": "Levels of ceramide measured per ceramide class.",
+            "id": "Tab2",
+            "sectionTitle": "Assessment of skin barrier properties",
+            "headerRowCount": 1,
+            "rows": [
+              [
+                "Ceramide class",
+                "Baseline average",
+                "Standard deviation",
+                "Week 5 average",
+                "Standard deviation",
+                "Fold change",
+                "p-value"
+              ],
+              [
+                "AdS",
+                "0.23",
+                "0.07",
+                "0.31",
+                "0.09",
+                "1.36",
+                "0.003"
+              ],
+              [
+                "AH",
+                "0.39",
+                "0.10",
+                "0.54",
+                "0.14",
+                "1.38",
+                "0.001"
+              ],
+              [
+                "AP",
+                "0.25",
+                "0.09",
+                "0.35",
+                "0.12",
+                "1.42",
+                "0.01"
+              ],
+              [
+                "AS",
+                "0.16",
+                "0.05",
+                "0.22",
+                "0.06",
+                "1.39",
+                "0.002"
+              ],
+              [
+                "EOdS",
+                "0.00",
+                "0.00",
+                "0.00",
+                "0.00",
+                "1.26",
+                "0.68"
+              ],
+              [
+                "EOH",
+                "0.17",
+                "0.06",
+                "0.25",
+                "0.09",
+                "1.53",
+                "< 0.001"
+              ],
+              [
+                "EOP",
+                "0.02",
+                "0.01",
+                "0.02",
+                "0.01",
+                "0.97",
+                "0.71"
+              ],
+              [
+                "EOS",
+                "0.23",
+                "0.08",
+                "0.28",
+                "0.09",
+                "1.22",
+                "0.03"
+              ],
+              [
+                "NdS",
+                "0.30",
+                "0.07",
+                "0.36",
+                "0.07",
+                "1.2",
+                "0.06"
+              ],
+              [
+                "NH",
+                "0.47",
+                "0.15",
+                "0.63",
+                "0.22",
+                "1.35",
+                "0.004"
+              ],
+              [
+                "NP",
+                "0.35",
+                "0.10",
+                "0.45",
+                "0.10",
+                "1.27",
+                "0.024"
+              ],
+              [
+                "NS",
+                "0.28",
+                "0.09",
+                "0.38",
+                "0.12",
+                "1.34",
+                "0.001"
+              ]
+            ],
+            "footnotes": "Average levels are given for each ceramide class in pmol/µg protein. Fold change was calculated for post intervention relative to baseline values with paired Wilcoxon testing used to assess the differences."
+          }
+        ],
+        "assets": [
+          {
+            "assetType": "figure",
+            "label": "Figure 1",
+            "caption": "Lotion application improved leg skin hydration and cohesivity. Skin hydration was assessed at baseline and after 5 weeks of lotion application (n = 37) via (a) visual dryness and (b) corneometer. Stratum corneum cohesivity was assessed by protein removal on (c) 5 sequential tape strips and (d) 20 sequential tape strips (n = 36). Box whisker plots showing mean and upper and lower quartiles. Connecting line with an asterisk indicates a statistically significant difference.",
+            "id": "Fig1",
+            "sectionTitle": "Assessment of skin barrier properties",
+            "href": "41598_2022_9231_Fig1_HTML.jpg"
+          },
+          {
+            "assetType": "figure",
+            "label": "Figure 2",
+            "caption": "Skin hydration correlates with fatty acid and ceramide levels. Scatter plots of corneometer readings of skin hydration vs. the total level of FFA (a) and total ceramides (b). Blue and red circles represent untreated and after 5 weeks of product application. The solid line represents the optimal fit from simple linear regression analysis, with the correlation coefficient r and p-value displayed. Statistical significance was considered as p-value < 0.05.",
+            "id": "Fig2",
+            "sectionTitle": "Assessment of skin barrier properties",
+            "href": "41598_2022_9231_Fig2_HTML.jpg"
+          },
+          {
+            "assetType": "figure",
+            "label": "Figure 3",
+            "caption": "Skin microbiome assessment at baseline and after 5 weeks of product application. Box and whisker plots summarising the dominant species at (a) baseline and at (b) Week 5. (c) LEfSe analysis of differential microbiome function identified at baseline and Week 5. qPCR analysis of (d) total bacterial count and (e) Staphylococcus epidermidis at baseline and post intervention.",
+            "id": "Fig3",
+            "sectionTitle": "Microbiome assessment",
+            "href": "41598_2022_9231_Fig3_HTML.jpg"
+          },
+          {
+            "assetType": "figure",
+            "label": "Figure 4",
+            "caption": "Community co-occurrence network analysis. (a) Average community networks for all samples at baseline and following 5 weeks of application, with associated network metrics. (b) Example statistical analysis of network mean degree metric following bootstrapping between samples at baseline and post intervention. No metrics used showed differences between pre- and post-application using average network approaches. (c) Selected indicative examples of single sample network from individual subject at baseline and post intervention. (d) Network analysis metrics between networks at baseline and post intervention.",
+            "id": "Fig4",
+            "sectionTitle": "Microbiome assessment",
+            "href": "41598_2022_9231_Fig4_HTML.jpg"
+          },
+          {
+            "assetType": "figure",
+            "label": "Figure 5",
+            "caption": "CONSORT 2010 flow diagram. Application of lotion application to legs of subjects classified as having cosmetic dry skin.",
+            "id": "Fig5",
+            "sectionTitle": "Study design",
+            "href": "41598_2022_9231_Fig5_HTML.jpg"
+          },
+          {
+            "assetType": "supplementary-material",
+            "caption": "Supplementary Information.",
+            "id": "MOESM1",
+            "sectionTitle": "Supplementary Information",
+            "href": "41598_2022_9231_MOESM1_ESM.docx"
+          }
+        ]
+      },
+      "kind": "article",
+      "batch_id": "PUBMED-PILOT-20260926"
+    },
+    {
+      "id": "PM-PILOT-BEH-S004",
+      "run_id": "SK-BEH-001",
+      "source_id": "SK-BEH-001-S004",
+      "doi": "10.1111/ced.12455",
+      "title": "Does poor sleep quality affect skin ageing?",
+      "status": "no-oa",
+      "channel": "PubMed MCP → PMC / Europe PMC / Unpaywall",
+      "result_summary": "本次公开获取路线未取得开放全文，原资料仍为仅摘要。",
+      "limits": [
+        "PMC 无对应全文；Europe PMC 无 PMC 对应记录；Unpaywall 未索引到开放副本。",
+        "仅说明本次路线未成功，不能推断所有渠道均无全文。",
+        "未增加来源或合格深读。"
+      ],
+      "raw_evidence": "../../02_工作区/99_临时/2026-09-26_PubMed试跑/fulltext.raw.txt",
+      "kind": "article",
+      "batch_id": "PUBMED-PILOT-20260926"
+    },
+    {
+      "id": "YT-PILOT-RES-I01",
+      "kind": "video",
+      "run_id": "SK-RES-001",
+      "signal_id": "RES-I01",
+      "batch_id": "YOUTUBE-PILOT-20260926",
+      "title": "How to treat dry skin: Dermatologist tips for relief",
+      "status": "retrieved",
+      "channel": "YouTube → yt-dlp",
+      "observed_at": "2026-09-26T13:12:24.912336+00:00",
+      "result_summary": "中文概要与观点已整理：这条视频讲如何通过温和清洁、及时保湿和减少刺激缓解皮肤干燥；保留英文字幕供核对。",
+      "limits": [
+        "自动字幕未经人工校对；未对照音轨逐秒核验完整性。",
+        "互动数字是获取时的快照；未取得评论正文或受众地区，也缺少可比样本，兴趣门槛仍待核验。",
+        "这是已有线索补取，不是新增检索或合格科学深读。",
+        "与AAD科学指导同机构；共享平台深读资格与S1/S2阶段归账未核实，科学新增0不等于平台深读0。"
+      ],
+      "raw_evidence": "../../02_工作区/99_临时/2026-09-26_YouTube试跑/yt-dlp-attempt.json",
+      "video": {
+        "id": "biIzSPOEQgQ",
+        "url": "https://www.youtube.com/watch?v=biIzSPOEQgQ",
+        "channel": "American Academy of Dermatology",
+        "channel_id": "UCcrrdKQ-2FgrqNzCsfgrucA",
+        "channel_url": "https://www.youtube.com/channel/UCcrrdKQ-2FgrqNzCsfgrucA",
+        "published_on": "2026-01-02",
+        "duration_seconds": 141,
+        "description": "Dry skin can flake, itch, crack, and even bleed. These tips from board-certified dermatologists can help you heal excessively dry skin at home.\n\nLearn more at https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin.\n\nTimestamps:\n00:00 Intro\n00:19 1) Shorten baths and showers\n00:35 2) Moisturize after bathing\n00:43 3) Use an ointment or cream\n00:55 4) Apply lip balm\n01:03 5) Use fragrance-free products\n01:22 6) Wear gloves\n01:38 7) Check your clothes\n01:49 8) Avoid heat sources\n01:59 9) Use a humidifier",
+        "metrics": {
+          "views": 17127,
+          "likes": 48,
+          "comments": 2
+        },
+        "subtitles": {
+          "language": "en",
+          "kind": "automatic",
+          "manually_reviewed": false,
+          "completeness_verified": false,
+          "cue_count": 119,
+          "text_line_count": 60,
+          "text": "Dry skin [music] can flake, itch, crack,\nor even bleed. With the right self-care,\nmany people can heal dry skin at home.\nI'm Dr. Pritha Agarwal, a\nboard-certified dermatologist. Follow\nthese tips [music] to treat dry skin and\nprevent it in the future.\nTake short baths and [music] showers to\nhydrate your dry skin. When bathing, be\nsure to keep the bathroom door closed.\nUse warm [music] water instead of hot\nand limit your time in the water to 5 to\n10 minutes. After your shower or bath,\ngently [music] pat your skin dry. Within\na few minutes of drying off, apply\nmoisturizer [music] to your skin.\nMoisturizers work by trapping existing\nmoisture in your skin. Ointments and\ncreams are more effective and [music]\nless irritating than lotions. To relieve\ndry hands, carry a non-greasy hand cream\nwith you and apply it after each [music]\nhand wash. Wear lip balm or apply\npetroleum jelly to your lips. If your\nlips sting or tingle after you apply a\nlip balm, switch to one that does\n[music] not cause this reaction. Only\nuse gentle fragrance-free skincare\nproducts. Products with fragrance or\nalcohol can be harsh for dry, sensitive\n[music] skin. If you see the word\nunscented rather than fragrance-free,\nthe product can contain chemicals that\nneutralize [music] or hide the odors of\nother ingredients. These chemicals can\nirritate dry skin. To reduce [music] dry\nraw skin on your hands, wear gloves when\nyou go outside in the winter. You should\nalso wear gloves before you [music]\nperform tasks that get your hands wet,\nlike washing dishes, and before you get\nchemicals, greases, and other substances\n[music] like cleaning solutions on your\nhands. Choose non-erritating clothes and\n[music] laundry detergent. Wear soft\nfabric like cotton or silk under wool or\nother rough clothing. Use laundry\n[music] detergent labeled\nhypoallergenic.\nAvoid sitting close to fireplaces\n[music] or other heat sources. Doing so\ncan dry out your skin. Opt for a thick\n[music] blanket or wear warm layers\ninstead. Lastly, add moisture to [music]\nthe air by using a humidifier. Dry skin\nalso can be a sign of a skin condition\nthat needs treatment. If these changes\ndo not bring relief, partner with a\nboard-certified dermatologist for\ntreatment.\n",
+          "vtt": "WEBVTT\nKind: captions\nLanguage: en\n\n00:00:00.240 --> 00:00:02.869 align:start position:0%\n \nDry<00:00:00.640><c> skin</c><00:00:00.659><c> [music]</c><00:00:00.960><c> can</c><00:00:01.280><c> flake,</c><00:00:01.839><c> itch,</c><00:00:02.480><c> crack,</c>\n\n00:00:02.869 --> 00:00:02.879 align:start position:0%\nDry skin [music] can flake, itch, crack,\n \n\n00:00:02.879 --> 00:00:05.749 align:start position:0%\nDry skin [music] can flake, itch, crack,\nor<00:00:03.120><c> even</c><00:00:03.360><c> bleed.</c><00:00:04.160><c> With</c><00:00:04.400><c> the</c><00:00:04.560><c> right</c><00:00:04.799><c> self-care,</c>\n\n00:00:05.749 --> 00:00:05.759 align:start position:0%\nor even bleed. With the right self-care,\n \n\n00:00:05.759 --> 00:00:08.230 align:start position:0%\nor even bleed. With the right self-care,\nmany<00:00:06.080><c> people</c><00:00:06.400><c> can</c><00:00:06.560><c> heal</c><00:00:06.879><c> dry</c><00:00:07.120><c> skin</c><00:00:07.359><c> at</c><00:00:07.600><c> home.</c>\n\n00:00:08.230 --> 00:00:08.240 align:start position:0%\nmany people can heal dry skin at home.\n \n\n00:00:08.240 --> 00:00:09.910 align:start position:0%\nmany people can heal dry skin at home.\nI'm<00:00:08.480><c> Dr.</c><00:00:08.800><c> Pritha</c><00:00:09.200><c> Agarwal,</c><00:00:09.760><c> a</c>\n\n00:00:09.910 --> 00:00:09.920 align:start position:0%\nI'm Dr. Pritha Agarwal, a\n \n\n00:00:09.920 --> 00:00:11.990 align:start position:0%\nI'm Dr. Pritha Agarwal, a\nboard-certified<00:00:10.559><c> dermatologist.</c><00:00:11.759><c> Follow</c>\n\n00:00:11.990 --> 00:00:12.000 align:start position:0%\nboard-certified dermatologist. Follow\n \n\n00:00:12.000 --> 00:00:13.830 align:start position:0%\nboard-certified dermatologist. Follow\nthese<00:00:12.320><c> tips</c><00:00:12.445><c> [music]</c><00:00:12.559><c> to</c><00:00:12.800><c> treat</c><00:00:13.040><c> dry</c><00:00:13.360><c> skin</c><00:00:13.599><c> and</c>\n\n00:00:13.830 --> 00:00:13.840 align:start position:0%\nthese tips [music] to treat dry skin and\n \n\n00:00:13.840 --> 00:00:19.029 align:start position:0%\nthese tips [music] to treat dry skin and\nprevent<00:00:14.160><c> it</c><00:00:14.400><c> in</c><00:00:14.559><c> the</c><00:00:14.719><c> future.</c>\n\n00:00:19.029 --> 00:00:19.039 align:start position:0%\n \n \n\n00:00:19.039 --> 00:00:20.950 align:start position:0%\n \nTake<00:00:19.359><c> short</c><00:00:19.680><c> baths</c><00:00:20.080><c> and</c><00:00:20.305><c> [music]</c><00:00:20.320><c> showers</c><00:00:20.720><c> to</c>\n\n00:00:20.950 --> 00:00:20.960 align:start position:0%\nTake short baths and [music] showers to\n \n\n00:00:20.960 --> 00:00:23.590 align:start position:0%\nTake short baths and [music] showers to\nhydrate<00:00:21.439><c> your</c><00:00:21.600><c> dry</c><00:00:21.840><c> skin.</c><00:00:22.560><c> When</c><00:00:22.800><c> bathing,</c><00:00:23.439><c> be</c>\n\n00:00:23.590 --> 00:00:23.600 align:start position:0%\nhydrate your dry skin. When bathing, be\n \n\n00:00:23.600 --> 00:00:25.670 align:start position:0%\nhydrate your dry skin. When bathing, be\nsure<00:00:23.680><c> to</c><00:00:23.840><c> keep</c><00:00:24.000><c> the</c><00:00:24.160><c> bathroom</c><00:00:24.560><c> door</c><00:00:24.880><c> closed.</c>\n\n00:00:25.670 --> 00:00:25.680 align:start position:0%\nsure to keep the bathroom door closed.\n \n\n00:00:25.680 --> 00:00:27.429 align:start position:0%\nsure to keep the bathroom door closed.\nUse<00:00:26.000><c> warm</c><00:00:26.200><c> [music]</c><00:00:26.240><c> water</c><00:00:26.560><c> instead</c><00:00:26.880><c> of</c><00:00:27.039><c> hot</c>\n\n00:00:27.429 --> 00:00:27.439 align:start position:0%\nUse warm [music] water instead of hot\n \n\n00:00:27.439 --> 00:00:29.589 align:start position:0%\nUse warm [music] water instead of hot\nand<00:00:27.760><c> limit</c><00:00:28.080><c> your</c><00:00:28.240><c> time</c><00:00:28.400><c> in</c><00:00:28.640><c> the</c><00:00:28.800><c> water</c><00:00:28.960><c> to</c><00:00:29.199><c> 5</c><00:00:29.359><c> to</c>\n\n00:00:29.589 --> 00:00:29.599 align:start position:0%\nand limit your time in the water to 5 to\n \n\n00:00:29.599 --> 00:00:32.389 align:start position:0%\nand limit your time in the water to 5 to\n10<00:00:29.760><c> minutes.</c><00:00:30.720><c> After</c><00:00:31.119><c> your</c><00:00:31.279><c> shower</c><00:00:31.599><c> or</c><00:00:31.840><c> bath,</c>\n\n00:00:32.389 --> 00:00:32.399 align:start position:0%\n10 minutes. After your shower or bath,\n \n\n00:00:32.399 --> 00:00:34.870 align:start position:0%\n10 minutes. After your shower or bath,\ngently<00:00:32.750><c> [music]</c><00:00:32.800><c> pat</c><00:00:33.120><c> your</c><00:00:33.360><c> skin</c><00:00:33.600><c> dry.</c><00:00:34.480><c> Within</c>\n\n00:00:34.870 --> 00:00:34.880 align:start position:0%\ngently [music] pat your skin dry. Within\n \n\n00:00:34.880 --> 00:00:37.030 align:start position:0%\ngently [music] pat your skin dry. Within\na<00:00:35.040><c> few</c><00:00:35.200><c> minutes</c><00:00:35.440><c> of</c><00:00:35.600><c> drying</c><00:00:36.000><c> off,</c><00:00:36.640><c> apply</c>\n\n00:00:37.030 --> 00:00:37.040 align:start position:0%\na few minutes of drying off, apply\n \n\n00:00:37.040 --> 00:00:39.110 align:start position:0%\na few minutes of drying off, apply\nmoisturizer<00:00:37.335><c> [music]</c><00:00:37.760><c> to</c><00:00:37.920><c> your</c><00:00:38.160><c> skin.</c>\n\n00:00:39.110 --> 00:00:39.120 align:start position:0%\nmoisturizer [music] to your skin.\n \n\n00:00:39.120 --> 00:00:41.350 align:start position:0%\nmoisturizer [music] to your skin.\nMoisturizers<00:00:39.920><c> work</c><00:00:40.079><c> by</c><00:00:40.399><c> trapping</c><00:00:40.879><c> existing</c>\n\n00:00:41.350 --> 00:00:41.360 align:start position:0%\nMoisturizers work by trapping existing\n \n\n00:00:41.360 --> 00:00:43.910 align:start position:0%\nMoisturizers work by trapping existing\nmoisture<00:00:41.760><c> in</c><00:00:42.000><c> your</c><00:00:42.160><c> skin.</c><00:00:43.200><c> Ointments</c><00:00:43.680><c> and</c>\n\n00:00:43.910 --> 00:00:43.920 align:start position:0%\nmoisture in your skin. Ointments and\n \n\n00:00:43.920 --> 00:00:45.190 align:start position:0%\nmoisture in your skin. Ointments and\ncreams<00:00:44.239><c> are</c><00:00:44.399><c> more</c><00:00:44.640><c> effective</c><00:00:44.960><c> and</c><00:00:45.195><c> [music]</c>\n\n00:00:45.190 --> 00:00:45.200 align:start position:0%\ncreams are more effective and [music]\n \n\n00:00:45.200 --> 00:00:47.750 align:start position:0%\ncreams are more effective and [music]\nless<00:00:45.440><c> irritating</c><00:00:45.920><c> than</c><00:00:46.160><c> lotions.</c><00:00:47.120><c> To</c><00:00:47.360><c> relieve</c>\n\n00:00:47.750 --> 00:00:47.760 align:start position:0%\nless irritating than lotions. To relieve\n \n\n00:00:47.760 --> 00:00:50.630 align:start position:0%\nless irritating than lotions. To relieve\ndry<00:00:48.079><c> hands,</c><00:00:48.800><c> carry</c><00:00:49.120><c> a</c><00:00:49.280><c> non-greasy</c><00:00:50.160><c> hand</c><00:00:50.399><c> cream</c>\n\n00:00:50.630 --> 00:00:50.640 align:start position:0%\ndry hands, carry a non-greasy hand cream\n \n\n00:00:50.640 --> 00:00:52.549 align:start position:0%\ndry hands, carry a non-greasy hand cream\nwith<00:00:50.800><c> you</c><00:00:51.120><c> and</c><00:00:51.360><c> apply</c><00:00:51.680><c> it</c><00:00:51.920><c> after</c><00:00:52.239><c> each</c><00:00:52.400><c> [music]</c>\n\n00:00:52.549 --> 00:00:52.559 align:start position:0%\nwith you and apply it after each [music]\n \n\n00:00:52.559 --> 00:00:55.350 align:start position:0%\nwith you and apply it after each [music]\nhand<00:00:52.879><c> wash.</c><00:00:54.000><c> Wear</c><00:00:54.239><c> lip</c><00:00:54.559><c> balm</c><00:00:54.800><c> or</c><00:00:55.039><c> apply</c>\n\n00:00:55.350 --> 00:00:55.360 align:start position:0%\nhand wash. Wear lip balm or apply\n \n\n00:00:55.360 --> 00:00:57.670 align:start position:0%\nhand wash. Wear lip balm or apply\npetroleum<00:00:55.920><c> jelly</c><00:00:56.239><c> to</c><00:00:56.399><c> your</c><00:00:56.559><c> lips.</c><00:00:57.280><c> If</c><00:00:57.520><c> your</c>\n\n00:00:57.670 --> 00:00:57.680 align:start position:0%\npetroleum jelly to your lips. If your\n \n\n00:00:57.680 --> 00:00:59.750 align:start position:0%\npetroleum jelly to your lips. If your\nlips<00:00:58.000><c> sting</c><00:00:58.399><c> or</c><00:00:58.640><c> tingle</c><00:00:59.039><c> after</c><00:00:59.280><c> you</c><00:00:59.440><c> apply</c><00:00:59.680><c> a</c>\n\n00:00:59.750 --> 00:00:59.760 align:start position:0%\nlips sting or tingle after you apply a\n \n\n00:00:59.760 --> 00:01:01.560 align:start position:0%\nlips sting or tingle after you apply a\nlip<00:01:00.000><c> balm,</c><00:01:00.559><c> switch</c><00:01:00.800><c> to</c><00:01:00.960><c> one</c><00:01:01.199><c> that</c><00:01:01.440><c> does</c>\n\n00:01:01.560 --> 00:01:01.570 align:start position:0%\nlip balm, switch to one that does\n \n\n00:01:01.570 --> 00:01:03.670 align:start position:0%\nlip balm, switch to one that does\n[music]<00:01:01.600><c> not</c><00:01:01.760><c> cause</c><00:01:02.000><c> this</c><00:01:02.239><c> reaction.</c><00:01:03.359><c> Only</c>\n\n00:01:03.670 --> 00:01:03.680 align:start position:0%\n[music] not cause this reaction. Only\n \n\n00:01:03.680 --> 00:01:05.590 align:start position:0%\n[music] not cause this reaction. Only\nuse<00:01:04.000><c> gentle</c><00:01:04.479><c> fragrance-free</c><00:01:05.199><c> skincare</c>\n\n00:01:05.590 --> 00:01:05.600 align:start position:0%\nuse gentle fragrance-free skincare\n \n\n00:01:05.600 --> 00:01:07.429 align:start position:0%\nuse gentle fragrance-free skincare\nproducts.<00:01:06.320><c> Products</c><00:01:06.640><c> with</c><00:01:06.880><c> fragrance</c><00:01:07.280><c> or</c>\n\n00:01:07.429 --> 00:01:07.439 align:start position:0%\nproducts. Products with fragrance or\n \n\n00:01:07.439 --> 00:01:09.420 align:start position:0%\nproducts. Products with fragrance or\nalcohol<00:01:08.000><c> can</c><00:01:08.240><c> be</c><00:01:08.400><c> harsh</c><00:01:08.720><c> for</c><00:01:08.880><c> dry,</c><00:01:09.200><c> sensitive</c>\n\n00:01:09.420 --> 00:01:09.430 align:start position:0%\nalcohol can be harsh for dry, sensitive\n \n\n00:01:09.430 --> 00:01:12.070 align:start position:0%\nalcohol can be harsh for dry, sensitive\n[music]<00:01:09.680><c> skin.</c><00:01:10.720><c> If</c><00:01:10.960><c> you</c><00:01:11.200><c> see</c><00:01:11.360><c> the</c><00:01:11.600><c> word</c>\n\n00:01:12.070 --> 00:01:12.080 align:start position:0%\n[music] skin. If you see the word\n \n\n00:01:12.080 --> 00:01:14.469 align:start position:0%\n[music] skin. If you see the word\nunscented<00:01:12.799><c> rather</c><00:01:13.119><c> than</c><00:01:13.360><c> fragrance-free,</c>\n\n00:01:14.469 --> 00:01:14.479 align:start position:0%\nunscented rather than fragrance-free,\n \n\n00:01:14.479 --> 00:01:16.390 align:start position:0%\nunscented rather than fragrance-free,\nthe<00:01:14.720><c> product</c><00:01:15.040><c> can</c><00:01:15.280><c> contain</c><00:01:15.680><c> chemicals</c><00:01:16.080><c> that</c>\n\n00:01:16.390 --> 00:01:16.400 align:start position:0%\nthe product can contain chemicals that\n \n\n00:01:16.400 --> 00:01:18.149 align:start position:0%\nthe product can contain chemicals that\nneutralize<00:01:16.635><c> [music]</c><00:01:16.960><c> or</c><00:01:17.200><c> hide</c><00:01:17.439><c> the</c><00:01:17.600><c> odors</c><00:01:18.000><c> of</c>\n\n00:01:18.149 --> 00:01:18.159 align:start position:0%\nneutralize [music] or hide the odors of\n \n\n00:01:18.159 --> 00:01:20.469 align:start position:0%\nneutralize [music] or hide the odors of\nother<00:01:18.400><c> ingredients.</c><00:01:19.439><c> These</c><00:01:19.759><c> chemicals</c><00:01:20.240><c> can</c>\n\n00:01:20.469 --> 00:01:20.479 align:start position:0%\nother ingredients. These chemicals can\n \n\n00:01:20.479 --> 00:01:23.270 align:start position:0%\nother ingredients. These chemicals can\nirritate<00:01:20.880><c> dry</c><00:01:21.200><c> skin.</c><00:01:22.159><c> To</c><00:01:22.400><c> reduce</c><00:01:22.530><c> [music]</c><00:01:22.880><c> dry</c>\n\n00:01:23.270 --> 00:01:23.280 align:start position:0%\nirritate dry skin. To reduce [music] dry\n \n\n00:01:23.280 --> 00:01:25.510 align:start position:0%\nirritate dry skin. To reduce [music] dry\nraw<00:01:23.600><c> skin</c><00:01:23.840><c> on</c><00:01:24.080><c> your</c><00:01:24.240><c> hands,</c><00:01:24.720><c> wear</c><00:01:24.960><c> gloves</c><00:01:25.360><c> when</c>\n\n00:01:25.510 --> 00:01:25.520 align:start position:0%\nraw skin on your hands, wear gloves when\n \n\n00:01:25.520 --> 00:01:27.670 align:start position:0%\nraw skin on your hands, wear gloves when\nyou<00:01:25.680><c> go</c><00:01:25.759><c> outside</c><00:01:26.080><c> in</c><00:01:26.320><c> the</c><00:01:26.479><c> winter.</c><00:01:27.360><c> You</c><00:01:27.520><c> should</c>\n\n00:01:27.670 --> 00:01:27.680 align:start position:0%\nyou go outside in the winter. You should\n \n\n00:01:27.680 --> 00:01:29.190 align:start position:0%\nyou go outside in the winter. You should\nalso<00:01:28.000><c> wear</c><00:01:28.240><c> gloves</c><00:01:28.640><c> before</c><00:01:28.960><c> you</c><00:01:29.080><c> [music]</c>\n\n00:01:29.190 --> 00:01:29.200 align:start position:0%\nalso wear gloves before you [music]\n \n\n00:01:29.200 --> 00:01:31.429 align:start position:0%\nalso wear gloves before you [music]\nperform<00:01:29.600><c> tasks</c><00:01:30.000><c> that</c><00:01:30.320><c> get</c><00:01:30.479><c> your</c><00:01:30.640><c> hands</c><00:01:30.880><c> wet,</c>\n\n00:01:31.429 --> 00:01:31.439 align:start position:0%\nperform tasks that get your hands wet,\n \n\n00:01:31.439 --> 00:01:33.590 align:start position:0%\nperform tasks that get your hands wet,\nlike<00:01:31.680><c> washing</c><00:01:32.079><c> dishes,</c><00:01:32.720><c> and</c><00:01:32.960><c> before</c><00:01:33.200><c> you</c><00:01:33.360><c> get</c>\n\n00:01:33.590 --> 00:01:33.600 align:start position:0%\nlike washing dishes, and before you get\n \n\n00:01:33.600 --> 00:01:35.621 align:start position:0%\nlike washing dishes, and before you get\nchemicals,<00:01:34.479><c> greases,</c><00:01:34.960><c> and</c><00:01:35.200><c> other</c><00:01:35.439><c> substances</c>\n\n00:01:35.621 --> 00:01:35.631 align:start position:0%\nchemicals, greases, and other substances\n \n\n00:01:35.631 --> 00:01:37.510 align:start position:0%\nchemicals, greases, and other substances\n[music]<00:01:36.000><c> like</c><00:01:36.240><c> cleaning</c><00:01:36.640><c> solutions</c><00:01:37.119><c> on</c><00:01:37.280><c> your</c>\n\n00:01:37.510 --> 00:01:37.520 align:start position:0%\n[music] like cleaning solutions on your\n \n\n00:01:37.520 --> 00:01:40.206 align:start position:0%\n[music] like cleaning solutions on your\nhands.<00:01:38.479><c> Choose</c><00:01:38.880><c> non-erritating</c><00:01:39.759><c> clothes</c><00:01:40.159><c> and</c>\n\n00:01:40.206 --> 00:01:40.216 align:start position:0%\nhands. Choose non-erritating clothes and\n \n\n00:01:40.216 --> 00:01:42.230 align:start position:0%\nhands. Choose non-erritating clothes and\n[music]<00:01:40.400><c> laundry</c><00:01:40.720><c> detergent.</c><00:01:41.680><c> Wear</c><00:01:41.920><c> soft</c>\n\n00:01:42.230 --> 00:01:42.240 align:start position:0%\n[music] laundry detergent. Wear soft\n \n\n00:01:42.240 --> 00:01:44.789 align:start position:0%\n[music] laundry detergent. Wear soft\nfabric<00:01:42.640><c> like</c><00:01:42.880><c> cotton</c><00:01:43.200><c> or</c><00:01:43.360><c> silk</c><00:01:44.000><c> under</c><00:01:44.320><c> wool</c><00:01:44.640><c> or</c>\n\n00:01:44.789 --> 00:01:44.799 align:start position:0%\nfabric like cotton or silk under wool or\n \n\n00:01:44.799 --> 00:01:46.756 align:start position:0%\nfabric like cotton or silk under wool or\nother<00:01:45.040><c> rough</c><00:01:45.360><c> clothing.</c><00:01:46.320><c> Use</c><00:01:46.640><c> laundry</c>\n\n00:01:46.756 --> 00:01:46.766 align:start position:0%\nother rough clothing. Use laundry\n \n\n00:01:46.766 --> 00:01:47.830 align:start position:0%\nother rough clothing. Use laundry\n[music]<00:01:46.960><c> detergent</c><00:01:47.439><c> labeled</c>\n\n00:01:47.830 --> 00:01:47.840 align:start position:0%\n[music] detergent labeled\n \n\n00:01:47.840 --> 00:01:49.510 align:start position:0%\n[music] detergent labeled\nhypoallergenic.\n\n00:01:49.510 --> 00:01:49.520 align:start position:0%\nhypoallergenic.\n \n\n00:01:49.520 --> 00:01:51.341 align:start position:0%\nhypoallergenic.\nAvoid<00:01:50.000><c> sitting</c><00:01:50.320><c> close</c><00:01:50.560><c> to</c><00:01:50.720><c> fireplaces</c>\n\n00:01:51.341 --> 00:01:51.351 align:start position:0%\nAvoid sitting close to fireplaces\n \n\n00:01:51.351 --> 00:01:53.429 align:start position:0%\nAvoid sitting close to fireplaces\n[music]<00:01:51.360><c> or</c><00:01:51.600><c> other</c><00:01:51.759><c> heat</c><00:01:52.079><c> sources.</c><00:01:52.880><c> Doing</c><00:01:53.200><c> so</c>\n\n00:01:53.429 --> 00:01:53.439 align:start position:0%\n[music] or other heat sources. Doing so\n \n\n00:01:53.439 --> 00:01:55.929 align:start position:0%\n[music] or other heat sources. Doing so\ncan<00:01:53.680><c> dry</c><00:01:53.920><c> out</c><00:01:54.079><c> your</c><00:01:54.320><c> skin.</c><00:01:55.280><c> Opt</c><00:01:55.600><c> for</c><00:01:55.680><c> a</c><00:01:55.920><c> thick</c>\n\n00:01:55.929 --> 00:01:55.939 align:start position:0%\ncan dry out your skin. Opt for a thick\n \n\n00:01:55.939 --> 00:01:58.069 align:start position:0%\ncan dry out your skin. Opt for a thick\n[music]<00:01:56.159><c> blanket</c><00:01:56.720><c> or</c><00:01:57.119><c> wear</c><00:01:57.439><c> warm</c><00:01:57.920><c> layers</c>\n\n00:01:58.069 --> 00:01:58.079 align:start position:0%\n[music] blanket or wear warm layers\n \n\n00:01:58.079 --> 00:02:00.550 align:start position:0%\n[music] blanket or wear warm layers\ninstead.<00:01:59.200><c> Lastly,</c><00:01:59.759><c> add</c><00:02:00.079><c> moisture</c><00:02:00.399><c> to</c><00:02:00.521><c> [music]</c>\n\n00:02:00.550 --> 00:02:00.560 align:start position:0%\ninstead. Lastly, add moisture to [music]\n \n\n00:02:00.560 --> 00:02:03.429 align:start position:0%\ninstead. Lastly, add moisture to [music]\nthe<00:02:00.719><c> air</c><00:02:00.880><c> by</c><00:02:01.119><c> using</c><00:02:01.280><c> a</c><00:02:01.520><c> humidifier.</c><00:02:02.640><c> Dry</c><00:02:02.960><c> skin</c>\n\n00:02:03.429 --> 00:02:03.439 align:start position:0%\nthe air by using a humidifier. Dry skin\n \n\n00:02:03.439 --> 00:02:05.670 align:start position:0%\nthe air by using a humidifier. Dry skin\nalso<00:02:03.920><c> can</c><00:02:04.159><c> be</c><00:02:04.320><c> a</c><00:02:04.560><c> sign</c><00:02:04.719><c> of</c><00:02:04.880><c> a</c><00:02:05.119><c> skin</c><00:02:05.360><c> condition</c>\n\n00:02:05.670 --> 00:02:05.680 align:start position:0%\nalso can be a sign of a skin condition\n \n\n00:02:05.680 --> 00:02:07.749 align:start position:0%\nalso can be a sign of a skin condition\nthat<00:02:05.920><c> needs</c><00:02:06.240><c> treatment.</c><00:02:06.960><c> If</c><00:02:07.119><c> these</c><00:02:07.360><c> changes</c>\n\n00:02:07.749 --> 00:02:07.759 align:start position:0%\nthat needs treatment. If these changes\n \n\n00:02:07.759 --> 00:02:09.510 align:start position:0%\nthat needs treatment. If these changes\ndo<00:02:07.920><c> not</c><00:02:08.080><c> bring</c><00:02:08.319><c> relief,</c><00:02:08.879><c> partner</c><00:02:09.200><c> with</c><00:02:09.360><c> a</c>\n\n00:02:09.510 --> 00:02:09.520 align:start position:0%\ndo not bring relief, partner with a\n \n\n00:02:09.520 --> 00:02:11.029 align:start position:0%\ndo not bring relief, partner with a\nboard-certified<00:02:10.160><c> dermatologist</c><00:02:10.800><c> for</c>\n\n00:02:11.029 --> 00:02:11.039 align:start position:0%\nboard-certified dermatologist for\n \n\n00:02:11.039 --> 00:02:14.039 align:start position:0%\nboard-certified dermatologist for\ntreatment.\n\n",
+          "processing": "纯文本移除 VTT 标签并仅去掉相邻重复行；原始时间片保留在 VTT。",
+          "raw_evidence": "../../02_工作区/99_临时/2026-09-26_YouTube试跑/biIzSPOEQgQ.en.vtt"
+        },
+        "content_analysis": {
+          "language": "zh-CN",
+          "prepared_on": "2026-09-26",
+          "prepared_by": "AI",
+          "basis": "已获取的英文自动字幕；时间入口参考原视频简介中的章节。",
+          "source_evidence": "../../02_工作区/99_临时/2026-09-26_YouTube试跑/biIzSPOEQgQ.en.vtt",
+          "review_status": "本轮AI代理已用于研究闭环；未对照音轨人工校对，未完成独立专业审核。",
+          "title_zh": "皮肤干燥怎么办？皮肤科医生的日常护理建议",
+          "overview": "这是一支面向皮肤干燥人群的日常护理短片。医生从洗澡、涂保湿剂讲起，再讲手部和嘴唇护理、产品选择、衣物与环境。全片主张：短时温水清洁、及时保湿、减少刺激；调整后仍不缓解，应找皮肤科医生评估。",
+          "key_points": [
+            {
+              "title": "清洁后及时保湿",
+              "text": "片中建议用温水洗浴 5–10 分钟，轻拍干后几分钟内涂保湿剂；解释其作用是留住已有水分，比起乳液，更推荐软膏或霜。",
+              "source_label": "00:19–00:55",
+              "start_seconds": 19
+            },
+            {
+              "title": "手和嘴唇要单独照顾",
+              "text": "每次洗手后补涂护手霜；嘴唇可用润唇膏或凡士林。如果涂后刺痛或发麻，换用不引起这种反应的产品。",
+              "source_label": "00:43–01:03",
+              "start_seconds": 43
+            },
+            {
+              "title": "减少产品带来的刺激",
+              "text": "优先温和、无香精的产品。片中特别区分 fragrance-free（无香精）与 unscented（无香味）：后者仍可能含掩盖气味的成分。",
+              "source_label": "01:03–01:22",
+              "start_seconds": 63
+            },
+            {
+              "title": "把护理延伸到生活环境",
+              "text": "冬季外出、洗碗或接触清洁剂前戴手套；贴身选柔软面料及标注低致敏的洗衣产品，避免靠近热源，使用加湿器。",
+              "source_label": "01:22–片尾",
+              "start_seconds": 82
+            }
+          ],
+          "care_boundary": "片尾提醒：干燥也可能与需要治疗的皮肤问题有关；这些调整没有带来缓解时，应寻求皮肤科医生帮助。",
+          "interpretation": "这条视频把重点放在“日常能改什么”，适合提取护理行动清单；它没有系统解释不同干燥成因，也没有比较各方法的效果大小。",
+          "analysis_sections": [
+            {
+              "title": "内容定位",
+              "text": "这是一份给普通人看的日常护理指南。它围绕“干燥时怎么做”组织内容，提供具体动作，没有展开系统的病因鉴别。"
+            },
+            {
+              "title": "观点是怎么展开的",
+              "text": "开头指出干燥可出现脱屑、瘙痒、皲裂甚至出血，随后用九项日常建议展开。核心解释是保湿剂留住已有水分，其他建议主要围绕减少刺激和干燥环境，最后交代护理无效时的就诊边界。"
+            },
+            {
+              "title": "对当前研究有什么用",
+              "text": "本轮已作为同源传播材料补入RES-B02/B04和候选表达判断，提取清洁后保湿、无香味/无香精及持续不缓解的边界。属于AI代理整理，未完成独立专业审核；不追加科学独立样本，不判定主题热度。"
+            },
+            {
+              "title": "它还回答不了什么",
+              "text": "本次取得的字幕没有给出研究数据、效果大小或不同人群的比较，不能据此判断某种方法对所有人都有效，也不能判断哪个具体产品更好。单条视频的播放、点赞数据同样不足以证明主题热度。"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

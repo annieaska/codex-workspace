@@ -1,0 +1,25 @@
+{
+  "result": "passed",
+  "originals_unchanged": {
+    "02_工作区/Matt执行/research-SK-BEH-001.json": "06d027d4295158cb995d648fff03d96520139123538d048e546e3ffd20476615",
+    "02_工作区/Matt执行/SK-RES-001.json": "d5419d2f3c85c50f70b0b2a58159cad143df8f3ed08f03e4424aa39569cf817a",
+    "03_交付物/护肤科普研究首版/workbench-core.js": "313094aa1c730381ca6898c35b9cec9ed688e0fec240d54e496fa59402d97d09"
+  },
+  "article_equals_raw_response": true,
+  "generated_html_matches_source_and_research_json": true,
+  "artifact_sha256": {
+    "index.html": "601902454868bfbd2d2b1f57c69de5492aa5e22567bc62efea5c79785a38c6e1",
+    "SK-BEH-001.html": "88934e14f8effea740412d7bc3b51d7cf82521e87d5e215e48d75deee830a936",
+    "SK-RES-001.html": "8a4fee382dfc3d064f6254bd31fcb12b594a3fbc2ad570db41b39c147e1f983d"
+  },
+  "acquisition_counts": {
+    "unique_papers": 2,
+    "fulltext_success": 1,
+    "no_open_fulltext": 1,
+    "new_sources": 0,
+    "new_qualified_reads": 0,
+    "topic_queries": 0,
+    "fulltext_calls": 3,
+    "input_items": 4
+  }
+}
