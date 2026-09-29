@@ -6,6 +6,8 @@
 *.key
 *.p12
 .codex/
+.claude/settings.local.json
+CLAUDE.local.md
 .context/
 
 # Memory stores, hooks, caches, and backups

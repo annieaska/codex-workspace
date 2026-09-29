@@ -23,6 +23,7 @@
 ```text
 .
 ├── AGENTS.md
+├── CLAUDE.md
 ├── README.md
 ├── docs
 │   ├── context-and-memory.md
@@ -40,6 +41,10 @@
 5. 用根目录、项目子目录、同仓库 worktree 和相似路径分别验证规则是否生效。
 
 项目审核时应检查参数真源是否唯一、引用版本是否明确、重复副本之间是否存在冲突。无法定位权威值或无法证明版本一致时，不应通过门禁。
+
+## 同时使用 Claude Code
+
+Claude Code 读取 `CLAUDE.md`，不读取 `AGENTS.md`。本仓库的 `CLAUDE.md` 只有一行 `@AGENTS.md`，让两个客户端共用同一份规则，不维护第二套。用户级同理：在 `~/.claude/CLAUDE.md` 中用 `@` 引用自己的全局规则文件即可。新装客户端保持轻量：不预装插件、MCP 和常驻 Skill，按实际需要再加。
 
 Codex 会在开始工作前读取适用范围内的 `AGENTS.md`。具体层级和覆盖方式以 [OpenAI 官方 AGENTS.md 指南](https://developers.openai.com/codex/guides/agents-md) 为准。
 
