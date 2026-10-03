@@ -9,3 +9,7 @@
 .memmy/
 __pycache__/
 .cache/
+
+# 本机记忆库及其检索工具、运行数据，不进版本库
+/07_记忆库/
+/.basic-memory/
