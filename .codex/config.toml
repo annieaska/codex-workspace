@@ -6,3 +6,11 @@ project_doc_max_bytes = 16384
 command = "npx"
 args = ["@playwright/mcp@latest", "--output-dir", "/Users/chengyu/12_打工人程宇/99_临时/浏览器自动输出/主工作区", "--file-paths", "absolute"]
 cwd = "/Users/chengyu/12_打工人程宇/99_临时/浏览器自动输出/主工作区"
+
+# Lightroom Classic MCP 服务；插件源码保存在本工作区。
+[mcp_servers.lightroom_classic_custom]
+command = "/Users/chengyu/12_打工人程宇/04_能力库/07_摄影工具/lightroom-classic-mcp/.venv/bin/lightroom-classic-mcp"
+
+[mcp_servers.lightroom_classic_automaat]
+command = "/opt/homebrew/bin/node"
+args = ["/Users/chengyu/12_打工人程宇/04_能力库/07_摄影工具/lightroom-mcp/server/dist/index.js"]

@@ -10,6 +10,44 @@
 __pycache__/
 .cache/
 
+# 内容研究使用独立仓库，避免总仓库重复收录
+/02_项目/01_进行中/内容研究/
+
 # 本机记忆库及其检索工具、运行数据，不进版本库
 /07_记忆库/
 /.basic-memory/
+
+# 依赖与运行环境
+node_modules/
+.venv/
+
+# 临时区与工具自动输出：不进版本库，也避免被 Codex 快照整包收录
+/99_临时/
+02_项目/**/02_工作区/99_临时/
+/.playwright-mcp/
+/.playwright-cli/
+.playwright-cli/
+/.tmp/
+/.context/
+
+# 媒体原件与大体积二进制：原件保存在工作区目录，不进 Git
+*.mov
+*.MOV
+*.mp4
+*.MP4
+*.mxf
+*.braw
+*.r3d
+*.wav
+*.m4a
+*.mp3
+*.RAF
+*.raf
+*.dng
+*.DNG
+*.zip
+*.jsonl
+
+# 本机个人设置
+CLAUDE.local.md
+.claude/settings.local.json
