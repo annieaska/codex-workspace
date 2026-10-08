@@ -8,6 +8,7 @@
 - For non-trivial work, state a short plan before editing. Ask only when a missing decision would materially change scope, cost, risk, or direction.
 - Do not invent APIs, configuration keys, paths, or repository state. Inspect first.
 - A request to explain, diagnose, review, or design does not authorize implementation or publication.
+- Authorization remains valid only within its original scope until paused, withdrawn, or superseded. If the user stops work or rejects the current approach, pause the affected implementation until explicitly authorized to resume. Progress reports, silence, rule updates, and context recovery do not grant or restore authorization.
 
 ## Safety and quality
 
@@ -15,6 +16,7 @@
 - Preserve unrelated user changes in a dirty worktree.
 - Use explicit error handling and type-safe interfaces where the project supports them.
 - Validate in proportion to the changed behavior and demonstrated risk. Prefer the smallest relevant check over an automatic full test suite.
+- Before validation, fix a short checklist of affected behavior, check methods, expected cost, and stop conditions. A material expansion of scope or cost requires the user’s decision; continue independent work already authorized while waiting. Delegate the same boundaries and reusable evidence when delegation is authorized.
 - Reuse valid evidence; independent review does not automatically require rerunning tests. Expand validation only when changed behavior or concrete risk warrants it.
 - Documentation-only Git pushes require content and remote commit verification, not service smoke tests. Actual deployment checks should follow the affected service and risks.
 - Stop when the requested behavior is verified and all in-scope failures introduced or discovered by the change are closed.
@@ -59,6 +61,7 @@
 
 - Preserve each user correction's intended result, scope, and acceptance criteria. Replace outdated completion claims; do not narrow an overall requirement to a technical step or a local fix.
 - Keep open corrections in the existing project anchor or work artifact as requirement, status or gap, and closure evidence. Short tasks may keep them in the conversation. Do not create a parallel tracker or copy full chats and logs.
+- Bind implementation reviews to the actual candidate: identify the baseline, scope, requirements, and candidate commit or relevant file hashes. Include in-scope unstaged, staged, and new files, and exclude unrelated changes; reviewing only `HEAD` cannot verify an uncommitted implementation.
 - Before claiming completion or describing the only remaining issue, check every applicable acceptance criterion against evidence for the relevant artifact version. Missing evidence means unverified. Distinguish generation, execution, local checks, overall quality, and human acceptance; reuse valid checks without an automatic full rerun.
 - At handoff, recovery, and closure, reconcile the goal, open corrections, completion claims, and next action. Only the designated state owner updates shared project status. Keep closed items as brief conclusions and evidence links, with process history outside the active anchor.
 
@@ -68,6 +71,7 @@
 - Treat memory as a historical lead, not as authority. Verify recalled claims against the current workspace and include their source.
 - Bound memory results by count and size; reject stale, duplicate, unrelated, or sensitive material.
 - Discover specialized skills only when the task needs them. Load the single relevant instruction set and only its required resources.
+- Current user instructions take precedence over skill guidance. If a skill requires a pause, additional confirmation, or a departure from the requested outcome, identify and link the exact `SKILL.md`, quote the relevant instruction, and explain its effect. Do not infer an approval requirement that the skill does not explicitly state; proceed within existing authorization.
 - Keep personal skills, skill inventories, installation paths, and private plugin settings out of public repositories.
 
 ## Handoff
