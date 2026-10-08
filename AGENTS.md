@@ -42,6 +42,10 @@
 - Keep each authoritative parameter or input in one named source of truth. In handoffs and reviews, carry its location plus the applicable version, commit, or hash instead of repeating large parameter blocks.
 - Treat duplicated JSON, configuration, logs, Base64, full histories, and unchanged tool output as review-gate failures unless the exact copy is necessary evidence. Reviewers must resolve conflicting values against the named source before approval.
 
+## HTML UI style
+
+- Before creating or modifying HTML UI, read `docs/html-ui-style.md` and inherit its visual defaults and applicable layout. Preserve an existing project's confirmed alternative style unless the user requests a redesign. Do not preload this document for unrelated tasks or apply UI styling to video and animation content.
+
 ## Project state
 
 - Use an existing `PROJECT.md` as the single state source for a long-running project. Do not create a parallel context or status file.

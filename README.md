@@ -27,6 +27,7 @@
 ├── README.md
 ├── docs
 │   ├── context-and-memory.md
+│   ├── html-ui-style.md
 │   ├── skills-and-mcp.md
 │   └── workspace-architecture.md
 └── templates
@@ -34,6 +35,8 @@
 ```
 
 Skill 与 MCP 的目录结构、配置入口、按需加载和调用机制见 [Skill 与 MCP 说明](docs/skills-and-mcp.md)。路径使用可迁移占位符，不包含个人安装文件。
+
+HTML UI 的默认配色、字体、描边、阴影、布局与窄屏规则见 [HTML UI 默认样式](docs/html-ui-style.md)。生成或维护 HTML UI 时按需读取，沿用项目已确认的其他样式。
 
 ## 使用方式
 
